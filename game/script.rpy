@@ -95,7 +95,7 @@ label p:
 # s1 = start
 # voice voice.mp3
 label start:
-    $ mcname = renpy.input("What is your name d?")
+    $ mcname = renpy.input("What is your name?")
     $ mcname = mcname.strip()
 
     if mcname == "":
