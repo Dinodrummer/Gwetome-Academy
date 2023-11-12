@@ -231,7 +231,7 @@ label s5:
 
     na "Man, they kept the annoying mascot from season 1."#JT21
 
-    na "Jeez"
+    na "Jeez, no"
     
 
 
