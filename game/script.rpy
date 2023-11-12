@@ -230,6 +230,8 @@ label s5:
     dr "HUEHUEHUEHUEHUE! I will defeat you all one by one!"#
 
     na "Man, they kept the annoying mascot from season 1."#JT21
+
+    na "Jeez"
     
 
 
