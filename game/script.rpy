@@ -22,6 +22,7 @@ init python:
     bgSong = "bgm_skipABeat.mp3"
     config.auto_voice = "voice/{id}.mp3"
     mcname = "..."
+    ririActive = False
 
 define mc = Character("[mcname]", color = "#43BC47")
 define na = Character("")
@@ -33,6 +34,7 @@ define mi2 = Character("Meowgical Ikemen 2")
 define pp = Character("PyunPyun")
 define takeshi = Character("Takeshi")
 define dr = Character("Dr.")
+define riri = Character("Riri")
 
 
 # --------------------------------------------------------
@@ -207,31 +209,70 @@ label s5:
     na "During the last episode, Takeshi was deciding whether or not to keep his office job or pursue his dream of becoming a full-time magical girl. 
         He must be discussing this with them now."#JT20
 
-    mi1 "Takeshi… you must make a choice. If we wait any longer, the Dr. will find out your true identity. Either join us or leave us."#
+    mi1 "Takeshi… you must make a choice. If we wait any longer, the Dr. will find out your true identity. Either join us or leave us."#Kyle1
 
-    pp "Pyun!"#
+    pp "Pyun!"#Gwyn9
 
-    takeshi "But--{nw}"#
+    takeshi "But--{nw}"#Beckham1
 
-    mi2 "Takeshi, we {i}meow{/i} it's a hard decision, but it's one that must be {i}mwade.{/i} {color=#808080}{size=-6}nya~{/size}{/color}"#
+    mi2 "Takeshi, we {i}meow{/i} it's a hard decision, but it's one that must be {i}mwade.{/i} {color=#808080}{size=-6}nya~{/size}{/color}"#Joe4
 
     takeshi "But… but… what if I'm not cut out to be on the Kiss Kiss Love Power Team? 
-        What if I'm not a real magical-girl? If I fail… I can't ever return. Please, give me more--"#
+        What if I'm not a real magical-girl? If I fail… I can't ever return. Please, give me more--"#Beckham2
 
     #explosion/crash + helicopter sounds
     #PyunPyun falls
 
-    pp "Pyuuuuuuuuuuun~"#
+    pp "Pyuuuuuuuuuuun~"#Gwyn10
 
-    mi1 "NO! PYUNPYUN!"#
+    mi1 "NO! PYUNPYUN!"#Kyle2
 
     #Through a megaphone:
 
-    dr "HUEHUEHUEHUEHUE! I will defeat you all one by one!"#
+    dr "HUEHUEHUEHUEHUE! I will defeat you all one by one!"#JT21
 
-    na "Man, they kept the annoying mascot from season 1."#JT21
+    na "Man, they kept the annoying mascot from season 1."#JT22
 
-    na "WAAAAAAAAAAAAAAAAAAAA"
+    na "Just as the Dr. begins to shoot his sadness missiles at the Kiss Kiss Love Power team, your phone buzzes."#JT23
+
+    mc "Huh?"#Gwyn11
+
+    na "Suddenly, a tiny sexy witch emerges out of your phone."#JT24
+
+    mc "Mark Zuckerberg?!"#Gwyn12
+
+    riri "Wrong! I'm Riri. My boss told me there was a weeb here so I came to help."#Joe5
+
+    riri "Wait! Are you Naninani Nantoka!?!?"#Joe6
+
+    mc "Uh. No. I'm [mcname]"#Gwyn13
+
+    riri "Oh how the great have fallen. {i}{color=#808080}{size=-6}{cps=10}*sigh*{/cps}{/size}{/color}{/i} I used to always hear about you at work--{nw}"#Joe7
+
+    riri "you were determined to get a lover by the end of the school day. On your first day of school! You were my hero… But now… *cries*"#Joe7
+
+    mc "Ummm..."#Gwyn14
+
+    riri "Well no matter Naninani! I'll help you get back on your feet and into the world of romance once again. Let's go!"#Joe8
+
+    mc "Ummmmmmmmm..."#Gwyn15
+
+    menu:
+        "Go to school... late":
+            $ ririActive = True
+            jump p
+
+label s6:
+
+    mc "Ah! I've done it now!"#Gwyn16
+
+    na "You quickly throw on your uniform, grab a piece of toast, and run out the door."#JT25
+
+    mc "I'm gonna be late!"#Gwyn17
+
+
+
+
     
 
 
