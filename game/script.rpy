@@ -34,7 +34,9 @@ define mi2 = Character("Meowgical Ikemen 2")
 define pp = Character("PyunPyun")
 define takeshi = Character("Takeshi")
 define dr = Character("Dr.")
+
 define riri = Character("Riri")
+define mv = Character("{i}Mysterious Voice")
 
 
 # --------------------------------------------------------
@@ -145,9 +147,9 @@ label s2:
 
     menu:
         "Head off to school":
-            jump p
+            jump s4
         "Watch Magical Ikemen":
-            jump p
+            jump s5
 
 label s3:
 
@@ -164,9 +166,9 @@ label s3:
 
     menu:
         "Wake up and go go go!":
-            jump p
+            jump s6
         "Nahh, I'm sleeping more":
-            jump p
+            jump s7
 
 label s4:
 
@@ -196,9 +198,9 @@ label s4:
 
     menu:
         "I'll take the journey alone!":
-            jump p
+            jump s8
         "Try to talk to the ikemen":
-            jump p
+            jump s9
 
 label s5:
 
@@ -260,7 +262,7 @@ label s5:
     menu:
         "Go to school... late":
             $ ririActive = True
-            jump p
+            jump s10
 
 label s6:
 
@@ -269,6 +271,59 @@ label s6:
     na "You quickly throw on your uniform, grab a piece of toast, and run out the door."#JT25
 
     mc "I'm gonna be late!"#Gwyn17
+
+    na "It isn't long before you find yourself turning a sharp corner… with toast... hmm..."#JT26
+
+    mc "Ah! It hurts!"#Gwyn18
+
+    #Background bird caw noises
+    mc "...?"#Gwyn19
+
+    mc "Is no one... here?"#Gwyn20
+
+    na "Wow, you must be really off your game today *name*. You look around yourself, stunned… this has never happened before."#JT27
+
+    na "How could you not bump into a hot ikemen while turning a corner with toast in your mouth?!?! Maybe you should try again."#JT28
+
+    na "You pick up the toast and start walking back to where you started, when you hear a strange noise."#JT29
+
+    joe "Kyaa~! I'm gonna be late!"#Joe9
+
+    na "Ah, there it is. You look up and see a hot… pole? No wait! You shake your head to clear your vision."#JT30
+
+    joe "Sorry, are you ok? I don't know what came over me. I just felt a sudden need to run around that corner."#Joe10
+
+    mc "Yeah, I'm alright."#Gwyn21
+
+    na "The boy's eyes sparkle as you take his hand and he smoothly pulls you to your feet. Nice."#JT31
+
+    na "After you both apologize you quickly continue on your way."#JT32
+
+    menu:
+        "Go to school... late":
+            jump s10
+
+label s7:
+
+    na "Heh... school. Who needs it? You're about to discover the answer to the greatest mystery yet: who is Naninani Nantoka?!"#JT33
+
+    na "You rustle back under your blankets, close your eyes, and start to dream again… but this time you are not at school."#JT34
+
+    na "You are floating through an endless void. You can't move. You can't breathe. All is silent."#JT35
+
+    na "Is this what it's like to be in a world with no love? No romance? No ikemens?"#JT36
+
+    na "Your mind succumbs to the darkness."#JT37
+
+    mv "You have failed your purpose, [mcname]."#Gwyn22
+
+    na "By the time you wake up, the school year has already ended. You now know your true duty but it is too late, and there is no one left to love you."#JT38
+
+    na "Weeping, you succumb to the darkness of sleep once more."#JT39
+
+    jump Ending0 #Eternal Power Nap
+
+    
 
 
 
