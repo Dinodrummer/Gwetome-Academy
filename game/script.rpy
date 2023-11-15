@@ -6,13 +6,88 @@
 
 
 image vid = Movie(play="audio/5-6.webm", size=(1920,1080),loop=False, xalign=0.10, yalign=0.10)
-
+#--------------
 image zeil normal:
     "images/zeil normal.png"
     zoom 0.8
 image gym:
     "images/bg gym.jpg"
     zoom 1.5
+#--------------
+image mom normal:
+    "images/zeil normal.png"
+    zoom 0.8
+image mom angry:
+    "images/zeil normal.png"
+    zoom 0.8
+
+image joe normal:
+    "images/zeil normal.png"
+    zoom 0.8
+image joe angry:
+    "images/zeil normal.png"
+    zoom 0.8
+
+image kyle normal:
+    "images/zeil normal.png"
+    zoom 0.8
+image kyle angry:
+    "images/zeil normal.png"
+    zoom 0.8
+
+image maryam normal:
+    "images/zeil normal.png"
+    zoom 0.8
+image maryam angry:
+    "images/zeil normal.png"
+    zoom 0.8
+
+image jt normal:
+    "images/zeil normal.png"
+    zoom 0.8
+image jt angry:
+    "images/zeil normal.png"
+    zoom 0.8
+
+image sophia normal:
+    "images/zeil normal.png"
+    zoom 0.8
+image sophia angry:
+    "images/zeil normal.png"
+    zoom 0.8
+
+image beckham normal:
+    "images/zeil normal.png"
+    zoom 0.8
+image beckham angry: #Probably don't need
+    "images/zeil normal.png"
+    zoom 0.8
+image zev normal:
+    "images/zeil normal.png"
+    zoom 0.8
+#--------------
+image mi1:
+    "images/zeil normal.png"
+    zoom 0.8
+image mi2:
+    "images/zeil normal.png"
+    zoom 0.8
+image pp:
+    "images/zeil normal.png"
+    zoom 0.8
+image takeshi:
+    "images/zeil normal.png"
+    zoom 0.8
+image dr:
+    "images/zeil normal.png"
+    zoom 0.8
+#--------------
+image riri:
+    "images/zeil normal.png"
+    zoom 0.8
+image mv:
+    "images/zeil normal.png"
+    zoom 0.8
 # --------------------------------------------------------
 init python:
     char_left = Position(xpos=0.18, ypos=0.75)
@@ -22,12 +97,28 @@ init python:
     bgSong = "bgm_skipABeat.mp3"
     config.auto_voice = "voice/{id}.mp3"
     mcname = "..."
+
     ririActive = False
+    riri10 = False
+    riri11 = False
+    riri13 = False
+    riri15 = False
+    riri26 = False
+    riri27 = False
+    riri28 = False # + 31
+
 
 define mc = Character("[mcname]", color = "#43BC47")
 define na = Character("")
 define mom = Character("Mom")
+define sensei = Character("先生 (Sensei)")
 define joe = Character("ジョ~")
+define kyle = Character("千葉、昭光 (Chiba, Akimitsu)")
+define jt = Character("柳井、富 (Yanai, Yutaka)")
+define sophia = Character("高尾、勇 (Takao, Isamu)")
+define maryam = Character("木山、遥花 (Kiyama, Haruka)")
+define beckham = Character("マリオ")
+define zev = Character("ゼブ")
 
 define mi1 = Character("Magical Ikemen 1")
 define mi2 = Character("Meowgical Ikemen 2")
@@ -35,7 +126,7 @@ define pp = Character("PyunPyun")
 define takeshi = Character("Takeshi")
 define dr = Character("Dr.")
 
-define riri = Character("Riri")
+define riri = Character("リリ")
 define mv = Character("{i}Mysterious Voice")
 
 
@@ -94,6 +185,9 @@ label Questions_mc:
 label p:
     na "PLACEHOLDER"
     return
+
+label riri:
+    if riri10:
 
 # -------------------------------------------------------------------------------------------------------------------
 # s1 = start
@@ -321,7 +415,68 @@ label s7:
 
     na "Weeping, you succumb to the darkness of sleep once more."#JT39
 
-    jump Ending0 #Eternal Power Nap
+    jump ending0 #Eternal Power Nap
+
+label s8:
+
+label s9:
+
+label s10:
+
+    na "You arrive at school… late of course."#JT40
+
+    na "What did you expect? After all that you'd still be early? Hah."#JT41
+
+    na "Now [mcname]...  you have two options..."#JT42
+
+    if ririActive:
+        $ riri10 = True
+        riri "What's this?! Two options of potential love and beauty?!?!"#Joe11
+
+        riri "Ahhhh I can't wait for you to turn back to your old self again!"#Joe12
+
+        riri "Listen, Naninani, I have the power of insight."#Joe13
+
+        riri "I can help guide you through this love journey."#Joe14
+
+        riri "But... you need to be the one making the decisions. Got it?"#Joe15
+
+        riri "I'll just be over here, and if you need my input just click on me."#Joe16
+
+        #riri goes into the corner and you can click on him
+
+        riri "Hehe... hehehehehe..."#Joe17
+
+        if riri10:
+
+            riri "Yay! You did it! I'm so proud of you Naninani. Okay... let's see your options..."#Joe18
+
+            riri "Your teacher is really mad right now. If you went to class you'd definitely receive that anger."#Joe19
+
+            riri "But... if you skip class you could find yourself in a battle for your very fate."#Joe20
+
+            riri "Ooooh spicy. You know which one I would choose. {i}Wink. Wink.{/i}"#Joe21
+    menu:
+        "Go to class late":
+            jump p
+        "Skip!":
+            jump p
+
+label s11:
+
+    na "Skipping class? It looks like you value your education..."#JT43
+
+    na "You walk to class and and fling open the door."#JT44
+
+    na "You're here in order to learn! You must study! You have your whole life ahead of you and you're not backing down!"#JT45
+
+    mc "Excuse me!"#Gwyn23
+
+    sensei "Detention!"
+
+
+
+
 
     
 
