@@ -89,23 +89,7 @@ image mv:
     "images/zeil normal.png"
     zoom 0.8
 # --------------------------------------------------------
-init python:
-    char_left = Position(xpos=0.18, ypos=0.75)
-    preferences.text_cps = 20
-    basketballSong = "bgm_basketball.mp3"
-    sfxBell = "sfx_bell.mp3"
-    bgSong = "bgm_skipABeat.mp3"
-    config.auto_voice = "voice/{id}.mp3"
-    mcname = "..."
 
-    ririActive = False
-    riri10 = False
-    riri11 = False
-    riri13 = False
-    riri15 = False
-    riri26 = False
-    riri27 = False
-    riri28 = False # + 31
 
 
 define mc = Character("[mcname]", color = "#43BC47")
@@ -129,7 +113,29 @@ define dr = Character("Dr.")
 define riri = Character("リリ")
 define mv = Character("{i}Mysterious Voice")
 
+define d1 = Character("Deliquent 1")
+define d2 = Character("Deliquent 2")
+define d3 = Character("Deliquent 3")
 
+
+init python:
+    char_left = Position(xpos=0.18, ypos=0.75)
+    preferences.text_cps = 20
+    basketballSong = "bgm_basketball.mp3"
+    sfxBell = "sfx_bell.mp3"
+    bgSong = "bgm_skipABeat.mp3"
+    config.auto_voice = "voice/{id}.mp3"
+    mcname = "..."
+
+    ririActive = False
+    riri10 = False
+    riri11 = False
+    riri13 = False
+    riri15 = False
+    riri26 = False
+    riri27 = False
+    riri28 = False
+    riri31 = False
 # --------------------------------------------------------
 label pro:
     pause 0.2
@@ -189,10 +195,45 @@ label p:
 label riri:
     if riri10:
 
+        riri "Yay! You did it! I'm so proud of you Naninani. Okay... let's see your options..."#Joe18
+
+        riri "Your teacher is really mad right now. If you went to class you'd definitely receive that anger."#Joe19
+
+        riri "But... if you skip class you could find yourself in a battle for your very fate."#Joe20
+
+        riri "Ooooh spicy. You know which one I would choose. {i}Wink. Wink.{/i}"#Joe21
+
+        $ riri10 = False
+    if riri11:
+
+        riri "Hehehehe..."#Joe22
+
+        $ riri11 = False
+    if riri13:
+
+        riri "Follow your gut, Naninani!"#Joe23
+
+        $ riri13 = False
+    if riri15:
+
+        riri "You {i}have{/i} to go to that party Naninani! 'Kay?"
+
+        $ riri15 = False
+    if riri26:
+
+        riri "Look at this cutie-patootie! Maybe you don't have to go to that party Naninani."
+
+        riri "The choice is yours... though I am a fan of Chiba-kun myself... hehehehehe..."
+
+        $ riri26 = False
+    if riri27:
+        na " [[Riri shakes her head. It looks like she doesn't want to talk to you right now.]"
+    return
 # -------------------------------------------------------------------------------------------------------------------
 # s1 = start
 # voice voice.mp3
 label start:
+
     $ mcname = renpy.input("What is your name?")
     $ mcname = mcname.strip()
 
@@ -305,7 +346,7 @@ label s5:
     na "During the last episode, Takeshi was deciding whether or not to keep his office job or pursue his dream of becoming a full-time magical girl. 
         He must be discussing this with them now."#JT20
 
-    mi1 "Takeshi… you must make a choice. If we wait any longer, the Dr. will find out your true identity. Either join us or leave us."#Kyle1
+    mi1 "Takeshi... you must make a choice. If we wait any longer, the Dr. will find out your true identity. Either join us or leave us."#Kyle1
 
     pp "Pyun!"#Gwyn9
 
@@ -313,8 +354,8 @@ label s5:
 
     mi2 "Takeshi, we {i}meow{/i} it's a hard decision, but it's one that must be {i}mwade.{/i} {color=#808080}{size=-6}nya~{/size}{/color}"#Joe4
 
-    takeshi "But… but… what if I'm not cut out to be on the Kiss Kiss Love Power Team? 
-        What if I'm not a real magical-girl? If I fail… I can't ever return. Please, give me more--"#Beckham2
+    takeshi "But... but... what if I'm not cut out to be on the Kiss Kiss Love Power Team? 
+        What if I'm not a real magical-girl? If I fail... I can't ever return. Please, give me more--"#Beckham2
 
     #explosion/crash + helicopter sounds
     #PyunPyun falls
@@ -341,11 +382,11 @@ label s5:
 
     riri "Wait! Are you Naninani Nantoka!?!?"#Joe6
 
-    mc "Uh. No. I'm [mcname]"#Gwyn13
+    mc "Uh. No. I'm [mcname]."#Gwyn13
 
-    riri "Oh how the great have fallen. {i}{color=#808080}{size=-6}{cps=10}*sigh*{/cps}{/size}{/color}{/i} I used to always hear about you at work--{nw}"#Joe7
+    riri "Oh how the great have fallen. {i}{color=#808080}{size=-6}{cps=10}*sigh*{/cps}{/size}{/color}{/i} I used to always hear about you at work--"#Joe7
 
-    riri "you were determined to get a lover by the end of the school day. On your first day of school! You were my hero… But now… *cries*"#Joe7
+    riri "you were determined to get a lover by the end of the school day. On your first day of school! You were my hero... But now... {i}*cries*{/i}"#Joe7
 
     mc "Ummm..."#Gwyn14
 
@@ -423,67 +464,247 @@ label s9:
 
 label s10:
 
-    na "You arrive at school… late of course."#JT40
+    na "You arrive at school... late of course."
 
-    na "What did you expect? After all that you'd still be early? Hah."#JT41
+    na "What did you expect? After all that you'd still be early? Hah."
 
-    na "Now [mcname]...  you have two options..."#JT42
+    na "Now [mcname]...  you have two options..."
 
     if ririActive:
-        $ riri10 = True
-        riri "What's this?! Two options of potential love and beauty?!?!"#Joe11
+        
+        riri "What's this?! Two options of potential love and beauty?!?!"
 
-        riri "Ahhhh I can't wait for you to turn back to your old self again!"#Joe12
+        riri "Ahhhh I can't wait for you to turn back to your old self again!"
 
-        riri "Listen, Naninani, I have the power of insight."#Joe13
+        riri "Listen, Naninani, I have the power of insight."
 
-        riri "I can help guide you through this love journey."#Joe14
+        riri "I can help guide you through this love journey."
 
-        riri "But... you need to be the one making the decisions. Got it?"#Joe15
+        riri "But... you need to be the one making the decisions. Got it?"
 
-        riri "I'll just be over here, and if you need my input just click on me."#Joe16
+        riri "I'll just be over here, and if you need my input just click on me."
 
         #riri goes into the corner and you can click on him
 
-        riri "Hehe... hehehehehe..."#Joe17
+        riri "Hehe... hehehehehe..."
 
-        if riri10:
+        $ riri10 = True
+        call riri
 
-            riri "Yay! You did it! I'm so proud of you Naninani. Okay... let's see your options..."#Joe18
-
-            riri "Your teacher is really mad right now. If you went to class you'd definitely receive that anger."#Joe19
-
-            riri "But... if you skip class you could find yourself in a battle for your very fate."#Joe20
-
-            riri "Ooooh spicy. You know which one I would choose. {i}Wink. Wink.{/i}"#Joe21
     menu:
         "Go to class late":
-            jump p
+            jump s11
         "Skip!":
-            jump p
+            jump s12
 
 label s11:
 
-    na "Skipping class? It looks like you value your education..."#JT43
+    na "Skipping class? It looks like you value your education..."
 
-    na "You walk to class and and fling open the door."#JT44
+    na "You walk to class and and fling open the door."
 
-    na "You're here in order to learn! You must study! You have your whole life ahead of you and you're not backing down!"#JT45
+    na "You're here in order to learn! You must study! You have your whole life ahead of you and you're not backing down!"
 
-    mc "Excuse me!"#Gwyn23
+    mc "Excuse me!"
 
     sensei "Detention!"
 
+    if ririActive:
+        $ riri11 = True
+        call riri
 
+label s12:
 
+label s13:
 
+    na "Ahhh... detention. A land of hopes and sorrows... youth and forgotten dreams."
 
+    na "Somehow you always seem to find yourself here."
+
+    na "You scan the room in order to find familiar faces, but suddenly your attention is caught by the piercing eyes of another student."
+
+    na "They seem to be staring you down."
+
+    na "Oh wait, now they're blinking at you. Or are they winking… with both eyes? Is that morse code?"
+
+    na "Suddenly you hear the whispers of two delinquents a desk over."
+
+    d1 "Hey hey, is that Takao Isamu?"
+
+    d2 "Takao... Isamu?"
+
+    d1 "You don't know? Their family is yakuza! Apparently they transferred in this school year but haven't said more than two words to anyone. They're super cold."
+
+    d2 "Ohhhh yeah yeah I know them. {i}The Panther{/i}, huh? I heard they sleep with their eyes open because they have so many enemies."
+
+    d2 "They're also rich, hot, have a six pack, and like to brood all the time."
+
+    d1 "Wow... I wish I was that cool."
+
+    na "As you look back over to the yakuza student you notice a majestic tear rolling down their cheek. Wow. What an emotionally conflicted and vulnerable young adult."
+
+    na "You should totally cause a scene and show them your physical prowess."
+
+    if ririActive:
+        $ riri13 = True
+        call riri
     
+    menu:
+        "Make a scene!":
+            jump s15
+        "Wait for detention to end and leave":
+            jump s16
 
+label s14:
+    # not real
 
+label s15:
 
+    na "You make a scene. How could you resist after all?"
 
+    na "After throwing a few delinquents out the window with your super muscular muscles...{nw}"
+
+    # Sound effects
+
+    na "...Takao Isamu swaggers up to your desk."
+
+    sophia "Yo."
+
+    mc "Oh, hey."
+
+    sophia "You dropped this."
+
+    na "Isamu hands you a small handkerchief with a small cute cat print on it."
+
+    mc "Oh, that's not mi--"
+
+    sophia "Keep it."
+
+    na "Isamu coolly grabs their jacket and leaves the room. You can't help but notice a slight blush on their face."
+
+    mc "Huh..."
+
+    na "You unfold the handkerchief to find a piece of paper with a message:"
+
+    #Sophia's voice / piece of paper with words on it
+    na "{i}You. Me. Rager party. Tonight? Yes? No? Plz yes. :3 Thank you.{color=#808080} - The Panther{/i}{/color}"
+
+    na "Despite “The Panther”'s horrible grammar, your heart skips a beat. Are they asking you... on a date?"
+
+    if ririActive:
+        $ riri15 = True
+        call riri
+
+    menu:
+        "I'm going to that party!":
+            jump s26
+        "Absolutely not":
+            jump s27
+
+label s16:
+
+label s17:
+
+label s18:
+
+label s19:
+
+label s20:
+
+label s21:
+
+label s22:
+
+label s23:
+
+label s24:
+
+label s25:
+
+label s26:
+
+    na "Actually... does it even matter if it's a date? It's a party! Of course you're going!"
+
+    na "You carefully put the handkerchief and note in your bag and begin to daydream."
+
+    mc "I wonder who's going to be there... I'll have to make lots of friends! Maybe I should try something new to make a good impression..."
+
+    # Door sounds
+
+    mc "Eh? Akimitsu?!"
+
+    na "Chiba Akimitsu, your childhood friend since third grade appears at the desk next to yours."
+
+    kyle "Hey [mcname]! Ahaha, did I surprise you?"
+
+    mc "Mhm! Why are you also in detention?"
+
+    kyle "I knew you'd be here on the first day so I came to keep you company."
+
+    kyle "What were you thinking about before I interrupted you?"
+
+    mc "Nothing much… just this party..."
+
+    na "You take out the handkerchief and note and show Akimitsu."
+
+    na "His eyebrows furrow into a look of concern."
+
+    kyle "A party with... the {i}PANTHER{/i}??? TAKAO ISAMU???"
+
+    kyle "There's no way I'm letting you go alone, [mcname]. A party with yakuza attending? Absolutely not."
+
+    mc "What are you... my dad?"
+
+    kyle "I'm just worried about you! Who knows what those people are like?"
+
+    kyle "Please, let me go with you. Or better yet, don't go at all and we can just hang out."
+
+    if ririActive:
+        $ riri26 = True
+        call riri
+
+    menu:
+        "Go to the party with Akimitsu":
+            jump s28
+        "Ditch the party and hang out":
+            jump s29
+
+label s27:
+
+    na "Date or not, you're not going. You toss the handkerchief and note out the window and wait for the school day to end. Soon enough, word gets around of your rejection."
+
+    d2 "That's [mcname] isn't it?"
+
+    d3 "Oh, you're right! I can't believe she'd reject Takao-sama's kind offer!"
+
+    d1 "Weirdo..."
+
+    d2 "Even after they used their special kitty handkerchief too!"
+
+    d1 "{i}{color=#808080}{size=-6}{cps=10}*gasp*{/cps}{/size}{/color}{/i} No way!"
+
+    d3 "It's true... I saw them outside weeping with it in their arms. It was their favorite handkerchief and it got dirty!"
+
+    d1 "Poor Takao-sama..."
+
+    na "You walk through the halls with shame. When you get home you can only find comfort in the soft light of your television."
+
+    if ririActive:
+        $ riri27 = True
+        call riri
     
+    menu:
+        "Watch anime":
+            jump s43
+
+
+        
+
+
+
+
+
+        
 
 
 
