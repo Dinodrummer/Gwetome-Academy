@@ -120,8 +120,9 @@ define d3 = Character("Deliquent 3")
 python:
     ririActive = False
     riris = []
-    for i in range(100):
+    for i in calledrange(100):
         riris.append(False)
+        print(riris[i])
 
 
 init python:
@@ -237,7 +238,13 @@ label riri:
         riri "Don't let the temptation of the forbidden fruit fool you!"
 
         $ riris[28] = False
-    
+    if riris[43]:
+
+        riri "It's me, Riri. Don't worry Naninani, I'm just making some minor adjustments to the fabric of time."
+
+        riri "You may have failed this time at romance, but I won't let you give up!"
+
+        $ riris[43] = False
     return
 # -------------------------------------------------------------------------------------------------------------------
 # s1 = start
@@ -930,7 +937,15 @@ label s43:
 
     na "In the corner of your eye you see a tiny magic wand waving at you from behind the couch. Is that..."
 
-    if ririActive
+    if ririActive:
+        $ riris[43] = True
+        call riri
+    
+    mc "Eh?! What's going on?"
+
+    #Reset with loading screen or something
+
+    jump start
  
 label s44:
  
