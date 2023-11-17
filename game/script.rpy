@@ -117,25 +117,25 @@ define d1 = Character("Deliquent 1")
 define d2 = Character("Deliquent 2")
 define d3 = Character("Deliquent 3")
 
+python:
+    ririActive = False
+    riris = []
+    for i in range(100):
+        riris.append(False)
+
 
 init python:
+    
     char_left = Position(xpos=0.18, ypos=0.75)
-    preferences.text_cps = 20
+    preferences.text_cps = 25
     basketballSong = "bgm_basketball.mp3"
     sfxBell = "sfx_bell.mp3"
     bgSong = "bgm_skipABeat.mp3"
     config.auto_voice = "voice/{id}.mp3"
     mcname = "..."
 
-    ririActive = False
-    riri10 = False
-    riri11 = False
-    riri13 = False
-    riri15 = False
-    riri26 = False
-    riri27 = False
-    riri28 = False
-    riri31 = False
+    
+
 # --------------------------------------------------------
 label pro:
     pause 0.2
@@ -193,7 +193,7 @@ label p:
     return
 
 label riri:
-    if riri10:
+    if riris[10]:
 
         riri "Yay! You did it! I'm so proud of you Naninani. Okay... let's see your options..."#Joe18
 
@@ -203,31 +203,41 @@ label riri:
 
         riri "Ooooh spicy. You know which one I would choose. {i}Wink. Wink.{/i}"#Joe21
 
-        $ riri10 = False
-    if riri11:
+        $ riris[10] = False
+    if riris[11]:
 
         riri "Hehehehe..."#Joe22
 
-        $ riri11 = False
-    if riri13:
+        $ riris[11] = False
+    if riris[14]:
 
         riri "Follow your gut, Naninani!"#Joe23
 
-        $ riri13 = False
-    if riri15:
+        $ riris[14] = False
+    if riris[15]:
 
         riri "You {i}have{/i} to go to that party Naninani! 'Kay?"
 
-        $ riri15 = False
-    if riri26:
+        $ riris[15] = False
+    if riris[26]:
 
         riri "Look at this cutie-patootie! Maybe you don't have to go to that party Naninani."
 
         riri "The choice is yours... though I am a fan of Chiba-kun myself... hehehehehe..."
 
-        $ riri26 = False
-    if riri27:
+        $ riris[26] = False
+    if riris[27]:
+
         na " [[Riri shakes her head. It looks like she doesn't want to talk to you right now.]"
+        $ riris[27] = False
+    if riris[28]:
+
+        riri "The drama! As the main character, you {i}must{/i} pick at least one of them!"
+
+        riri "Don't let the temptation of the forbidden fruit fool you!"
+
+        $ riris[28] = False
+    
     return
 # -------------------------------------------------------------------------------------------------------------------
 # s1 = start
@@ -396,7 +406,7 @@ label s5:
 
     menu:
         "Go to school... late":
-            $ ririActive = True
+            $ riris[10] = True
             jump s10
 
 label s6:
@@ -488,7 +498,7 @@ label s10:
 
         riri "Hehe... hehehehehe..."
 
-        $ riri10 = True
+        $ ririActive = True
         call riri
 
     menu:
@@ -501,7 +511,7 @@ label s11:
 
     na "Skipping class? It looks like you value your education..."
 
-    na "You walk to class and and fling open the door."
+    na "You walk to class and fling open the door."
 
     na "You're here in order to learn! You must study! You have your whole life ahead of you and you're not backing down!"
 
@@ -509,8 +519,9 @@ label s11:
 
     sensei "Detention!"
 
+    
     if ririActive:
-        $ riri11 = True
+        $ riris[11] = True
         call riri
 
 label s12:
@@ -546,7 +557,7 @@ label s13:
     na "You should totally cause a scene and show them your physical prowess."
 
     if ririActive:
-        $ riri13 = True
+        $ riris[13] = True
         call riri
     
     menu:
@@ -592,7 +603,7 @@ label s15:
     na "Despite “The Panther”'s horrible grammar, your heart skips a beat. Are they asking you... on a date?"
 
     if ririActive:
-        $ riri15 = True
+        $ riris[15] = True
         call riri
 
     menu:
@@ -660,7 +671,7 @@ label s26:
     kyle "Please, let me go with you. Or better yet, don't go at all and we can just hang out."
 
     if ririActive:
-        $ riri26 = True
+        $ riris[26] = True
         call riri
 
     menu:
@@ -690,13 +701,308 @@ label s27:
     na "You walk through the halls with shame. When you get home you can only find comfort in the soft light of your television."
 
     if ririActive:
-        $ riri27 = True
+        $ riris[27] = True
+        call riri
+
+label s28:
+    na "Soon, night falls. You arrive at the party with Akimitsu and head inside."
+
+    na "The party is surprisingly classy. Everyone is dressed nicely, there's a live jazz band, and even an open apple juice bar. You make a mental note of the apple juice bar."
+
+    na "You quickly see Takao Isamu spot you and even slightly move their lips upward."
+
+    na "You can't tell if they're grimacing in pain or perhaps attempting a smile, but either way it's directed towards you."
+
+    na "Akimitsu tenses up and steps closer to you."
+
+    sophia "Hey. I've heard a lot about you, [mcname]. I'm Takao Isamu."
+
+    sophia "When I saw you I wasn't sure the rumors were true, but now I know. You're incredible. What dojo did--"
+
+    kyle "Youseikan. We trained at Youseikan."
+
+    sophia "Ah... Who's this?"
+
+    mc "This is my childhood friend, Chiba Akimitsu."
+
+    sophia "Is that so? Interesting."
+
+    sophia "Anyways, how is the party?"
+
+    na "You start to get the feeling that these two aren't getting along."
+
+    na "So, you must do what any reasonable person would do: ignore one of them."
+
+    if ririActive:
+        $ riris[28] = True
         call riri
     
     menu:
-        "Watch anime":
-            jump s43
+        "Ignore Isamu":
+            jump s30
+        "Ignore Akimitsu":
+            jump s32
+        "Ditch both for apple juice":
+            jump s31
 
+label s29:
+
+label s30:
+
+    mc "The party's good.{nw}"
+
+    na "You say, proceeding to turn and face Akimitsu."
+
+    mc "Hey... should we get going?"
+
+    sophia "Wait. Would you like to get drinks with me?"
+
+    na "{i}{color=#808080}{size=-6}{cps=10}*Narrator gasps*{/cps}{/size}{/color}{/i}"
+
+    menu:
+        "You know what? Sure.":
+            jump s35
+        "No, I have plans with Akimitsu":
+            jump s36
+
+label s31:
+
+    mc "The party's good.{nw}"
+
+    na "You say. And then you run and escape to the apple juice bar."
+
+    #Bar scene
+
+    mc "Apple juice please~"
+
+    beckham "May I ask what type of apple you prefer? Honeycrisp? Fuji?"
+
+    mc "Umm... Gala please."
+
+    beckham "Coming up."
+
+    na "Never before have you tasted such sweet, succulent drink."
+
+    na "You down glass after glass until your tummy can take it no longer. Delicious."
+
+    na "Then you go home."
+
+    if ririActive:
+        $ riris[27] = True
+        call riri
+
+    jump s43
+
+label s32:
+
+    mc "The party's good."
+
+    mc "I just wish I was being escorted by someone since I've been so lonely by myself."
+
+    sophia "Want me to help you?"
+
+    kyle "Hey, hey... wait. [mcname], please."
+
+    kyle "Don't do this... let's just get drinks. Just the two of us."
+
+    na "{i}{color=#808080}{size=-6}{cps=10}*Narrator gasps*{/cps}{/size}{/color}{/i}"
+
+    menu:
+        "Sounds good to me!":
+            jump s34
+        "No thanks, I'm going with Isamu":
+            jump s37
+
+label s33:
+    # not real
+
+label s34:
+
+    mc "Ah, okay! Sounds good to me."
+
+    na "Akimitsu lets out a deep breath as Isamu silently slips away into the crowd."
+
+    kyle "Whew... I thought you were going to ditch me for a second."
+
+    kyle "Wanna go find that open apple juice bar again?"
+
+    na "After finding the bar and getting your apple juice, the two of you begin to reminisce."
+
+    na "You think about the dojo and your childhood."
+
+    na "How Akimitsu has always been there for you, even writing letters to you after you moved away."
+
+    na "He hasn't changed a bit has he? It's almost like this whole time he's been waiting for you..."
+
+    kyle "Hey… it's getting a little stuffy in here. Wanna go somewhere else?"
+
+    jump s40
+
+label s35:
+
+    mc "Sure!"
+
+    kyle "What?? Wait... what?!?!"
+
+    sophia "Heh. Let's go then."
+
+    jump s38
+
+label s36:
+
+    mc "I'm good. I was planning to spend time with Akimitsu tonight."
+
+    na "Isamu glares coldly at you both."
+
+    sophia "Hmph."
+
+    kyle "I actually... was also thinking of getting drinks with you, [mcname]."
+
+    menu:
+        "Sounds good to me!":
+            jump s34
+
+label s37:
+
+    mc "Sorry~ I've already got plans."
+
+    mc "I'll see you later Akimitsu!"
+
+    kyle "But..."
+
+    kyle "Actually, fine. Do what you want. I don't care."
+
+    na "Akimitsu storms off. His hot fury combined with his blazing looks briefly set another guest on fire, but the flames are doused quickly with some apple juice."
+
+    sophia "Heh. Let's drink something ourselves too."
+
+    menu:
+        "Go get drinks with Isamu":
+            jump s38
+        "Actually... no thanks":
+            jump s39
+
+label s38:
+
+    na "As you and Isamu start to go towards the bar you hear a brief shattering sound."
+
+    # Shattering noise
+
+    mc "Ah. I think Akimitsu may have accidentally kicked the door down."
+
+    mc "That's a bad habit of his. He tends to do it when he leaves houses."
+
+    sophia "Don't we all?"
+
+    mc "Hey! Bartender! Get me your most appley apple juice."
+
+    beckham "Of course."
+
+    na "After hours of discussing fighting techniques and the best way to throw someone out a window, you run out of apple juice."
+
+    beckham "I'm sorry, we don't have any more apples to juice. It's a true tragedy for which I am very sorry Takao-sama."
+
+    sophia "Eh, whatever. Hey, [mcname], wanna take break outside? It stinks of granny apples here anyway."
+
+    mc "Sure."
+
+    # not done
+
+label s39:
+
+label s40:
+
+label s41:
+ 
+label s42:
+ 
+label s43:
+
+    na "You sit down in front of your television to watch anime."
+
+    na "For some strange reason you feel empty and alone, like there is a dark hole in your heart."
+
+    na "Maybe it's because Fanana Bish is on? You change the channel."
+
+    mc "Ahh... that's better. Now I can go on with my day and never have to worry about romance agai- {i}{color=#808080}{size=-6}{cps=10}*yawns*{/cps}{/size}{/color}{/i}"
+
+    mc "Suddenly... {color=#808080}I feel... {cps=15}{size=-6}very... {size=-8}{cps=5}sleepy.{/cps}"
+
+    na "In the corner of your eye you see a tiny magic wand waving at you from behind the couch. Is that..."
+
+    if ririActive
+ 
+label s44:
+ 
+label s45:
+ 
+label s46:
+ 
+label s47:
+ 
+label s48:
+ 
+label s49:
+ 
+label s50:
+ 
+label s51:
+ 
+label s52:
+ 
+label s53:
+ 
+label s54:
+ 
+label s55:
+ 
+label s56:
+ 
+label s57:
+ 
+label s58:
+ 
+label s59:
+ 
+label s60:
+ 
+label s61:
+ 
+label s62:
+ 
+label s63:
+ 
+label s64:
+ 
+label s65:
+ 
+label s66:
+ 
+label s67:
+ 
+label s68:
+ 
+label s69:
+ 
+label s70:
+ 
+label s71:
+ 
+label s72:
+ 
+label s73:
+ 
+label s74:
+ 
+label s75:
+ 
+label s76:
+ 
+label s77:
+
+
+
+        
 
         
 
