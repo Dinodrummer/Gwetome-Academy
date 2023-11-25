@@ -20,51 +20,6 @@ image mom normal:
 image mom angry:
     "images/zeil normal.png"
     zoom 0.8
-
-image joe normal:
-    "images/zeil normal.png"
-    zoom 0.8
-image joe angry:
-    "images/zeil normal.png"
-    zoom 0.8
-
-image kyle normal:
-    "images/zeil normal.png"
-    zoom 0.8
-image kyle angry:
-    "images/zeil normal.png"
-    zoom 0.8
-
-image maryam normal:
-    "images/zeil normal.png"
-    zoom 0.8
-image maryam angry:
-    "images/zeil normal.png"
-    zoom 0.8
-
-image jt normal:
-    "images/zeil normal.png"
-    zoom 0.8
-image jt angry:
-    "images/zeil normal.png"
-    zoom 0.8
-
-image sophia normal:
-    "images/zeil normal.png"
-    zoom 0.8
-image sophia angry:
-    "images/zeil normal.png"
-    zoom 0.8
-
-image beckham normal:
-    "images/zeil normal.png"
-    zoom 0.8
-image beckham angry: #Probably don't need
-    "images/zeil normal.png"
-    zoom 0.8
-image zev normal:
-    "images/zeil normal.png"
-    zoom 0.8
 #--------------
 image mi1:
     "images/zeil normal.png"
@@ -117,25 +72,50 @@ define d1 = Character("Deliquent 1")
 define d2 = Character("Deliquent 2")
 define d3 = Character("Deliquent 3")
 
-python:
-    ririActive = False
-    riris = []
-    for i in calledrange(100):
-        riris.append(False)
-        print(riris[i])
-
 
 init python:
-    
+    ririActive = False
+    riris = []
+    for i in range(100):
+        riris.append(False)
+
     char_left = Position(xpos=0.18, ypos=0.75)
-    preferences.text_cps = 25
     basketballSong = "bgm_basketball.mp3"
     sfxBell = "sfx_bell.mp3"
     bgSong = "bgm_skipABeat.mp3"
     config.auto_voice = "voice/{id}.mp3"
     mcname = "..."
 
-    
+    import game.images.Backgrounds.backgrounds as bg
+
+    import game.images.Beckham.Agent.emotions as BAgent
+    import game.images.Beckham.Bartender.emotions as BBartender
+    import game.images.Beckham.Fan.emotions as BFan
+    import game.images.Beckham.Lifeguard.emotions as BLifeguard
+    import game.images.Beckham.Starbucks.emotions as BStarbucks
+    import game.images.Beckham.Uniform.emotions as BUniform
+    import game.images.Beckham.Yogurt.emotions as BYogurt
+
+    import game.images.Gwyn.Pajamas.emotions as GPajamas
+    import game.images.Gwyn.Party.emotions as GParty
+    import game.images.Gwyn.Suit.emotions as GSuit
+    import game.images.Gwyn.Uniform.emotions as GUniform
+
+    import game.images.Joe.Suit.emotions as JSuit
+    import game.images.Joe.Uniform.emotions as JUniform
+
+    import game.images.JT.Uniform.emotions as JTUniform
+
+    import game.images.Kyle.Jersey.emotions as KJersey
+    import game.images.Kyle.Party.emotions as KParty
+    import game.images.Kyle.Uniform.emotions as KUniform
+
+    import game.images.Maryam.Uniform.emotions as MUniform
+
+    import game.images.Riri.Witch.emotions as Riri
+
+    import game.images.Sophia.Party.emotions as SParty
+    import game.images.Sophia.Uniform.emotions as SUniform
 
 # --------------------------------------------------------
 label pro:
@@ -196,23 +176,23 @@ label p:
 label riri:
     if riris[10]:
 
-        riri "Yay! You did it! I'm so proud of you Naninani. Okay... let's see your options..."#Joe18
+        riri "Yay! You did it! I'm so proud of you Naninani. Okay... let's see your options..."
 
         riri "Your teacher is really mad right now. If you went to class you'd definitely receive that anger."#Joe19
 
-        riri "But... if you skip class you could find yourself in a battle for your very fate."#Joe20
+        riri "But... if you skip class you could find yourself in a battle for your very fate."
 
-        riri "Ooooh spicy. You know which one I would choose. {i}Wink. Wink.{/i}"#Joe21
+        riri "Ooooh spicy. You know which one I would choose. {i}Wink. Wink.{/i}"
 
         $ riris[10] = False
     if riris[11]:
 
-        riri "Hehehehe..."#Joe22
+        riri "Hehehehe..."
 
         $ riris[11] = False
     if riris[14]:
 
-        riri "Follow your gut, Naninani!"#Joe23
+        riri "Follow your gut, Naninani!"
 
         $ riris[14] = False
     if riris[15]:
@@ -1014,6 +994,34 @@ label s75:
 label s76:
  
 label s77:
+
+label ending0:
+
+label ending1:
+    
+label ending2:
+
+label ending3:
+
+label ending4:
+    
+label ending5:
+
+label ending6:
+
+label ending7:
+
+label ending8:
+
+label ending9:
+
+label ending10:
+    
+label ending11:
+
+label ending12:
+
+
 
 
 
