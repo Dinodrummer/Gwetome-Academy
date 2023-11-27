@@ -995,31 +995,31 @@ label s76:
  
 label s77:
 
-label ending0:
+label e0:
 
-label ending1:
+label e1:
     
-label ending2:
+label e2:
 
-label ending3:
+label e3:
 
-label ending4:
+label e4:
     
-label ending5:
+label e5:
 
-label ending6:
+label e6:
 
-label ending7:
+label e7:
 
-label ending8:
+label e8:
 
-label ending9:
+label e9:
 
-label ending10:
+label e10:
     
-label ending11:
+label e11:
 
-label ending12:
+label e12:
 
 
 
