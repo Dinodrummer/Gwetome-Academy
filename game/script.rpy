@@ -404,7 +404,7 @@ label s6:
 
     mc "I'm gonna be late!"#Gwyn17
 
-    na "It isn't long before you find yourself turning a sharp corner… with toast... hmm..."#JT26
+    na "It isn't long before you find yourself turning a sharp corner... with toast... hmm..."#JT26
 
     mc "Ah! It hurts!"#Gwyn18
 
@@ -413,7 +413,7 @@ label s6:
 
     mc "Is no one... here?"#Gwyn20
 
-    na "Wow, you must be really off your game today *name*. You look around yourself, stunned… this has never happened before."#JT27
+    na "Wow, you must be really off your game today *name*. You look around yourself, stunned... this has never happened before."#JT27
 
     na "How could you not bump into a hot ikemen while turning a corner with toast in your mouth?!?! Maybe you should try again."#JT28
 
@@ -421,7 +421,7 @@ label s6:
 
     joe "Kyaa~! I'm gonna be late!"#Joe9
 
-    na "Ah, there it is. You look up and see a hot… pole? No wait! You shake your head to clear your vision."#JT30
+    na "Ah, there it is. You look up and see a hot... pole? No wait! You shake your head to clear your vision."#JT30
 
     joe "Sorry, are you ok? I don't know what came over me. I just felt a sudden need to run around that corner."#Joe10
 
@@ -439,7 +439,7 @@ label s7:
 
     na "Heh... school. Who needs it? You're about to discover the answer to the greatest mystery yet: who is Naninani Nantoka?!"#JT33
 
-    na "You rustle back under your blankets, close your eyes, and start to dream again… but this time you are not at school."#JT34
+    na "You rustle back under your blankets, close your eyes, and start to dream again... but this time you are not at school."#JT34
 
     na "You are floating through an endless void. You can't move. You can't breathe. All is silent."#JT35
 
@@ -523,7 +523,7 @@ label s13:
 
     na "They seem to be staring you down."
 
-    na "Oh wait, now they're blinking at you. Or are they winking… with both eyes? Is that morse code?"
+    na "Oh wait, now they're blinking at you. Or are they winking... with both eyes? Is that morse code?"
 
     na "Suddenly you hear the whispers of two delinquents a desk over."
 
@@ -554,7 +554,71 @@ label s13:
             jump s16
 
 label s14:
-    # not real
+
+    na "You agree to go and watch Akimitsu's basketball game after school."
+
+    na "How could you not? You've known Akimitsu since you were tiny and basketball has always been really important to him."
+
+    na "Maybe one day you'll be important to him too."
+
+    na "After a short walk out of school the two of you arrive at a small run-down gym."
+
+    mc "The final is... here?"
+
+    kyle "Yeah! It's just a small local tournament. Nothing to get too excited about."
+
+    mc "Oh, got it."
+
+    na "The two of you slowly open the door to the gym."
+
+    na "Immediately you are blinded by colorful spotlights and music blasts throughout a ginormous stadium."
+
+    na "The stands are packed with cheering onlookers, their voices roaring like thunder."
+
+    na "There must be hundreds, no-- thousands of people here!"
+
+    na "A basketball court stands in the center."
+
+    mc "Is this... THE B. LEAGUE FINALS?"
+
+    kyle "Mhm! That's why I didn't want to miss it."
+
+    kyle "Why don't you grab a seat? I need to get warmed up."
+
+    mc "Uhuh..."
+
+    na "Your heart races. Sometimes Akimitsu is a little too humble."
+
+    na "You grab a seat and the game begins. You don't even know what's going on because you keep staring at the Akimitsu fan section."
+
+    beckham "YAAAAAAY AKIMITSU!"
+
+    na "Impressive."
+
+    na "Soon after, Akimitsu scores a touchdown which is {i}even more{/i} impressive because he's playing basketball."
+
+    na "He glances your way and flashes a coy smile."
+
+    beckham "KYAAAAAAAAAA~ AKIMITSUUUU!!"
+
+    na "Maybe you should move away from the fan section."
+
+    na "The game goes by quickly and Akimitsu's team wins by a landslide."
+
+    na "You feel a sense of pride, but also distance."
+
+    na "The boy you grew up with is a basketball star, and you're just... well... [mcname]."
+
+    na "Suddenly a voice from the loudspeakers snaps you out of your thoughts."
+
+    #In speakers
+    kyle "In honor of this victory, I would like to sing a song. It's dedicated to my favorite person in the world, [mcname]. I love you. {i}{color=#808080}{size=-6}{cps=10}*ahem*{/cps}{/size}{/color}{/i}"
+    
+    #kyle song
+
+    jump e12
+
+
 
 label s15:
 
@@ -641,7 +705,7 @@ label s26:
 
     kyle "What were you thinking about before I interrupted you?"
 
-    mc "Nothing much… just this party..."
+    mc "Nothing much... just this party..."
 
     na "You take out the handkerchief and note and show Akimitsu."
 
@@ -734,6 +798,10 @@ label s28:
 
 label s29:
 
+    mc "Actually, hanging out sounds fun."
+
+    na "Akimitsu flashes a smile."
+
 label s30:
 
     mc "The party's good.{nw}"
@@ -821,7 +889,7 @@ label s34:
 
     na "He hasn't changed a bit has he? It's almost like this whole time he's been waiting for you..."
 
-    kyle "Hey… it's getting a little stuffy in here. Wanna go somewhere else?"
+    kyle "Hey... it's getting a little stuffy in here. Wanna go somewhere else?"
 
     jump s40
 
@@ -1019,8 +1087,9 @@ label e10:
     
 label e11:
 
-label e12:
+label e12: #Love in the Basket
 
+label e13:
 
 
 
