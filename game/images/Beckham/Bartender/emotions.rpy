@@ -1,9 +1,9 @@
-image normal:
+image beckham bartender normal:
     "images/Beckham/Bartender/ph.png"
     zoom 0.8
-image angry:
+image beckham bartender angry:
     "images/Beckham/Bartender/ph.png"
     zoom 0.8
-image sad:
+image beckham bartender sad:
     "images/Beckham/Bartender/ph.png"
     zoom 0.8

@@ -1,42 +1,42 @@
-image normal:
+image riri normal:
     "images/Riri/Witch/ph.png"
     zoom 0.8
-image ecstatic:
+image riri ecstatic:
     "images/Riri/Witch/ph.png"
     zoom 0.8
-image concerned:
+image riri concerned:
     "images/Riri/Witch/ph.png"
     zoom 0.8
-image angry:
+image riri angry:
     "images/Riri/Witch/ph.png"
     zoom 0.8
-image embarrassed:
+image riri embarrassed:
     "images/Riri/Witch/ph.png"
     zoom 0.8
-image flirty:
+image riri flirty:
     "images/Riri/Witch/ph.png"
     zoom 0.8
-image scared:
+image riri scared:
     "images/Riri/Witch/ph.png"
     zoom 0.8
-image surprised:
+image riri surprised:
     "images/Riri/Witch/ph.png"
     zoom 0.8
-image uncomfortable:
+image riri uncomfortable:
     "images/Riri/Witch/ph.png"
     zoom 0.8
-image confused:
+image riri confused:
     "images/Riri/Witch/ph.png"
     zoom 0.8
-image shy:
+image riri shy:
     "images/Riri/Witch/ph.png"
     zoom 0.8
-image annoyed:
+image riri annoyed:
     "images/Riri/Witch/ph.png"
     zoom 0.8
-image sad:
+image riri sad:
     "images/Riri/Witch/ph.png"
     zoom 0.8
-image thinking:
+image riri thinking:
     "images/Riri/Witch/ph.png"
     zoom 0.8

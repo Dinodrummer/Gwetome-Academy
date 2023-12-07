@@ -1,39 +1,39 @@
-image normal:
+image joe uniform normal:
     "images/Joe/Uniform/ph.png"
     zoom 0.8
-image ecstatic:
+image joe uniform ecstatic:
     "images/Joe/Uniform/ph.png"
     zoom 0.8
-image concerned:
+image joe uniform concerned:
     "images/Joe/Uniform/ph.png"
     zoom 0.8
-image angry:
+image joe uniform angry:
     "images/Joe/Uniform/ph.png"
     zoom 0.8
-image embarrassed:
+image joe uniform embarrassed:
     "images/Joe/Uniform/ph.png"
     zoom 0.8
-image flirty:
+image joe uniform flirty:
     "images/Joe/Uniform/ph.png"
     zoom 0.8
-image scared:
+image joe uniform scared:
     "images/Joe/Uniform/ph.png"
     zoom 0.8
-image surprised:
+image joe uniform surprised:
     "images/Joe/Uniform/ph.png"
     zoom 0.8
-image uncomfortable:
+image joe uniform uncomfortable:
     "images/Joe/Uniform/ph.png"
     zoom 0.8
-image confused:
+image joe uniform confused:
     "images/Joe/Uniform/ph.png"
     zoom 0.8
-image shy:
+image joe uniform shy:
     "images/Joe/Uniform/ph.png"
     zoom 0.8
-image annoyed:
+image joe uniform annoyed:
     "images/Joe/Uniform/ph.png"
     zoom 0.8
-image sad:
+image joe uniform sad:
     "images/Joe/Uniform/ph.png"
     zoom 0.8

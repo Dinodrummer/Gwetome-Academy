@@ -1,39 +1,39 @@
-image normal:
+image kyle party normal:
     "images/Kyle/Party/ph.png"
     zoom 0.8
-image ecstatic:
+image kyle party ecstatic:
     "images/Kyle/Party/ph.png"
     zoom 0.8
-image concerned:
+image kyle party concerned:
     "images/Kyle/Party/ph.png"
     zoom 0.8
-image angry:
+image kyle party angry:
     "images/Kyle/Party/ph.png"
     zoom 0.8
-image embarrassed:
+image kyle party embarrassed:
     "images/Kyle/Party/ph.png"
     zoom 0.8
-image flirty:
+image kyle party flirty:
     "images/Kyle/Party/ph.png"
     zoom 0.8
-image scared:
+image kyle party scared:
     "images/Kyle/Party/ph.png"
     zoom 0.8
-image surprised:
+image kyle party surprised:
     "images/Kyle/Party/ph.png"
     zoom 0.8
-image uncomfortable:
+image kyle party uncomfortable:
     "images/Kyle/Party/ph.png"
     zoom 0.8
-image confused:
+image kyle party confused:
     "images/Kyle/Party/ph.png"
     zoom 0.8
-image shy:
+image kyle party shy:
     "images/Kyle/Party/ph.png"
     zoom 0.8
-image annoyed:
+image kyle party annoyed:
     "images/Kyle/Party/ph.png"
     zoom 0.8
-image sad:
+image kyle party sad:
     "images/Kyle/Party/ph.png"
     zoom 0.8

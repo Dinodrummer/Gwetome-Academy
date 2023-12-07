@@ -1,39 +1,39 @@
-image normal:
+image sophia uniform normal:
     "images/Sophia/Uniform/ph.png"
     zoom 0.8
-image ecstatic:
+image sophia uniform ecstatic:
     "images/Sophia/Uniform/ph.png"
     zoom 0.8
-image concerned:
+image sophia uniform concerned:
     "images/Sophia/Uniform/ph.png"
     zoom 0.8
-image angry:
+image sophia uniform angry:
     "images/Sophia/Uniform/ph.png"
     zoom 0.8
-image embarrassed:
+image sophia uniform embarrassed:
     "images/Sophia/Uniform/ph.png"
     zoom 0.8
-image flirty:
+image sophia uniform flirty:
     "images/Sophia/Uniform/ph.png"
     zoom 0.8
-image scared:
+image sophia uniform scared:
     "images/Sophia/Uniform/ph.png"
     zoom 0.8
-image surprised:
+image sophia uniform surprised:
     "images/Sophia/Uniform/ph.png"
     zoom 0.8
-image uncomfortable:
+image sophia uniform uncomfortable:
     "images/Sophia/Uniform/ph.png"
     zoom 0.8
-image confused:
+image sophia uniform confused:
     "images/Sophia/Uniform/ph.png"
     zoom 0.8
-image shy:
+image sophia uniform shy:
     "images/Sophia/Uniform/ph.png"
     zoom 0.8
-image annoyed:
+image sophia uniform annoyed:
     "images/Sophia/Uniform/ph.png"
     zoom 0.8
-image sad:
+image sophia uniform sad:
     "images/Sophia/Uniform/ph.png"
     zoom 0.8

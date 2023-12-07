@@ -1,24 +1,24 @@
-image normal:
+image beckham lifeguard normal:
     "images/Beckham/Lifeguard/ph.png"
     zoom 0.8
-image ecstatic:
+image beckham lifeguard ecstatic:
     "images/Beckham/Lifeguard/ph.png"
     zoom 0.8
-image angry:
+image beckham lifeguard angry:
     "images/Beckham/Lifeguard/ph.png"
     zoom 0.8
-image embarrassed:
+image beckham lifeguard embarrassed:
     "images/Beckham/Lifeguard/ph.png"
     zoom 0.8
-image flirty:
+image beckham lifeguard flirty:
     "images/Beckham/Lifeguard/ph.png"
     zoom 0.8
-image scared:
+image beckham lifeguard scared:
     "images/Beckham/Lifeguard/ph.png"
     zoom 0.8
-image confused:
+image beckham lifeguard confused:
     "images/Beckham/Lifeguard/ph.png"
     zoom 0.8
-image sad:
+image beckham lifeguard sad:
     "images/Beckham/Lifeguard/ph.png"
     zoom 0.8

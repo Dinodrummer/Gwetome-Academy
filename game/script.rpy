@@ -3,78 +3,53 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-
-
 image vid = Movie(play="audio/5-6.webm", size=(1920,1080),loop=False, xalign=0.10, yalign=0.10)
 #--------------
 image zeil normal:
     "images/zeil normal.png"
     zoom 0.8
-image gym:
-    "images/bg gym.jpg"
-    zoom 1.5
-#--------------
-image mom normal:
-    "images/zeil normal.png"
-    zoom 0.8
-image mom angry:
-    "images/zeil normal.png"
-    zoom 0.8
-#--------------
-image mi1:
-    "images/zeil normal.png"
-    zoom 0.8
-image mi2:
-    "images/zeil normal.png"
-    zoom 0.8
-image pp:
-    "images/zeil normal.png"
-    zoom 0.8
-image takeshi:
-    "images/zeil normal.png"
-    zoom 0.8
-image dr:
-    "images/zeil normal.png"
-    zoom 0.8
-#--------------
-image riri:
-    "images/zeil normal.png"
-    zoom 0.8
-image mv:
-    "images/zeil normal.png"
-    zoom 0.8
 # --------------------------------------------------------
+init:
+    define mc = Character("[mcname]", color = "#43BC47")
+    define na = Character("")
+    define mom = Character("Mom")
+    define sensei = Character("先生 (Sensei)")
+    define joe = Character("ジョ~")
+    define kyle = Character("千葉、昭光 (Chiba, Akimitsu)")
+    define jt = Character("柳井、富 (Yanai, Yutaka)")
+    define sophia = Character("高尾、勇 (Takao, Isamu)")
+    define maryam = Character("木山、遥花 (Kiyama, Haruka)")
+    define beckham = Character("マリオ")
+    define zev = Character("ゼブ")
 
+    define mi1 = Character("Magical Ikemen 1")
+    define mi2 = Character("Meowgical Ikemen 2")
+    define pp = Character("PyunPyun")
+    define takeshi = Character("Takeshi")
+    define dr = Character("Dr.")
 
+    define riri = Character("リリ")
+    define mv = Character("{i}Mysterious Voice")
 
-define mc = Character("[mcname]", color = "#43BC47")
-define na = Character("")
-define mom = Character("Mom")
-define sensei = Character("先生 (Sensei)")
-define joe = Character("ジョ~")
-define kyle = Character("千葉、昭光 (Chiba, Akimitsu)")
-define jt = Character("柳井、富 (Yanai, Yutaka)")
-define sophia = Character("高尾、勇 (Takao, Isamu)")
-define maryam = Character("木山、遥花 (Kiyama, Haruka)")
-define beckham = Character("マリオ")
-define zev = Character("ゼブ")
+    define d1 = Character("Deliquent 1")
+    define d2 = Character("Deliquent 2")
+    define d3 = Character("Deliquent 3")
 
-define mi1 = Character("Magical Ikemen 1")
-define mi2 = Character("Meowgical Ikemen 2")
-define pp = Character("PyunPyun")
-define takeshi = Character("Takeshi")
-define dr = Character("Dr.")
-
-define riri = Character("リリ")
-define mv = Character("{i}Mysterious Voice")
-
-define d1 = Character("Deliquent 1")
-define d2 = Character("Deliquent 2")
-define d3 = Character("Deliquent 3")
-
-
+    # image beckham agent normal = "/images/Zeil/ph.png"
+    # image beckham agent ecstatic = "/images/Zeil/ph.png"
+    # image beckham bartender normal = "/images/Zeil/ph.png"
+    # image beckham bartender angry = "/images/Zeil/ph.png"
+    # image beckham bartender sad = "/images/Zeil/ph.png"
+    # image beckham fan normal = "/images/Zeil/ph.png"
+    # image beckham fan ecstatic = "/images/Zeil/ph.png"
 init python:
-    ririActive = False
+
+    metJT = False
+    metJoe = False
+    metKyle = False
+    metMaryam = False
+    metSophia = False
+    metRiri = False
     riris = []
     for i in range(100):
         riris.append(False)
@@ -86,37 +61,16 @@ init python:
     config.auto_voice = "voice/{id}.mp3"
     mcname = "..."
 
-    import game.images.Backgrounds.backgrounds as bg
-
-    import game.images.Beckham.Agent.emotions as BAgent
-    import game.images.Beckham.Bartender.emotions as BBartender
-    import game.images.Beckham.Fan.emotions as BFan
-    import game.images.Beckham.Lifeguard.emotions as BLifeguard
-    import game.images.Beckham.Starbucks.emotions as BStarbucks
-    import game.images.Beckham.Uniform.emotions as BUniform
-    import game.images.Beckham.Yogurt.emotions as BYogurt
-
-    import game.images.Gwyn.Pajamas.emotions as GPajamas
-    import game.images.Gwyn.Party.emotions as GParty
-    import game.images.Gwyn.Suit.emotions as GSuit
-    import game.images.Gwyn.Uniform.emotions as GUniform
-
-    import game.images.Joe.Suit.emotions as JSuit
-    import game.images.Joe.Uniform.emotions as JUniform
-
-    import game.images.JT.Uniform.emotions as JTUniform
-
-    import game.images.Kyle.Jersey.emotions as KJersey
-    import game.images.Kyle.Party.emotions as KParty
-    import game.images.Kyle.Uniform.emotions as KUniform
-
-    import game.images.Maryam.Uniform.emotions as MUniform
-
-    import game.images.Riri.Witch.emotions as Riri
-
-    import game.images.Sophia.Party.emotions as SParty
-    import game.images.Sophia.Uniform.emotions as SUniform
-
+    from game.images.Gwyn import *
+    from game.images.Extras import *
+    from game.images.Riri import *
+    from game.images.Beckham import *
+    from game.images.Joe import *
+    from game.images.Jt import *
+    from game.images.Kyle import *
+    from game.images.Maryam import *
+    from game.images.Sophia import *
+    from game.images.Backgrounds import *
 # --------------------------------------------------------
 label pro:
     pause 0.2
@@ -230,9 +184,10 @@ label riri:
 # s1 = start
 # voice voice.mp3
 label start:
-
+    show beckham agent ecstatic
     $ mcname = renpy.input("What is your name?")
     $ mcname = mcname.strip()
+    $ mcname = mcname[0:13]
 
     if mcname == "":
         $ mcname = "Naninani Nantoka"
@@ -453,11 +408,49 @@ label s7:
 
     na "Weeping, you succumb to the darkness of sleep once more."#JT39
 
-    jump ending0 #Eternal Power Nap
+    jump e0 #Eternal Power Nap
 
 label s8:
 
+    na "You keep walking to school alone and eventually end up at the front of the school."
+
+    na "You notice a poster near the entrance, offering students to join the Student Council"
+
+    na "Hmmm... It'd look pretty good on college applications. How hard could it be?"
+
+    menu:
+        "Go to class":
+            jump s51
+        "Sign up and go to the Student Council room":
+            jump s52
+
 label s9:
+
+    na "His looks are too much to resist... you must talk to him now that you have the chance and time."
+
+    na "Looks like being responsible pays off."
+
+    mc "Oh.. kay, sorry! I didn't see you there."
+
+    joe "Really? I'm quite hard to miss, you know..."
+    
+    mc "Is that so? Anyways, what is your name?"
+
+    joe "Oh right! The name's Joe-kun, but you can just call me Joe."
+
+    na "Is that even a name?"
+
+    mc "Well, nice to meet you! My name is [mcname]"
+
+    joe "Wow, what a cool name! I'm jealous."
+
+    joe "I'm just an average Joe, you know? Hahaha!"
+
+    na "Seriously, laughing at your own jokes? This guy..."
+
+    mc "Ha... well, which way are you heading?"
+
+    joe "Oh, I've got class this way. It was nice talking to you, see you around!"
 
 label s10:
 
@@ -467,7 +460,7 @@ label s10:
 
     na "Now [mcname]...  you have two options..."
 
-    if ririActive:
+    if metRiri:
         
         riri "What's this?! Two options of potential love and beauty?!?!"
 
@@ -485,7 +478,7 @@ label s10:
 
         riri "Hehe... hehehehehe..."
 
-        $ ririActive = True
+        $ metRiri = True
         call riri
 
     menu:
@@ -507,11 +500,15 @@ label s11:
     sensei "Detention!"
 
     
-    if ririActive:
+    if metRiri:
         $ riris[11] = True
         call riri
 
 label s12:
+
+    na "Yea, who needs school anyways? If they really wanted you to be there, they'd make the start of school later than 8:30 AM."
+
+    jump s18
 
 label s13:
 
@@ -543,7 +540,7 @@ label s13:
 
     na "You should totally cause a scene and show them your physical prowess."
 
-    if ririActive:
+    if metRiri:
         $ riris[13] = True
         call riri
     
@@ -653,7 +650,7 @@ label s15:
 
     na "Despite “The Panther”'s horrible grammar, your heart skips a beat. Are they asking you... on a date?"
 
-    if ririActive:
+    if metRiri:
         $ riris[15] = True
         call riri
 
@@ -665,9 +662,80 @@ label s15:
 
 label s16:
 
+    na "What a waste, they even blinked at you!"
+
+    na "Well, anyways... You decide to wait out detention. Maybe it was a bad idea to interact anyways."
+
+    # After school
+
+    na "Man, it was your first day and you got {i}detention{/i}. Honestly, I'm impressed."
+
+    # Stomach rumbles and screen shakes
+
+    na "Whoa! What was that?! It felt like an earthqua-{nw}"
+
+    na "...Oh. It was you? Wow, you must be hungry."
+
+    na "You happen to spot a Hoshibucks©. It'll be a pretty penny, but a Caramel Ribbon Crunch Frappe sounds pretty good right about now."
+
+    jump s24
+
+
 label s17:
 
 label s18:
+
+    na "As you're wandering the halls, you notice a student walking your way. He seems to be dressed very nicely, even for the prestigious Gwetome Academy."
+
+    na "Wait, that's the student council president! You're in trouble if he finds you out here."
+
+    menu:
+        "Hide behind a corner!":
+            jump sub1
+        "Pshh, what is he gonna do?":
+            jump sub2
+    label s18_1:
+
+        na "As you tip-toe over to the corner of the hallway, you accidentally step on a very conveniently placed stick."
+
+        jt "How'd a stick get in here?"
+
+        na "Busted..."
+
+    label s18_2:
+
+        na "You stand confidently in the center of the hallway as he walks towards you."
+
+        
+
+    label s18_3:
+
+        $ metYutaka = True
+
+        jt "What's a pretty looking girl such as yourself doing around these parts?"
+
+        jt "Wait, what's a student doing in the halls? ...I'm terribly sorry, but you're gonna have to go back to class."
+
+        mc "Nonono, I just--{nw}"
+
+        jt "--Needed to go to the bathroom and got lost in the halls, I've been there."
+
+        jt "Well, you're not going anywhere without a hall pass. How about we bring you back to class to get one?"
+
+        menu:
+            "Sure, I should probably head back":
+                jump s21
+            "This guy deserves a punch!":
+                jump s18_4
+    label s18_4:
+
+        na "As you start to turn around to walk back to class, you swiftly turn back and drive your fist into the student's face. Nice."
+
+        na "Uh oh, he got back up? Looks like it's time for a fight!"
+
+
+
+
 
 label s19:
 
@@ -721,7 +789,7 @@ label s26:
 
     kyle "Please, let me go with you. Or better yet, don't go at all and we can just hang out."
 
-    if ririActive:
+    if metRiri:
         $ riris[26] = True
         call riri
 
@@ -751,7 +819,7 @@ label s27:
 
     na "You walk through the halls with shame. When you get home you can only find comfort in the soft light of your television."
 
-    if ririActive:
+    if metRiri:
         $ riris[27] = True
         call riri
 
@@ -784,7 +852,7 @@ label s28:
 
     na "So, you must do what any reasonable person would do: ignore one of them."
 
-    if ririActive:
+    if metRiri:
         $ riris[28] = True
         call riri
     
@@ -842,7 +910,7 @@ label s31:
 
     na "Then you go home."
 
-    if ririActive:
+    if metRiri:
         $ riris[27] = True
         call riri
 
@@ -985,7 +1053,7 @@ label s43:
 
     na "In the corner of your eye you see a tiny magic wand waving at you from behind the couch. Is that..."
 
-    if ririActive:
+    if metRiri:
         $ riris[43] = True
         call riri
     

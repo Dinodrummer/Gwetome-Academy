@@ -1,9 +1,9 @@
-image normal:
+image beckham yogurt normal:
     "images/Beckham/Yogurt/ph.png"
     zoom 0.8
-image angry:
+image beckham yogurt angry:
     "images/Beckham/Yogurt/ph.png"
     zoom 0.8
-image sad:
+image beckham yogurt sad:
     "images/Beckham/Yogurt/ph.png"
     zoom 0.8

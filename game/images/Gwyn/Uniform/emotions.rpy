@@ -1,39 +1,39 @@
-image normal:
+image gwyn uniform normal:
     "images/Gwyn/Uniform/ph.png"
     zoom 0.8
-image ecstatic:
+image gwyn uniform ecstatic:
     "images/Gwyn/Uniform/ph.png"
     zoom 0.8
-image concerned:
+image gwyn uniform concerned:
     "images/Gwyn/Uniform/ph.png"
     zoom 0.8
-image angry:
+image gwyn uniform angry:
     "images/Gwyn/Uniform/ph.png"
     zoom 0.8
-image embarrassed:
+image gwyn uniform embarrassed:
     "images/Gwyn/Uniform/ph.png"
     zoom 0.8
-image flirty:
+image gwyn uniform flirty:
     "images/Gwyn/Uniform/ph.png"
     zoom 0.8
-image scared:
+image gwyn uniform scared:
     "images/Gwyn/Uniform/ph.png"
     zoom 0.8
-image surprised:
+image gwyn uniform surprised:
     "images/Gwyn/Uniform/ph.png"
     zoom 0.8
-image uncomfortable:
+image gwyn uniform uncomfortable:
     "images/Gwyn/Uniform/ph.png"
     zoom 0.8
-image confused:
+image gwyn uniform confused:
     "images/Gwyn/Uniform/ph.png"
     zoom 0.8
-image shy:
+image gwyn uniform shy:
     "images/Gwyn/Uniform/ph.png"
     zoom 0.8
-image annoyed:
+image gwyn uniform annoyed:
     "images/Gwyn/Uniform/ph.png"
     zoom 0.8
-image sad:
+image gwyn uniform sad:
     "images/Gwyn/Uniform/ph.png"
     zoom 0.8

@@ -1,24 +1,24 @@
-image normal:
+image beckham uniform normal:
     "images/Beckham/Uniform/ph.png"
     zoom 0.8
-image ecstatic:
+image beckham uniform ecstatic:
     "images/Beckham/Uniform/ph.png"
     zoom 0.8
-image angry:
+image beckham uniform angry:
     "images/Beckham/Uniform/ph.png"
     zoom 0.8
-image embarrassed:
+image beckham uniform embarrassed:
     "images/Beckham/Uniform/ph.png"
     zoom 0.8
-image flirty:
+image beckham uniform flirty:
     "images/Beckham/Uniform/ph.png"
     zoom 0.8
-image scared:
+image beckham uniform scared:
     "images/Beckham/Uniform/ph.png"
     zoom 0.8
-image confused:
+image beckham uniform confused:
     "images/Beckham/Uniform/ph.png"
     zoom 0.8
-image sad:
+image beckham uniform sad:
     "images/Beckham/Uniform/ph.png"
     zoom 0.8

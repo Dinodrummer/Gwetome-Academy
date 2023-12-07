@@ -1,39 +1,39 @@
-image normal:
+image gwyn party normal:
     "images/Gwyn/Party/ph.png"
     zoom 0.8
-image ecstatic:
+image gwyn party ecstatic:
     "images/Gwyn/Party/ph.png"
     zoom 0.8
-image concerned:
+image gwyn party concerned:
     "images/Gwyn/Party/ph.png"
     zoom 0.8
-image angry:
+image gwyn party angry:
     "images/Gwyn/Party/ph.png"
     zoom 0.8
-image embarrassed:
+image gwyn party embarrassed:
     "images/Gwyn/Party/ph.png"
     zoom 0.8
-image flirty:
+image gwyn party flirty:
     "images/Gwyn/Party/ph.png"
     zoom 0.8
-image scared:
+image gwyn party scared:
     "images/Gwyn/Party/ph.png"
     zoom 0.8
-image surprised:
+image gwyn party surprised:
     "images/Gwyn/Party/ph.png"
     zoom 0.8
-image uncomfortable:
+image gwyn party uncomfortable:
     "images/Gwyn/Party/ph.png"
     zoom 0.8
-image confused:
+image gwyn party confused:
     "images/Gwyn/Party/ph.png"
     zoom 0.8
-image shy:
+image gwyn party shy:
     "images/Gwyn/Party/ph.png"
     zoom 0.8
-image annoyed:
+image gwyn party annoyed:
     "images/Gwyn/Party/ph.png"
     zoom 0.8
-image sad:
+image gwyn party sad:
     "images/Gwyn/Party/ph.png"
     zoom 0.8

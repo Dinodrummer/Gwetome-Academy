@@ -1,2 +1,4 @@
-Make ending0
 Figure out how to make riri go in the corner to click on
+
+----------------------- Finished --------------------------
+Name cap (13 char)
