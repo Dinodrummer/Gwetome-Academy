@@ -14,13 +14,13 @@ init:
     define na = Character("")
     define mom = Character("Mom")
     define sensei = Character("先生 (Sensei)")
-    define joe = Character("ジョ~")
-    define kyle = Character("千葉、昭光 (Chiba, Akimitsu)")
-    define jt = Character("柳井、富 (Yanai, Yutaka)")
-    define sophia = Character("高尾、勇 (Takao, Isamu)")
-    define maryam = Character("木山、遥花 (Kiyama, Haruka)")
     define beckham = Character("マリオ")
-    define zev = Character("ゼブ")
+    define joe = Character("[joename]") # define joe = Character("ジョ~")
+    define kyle = Character("[kylename]") # define kyle = Character("千葉、昭光 (Chiba, Akimitsu)")
+    define jt = Character("[jtname]") # define jt = Character("柳井、富 (Yanai, Yutaka)")
+    define sophia = Character("[sophianame]") # define sophia = Character("高尾、勇 (Takao, Isamu)")
+    define maryam = Character("[maryamname]") # define maryam = Character("木山、遥花 (Kiyama, Haruka)")
+    # define zev = Character("...") # define zev = Character("ゼブ")
 
     define mi1 = Character("Magical Ikemen 1")
     define mi2 = Character("Meowgical Ikemen 2")
@@ -44,12 +44,6 @@ init:
     # image beckham fan ecstatic = "/images/Zeil/ph.png"
 init python:
 
-    metJT = False
-    metJoe = False
-    metKyle = False
-    metMaryam = False
-    metSophia = False
-    metRiri = False
     riris = []
     for i in range(100):
         riris.append(False)
@@ -59,7 +53,15 @@ init python:
     sfxBell = "sfx_bell.mp3"
     bgSong = "bgm_skipABeat.mp3"
     config.auto_voice = "voice/{id}.mp3"
+
+    metRiri = False
+
     mcname = "..."
+    joename = "..."
+    kylename = "..."
+    jtname = "..."
+    sophianame = "..."
+    maryamname = "..."
 
     from game.images.Gwyn import *
     from game.images.Extras import *
@@ -71,6 +73,9 @@ init python:
     from game.images.Maryam import *
     from game.images.Sophia import *
     from game.images.Backgrounds import *
+
+    
+    
 # --------------------------------------------------------
 label pro:
     pause 0.2
@@ -188,6 +193,8 @@ label start:
     $ mcname = renpy.input("What is your name?")
     $ mcname = mcname.strip()
     $ mcname = mcname[0:13]
+    
+    jump s28
 
     if mcname == "":
         $ mcname = "Naninani Nantoka"
@@ -626,6 +633,7 @@ label s15:
     # Sound effects
 
     na "...Takao Isamu swaggers up to your desk."
+    
 
     sophia "Yo."
 
@@ -648,7 +656,7 @@ label s15:
     #Sophia's voice / piece of paper with words on it
     na "{i}You. Me. Rager party. Tonight? Yes? No? Plz yes. :3 Thank you.{color=#808080} - The Panther{/i}{/color}"
 
-    na "Despite “The Panther”'s horrible grammar, your heart skips a beat. Are they asking you... on a date?"
+    na "Despite \"The Panther\"'s horrible grammar, your heart skips a beat. Are they asking you... on a date?"
 
     if metRiri:
         $ riris[15] = True
@@ -676,12 +684,52 @@ label s16:
 
     na "...Oh. It was you? Wow, you must be hungry."
 
-    na "You happen to spot a Hoshibucks©. It'll be a pretty penny, but a Caramel Ribbon Crunch Frappe sounds pretty good right about now."
+    na "You happen to spot a Hoshibucks{size=-12}©{/size}. It'll be a pretty penny, but a Caramel Ribbon Crunch Frappe sounds pretty good right about now."
 
     jump s24
 
 
 label s17:
+
+    na "Yukata scolds you for skipping class."
+
+    na "After some thinking, you decide that this treatment isn't fair in the slightest!"
+
+    na "Maybe you want to skip class? He shouldn't be able to stop you! This is a free country!"
+
+    mc "I refuse! {i}You{/i} shouldn't be able to send me back to class!"
+
+    mc "What are you doing out of class, huh? I'll make {i}you{/i} go back!"
+
+    na "Yukata stares at you for a moment, then a small grin appears on his face."
+
+    jt "Ah, people like you are my favorite!"
+
+    jt "What {i}I{/i} do while at school does not matter to you, understand me? I am the president of the student council!"
+
+    jt "{i}You{/i} have to listen to me, and {i}I{/i} am in charge. That is how it works, and how it always will."
+
+    na "Who does this guy think he is?"
+
+    mc "That's just not fair!"
+
+    jt "Oh, but my dear girl, {i}life{/i} is not fair. I am simply getting you ready for reality."
+
+    na "I want to punch \"reality\" into his face! It would have been better if you chose to fight him."
+
+    jt "Anyways, I like you, so I will let you off easy this time."
+
+    jt "Just detention. Consider yourself lucky."
+
+    mc "Hey!"
+
+    jt "Don't make me angrier now. Welp, See you around!"
+
+    na "Yukata turns and walks away confidently. Man, what a prick!"
+
+    na "You pick up the detention slip that he slid in your pocket and reluctantly read it."
+
+    mc "Right after school? This is the worst! Whatever, I better go..."
 
 label s18:
 
@@ -710,7 +758,7 @@ label s18:
 
     label s18_3:
 
-        $ metYutaka = True
+        #define jt = Character("柳井、富 (Yanai, Yutaka)")
 
         jt "What's a pretty looking girl such as yourself doing around these parts?"
 
@@ -733,21 +781,53 @@ label s18:
 
         na "Uh oh, he got back up? Looks like it's time for a fight!"
 
-
-
-
-
 label s19:
+
+    na "You throw a powerful punch, flying him across the room. He won't be bringing you back to class again anytime soon."
+
+    na "You hear a feeble voice as you walk away."
+
+    jt "Wait-- please... You don't need to do this!"
+
+    mc "Heh... I knew that CrossFit membership would pay off."
+
+    jump s20
 
 label s20:
 
+    na "Word quickly spreads about how you punched the student council president and skipped class as you proudly walk out the front gates."
+
+    mc "Man, that fight really took a lot out of me. I could really go for a Caramel Ribbon Crunch Frappe right about now."
+
+    jump s24
+
 label s21:
+
+    mc "{i}Oh shoot, I forgot to grab one{/i}! Sure, let's head back."
+
+    na "You walk back to class to get a hall pass, even though you never needed one. But right as you grab it, the bell rings."
+
+    jt "Awww, well that's a shame. Well hey, at least we have the same class next period!"
+
+    mc "Oh, nice! Wait, how did you know that we had the same class?"
+
+    jt "I just checked the Google Classroom! It's the job of the student council president to know their fellow students' names, after all."
+
+    jt "C'mon, we have English class next. Let's go!"
 
 label s22:
 
 label s23:
 
 label s24:
+
+    #In starbucks
+
+    mc "I'll take your finest Caramel Ribbon Crunch Frappe, please."
+
+    na "You felt like you've seen this kid before. Maybe from school?"
+
+    beckham "that'll be 2,210¥."
 
 label s25:
 
@@ -834,6 +914,8 @@ label s28:
 
     na "Akimitsu tenses up and steps closer to you."
 
+    $ sophianame = "高尾、勇"
+
     sophia "Hey. I've heard a lot about you, [mcname]. I'm Takao Isamu."
 
     sophia "When I saw you I wasn't sure the rumors were true, but now I know. You're incredible. What dojo did--"
@@ -902,9 +984,9 @@ label s31:
 
     mc "Umm... Gala please."
 
-    beckham "Coming up."
+    beckham "Coming right up."
 
-    na "Never before have you tasted such sweet, succulent drink."
+    na "Never before have you tasted such a sweet, succulent drink."
 
     na "You down glass after glass until your tummy can take it no longer. Delicious."
 
