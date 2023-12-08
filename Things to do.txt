@@ -1,4 +1,5 @@
 Figure out how to make riri go in the corner to click on
 MAKE CHARACTER KANJI WORK
+do the metJoeLocation thing
 ----------------------- Finished --------------------------
 Name cap (13 char)

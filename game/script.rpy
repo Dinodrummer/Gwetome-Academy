@@ -16,7 +16,7 @@ init:
     define sensei = Character("先生 (Sensei)")
     define beckham = Character("マリオ")
     define joe = Character("[joename]") # define joe = Character("ジョ~")
-    define kyle = Character("[kylename]") # define kyle = Character("千葉、昭光 (Chiba, Akimitsu)")
+    define kyle = Character("千葉、昭光") # define kyle = Character("千葉、昭光 (Chiba, Akimitsu)")
     define jt = Character("[jtname]") # define jt = Character("柳井、富 (Yanai, Yutaka)")
     define sophia = Character("[sophianame]") # define sophia = Character("高尾、勇 (Takao, Isamu)")
     define maryam = Character("[maryamname]") # define maryam = Character("木山、遥花 (Kiyama, Haruka)")
@@ -28,8 +28,8 @@ init:
     define takeshi = Character("Takeshi")
     define dr = Character("Dr.")
 
-    define riri = Character("リリ")
-    define mv = Character("{i}Mysterious Voice")
+    define riri = Character("[ririname]") # define riri = Character("リリ")
+    define mv = Character("Mysterious Voice")
 
     define d1 = Character("Deliquent 1")
     define d2 = Character("Deliquent 2")
@@ -54,14 +54,19 @@ init python:
     bgSong = "bgm_skipABeat.mp3"
     config.auto_voice = "voice/{id}.mp3"
 
-    metRiri = False
-
+    
+    ririname = "..."
     mcname = "..."
     joename = "..."
-    kylename = "..."
     jtname = "..."
     sophianame = "..."
     maryamname = "..."
+
+    metRiri = False
+    metJoe = False
+    metJT = False
+    metSophia = False
+    metMaryam = False
 
     from game.images.Gwyn import *
     from game.images.Extras import *
@@ -337,6 +342,8 @@ label s5:
 
     mc "Mark Zuckerberg?!"#Gwyn12
 
+    $ metRiri = True
+    $ ririname = "リリ"
     riri "Wrong! I'm Riri. My boss told me there was a weeb here so I came to help."#Joe5
 
     riri "Wait! Are you Naninani Nantoka!?!?"#Joe6
@@ -405,7 +412,7 @@ label s7:
 
     na "You are floating through an endless void. You can't move. You can't breathe. All is silent."#JT35
 
-    na "Is this what it's like to be in a world with no love? No romance? No ikemens?"#JT36
+    na "Is this what it's like to be in a world with no love? No romance? No {i}ikemens?{/i}"#JT36
 
     na "Your mind succumbs to the darkness."#JT37
 
@@ -758,7 +765,7 @@ label s18:
 
     label s18_3:
 
-        #define jt = Character("柳井、富 (Yanai, Yutaka)")
+        $ metJT = True
 
         jt "What's a pretty looking girl such as yourself doing around these parts?"
 
@@ -817,6 +824,32 @@ label s21:
 
 label s22:
 
+    na "You release a powerful punch aimed right at Yukata!"
+
+    na "...and miss. Well, that's embarrassing."
+
+    mc "Oh... oops."
+
+    jt "Ahahha, how cute! You really think you stand a chance against me? I am the one and only student council president, Yukata!"
+
+    mc "Uhm... okay?"
+
+    jt "You've been naughty now, haven't you?"
+
+    jt "You think you can walk free after trying to hurt the most important student in the school?"
+
+    jt "No! I will not let this stand! Off to counseling with you!"
+
+    na "How dramatic can this kid get..."
+
+    mc "Alright fine, I'll go to counseling. Sorry for trying to punch you, but it was too hard to resist."
+
+    jt "Hey! Wait, don't say that about me!"
+
+    na "You turn and go to counseling. You can feel Yukata fuming behind you, but you keep walking without a care in the world."
+
+    jump s25
+
 label s23:
 
 label s24:
@@ -828,6 +861,60 @@ label s24:
     na "You felt like you've seen this kid before. Maybe from school?"
 
     beckham "that'll be 2,210¥."
+
+    mc "Wh-{nw}"
+
+    na "-Wait, 2,210¥?? What has this world come to..."
+
+    na "Failing to hold back spending one fourth of your monthly allowance on a single Frappe, you swipe your card and watch as the barista skillfully crafts your drink."
+
+    na "You imagine what the flavor will be as you grab the cup and walk away from the front counter."
+
+    mc "It looks so good! I'll worry about the cost later, because this is gonna be so worth i-"
+
+    #Drink spill noise, crash
+
+    mc "NO! MY CARAMEL RIBBON CRUNCH FRAPPE!!"
+
+    na "Well, that's rough. After you witness-- with pure agony--  the drink spill, you then look up to see… a pole? And an attractive one at that."
+
+    na "Wait, who would put a pole in the middle of a Hoshibucks{size=-12}©{/size}? The pole reaches out a hand to you."
+
+    # Shot with joe and his hand out towards camera in hoshibucks
+
+    joe "Are you okay?! I'm so sorry, I didn't see where I was going."
+
+    if metJoe = True:
+        joe "Hey, I remember you! We met at the [metJoeLocation]."
+    
+    joe "Drinks from Hoshibucks{size=-12}©{/size} are expensive nowadays."
+
+    joe "Here, let me pay for it. It was my fault anyways."
+
+    mc "No, it's okay! Don't even worry about it, It didn't cost {i}that{/i} much."
+
+    na "You're still a bit irritated due to the fact that it {i}did{/i} in fact cost that much."
+
+    joe "No no no, please, let me! I'd feel bad if I didn't."
+
+    mc "No no no no, I wasn't looking where I was going."
+
+    joe "No no n-"
+
+    na "{b}Enough with the “no no no” talk!{/b}"
+
+    $ joename = ジョ～
+    joe "Well, anyways, my name's Joe. Nice to meet you! I'm gonna buy a drink for myself anyways, so I'll get us both one."
+
+    mc "I'm [mcname], nice to meet you!"
+
+    na "You let him buy you another Caramel Ribbon Crunch Frappe and have a nice chat at one of the tables."
+
+    joe "Hahaha, you're so funny!"
+
+    
+
+
 
 label s25:
 
