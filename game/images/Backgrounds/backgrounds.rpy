@@ -1,21 +1,21 @@
 image bedroom:
-    "images/bg bedroom.jpg"
-    zoom 1.5
+    "images/Backgrounds/bg bedroom.jpg"
+    zoom 1.0
 image classroom day:
-    "images/bg classroom_day.jpg"
+    "images/Backgrounds/bg classroom_day.jpg"
     zoom 1.5
 image classroom night:
-    "images/bg classroom_night.jpg"
+    "images/Backgrounds/bg classroom_night.jpg"
     zoom 1.5
 image gate:
-    "images/bg gate.jpg"
+    "images/Backgrounds/bg gate.jpg"
     zoom 1.5
 image gym:
-    "images/bg gym.jpg"
+    "images/Backgrounds/bg gym.jpg"
     zoom 1.5
 image kitchen:
-    "images/bg kitchen.jpg"
+    "images/Backgrounds/bg kitchen.jpg"
     zoom 1.5
 image neighborhood:
-    "images/bg neighborhood.png"
+    "images/Backgrounds/bg neighborhood.png"
     zoom 1.5

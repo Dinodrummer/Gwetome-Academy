@@ -189,17 +189,41 @@ label riri:
         riri "You may have failed this time at romance, but I won't let you give up!"
 
         $ riris[43] = False
+    if riris[24]:
+
+        riri "Hey, naninani, he's really asking you on a date!"
+
+        riri "I never thought you'd make it this far... It truly brings tears to my eyes!"
+        
+        riri "Anyways, you HAVE to go with him! For me <3"
+
+        $ riris[24] = False
+    if riris[44]:
+
+        riri "Wow, did you really just ask him on a date?!?! All by yourself??"
+
+        riri "I knew you could do it! They grow up so fast..."
+
+        $ riris[44] = False
+    if riris[46]:
+
+        riri "That's a tough one..."
+
+        riri "Either way will bring you two closer, right? So, I'll let you decide this time..."
+
     return
 # -------------------------------------------------------------------------------------------------------------------
 # s1 = start
 # voice voice.mp3
 label start:
-    show beckham agent ecstatic
+    #show beckham agent ecstatic at topright
+    #with moveinright
+    #show gwyn party normal at topleft
     $ mcname = renpy.input("What is your name?")
     $ mcname = mcname.strip()
     $ mcname = mcname[0:13]
+    scene bedroom
     
-    jump s28
 
     if mcname == "":
         $ mcname = "Naninani Nantoka"
@@ -903,7 +927,7 @@ label s24:
 
     na "{b}Enough with the “no no no” talk!{/b}"
 
-    $ joename = ジョ～
+    $ joename = "ジョ～"
     joe "Well, anyways, my name's Joe. Nice to meet you! I'm gonna buy a drink for myself anyways, so I'll get us both one."
 
     mc "I'm [mcname], nice to meet you!"
@@ -912,9 +936,19 @@ label s24:
 
     joe "Hahaha, you're so funny!"
 
-    
+    joe "Well, anyways, It's getting kind of late. Mind if I take you home?"
 
+    mc "Hmmm... It {i}is{/i} getting kind of dark out..."
 
+    if metRiri:
+        $ riris[24] = True
+        call riri
+
+    menu:
+        "No, leave me alone!":
+            jump s41
+        "Sure, why not?":
+            jump s42
 
 label s25:
 
@@ -1198,6 +1232,40 @@ label s38:
 
     mc "Sure."
 
+    na "The two of you step outside."
+
+    #Scene change
+
+    na "You find yourself on a balcony overlooking Shizuoka."
+
+    na "The wind softly blows through your hair and the lights of the city sparkle in the distance."
+
+    sophia "To be honest... I didn't think you'd come with me."
+
+    mc "Huh? Why?"
+
+    sophia "My family is yakuza. Ordinary people are usually too afraid of getting hurt. But you're... different."
+
+    sophia "When you threw those three delinquents out the window you reminded me of my cat, Skull Crusher."
+
+    sophia "And I love cats... and I love... you."
+
+    mc "I... I like you too."
+
+    na "Soon after Takao Isamu's confession the two of you start dating."
+
+    na "It's a surprisingly healthy and loving relationship-- you meet {i}The Family{/i}|, go on lots of dates, and work through conflicts together."
+
+    na "Eventually you decide to open a cat cafe together... but... it is no ordinary cat cafe."
+
+    na "Through years of discipline and training, blood and tears, your cat cafe becomes the base for a new group of cat yakuza: {i}Nyanken{/i}."
+
+    na "It is through Nyanken that you wage the Great Cat War, rise through the ranks, and become the most powerful yakuza couple in the nation."
+
+    na "No one can stop your bulging muscles or your untouchable love!...  Nya~"
+
+    jump e5
+
     # not done
 
 label s39:
@@ -1233,10 +1301,100 @@ label s43:
     jump start
  
 label s44:
+
+    mc "So, do you go to Hoshibucks often?"
+
+    joe "Yes! In fact, I go almost every day after school! I live for Hoshibucks, haha!"
+
+    mc "Wow, that's cool! I like Hoshibucks, but I don't go very often because it's so expensive."
+
+    joe "True..."
+
+    joe "Well, if you don't go to hoshibucks often, what do you do in your free time?"
+
+    mc "Well, other than studying and extracurriculars, I like going to to the beach."
+
+    joe "Really? Me too! It's such a nice way to unwind after a long day."
+
+    na "I think this guy just wants something to do with you… he probably spends all day in Hoshibucks."
+
+    joe "Well, if you're ever free, we should go to the beach together."
+
+    mc "Okay, sure! How does tomorrow sound?"
+
+    joe "{color=#808080}{size=-5}I guess I can go one day without my caramel frappe... for [mcname]...{/size}{/color}"
+
+    joe "Sounds good! I'll be looking forward to it! {i}{color=#808080}{size=-6}{cps=10}wink{/cps}{/size}{/color}{/i}"
+
+    if metRiri:
+        $ riris[44] = True
+        call riri
+    
+    jump s46
  
 label s45:
- 
+
+    mc "So, what do you like to do in your free time?"
+
+    joe "Well, other than going to hoshibucks, I guess I go to the beach sometimes."
+
+    mc "Really? Me too! I love the beach."
+
+    joe "Is that so? It's such a nice way to unwind after a long day, right?"
+
+    mc "Right? The water feels so nice, especially in the summer."
+
+    joe "Well, if you're ever free, we should go to the beach together."
+
+    na "Wow, I didn't see that coming! What a slick way to ask you out..."
+
+    gwyn "Okay, sure! How does tomorrow sound?"
+
+    joe "{color=#808080}{size=-5}I guess I can go one day without my caramel frappe... for [mcname]...{/size}{/color}"
+
+    joe "Sounds good! I'll be looking forward to it! {i}{color=#808080}{size=-6}{cps=10}wink{/cps}{/size}{/color}{/i}"
+
+    if metRiri:
+        $ riris[44] = True
+        call riri
+    
 label s46:
+
+    na "The next day, you and Joe make plans to go to the beach together."
+
+    na "The way he talks to you... I think he likes you, ya know!"
+
+    na "Anyways... After school, you meet up with Joe at the beach."
+
+    joe "Hey, [mcname]! It's nice to see you again. You look good!"
+
+    na "Well, that was fast."
+
+    mc "Oh, thanks! Nice to see you too!"
+
+    beckham "Ehem, lovebirds!"
+
+    joe "Excuse me?"
+
+    beckham "Sorry to interrupt, but the currents are very strong today."
+
+    na "This guy {i}again?{/i}"
+
+    beckham "I recommend staying out of the water, for your own safety."
+
+    beckham "Rest assured, I can save you, of course, but please be careful. Have a good day at the beach!"
+
+    joe "Oh, okay. What do you think, [mcname]? Should we still swim?"
+
+    if metRiri:
+        $ riris[46] = True
+        call riri
+    
+    menu:
+        "Go swimming! That lifeguard an't stop you!":
+            jump s47
+        "Walk on the beach instead":
+            jump s48
  
 label s47:
  
@@ -1300,6 +1458,36 @@ label s76:
  
 label s77:
 
+label s78:
+
+label s79:
+
+label s80:
+
+label s81:
+
+label s82:
+
+label s83:
+
+label s84:
+
+label s85:
+
+label s86:
+
+label s87:
+
+label s88:
+
+label s89:
+
+label s90:
+
+label s91:
+
+label s92:
+
 label e0:
 
 label e1:
@@ -1310,7 +1498,7 @@ label e3:
 
 label e4:
     
-label e5:
+label e5: # All is fair in Love and War
 
 label e6:
 
@@ -1324,7 +1512,7 @@ label e10:
     
 label e11:
 
-label e12: #Love in the Basket
+label e12: # Love in the Basket
 
 label e13:
 

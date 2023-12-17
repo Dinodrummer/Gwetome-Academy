@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 626: end of line expected.
-    na "...Takao Isamu swaggers up to your desk.{font="NotoSansJP-Regular.ttf"}"
-                                                       ^
+File "game/script.rpy", line 906: invalid character '～' (U+FF5E)
+    joename = ジョ～
+                 ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Wed Dec  6 22:54:01 2023
+Fri Dec  8 10:39:21 2023
