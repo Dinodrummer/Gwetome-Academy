@@ -191,7 +191,7 @@ label riri:
         $ riris[43] = False
     if riris[24]:
 
-        riri "Hey, naninani, he's really asking you on a date!"
+        riri "Hey, Naninani, he's really asking you on a date!"
 
         riri "I never thought you'd make it this far... It truly brings tears to my eyes!"
         
@@ -210,6 +210,40 @@ label riri:
         riri "That's a tough one..."
 
         riri "Either way will bring you two closer, right? So, I'll let you decide this time..."
+
+        $ riris[46] = False
+    if riris[29]:
+
+        riri "If you go to the basketball game, Chiba-kun is totes falling for you!"
+
+        riri "Partying is fine too though I guess..."
+
+        $ riris[29] = False
+    if riris[33]:
+
+        riri "Poor Chiba... Oh well, this means even more love routes!"
+
+        $ riris[33] = False
+    if riris[35]:
+
+        riri "Oooh, you like the bad ones, huh?"
+
+        $ riris[35] = False
+    if riris[37]:
+        
+        riri "If you go get drinks with Isamu, you'll find yourself in a world of broken doors, crime, and... cats?"
+
+        riri "I mean, that's basically your only option... right? Right?"
+
+        $ riris[37] = False
+    if riris[47]:
+
+        riri "What an unexpected twist!"
+
+        riri "Come on, Naninani! He's the love of your life, your soulmate! You must save him!"
+
+        $ riris[47] = False
+
 
     return
 # -------------------------------------------------------------------------------------------------------------------
@@ -952,6 +986,12 @@ label s24:
 
 label s25:
 
+    beckham "If you don't go to school, you won't find success. You need to try your best everyday. Now go to detention please."
+
+    mc "Okay..."
+
+    jump s13
+
 label s26:
 
     na "Actually... does it even matter if it's a date? It's a party! Of course you're going!"
@@ -1073,6 +1113,32 @@ label s29:
 
     na "Akimitsu flashes a smile."
 
+    kyle "That's a relief. After school let's go to my pla--{nw}"
+
+    # *phone buzz sounds*
+
+    kyle "Actually... wait..."
+
+    mc "Huh?"
+
+    kyle "Ahhh, sorry. I have a basketball game after school."
+
+    kyle "He says, \"Hey, turns out we're in the finals now because some person with bleached blonde hair just showed up and beat up the team that we lost to. He was saying something about [mcname], you, and a party. Weird, huh?"
+
+    mc "I wonder who that could be..."
+
+    kyle "Right? Well now I can't miss my basketball game... would you mind coming to watch instead?"
+
+    if metRiri:
+        $ riris[29] = True
+        call riri
+
+    menu:
+        "Sure, I'll watch":
+            jump s14
+        "I'd rather party":
+            jump s33
+
 label s30:
 
     mc "The party's good.{nw}"
@@ -1140,7 +1206,26 @@ label s32:
             jump s37
 
 label s33:
-    # not real
+
+    na "You shake your head solemnly"
+
+    mc "Sorry, Akimitsu. I changed my mind. The party never stops."
+
+    kyle "But you just said we would han--{nw}"
+
+    # Door closes
+
+    na "You leave."
+
+    kyle "Wait! Wait! If you're that determined to go to the party I'll go with you. I'll skip my game."
+
+    kyle "Let's just go together, okay?"
+
+    if metRiri:
+        $ riris[33] = True
+        call riri
+
+    jump s28
 
 label s34:
 
@@ -1172,6 +1257,10 @@ label s35:
 
     sophia "Heh. Let's go then."
 
+    if metRiri:
+        $ riris[35] = True
+        call riri
+
     jump s38
 
 label s36:
@@ -1201,6 +1290,10 @@ label s37:
     na "Akimitsu storms off. His hot fury combined with his blazing looks briefly set another guest on fire, but the flames are doused quickly with some apple juice."
 
     sophia "Heh. Let's drink something ourselves too."
+
+    if metRiri:
+        $ riris[37] = True
+        call riri
 
     menu:
         "Go get drinks with Isamu":
@@ -1270,13 +1363,139 @@ label s38:
 
 label s39:
 
+    na "Romance? {i}{color=#808080}{size=-6}{cps=10}*scoffs*{/cps}{/size}{/color}{/i} That's for weaklings."
+
+    na "You don't need any of these weirdos, you just came for the party."
+
+    na "But the party sucks so..."
+
+    mc "Actually... I'm good."
+
+    sophia "...Huh?"
+
+    na "You flip your hair and strut out the door."
+
+    na "As you walk you radiate power and confidence. Is this the power of self-worth?"
+
+    na "In fact, the aura from your strut is so strong that it catches the attention of a modeling agent."
+
+    beckham "Wait! I'm a modeling agent who also likes attending high school parties hosted by yakuza. You should join my agency! You're incredible!"
+
+    mc "Okay."
+
+    na "And that was how your modeling career began."
+
+    na "You dropped out of high school, moved to New York, and started your legacy by modeling for Elle, Versace, and Vogue."
+
+    # Visual of "magazines pop up on screen"
+
+    na "You became surrounded by fame and fortune, but soon it became too much."
+    
+    na "Burdened by the pressure of stardom, you started looking for a way to relieve the stress."
+
+    na "You thought back to that night... that party... and how you didn't get to try that apple juice."
+
+    na "Now you wanted it... you needed it... and eventually you succumbed to it."
+
+    na "You spent all your money on apple juice, only drank apple juice, and only cared about apple juice."
+
+    na "You threw away your career, friends, and life for apple juice."
+
+    na "Everything you had... became apple juice."
+
+    jump e11
+
 label s40:
 
+    na "The two of you leave the party and walk to a nearby park."
+
+    na "The air is chilly but the stars are shining clearly and brightly."
+
+    kyle "Let's sit down for a little bit. There's a bench over there."
+
+    mc "Okay!"
+
+    # Switch to bench
+
+    kyle "..."
+
+    mc "..."
+
+    kyle "..."
+
+    mc "It's really cold out here."
+
+    kyle "Maybe we shouldn't have sat down."
+
+    mc "Yeah, that was kind of stupid."
+
+    kyle "Do you want my jacket?"
+
+    mc "No it's okay, you can keep it."
+
+    kyle "Oh. Uh, okay."
+
+    mc "..."
+
+    kyle "..."
+
+    mc "..."
+
+    kyle "Have you ever wondered what the stars would say if they could talk?"
+
+    mc "Haha, n--{nw}"
+
+    kyle "I think they'd tell us the world's secrets. Why we're here, what we're meant to become, and how we might get there."
+
+    kyle "Sometimes I feel lost. Like I'm just falling through time with no real purpose."
+
+    kyle "But there are moments when this light reaches out to me."
+
+    kyle "It tells me that I have something to give. That I have something to offer to this cold world."
+
+    kyle "This light tells me to keep going, keep trying, and keep living."
+
+    kyle "And I've found [mcname], that it's when I'm with you that this light is most prevalent."
+
+    kyle "You're like my star, [mcname]. And that's why… I love you."
+
+    mc "I..."
+
+    jump e4
+
 label s41:
+
+    mc "No thanks, I can make it by myself. Nice meeting you though!"
+
+    joe "Oh okay... I guess I'll see you later then."
+
+    na "You had to get home quick anyways. You haven't been catching up on this season's anime!"
+
+    na "You dart out of the Hoshibucks, not even thanking him for buying your drink before leaving. Bold."
+
+    jump s43
  
 label s42:
+
+    mc "Sure, why not? I live just 10 minutes down the road."
+
+    joe "Perfect! I'm going the same direction. Come on, let's get moving!"
+
+    na "You leave the Hoshibucks with Joe."
+
+    na "It almost looks like you two are going on a date, hehe!"
+
+    na "Alright now, what will you talk about for maximum romance?"
+
+    menu:
+        "Talk about Hoshibucks":
+            jump s44
+        "Talk about hobbies":
+            jump s45
  
 label s43:
+
+    # At home
 
     na "You sit down in front of your television to watch anime."
 
@@ -1352,7 +1571,7 @@ label s45:
 
     joe "{color=#808080}{size=-5}I guess I can go one day without my caramel frappe... for [mcname]...{/size}{/color}"
 
-    joe "Sounds good! I'll be looking forward to it! {i}{color=#808080}{size=-6}{cps=10}wink{/cps}{/size}{/color}{/i}"
+    joe "Sounds good! I'll be looking forward to it! {i}{color=#808080}{size=-6}{cps=10}*wink*{/cps}{/size}{/color}{/i}"
 
     if metRiri:
         $ riris[44] = True
@@ -1391,13 +1610,43 @@ label s46:
         call riri
     
     menu:
-        "Go swimming! That lifeguard an't stop you!":
+        "Go swimming! That lifeguard can't stop you!":
             jump s47
         "Walk on the beach instead":
             jump s48
  
 label s47:
+
+    mc "Let's go swimming! That's what I came here for."
+
+    joe "Alright, as long as you're careful. I don't want you to get hurt."
+
+    mc "Oh, I'll be fine! I'm more worried about you, hehe!"
+
+    joe "Hey! I'm a great swimmer, I promise!"
+
+    mc "If you say so!"
+
+    na "Enough flirting! I'm skipping to the part where you actually swim."
+
+    # Switch to water
+
+    na "Ahh, finally... but wait, is Joe okay?"
+
+    joe "Hey, I can't touch the ground here! I'm getting pulled out! Someone save me!!!"
+
+    joe "I'll admit it, I don't go to the beach very often! I prefer caramel frappes, okay!! {i}{color=#808080}{size=-6}{cps=10}*crying*{/cps}{/size}{/color}{/i}"
  
+    if metRiri:
+        $ riris[47] = True
+        call riri
+    
+    menu:
+        "The lifeguard can deal with it":
+            jump s49
+        "Oh no, my love! Save him!!!":
+            jump s50
+
 label s48:
  
 label s49:
@@ -1496,7 +1745,7 @@ label e2:
 
 label e3:
 
-label e4:
+label e4: # Love you too
     
 label e5: # All is fair in Love and War
 
@@ -1510,7 +1759,7 @@ label e9:
 
 label e10:
     
-label e11:
+label e11: # Big Apple Juice
 
 label e12: # Love in the Basket
 
