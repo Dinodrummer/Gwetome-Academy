@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 906: invalid character '～' (U+FF5E)
-    joename = ジョ～
-                 ^
+File "game/script.rpy", line 31: expected 'word' not found.
+    define = Character("", ctc="ctc_blink")
+           ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Fri Dec  8 10:39:21 2023
+Tue Dec 19 00:20:13 2023

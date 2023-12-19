@@ -3,6 +3,23 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+init -2:
+    # ---------- CTC blinking arrow -------------------
+    image ctc_blink:
+
+        alpha 1.0
+        "images/star1.png"
+        zoom 0.22
+        ypos -4
+        xpos 3
+        0.5
+        "images/star2.png"
+        zoom 0.22
+        ypos -4
+        xpos 3
+        0.5
+        repeat
+
 image vid = Movie(play="audio/5-6.webm", size=(1920,1080),loop=False, xalign=0.10, yalign=0.10)
 #--------------
 image zeil normal:
@@ -10,30 +27,30 @@ image zeil normal:
     zoom 0.8
 # --------------------------------------------------------
 init:
-    define mc = Character("[mcname]", color = "#43BC47")
-    define na = Character("")
-    define mom = Character("Mom")
-    define sensei = Character("先生 (Sensei)")
-    define beckham = Character("マリオ")
-    define joe = Character("[joename]") # define joe = Character("ジョ~")
-    define kyle = Character("千葉、昭光") # define kyle = Character("千葉、昭光 (Chiba, Akimitsu)")
-    define jt = Character("[jtname]") # define jt = Character("柳井、富 (Yanai, Yutaka)")
-    define sophia = Character("[sophianame]") # define sophia = Character("高尾、勇 (Takao, Isamu)")
-    define maryam = Character("[maryamname]") # define maryam = Character("木山、遥花 (Kiyama, Haruka)")
+    define mc = Character("[mcname]", color = "#43BC47", ctc="ctc_blink")
+    #define na = Character("", ctc="ctc_blink")
+    define mom = Character("Mom", ctc="ctc_blink")
+    define sensei = Character("先生 (Sensei)", ctc="ctc_blink")
+    define beckham = Character("マリオ", ctc="ctc_blink")
+    define joe = Character("[joename]", ctc="ctc_blink") # define joe = Character("ジョ~")
+    define kyle = Character("千葉、昭光", ctc="ctc_blink") # define kyle = Character("千葉、昭光 (Chiba, Akimitsu)")
+    define jt = Character("[jtname]", ctc="ctc_blink") # define jt = Character("柳井、富 (Yanai, Yutaka)")
+    define sophia = Character("[sophianame]", ctc="ctc_blink") # define sophia = Character("高尾、勇 (Takao, Isamu)")
+    define maryam = Character("[maryamname]", ctc="ctc_blink") # define maryam = Character("木山、遥花 (Kiyama, Haruka)")
     # define zev = Character("...") # define zev = Character("ゼブ")
 
-    define mi1 = Character("Magical Ikemen 1")
-    define mi2 = Character("Meowgical Ikemen 2")
-    define pp = Character("PyunPyun")
-    define takeshi = Character("Takeshi")
-    define dr = Character("Dr.")
+    define mi1 = Character("Magical Ikemen 1", ctc="ctc_blink")
+    define mi2 = Character("Meowgical Ikemen 2", ctc="ctc_blink")
+    define pp = Character("PyunPyun", ctc="ctc_blink")
+    define takeshi = Character("Takeshi", ctc="ctc_blink")
+    define dr = Character("Dr.", ctc="ctc_blink")
 
-    define riri = Character("[ririname]") # define riri = Character("リリ")
-    define mv = Character("Mysterious Voice")
+    define riri = Character("[ririname]", ctc="ctc_blink") # define riri = Character("リリ")
+    define mv = Character("Mysterious Voice", ctc="ctc_blink")
 
-    define d1 = Character("Deliquent 1")
-    define d2 = Character("Deliquent 2")
-    define d3 = Character("Deliquent 3")
+    define d1 = Character("Deliquent 1", ctc="ctc_blink")
+    define d2 = Character("Deliquent 2", ctc="ctc_blink")
+    define d3 = Character("Deliquent 3", ctc="ctc_blink")
 
     # image beckham agent normal = "/images/Zeil/ph.png"
     # image beckham agent ecstatic = "/images/Zeil/ph.png"
@@ -134,7 +151,7 @@ label Questions_mc:
 # p = placeholder label
 # s = scene
 label p:
-    na "PLACEHOLDER"
+    "PLACEHOLDER"
     return
 
 label riri:
@@ -173,7 +190,7 @@ label riri:
         $ riris[26] = False
     if riris[27]:
 
-        na " [[Riri shakes her head. It looks like she doesn't want to talk to you right now.]"
+        " [[Riri shakes her head. It looks like she doesn't want to talk to you right now.]"
         $ riris[27] = False
     if riris[28]:
 
@@ -253,9 +270,18 @@ label start:
     #show beckham agent ecstatic at topright
     #with moveinright
     #show gwyn party normal at topleft
+
+
+    #stop music
+    #jump trailer
+
+
+
+
     $ mcname = renpy.input("What is your name?")
     $ mcname = mcname.strip()
     $ mcname = mcname[0:13]
+    
     scene bedroom
     
 
@@ -286,7 +312,7 @@ label start:
 
 label s2:
 
-    na "You put on your uniform and go downstairs."#JT3
+    "You put on your uniform and go downstairs."#JT3
 
     mom "Good morning! I made you breakfast since I knew you'd wake up late."#
 
@@ -295,12 +321,12 @@ label s2:
     # Door closing noise
     mc "Thanks, have a good day!"#Gwyn8
 
-    na "You happily munch on the breakfast your mother made and pat your belly in satisfaction. 
+    "You happily munch on the breakfast your mother made and pat your belly in satisfaction. 
         Suddenly, the TV turns on, as if it's beckoning you to watch it."#JT4
 
-    na "Wait! Is that... the new season of Magical Ikemen?!? It's been a whole year since the last episode!"#JT5
+    "Wait! Is that... the new season of Magical Ikemen?!? It's been a whole year since the last episode!"#JT5
 
-    na "But... you have school. If you leave now, you still might be able to make it in time."#JT6
+    "But... you have school. If you leave now, you still might be able to make it in time."#JT6
 
     menu:
         "Head off to school":
@@ -310,12 +336,12 @@ label s2:
 
 label s3:
 
-    na "You crawl into your covers again and begin to sleep blissfully; everything is cozy, warm, and peaceful. You begin to dream."#JT7
+    "You crawl into your covers again and begin to sleep blissfully; everything is cozy, warm, and peaceful. You begin to dream."#JT7
 
-    na "It's your first day of school at Gwetome Academy. Everyone is calling you Naninani Nantoka. 
+    "It's your first day of school at Gwetome Academy. Everyone is calling you Naninani Nantoka. 
         But why? You've always been [mcname] haven't you? How strange."#JT8
 
-    na "Just as you are about to investigate this, you feel a sudden shake."#JT9
+    "Just as you are about to investigate this, you feel a sudden shake."#JT9
 
     mom "Hey!...Hey! Get up! How did I end up with such a lazy child?"#
 
@@ -329,17 +355,17 @@ label s3:
 
 label s4:
 
-    na "Wow, look at you all responsible! You discard the temptation of Magical Ikemen and start your trek to school."#JT10
+    "Wow, look at you all responsible! You discard the temptation of Magical Ikemen and start your trek to school."#JT10
 
-    na "You check your phone and see you have more time than you realized. Maybe you'll just quickly look up the information about 
+    "You check your phone and see you have more time than you realized. Maybe you'll just quickly look up the information about 
         Magical Ikemen's new season while you walk... you have the time after all."#JT11
 
-    na "Plus, you need to know whether or not Takeshi finally leaves his office job to pursue his dream
+    "Plus, you need to know whether or not Takeshi finally leaves his office job to pursue his dream
         of becoming a full-time magical girl in the Kiss Kiss Love Power Team."#JT12
 
-    na "As you scroll through the wonderland that is the Magical Ikemen online forum, you bump into a pole. Ouch."#JT13
+    "As you scroll through the wonderland that is the Magical Ikemen online forum, you bump into a pole. Ouch."#JT13
 
-    na "Wow, that's a strangely attractive pole. And it's wearing a... Gwetome Academy uniform!? The pole turns around."#JT14
+    "Wow, that's a strangely attractive pole. And it's wearing a... Gwetome Academy uniform!? The pole turns around."#JT14
 
     joe "Ah sorry, I was walking kind of slow. Are you ok?"#Joe1
 
@@ -347,11 +373,11 @@ label s4:
 
     joe "Heh. Sorry, I'm rambling. Anyways, I'll just uh... keep walking."#Joe3
 
-    na "The mysterious ikemen runs his hand through his hair cooly and starts to saunter away."#JT15
+    "The mysterious ikemen runs his hand through his hair cooly and starts to saunter away."#JT15
 
-    na "Your heart is beating fast; you don't know if it's because of his dazzling looks or possible metal poisoning."#JT16
+    "Your heart is beating fast; you don't know if it's because of his dazzling looks or possible metal poisoning."#JT16
 
-    na "Either way, you should probably get to school. The question is: How?"#JT17
+    "Either way, you should probably get to school. The question is: How?"#JT17
 
     menu:
         "I'll take the journey alone!":
@@ -361,11 +387,11 @@ label s4:
 
 label s5:
 
-    na "The TV has summoned you and you must answer its call. As you sit down on the couch, you see the familiar face of the main character, Kimura Takeshi."#JT18
+    "The TV has summoned you and you must answer its call. As you sit down on the couch, you see the familiar face of the main character, Kimura Takeshi."#JT18
 
-    na "It looks like he's having a serious talk with the Kiss Kiss Love Power Team, a magical-girl group that saves the world from evil monsters."#JT19
+    "It looks like he's having a serious talk with the Kiss Kiss Love Power Team, a magical-girl group that saves the world from evil monsters."#JT19
     
-    na "During the last episode, Takeshi was deciding whether or not to keep his office job or pursue his dream of becoming a full-time magical girl. 
+    "During the last episode, Takeshi was deciding whether or not to keep his office job or pursue his dream of becoming a full-time magical girl. 
         He must be discussing this with them now."#JT20
 
     mi1 "Takeshi... you must make a choice. If we wait any longer, the Dr. will find out your true identity. Either join us or leave us."#Kyle1
@@ -390,13 +416,13 @@ label s5:
 
     dr "HUEHUEHUEHUEHUE! I will defeat you all one by one!"#JT21
 
-    na "Man, they kept the annoying mascot from season 1."#JT22
+    "Man, they kept the annoying mascot from season 1."#JT22
 
-    na "Just as the Dr. begins to shoot his sadness missiles at the Kiss Kiss Love Power team, your phone buzzes."#JT23
+    "Just as the Dr. begins to shoot his sadness missiles at the Kiss Kiss Love Power team, your phone buzzes."#JT23
 
     mc "Huh?"#Gwyn11
 
-    na "Suddenly, a tiny sexy witch emerges out of your phone."#JT24
+    "Suddenly, a tiny sexy witch emerges out of your phone."#JT24
 
     mc "Mark Zuckerberg?!"#Gwyn12
 
@@ -427,11 +453,11 @@ label s6:
 
     mc "Ah! I've done it now!"#Gwyn16
 
-    na "You quickly throw on your uniform, grab a piece of toast, and run out the door."#JT25
+    "You quickly throw on your uniform, grab a piece of toast, and run out the door."#JT25
 
-    mc "I'm gonna be late!"#Gwyn17
+    mc "I'm gonbe late!"#Gwyn17
 
-    na "It isn't long before you find yourself turning a sharp corner... with toast... hmm..."#JT26
+    "It isn't long before you find yourself turning a sharp corner... with toast... hmm..."#JT26
 
     mc "Ah! It hurts!"#Gwyn18
 
@@ -440,23 +466,23 @@ label s6:
 
     mc "Is no one... here?"#Gwyn20
 
-    na "Wow, you must be really off your game today *name*. You look around yourself, stunned... this has never happened before."#JT27
+    "Wow, you must be really off your game today *name*. You look around yourself, stunned... this has never happened before."#JT27
 
-    na "How could you not bump into a hot ikemen while turning a corner with toast in your mouth?!?! Maybe you should try again."#JT28
+    "How could you not bump into a hot ikemen while turning a corner with toast in your mouth?!?! Maybe you should try again."#JT28
 
-    na "You pick up the toast and start walking back to where you started, when you hear a strange noise."#JT29
+    "You pick up the toast and start walking back to where you started, when you hear a strange noise."#JT29
 
-    joe "Kyaa~! I'm gonna be late!"#Joe9
+    joe "Kyaa~! I'm gonbe late!"#Joe9
 
-    na "Ah, there it is. You look up and see a hot... pole? No wait! You shake your head to clear your vision."#JT30
+    "Ah, there it is. You look up and see a hot... pole? No wait! You shake your head to clear your vision."#JT30
 
     joe "Sorry, are you ok? I don't know what came over me. I just felt a sudden need to run around that corner."#Joe10
 
     mc "Yeah, I'm alright."#Gwyn21
 
-    na "The boy's eyes sparkle as you take his hand and he smoothly pulls you to your feet. Nice."#JT31
+    "The boy's eyes sparkle as you take his hand and he smoothly pulls you to your feet. Nice."#JT31
 
-    na "After you both apologize you quickly continue on your way."#JT32
+    "After you both apologize you quickly continue on your way."#JT32
 
     menu:
         "Go to school... late":
@@ -464,31 +490,31 @@ label s6:
 
 label s7:
 
-    na "Heh... school. Who needs it? You're about to discover the answer to the greatest mystery yet: who is Naninani Nantoka?!"#JT33
+    "Heh... school. Who needs it? You're about to discover the answer to the greatest mystery yet: who is Naninani Nantoka?!"#JT33
 
-    na "You rustle back under your blankets, close your eyes, and start to dream again... but this time you are not at school."#JT34
+    "You rustle back under your blankets, close your eyes, and start to dream again... but this time you are not at school."#JT34
 
-    na "You are floating through an endless void. You can't move. You can't breathe. All is silent."#JT35
+    "You are floating through an endless void. You can't move. You can't breathe. All is silent."#JT35
 
-    na "Is this what it's like to be in a world with no love? No romance? No {i}ikemens?{/i}"#JT36
+    "Is this what it's like to be in a world with no love? No romance? No {i}ikemens?{/i}"#JT36
 
-    na "Your mind succumbs to the darkness."#JT37
+    "Your mind succumbs to the darkness."#JT37
 
     mv "You have failed your purpose, [mcname]."#Gwyn22
 
-    na "By the time you wake up, the school year has already ended. You now know your true duty but it is too late, and there is no one left to love you."#JT38
+    "By the time you wake up, the school year has already ended. You now know your true duty but it is too late, and there is no one left to love you."#JT38
 
-    na "Weeping, you succumb to the darkness of sleep once more."#JT39
+    "Weeping, you succumb to the darkness of sleep once more."#JT39
 
     jump e0 #Eternal Power Nap
 
 label s8:
 
-    na "You keep walking to school alone and eventually end up at the front of the school."
+    "You keep walking to school alone and eventually end up at the front of the school."
 
-    na "You notice a poster near the entrance, offering students to join the Student Council"
+    "You notice a poster near the entrance, offering students to join the Student Council"
 
-    na "Hmmm... It'd look pretty good on college applications. How hard could it be?"
+    "Hmmm... It'd look pretty good on college applications. How hard could it be?"
 
     menu:
         "Go to class":
@@ -498,9 +524,9 @@ label s8:
 
 label s9:
 
-    na "His looks are too much to resist... you must talk to him now that you have the chance and time."
+    "His looks are too much to resist... you must talk to him now that you have the chance and time."
 
-    na "Looks like being responsible pays off."
+    "Looks like being responsible pays off."
 
     mc "Oh.. kay, sorry! I didn't see you there."
 
@@ -510,7 +536,7 @@ label s9:
 
     joe "Oh right! The name's Joe-kun, but you can just call me Joe."
 
-    na "Is that even a name?"
+    "Is that even a name?"
 
     mc "Well, nice to meet you! My name is [mcname]"
 
@@ -518,7 +544,7 @@ label s9:
 
     joe "I'm just an average Joe, you know? Hahaha!"
 
-    na "Seriously, laughing at your own jokes? This guy..."
+    "Seriously, laughing at your own jokes? This guy..."
 
     mc "Ha... well, which way are you heading?"
 
@@ -526,11 +552,11 @@ label s9:
 
 label s10:
 
-    na "You arrive at school... late of course."
+    "You arrive at school... late of course."
 
-    na "What did you expect? After all that you'd still be early? Hah."
+    "What did you expect? After all that you'd still be early? Hah."
 
-    na "Now [mcname]...  you have two options..."
+    "Now [mcname]...  you have two options..."
 
     if metRiri:
         
@@ -561,11 +587,11 @@ label s10:
 
 label s11:
 
-    na "Skipping class? It looks like you value your education..."
+    "Skipping class? It looks like you value your education..."
 
-    na "You walk to class and fling open the door."
+    "You walk to class and fling open the door."
 
-    na "You're here in order to learn! You must study! You have your whole life ahead of you and you're not backing down!"
+    "You're here in order to learn! You must study! You have your whole life ahead of you and you're not backing down!"
 
     mc "Excuse me!"
 
@@ -578,23 +604,23 @@ label s11:
 
 label s12:
 
-    na "Yea, who needs school anyways? If they really wanted you to be there, they'd make the start of school later than 8:30 AM."
+    "Yea, who needs school anyways? If they really wanted you to be there, they'd make the start of school later than 8:30 AM."
 
     jump s18
 
 label s13:
 
-    na "Ahhh... detention. A land of hopes and sorrows... youth and forgotten dreams."
+    "Ahhh... detention. A land of hopes and sorrows... youth and forgotten dreams."
 
-    na "Somehow you always seem to find yourself here."
+    "Somehow you always seem to find yourself here."
 
-    na "You scan the room in order to find familiar faces, but suddenly your attention is caught by the piercing eyes of another student."
+    "You scan the room in order to find familiar faces, but suddenly your attention is caught by the piercing eyes of another student."
 
-    na "They seem to be staring you down."
+    "They seem to be staring you down."
 
-    na "Oh wait, now they're blinking at you. Or are they winking... with both eyes? Is that morse code?"
+    "Oh wait, now they're blinking at you. Or are they winking... with both eyes? Is that morse code?"
 
-    na "Suddenly you hear the whispers of two delinquents a desk over."
+    "Suddenly you hear the whispers of two delinquents a desk over."
 
     d1 "Hey hey, is that Takao Isamu?"
 
@@ -608,9 +634,9 @@ label s13:
 
     d1 "Wow... I wish I was that cool."
 
-    na "As you look back over to the yakuza student you notice a majestic tear rolling down their cheek. Wow. What an emotionally conflicted and vulnerable young adult."
+    "As you look back over to the yakuza student you notice a majestic tear rolling down their cheek. Wow. What an emotionally conflicted and vulnerable young adult."
 
-    na "You should totally cause a scene and show them your physical prowess."
+    "You should totally cause a scene and show them your physical prowess."
 
     if metRiri:
         $ riris[13] = True
@@ -624,13 +650,13 @@ label s13:
 
 label s14:
 
-    na "You agree to go and watch Akimitsu's basketball game after school."
+    "You agree to go and watch Akimitsu's basketball game after school."
 
-    na "How could you not? You've known Akimitsu since you were tiny and basketball has always been really important to him."
+    "How could you not? You've known Akimitsu since you were tiny and basketball has always been really important to him."
 
-    na "Maybe one day you'll be important to him too."
+    "Maybe one day you'll be important to him too."
 
-    na "After a short walk out of school the two of you arrive at a small run-down gym."
+    "After a short walk out of school the two of you arrive at a small run-down gym."
 
     mc "The final is... here?"
 
@@ -638,15 +664,15 @@ label s14:
 
     mc "Oh, got it."
 
-    na "The two of you slowly open the door to the gym."
+    "The two of you slowly open the door to the gym."
 
-    na "Immediately you are blinded by colorful spotlights and music blasts throughout a ginormous stadium."
+    "Immediately you are blinded by colorful spotlights and music blasts throughout a ginormous stadium."
 
-    na "The stands are packed with cheering onlookers, their voices roaring like thunder."
+    "The stands are packed with cheering onlookers, their voices roaring like thunder."
 
-    na "There must be hundreds, no-- thousands of people here!"
+    "There must be hundreds, no-- thousands of people here!"
 
-    na "A basketball court stands in the center."
+    "A basketball court stands in the center."
 
     mc "Is this... THE B. LEAGUE FINALS?"
 
@@ -656,29 +682,29 @@ label s14:
 
     mc "Uhuh..."
 
-    na "Your heart races. Sometimes Akimitsu is a little too humble."
+    "Your heart races. Sometimes Akimitsu is a little too humble."
 
-    na "You grab a seat and the game begins. You don't even know what's going on because you keep staring at the Akimitsu fan section."
+    "You grab a seat and the game begins. You don't even know what's going on because you keep staring at the Akimitsu fan section."
 
     beckham "YAAAAAAY AKIMITSU!"
 
-    na "Impressive."
+    "Impressive."
 
-    na "Soon after, Akimitsu scores a touchdown which is {i}even more{/i} impressive because he's playing basketball."
+    "Soon after, Akimitsu scores a touchdown which is {i}even more{/i} impressive because he's playing basketball."
 
-    na "He glances your way and flashes a coy smile."
+    "He glances your way and flashes a coy smile."
 
     beckham "KYAAAAAAAAAA~ AKIMITSUUUU!!"
 
-    na "Maybe you should move away from the fan section."
+    "Maybe you should move away from the fan section."
 
-    na "The game goes by quickly and Akimitsu's team wins by a landslide."
+    "The game goes by quickly and Akimitsu's team wins by a landslide."
 
-    na "You feel a sense of pride, but also distance."
+    "You feel a sense of pride, but also distance."
 
-    na "The boy you grew up with is a basketball star, and you're just... well... [mcname]."
+    "The boy you grew up with is a basketball star, and you're just... well... [mcname]."
 
-    na "Suddenly a voice from the loudspeakers snaps you out of your thoughts."
+    "Suddenly a voice from the loudspeakers snaps you out of your thoughts."
 
     #In speakers
     kyle "In honor of this victory, I would like to sing a song. It's dedicated to my favorite person in the world, [mcname]. I love you. {i}{color=#808080}{size=-6}{cps=10}*ahem*{/cps}{/size}{/color}{/i}"
@@ -691,13 +717,13 @@ label s14:
 
 label s15:
 
-    na "You make a scene. How could you resist after all?"
+    "You make a scene. How could you resist after all?"
 
-    na "After throwing a few delinquents out the window with your super muscular muscles...{nw}"
+    "After throwing a few delinquents out the window with your super muscular muscles...{nw}"
 
     # Sound effects
 
-    na "...Takao Isamu swaggers up to your desk."
+    "...Takao Isamu swaggers up to your desk."
     
 
     sophia "Yo."
@@ -706,22 +732,22 @@ label s15:
 
     sophia "You dropped this."
 
-    na "Isamu hands you a small handkerchief with a small cute cat print on it."
+    "Isamu hands you a small handkerchief with a small cute cat print on it."
 
     mc "Oh, that's not mi--"
 
     sophia "Keep it."
 
-    na "Isamu coolly grabs their jacket and leaves the room. You can't help but notice a slight blush on their face."
+    "Isamu coolly grabs their jacket and leaves the room. You can't help but notice a slight blush on their face."
 
     mc "Huh..."
 
-    na "You unfold the handkerchief to find a piece of paper with a message:"
+    "You unfold the handkerchief to find a piece of paper with a message:"
 
     #Sophia's voice / piece of paper with words on it
-    na "{i}You. Me. Rager party. Tonight? Yes? No? Plz yes. :3 Thank you.{color=#808080} - The Panther{/i}{/color}"
+    "{i}You. Me. Rager party. Tonight? Yes? No? Plz yes. :3 Thank you.{color=#808080} - The Panther{/i}{/color}"
 
-    na "Despite \"The Panther\"'s horrible grammar, your heart skips a beat. Are they asking you... on a date?"
+    "Despite \"The Panther\"'s horrible grammar, your heart skips a beat. Are they asking you... on a date?"
 
     if metRiri:
         $ riris[15] = True
@@ -735,38 +761,38 @@ label s15:
 
 label s16:
 
-    na "What a waste, they even blinked at you!"
+    "What a waste, they even blinked at you!"
 
-    na "Well, anyways... You decide to wait out detention. Maybe it was a bad idea to interact anyways."
+    "Well, anyways... You decide to wait out detention. Maybe it was a bad idea to interact anyways."
 
     # After school
 
-    na "Man, it was your first day and you got {i}detention{/i}. Honestly, I'm impressed."
+    "Man, it was your first day and you got {i}detention{/i}. Honestly, I'm impressed."
 
     # Stomach rumbles and screen shakes
 
-    na "Whoa! What was that?! It felt like an earthqua-{nw}"
+    "Whoa! What was that?! It felt like an earthqua-{nw}"
 
-    na "...Oh. It was you? Wow, you must be hungry."
+    "...Oh. It was you? Wow, you must be hungry."
 
-    na "You happen to spot a Hoshibucks{size=-12}©{/size}. It'll be a pretty penny, but a Caramel Ribbon Crunch Frappe sounds pretty good right about now."
+    "You happen to spot a Hoshibucks{size=-12}©{/size}. It'll be a pretty penny, but a Caramel Ribbon Crunch Frappe sounds pretty good right about now."
 
     jump s24
 
 
 label s17:
 
-    na "Yukata scolds you for skipping class."
+    "Yukata scolds you for skipping class."
 
-    na "After some thinking, you decide that this treatment isn't fair in the slightest!"
+    "After some thinking, you decide that this treatment isn't fair in the slightest!"
 
-    na "Maybe you want to skip class? He shouldn't be able to stop you! This is a free country!"
+    "Maybe you want to skip class? He shouldn't be able to stop you! This is a free country!"
 
     mc "I refuse! {i}You{/i} shouldn't be able to send me back to class!"
 
     mc "What are you doing out of class, huh? I'll make {i}you{/i} go back!"
 
-    na "Yukata stares at you for a moment, then a small grin appears on his face."
+    "Yukata stares at you for a moment, then a small grin appears on his face."
 
     jt "Ah, people like you are my favorite!"
 
@@ -774,13 +800,13 @@ label s17:
 
     jt "{i}You{/i} have to listen to me, and {i}I{/i} am in charge. That is how it works, and how it always will."
 
-    na "Who does this guy think he is?"
+    "Who does this guy think he is?"
 
     mc "That's just not fair!"
 
     jt "Oh, but my dear girl, {i}life{/i} is not fair. I am simply getting you ready for reality."
 
-    na "I want to punch \"reality\" into his face! It would have been better if you chose to fight him."
+    "I want to punch \"reality\" into his face! It would have been better if you chose to fight him."
 
     jt "Anyways, I like you, so I will let you off easy this time."
 
@@ -790,34 +816,34 @@ label s17:
 
     jt "Don't make me angrier now. Welp, See you around!"
 
-    na "Yukata turns and walks away confidently. Man, what a prick!"
+    "Yukata turns and walks away confidently. Man, what a prick!"
 
-    na "You pick up the detention slip that he slid in your pocket and reluctantly read it."
+    "You pick up the detention slip that he slid in your pocket and reluctantly read it."
 
     mc "Right after school? This is the worst! Whatever, I better go..."
 
 label s18:
 
-    na "As you're wandering the halls, you notice a student walking your way. He seems to be dressed very nicely, even for the prestigious Gwetome Academy."
+    "As you're wandering the halls, you notice a student walking your way. He seems to be dressed very nicely, even for the prestigious Gwetome Academy."
 
-    na "Wait, that's the student council president! You're in trouble if he finds you out here."
+    "Wait, that's the student council president! You're in trouble if he finds you out here."
 
     menu:
         "Hide behind a corner!":
             jump sub1
-        "Pshh, what is he gonna do?":
+        "Pshh, what is he gondo?":
             jump sub2
     label s18_1:
 
-        na "As you tip-toe over to the corner of the hallway, you accidentally step on a very conveniently placed stick."
+        "As you tip-toe over to the corner of the hallway, you accidentally step on a very conveniently placed stick."
 
         jt "How'd a stick get in here?"
 
-        na "Busted..."
+        "Busted..."
 
     label s18_2:
 
-        na "You stand confidently in the center of the hallway as he walks towards you."
+        "You stand confidently in the center of the hallway as he walks towards you."
 
         
 
@@ -827,7 +853,7 @@ label s18:
 
         jt "What's a pretty looking girl such as yourself doing around these parts?"
 
-        jt "Wait, what's a student doing in the halls? ...I'm terribly sorry, but you're gonna have to go back to class."
+        jt "Wait, what's a student doing in the halls? ...I'm terribly sorry, but you're gonhave to go back to class."
 
         mc "Nonono, I just--{nw}"
 
@@ -842,15 +868,15 @@ label s18:
                 jump s18_4
     label s18_4:
 
-        na "As you start to turn around to walk back to class, you swiftly turn back and drive your fist into the student's face. Nice."
+        "As you start to turn around to walk back to class, you swiftly turn back and drive your fist into the student's face. Nice."
 
-        na "Uh oh, he got back up? Looks like it's time for a fight!"
+        "Uh oh, he got back up? Looks like it's time for a fight!"
 
 label s19:
 
-    na "You throw a powerful punch, flying him across the room. He won't be bringing you back to class again anytime soon."
+    "You throw a powerful punch, flying him across the room. He won't be bringing you back to class again anytime soon."
 
-    na "You hear a feeble voice as you walk away."
+    "You hear a feeble voice as you walk away."
 
     jt "Wait-- please... You don't need to do this!"
 
@@ -860,7 +886,7 @@ label s19:
 
 label s20:
 
-    na "Word quickly spreads about how you punched the student council president and skipped class as you proudly walk out the front gates."
+    "Word quickly spreads about how you punched the student council president and skipped class as you proudly walk out the front gates."
 
     mc "Man, that fight really took a lot out of me. I could really go for a Caramel Ribbon Crunch Frappe right about now."
 
@@ -870,7 +896,7 @@ label s21:
 
     mc "{i}Oh shoot, I forgot to grab one{/i}! Sure, let's head back."
 
-    na "You walk back to class to get a hall pass, even though you never needed one. But right as you grab it, the bell rings."
+    "You walk back to class to get a hall pass, even though you never needed one. But right as you grab it, the bell rings."
 
     jt "Awww, well that's a shame. Well hey, at least we have the same class next period!"
 
@@ -882,9 +908,9 @@ label s21:
 
 label s22:
 
-    na "You release a powerful punch aimed right at Yukata!"
+    "You release a powerful punch aimed right at Yukata!"
 
-    na "...and miss. Well, that's embarrassing."
+    "...and miss. Well, that's embarrassing."
 
     mc "Oh... oops."
 
@@ -898,13 +924,13 @@ label s22:
 
     jt "No! I will not let this stand! Off to counseling with you!"
 
-    na "How dramatic can this kid get..."
+    "How dramatic can this kid get..."
 
     mc "Alright fine, I'll go to counseling. Sorry for trying to punch you, but it was too hard to resist."
 
     jt "Hey! Wait, don't say that about me!"
 
-    na "You turn and go to counseling. You can feel Yukata fuming behind you, but you keep walking without a care in the world."
+    "You turn and go to counseling. You can feel Yukata fuming behind you, but you keep walking without a care in the world."
 
     jump s25
 
@@ -916,27 +942,27 @@ label s24:
 
     mc "I'll take your finest Caramel Ribbon Crunch Frappe, please."
 
-    na "You felt like you've seen this kid before. Maybe from school?"
+    "You felt like you've seen this kid before. Maybe from school?"
 
     beckham "that'll be 2,210¥."
 
     mc "Wh-{nw}"
 
-    na "-Wait, 2,210¥?? What has this world come to..."
+    "-Wait, 2,210¥?? What has this world come to..."
 
-    na "Failing to hold back spending one fourth of your monthly allowance on a single Frappe, you swipe your card and watch as the barista skillfully crafts your drink."
+    "Failing to hold back spending one fourth of your monthly allowance on a single Frappe, you swipe your card and watch as the barista skillfully crafts your drink."
 
-    na "You imagine what the flavor will be as you grab the cup and walk away from the front counter."
+    "You imagine what the flavor will be as you grab the cup and walk away from the front counter."
 
-    mc "It looks so good! I'll worry about the cost later, because this is gonna be so worth i-"
+    mc "It looks so good! I'll worry about the cost later, because this is gonbe so worth i-"
 
     #Drink spill noise, crash
 
     mc "NO! MY CARAMEL RIBBON CRUNCH FRAPPE!!"
 
-    na "Well, that's rough. After you witness-- with pure agony--  the drink spill, you then look up to see… a pole? And an attractive one at that."
+    "Well, that's rough. After you witness-- with pure agony--  the drink spill, you then look up to see… a pole? And an attractive one at that."
 
-    na "Wait, who would put a pole in the middle of a Hoshibucks{size=-12}©{/size}? The pole reaches out a hand to you."
+    "Wait, who would put a pole in the middle of a Hoshibucks{size=-12}©{/size}? The pole reaches out a hand to you."
 
     # Shot with joe and his hand out towards camera in hoshibucks
 
@@ -951,7 +977,7 @@ label s24:
 
     mc "No, it's okay! Don't even worry about it, It didn't cost {i}that{/i} much."
 
-    na "You're still a bit irritated due to the fact that it {i}did{/i} in fact cost that much."
+    "You're still a bit irritated due to the fact that it {i}did{/i} in fact cost that much."
 
     joe "No no no, please, let me! I'd feel bad if I didn't."
 
@@ -959,14 +985,14 @@ label s24:
 
     joe "No no n-"
 
-    na "{b}Enough with the “no no no” talk!{/b}"
+    "{b}Enough with the “no no no” talk!{/b}"
 
     $ joename = "ジョ～"
-    joe "Well, anyways, my name's Joe. Nice to meet you! I'm gonna buy a drink for myself anyways, so I'll get us both one."
+    joe "Well, anyways, my name's Joe. Nice to meet you! I'm gonbuy a drink for myself anyways, so I'll get us both one."
 
     mc "I'm [mcname], nice to meet you!"
 
-    na "You let him buy you another Caramel Ribbon Crunch Frappe and have a nice chat at one of the tables."
+    "You let him buy you another Caramel Ribbon Crunch Frappe and have a nice chat at one of the tables."
 
     joe "Hahaha, you're so funny!"
 
@@ -994,9 +1020,9 @@ label s25:
 
 label s26:
 
-    na "Actually... does it even matter if it's a date? It's a party! Of course you're going!"
+    "Actually... does it even matter if it's a date? It's a party! Of course you're going!"
 
-    na "You carefully put the handkerchief and note in your bag and begin to daydream."
+    "You carefully put the handkerchief and note in your bag and begin to daydream."
 
     mc "I wonder who's going to be there... I'll have to make lots of friends! Maybe I should try something new to make a good impression..."
 
@@ -1004,7 +1030,7 @@ label s26:
 
     mc "Eh? Akimitsu?!"
 
-    na "Chiba Akimitsu, your childhood friend since third grade appears at the desk next to yours."
+    "Chiba Akimitsu, your childhood friend since third grade appears at the desk next to yours."
 
     kyle "Hey [mcname]! Ahaha, did I surprise you?"
 
@@ -1016,9 +1042,9 @@ label s26:
 
     mc "Nothing much... just this party..."
 
-    na "You take out the handkerchief and note and show Akimitsu."
+    "You take out the handkerchief and note and show Akimitsu."
 
-    na "His eyebrows furrow into a look of concern."
+    "His eyebrows furrow into a look of concern."
 
     kyle "A party with... the {i}PANTHER{/i}??? TAKAO ISAMU???"
 
@@ -1042,7 +1068,7 @@ label s26:
 
 label s27:
 
-    na "Date or not, you're not going. You toss the handkerchief and note out the window and wait for the school day to end. Soon enough, word gets around of your rejection."
+    "Date or not, you're not going. You toss the handkerchief and note out the window and wait for the school day to end. Soon enough, word gets around of your rejection."
 
     d2 "That's [mcname] isn't it?"
 
@@ -1058,22 +1084,22 @@ label s27:
 
     d1 "Poor Takao-sama..."
 
-    na "You walk through the halls with shame. When you get home you can only find comfort in the soft light of your television."
+    "You walk through the halls with shame. When you get home you can only find comfort in the soft light of your television."
 
     if metRiri:
         $ riris[27] = True
         call riri
 
 label s28:
-    na "Soon, night falls. You arrive at the party with Akimitsu and head inside."
+    "Soon, night falls. You arrive at the party with Akimitsu and head inside."
 
-    na "The party is surprisingly classy. Everyone is dressed nicely, there's a live jazz band, and even an open apple juice bar. You make a mental note of the apple juice bar."
+    "The party is surprisingly classy. Everyone is dressed nicely, there's a live jazz band, and even an open apple juice bar. You make a mental note of the apple juice bar."
 
-    na "You quickly see Takao Isamu spot you and even slightly move their lips upward."
+    "You quickly see Takao Isamu spot you and even slightly move their lips upward."
 
-    na "You can't tell if they're grimacing in pain or perhaps attempting a smile, but either way it's directed towards you."
+    "You can't tell if they're grimacing in pain or perhaps attempting a smile, but either way it's directed towards you."
 
-    na "Akimitsu tenses up and steps closer to you."
+    "Akimitsu tenses up and steps closer to you."
 
     $ sophianame = "高尾、勇"
 
@@ -1091,9 +1117,9 @@ label s28:
 
     sophia "Anyways, how is the party?"
 
-    na "You start to get the feeling that these two aren't getting along."
+    "You start to get the feeling that these two aren't getting along."
 
-    na "So, you must do what any reasonable person would do: ignore one of them."
+    "So, you must do what any reasonable person would do: ignore one of them."
 
     if metRiri:
         $ riris[28] = True
@@ -1111,7 +1137,7 @@ label s29:
 
     mc "Actually, hanging out sounds fun."
 
-    na "Akimitsu flashes a smile."
+    "Akimitsu flashes a smile."
 
     kyle "That's a relief. After school let's go to my pla--{nw}"
 
@@ -1143,13 +1169,13 @@ label s30:
 
     mc "The party's good.{nw}"
 
-    na "You say, proceeding to turn and face Akimitsu."
+    "You say, proceeding to turn and face Akimitsu."
 
     mc "Hey... should we get going?"
 
     sophia "Wait. Would you like to get drinks with me?"
 
-    na "{i}{color=#808080}{size=-6}{cps=10}*Narrator gasps*{/cps}{/size}{/color}{/i}"
+    "{i}{color=#808080}{size=-6}{cps=10}*Narrator gasps*{/cps}{/size}{/color}{/i}"
 
     menu:
         "You know what? Sure.":
@@ -1161,7 +1187,7 @@ label s31:
 
     mc "The party's good.{nw}"
 
-    na "You say. And then you run and escape to the apple juice bar."
+    "You say. And then you run and escape to the apple juice bar."
 
     #Bar scene
 
@@ -1173,11 +1199,11 @@ label s31:
 
     beckham "Coming right up."
 
-    na "Never before have you tasted such a sweet, succulent drink."
+    "Never before have you tasted such a sweet, succulent drink."
 
-    na "You down glass after glass until your tummy can take it no longer. Delicious."
+    "You down glass after glass until your tummy can take it no longer. Delicious."
 
-    na "Then you go home."
+    "Then you go home."
 
     if metRiri:
         $ riris[27] = True
@@ -1197,7 +1223,7 @@ label s32:
 
     kyle "Don't do this... let's just get drinks. Just the two of us."
 
-    na "{i}{color=#808080}{size=-6}{cps=10}*Narrator gasps*{/cps}{/size}{/color}{/i}"
+    "{i}{color=#808080}{size=-6}{cps=10}*Narrator gasps*{/cps}{/size}{/color}{/i}"
 
     menu:
         "Sounds good to me!":
@@ -1207,7 +1233,7 @@ label s32:
 
 label s33:
 
-    na "You shake your head solemnly"
+    "You shake your head solemnly"
 
     mc "Sorry, Akimitsu. I changed my mind. The party never stops."
 
@@ -1215,7 +1241,7 @@ label s33:
 
     # Door closes
 
-    na "You leave."
+    "You leave."
 
     kyle "Wait! Wait! If you're that determined to go to the party I'll go with you. I'll skip my game."
 
@@ -1231,21 +1257,21 @@ label s34:
 
     mc "Ah, okay! Sounds good to me."
 
-    na "Akimitsu lets out a deep breath as Isamu silently slips away into the crowd."
+    "Akimitsu lets out a deep breath as Isamu silently slips away into the crowd."
 
     kyle "Whew... I thought you were going to ditch me for a second."
 
-    kyle "Wanna go find that open apple juice bar again?"
+    kyle "Wango find that open apple juice bar again?"
 
-    na "After finding the bar and getting your apple juice, the two of you begin to reminisce."
+    "After finding the bar and getting your apple juice, the two of you begin to reminisce."
 
-    na "You think about the dojo and your childhood."
+    "You think about the dojo and your childhood."
 
-    na "How Akimitsu has always been there for you, even writing letters to you after you moved away."
+    "How Akimitsu has always been there for you, even writing letters to you after you moved away."
 
-    na "He hasn't changed a bit has he? It's almost like this whole time he's been waiting for you..."
+    "He hasn't changed a bit has he? It's almost like this whole time he's been waiting for you..."
 
-    kyle "Hey... it's getting a little stuffy in here. Wanna go somewhere else?"
+    kyle "Hey... it's getting a little stuffy in here. Wango somewhere else?"
 
     jump s40
 
@@ -1267,7 +1293,7 @@ label s36:
 
     mc "I'm good. I was planning to spend time with Akimitsu tonight."
 
-    na "Isamu glares coldly at you both."
+    "Isamu glares coldly at you both."
 
     sophia "Hmph."
 
@@ -1287,7 +1313,7 @@ label s37:
 
     kyle "Actually, fine. Do what you want. I don't care."
 
-    na "Akimitsu storms off. His hot fury combined with his blazing looks briefly set another guest on fire, but the flames are doused quickly with some apple juice."
+    "Akimitsu storms off. His hot fury combined with his blazing looks briefly set another guest on fire, but the flames are doused quickly with some apple juice."
 
     sophia "Heh. Let's drink something ourselves too."
 
@@ -1303,7 +1329,7 @@ label s37:
 
 label s38:
 
-    na "As you and Isamu start to go towards the bar you hear a brief shattering sound."
+    "As you and Isamu start to go towards the bar you hear a brief shattering sound."
 
     # Shattering noise
 
@@ -1317,21 +1343,21 @@ label s38:
 
     beckham "Of course."
 
-    na "After hours of discussing fighting techniques and the best way to throw someone out a window, you run out of apple juice."
+    "After hours of discussing fighting techniques and the best way to throw someone out a window, you run out of apple juice."
 
     beckham "I'm sorry, we don't have any more apples to juice. It's a true tragedy for which I am very sorry Takao-sama."
 
-    sophia "Eh, whatever. Hey, [mcname], wanna take break outside? It stinks of granny apples here anyway."
+    sophia "Eh, whatever. Hey, [mcname], wantake break outside? It stinks of granny apples here anyway."
 
     mc "Sure."
 
-    na "The two of you step outside."
+    "The two of you step outside."
 
     #Scene change
 
-    na "You find yourself on a balcony overlooking Shizuoka."
+    "You find yourself on a balcony overlooking Shizuoka."
 
-    na "The wind softly blows through your hair and the lights of the city sparkle in the distance."
+    "The wind softly blows through your hair and the lights of the city sparkle in the distance."
 
     sophia "To be honest... I didn't think you'd come with me."
 
@@ -1345,17 +1371,17 @@ label s38:
 
     mc "I... I like you too."
 
-    na "Soon after Takao Isamu's confession the two of you start dating."
+    "Soon after Takao Isamu's confession the two of you start dating."
 
-    na "It's a surprisingly healthy and loving relationship-- you meet {i}The Family{/i}|, go on lots of dates, and work through conflicts together."
+    "It's a surprisingly healthy and loving relationship-- you meet {i}The Family{/i}|, go on lots of dates, and work through conflicts together."
 
-    na "Eventually you decide to open a cat cafe together... but... it is no ordinary cat cafe."
+    "Eventually you decide to open a cat cafe together... but... it is no ordinary cat cafe."
 
-    na "Through years of discipline and training, blood and tears, your cat cafe becomes the base for a new group of cat yakuza: {i}Nyanken{/i}."
+    "Through years of discipline and training, blood and tears, your cat cafe becomes the base for a new group of cat yakuza: {i}Nyanken{/i}."
 
-    na "It is through Nyanken that you wage the Great Cat War, rise through the ranks, and become the most powerful yakuza couple in the nation."
+    "It is through Nyanken that you wage the Great Cat War, rise through the ranks, and become the most powerful yakuza couple in the nation."
 
-    na "No one can stop your bulging muscles or your untouchable love!...  Nya~"
+    "No one can stop your bulging muscles or your untouchable love!...  Nya~"
 
     jump e5
 
@@ -1363,53 +1389,53 @@ label s38:
 
 label s39:
 
-    na "Romance? {i}{color=#808080}{size=-6}{cps=10}*scoffs*{/cps}{/size}{/color}{/i} That's for weaklings."
+    "Romance? {i}{color=#808080}{size=-6}{cps=10}*scoffs*{/cps}{/size}{/color}{/i} That's for weaklings."
 
-    na "You don't need any of these weirdos, you just came for the party."
+    "You don't need any of these weirdos, you just came for the party."
 
-    na "But the party sucks so..."
+    "But the party sucks so..."
 
     mc "Actually... I'm good."
 
     sophia "...Huh?"
 
-    na "You flip your hair and strut out the door."
+    "You flip your hair and strut out the door."
 
-    na "As you walk you radiate power and confidence. Is this the power of self-worth?"
+    "As you walk you radiate power and confidence. Is this the power of self-worth?"
 
-    na "In fact, the aura from your strut is so strong that it catches the attention of a modeling agent."
+    "In fact, the aura from your strut is so strong that it catches the attention of a modeling agent."
 
     beckham "Wait! I'm a modeling agent who also likes attending high school parties hosted by yakuza. You should join my agency! You're incredible!"
 
     mc "Okay."
 
-    na "And that was how your modeling career began."
+    "And that was how your modeling career began."
 
-    na "You dropped out of high school, moved to New York, and started your legacy by modeling for Elle, Versace, and Vogue."
+    "You dropped out of high school, moved to New York, and started your legacy by modeling for Elle, Versace, and Vogue."
 
     # Visual of "magazines pop up on screen"
 
-    na "You became surrounded by fame and fortune, but soon it became too much."
+    "You became surrounded by fame and fortune, but soon it became too much."
     
-    na "Burdened by the pressure of stardom, you started looking for a way to relieve the stress."
+    "Burdened by the pressure of stardom, you started looking for a way to relieve the stress."
 
-    na "You thought back to that night... that party... and how you didn't get to try that apple juice."
+    "You thought back to that night... that party... and how you didn't get to try that apple juice."
 
-    na "Now you wanted it... you needed it... and eventually you succumbed to it."
+    "Now you wanted it... you needed it... and eventually you succumbed to it."
 
-    na "You spent all your money on apple juice, only drank apple juice, and only cared about apple juice."
+    "You spent all your money on apple juice, only drank apple juice, and only cared about apple juice."
 
-    na "You threw away your career, friends, and life for apple juice."
+    "You threw away your career, friends, and life for apple juice."
 
-    na "Everything you had... became apple juice."
+    "Everything you had... became apple juice."
 
     jump e11
 
 label s40:
 
-    na "The two of you leave the party and walk to a nearby park."
+    "The two of you leave the party and walk to a nearby park."
 
-    na "The air is chilly but the stars are shining clearly and brightly."
+    "The air is chilly but the stars are shining clearly and brightly."
 
     kyle "Let's sit down for a little bit. There's a bench over there."
 
@@ -1469,9 +1495,9 @@ label s41:
 
     joe "Oh okay... I guess I'll see you later then."
 
-    na "You had to get home quick anyways. You haven't been catching up on this season's anime!"
+    "You had to get home quick anyways. You haven't been catching up on this season's anime!"
 
-    na "You dart out of the Hoshibucks, not even thanking him for buying your drink before leaving. Bold."
+    "You dart out of the Hoshibucks, not even thanking him for buying your drink before leaving. Bold."
 
     jump s43
  
@@ -1481,11 +1507,11 @@ label s42:
 
     joe "Perfect! I'm going the same direction. Come on, let's get moving!"
 
-    na "You leave the Hoshibucks with Joe."
+    "You leave the Hoshibucks with Joe."
 
-    na "It almost looks like you two are going on a date, hehe!"
+    "It almost looks like you two are going on a date, hehe!"
 
-    na "Alright now, what will you talk about for maximum romance?"
+    "Alright now, what will you talk about for maximum romance?"
 
     menu:
         "Talk about Hoshibucks":
@@ -1497,17 +1523,17 @@ label s43:
 
     # At home
 
-    na "You sit down in front of your television to watch anime."
+    "You sit down in front of your television to watch anime."
 
-    na "For some strange reason you feel empty and alone, like there is a dark hole in your heart."
+    "For some strange reason you feel empty and alone, like there is a dark hole in your heart."
 
-    na "Maybe it's because Fanana Bish is on? You change the channel."
+    "Maybe it's because FanaBish is on? You change the channel."
 
     mc "Ahh... that's better. Now I can go on with my day and never have to worry about romance agai- {i}{color=#808080}{size=-6}{cps=10}*yawns*{/cps}{/size}{/color}{/i}"
 
     mc "Suddenly... {color=#808080}I feel... {cps=15}{size=-6}very... {size=-8}{cps=5}sleepy.{/cps}"
 
-    na "In the corner of your eye you see a tiny magic wand waving at you from behind the couch. Is that..."
+    "In the corner of your eye you see a tiny magic wand waving at you from behind the couch. Is that..."
 
     if metRiri:
         $ riris[43] = True
@@ -1535,7 +1561,7 @@ label s44:
 
     joe "Really? Me too! It's such a nice way to unwind after a long day."
 
-    na "I think this guy just wants something to do with you… he probably spends all day in Hoshibucks."
+    "I think this guy just wants something to do with you… he probably spends all day in Hoshibucks."
 
     joe "Well, if you're ever free, we should go to the beach together."
 
@@ -1565,7 +1591,7 @@ label s45:
 
     joe "Well, if you're ever free, we should go to the beach together."
 
-    na "Wow, I didn't see that coming! What a slick way to ask you out..."
+    "Wow, I didn't see that coming! What a slick way to ask you out..."
 
     gwyn "Okay, sure! How does tomorrow sound?"
 
@@ -1579,15 +1605,15 @@ label s45:
     
 label s46:
 
-    na "The next day, you and Joe make plans to go to the beach together."
+    "The next day, you and Joe make plans to go to the beach together."
 
-    na "The way he talks to you... I think he likes you, ya know!"
+    "The way he talks to you... I think he likes you, ya know!"
 
-    na "Anyways... After school, you meet up with Joe at the beach."
+    "Anyways... After school, you meet up with Joe at the beach."
 
     joe "Hey, [mcname]! It's nice to see you again. You look good!"
 
-    na "Well, that was fast."
+    "Well, that was fast."
 
     mc "Oh, thanks! Nice to see you too!"
 
@@ -1597,7 +1623,7 @@ label s46:
 
     beckham "Sorry to interrupt, but the currents are very strong today."
 
-    na "This guy {i}again?{/i}"
+    "This guy {i}again?{/i}"
 
     beckham "I recommend staying out of the water, for your own safety."
 
@@ -1627,11 +1653,11 @@ label s47:
 
     mc "If you say so!"
 
-    na "Enough flirting! I'm skipping to the part where you actually swim."
+    "Enough flirting! I'm skipping to the part where you actually swim."
 
     # Switch to water
 
-    na "Ahh, finally... but wait, is Joe okay?"
+    "Ahh, finally... but wait, is Joe okay?"
 
     joe "Hey, I can't touch the ground here! I'm getting pulled out! Someone save me!!!"
 
@@ -1764,6 +1790,24 @@ label e11: # Big Apple Juice
 label e12: # Love in the Basket
 
 label e13:
+
+label trailer:
+
+    "{cps=1.5}...{/cps}"
+
+    "Thanks for that, everyone."
+
+    "It's getting pretty late, {cps=4} {/cps}isn't it?"
+
+    "Its the end of the semester, and..."
+
+    "We don't really have much of a product,{cps=4} {/cps}do we?"
+
+    "{cps=2}...{/cps}Huh."
+
+    "Well, I guess that just leaves one option then."
+
+    "{cps=10}TRAILLLERRRR TIMEEEEEEEEEEEEEE{/cps}"
 
 
 
