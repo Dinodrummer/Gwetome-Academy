@@ -26,41 +26,7 @@ init -2:
 image zeil normal:
     "images/zeil normal.png"
     zoom 0.8
-# --------------------------------------------------------
-init:
-    define mc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink")
 
-    define na = Character(name=None, ctc="ctc_blink")
-    define mom = Character("Mom", ctc="ctc_blink")
-    define sensei = Character("先生 (Sensei)", ctc="ctc_blink")
-    define beckham = Character("マリオ", color = "#ff8b06",  ctc="ctc_blink")
-    define joe = Character("[joename]", color = "#bd44d6", ctc="ctc_blink") # define joe = Character("ジョ~")
-    define kyle = Character("千葉、昭光", color = "#43BC47", ctc="ctc_blink") # define kyle = Character("千葉、昭光 (Chiba, Akimitsu)")
-    define jt = Character("[jtname]", color = "#fff700", ctc="ctc_blink") # define jt = Character("柳井、富 (Yanai, Yutaka)")
-    define sophia = Character("[sophianame]", color = "#0051ff", ctc="ctc_blink") # define sophia = Character("高尾、勇 (Takao, Isamu)")
-    define maryam = Character("[maryamname]", color = "#00eeff", ctc="ctc_blink") # define maryam = Character("木山、遥花 (Kiyama, Haruka)")
-    # define zev = Character("...") # define zev = Character("ゼブ")
-
-    define mi1 = Character("Magical Ikemen 1", ctc="ctc_blink")
-    define mi2 = Character("Meowgical Ikemen 2", ctc="ctc_blink")
-    define pp = Character("PyunPyun", ctc="ctc_blink")
-    define takeshi = Character("Takeshi", ctc="ctc_blink")
-    define dr = Character("Dr.", ctc="ctc_blink")
-
-    define riri = Character("[ririname]", ctc="ctc_blink") # define riri = Character("リリ")
-    define mv = Character("Mysterious Voice", ctc="ctc_blink")
-
-    define d1 = Character("Deliquent 1", ctc="ctc_blink")
-    define d2 = Character("Deliquent 2", ctc="ctc_blink")
-    define d3 = Character("Deliquent 3", ctc="ctc_blink")
-
-    # image beckham agent normal = "/images/Zeil/ph.png"
-    # image beckham agent ecstatic = "/images/Zeil/ph.png"
-    # image beckham bartender normal = "/images/Zeil/ph.png"
-    # image beckham bartender angry = "/images/Zeil/ph.png"
-    # image beckham bartender sad = "/images/Zeil/ph.png"
-    # image beckham fan normal = "/images/Zeil/ph.png"
-    # image beckham fan ecstatic = "/images/Zeil/ph.png"
 init python:
 
     riris = []
@@ -97,6 +63,46 @@ init python:
     from game.images.Maryam import *
     from game.images.Sophia import *
     from game.images.Backgrounds import *
+
+# --------------------------------------------------------
+init:
+    define pjmc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_pajamas")
+    define pmc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_party")
+    define smc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_suit")
+    define mc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_uniform")
+
+    define na = Character(name=None, ctc="ctc_blink")
+    define mom = Character("Mom", ctc="ctc_blink")
+    define sensei = Character("先生 (Sensei)", ctc="ctc_blink")
+    define beckham = Character("マリオ", color = "#ff8b06",  ctc="ctc_blink")
+    define joe = Character("[joename]", color = "#bd44d6", ctc="ctc_blink") # define joe = Character("ジョ~")
+    define kyle = Character("千葉、昭光", color = "#43BC47", ctc="ctc_blink") # define kyle = Character("千葉、昭光 (Chiba, Akimitsu)")
+    define jt = Character("[jtname]", color = "#fff700", ctc="ctc_blink") # define jt = Character("柳井、富 (Yanai, Yutaka)")
+    define sophia = Character("[sophianame]", color = "#0051ff", ctc="ctc_blink") # define sophia = Character("高尾、勇 (Takao, Isamu)")
+    define maryam = Character("[maryamname]", color = "#00eeff", ctc="ctc_blink") # define maryam = Character("木山、遥花 (Kiyama, Haruka)")
+    # define zev = Character("...") # define zev = Character("ゼブ")
+
+    define mi1 = Character("Magical Ikemen 1", ctc="ctc_blink")
+    define mi2 = Character("Meowgical Ikemen 2", ctc="ctc_blink")
+    define pp = Character("PyunPyun", ctc="ctc_blink")
+    define takeshi = Character("Takeshi", ctc="ctc_blink")
+    define dr = Character("Dr.", ctc="ctc_blink")
+
+    define riri = Character("[ririname]", ctc="ctc_blink") # define riri = Character("リリ")
+    define mv = Character("Mysterious Voice", ctc="ctc_blink")
+
+    define d1 = Character("Deliquent 1", ctc="ctc_blink")
+    define d2 = Character("Deliquent 2", ctc="ctc_blink")
+    define d3 = Character("Deliquent 3", ctc="ctc_blink")
+
+    # image beckham agent normal = "/images/Zeil/ph.png"
+    # image beckham agent ecstatic = "/images/Zeil/ph.png"
+    # image beckham bartender normal = "/images/Zeil/ph.png"
+    # image beckham bartender angry = "/images/Zeil/ph.png"
+    # image beckham bartender sad = "/images/Zeil/ph.png"
+    # image beckham fan normal = "/images/Zeil/ph.png"
+    # image beckham fan ecstatic = "/images/Zeil/ph.png"
+
 
     
     
@@ -278,29 +284,28 @@ label start:
     if mcname == "":
         $ mcname = "Naninani Nantoka"
 
-    stop music
-    jump trailer
+    #stop music
+    #jump trailer
     
     scene bedroom
     
+
+    #show side gwyn pajamas tired
+    pjmc normal "I'm so tired... I stayed up all night playing otome games."#Gwyn1
     
+    pjmc "It`s hard not to when you`re given so many choices, especially when you can punch the male leads. Hehehe!"#Gwyn2
 
-    
+    pjmc ecstatic "Oh wait! I forgot to introduce myself. My name is {u}[mcname]{/u}!"#Gwyn3
 
-    mc "I'm so tired... I stayed up all night playing otome games."#Gwyn1
-    
-    mc "It`s hard not to when you`re given so many choices, especially when you can punch the male leads. Hehehe!"#Gwyn2
+    pjmc "I'm sixteen. Today is my first day of my second year at Gwetome Academy."#Gwyn4
 
-    mc "Oh wait! I forgot to introduce myself. My name is {u}[mcname]{/u}!"#Gwyn3
+    pjmc "Ever since my family moved back to Shizuoka, I've been living my high-school life to the fullest."#Gwyn5
 
-    mc "I'm sixteen. Today is my first day of my second year at Gwetome Academy."#Gwyn4
-
-    mc "Ever since my family moved back to Shizuoka, I've been living my high-school life to the fullest."#Gwyn5
-
-    mc "During my time here, I've come to learn that love isn't the only important thing in life. 
+    pjmc "During my time here, I've come to learn that love isn't the only important thing in life. 
         I'm my own person, with my own goals and dreams, and I'm proud of that. I am independent and strong!"#Gwyn6
 
-    mc "...and I'm late for school."#Gwyn7
+    #show gwyn pajamas embarrassed at right
+    pjmc "...and I'm late for school."#Gwyn7
 
     menu:
         "Go downstairs and get ready for school":
@@ -1791,6 +1796,9 @@ label e11: # Big Apple Juice
 label e12: # Love in the Basket
 
 label e13:
+
+
+return
 
 label trailer:
 
