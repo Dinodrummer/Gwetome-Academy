@@ -16,6 +16,7 @@ style default:
 style input:
     properties gui.text_properties("input", accent=True)
     adjust_spacing False
+    color "#ffffff"
 
 style hyperlink_text:
     properties gui.text_properties("hyperlink", accent=True)
