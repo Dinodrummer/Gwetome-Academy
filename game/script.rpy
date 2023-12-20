@@ -275,15 +275,17 @@ label start:
     $ mcname = renpy.input("What is your name?")
     $ mcname = mcname.strip()
     $ mcname = mcname[0:13]
-    
-    #jump trailer
+    if mcname == "":
+        $ mcname = "Naninani Nantoka"
+
+    stop music
+    jump trailer
     
     scene bedroom
     
     
 
-    if mcname == "":
-        $ mcname = "Naninani Nantoka"
+    
 
     mc "I'm so tired... I stayed up all night playing otome games."#Gwyn1
     
@@ -1792,21 +1794,21 @@ label e13:
 
 label trailer:
 
-    "{cps=1.5}...{/cps}"
+    na "{cps=1.5}...{/cps}"
 
-    "Thanks for that, everyone."
+    na "Thanks for that, everyone."
 
-    "It's getting pretty late, {cps=4} {/cps}isn't it?"
+    na "It's getting pretty late, {cps=4} {/cps}isn't it?"
 
-    "Its the end of the semester, and..."
+    na "Its the end of the semester, and..."
 
-    "We don't really have much of a product,{cps=4} {/cps}do we?"
+    na "We don't have much of a product,{cps=5} {/cps}do we?"
 
-    "{cps=2}...{/cps}Huh."
+    na "{cps=2}...{/cps}Huh."
 
-    "Well, I guess that just leaves one option then."
+    na "Well, I guess that just leaves one option then."
 
-    "{cps=10}TRAILLLERRRR TIMEEEEEEEEEEEEEE{/cps}"
+    na "{cps=8}TRAILER TIME!!{/cps}"
 
 
         

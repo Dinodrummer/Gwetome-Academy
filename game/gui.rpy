@@ -32,7 +32,7 @@ define gui.idle_color = '#888888'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = '#ffffff'
+define gui.idle_small_color = '#ffffff' # #000000 for trailer
 
 define gui.name_text_color = '#ffffff'
 
