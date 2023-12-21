@@ -6,3 +6,43 @@ Name cap (13 char)
 
 
 Going to have gwyn (mc) be the only character that has 4 different calls (mc, pjmc, pmc, umc)
+
+
+
+
+bedroom
+classroom_day
+classroom_night
+gate
+gym
+kitchen
+neighborhood
+
+s2
+s4
+s9
+s14
+s58
+s39
+s15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

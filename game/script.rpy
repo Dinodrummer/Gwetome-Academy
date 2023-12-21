@@ -282,11 +282,11 @@ label start:
     $ mcname = mcname.strip()
     $ mcname = mcname[0:13]
     if mcname == "":
-        $ mcname = "Naninani Nantoka"
+        $ mcname = "何とか、何々"
 
     #stop music
     #jump trailer
-    
+    jump s15
     scene bedroom
     
 
@@ -318,6 +318,7 @@ label s2:
 
     na "You put on your uniform and go downstairs."#JT3
 
+    scene kitchen
     mom "Good morning! I made you breakfast since I knew you'd wake up late."#
 
     mom "Dad's already left to go work on his new Food Network episode and I'm heading out now. Have fun at school! I'm off!"#
@@ -361,6 +362,7 @@ label s4:
 
     na "Wow, look at you all responsible! You discard the temptation of Magical Ikemen and start your trek to school."#JT10
 
+    scene neighborhood
     na "You check your phone and see you have more time than you realized. Maybe you'll just quickly look up the information about 
         Magical Ikemen's new season while you walk... you have the time after all."#JT11
 
@@ -371,10 +373,12 @@ label s4:
 
     na "Wow, that's a strangely attractive pole. And it's wearing a... Gwetome Academy uniform!? The pole turns around."#JT14
 
+    show joe normal
     joe "Ah sorry, I was walking kind of slow. Are you ok?"#Joe1
 
     joe "A lot of people bump into me so my back muscles have become hard like metal. My doctor said it's because I tend to draw people in... I'm magnetic."#Joe2
 
+    show joe embarrassed
     joe "Heh. Sorry, I'm rambling. Anyways, I'll just uh... keep walking."#Joe3
 
     na "The mysterious ikemen runs his hand through his hair cooly and starts to saunter away."#JT15
@@ -548,6 +552,7 @@ label s9:
 
     joe "Wow, what a cool name! I'm jealous."
 
+    show joe normal
     joe "I'm just an average Joe, you know? Hahaha!"
 
     na "Seriously, laughing at your own jokes? This guy..."
@@ -664,8 +669,11 @@ label s14:
 
     na "After a short walk out of school the two of you arrive at a small run-down gym."
 
-    mc "The final is... here?"
+    scene gym
+    show kyle jersey normal
+    mc "The final is{cps=4}...{/cps} here?"
 
+    show kyle jersey flirty
     kyle "Yeah! It's just a small local tournament. Nothing to get too excited about."
 
     mc "Oh, got it."
@@ -722,7 +730,7 @@ label s14:
 
 
 label s15:
-
+    scene classroom day
     na "You make a scene. How could you resist after all?"
 
     na "After throwing a few delinquents out the window with your super muscular muscles...{nw}"
@@ -731,7 +739,7 @@ label s15:
 
     na "...Takao Isamu swaggers up to your desk."
     
-
+    show sophia normal
     sophia "Yo."
 
     mc "Oh, hey."
@@ -1407,10 +1415,12 @@ label s39:
 
     na "You flip your hair and strut out the door."
 
+    scene city night
     na "As you walk you radiate power and confidence. Is this the power of self-worth?"
 
     na "In fact, the aura from your strut is so strong that it catches the attention of a modeling agent."
 
+    show beckham agent normal
     beckham "Wait! I'm a modeling agent who also likes attending high school parties hosted by yakuza. You should join my agency! You're incredible!"
 
     mc "Okay."
@@ -1700,6 +1710,18 @@ label s56:
 label s57:
  
 label s58:
+
+    na "You walk up to the door of the address posted on the flier with no worries in your mind."
+
+    scene door
+    na "You then hear some noises coming from the house, like someone is frantically trying to clean up."
+
+    show maryam normal
+    maryam "H- Hello... Are you here for the English lessons?"
+
+    mc "Yep! I saw your flier next to the library!"
+
+    maryam "A- Alright... Come on in..."
  
 label s59:
  

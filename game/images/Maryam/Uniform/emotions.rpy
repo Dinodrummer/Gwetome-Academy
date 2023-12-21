@@ -1,48 +1,48 @@
-image maryan uniform normal:
+image maryam normal:#
+    "images/Maryam/Uniform/maryam normal.png"
+    zoom 0.8
+image maryam ecstatic:
     "images/Maryam/Uniform/ph.png"
     zoom 0.8
-image maryan uniform ecstatic:
+image maryam concerned:
     "images/Maryam/Uniform/ph.png"
     zoom 0.8
-image maryan uniform concerned:
+image maryam angry:
     "images/Maryam/Uniform/ph.png"
     zoom 0.8
-image maryan uniform angry:
+image maryam embarrassed:
     "images/Maryam/Uniform/ph.png"
     zoom 0.8
-image maryan uniform embarrassed:
+image maryam flirty:
     "images/Maryam/Uniform/ph.png"
     zoom 0.8
-image maryan uniform flirty:
+image maryam scared:
     "images/Maryam/Uniform/ph.png"
     zoom 0.8
-image maryan uniform scared:
+image maryam surprised:
     "images/Maryam/Uniform/ph.png"
     zoom 0.8
-image maryan uniform surprised:
+image maryam uncomfortable:
     "images/Maryam/Uniform/ph.png"
     zoom 0.8
-image maryan uniform uncomfortable:
+image maryam confused:
     "images/Maryam/Uniform/ph.png"
     zoom 0.8
-image maryan uniform confused:
+image maryam shy:
     "images/Maryam/Uniform/ph.png"
     zoom 0.8
-image maryan uniform shy:
+image maryam annoyed:
     "images/Maryam/Uniform/ph.png"
     zoom 0.8
-image maryan uniform annoyed:
+image maryam sad:
     "images/Maryam/Uniform/ph.png"
     zoom 0.8
-image maryan uniform sad:
+image maryam disturbed:
     "images/Maryam/Uniform/ph.png"
     zoom 0.8
-image maryan uniform disturbed:
-    "images/Maryam/Uniform/ph.png"
+image maryam insane:#
+    "images/Maryam/Uniform/maryam insane.png"
     zoom 0.8
-image maryan uniform insane:
-    "images/Maryam/Uniform/ph.png"
-    zoom 0.8
-image maryan uniform murderous:
+image maryam murderous:
     "images/Maryam/Uniform/ph.png"
     zoom 0.8

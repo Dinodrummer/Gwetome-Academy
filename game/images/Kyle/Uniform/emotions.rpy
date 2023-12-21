@@ -1,39 +1,39 @@
-image kyle uniform normal:
+image kyle normal:#
+    "images/Kyle/Uniform/kyle normal.png"
+    zoom 0.8
+image kyle ecstatic:
     "images/Kyle/Uniform/ph.png"
     zoom 0.8
-image kyle uniform ecstatic:
+image kyle concerned:
     "images/Kyle/Uniform/ph.png"
     zoom 0.8
-image kyle uniform concerned:
+image kyle angry:
     "images/Kyle/Uniform/ph.png"
     zoom 0.8
-image kyle uniform angry:
+image kyle embarrassed:
     "images/Kyle/Uniform/ph.png"
     zoom 0.8
-image kyle uniform embarrassed:
+image kyle flirty:
     "images/Kyle/Uniform/ph.png"
     zoom 0.8
-image kyle uniform flirty:
+image kyle scared:
     "images/Kyle/Uniform/ph.png"
     zoom 0.8
-image kyle uniform scared:
+image kyle surprised:
     "images/Kyle/Uniform/ph.png"
     zoom 0.8
-image kyle uniform surprised:
+image kyle uncomfortable:
     "images/Kyle/Uniform/ph.png"
     zoom 0.8
-image kyle uniform uncomfortable:
+image kyle confused:
     "images/Kyle/Uniform/ph.png"
     zoom 0.8
-image kyle uniform confused:
+image kyle shy:
     "images/Kyle/Uniform/ph.png"
     zoom 0.8
-image kyle uniform shy:
+image kyle annoyed:
     "images/Kyle/Uniform/ph.png"
     zoom 0.8
-image kyle uniform annoyed:
-    "images/Kyle/Uniform/ph.png"
-    zoom 0.8
-image kyle uniform sad:
+image kyle sad:
     "images/Kyle/Uniform/ph.png"
     zoom 0.8

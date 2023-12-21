@@ -1,4 +1,4 @@
-image sophia party normal:
+image sophia party normal:#
     "images/Sophia/Party/ph.png"
     zoom 0.8
 image sophia party ecstatic:

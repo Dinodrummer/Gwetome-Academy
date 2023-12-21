@@ -1,7 +1,7 @@
-image side gwyn pajamas normal:
+image side gwyn pajamas normal:#
     "images/Gwyn/Pajamas/side gwyn pajamas normal.png"
     zoom 0.8
-image side gwyn pajamas ecstatic:
+image side gwyn pajamas ecstatic:#
     "images/Gwyn/Pajamas/side gwyn pajamas normal.png"
     zoom 0.8
 image side gwyn pajamas concerned:
@@ -22,7 +22,7 @@ image side gwyn pajamas scared:
 image side gwyn pajamas surprised:
     "images/Gwyn/Pajamas/side gwyn pajamas normal.png"
     zoom 0.8
-image side gwyn pajamas uncomfortable:
+image side gwyn pajamas uncomfortable:#
     "images/Gwyn/Pajamas/side gwyn pajamas normal.png"
     zoom 0.8
 image side gwyn pajamas confused:

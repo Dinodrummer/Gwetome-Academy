@@ -1,5 +1,5 @@
-image kyle jersey normal:
-    "images/Kyle/Jersey/ph.png"
+image kyle jersey normal:#
+    "images/Kyle/Jersey/kyle jersey normal.png"
     zoom 0.8
 image kyle jersey ecstatic:
     "images/Kyle/Jersey/ph.png"
@@ -7,8 +7,8 @@ image kyle jersey ecstatic:
 image kyle jersey embarrassed:
     "images/Kyle/Jersey/ph.png"
     zoom 0.8
-image kyle jersey flirty:
-    "images/Kyle/Jersey/ph.png"
+image kyle jersey flirty:#
+    "images/Kyle/Jersey/kyle jersey flirty.png"
     zoom 0.8
 image kyle jersey scared:
     "images/Kyle/Jersey/ph.png"
