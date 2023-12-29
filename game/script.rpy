@@ -4,7 +4,7 @@
 # name of the character.
 
 image vid = Movie(play="audio/5-6.webm", size=(1920,1080),loop=False, xalign=0.10, yalign=0.10)
-#hi
+
 init -2:
     # ---------- CTC blinking arrow -------------------
     image ctc_blink:
