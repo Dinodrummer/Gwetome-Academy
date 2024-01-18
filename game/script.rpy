@@ -286,8 +286,8 @@ label start:
 
     #stop music
     #jump trailer
-    jump s15
-    scene bedroom
+    # jump s15
+    # scene bedroom
     
 
     #show side gwyn pajamas tired
@@ -982,7 +982,7 @@ label s24:
 
     joe "Are you okay?! I'm so sorry, I didn't see where I was going."
 
-    if metJoe = True:
+    if metJoe == True:
         joe "Hey, I remember you! We met at the [metJoeLocation]."
     
     joe "Drinks from Hoshibucks{size=-12}©{/size} are expensive nowadays."
@@ -1690,12 +1690,131 @@ label s47:
             jump s50
 
 label s48:
- 
+
+    mc "Maybe we should just take a walk on the beach for today."
+
+    joe "Okay, sounds good. I'd love to take a walk together."
+
+    # MC Blushes
+    mc "We'll have other opportunities to go swimming together anyways..."
+
+    na "Aww, look at you two!"
+
+    na "You take a nice walk and talk about various things, from hoshibucks, to school, to more hoshibucks, and eventually..."
+
+    joe "You know, name, there's something I should tell you..."
+
+    mc "Yes?"
+
+    joe "Ever since I saw you in hoshibucks, I've thought you are the most beautiful person I've ever seen."
+
+    # Whispering:
+    joe "Maybe even more beautiful than a caramel frappe..."
+
+    joe "But, anyways, I want you to know that..."
+
+    joe "I think... I love you."
+
+    na "How adorable."
+
+    mc "Joe... I think I love you too."
+
+    joe "You've lightened up my life since we met..."
+
+    na "As in yesterday?"
+
+    joe "And I want you to be the light in my life forever."
+
+    # Gwyn giggles
+    mc "I can do that..."
+
+    na "Aww, what a cute couple you make. Good job [mcname]!"
+
+    jump e2
+
 label s49:
+
+    na "You wave your arms until the lifeguard notices Joe struggling."
+
+    na "He rushes out to save Joe!"
+
+    na "He doesn't seem to be paying attention to you though..."
+
+    na "You manage to make it to shore safely, and see the lifeguard performing CPR on an unconscious Joe."
+
+    mc "I've never seen someone perform CPR, but doesn't that seem a little... much?"
+
+    na "Joe gasps and opens his eyes. He seems weirdly... happy to see the lifeguard above him."
+
+    joe "Thank you, you saved my life! I'll... do anything to repay you~"
+
+    na "Joe and the lifeguard stare into each other's eyes for what seems like minutes..."
+
+    na "Something is definitely off."
+
+    beckham "Well, there's only one thing I want..."
+
+    joe "What? I'll do anything!"
+
+    beckham "All I want right now... is you."
+
+    na "The two close their eyes and engage in a long, drawn out kiss."
+
+    na "Wow... really long... seriously, are they just trying to rub it in?"
+
+    na "You sit there, utterly shocked. Really, is there anything else you can do?"
+
+    mc "Is this what I get for not saving you, Joe?"
+
+    joe "I'm sorry, [mcname]..."
+
+    na "Well, that's that, I suppose..."
+
+    jump e1
  
 label s50:
+
+    mc "Don't worry Joe, I'll save you!"
+
+    na "Despite your best efforts, you end up both getting swept away by the current."
+
+    joe "I'm so sorry, [mcname]. This is all my fault..."
+
+    mc "It's okay... I don't want to live if it's without you."
+
+    na "How romantic."
+
+    joe "[mcname]"
+
+    mc "...?"
+
+    joe "I... love you."
+
+    joe "I need you. You are the light in my darkness, the sand on my beach, and..."
+
+    joe "The caramel crunch whipped cream on my caramel frappe."
+
+    joe "You are everything to me, [mcname]."
+
+    na "Wow, this guy really has a way with words."
+
+    na "But, before, you can respond, you are knocked unconscious by a huge wave."
+
+    na "Is this how you die?"
+
+    na "{cps=1.5}...{/cps}"
+
+    na "Just kidding. You wake up on a deserted island with Joe laying by your side."
+
+    # Opens eyes
+
+    joe "[mcname]! You're awake! I got this coconut for you. Please, drink from it!"
+
+    
  
 label s51:
+
+
  
 label s52:
  
@@ -1793,9 +1912,9 @@ label s92:
 
 label e0:
 
-label e1:
+label e1: # Joe falls in love with the lifeguard
     
-label e2:
+label e2: # Date Joe (Needs name)
 
 label e3:
 
