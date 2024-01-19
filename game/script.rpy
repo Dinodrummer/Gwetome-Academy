@@ -39,7 +39,12 @@ init python:
     bgSong = "bgm_skipABeat.mp3"
     config.auto_voice = "voice/{id}.mp3"
 
-    
+    quizWords = ["hi, hello, hey"]
+    quizWord = quizWords[renpy.random.randint(0,len(quizWords) - 1)]
+
+    quizAnswers = ["hi2, hello2, hey2"]
+    quizAnswer = quizAnswers[quizWords.index(quizWord)]
+
     ririname = "..."
     mcname = "..."
     joename = "..."
@@ -73,7 +78,8 @@ init:
 
     define na = Character(name=None, ctc="ctc_blink")
     define mom = Character("Mom", ctc="ctc_blink")
-    define sensei = Character("先生 (Sensei)", ctc="ctc_blink")
+    define teacher_e = Character("先生", ctc="ctc_blink")
+
     define beckham = Character("マリオ", color = "#ff8b06",  ctc="ctc_blink")
     define joe = Character("[joename]", color = "#bd44d6", ctc="ctc_blink") # define joe = Character("ジョ~")
     define kyle = Character("千葉、昭光", color = "#43BC47", ctc="ctc_blink") # define kyle = Character("千葉、昭光 (Chiba, Akimitsu)")
@@ -90,6 +96,7 @@ init:
 
     define riri = Character("[ririname]", ctc="ctc_blink") # define riri = Character("リリ")
     define mv = Character("Mysterious Voice", ctc="ctc_blink")
+    define mi = Character("Mysterious ikemens", ctc="ctc_blink")
 
     define d1 = Character("Deliquent 1", ctc="ctc_blink")
     define d2 = Character("Deliquent 2", ctc="ctc_blink")
@@ -1403,7 +1410,7 @@ label s38:
 
 label s39:
 
-    na "Romance? {i}{color=#b0b0b0}{size=-6}{cps=10}*scoffs*{/cps}{/size}{/color}{/i} That's for weaklings."
+    na "Romance? {i}{color=#b0b0b0}{size=-6}{cps=10}*scoff*{/cps}{/size}{/color}{/i} That's for weaklings."
 
     na "You don't need any of these weirdos, you just came for the party."
 
@@ -1545,7 +1552,7 @@ label s43:
 
     na "Maybe it's because Fanana Bish is on? You change the channel."
 
-    mc "Ahh... that's better. Now I can go on with my day and never have to worry about romance agai- {i}{color=#b0b0b0}{size=-6}{cps=10}*yawns*{/cps}{/size}{/color}{/i}"
+    mc "Ahh... that's better. Now I can go on with my day and never have to worry about romance agai- {i}{color=#b0b0b0}{size=-6}{cps=10}*yawn*{/cps}{/size}{/color}{/i}"
 
     mc "Suddenly... {color=#b0b0b0}I feel... {cps=15}{size=-6}very... {size=-8}{cps=5}sleepy.{/cps}"
 
@@ -1585,7 +1592,7 @@ label s44:
 
     joe "{color=#b0b0b0}{size=-5}I guess I can go one day without my caramel frappe... for [mcname]...{/size}{/color}"
 
-    joe "Sounds good! I'll be looking forward to it! {i}{color=#b0b0b0}{size=-6}{cps=10}wink{/cps}{/size}{/color}{/i}"
+    joe "Sounds good! I'll be looking forward to it! {i}{color=#b0b0b0}{size=-6}{cps=10}*wink*{/cps}{/size}{/color}{/i}"
 
     if metRiri:
         $ riris[44] = True
@@ -1677,7 +1684,7 @@ label s47:
 
     joe "Hey, I can't touch the ground here! I'm getting pulled out! Someone save me!!!"
 
-    joe "I'll admit it, I don't go to the beach very often! I prefer caramel frappes, okay!! {i}{color=#b0b0b0}{size=-6}{cps=10}*crying*{/cps}{/size}{/color}{/i}"
+    joe "I'll admit it, I don't go to the beach very often! I prefer caramel frappes, okay!? {i}{color=#b0b0b0}{size=-6}{cps=10}*crying*{/cps}{/size}{/color}{/i}"
  
     if metRiri:
         $ riris[47] = True
@@ -1774,19 +1781,19 @@ label s49:
  
 label s50:
 
-    mc "Don't worry Joe, I'll save you!"
+    smc "Don't worry Joe, I'll save you!"
 
     na "Despite your best efforts, you end up both getting swept away by the current."
 
     joe "I'm so sorry, [mcname]. This is all my fault..."
 
-    mc "It's okay... I don't want to live if it's without you."
+    smc "It's okay... I don't want to live if it's without you."
 
     na "How romantic."
 
     joe "[mcname]"
 
-    mc "...?"
+    smc "...?"
 
     joe "I... love you."
 
@@ -1810,14 +1817,69 @@ label s50:
 
     joe "[mcname]! You're awake! I got this coconut for you. Please, drink from it!"
 
+    joe "Apparently, Hoshibuck's pink drinks are made with coconut milk, so I thought it must help."
+
+    na "You can feel your burnt skin and pain all over your body, but the coconut does help."
+
+    smc "Thank you, I feel much better. Where are we?"
+
+    joe "It's been a few hours since we washed up on this island. I don't know if anyone will ever come for us."
+
+    smc "Oh... well, we have each other, don't we?"
+
+    na "You take Joe's hand and look into his eyes."
+
+    joe "Maybe, if I have you by my side everyday, I can live without hoshibucks."
+
+    smc "Aw, Joe..."
+
+    na "{i}{color=#b0b0b0}{size=-6}{cps=10}*sigh*{/cps}{/size}{/color}{/i} There he goes again."
+
+    na "You live the rest of your lives together, surviving on the island and its natural resources."
+
+    na "What a happy ending..."
     
+    jump e3
  
 label s51:
 
+    # English class scene
 
- 
+    na "You arrive at your English class. You could have had something fun, like Japanese. But {i}English?{/i}"
+
+    na "You take a seat and get ready to listen to the teacher's lecture."
+
+    na "Right when they start talking, you start feeling very tired. Perhaps a nap wouldn't be too bad..."
+
+    na "You fall into a deep slumber, and dream of a high school life where {i}you{/i} are the main character."
+
+    # Dream scene
+
+    na "As you walk to the front gates of the school in your dreams, you notice four ikemens waving at you from one of the classrooms. They seem to be trying to say something."
+
+    mi "{i}Heeeeey...{/i}"
+
+    teacher_e "Hey, [mcname]!"
+
+    # Back to classroom scene
+
+    na "Suddenly, you feel a sharp pain on your forehead. A piece of chalk then drops onto your desk."
+
+    teacher_e "Would you like to come up to the board and answer the question?"
+
+    mc "Uhhh... What question?"
+
+    teacher_e "{i}{color=#b0b0b0}{size=-6}{cps=10}*sigh*... I have it written right here. What is [quizWord] in Japanese?"
+
+    menu:
+        "[quizAnswers[quizWord - 1]]":
+            jump s52
+
 label s52:
  
+    teacher_e "Good!"
+
+    
 label s53:
  
 label s54:
@@ -1914,9 +1976,9 @@ label e0:
 
 label e1: # Joe falls in love with the lifeguard
     
-label e2: # Date Joe (Needs name)
+label e2: # Date Joe (pending name)
 
-label e3:
+label e3: # Castaway with Joe
 
 label e4: # Love you too
     
