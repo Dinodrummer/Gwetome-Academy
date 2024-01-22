@@ -3,24 +3,24 @@
 While running game code:
   File "game/script.rpy", line 30, in script
     init python:
-  File "game/script.rpy", line 61, in <module>
-    from game.images.Jt import *
-ModuleNotFoundError: No module named 'game.images.Jt'
+  File "game/script.rpy", line 47, in <module>
+    quizAnswers.remove[quizGuess1]
+TypeError: 'method' object is not subscriptable
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/script.rpy", line 30, in script
     init python:
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\ast.py", line 1138, in execute
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/script.rpy", line 61, in <module>
-    from game.images.Jt import *
-ModuleNotFoundError: No module named 'game.images.Jt'
+  File "game/script.rpy", line 47, in <module>
+    quizAnswers.remove[quizGuess1]
+TypeError: 'method' object is not subscriptable
 
-Windows-10-10.0.22621 AMD64
+Windows-10-10.0.22631 AMD64
 Ren'Py 8.1.3.23091805
 Gwetome Academy 1.0
-Fri Dec 29 13:18:28 2023
+Sun Jan 21 16:43:10 2024

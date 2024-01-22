@@ -39,11 +39,22 @@ init python:
     bgSong = "bgm_skipABeat.mp3"
     config.auto_voice = "voice/{id}.mp3"
 
-    quizWords = ["hi, hello, hey"]
+    quizWords = ["Hi", "Hello", "Hey"]
+    quizAnswers = ["Hi2", "Hello2", "Hey2"]
     quizWord = quizWords[renpy.random.randint(0,len(quizWords) - 1)]
+    quizCorrect = quizAnswers[quizWords.index(quizWord)]
+    quizGuess1 = quizAnswers[renpy.random.randint(0,len(quizAnswers) - 1)]
+    quizAnswers.remove(quizGuess1)
+    quizGuess2 = quizAnswers[renpy.random.randint(0,len(quizAnswers) - 1)]
+    quizAnswers.remove(quizGuess2)
+    quizGuess3 = quizAnswers[renpy.random.randint(0,len(quizAnswers) - 1)]
 
-    quizAnswers = ["hi2, hello2, hey2"]
-    quizAnswer = quizAnswers[quizWords.index(quizWord)]
+
+    
+
+
+    # quizAnswers = ["hi2, hello2, hey2"]
+    
 
     ririname = "..."
     mcname = "..."
@@ -295,6 +306,8 @@ label start:
     #jump trailer
     # jump s15
     # scene bedroom
+
+    jump s51
     
 
     #show side gwyn pajamas tired
@@ -1869,17 +1882,67 @@ label s51:
 
     mc "Uhhh... What question?"
 
-    teacher_e "{i}{color=#b0b0b0}{size=-6}{cps=10}*sigh*... I have it written right here. What is [quizWord] in Japanese?"
+    teacher_e "{i}{color=#b0b0b0}{size=-6}{cps=10}*sigh*...{/cps}{/size}{/color}{/i} I have it written right here. What is [quizWord] in Japanese?"
+
 
     menu:
-        "[quizAnswers[quizWord - 1]]":
-            jump s52
+        "[quizGuess1]":
+            if quizGuess1 == quizCorrect:
+                jump s54
+            else:
+                jump s53
+        "[quizGuess2]":
+            if quizGuess2 == quizCorrect:
+                jump s54
+            else:
+                jump s53
+        "[quizGuess3]":
+            if quizGuess3 == quizCorrect:
+                jump s54
+            else:
+                jump s53
 
 label s52:
- 
-    teacher_e "Good!"
 
-    
+    na "Going to class won't get you into college! Instead, you go to the student council office to do something useful instead of rotting in class."
+
+    na "You look around and see a well dressed and quite handsome student sitting in an important looking chair."
+
+    mc "He must be the leader of the student council! I should ask him about signing up!"
+
+    mc "Excuse me, sir?"
+
+    na "The student looks up with a puzzled expression on his face."
+
+    jt "Me? Wow, sir is a new one... Do I really look that good?"
+
+    mc "Oh, you're just well dressed is all..."
+
+    jt "Anyways, what do you need?"
+
+    mc "Well, I saw the poster looking for people to join the student council, and I decided to check it out. Can I sign up?"
+
+    $ jtname = "Yutaka Yanai"
+    jt "Of course! I'd be delighted to have you on our student council team. My name is Yutaka Yanai, nice to meet you!"
+
+    na "Yutaka pulls out a book's worth off papers from his cabinet."
+
+    jt "All you have to do is sign all these documents, and then you can get started."
+
+    mc "Oh wow, alright."
+
+    na "It takes the whole school day, but you eventually finish filling out all the documents."
+
+    na "Besides some documents mentioning that the student council will have complete ownership of your loved ones, prized possessions, free time, and soul, you aren't worried about what you are signing up for."
+
+    na "When you are finally done, you hand them all back to Yutaka."
+
+    jt "Congratulations! You are now an official member of the student council. I'm excited to work together~"
+
+    mc "Thank you! I'll do my best!"
+
+    jump s74
+
 label s53:
  
 label s54:
