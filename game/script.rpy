@@ -98,6 +98,7 @@ init:
     define sophia = Character("[sophianame]", color = "#0051ff", ctc="ctc_blink") # define sophia = Character("高尾、勇 (Takao, Isamu)")
     define maryam = Character("[maryamname]", color = "#00eeff", ctc="ctc_blink") # define maryam = Character("木山、遥花 (Kiyama, Haruka)")
     # define zev = Character("...") # define zev = Character("ゼブ")
+    define kadie = Character("Kadie!1!11!", color = "#00eeff", ctc="ctc_blink")
 
     define mi1 = Character("Magical Ikemen 1", ctc="ctc_blink")
     define mi2 = Character("Meowgical Ikemen 2", ctc="ctc_blink")
@@ -274,7 +275,7 @@ label riri:
         $ riris[35] = False
     if riris[37]:
         
-        riri "If you go get drinks with Isamu, you'll find yourself in a world of broken doors, crime, and... cats?"
+        riri "If you go get drinks with Isamu, you'll find yourself in a world of broken doors, crime, and... {i}cats?{/i}"
 
         riri "I mean, that's basically your only option... right? Right?"
 
@@ -286,6 +287,11 @@ label riri:
         riri "Come on, Naninani! He's the love of your life, your soulmate! You must save him!"
 
         $ riris[47] = False
+    if riris[53]:
+
+        riri "You need to be more explorative! Maybe this girl on the poster is actually your soulmate!"
+
+        $ riris[53] = False
 
 
     return
@@ -304,10 +310,8 @@ label start:
 
     #stop music
     #jump trailer
-    # jump s15
-    # scene bedroom
-
-    jump s51
+    
+    scene bedroom
     
 
     #show side gwyn pajamas tired
@@ -1944,10 +1948,98 @@ label s52:
     jump s74
 
 label s53:
+
+    na "You have no idea what you're doing as you scribble a random vocabulary word you remember onto the chalkboard."
+
+    teacher_e "No... not quite, [mcname]. Maybe studying in the library will help you out."
+
+    teacher_e "You'll need someone to help you on the English project we will have too. Details will be posted in Google Classroom."
+
+    na "Well that's embarrassing. After getting laughed at by the entire class, you decide to go to the library to work on your English skills."
+
+    na "As you are about to enter the library, you notice a flier posted next to the door."
+
+    na "\"Come over to my house at address here if you need help with English words like [quizWord] and English project work. –遥花\". Huh, that sounds exactly like what you need! Maybe a little too exactly... Sounds like stalker behavior..."
+
+    na "Pshh...  Let's be realistic here! It's just a coincidence!"
+
+    if metRiri:
+        $ riris[53] = True
+        call riri
+    
+    menu:
+        "Go to the address":
+            jump s58
+        "Study alone in the library":
+            jump s59
  
 label s54:
+
+    na "You swiftly write the answer up on the chalkboard."
+
+    teacher_e "That's correct [mcname], good job. It wouldn't look good if you got that wrong, that was one of the easier ones."
+
+    na "What a downer... You proudly walk back to your seat and listen to the rest of the lesson."
+
+    teacher_e "Alright everyone, we are going to be starting an English project using the vocabulary we learned. Please get with a partner and make a video by this Friday."
+
+    na "You instantly realize that getting with a partner brings up a big issue..."
+
+    na "...you have no friends."
+
+    na "You notice someone sitting in the back of the classroom. Wanna try grouping with them?"
+
+    menu:
+        "Ask to group with them":
+            jump s56
+        "Nah, I'm good":
+            jump s55
  
 label s55:
+
+    na "Hey, don't get so down! Look, someone's talking to you!"
+
+    jt "Hey, I'm Yukata! You seem pretty cool, want to work together?"
+
+    mc "Oh, sure! What should we do?"
+
+    jt "I was thinking a love story could be pretty fun..."
+
+    na "Something is fishy here..."
+
+    mc "Oh, uh, sure, that could be fun!"
+
+    jt "Alright, it's settled then! Meet me at my house after school to work on it."
+
+    # At Yutaka's house
+
+    na "That night, you head over to Yukata's house."
+
+    na "Well, more like Yukata's castle. This thing is massive!"
+
+    na "Anyways, you spend hours with Yukata, and eventually finish the project."
+
+    jt "Whew! That's the last scene!"
+
+    mc "Yes! We did it!"
+
+    jt "Well, I guess you should start heading back soon..."
+
+    jt "It was... really fun to work together."
+
+    mc "Yeah! I had a lot of fun too. Well, see you tomorrow!"
+
+    na "Well, although Yuata presents as snobby, he really is nice on the inside."
+
+    na "And it seems like he really cares about you... hehe!"
+
+    na "Ahem, anyways, the next day in class..."
+
+    # In class the next day
+
+    teacher_e "Next we have... Yukata and [mcname]'s project."
+
+    jt "Ah yes, our masterpiece is finally being shown!"
  
 label s56:
  
