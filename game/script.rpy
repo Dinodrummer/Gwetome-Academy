@@ -292,8 +292,16 @@ label riri:
         riri "You need to be more explorative! Maybe this girl on the poster is actually your soulmate!"
 
         $ riris[53] = False
+    if riris[57]:
 
+        riri "Maybe we should just give her the benefit of the doubt? But why would she have your ring and not give it back? Hmmm… "
 
+        $ riris[57] = False
+    if riris[60]:
+
+        riri "How strange... let's test her to see if she knows the password!"
+
+        $ riris[60] = False
     return
 # -------------------------------------------------------------------------------------------------------------------
 # s1 = start
@@ -1949,7 +1957,7 @@ label s52:
 
 label s53:
 
-    na "You have no idea what you're doing as you scribble a random vocabulary word you remember onto the chalkboard."
+    na "You have no idea what you're doing as you scribble a random vocabulary word you remember onto the board."
 
     teacher_e "No... not quite, [mcname]. Maybe studying in the library will help you out."
 
@@ -1997,7 +2005,9 @@ label s54:
  
 label s55:
 
-    na "Hey, don't get so down! Look, someone's talking to you!"
+    na "You're gonna have to group with somebody..."
+
+    na "Hey, look, someone's walking up to you!"
 
     jt "Hey, I'm Yukata! You seem pretty cool, want to work together?"
 
@@ -2040,10 +2050,71 @@ label s55:
     teacher_e "Next we have... Yukata and [mcname]'s project."
 
     jt "Ah yes, our masterpiece is finally being shown!"
- 
+
+    mc "Here we go..."
+
+    na "As the teacher shows your project, you can here your classmates murmuring."
+
+    na "As you thought, they're suspicious. Your project seems a little too romantic..."
+
+    teacher_e "Comments?"
+
+    # Unfinished
+
 label s56:
+
+    na "You walk up to the student's desk."
+
+    mc "Hey, do you have anyone to group with?"
+
+    maryam "N-no!"
+
+    mc "Would you like to work together on this project?"
+
+    maryam "S-Sure!"
+
+    na "You realize that your room is a mess, you probably wouldn't want her seeing that."
+
+    mc "can I come over to your house tomorrow to work on it?"
+
+    maryam "Okay, that works for me!"
+
+    na "You knock on the door, and Haruka answers."
+
+    maryam "Welcome. Make yourself at home. Let's go to my room."
+
+    na "You both go upstairs and enter her room."
+
  
 label s57:
+
+    maryam "I'm going to go get my English work from downstairs... stay here for a little."
+
+    na "You sit down and get under the kotatsu positioned in the middle of the room."
+
+    mc "Aaa~ It's so warm~"
+
+    na "As you look around the room, you can see many pieces of hanging tape on the walls surrounding her bed. Did she take those down recently?"
+
+    na "Looking a bit more, you notice a small shiny object on the floor near the other side of the kotatsu."
+
+    # Gwyn talking to herself
+
+    mc "Ooo~ shiny! Hmmm... Isn't this my ring that I lost? I thought it was gone forever!"
+
+    mc "She found it and never gave it back?! So rude!"
+
+    mc "Hold on a minute..."
+
+    if metRiri:
+        $ riris[57] = True
+        call riri
+    
+    menu:
+        "Maybe she was planning to give it back":
+            jump s61
+        "Something's fishy around here...":
+            jump s60
  
 label s58:
 
@@ -2058,10 +2129,76 @@ label s58:
     mc "Yep! I saw your flier next to the library!"
 
     maryam "A- Alright... Come on in..."
+
+    na "As you walk inside, you see Haruka running up the stairs ahead of you. You reach the second floor and see a door slam shut down the hallway."
+
+    # Knock knock
+
+    mc "Hey, is everything alright?"
+
+    maryam "Just one minute...!"
+
+    na "You give her a minute, and she eventually opens the door, silently signaling you to enter the room."
+
+    jump s57
  
 label s59:
+
+    na "Yeah, it sounds a little too risky."
+
+    mc "I think I'll just study alone in the library today..."
+
+    na "You spend all day studying English in the library, until you are fully satisfied that you have memorized that word."
+
+    mc "Finally! Ahh, I'm exhausted. Time to head home and watch some anime..."
+
+    jump s43
  
 label s60:
+
+    mc "Hey, I noticed the ring in your room looks familiar, where did you get it?"
+
+    na "You notice that Haruka starts looking a little nervous."
+
+    maryam "...From a shop."
+
+    mc "Oh, haha! I must be wrong."
+
+    na "You put the ring back on the kotatsu. You start feeling a little uneasy. Maybe working in the safety of your home would be a better idea."
+
+    mc "Do you think we could go to my house to work tomorrow?"
+
+    maryam "Yeah, sure..."
+
+    # New day, at MC house
+
+    na "Haruka arrives at your house, ready to work on the English project."
+
+    mc "Alright, let's get to work!"
+
+    na "Haruka takes her computer out and starts typing right away."
+
+    na "Hmmm... Maybe she's using a Hotspot? You've never given her your Wi-Fi."
+
+    mc "Hey, do you need my Wi-Fi password? You don't have to use data."
+
+    maryam "No-- I mean yes! Yes please!"
+
+    mc "Right... Could I have the computer to put it in?"
+
+    maryam "No! ...I can put it in it myself."
+
+    na "She's acting like she already has your Wi-Fi password. With this and the ring that you found, things are getting awfully suspicious..."
+
+    if metRiri:
+        $ riris[60] = True
+        call riri
+
+    menu:
+        "Test her to see if she knows the password":
+            jump s63
+        "Pshh, it's probably fine!":
+            jump s64
  
 label s61:
  
