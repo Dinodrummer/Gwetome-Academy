@@ -302,6 +302,17 @@ label riri:
         riri "How strange... let's test her to see if she knows the password!"
 
         $ riris[60] = False
+    if riris[63]:
+
+        riri "We can always just do the project another dayyy..."
+        
+        $ riris[63] = False
+    if riris[65]:
+
+        riri "You could call the cops, but the culprit is already long gone..."
+
+        $ riris[65] = False
+
     return
 # -------------------------------------------------------------------------------------------------------------------
 # s1 = start
@@ -2201,14 +2212,157 @@ label s60:
             jump s64
  
 label s61:
+
+    na "You decide not to think too much of it and start to take out your English work."
+
+    # Door noise
+
+    maryam "Hey, I'm back. Do you have everything?"
+
+    mc "Yep! But why is nobody else here? I even arrived thirty minutes late."
+
+    na "You notice her eyes starting to drift away from you as she responds."
+
+    maryam "Yeah uh... The English problem was pretty specific. Maybe there was j-just nobody else that needed help."
+
+    maryam "Anyways... do you want to-{nw}"
+
+    na "Haruka glances to the floor next to you."
+
+    na "She quickly walks over to the other side of the kotatsu and sits down, grabbing the ring."
+
+    maryam "Would you like to start?"
+
+    mc "Okay!"
+
+    na "You and Haruka work through your English for hours until you finally feel confident about your skills."
+
+    # MC stomach rumbles
+
+    maryam "You want to finish up? We could go eat something after."
+
+    mc "Sounds good!"
+
+    na "You and Haruka clean up and start to walk out the door to go eat."
+
+    jump s62
  
 label s62:
+
+    mc "Where would you like to go?"
+
+    maryam "Have you been to Hoshibucks before?"
+
+    mc "Yes! I love Hoshibucks!"
+
+    # In Hoshibucks
+
+    na "In the Hoshibucks line, Haruka notices that she forgot her wallet."
+
+    maryam "Oh no! I forgot my wallet!"
+
+    mc "It's alright, I'll buy you a sweet treat because you helped me so much with the English project!"
+
+    na "Haruka's eyes widen, she is entranced by your generosity and kindness."
+
+    maryam "Thank you so much, [mcname]!"
+
+    na "As you both order the sweet treats and sit down, Haruka seems nervous as if she has something important to tell you."
+
+    maryam "uhm... [mcname]... I have something to tell you..."
+
+    mc "Yes, Haruka?"
+
+    maryam "I've liked you ever since we had math together sophomore year of highschool!"
+
+    na "You guys went to the same sophomore class? How does she even--{nw}"
+
+    maryam "When you gave me your extra pencil right before the final test, I knew you were the one for me! Would you like to go on a date with me?"
+
+    mc "I would love to!"
+
+    jump e8
  
 label s63:
+
+    na "You decide to test Haruka."
+
+    mc "Alright then, the password is 123456."
+
+    na "the real password is actually 1234567..."
+
+    maryam "Perfect! I connected! L-let's get to work shall we?"
+
+    na "You go silent, how could she possibly know your wifi password?!"
+
+    maryam "[maryam] are you a-alright? You're awfully quiet."
+
+    na "Your heart starts to race, Haruka has noticed your changed demeanor."
+
+    mc "Ahaha actually, I don't feel very well at the moment, maybe we could continue another day?"
+
+    maryam "Oh, alright, I see."
+
+    na "Haruka hastily grabs her stuff and goes home. Anxiety is rushing through your veins, how could she have known your wifi password?!"
+
+    # New day at school
+
+    na "You and Haruka plan on finishing the project later that day, but then you notice a handsome figure approaching..."
+
+    kyle "Hey naninani, I was wondering if you would like to come hang out with me after school...if you're not busy of course."
+
+    na "Haruka's demeanor suddenly changes."
+
+    na "Hmm, you were originally going to wrap up that project with Haruka though..."
+
+    if metRiri:
+        $ riris[63] = True
+        call riri
+    
+    menu:
+        "That project can wait! Hang out with Akimitsu instead":
+            jump s65
+        "Nah, we have to finish this project.":
+            jump s66
  
 label s64:
+
+    mc "Alright then, the password is 1234567."
+
+    maryam "I'm in. Let's finish this project!"
+
+    na "The two of you get the project done early and decide to go get a sweet treat together."
+
+    jump s62
  
 label s65:
+
+    na "After school, you and Akimitsu get Hoshibucks. After you order your drinks, the two of you walk around the town and stop at a quaint park."
+
+    na "The trees are thick and the sun has gone down, the two of you are seemingly alone."
+
+    kyle "Uhm... [mcname], there has been something on my mind that I have wanted to tell you for a really long time now..."
+
+    na "You turn around and look at Akimitsu, his face is flushed red but you can't tell whether he is blushing or if it's the cold breeze."
+
+    mc  "What is it?"
+
+    kyle "I have loved you ever since we were kids..."
+
+    na "Just as Akimitsu confesses his love, you hear a leaf crackle and the bushes shake as if someone is in them and are shocked to hear Akimitsu's love confession!"
+
+    kyle "Who's there!"
+
+    na "The person in the bushes scurries deeper into them. The two of you look over to find a photo of the two of you from Hoshibucks and a knife! Whoever was in the bushes has been stalking you guys all day!"
+
+    if metRiri:
+        $ riris[65] = True
+        call riri
+
+    menu:
+        "Call the cops!":
+            jump s69
+        "Don't call the cops"
  
 label s66:
  
@@ -2280,7 +2434,7 @@ label e6:
 
 label e7:
 
-label e8:
+label e8: # Date Maryam (pending name)
 
 label e9:
 
