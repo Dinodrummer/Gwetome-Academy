@@ -294,12 +294,12 @@ label riri:
         $ riris[53] = False
     if riris[57]:
 
-        riri "Maybe we should just give her the benefit of the doubt? But why would she have your ring and not give it back? Hmmm… "
+        riri "Maybe we should just give the, the benefit of the doubt? But why would they have your ring and not give it back? Hmmm..."
 
         $ riris[57] = False
     if riris[60]:
 
-        riri "How strange... let's test her to see if she knows the password!"
+        riri "How strange... let's test them to see if they know the password!"
 
         $ riris[60] = False
     if riris[63]:
@@ -2084,7 +2084,7 @@ label s56:
 
     maryam "S-Sure!"
 
-    na "You realize that your room is a mess, you probably wouldn't want her seeing that."
+    na "You realize that your room is a mess, you probably wouldn't want them seeing that."
 
     mc "can I come over to your house tomorrow to work on it?"
 
@@ -2094,7 +2094,7 @@ label s56:
 
     maryam "Welcome. Make yourself at home. Let's go to my room."
 
-    na "You both go upstairs and enter her room."
+    na "You both go upstairs and enter their room."
 
  
 label s57:
@@ -2105,7 +2105,7 @@ label s57:
 
     mc "Aaa~ It's so warm~"
 
-    na "As you look around the room, you can see many pieces of hanging tape on the walls surrounding her bed. Did she take those down recently?"
+    na "As you look around the room, you can see many pieces of hanging tape on the walls surrounding their bed. Did they take those down recently?"
 
     na "Looking a bit more, you notice a small shiny object on the floor near the other side of the kotatsu."
 
@@ -2113,7 +2113,7 @@ label s57:
 
     mc "Ooo~ shiny! Hmmm... Isn't this my ring that I lost? I thought it was gone forever!"
 
-    mc "She found it and never gave it back?! So rude!"
+    mc "They found it and never gave it back?! So rude!"
 
     mc "Hold on a minute..."
 
@@ -2122,7 +2122,7 @@ label s57:
         call riri
     
     menu:
-        "Maybe she was planning to give it back":
+        "Maybe they were planning to give it back":
             jump s61
         "Something's fishy around here...":
             jump s60
@@ -2149,7 +2149,7 @@ label s58:
 
     maryam "Just one minute...!"
 
-    na "You give her a minute, and she eventually opens the door, silently signaling you to enter the room."
+    na "You give they a minute, and they eventually opens the door, silently signaling you to enter the room."
 
     jump s57
  
@@ -2187,9 +2187,9 @@ label s60:
 
     mc "Alright, let's get to work!"
 
-    na "Haruka takes her computer out and starts typing right away."
+    na "Haruka takes their computer out and starts typing right away."
 
-    na "Hmmm... Maybe she's using a Hotspot? You've never given her your Wi-Fi."
+    na "Hmmm... Maybe they're using a Hotspot? You've never given them your Wi-Fi."
 
     mc "Hey, do you need my Wi-Fi password? You don't have to use data."
 
@@ -2199,14 +2199,14 @@ label s60:
 
     maryam "No! ...I can put it in it myself."
 
-    na "She's acting like she already has your Wi-Fi password. With this and the ring that you found, things are getting awfully suspicious..."
+    na "they're acting like they already have your Wi-Fi password. With this and the ring that you found, things are getting awfully suspicious..."
 
     if metRiri:
         $ riris[60] = True
         call riri
 
     menu:
-        "Test her to see if she knows the password":
+        "Test them to see if they know the password":
             jump s63
         "Pshh, it's probably fine!":
             jump s64
@@ -2221,7 +2221,7 @@ label s61:
 
     mc "Yep! But why is nobody else here? I even arrived thirty minutes late."
 
-    na "You notice her eyes starting to drift away from you as she responds."
+    na "You notice their eyes starting to drift away from you as they respond."
 
     maryam "Yeah uh... The English problem was pretty specific. Maybe there was j-just nobody else that needed help."
 
@@ -2229,7 +2229,7 @@ label s61:
 
     na "Haruka glances to the floor next to you."
 
-    na "She quickly walks over to the other side of the kotatsu and sits down, grabbing the ring."
+    na "They quickly walk over to the other side of the kotatsu and sit down, grabbing the ring."
 
     maryam "Would you like to start?"
 
@@ -2257,25 +2257,25 @@ label s62:
 
     # In Hoshibucks
 
-    na "In the Hoshibucks line, Haruka notices that she forgot her wallet."
+    na "In the Hoshibucks line, Haruka notices that they forgot their wallet."
 
     maryam "Oh no! I forgot my wallet!"
 
     mc "It's alright, I'll buy you a sweet treat because you helped me so much with the English project!"
 
-    na "Haruka's eyes widen, she is entranced by your generosity and kindness."
+    na "Haruka's eyes widen, they are entranced by your generosity and kindness."
 
     maryam "Thank you so much, [mcname]!"
 
-    na "As you both order the sweet treats and sit down, Haruka seems nervous as if she has something important to tell you."
+    na "As you both order the sweet treats and sit down, Haruka seems nervous as if they something important to tell you."
 
     maryam "uhm... [mcname]... I have something to tell you..."
 
     mc "Yes, Haruka?"
 
-    maryam "I've liked you ever since we had math together sophomore year of highschool!"
+    maryam "I've liked you ever since we had art together freshman year of highschool!"
 
-    na "You guys went to the same sophomore class? How does she even--{nw}"
+    na "You guys went to the same freshman class? How do they even--{nw}"
 
     maryam "When you gave me your extra pencil right before the final test, I knew you were the one for me! Would you like to go on a date with me?"
 
@@ -2293,9 +2293,9 @@ label s63:
 
     maryam "Perfect! I connected! L-let's get to work shall we?"
 
-    na "You go silent, how could she possibly know your wifi password?!"
+    na "You go silent, how could they possibly know your wifi password?!"
 
-    maryam "[maryam] are you a-alright? You're awfully quiet."
+    maryam "[mcname], are you a-alright? You're awfully quiet."
 
     na "Your heart starts to race, Haruka has noticed your changed demeanor."
 
@@ -2303,7 +2303,7 @@ label s63:
 
     maryam "Oh, alright, I see."
 
-    na "Haruka hastily grabs her stuff and goes home. Anxiety is rushing through your veins, how could she have known your wifi password?!"
+    na "Haruka hastily grabs their stuff and goes home. Anxiety is rushing through your veins, how could they have known your wifi password?!"
 
     # New day at school
 
