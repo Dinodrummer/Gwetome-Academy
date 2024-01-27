@@ -1162,7 +1162,7 @@ label s28:
 
     sophia "Hey. I've heard a lot about you, [mcname]. I'm Takao Isamu."
 
-    sophia "When I saw you I wasn't sure the rumors were true, but now I know. You're incredible. What dojo did--"
+    sophia "When I first saw you I wasn't sure the rumors were true, but now I know. You're incredible. What dojo did--"
 
     kyle "Youseikan. We trained at Youseikan."
 
@@ -2445,29 +2445,6 @@ label e11: # Big Apple Juice
 label e12: # Love in the Basket
 
 label e13:
-
-
-return
-
-label trailer:
-
-    na "{cps=1.5}...{/cps}"
-
-    na "Thanks for that, everyone."
-
-    na "It's getting pretty late, {cps=4} {/cps}isn't it?"
-
-    na "Its the end of the semester, and..."
-
-    na "We don't have much of a product,{cps=5} {/cps}do we?"
-
-    na "{cps=2}...{/cps}Huh."
-
-    na "Well, I guess that just leaves one option then."
-
-    na "{cps=8}TRAILER TIME!!{/cps}"
-
-
         
 
         
