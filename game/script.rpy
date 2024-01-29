@@ -6,7 +6,7 @@
 image vid = Movie(play="audio/5-6.webm", size=(1920,1080),loop=False, xalign=0.10, yalign=0.10)
 
 init -2:
-    # ---------- CTC blinking arrow -------------------
+    # ---------- blinking arrow -------------------
     image ctc_blink:
 
         alpha 1.0
@@ -21,6 +21,14 @@ init -2:
         xpos 4
         0.5
         repeat
+
+transform jumper:
+    ease .04 yoffset 20
+    ease .03 yoffset 16
+    ease .02 yoffset 12
+    ease .01 yoffset 8
+    ease .01 yoffset 4
+    ease .01 yoffset 0
 
 #--------------
 image zeil normal:
@@ -113,6 +121,8 @@ init:
     define d1 = Character("Deliquent 1", ctc="ctc_blink")
     define d2 = Character("Deliquent 2", ctc="ctc_blink")
     define d3 = Character("Deliquent 3", ctc="ctc_blink")
+
+
 
     # image beckham agent normal = "/images/Zeil/ph.png"
     # image beckham agent ecstatic = "/images/Zeil/ph.png"
@@ -329,6 +339,7 @@ label start:
 
     #stop music
     #jump trailer
+    jump s39
     
     scene bedroom
     
@@ -1463,13 +1474,14 @@ label s39:
 
     na "In fact, the aura from your strut is so strong that it catches the attention of a modeling agent."
 
-    show beckham agent normal
+    show beckham agent normal at jumper
     beckham "Wait! I'm a modeling agent who also likes attending high school parties hosted by yakuza. You should join my agency! You're incredible!"
 
     mc "Okay."
 
     na "And that was how your modeling career began."
 
+    hide beckham
     na "You dropped out of high school, moved to New York, and started your legacy by modeling for Elle, Versace, and Vogue."
 
     # Visual of "magazines pop up on screen"
