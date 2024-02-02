@@ -2,13 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 25: expected 'name' not found.
-    transform jump:
-              ^
-
-File "game/script.rpy", line 1477: expected 'simple_expression' not found.
-    show beckham agent normal at jump
-                                 ^
+File "game/script.rpy", line 92: is not terminated with a newline. (Check strings and parenthesis.)
+        define mc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = ((0, "#6529233d", -2, 2), (2, "#65292318", -3, 3), (1, "#6529230e", -4, 4))
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Fri Jan 26 18:08:26 2024
+Thu Feb  1 23:44:38 2024

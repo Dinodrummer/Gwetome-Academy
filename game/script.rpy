@@ -30,11 +30,6 @@ transform jumper:
     ease .01 yoffset 4
     ease .01 yoffset 0
 
-#--------------
-image zeil normal:
-    "images/zeil normal.png"
-    zoom 0.8
-
 init python:
 
     riris = []
@@ -90,10 +85,11 @@ init python:
 
 # --------------------------------------------------------
 init:
+
     define pjmc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png")
     define pmc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_party", window_background="gui/textbox2.png")
     define smc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_suit", window_background="gui/textbox2.png")
-    define mc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_uniform", window_background="gui/textbox2.png")
+    define mc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = ((0, "#65292321", -2, 2), (2, "#7a373110", -3, 3), (1, "#65292309", -4, 4),(0, "#7a373121", 2, -2), (2, "#7a373110", 3, -3), (1, "#7a373107", 4, -4),(0, "#7a373121", 2, 2), (2, "#7a373110", 3, 3), (1, "#7a373107", 4, 4),(0, "#7a373121", -2, -2), (2, "#7a373110", -3, -3), (1, "#7a373107", -4, -4)))
 
     define na = Character(name=None, ctc="ctc_blink")
     define mom = Character("Mom", ctc="ctc_blink")
@@ -106,7 +102,7 @@ init:
     define sophia = Character("[sophianame]", color = "#0051ff", ctc="ctc_blink") # define sophia = Character("高尾、勇 (Takao, Isamu)")
     define maryam = Character("[maryamname]", color = "#00eeff", ctc="ctc_blink") # define maryam = Character("木山、遥花 (Kiyama, Haruka)")
     # define zev = Character("...") # define zev = Character("ゼブ")
-    define kadie = Character("Kadie!1!11!", color = "#00eeff", ctc="ctc_blink")
+    # define kadie = Character("Kadie!1!11!", color = "#00eeff", ctc="ctc_blink")
 
     define mi1 = Character("Magical Ikemen 1", ctc="ctc_blink")
     define mi2 = Character("Meowgical Ikemen 2", ctc="ctc_blink")
@@ -121,7 +117,16 @@ init:
     define d1 = Character("Deliquent 1", ctc="ctc_blink")
     define d2 = Character("Deliquent 2", ctc="ctc_blink")
     define d3 = Character("Deliquent 3", ctc="ctc_blink")
-
+    
+    style character_text:
+        outlines [
+        (0, "#6529233d", 2, 2),
+        (2, "#65292318", 3, 3),
+        (1, "#6529230e", 4, 4)
+        
+    ]
+        
+    #default say = character_text
 
 
     # image beckham agent normal = "/images/Zeil/ph.png"
@@ -339,25 +344,23 @@ label start:
 
     #stop music
     
-    scene bedroom
+    scene kitchen
     
 
-    #show side gwyn pajamas tired
-    pjmc normal "I'm so tired... I stayed up all night playing otome games."#Gwyn1
+    mc normal "I'm so tired... I stayed up all night playing otome games."#Gwyn1
     
-    pjmc "It`s hard not to when you`re given so many choices, especially when you can punch the male leads. Hehehe!"#Gwyn2
+    mc ecstatic "It`s hard not to when you`re given so many choices, especially when you can punch the male leads. Hehehe!"#Gwyn2
 
-    pjmc ecstatic "Oh wait! I forgot to introduce myself. My name is {u}[mcname]{/u}!"#Gwyn3
+    pjmc scared "Oh wait! I forgot to introduce myself. My name is {u}[mcname]{/u}!"#Gwyn3
 
-    pjmc "I'm sixteen. Today is my first day of my second year at Gwetome Academy."#Gwyn4
+    pjmc normal "I'm sixteen. Today is my first day of my second year at Gwetome Academy."#Gwyn4
 
-    pjmc "Ever since my family moved back to Shizuoka, I've been living my high-school life to the fullest."#Gwyn5
+    pjmc normal "Ever since my family moved back to Shizuoka, I've been living my high-school life to the fullest."#Gwyn5
 
-    pjmc "During my time here, I've come to learn that love isn't the only important thing in life. 
+    pjmc normal "During my time here, I've come to learn that love isn't the only important thing in life. 
         I'm my own person, with my own goals and dreams, and I'm proud of that. I am independent and strong!"#Gwyn6
 
-    #show gwyn pajamas embarrassed at right
-    pjmc "...and I'm late for school."#Gwyn7
+    pjmc embarrassed"...and I'm late for school."#Gwyn7
 
     menu:
         "Go downstairs and get ready for school":

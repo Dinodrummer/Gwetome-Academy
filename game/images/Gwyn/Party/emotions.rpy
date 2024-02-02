@@ -4,8 +4,8 @@ image side gwyn party angry:
 image side gwyn party cocky:
     "images/Gwyn/Party/side gwyn_party cocky.png"
     zoom 0.8
-image side gwyn party confused:
-    "images/Gwyn/Party/side gwyn_party confused.png"
+image side gwyn party concerned:
+    "images/Gwyn/Party/side gwyn_party concerned.png"
     zoom 0.8
 image side gwyn party ecstatic:
     "images/Gwyn/Party/side gwyn_party ecstatic.png"

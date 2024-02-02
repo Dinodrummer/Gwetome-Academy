@@ -1,8 +1,8 @@
 image side gwyn pajamas angry:
     "images/Gwyn/Pajamas/side gwyn_pajamas angry.png"
     zoom 0.8
-image side gwyn pajamas confused:
-    "images/Gwyn/Pajamas/side gwyn_pajamas confused.png"
+image side gwyn pajamas concerned:
+    "images/Gwyn/Pajamas/side gwyn_pajamas concerned.png"
     zoom 0.8
 image side gwyn pajamas ecstatic:
     "images/Gwyn/Pajamas/side gwyn_pajamas ecstatic.png"

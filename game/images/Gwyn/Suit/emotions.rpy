@@ -1,8 +1,8 @@
 image side gwyn suit angry:
     "images/Gwyn/Suit/side gwyn_suit angry.png"
     zoom 0.8
-image side gwyn suit confused:
-    "images/Gwyn/Suit/side gwyn_suit confused.png"
+image side gwyn suit concerned:
+    "images/Gwyn/Suit/side gwyn_suit concerned.png"
     zoom 0.8
 image side gwyn suit ecstatic:
     "images/Gwyn/Suit/side gwyn_suit ecstatic.png"
