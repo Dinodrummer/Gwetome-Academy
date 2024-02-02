@@ -90,10 +90,10 @@ init python:
 
 # --------------------------------------------------------
 init:
-    define pjmc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_pajamas")
-    define pmc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_party")
-    define smc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_suit")
-    define mc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_uniform")
+    define pjmc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png")
+    define pmc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_party", window_background="gui/textbox2.png")
+    define smc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_suit", window_background="gui/textbox2.png")
+    define mc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_uniform", window_background="gui/textbox2.png")
 
     define na = Character(name=None, ctc="ctc_blink")
     define mom = Character("Mom", ctc="ctc_blink")
@@ -338,8 +338,6 @@ label start:
         $ mcname = "何とか、何々"
 
     #stop music
-    #jump trailer
-    jump s39
     
     scene bedroom
     
@@ -2374,7 +2372,8 @@ label s65:
     menu:
         "Call the cops!":
             jump s69
-        "Don't call the cops"
+        "Don't call the cops":
+            jump s68
  
 label s66:
  
