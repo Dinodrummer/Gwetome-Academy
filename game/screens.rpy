@@ -12,11 +12,12 @@ init offset = -1
 style default:
     properties gui.text_properties()
     language gui.language
+    
 
 style input:
     properties gui.text_properties("input", accent=True)
     adjust_spacing False
-    color "#ffffff"
+    color "#fefcfc"
 
 style hyperlink_text:
     properties gui.text_properties("hyperlink", accent=True)
@@ -24,7 +25,6 @@ style hyperlink_text:
 
 style gui_text:
     properties gui.text_properties("interface")
-
 
 style button:
     properties gui.button_properties("button")
@@ -137,7 +137,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/textbox.png", xalign=0.5, yalign=0.0)
     
 
 
@@ -149,7 +149,8 @@ style namebox:
     ypos gui.name_ypos
     ysize gui.namebox_height
 
-    background Frame("gui/namebox.png", 100, 100)
+    background Image("gui/namebox.png")
+    #background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
@@ -157,13 +158,18 @@ style say_label:
     xalign gui.name_xalign
     yalign 0.5
 
+#style say_dialogue
+#style say_dialogue:
+    #properties gui.text_properties("dialogue")
+    #xpos gui.dialogue_xpos
+    #xsize gui.dialogue_width
+    #ypos gui.dialogue_ypos
+    #adjust_spacing False
 style say_dialogue:
     properties gui.text_properties("dialogue")
-
     xpos gui.dialogue_xpos
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
-
     adjust_spacing False
 
 ## Input screen ################################################################
