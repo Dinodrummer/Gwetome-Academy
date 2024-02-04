@@ -85,38 +85,38 @@ init python:
 
 # --------------------------------------------------------
 init:
+    $ dialogue_outlines = ((0, "#65292321", -2, 2), (2, "#7a373110", -3, 3), (1, "#65292309", -4, 4),(0, "#7a373121", 2, -2), (2, "#7a373110", 3, -3), (1, "#7a373107", 4, -4),(0, "#7a373121", 2, 2), (2, "#7a373110", 3, 3), (1, "#7a373107", 4, 4),(0, "#7a373121", -2, -2), (2, "#7a373110", -3, -3), (1, "#7a373107", -4, -4))
+    define pjmc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png", what_outlines = dialogue_outlines)
+    define pmc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_party", window_background="gui/textbox2.png", what_outlines = dialogue_outlines)
+    define smc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_suit", window_background="gui/textbox2.png", what_outlines = dialogue_outlines)
+    define mc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines)
 
-    define pjmc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png")
-    define pmc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_party", window_background="gui/textbox2.png")
-    define smc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn_suit", window_background="gui/textbox2.png")
-    define mc = Character("[mcname]", color = "#ffffff", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = ((0, "#65292321", -2, 2), (2, "#7a373110", -3, 3), (1, "#65292309", -4, 4),(0, "#7a373121", 2, -2), (2, "#7a373110", 3, -3), (1, "#7a373107", 4, -4),(0, "#7a373121", 2, 2), (2, "#7a373110", 3, 3), (1, "#7a373107", 4, 4),(0, "#7a373121", -2, -2), (2, "#7a373110", -3, -3), (1, "#7a373107", -4, -4)))
+    define na = Character(name=None, ctc="ctc_blink", what_outlines = dialogue_outlines)
+    define mom = Character("Mom", ctc="ctc_blink", what_outlines = dialogue_outlines)
+    define teacher_e = Character("先生", ctc="ctc_blink", what_outlines = dialogue_outlines)
 
-    define na = Character(name=None, ctc="ctc_blink")
-    define mom = Character("Mom", ctc="ctc_blink")
-    define teacher_e = Character("先生", ctc="ctc_blink")
-
-    define beckham = Character("マリオ", color = "#ff8b06",  ctc="ctc_blink")
-    define joe = Character("[joename]", color = "#bd44d6", ctc="ctc_blink") # define joe = Character("ジョ~")
-    define kyle = Character("千葉、昭光", color = "#43BC47", ctc="ctc_blink") # define kyle = Character("千葉、昭光 (Chiba, Akimitsu)")
-    define jt = Character("[jtname]", color = "#fff700", ctc="ctc_blink") # define jt = Character("柳井、富 (Yanai, Yutaka)")
-    define sophia = Character("[sophianame]", color = "#0051ff", ctc="ctc_blink") # define sophia = Character("高尾、勇 (Takao, Isamu)")
-    define maryam = Character("[maryamname]", color = "#00eeff", ctc="ctc_blink") # define maryam = Character("木山、遥花 (Kiyama, Haruka)")
+    define beckham = Character("マリオ", color = "#ff8b06",  ctc="ctc_blink", what_outlines = dialogue_outlines)
+    define joe = Character("[joename]", color = "#bd44d6", ctc="ctc_blink", what_outlines = dialogue_outlines) # define joe = Character("ジョ~")
+    define kyle = Character("千葉、昭光", color = "#43BC47", ctc="ctc_blink", what_outlines = dialogue_outlines) # define kyle = Character("千葉、昭光 (Chiba, Akimitsu)")
+    define jt = Character("[jtname]", color = "#fff700", ctc="ctc_blink", what_outlines = dialogue_outlines) # define jt = Character("柳井、富 (Yanai, Yutaka)")
+    define sophia = Character("[sophianame]", color = "#0051ff", ctc="ctc_blink", what_outlines = dialogue_outlines) # define sophia = Character("高尾、勇 (Takao, Isamu)")
+    define maryam = Character("[maryamname]", color = "#00eeff", ctc="ctc_blink", what_outlines = dialogue_outlines) # define maryam = Character("木山、遥花 (Kiyama, Haruka)")
     # define zev = Character("...") # define zev = Character("ゼブ")
     # define kadie = Character("Kadie!1!11!", color = "#00eeff", ctc="ctc_blink")
 
-    define mi1 = Character("Magical Ikemen 1", ctc="ctc_blink")
-    define mi2 = Character("Meowgical Ikemen 2", ctc="ctc_blink")
-    define pp = Character("PyunPyun", ctc="ctc_blink")
-    define takeshi = Character("Takeshi", ctc="ctc_blink")
-    define dr = Character("Dr.", ctc="ctc_blink")
+    define mi1 = Character("Magical Ikemen 1", ctc="ctc_blink", what_outlines = dialogue_outlines)
+    define mi2 = Character("Meowgical Ikemen 2", ctc="ctc_blink", what_outlines = dialogue_outlines)
+    define pp = Character("PyunPyun", ctc="ctc_blink", what_outlines = dialogue_outlines)
+    define takeshi = Character("Takeshi", ctc="ctc_blink", what_outlines = dialogue_outlines)
+    define dr = Character("Dr.", ctc="ctc_blink", what_outlines = dialogue_outlines)
 
-    define riri = Character("[ririname]", ctc="ctc_blink") # define riri = Character("リリ")
-    define mv = Character("Mysterious Voice", ctc="ctc_blink")
-    define mi = Character("Mysterious ikemens", ctc="ctc_blink")
+    define riri = Character("[ririname]", ctc="ctc_blink", what_outlines = dialogue_outlines) # define riri = Character("リリ")
+    define mv = Character("Mysterious Voice", ctc="ctc_blink", what_outlines = dialogue_outlines)
+    define mi = Character("Mysterious ikemens", ctc="ctc_blink", what_outlines = dialogue_outlines)
 
-    define d1 = Character("Deliquent 1", ctc="ctc_blink")
-    define d2 = Character("Deliquent 2", ctc="ctc_blink")
-    define d3 = Character("Deliquent 3", ctc="ctc_blink")
+    define d1 = Character("Deliquent 1", ctc="ctc_blink", what_outlines = dialogue_outlines)
+    define d2 = Character("Deliquent 2", ctc="ctc_blink", what_outlines = dialogue_outlines)
+    define d3 = Character("Deliquent 3", ctc="ctc_blink", what_outlines = dialogue_outlines)
     
     style character_text:
         outlines [
