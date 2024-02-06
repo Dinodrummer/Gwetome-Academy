@@ -348,9 +348,11 @@ label start:
 
     #stop music
     
+    jump s4
+
+
     scene kitchen
     
-
     mc normal "I'm so tired... I stayed up all night playing otome games."#Gwyn1
     
     mc ecstatic "It`s hard not to when you`re given so many choices, especially when you can punch the male leads. Hehehe!"#Gwyn2
@@ -513,7 +515,6 @@ label s5:
 
     menu:
         "Go to school... late":
-            $ metRiri = True
             jump s10
 
 label s6:
@@ -641,8 +642,6 @@ label s10:
         riri "But... you need to be the one making the decisions. Got it?"
 
         riri "I'll just be over here, and if you need my input just click on me."
-
-        #riri goes into the corner and you can click on him
 
         riri "Hehe... hehehehehe..."
 
