@@ -347,8 +347,6 @@ label start:
         $ mcname = "何とか、何々"
 
     #stop music
-    
-    jump s4
 
 
     scene kitchen
