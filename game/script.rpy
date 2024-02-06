@@ -31,6 +31,14 @@ transform jumper:
     ease .01 yoffset 0
 
 init python:
+    import functools
+    def sideimage( interact=True, **kwargs):
+        if not interact:
+            return
+
+        elif who is == mc:
+            gui.dialogue_width = 500
+            
     def display_character_names(english_name, japanese_name, x, y):
         renpy.show(renpy.text(english_name, size=40, color="#ffffff"), x=x, y=y)
         renpy.show(renpy.text(japanese_name, size=20, color="#ffffff"), x=x, y=y + 50)
@@ -93,7 +101,7 @@ init:
     define pjmc = Character("[mcname]", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, bold = True)
     define pmc = Character("[mcname]", ctc="ctc_blink", image="gwyn_party", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, bold = True)
     define smc = Character("[mcname]", ctc="ctc_blink", image="gwyn_suit", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, bold = True)
-    define mc = Character("[mcname]", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, bold = True)
+    define mc = Character("[mcname]", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, callback=sideimage, bold = True)
 
     define na = Character(name=None, ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define mom = Character("Mom", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
