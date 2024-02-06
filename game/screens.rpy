@@ -174,7 +174,7 @@ style say_dialogue:
 style say_dialogue_mc:
     properties gui.text_properties("dialogue")
     xpos gui.dialogue_xpos
-    xsize (gui.dialogue_width - 500)
+    xsize (gui.dialogue_width - 5000)
     ypos gui.dialogue_ypos
     adjust_spacing False
 
