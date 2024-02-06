@@ -1,4042 +1,864 @@
-Sun Feb  4 01:21:25 2024
-Windows-10-10.0.22631
+Mon Feb  5 15:00:32 2024
+Windows-10-10.0.22621
 Ren'Py 8.1.3.23091805
  
 
-Bootstrap to the start of init.init. took 0.02s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.20s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-
-File "game/gui.rpy", line 143: Indentation mismatch.
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.44s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 23.53s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.15s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/gui.rpy", line 142: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    define gui.dialogue_width = 800
-    ^
-
-File "game/gui.rpy", line 143: expected statement.
-    else:
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 51.97s
+Bootstrap to the start of init.init. took 0.04s
 Early init. took 0.00s
 Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.13s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/gui.rpy", line 143: expected statement.
-    else:
-        ^
-
-File "game/gui.rpy", line 141: expected an indented block
-    if renpy.get_say_attributes().who == mc:
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 61.45s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.13s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/gui.rpy", line 142: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    define gui.dialogue_width = 800
-    ^
-
-File "game/gui.rpy", line 143: expected statement.
-    else:
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 62.09s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.13s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/gui.rpy", line 142: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    define gui.dialogue_width = 800
-    ^
-
-File "game/gui.rpy", line 143: expected statement.
-    else:
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 101.12s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.15s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.06s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 145.71s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.27s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-Full traceback:
-  File "game/script.rpy", line 33, in script
-    init python:
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 89, in <module>
-    if renpy.get_say_attributes().who == mc:
-AttributeError: 'NoneType' object has no attribute 'who'
-
-While running game code:
-  File "game/script.rpy", line 33, in script
-    init python:
-  File "game/script.rpy", line 89, in <module>
-    if renpy.get_say_attributes().who == mc:
-AttributeError: 'NoneType' object has no attribute 'who'
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.28s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 162.51s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.28s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 91: expected an indented block
-    else:
-     ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.26s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 167.28s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.25s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 89: expected an indented block
-    if renpy.get_say_attributes().who == mc:
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 178.09s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.28s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 89: expected an indented block
-    if renpy.get_say_attributes().who == mc:
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.26s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 182.82s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.25s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-Full traceback:
-  File "game/script.rpy", line 33, in script
-    init python:
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 89, in <module>
-    if renpy.get_say_attributes().who == mc:
-AttributeError: 'NoneType' object has no attribute 'who'
-
-While running game code:
-  File "game/script.rpy", line 33, in script
-    init python:
-  File "game/script.rpy", line 89, in <module>
-    if renpy.get_say_attributes().who == mc:
-AttributeError: 'NoneType' object has no attribute 'who'
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.27s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 202.61s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.27s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 225.55s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.23s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.22s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 268.09s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.22s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 269.84s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
+Loading error handling. took 0.04s
 Loading script. took 0.20s
-Loading save slot metadata. took 0.02s
+Loading save slot metadata. took 0.04s
 Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
+Running init code. took 0.08s
+Loading analysis data. took 0.02s
 Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
+Reloading save slot metadata. took 0.75s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
+Dump and make backups. took 0.09s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.03s
-DPI scale factor: 1.000000
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.05s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 277.65s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 165: end of line expected.
-    if renpy.get_say_attributes().who == mc:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 280.86s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 165: end of line expected.
-    $ if renpy.get_say_attributes().who == mc:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 285.62s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 166: expected statement.
-    xsize gui.dialogue_width
-             ^
-
-File "game/screens.rpy", line 167: expected statement.
-    ypos gui.dialogue_ypos
-            ^
-
-File "game/screens.rpy", line 169: expected statement.
-    adjust_spacing False
-                        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 291.84s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 166: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    xsize gui.dialogue_width
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 293.59s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.24s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 299.90s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 161: if statement expects a non-empty block.
-    if renpy.get_say_attributes().who == mc:
-                                            ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 303.10s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.21s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 161: expected an indented block
-    if renpy.get_say_attributes().who == mc:
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 306.29s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.21s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 161: expected an indented block
-    if renpy.get_say_attributes().who == mc:
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 312.57s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 315.78s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 319.00s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 323.73s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 325.44s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.13s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 161: expected an indented block
-    if renpy.get_say_attributes().who == mc:
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 327.14s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 330.38s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 335.12s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 339.87s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 341.57s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-
-File "game/screens.rpy", line 168: expected statement.
-    else:
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 349.28s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-
-File "game/screens.rpy", line 168: expected statement.
-    else:
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 357.05s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-
-File "game/screens.rpy", line 168: expected statement.
-    else:
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.26s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 360.28s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.14s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 165: is not terminated with a newline. (Check strings and parenthesis.)
-            xsize (gui.dialogue_width
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 362.00s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-
-File "game/screens.rpy", line 168: expected statement.
-    else:
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 365.21s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.21s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-
-File "game/screens.rpy", line 168: expected statement.
-    else:
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 369.42s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-
-File "game/screens.rpy", line 168: expected statement.
-    else:
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 454.03s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-
-File "game/screens.rpy", line 168: expected statement.
-    else:
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 464.75s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-
-File "game/screens.rpy", line 168: expected statement.
-    else:
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 467.61s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-
-File "game/screens.rpy", line 168: expected statement.
-    else:
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.22s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 468.27s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-
-File "game/screens.rpy", line 168: expected statement.
-    else:
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 482.04s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.20s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 485.32s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.13s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.02s
+Load screen analysis took 0.04s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.04s
+Prepare screens took 0.09s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.04s
+Interface start. took 0.13s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 497.68s
+Bootstrap to the start of init.init. took 13.35s
 Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
+Loader init. took 0.08s
+Loading error handling. took 0.04s
 Loading script. took 0.20s
-Loading save slot metadata. took 0.02s
+Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
 Analyze and compile ATL. took 0.01s
 Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.20s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 541.95s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-
-File "game/screens.rpy", line 168: expected statement.
-    else:
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 549.69s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.13s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 553.07s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.20s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 160: python block expects a non-empty block.
-    python:
-           ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 557.79s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 160: python block expects a non-empty block.
-    python:
-           ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 559.54s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.20s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected statement.
-    else:
-        ^
-
-File "game/screens.rpy", line 162: expected an indented block
-    style say_dialogue:
-     ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 561.26s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected statement.
-    else:
-        ^
-
-File "game/screens.rpy", line 162: invalid syntax
-        style say_dialogue:
-               ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 564.46s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected statement.
-    else:
-        ^
-
-File "game/screens.rpy", line 162: invalid syntax
-        style say_dialogue:
-               ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 569.21s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.22s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: invalid syntax
-        style say_dialogue:
-               ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.26s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 576.99s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 160: python block expects a non-empty block.
-    python:
-           ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 580.18s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.23s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.23s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 597.13s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 160: style statement expects a non-empty block.
-    style say_dialogue:
-                       ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.26s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 613.91s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: end of line expected.
-    if who is mc:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.26s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 617.14s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 161: end of line expected.
-    if who is mc:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 618.85s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 161: end of line expected.
-    if who is mc:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 626.59s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 161: end of line expected.
-    if who is mc:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 634.35s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.21s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 160: style statement expects a non-empty block.
-    style say_dialogue:
-                       ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 639.11s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.14s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 730.37s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 163: 'style' is not a keyword argument or valid child of the screen statement.
-    style say_dialogue:
-         ^
-
-File "game/screens.rpy", line 169: expected statement.
-    else:
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 733.64s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: 'style' is not a keyword argument or valid child of the screen statement.
-    style say_dialogue:
-         ^
-
-File "game/screens.rpy", line 168: expected statement.
-    else:
-        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 736.84s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.21s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: 'style' is not a keyword argument or valid child of the screen statement.
-    style say_dialogue:
-         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 746.11s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: 'style' is not a keyword argument or valid child of the screen statement.
-    style say_dialogue:
-         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 749.31s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: 'style' is not a keyword argument or valid child of the screen statement.
-    style say_dialogue:
-         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.28s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 752.51s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: 'style' is not a keyword argument or valid child of the screen statement.
-    style say_dialogue:
-         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 755.71s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: 'style' is not a keyword argument or valid child of the screen statement.
-    style say_dialogue:
-         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 761.95s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 161: expected statement.
-    screenm
-           ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.26s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 765.19s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 161: style property style is not known.
-    style say_dialogue:
-         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 768.41s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: style property style is not known.
-    style say_dialogue:
-         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.26s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 776.17s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.21s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.20s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 780.97s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 782.68s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 162: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    style say_dialogue:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 785.91s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.13s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 802.91s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.22s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 807.75s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.20s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 848.95s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.20s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 161: style property style is not known.
-    style say_dialogue:
-         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 855.15s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.22s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 944.91s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.23s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
+Dump and make backups. took 0.06s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.05s
-DPI scale factor: 1.000000
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.07s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.03s
+Interface start. took 0.06s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 946.72s
+Bootstrap to the start of init.init. took 29.15s
 Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.14s
+Loader init. took 0.10s
+Loading error handling. took 0.04s
+Loading script. took 0.48s
 Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
 Running init code. took 0.04s
 Loading analysis data. took 0.02s
 Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
+Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
-Dump and make backups. took 0.04s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.05s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.06s
-DPI scale factor: 1.000000
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.04s
 Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.04s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.04s
+Interface start. took 0.06s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 953.07s
+Bootstrap to the start of init.init. took 31.21s
 Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.20s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    python:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 960.82s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 166: style property y is not known.
-    y
-     ^
-
-File "game/screens.rpy", line 169: end of line expected.
-    python:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 970.05s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 166: style property y is not known.
-    y
-     ^
-
-File "game/screens.rpy", line 169: end of line expected.
-    python:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 974.78s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 166: style property y is not known.
-    y
-     ^
-
-File "game/screens.rpy", line 169: end of line expected.
-    python:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 977.97s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    python:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.22s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 981.17s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    python:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 982.92s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    python:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 990.68s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    python:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 998.42s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    python:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1004.65s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    python:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1059.11s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.13s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 175: Indentation mismatch.
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1062.37s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    if some_condition:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1065.60s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    if some_condition:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1068.80s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    if some_condition:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.22s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1112.69s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    if sa:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1114.40s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    if :
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1135.71s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    if s:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1143.44s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
+Loader init. took 0.08s
+Loading error handling. took 0.03s
 Loading script. took 0.20s
 Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    if sw:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.27s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1146.65s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    if who is mc:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1169.48s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected statement.
-    window:
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1171.21s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected statement.
-    window:
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1186.48s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected statement.
-    window:
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1191.24s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected statement.
-    window:
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1194.45s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.02s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected statement.
-    window:
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1197.66s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected statement.
-    window:
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1205.40s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    if who is mc:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1211.63s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected statement.
-    window:
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.22s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1234.50s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 141: style property fd is not known.
-    fd
-      ^
-
-File "game/screens.rpy", line 168: expected statement.
-    window:
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1237.72s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected statement.
-    window:
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1242.45s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.20s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected 'word' not found.
-    screen:
-          ^
-
-File "game/screens.rpy", line 169: expected statement.
-    window:
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1244.18s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected 'word' not found.
-    screen:
-          ^
-
-File "game/screens.rpy", line 170: expected statement.
-    window:
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.25s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1247.42s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected statement.
-    window:
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1252.17s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected statement.
-    window textbox():
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.27s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1255.36s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected statement.
-    window:
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1261.60s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.20s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected 'word' not found.
-    screen:
-          ^
-
-File "game/screens.rpy", line 170: expected statement.
-    window:
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1264.84s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected 'word' not found.
-    screen:
-          ^
-
-File "game/screens.rpy", line 170: expected statement.
-    window:
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1266.59s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected 'word' not found.
-    screen:
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1269.81s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 168: expected 'word' not found.
-    screen:
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1279.03s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.20s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 172: Line is indented, but the preceding style statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    properties gui.text_properties("dialogue")
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1324.46s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.22s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 170: expected a keyword argument or end of line.
-    style say_dialogue:
-                      ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1327.67s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.17s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 171: Line is indented, but the preceding style statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    if who is mc:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.22s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1330.93s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 170: expected a keyword argument or end of line.
-    style say_dialogue:
-                      ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1344.73s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    if sa:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.24s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1349.47s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/screens.rpy", line 169: end of line expected.
-    if sa:
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.26s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 1352.68s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.01s
-Loading script. took 0.23s
-Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
 Running init code. took 0.04s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
+Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
+Dump and make backups. took 0.07s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
+Initial gc. took 0.06s
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.05s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.03s
+Interface start. took 0.07s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 1354.47s
+Bootstrap to the start of init.init. took 41.08s
 Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.21s
+Loader init. took 0.08s
+Loading error handling. took 0.03s
+Loading script. took 0.46s
 Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
 Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
+Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
+Dump and make backups. took 0.06s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.03s
-DPI scale factor: 1.000000
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.06s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 50.99s
+Early init. took 0.00s
+Loader init. took 0.09s
+Loading error handling. took 0.03s
+Loading script. took 0.42s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
 Interface start. took 0.05s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 1356.42s
+Bootstrap to the start of init.init. took 54.72s
 Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.01s
-Loading script. took 0.22s
-Loading save slot metadata. took 0.02s
+Loader init. took 0.09s
+Loading error handling. took 0.02s
+Loading script. took 0.45s
+Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
-Running init code. took 0.03s
+Running init code. took 0.06s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
+Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
+Dump and make backups. took 0.08s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
+Initial gc. took 0.10s
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.17s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.01s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.05s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.03s
+Interface start. took 0.07s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.23'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 232.44s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.02s
+Loading script. took 0.35s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.13s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 296.02s
+Early init. took 0.00s
+Loader init. took 0.09s
+Loading error handling. took 0.02s
+Loading script. took 0.35s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 313.62s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.02s
+Loading script. took 0.32s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/screens.rpy", line 111: reached end of line when expecting ':'.
+    if who is 
+              ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.18s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 316.91s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.02s
+Loading script. took 0.34s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/screens.rpy", line 111: window expects a non-empty block.
+    if who is mc:
+                 ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 320.22s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.02s
+Loading script. took 0.31s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+
+File "game/screens.rpy", line 111: reached end of line when expecting ':'.
+    if who is mc or who is 
+                           ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 323.56s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.02s
+Loading script. took 0.37s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+
+File "game/screens.rpy", line 111: window expects a non-empty block.
+    if who is mc or who is pjmc:
+                                ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 366.49s
+Early init. took 0.00s
+Loader init. took 0.09s
+Loading error handling. took 0.02s
+Loading script. took 0.26s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/screens.rpy", line 111: reached end of line when expecting ':'.
+    if who is mc or who is pjmc
+                               ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 369.81s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.03s
+Loading script. took 0.26s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/screens.rpy", line 111: reached end of line when expecting ':'.
+    if who is mc or who is pjmc or who is 
+                                          ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 377.79s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.03s
+Loading script. took 0.26s
+Loading save slot metadata. took 0.07s
+Loading persistent. took 0.00s
+
+File "game/screens.rpy", line 111: reached end of line when expecting ':'.
+    if who is mc or who is pjmc or who is pmc or who is smc
+                                                           ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 388.73s
+Early init. took 0.00s
+Loader init. took 0.09s
+Loading error handling. took 0.02s
+Loading script. took 0.34s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+
+File "game/screens.rpy", line 111: window expects a non-empty block.
+    if who is mc or who is pjmc or who is pmc or who is smc:
+                                                            ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 566.71s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.02s
+Loading script. took 0.40s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/screens.rpy", line 112: expected a keyword argument or end of line.
+    style say_dialogue:
+                      ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 568.48s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.03s
+Loading script. took 0.31s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+
+File "game/screens.rpy", line 112: expected a keyword argument or end of line.
+    style say_dialogue:
+                      ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 579.45s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.03s
+Loading script. took 0.36s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/screens.rpy", line 113: Line is indented, but the preceding style statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    properties gui.text_properties("dialogue")
+    ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 584.37s
+Early init. took 0.00s
+Loader init. took 0.14s
+Loading error handling. took 0.02s
+Loading script. took 0.34s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/screens.rpy", line 113: Line is indented, but the preceding style statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    properties gui.text_properties("dialogue")
+    ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.20s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 589.28s
+Early init. took 0.00s
+Loader init. took 0.09s
+Loading error handling. took 0.02s
+Loading script. took 0.38s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/screens.rpy", line 113: Line is indented, but the preceding style statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    properties gui.text_properties("dialogue")
+    ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 591.12s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.02s
+Loading script. took 0.32s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/screens.rpy", line 113: Line is indented, but the preceding style statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    properties gui.text_properties("dialogue")
+    ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.12s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 600.63s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.03s
+Loading script. took 0.24s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/screens.rpy", line 115: is not terminated with a newline. (Check strings and parenthesis.)
+                        (xsize gui.dialogue_width
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.15s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 602.43s
+Early init. took 0.00s
+Loader init. took 0.09s
+Loading error handling. took 0.02s
+Loading script. took 0.34s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+
+File "game/screens.rpy", line 113: Line is indented, but the preceding style statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    properties gui.text_properties("dialogue")
+    ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 605.81s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.03s
+Loading script. took 0.30s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+
+File "game/screens.rpy", line 113: Line is indented, but the preceding style statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    properties gui.text_properties("dialogue")
+    ^
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5008'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2776, 1562) drawable=(2776, 1562)
 Maximum texture size: 4096x4096

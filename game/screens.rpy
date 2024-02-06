@@ -108,6 +108,20 @@ screen say(who, what):
                 id "namebox"
                 style "namebox"
                 text who id "who"
+            if who is mc or who is pjmc or who is pmc or who is smc:
+                style say_dialogue:
+                    properties gui.text_properties("dialogue")
+                    xpos gui.dialogue_xpos
+                    (xsize gui.dialogue_width - 500)
+                    ypos gui.dialogue_ypos
+                    adjust_spacing False
+            else:
+                style say_dialogue:
+                    properties gui.text_properties("dialogue")
+                    xpos gui.dialogue_xpos
+                    xsize gui.dialogue_width
+                    ypos gui.dialogue_ypos
+                    adjust_spacing False
 
         text what id "what"
 
@@ -172,6 +186,13 @@ style say_dialogue:
     ypos gui.dialogue_ypos
     adjust_spacing False
 
+style say_dialogue_mc:
+    properties gui.text_properties("dialogue")
+    xpos gui.dialogue_xpos
+    xsize (gui.dialogue_width - 500)
+    ypos gui.dialogue_ypos
+    adjust_spacing False
+
 ## Input screen ################################################################
 ##
 ## This screen is used to display renpy.input. The prompt parameter is used to
@@ -205,6 +226,7 @@ style input_prompt:
 style input:
     xalign gui.dialogue_text_xalign
     xmaximum gui.dialogue_width
+
 
 
 ## Choice screen ###############################################################
