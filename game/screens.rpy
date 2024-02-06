@@ -117,7 +117,6 @@ screen say(who, what):
     if not renpy.variant("small"):
         add SideImage() yalign 1.0 yoffset 220 zoom 0.51 xpos 1210
 
-
 ## Make the namebox available for styling through the Character object.
 init python:
     config.character_id_prefixes.append('namebox')
