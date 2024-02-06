@@ -513,7 +513,7 @@ label s5:
 
     menu:
         "Go to school... late":
-            $ riris[10] = True
+            $ metRiri = True
             jump s10
 
 label s6:
