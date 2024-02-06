@@ -108,20 +108,6 @@ screen say(who, what):
                 id "namebox"
                 style "namebox"
                 text who id "who"
- #           if who is mc or who is pjmc or who is pmc or who is smc:
-  #              style say_dialogue:
-   #                 properties gui.text_properties("dialogue")
-   #                 xpos gui.dialogue_xpos
-    #                (xsize gui.dialogue_width - 500)
-    #                ypos gui.dialogue_ypos
-       #             adjust_spacing False
-      #      else:
-      #          style say_dialogue:
-      #              properties gui.text_properties("dialogue")
-      #              xpos gui.dialogue_xpos
-      #              xsize gui.dialogue_width
-      #              ypos gui.dialogue_ypos
-         #           adjust_spacing False
 
         text what id "what"
 
