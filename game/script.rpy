@@ -345,7 +345,8 @@ label start:
     $ mcname = mcname.strip()
     $ mcname = mcname[0:13]
     if mcname == "":
-        $ mcname = "何とか、何々"
+        $ mcname = "Naninani Nantoka"
+        #何とか、何々
 
     #stop music
     
