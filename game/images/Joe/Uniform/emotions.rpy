@@ -1,39 +1,30 @@
-image joe normal:#
-    "images/Joe/Uniform/joe normal.png"
-    zoom 0.8
-image joe ecstatic:
-    "images/Joe/Uniform/ph.png"
+image joe angry:
+    "images/Joe/Uniform/joe angry.png"
     zoom 0.8
 image joe concerned:
-    "images/Joe/Uniform/ph.png"
-    zoom 0.8
-image joe angry:
-    "images/Joe/Uniform/ph.png"
-    zoom 0.8
-image joe embarrassed:#
-    "images/Joe/Uniform/joe embarrassed.png"
-    zoom 0.8
-image joe flirty:
-    "images/Joe/Uniform/ph.png"
-    zoom 0.8
-image joe scared:
-    "images/Joe/Uniform/ph.png"
-    zoom 0.8
-image joe surprised:
-    "images/Joe/Uniform/ph.png"
-    zoom 0.8
-image joe uncomfortable:
-    "images/Joe/Uniform/ph.png"
+    "images/Joe/Uniform/joe concerned.png"
     zoom 0.8
 image joe confused:
-    "images/Joe/Uniform/ph.png"
+    "images/Joe/Uniform/joe confused.png"
     zoom 0.8
-image joe shy:
-    "images/Joe/Uniform/ph.png"
+image joe ecstatic:
+    "images/Joe/Uniform/joe ecstatic.png"
     zoom 0.8
-image joe annoyed:
-    "images/Joe/Uniform/ph.png"
+image joe embarrassed:
+    "images/Joe/Uniform/joe embarrassed.png"
+    zoom 0.8
+image joe enamoured:
+    "images/Joe/Uniform/joe enamoured.png"
+    zoom 0.8
+image joe flirty:
+    "images/Joe/Uniform/joe flirty.png"
+    zoom 0.8
+image joe normal:
+    "images/Joe/Uniform/joe normal.png"
     zoom 0.8
 image joe sad:
-    "images/Joe/Uniform/ph.png"
+    "images/Joe/Uniform/joe sad.png"
+    zoom 0.8
+image joe scared:
+    "images/Joe/Uniform/joe scared.png"
     zoom 0.8
