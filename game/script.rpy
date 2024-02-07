@@ -31,9 +31,19 @@ transform jumper:
     ease .01 yoffset 0
 
 init python:
-    def display_character_names(english_name, japanese_name, x, y):
-        renpy.show(renpy.text(english_name, size=40, color="#ffffff"), x=x, y=y)
-        renpy.show(renpy.text(japanese_name, size=20, color="#ffffff"), x=x, y=y + 50)
+
+
+    def char_dialogue(begin, interact = True, **kwargs):
+        #if who("mc"):
+            #gui.dialogue_width = 300
+        #else:
+            #gui.dialogue_width = 1300
+        gui.dialogue_width = 300
+        if not interact:
+            return
+    #def display_character_names(english_name, japanese_name, x, y):
+        #renpy.show(renpy.text(english_name, size=40, color="#ffffff"), x=x, y=y)
+        #renpy.show(renpy.text(japanese_name, size=20, color="#ffffff"), x=x, y=y + 50)
 
     riris = []
     for i in range(100):
@@ -87,13 +97,13 @@ init python:
     from game.images.Backgrounds import *
 
 
-# --------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------
 init:
     $ dialogue_outlines = ((0, "#65292321", -2, 2), (2, "#7a373110", -3, 3), (1, "#65292309", -4, 4),(0, "#7a373121", 2, -2), (2, "#7a373110", 3, -3), (1, "#7a373107", 4, -4),(0, "#7a373121", 2, 2), (2, "#7a373110", 3, 3), (1, "#7a373107", 4, 4),(0, "#7a373121", -2, -2), (2, "#7a373110", -3, -3), (1, "#7a373107", -4, -4))
     define pjmc = Character("[mcname]", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, bold = True)
     define pmc = Character("[mcname]", ctc="ctc_blink", image="gwyn_party", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, bold = True)
     define smc = Character("[mcname]", ctc="ctc_blink", image="gwyn_suit", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, bold = True)
-    define mc = Character("[mcname]", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, bold = True)
+    define mc = Character("[mcname]", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, callback = char_dialogue, bold = True)
 
     define na = Character(name=None, ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define mom = Character("Mom", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
