@@ -97,14 +97,13 @@ init python:
     from game.images.Backgrounds import *
 
 
-# --------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------
 init:
     $ dialogue_outlines = ((0, "#65292321", -2, 2), (2, "#7a373110", -3, 3), (1, "#65292309", -4, 4),(0, "#7a373121", 2, -2), (2, "#7a373110", 3, -3), (1, "#7a373107", 4, -4),(0, "#7a373121", 2, 2), (2, "#7a373110", 3, 3), (1, "#7a373107", 4, 4),(0, "#7a373121", -2, -2), (2, "#7a373110", -3, -3), (1, "#7a373107", -4, -4))
-    define pjmc = Character("[mcname]", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png", what_style = "say_dialogue_mc", what_outlines = dialogue_outlines, bold = True)
-    define pmc = Character("[mcname]", ctc="ctc_blink", image="gwyn_party", window_background="gui/textbox2.png", what_style = "say_dialogue_mc", what_outlines = dialogue_outlines, bold = True)
-    define smc = Character("[mcname]", ctc="ctc_blink", image="gwyn_suit", window_background="gui/textbox2.png", what_style = "say_dialogue_mc", what_outlines = dialogue_outlines, bold = True)
-    define mc = Character("[mcname]", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc", bold = True)
-    # callback = partial(sideimage,"[mcname]")
+    define pjmc = Character("[mcname]", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, bold = True)
+    define pmc = Character("[mcname]", ctc="ctc_blink", image="gwyn_party", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, bold = True)
+    define smc = Character("[mcname]", ctc="ctc_blink", image="gwyn_suit", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, bold = True)
+    define mc = Character("[mcname]", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, bold = True)
 
     define na = Character(name=None, ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define mom = Character("Mom", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
