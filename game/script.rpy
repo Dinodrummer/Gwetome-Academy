@@ -31,13 +31,15 @@ transform jumper:
     ease .01 yoffset 0
 
 init python:
-    import functools
-    def sideimage( interact=True, **kwargs):
-        if not interact:
-            return
+    #from functools import partial
+    #def sideimage(char, event_name, interact=True, **kwargs):
+        #if not interact:
+            #return
 
-        elif who is == mc:
-            gui.dialogue_width = 500
+        #if event_name == "show":
+            #gui.dialogue_width = 500
+        #elif event_name == "slow_done":
+            #gui.dialogue_width = 1300
             
     def display_character_names(english_name, japanese_name, x, y):
         renpy.show(renpy.text(english_name, size=40, color="#ffffff"), x=x, y=y)
@@ -98,10 +100,11 @@ init python:
 # --------------------------------------------------------
 init:
     $ dialogue_outlines = ((0, "#65292321", -2, 2), (2, "#7a373110", -3, 3), (1, "#65292309", -4, 4),(0, "#7a373121", 2, -2), (2, "#7a373110", 3, -3), (1, "#7a373107", 4, -4),(0, "#7a373121", 2, 2), (2, "#7a373110", 3, 3), (1, "#7a373107", 4, 4),(0, "#7a373121", -2, -2), (2, "#7a373110", -3, -3), (1, "#7a373107", -4, -4))
-    define pjmc = Character("[mcname]", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, bold = True)
-    define pmc = Character("[mcname]", ctc="ctc_blink", image="gwyn_party", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, bold = True)
-    define smc = Character("[mcname]", ctc="ctc_blink", image="gwyn_suit", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, bold = True)
-    define mc = Character("[mcname]", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, callback=sideimage, bold = True)
+    define pjmc = Character("[mcname]", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png", what_style = "say_dialogue_mc", what_outlines = dialogue_outlines, bold = True)
+    define pmc = Character("[mcname]", ctc="ctc_blink", image="gwyn_party", window_background="gui/textbox2.png", what_style = "say_dialogue_mc", what_outlines = dialogue_outlines, bold = True)
+    define smc = Character("[mcname]", ctc="ctc_blink", image="gwyn_suit", window_background="gui/textbox2.png", what_style = "say_dialogue_mc", what_outlines = dialogue_outlines, bold = True)
+    define mc = Character("[mcname]", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc", bold = True)
+    # callback = partial(sideimage,"[mcname]")
 
     define na = Character(name=None, ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define mom = Character("Mom", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
@@ -355,10 +358,13 @@ label start:
         $ mcname = "何とか、何々"
 
     #stop music
-
-
+    
+    $ metRiri = True
+    jump s10
     scene kitchen
     
+    
+#.
     mc normal "I'm so tired... I stayed up all night playing otome games."#Gwyn1
     
     mc ecstatic "It`s hard not to when you`re given so many choices, especially when you can punch the male leads. Hehehe!"#Gwyn2
@@ -651,8 +657,9 @@ label s10:
 
         riri "Hehe... hehehehehe..."
 
-        $ metRiri = True
-        call riri
+        if metRiri:
+            $ riris[10] = True
+            call riri
 
     menu:
         "Go to class late":
@@ -1227,7 +1234,9 @@ label s29:
 
     kyle "Ahhh, sorry. I have a basketball game after school."
 
-    kyle "He says, \"Hey, turns out we're in the finals now because some person with bleached blonde hair just showed up and beat up the team that we lost to. He was saying something about [mcname], you, and a party. Weird, huh?"
+    kyle "He says, \"Hey, turns out we're in the finals now because some person with bleached blonde hair just showed up and beat up the team that we lost to. {w=2}{nw}"
+    
+    kyle "He was saying something about [mcname], you, and a party. Weird, huh?"
 
     mc "I wonder who that could be..."
 

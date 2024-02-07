@@ -174,7 +174,7 @@ style say_dialogue:
 style say_dialogue_mc:
     properties gui.text_properties("dialogue")
     xpos gui.dialogue_xpos
-    xsize (gui.dialogue_width - 5000)
+    xsize 1200
     ypos gui.dialogue_ypos
     adjust_spacing False
 
@@ -222,8 +222,15 @@ style input:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#choice
 
+#IMAGE BUTTON
+#image button:
+#   xanchor 0.5#  yanchor 0.5# xpos 0.5
+    #ypos 0.5
+
+
 screen choice(items):
     style_prefix "choice"
+    #imagebutton "riri_button.png" action Jump("riri")
 
     vbox:
         for i in items:

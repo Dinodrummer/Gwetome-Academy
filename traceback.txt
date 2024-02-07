@@ -1,26 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 33, in script
-    init python:
-  File "game/script.rpy", line 83, in <module>
-    from game.images.Jt import *
-ModuleNotFoundError: No module named 'game.images.Jt'
+  File "game/script.rpy", line 106, in script
+    define mc = Character("[mcname]", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, callback = partial(sideimage,mc), bold = True)
+  File "game/script.rpy", line 106, in <module>
+    define mc = Character("[mcname]", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, callback = partial(sideimage,mc), bold = True)
+NameError: name 'mc' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 33, in script
-    init python:
-  File "C:\Users\glitt\Downloads\renpy-8.2.0-sdk\renpy\ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\glitt\Downloads\renpy-8.2.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 83, in <module>
-    from game.images.Jt import *
-ModuleNotFoundError: No module named 'game.images.Jt'
+  File "game/script.rpy", line 106, in script
+    define mc = Character("[mcname]", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, callback = partial(sideimage,mc), bold = True)
+  File "C:\Users\glitt\Downloads\renpy-8.2.0-sdk\renpy\ast.py", line 2219, in execute
+    self.set()
+  File "C:\Users\glitt\Downloads\renpy-8.2.0-sdk\renpy\ast.py", line 2233, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "C:\Users\glitt\Downloads\renpy-8.2.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 106, in <module>
+    define mc = Character("[mcname]", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, callback = partial(sideimage,mc), bold = True)
+NameError: name 'mc' is not defined
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.0.24012702
 Gwetome Academy 1.0
-Tue Feb  6 07:43:57 2024
+Tue Feb  6 20:00:18 2024
