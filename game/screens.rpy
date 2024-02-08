@@ -96,6 +96,21 @@ style frame:
 ## and id "window" to apply style properties.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
+screen character_name(english_name, kanji_name):
+    frame:
+        #style "name_frame"
+        vbox:
+            align (0.5, 0.5)
+
+            text english_name:
+                font gui.name_text_font
+                size gui.name_text_size
+                color gui.name_text_color
+            
+            text kanji_name:
+                font gui.name_text_font
+                size gui.name_kanji_text_size
+                color gui.name_text_color
 
 screen say(who, what):
     style_prefix "say"
@@ -157,6 +172,8 @@ style say_label:
     properties gui.text_properties("name", accent=True)
     xalign gui.name_xalign
     yalign 0.5
+    
+
 
 #style say_dialogue
 #style say_dialogue:
@@ -228,14 +245,22 @@ style input:
 #   xanchor 0.5#  yanchor 0.5# xpos 0.5
     #ypos 0.5
 
-
+transform scaled_image:
+    size (150, 150)
 screen choice(items):
     style_prefix "choice"
-    #imagebutton "riri_button.png" action Jump("riri")
-
+    image "gui/choice_background.png"
+    imagebutton:
+        at scaled_image
+        xpos 35
+        ypos 35
+        auto "gui/riri_button_%s.png"
+        action Call("riri")
+        
     vbox:
         for i in items:
             textbutton i.caption action i.action
+            
 
 
 style choice_vbox is vbox

@@ -64,6 +64,7 @@ define gui.text_font = "NanumPenScript-Regular.ttf"
 ## The font used for character names.
 define gui.name_text_font = "Yomogi-Regular.ttf"
 
+define gui.name_kanji_text_size = 38
 ## The font used for out-of-game text.
 define gui.interface_text_font = "ZenOldMincho-Regular.ttf"
 

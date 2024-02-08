@@ -91,7 +91,7 @@ init python:
 # ----------------------------------------------------------------------------------------------------------
 init:
     $ dialogue_outlines = ((0, "#65292321", -2, 2), (2, "#7a373110", -3, 3), (1, "#65292309", -4, 4),(0, "#7a373121", 2, -2), (2, "#7a373110", 3, -3), (1, "#7a373107", 4, -4),(0, "#7a373121", 2, 2), (2, "#7a373110", 3, 3), (1, "#7a373107", 4, 4),(0, "#7a373121", -2, -2), (2, "#7a373110", -3, -3), (1, "#7a373107", -4, -4))
-    define pjmc = Character("[mcname]", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc", bold = True)
+    define pjmc = Character("[mcname]", who_name = "柳井、富", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc", bold = True)
     define pmc = Character("[mcname]", ctc="ctc_blink", image="gwyn_party", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc", bold = True)
     define smc = Character("[mcname]", ctc="ctc_blink", image="gwyn_suit", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc", bold = True)
     define mc = Character("[mcname]", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc", bold = True)
@@ -349,12 +349,13 @@ label start:
         #何とか、何々
 
     #stop music
-    
 
     scene kitchen
     
     
 #.
+    show screen character_name("Hana Kobayashi", "小林・花")
+
     pjmc normal "I'm so tired... I stayed up all night playing otome games."#Gwyn1
     
     pjmc ecstatic "It`s hard not to when you`re given so many choices, especially when you can punch the male leads. Hehehe!"#Gwyn2
@@ -650,7 +651,7 @@ label s10:
 
         if metRiri:
             $ riris[10] = True
-            call riri
+            
 
     menu:
         "Go to class late":
@@ -673,7 +674,7 @@ label s11:
     
     if metRiri:
         $ riris[11] = True
-        call riri
+        
 
 label s12:
 
@@ -713,7 +714,7 @@ label s13:
 
     if metRiri:
         $ riris[13] = True
-        call riri
+        
     
     menu:
         "Make a scene!":
@@ -827,7 +828,7 @@ label s15:
 
     if metRiri:
         $ riris[15] = True
-        call riri
+        
 
     menu:
         "I'm going to that party!":
@@ -1078,7 +1079,7 @@ label s24:
 
     if metRiri:
         $ riris[24] = True
-        call riri
+        
 
     menu:
         "No, leave me alone!":
@@ -1134,7 +1135,7 @@ label s26:
 
     if metRiri:
         $ riris[26] = True
-        call riri
+        
 
     menu:
         "Go to the party with Akimitsu":
@@ -1164,7 +1165,7 @@ label s27:
 
     if metRiri:
         $ riris[27] = True
-        call riri
+        
 
 label s28:
     na "Soon, night falls. You arrive at the party with Akimitsu and head inside."
@@ -1199,7 +1200,7 @@ label s28:
 
     if metRiri:
         $ riris[28] = True
-        call riri
+        
     
     menu:
         "Ignore Isamu":
@@ -1235,7 +1236,7 @@ label s29:
 
     if metRiri:
         $ riris[29] = True
-        call riri
+        
 
     menu:
         "Sure, I'll watch":
@@ -1285,7 +1286,7 @@ label s31:
 
     if metRiri:
         $ riris[27] = True
-        call riri
+        
 
     jump s43
 
@@ -1327,7 +1328,7 @@ label s33:
 
     if metRiri:
         $ riris[33] = True
-        call riri
+        
 
     jump s28
 
@@ -1363,7 +1364,7 @@ label s35:
 
     if metRiri:
         $ riris[35] = True
-        call riri
+        
 
     jump s38
 
@@ -1397,7 +1398,7 @@ label s37:
 
     if metRiri:
         $ riris[37] = True
-        call riri
+        
 
     menu:
         "Go get drinks with Isamu":
@@ -1618,7 +1619,7 @@ label s43:
 
     if metRiri:
         $ riris[43] = True
-        call riri
+        
     
     mc "Eh?! What's going on?"
 
@@ -1654,7 +1655,7 @@ label s44:
 
     if metRiri:
         $ riris[44] = True
-        call riri
+        
     
     jump s46
  
@@ -1682,7 +1683,7 @@ label s45:
 
     if metRiri:
         $ riris[44] = True
-        call riri
+        
     
 label s46:
 
@@ -1714,7 +1715,7 @@ label s46:
 
     if metRiri:
         $ riris[46] = True
-        call riri
+        
     
     menu:
         "Go swimming! That lifeguard can't stop you!":
@@ -1746,7 +1747,7 @@ label s47:
  
     if metRiri:
         $ riris[47] = True
-        call riri
+        
     
     menu:
         "The lifeguard can deal with it":
@@ -2006,7 +2007,7 @@ label s53:
 
     if metRiri:
         $ riris[53] = True
-        call riri
+        
     
     menu:
         "Go to the address":
@@ -2141,7 +2142,7 @@ label s57:
 
     if metRiri:
         $ riris[57] = True
-        call riri
+        
     
     menu:
         "Maybe they were planning to give it back":
@@ -2225,7 +2226,7 @@ label s60:
 
     if metRiri:
         $ riris[60] = True
-        call riri
+        
 
     menu:
         "Test them to see if they know the password":
@@ -2339,7 +2340,7 @@ label s63:
 
     if metRiri:
         $ riris[63] = True
-        call riri
+        
     
     menu:
         "That project can wait! Hang out with Akimitsu instead":
@@ -2379,7 +2380,7 @@ label s65:
 
     if metRiri:
         $ riris[65] = True
-        call riri
+        
 
     menu:
         "Call the cops!":

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 233: expected a keyword argument, colon, or end of line.
-    imagebutton "riri_button.png" action Jump("riri")
-                ^
+File "game/screens.rpy", line 175: expected statement.
+    say_label is default
+                        ^
 
-Ren'Py Version: Ren'Py 8.2.0.24012702
-Tue Feb  6 21:35:02 2024
+Ren'Py Version: Ren'Py 8.1.3.23091805
+Wed Feb  7 21:27:40 2024
