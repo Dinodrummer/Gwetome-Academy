@@ -22,13 +22,15 @@ init -2:
         0.5
         repeat
 
-transform jumper:
-    ease .04 yoffset 20
-    ease .03 yoffset 16
-    ease .02 yoffset 12
-    ease .01 yoffset 8
-    ease .01 yoffset 4
-    ease .01 yoffset 0
+
+    transform jumper:
+        ease .04 yoffset 20
+        ease .03 yoffset 16
+        ease .02 yoffset 12
+        ease .01 yoffset 8
+        ease .01 yoffset 4
+        ease .01 yoffset 0
+
 
 init python:
             
@@ -348,7 +350,7 @@ label start:
         $ mcname = "Naninani Nantoka"
         #何とか、何々
 
-    #stop music
+    stop music
 
     scene kitchen
     
@@ -384,6 +386,8 @@ label s2:
     na "You put on your uniform and go downstairs."#JT3
 
     scene kitchen
+    show mom normal
+    with jumper
     mom "Good morning! I made you breakfast since I knew you'd wake up late."#
 
     mom "Dad's already left to go work on his new Food Network episode and I'm heading out now. Have fun at school! I'm off!"#
