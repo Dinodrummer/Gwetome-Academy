@@ -78,6 +78,9 @@ style frame:
     background Frame("gui/frame.png", gui.frame_borders, tile=gui.frame_tile)
 
 
+style secondary_name:
+    size (gui.name_text_size - 15)
+
 
 ################################################################################
 ## In-game screens
@@ -112,6 +115,7 @@ screen character_name(english_name, kanji_name):
                 size gui.name_kanji_text_size
                 color gui.name_text_color
 
+
 screen say(who, what):
     style_prefix "say"
 
@@ -120,11 +124,15 @@ screen say(who, what):
 
         if who is not None:
 
-            window:
-                id "namebox"
-                style "namebox"
-                text who id "who"
-
+            vbox:
+                window:
+                    id "namebox"
+                    style "namebox"
+                    text who id "who"
+                window:
+                    id "namebox"
+                    style "namebox"
+                    #text who.second_name id "who_secondary" style "secondary_name"
         text what id "what"
 
 
@@ -153,9 +161,6 @@ style window:
     ysize gui.textbox_height
 
     background Image("gui/textbox.png", xalign=0.5, yalign=0.0)
-    
-
-
 
 style namebox:
     xpos gui.name_xpos
@@ -172,8 +177,6 @@ style say_label:
     properties gui.text_properties("name", accent=True)
     xalign gui.name_xalign
     yalign 0.5
-    
-
 
 #style say_dialogue
 #style say_dialogue:

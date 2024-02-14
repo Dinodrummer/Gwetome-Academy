@@ -23,14 +23,15 @@ init -2:
         repeat
 
 
-    transform jumper:
-        ease .04 yoffset 20
-        ease .03 yoffset 16
-        ease .02 yoffset 12
-        ease .01 yoffset 8
-        ease .01 yoffset 4
-        ease .01 yoffset 0
+transform jumper:
+    ease .04 yoffset 20
+    ease .03 yoffset 16
+    ease .02 yoffset 12
+    ease .01 yoffset 8
+    ease .01 yoffset 4
+    ease .01 yoffset 0
 
+style character_name
 
 init python:
             
@@ -130,11 +131,9 @@ init:
         (0, "#6529233d", 2, 2),
         (2, "#65292318", 3, 3),
         (1, "#6529230e", 4, 4)
-        
     ]
         
     #default say = character_text
-
 
     # image beckham agent normal = "/images/Zeil/ph.png"
     # image beckham agent ecstatic = "/images/Zeil/ph.png"
@@ -144,16 +143,13 @@ init:
     # image beckham fan normal = "/images/Zeil/ph.png"
     # image beckham fan ecstatic = "/images/Zeil/ph.png"
 
-
-    
-    
 # --------------------------------------------------------
 label pro:
     pause 0.2
     stop music
     show vid
     pause 2
-    play music bgSong
+    #play music bgSong
     pause 0.2
     scene gym with Pixellate(0.5,3)
 
@@ -351,12 +347,11 @@ label start:
         #何とか、何々
 
     stop music
-
-    scene kitchen
-    
     
 #.
-    show screen character_name("Hana Kobayashi", "小林・花")
+    # show screen character_name("Hana Kobayashi", "小林・花")
+
+    scene bedroom
 
     pjmc normal "I'm so tired... I stayed up all night playing otome games."#Gwyn1
     
@@ -379,20 +374,21 @@ label start:
             jump s2
         "Sleep in just a liiitle longer":
             jump s3
-    return
 
 label s2:
 
     na "You put on your uniform and go downstairs."#JT3
 
     scene kitchen
-    show mom normal
-    with jumper
+    show mom normal at jumper
     mom "Good morning! I made you breakfast since I knew you'd wake up late."#
 
     mom "Dad's already left to go work on his new Food Network episode and I'm heading out now. Have fun at school! I'm off!"#
 
+    hide mom
+
     # Door closing noise
+
     mc "Thanks, have a good day!"#Gwyn8
 
     na "You happily munch on the breakfast your mother made and pat your belly in satisfaction. 
