@@ -34,10 +34,24 @@ transform jumper:
 style character_name
 
 init python:
+
+    def slow_punctuation(str_to_test):
+        return (str_to_test
+            .replace(", ", ",{cps=5.0} {/cps}")
+            .replace(". ", ".{cps=3.0} {/cps}")
+            .replace("! ", "!{cps=3.0} {/cps}")
+            .replace("? ", "?{cps=3.0} {/cps}")
+            .replace(": ", ":{cps=3.0} {/cps}")
+            .replace("— ", "—{cps=3.0} {/cps}")
+            .replace(" —", " —{cps=3.0} {/cps}")
+            .replace("... ", "... {cps=3.0} {/cps}"))
+    config.say_menu_text_filter = slow_punctuation
             
-    def display_character_names(english_name, japanese_name, x, y):
-        renpy.show(renpy.text(english_name, size=40, color="#ffffff"), x=x, y=y)
-        renpy.show(renpy.text(japanese_name, size=20, color="#ffffff"), x=x, y=y + 50)
+
+
+    #def display_character_names(english_name, japanese_name, x, y):
+        #renpy.show(renpy.text(english_name, size=40, color="#ffffff"), x=x, y=y)
+        #renpy.show(renpy.text(japanese_name, size=20, color="#ffffff"), x=x, y=y + 50)
 
     riris = []
     for i in range(100):

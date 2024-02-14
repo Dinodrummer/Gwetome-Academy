@@ -1,70 +1,42 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 359, in script
-    pjmc normal "I'm so tired... I stayed up all night playing otome games."#Gwyn1
-  File "game/script.rpy", line 359, in script
-    pjmc normal "I'm so tired... I stayed up all night playing otome games."#Gwyn1
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
-TypeError: Missing required positional arguments: 'who2'
+  File "renpy/common/00start.rpy", line 212, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 529, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 529, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 540, in _execute_python_hide
+    renpy.load(renpy.session["_reload_slot"])
+AttributeError: Can't get attribute 'replace_text' on <renpy.python.StoreModule object at 0x0000000004554100>
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\bootstrap.py", line 275, in bootstrap
-    renpy.main.main()
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\main.py", line 670, in main
-    run(restart)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\main.py", line 144, in run
-    renpy.execution.run_context(True)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\execution.py", line 955, in run_context
-    context.run()
-  File "game/script.rpy", line 359, in script
-    pjmc normal "I'm so tired... I stayed up all night playing otome games."#Gwyn1
-  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
-  File "game/script.rpy", line 359, in script
-    pjmc normal "I'm so tired... I stayed up all night playing otome games."#Gwyn1
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\ast.py", line 898, in execute
-    statement_name(stmt_name)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\ast.py", line 47, in statement_name
-    i(name)
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\exports.py", line 1758, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 2978, in do_with
-    return self.interact(trans_pause=True,
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 4055, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
-    d.visit_all(callback, seen)
-  [Previous line repeated 1 more time]
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\screen.py", line 476, in visit_all
-    callback(self)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 4055, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\screen.py", line 487, in per_interact
-    self.update()
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\screen.py", line 680, in update
-    self.screen.function(**self.scope)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\ast.py", line 296, in apply_arguments
-    return parameters.apply(args, kwargs, ignore_errors)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\ast.py", line 232, in apply
-    raise TypeError(
-TypeError: Missing required positional arguments: 'who2'
+  File "renpy/common/00start.rpy", line 212, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 529, in script
+    python hide:
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00keymap.rpy", line 529, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 540, in _execute_python_hide
+    renpy.load(renpy.session["_reload_slot"])
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\loadsave.py", line 815, in load
+    roots, log = loads(log_data)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\compat\pickle.py", line 100, in loads
+    return load(io.BytesIO(s))
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\compat\pickle.py", line 97, in load
+    return up.load()
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\compat\pickle.py", line 93, in find_class
+    return super().find_class(module, name)
+AttributeError: Can't get attribute 'replace_text' on <renpy.python.StoreModule object at 0x0000000004554100>
 
-Windows-10-10.0.22621 AMD64
+Windows-10-10.0.22631 AMD64
 Ren'Py 8.1.3.23091805
 Gwetome Academy 1.0
-Mon Feb 12 12:40:07 2024
+Tue Feb 13 23:27:37 2024
