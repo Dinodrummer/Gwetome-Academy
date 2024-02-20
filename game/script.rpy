@@ -39,6 +39,7 @@ init python:
         return (str_to_test
             .replace(", ", ",{cps=5.0} {/cps}")
             .replace(". ", ".{cps=3.0} {/cps}")
+            .replace("| ", "\n")
             .replace("! ", "!{cps=3.0} {/cps}")
             .replace("? ", "?{cps=3.0} {/cps}")
             .replace(": ", ":{cps=3.0} {/cps}")
@@ -46,6 +47,7 @@ init python:
             .replace(" —", " —{cps=3.0} {/cps}")
             .replace("... ", "... {cps=3.0} {/cps}"))
     config.say_menu_text_filter = slow_punctuation
+    gui.name = slow_punctuation
             
 
 
@@ -103,19 +105,21 @@ init python:
     from game.images.Maryam import *
     from game.images.Sophia import *
     from game.images.Backgrounds import *
+    from game import *
 
 
 # ----------------------------------------------------------------------------------------------------------
 init:
     $ dialogue_outlines = ((0, "#65292321", -2, 2), (2, "#7a373110", -3, 3), (1, "#65292309", -4, 4),(0, "#7a373121", 2, -2), (2, "#7a373110", 3, -3), (1, "#7a373107", 4, -4),(0, "#7a373121", 2, 2), (2, "#7a373110", 3, 3), (1, "#7a373107", 4, 4),(0, "#7a373121", -2, -2), (2, "#7a373110", -3, -3), (1, "#7a373107", -4, -4))
-    define pjmc = Character("[mcname]", who_name = "柳井、富", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc", bold = True)
-    define pmc = Character("[mcname]", ctc="ctc_blink", image="gwyn_party", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc", bold = True)
-    define smc = Character("[mcname]", ctc="ctc_blink", image="gwyn_suit", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc", bold = True)
-    define mc = Character("[mcname]", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc", bold = True)
+    # $ name_outlines = ((4, "#ce8c83", -2, 2), (4, "#ce8c83", -3, 3), (4, "#ce8c83", -4, 4),(44, "#ce8c83", 2, -2), (4, "#ce8c83", 3, -3), (4, "#ce8c83", 4, -4),(4, "#ce8c83", 2, 2), (4, "#ce8c83", 3, 3), (4, "#ce8c83", 4, 4),(4, "#ce8c83", -2, -2), (4, "#ce8c83", -3, -3), (4, "#ce8c83", -4, -4))
+    define pjmc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc", bold = True)
+    define pmc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn_party", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
+    define smc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn_suit", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
+    define mc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
 
     define na = Character(name=None, ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define mom = Character("Mom", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
-    define teacher_e = Character("先生", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define teacher_e = Character("Sensei", show_name = "先生", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
 
     define beckham = Character("マリオ", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define joe = Character("[joename]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # define joe = Character("ジョ~")
@@ -355,7 +359,7 @@ label start:
     #show gwyn party normal at topleft
     $ mcname = renpy.input("What is your name?")
     $ mcname = mcname.strip()
-    $ mcname = mcname[0:13]
+    $ mcname = mcname[0:16]
     if mcname == "":
         $ mcname = "Naninani Nantoka"
         #何とか、何々
@@ -939,8 +943,6 @@ label s18:
         
 
     label s18_3:
-
-        $ metJT = True
 
         jt "What's a pretty looking girl such as yourself doing around these parts?"
 

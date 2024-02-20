@@ -99,42 +99,32 @@ style secondary_name:
 ## and id "window" to apply style properties.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
-screen character_name(english_name, kanji_name):
-    frame:
-        #style "name_frame"
-        vbox:
-            align (0.5, 0.5)
-
-            text english_name:
-                font gui.name_text_font
-                size gui.name_text_size
-                color gui.name_text_color
-            
-            text kanji_name:
-                font gui.name_text_font
-                size gui.name_kanji_text_size
-                color gui.name_text_color
 
 
-screen say(who, what):
-    style_prefix "say"
 
+screen say(who, what, name = None):
+    style_prefix "say_kanji_label"
+
+    #if name is not None:
+        #gui.name_text_size = 
     window:
         id "window"
 
-        if who is not None:
-
+        if name is not None:
             vbox:
                 window:
                     id "namebox"
-                    style "namebox"
-                    text who id "who"
+                    style "kanji_namebox"
+                    #style "say_label"
+                    text who style "say_label" 
+                    #text who id "name" #style namebox
+                    
                 window:
-                    id "namebox"
+                    id "show_namebox"
                     style "namebox"
-                    #text who.second_name id "who_secondary" style "secondary_name"
+                    text name style "say_kanji_label"
+                    
         text what id "what"
-
 
     ## If there's a side image, display it above the text. Do not display on the
     ## phone variant - there's no room.
@@ -162,29 +152,44 @@ style window:
 
     background Image("gui/textbox.png", xalign=0.5, yalign=0.0)
 
-style namebox:
+
+style kanji_namebox:
     xpos gui.name_xpos
     xanchor gui.name_xalign
     xsize gui.namebox_width
-    ypos gui.name_ypos
+    ypos (gui.name_ypos + 65)
     ysize gui.namebox_height
-
     background Image("gui/namebox.png")
     #background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
+style namebox:
+    xpos gui.name_xpos
+    xanchor gui.name_xalign
+    xsize gui.namebox_width
+    ysize gui.namebox_height
+    ypos gui.name_ypos
+    #background Image("gui/namebox.png")
+    #background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    padding gui.namebox_borders.padding
+
 style say_label:
-    properties gui.text_properties("name", accent=True)
+    properties gui.text_properties("name", accent = "False")
     xalign gui.name_xalign
     yalign 0.5
+    #size gui.name_kanji_text_size
+    kerning -3
+    adjust_spacing True
+    bold True
 
-#style say_dialogue
-#style say_dialogue:
-    #properties gui.text_properties("dialogue")
-    #xpos gui.dialogue_xpos
-    #xsize gui.dialogue_width
-    #ypos gui.dialogue_ypos
-    #adjust_spacing False
+style say_kanji_label:
+    properties gui.text_properties("name", accent = "False")
+    xalign gui.name_xalign
+    yalign 0.5
+    size gui.name_kanji_text_size
+    kerning 2
+    #bold True
+
 style say_dialogue:
     properties gui.text_properties("dialogue")
     xpos gui.dialogue_xpos
@@ -299,17 +304,21 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            xalign 0.5
-            yalign 1.0
+            xalign 0.9
+            yalign 0.0
 
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
+            
+
+            #textbutton _("Back") action Rollback()
             textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("History") action ShowMenu('history')
+            #textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("Auto") action Preference("auto-forward", "toggle")
+            #textbutton _("Q.Save") action QuickSave()
+            #textbutton _("Q.Load") action QuickLoad()
+            textbutton _("Settings") action ShowMenu('preferences')
+            #textbutton _("Menu") action ShowMenu()
+
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever

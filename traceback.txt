@@ -1,42 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "renpy/common/00start.rpy", line 212, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 529, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 529, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 540, in _execute_python_hide
-    renpy.load(renpy.session["_reload_slot"])
-AttributeError: Can't get attribute 'replace_text' on <renpy.python.StoreModule object at 0x0000000004554100>
+After initialization, but before game start.
+  File "renpy/common/00start.rpy", line 83, in _init_language
+    renpy.change_language(language)
+SyntaxError: unexpected EOF while parsing (game/screens.rpy, line 171)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 212, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 529, in script
-    python hide:
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00keymap.rpy", line 529, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 540, in _execute_python_hide
-    renpy.load(renpy.session["_reload_slot"])
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\loadsave.py", line 815, in load
-    roots, log = loads(log_data)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\compat\pickle.py", line 100, in loads
-    return load(io.BytesIO(s))
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\compat\pickle.py", line 97, in load
-    return up.load()
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\compat\pickle.py", line 93, in find_class
-    return super().find_class(module, name)
-AttributeError: Can't get attribute 'replace_text' on <renpy.python.StoreModule object at 0x0000000004554100>
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\bootstrap.py", line 275, in bootstrap
+    renpy.main.main()
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\main.py", line 670, in main
+    run(restart)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\main.py", line 74, in run
+    renpy.translation.init_translation()
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\translation\__init__.py", line 593, in init_translation
+    renpy.store._init_language() # type: ignore
+  File "renpy/common/00start.rpy", line 83, in _init_language
+    renpy.change_language(language)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\translation\__init__.py", line 685, in change_language
+    new_change_language(tl, language)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\translation\__init__.py", line 639, in new_change_language
+    i.apply()
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\ast.py", line 2974, in apply
+    value = renpy.python.py_eval(expr)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\python.py", line 1151, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\python.py", line 1088, in py_compile
+    raise e
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\python.py", line 1034, in py_compile
+    raise orig_e
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\python.py", line 1027, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: unexpected EOF while parsing (game/screens.rpy, line 171)
 
-Windows-10-10.0.22631 AMD64
+Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
 Gwetome Academy 1.0
-Tue Feb 13 23:27:37 2024
+Mon Feb 19 15:50:43 2024

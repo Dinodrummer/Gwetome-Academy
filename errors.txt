@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 58: f-string: expecting '}'
-                segments.append(f"{cps=2}[current_segment{/cps}")
-                                                                 ^
+File "game/screens.rpy", line 171: end of line expected.
+    ypos gui.name_ypos)
+                      ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Tue Feb 13 23:24:37 2024
+Mon Feb 19 15:50:37 2024
