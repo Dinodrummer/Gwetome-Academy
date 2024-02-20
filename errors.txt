@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 171: end of line expected.
-    ypos gui.name_ypos)
-                      ^
+File "game/script.rpy", line 120: invalid syntax
+    Character("ダニエル", show_name = "beast of osaka" ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+                                                    ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Mon Feb 19 15:50:37 2024
+Mon Feb 19 16:24:05 2024

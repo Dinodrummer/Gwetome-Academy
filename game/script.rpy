@@ -117,6 +117,7 @@ init:
     define smc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn_suit", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
     define mc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
 
+    #define daniel = Character("ダニエル", show_name = "beast of osaka", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define na = Character(name=None, ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define mom = Character("Mom", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define teacher_e = Character("Sensei", show_name = "先生", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
