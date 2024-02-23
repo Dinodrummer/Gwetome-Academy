@@ -37,7 +37,7 @@ define gui.idle_small_color = '#ffffff' # #000000 for trailer
 define gui.name_text_color = '#ce8c83'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#e066a3'
+define gui.hover_color = '#ce8c83'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -64,7 +64,7 @@ define gui.text_font = "NanumPenScript-Regular.ttf"
 ## The font used for character names.
 define gui.name_text_font = "Yomogi-Regular.ttf"
 
-define gui.name_kanji_text_size = 30
+define gui.name_kanji_text_size = 26
 ## The font used for out-of-game text.
 define gui.interface_text_font = "NanumPenScript-Regular.ttf"
 
@@ -73,7 +73,7 @@ define gui.interface_text_font = "NanumPenScript-Regular.ttf"
 define gui.text_size = 52
 
 ## The size of character names.
-define gui.name_text_size = 40
+define gui.name_text_size = 43
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 33
@@ -112,7 +112,7 @@ define gui.textbox_yalign = 1.0
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
 define gui.name_xpos = 240
-define gui.name_ypos = -105
+define gui.name_ypos = -85
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -125,7 +125,7 @@ define gui.namebox_height = None
 
 ## The borders of the box containing the character's name, in left, top, right,
 ## bottom order.
-define gui.namebox_borders = Borders(40, 3, 30, 50)
+define gui.namebox_borders = Borders(40, 0, 30, 25)
 
 ## If True, the background of the namebox will be tiled, if False, the
 ## background of the namebox will be scaled.
@@ -194,7 +194,7 @@ define gui.confirm_button_text_xalign = 0.5
 
 define gui.page_button_borders = Borders(15, 6, 15, 6)
 
-define gui.quick_button_borders = Borders(15, 6, 15, 4)
+define gui.quick_button_borders = Borders(15, 10, 45, 4)
 define gui.quick_button_text_size = 50
 define gui.quick_button_text_idle_color = gui.idle_small_color
 define gui.quick_button_text_selected_color = gui.accent_color
@@ -217,8 +217,8 @@ define gui.choice_button_borders = Borders(150, 8, 150, 8)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
-define gui.choice_button_text_idle_color = '#888888'
-define gui.choice_button_text_hover_color = "#ffffff"
+define gui.choice_button_text_idle_color = '#fefcfc'
+define gui.choice_button_text_hover_color = "#612535"
 define gui.choice_button_text_insensitive_color = '#8888887f'
 
 

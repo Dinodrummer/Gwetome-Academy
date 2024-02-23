@@ -12,12 +12,12 @@ init -2:
         alpha 1.0
         "images/star1.png"
         zoom 0.22
-        ypos -5
+        ypos 5
         xpos 4
         0.5
         "images/star2.png"
         zoom 0.22
-        ypos -5
+        ypos 5
         xpos 4
         0.5
         repeat
@@ -75,19 +75,19 @@ init python:
     quizAnswers.remove(quizGuess2)
     quizGuess3 = quizAnswers[renpy.random.randint(0,len(quizAnswers) - 1)]
 
-
-    
-
-
-    # quizAnswers = ["hi2, hello2, hey2"]
-    
-
     ririname = "..."
     mcname = "..."
     joename = "..."
     jtname = "..."
     sophianame = "..."
     maryamname = "..."
+
+    ririname_kanji = None
+    mcname_kanji = None
+    joename_kanji = None
+    jtname_kanji = None
+    sophianame_kanji = None
+    maryamname_kanji = None
 
     metRiri = False
     metJoe = False
@@ -112,7 +112,7 @@ init python:
 init:
     $ dialogue_outlines = ((0, "#65292321", -2, 2), (2, "#7a373110", -3, 3), (1, "#65292309", -4, 4),(0, "#7a373121", 2, -2), (2, "#7a373110", 3, -3), (1, "#7a373107", 4, -4),(0, "#7a373121", 2, 2), (2, "#7a373110", 3, 3), (1, "#7a373107", 4, 4),(0, "#7a373121", -2, -2), (2, "#7a373110", -3, -3), (1, "#7a373107", -4, -4))
     # $ name_outlines = ((4, "#ce8c83", -2, 2), (4, "#ce8c83", -3, 3), (4, "#ce8c83", -4, 4),(44, "#ce8c83", 2, -2), (4, "#ce8c83", 3, -3), (4, "#ce8c83", 4, -4),(4, "#ce8c83", 2, 2), (4, "#ce8c83", 3, 3), (4, "#ce8c83", 4, 4),(4, "#ce8c83", -2, -2), (4, "#ce8c83", -3, -3), (4, "#ce8c83", -4, -4))
-    define pjmc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc", bold = True)
+    define pjmc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
     define pmc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn_party", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
     define smc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn_suit", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
     define mc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
@@ -122,19 +122,17 @@ init:
     define mom = Character("Mom", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define teacher_e = Character("Sensei", show_name = "先生", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
 
-    define beckham = Character("マリオ", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
-    define joe = Character("[joename]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # define joe = Character("ジョ~")
-    define kyle = Character("千葉、昭光", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # define kyle = Character("千葉、昭光 (Chiba, Akimitsu)")
-    define jt = Character("[jtname]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # define jt = Character("柳井、富 (Yanai, Yutaka)")
-    define sophia = Character("[sophianame]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # define sophia = Character("高尾、勇 (Takao, Isamu)")
-    define maryam = Character("[maryamname]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # define maryam = Character("木山、遥花 (Kiyama, Haruka)")
-    # define zev = Character("...") # define zev = Character("ゼブ")
-    # define kadie = Character("Kadie!1!11!", color = "#00eeff", ctc="ctc_blink")
+    define beckham = Character("Mario", show_name = "マリオ", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define joe = Character("[joename]", show_name = "[joename_kanji]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # Joe
+    define kyle = Character("Akimitsu Chiba", show_name = "千葉・昭光", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # Akimitsu Chiba
+    define jt = Character("[jtname]", show_name = "[jtname_kanji]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # Yutaka Yanai
+    define sophia = Character("[sophianame]", show_name = "[sophianame_kanji]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # Isamu Takao
+    define maryam = Character("[maryamname]", show_name = "[maryamname_kanji]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # Haruka Kiyama
 
-    define mi1 = Character("Magical Ikemen 1", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
-    define mi2 = Character("Meowgical Ikemen 2", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define mi1 = Character("Magical Ikemen 1", show_name = "魔法イケメン１", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define mi2 = Character("Meowgical Ikemen 2", show_name = "魔法イケミェン２",ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define pp = Character("PyunPyun", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
-    define takeshi = Character("Takeshi", ctc="ctc_bSlink", what_outlines = dialogue_outlines, bold = True)
+    define takeshi = Character("Takeshi", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define dr = Character("Dr.", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
 
     define riri = Character("[ririname]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # define riri = Character("リリ")
@@ -360,17 +358,18 @@ label start:
     #show gwyn party normal at topleft
     $ mcname = renpy.input("What is your name?")
     $ mcname = mcname.strip()
-    $ mcname = mcname[0:16]
+    $ mcname = mcname[0:15]
     if mcname == "":
         $ mcname = "Naninani Nantoka"
         #何とか、何々
 
     stop music
-    
-#.
+
     # show screen character_name("Hana Kobayashi", "小林・花")
 
     scene bedroom
+
+    jump s5
 
     pjmc normal "I'm so tired... I stayed up all night playing otome games."
     
@@ -519,7 +518,8 @@ label s5:
     mc "Mark Zuckerberg?!"
 
     $ metRiri = True
-    $ ririname = "リリ"
+    $ ririname = "Riri"
+    $ ririname_kanji = "リリ"
     riri "Wrong! I'm Riri. My boss told me there was a weeb here so I came to help."
 
     riri "Wait! Are you Naninani Nantoka!?!?"
@@ -626,6 +626,7 @@ label s9:
     mc "Is that so? Anyways, what is your name?"
 
     $ joename = "ジョー"
+    $ joename_kanji = ""
 
     joe "Oh right! The name's Joe-kun, but you can just call me Joe."
 
@@ -2003,6 +2004,8 @@ label s52:
     jt "Congratulations! You are now an official member of the student council. I'm excited to work together~"
 
     mc "Thank you! I'll do my best!"
+
+    # Continue
 
     jump s74
 

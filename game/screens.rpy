@@ -110,19 +110,24 @@ screen say(who, what, name = None):
     window:
         id "window"
 
-        if name is not None:
+        if who is not None:
             vbox:
                 window:
                     id "namebox"
                     style "kanji_namebox"
                     #style "say_label"
-                    text who style "say_label" 
-                    #text who id "name" #style namebox
+                    if len(who) > 13:
+                        text who style "say_label" size (gui.name_text_size - 6) 
+                    else:
+                        text who style "say_label" 
                     
+                    #text who id "name" #style namebox
+                
                 window:
                     id "show_namebox"
                     style "namebox"
-                    text name style "say_kanji_label"
+                    if name is not None:
+                        text name style "say_kanji_label"
                     
         text what id "what"
 
@@ -157,7 +162,7 @@ style kanji_namebox:
     xpos gui.name_xpos
     xanchor gui.name_xalign
     xsize gui.namebox_width
-    ypos (gui.name_ypos + 65)
+    ypos (gui.name_ypos + 38)
     ysize gui.namebox_height
     background Image("gui/namebox.png")
     #background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
@@ -178,16 +183,25 @@ style say_label:
     xalign gui.name_xalign
     yalign 0.5
     #size gui.name_kanji_text_size
-    kerning -3
+    kerning 2
     adjust_spacing True
-    bold True
-
+    #bold True
+    outlines ((1, "#ce8c83", 1, -1), (0, "#ce8c83", 1, -1))
 style say_kanji_label:
     properties gui.text_properties("name", accent = "False")
     xalign gui.name_xalign
     yalign 0.5
     size gui.name_kanji_text_size
     kerning 2
+    outlines ((0, "#ce8c83", 1, -1), (0, "#ce8c83", 1, -1))
+    #bold True
+style say_kanji_label_13:
+    properties gui.text_properties("name", accent = "False")
+    xalign gui.name_xalign
+    yalign 0.5
+    size gui.name_kanji_text_size
+    kerning 2
+    outlines ((0, "#ce8c83", 1, -1), (0, "#ce8c83", 1, -1))
     #bold True
 
 style say_dialogue:
@@ -255,9 +269,13 @@ style input:
 
 transform scaled_image:
     size (150, 150)
+style shadow:
+    outlines [(0, "#65292321", -2, 2), (2, "#7a373110", -3, 3), (1, "#65292309", -4, 4),(0, "#7a373121", 2, -2), (2, "#7a373110", 3, -3), (1, "#7a373107", 4, -4),(0, "#7a373121", 2, 2), (2, "#7a373110", 3, 3), (1, "#7a373107", 4, 4),(0, "#7a373121", -2, -2), (2, "#7a373110", -3, -3), (1, "#7a373107", -4, -4)]
+$ dialogue_outlines = ((0, "#65292321", -2, 2), (2, "#7a373110", -3, 3), (1, "#65292309", -4, 4),(0, "#7a373121", 2, -2), (2, "#7a373110", 3, -3), (1, "#7a373107", 4, -4),(0, "#7a373121", 2, 2), (2, "#7a373110", 3, 3), (1, "#7a373107", 4, 4),(0, "#7a373121", -2, -2), (2, "#7a373110", -3, -3), (1, "#7a373107", -4, -4))
 screen choice(items):
     style_prefix "choice"
     image "gui/choice_background.png"
+    #style "shadow"
     imagebutton:
         at scaled_image
         xpos 35
@@ -266,8 +284,13 @@ screen choice(items):
         action Call("riri")
         
     vbox:
+
         for i in items:
-            textbutton i.caption action i.action
+            textbutton i.caption:
+                #style "shadow"
+                action i.action
+
+
             
 
 
@@ -304,12 +327,10 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            xalign 0.9
+            xalign 1.0
             yalign 0.0
 
-            
-
-            #textbutton _("Back") action Rollback()
+            textbutton _("Back") action Rollback()
             textbutton _("Save") action ShowMenu('save')
             textbutton _("History") action ShowMenu('history')
             #textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
@@ -317,7 +338,7 @@ screen quick_menu():
             #textbutton _("Q.Save") action QuickSave()
             #textbutton _("Q.Load") action QuickLoad()
             textbutton _("Settings") action ShowMenu('preferences')
-            #textbutton _("Menu") action ShowMenu()
+            textbutton _("Menu") action ShowMenu()
 
 
 
