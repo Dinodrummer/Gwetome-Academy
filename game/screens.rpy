@@ -117,7 +117,7 @@ screen say(who, what, name = None):
                     style "kanji_namebox"
                     #style "say_label"
                     if len(who) > 13:
-                        text who style "say_label" size (gui.name_text_size - 6) 
+                        text who style "say_label" size (gui.name_text_size - 7) 
                     else:
                         text who style "say_label" 
                     

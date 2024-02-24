@@ -131,9 +131,9 @@ init:
 
     define mi1 = Character("Magical Ikemen 1", show_name = "魔法イケメン１", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define mi2 = Character("Meowgical Ikemen 2", show_name = "魔法イケミェン２",ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
-    define pp = Character("PyunPyun", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
-    define takeshi = Character("Takeshi", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
-    define dr = Character("Dr.", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define pp = Character("PyunPyun", show_name = "ピュンピュン", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define takeshi = Character("Takeshi", show_name = "たけし", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define dr = Character("Dr.", show_name = "ダクター", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
 
     define riri = Character("[ririname]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # define riri = Character("リリ")
     define mv = Character("Mysterious Voice", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
