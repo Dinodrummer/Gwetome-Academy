@@ -82,12 +82,12 @@ init python:
     sophianame = "..."
     maryamname = "..."
 
-    ririname_kanji = None
-    mcname_kanji = None
-    joename_kanji = None
-    jtname_kanji = None
-    sophianame_kanji = None
-    maryamname_kanji = None
+    ririname_kanji = ""
+    mcname_kanji = ""
+    joename_kanji = ""
+    jtname_kanji = ""
+    sophianame_kanji = ""
+    maryamname_kanji = ""
 
     metRiri = False
     metJoe = False
@@ -96,7 +96,7 @@ init python:
     metMaryam = False
 
     from game.images.Gwyn import *
-    from game.images.Extras import *
+    from game.images.NPCs import *
     from game.images.Riri import *
     from game.images.Beckham import *
     from game.images.Joe import *
@@ -110,9 +110,12 @@ init python:
 
 # ----------------------------------------------------------------------------------------------------------
 init:
-    $ dialogue_outlines = ((0, "#65292321", -2, 2), (2, "#7a373110", -3, 3), (1, "#65292309", -4, 4),(0, "#7a373121", 2, -2), (2, "#7a373110", 3, -3), (1, "#7a373107", 4, -4),(0, "#7a373121", 2, 2), (2, "#7a373110", 3, 3), (1, "#7a373107", 4, 4),(0, "#7a373121", -2, -2), (2, "#7a373110", -3, -3), (1, "#7a373107", -4, -4))
-    # $ name_outlines = ((4, "#ce8c83", -2, 2), (4, "#ce8c83", -3, 3), (4, "#ce8c83", -4, 4),(44, "#ce8c83", 2, -2), (4, "#ce8c83", 3, -3), (4, "#ce8c83", 4, -4),(4, "#ce8c83", 2, 2), (4, "#ce8c83", 3, 3), (4, "#ce8c83", 4, 4),(4, "#ce8c83", -2, -2), (4, "#ce8c83", -3, -3), (4, "#ce8c83", -4, -4))
-    define pjmc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
+    
+    $ dialogue_outlines = ((0, "#6529231e", -1, 1), (0, "#65292317", -1, 2), (0, "#65292311", -1, 3), (0, "#6529230c", -1, 4), (0, "#65292307", -1, 5), (0, "#65292303", -1, 6), 
+    (0, "#6529231e", 1, 1), (0, "#65292317", 1, 2), (0, "#65292311", 1, 3), (0, "#6529230c", 1, 4), (0, "#65292307", 1, 5), (0, "#65292303", 1, 6), 
+    (0, "#6529231e", 0, 1), (0, "#65292317", 0, 2), (0, "#65292311", 0, 3), (0, "#6529230c", 0, 4), (0, "#65292307", 0, 5), (0, "#65292303", 0, 6))
+
+    define pjmc = Character("[mcname]", show_name = "小林・花", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
     define pmc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn_party", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
     define smc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn_suit", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
     define mc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
@@ -121,6 +124,7 @@ init:
     define na = Character(name=None, ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define mom = Character("Mom", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define teacher_e = Character("Sensei", show_name = "先生", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define mio = Character("Mio", show_name = "みお", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
 
     define beckham = Character("Mario", show_name = "マリオ", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define joe = Character("[joename]", show_name = "[joename_kanji]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # Joe
@@ -369,7 +373,6 @@ label start:
 
     scene bedroom
 
-    jump s5
 
     pjmc normal "I'm so tired... I stayed up all night playing otome games."
     
@@ -398,7 +401,7 @@ label s2:
     na "You put on your uniform and go downstairs."
 
     scene kitchen
-    show mom normal at jumper
+    show mom normal
     mom "Good morning! I made you breakfast since I knew you'd wake up late."
 
     mom "Dad's already left to go work on his new Food Network episode and I'm heading out now. Have fun at school! I'm off!"
@@ -411,6 +414,8 @@ label s2:
 
     na "You happily munch on the breakfast your mother made and pat your belly in satisfaction. 
         Suddenly, the TV turns on, as if it's beckoning you to watch it."
+
+    #TODO Show TV
 
     na "Wait! Is that... the new season of Magical Ikemen?!? It's been a whole year since the last episode!"
 
@@ -2425,6 +2430,51 @@ label s72:
 label s73:
  
 label s74:
+
+    na "You begin walking the halls with Mio, putting up posters and talking about club duties. Although Mio seems meek she speaks with openness and discipline."
+
+    mio "I-if you see students skipping class please tell them to return immediately. Some of them will try to use the “restroom excuse” but I'm sure you won't fall for that… it's a bit of an obvious lie."
+
+    mc "Ha... yeah... who would ever--"
+
+    mio "Aah!"
+
+    na "Suddenly you find yourself in a stupor, standing above Mio who has face-planted onto the ground."
+
+    na "After processing what just happened, you quickly put down the posters."
+
+    mc "Are you okay?"
+
+    mio "Y-yeah! I-it's my fault, my mind has been a little... occupied."
+
+    mc "Oh..."
+
+    na "You follow Mio's line of sight to… a rose? She tripped on a rose?"
+
+    na "All of a sudden, Mio turns to face you with a surprising intensity in her eyes."
+
+    mio "[mcname], do you... do you..."
+
+    mio "Oh no! The posters!"
+
+    na "Mio rushes to grab the posters off the ground, and brushes them off carefully. It isn't until now that you notice the intricate lettering and detailed visuals. It's clear that a lot of love was put into them."
+
+    mc "Sorry! Did you make those?"
+
+    mio "Yeah..."
+
+    mc "They're beautiful! It sounds like you do a lot of work, but you must really love the student council."
+
+    na "Mio blushes furiously and her eyes roam back to where the rose still sits."
+
+    mio "It's not the student council… I… well, it's nothing."
+
+    menu:
+        "\"It's okay, you can talk to me\"":
+            jump s93
+        "{i}Don't push into it{/i}":
+            jump s94
+
  
 label s75:
  

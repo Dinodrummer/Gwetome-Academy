@@ -1,24 +1,27 @@
-image beckham uniform normal:
-    "images/Beckham/Uniform/ph.png"
+image beckham angry:
+    "images/Beckham/Uniform/beckham angry.png"
     zoom 0.8
-image beckham uniform ecstatic:
-    "images/Beckham/Uniform/ph.png"
+image beckham confused:
+    "images/Beckham/Uniform/beckham confused.png"
     zoom 0.8
-image beckham uniform angry:
-    "images/Beckham/Uniform/ph.png"
+image beckham ecstatic:
+    "images/Beckham/Uniform/beckham ecstatic.png"
     zoom 0.8
-image beckham uniform embarrassed:
-    "images/Beckham/Uniform/ph.png"
+image beckham embarrassed:
+    "images/Beckham/Uniform/beckham embarrassed.png"
     zoom 0.8
-image beckham uniform flirty:
-    "images/Beckham/Uniform/ph.png"
+image beckham flirty:
+    "images/Beckham/Uniform/beckham flirty.png"
     zoom 0.8
-image beckham uniform scared:
-    "images/Beckham/Uniform/ph.png"
+image beckham happy:
+    "images/Beckham/Uniform/beckham happy.png"
     zoom 0.8
-image beckham uniform confused:
-    "images/Beckham/Uniform/ph.png"
+image beckham normal:
+    "images/Beckham/Uniform/beckham normal.png"
     zoom 0.8
-image beckham uniform sad:
-    "images/Beckham/Uniform/ph.png"
+image beckham sad:
+    "images/Beckham/Uniform/beckham sad.png"
+    zoom 0.8
+image beckham scared:
+    "images/Beckham/Uniform/beckham scared.png"
     zoom 0.8

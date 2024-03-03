@@ -32,12 +32,12 @@ define gui.idle_color = '#888888'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = '#ffffff' # #000000 for trailer
+define gui.idle_small_color = '#fefcfc' # #000000 for trailer
 
 define gui.name_text_color = '#ce8c83'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#ce8c83'
+define gui.hover_color = '#ffcdbe'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -194,10 +194,10 @@ define gui.confirm_button_text_xalign = 0.5
 
 define gui.page_button_borders = Borders(15, 6, 15, 6)
 
-define gui.quick_button_borders = Borders(15, 10, 45, 4)
-define gui.quick_button_text_size = 50
-define gui.quick_button_text_idle_color = gui.idle_small_color
-define gui.quick_button_text_selected_color = gui.accent_color
+define gui.quick_button_borders = Borders(18, 10, 46, 4)
+define gui.quick_button_text_size = 38
+define gui.quick_button_text_idle_color = "#fefcfc"
+define gui.quick_button_text_selected_color = "#ffcdbe"
 
 ## You can also add your own customizations, by adding properly-named variables.
 ## For example, you can uncomment the following line to set the width of a

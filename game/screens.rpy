@@ -116,7 +116,7 @@ screen say(who, what, name = None):
                     id "namebox"
                     style "kanji_namebox"
                     #style "say_label"
-                    if len(who) > 13:
+                    if len(who) > 14:
                         text who style "say_label" size (gui.name_text_size - 7) 
                     else:
                         text who style "say_label" 
@@ -186,23 +186,15 @@ style say_label:
     kerning 2
     adjust_spacing True
     #bold True
-    outlines ((1, "#ce8c83", 1, -1), (0, "#ce8c83", 1, -1))
+    outlines ((0, "#ce8c83", -1, 0), (0, "#ce8c83", -1, 1), (0, "#ce8c83", 0, 1))
+    
 style say_kanji_label:
     properties gui.text_properties("name", accent = "False")
     xalign gui.name_xalign
     yalign 0.5
     size gui.name_kanji_text_size
     kerning 2
-    outlines ((0, "#ce8c83", 1, -1), (0, "#ce8c83", 1, -1))
-    #bold True
-style say_kanji_label_13:
-    properties gui.text_properties("name", accent = "False")
-    xalign gui.name_xalign
-    yalign 0.5
-    size gui.name_kanji_text_size
-    kerning 2
-    outlines ((0, "#ce8c83", 1, -1), (0, "#ce8c83", 1, -1))
-    #bold True
+    outlines ((0, "#ce8c83", -1, 0), (0, "#ce8c83", -1, 1), (0, "#ce8c83", 0, 1))
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
@@ -269,9 +261,7 @@ style input:
 
 transform scaled_image:
     size (150, 150)
-style shadow:
-    outlines [(0, "#65292321", -2, 2), (2, "#7a373110", -3, 3), (1, "#65292309", -4, 4),(0, "#7a373121", 2, -2), (2, "#7a373110", 3, -3), (1, "#7a373107", 4, -4),(0, "#7a373121", 2, 2), (2, "#7a373110", 3, 3), (1, "#7a373107", 4, 4),(0, "#7a373121", -2, -2), (2, "#7a373110", -3, -3), (1, "#7a373107", -4, -4)]
-$ dialogue_outlines = ((0, "#65292321", -2, 2), (2, "#7a373110", -3, 3), (1, "#65292309", -4, 4),(0, "#7a373121", 2, -2), (2, "#7a373110", 3, -3), (1, "#7a373107", 4, -4),(0, "#7a373121", 2, 2), (2, "#7a373110", 3, 3), (1, "#7a373107", 4, 4),(0, "#7a373121", -2, -2), (2, "#7a373110", -3, -3), (1, "#7a373107", -4, -4))
+
 screen choice(items):
     style_prefix "choice"
     image "gui/choice_background.png"
@@ -310,35 +300,39 @@ style choice_button is default:
 
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
-
+    #idle_outlines ((0, "#6529232b", -2, 2), (2, "#7a373112", -3, 3), (1, "#65292305", -4, 4),(0, "#7a373121", 2, -2), (0, "#7a373121", 2, 2), (2, "#7a373110", 3, 3), (1, "#7a373107", 4, 4),(0, "#7a373121", -2, -2))
+    #hover_outlines ((0, "#6529232b", -2, 2), (2, "#7a373112", -3, 3))
 
 ## Quick Menu screen ###########################################################
 ##
 ## The quick menu is displayed in-game to provide easy access to the out-of-game
 ## menus.
 
+#style quick_shadow:
+#    outlines ((0, "#65292321", -2, 2), (2, "#7a373110", -3, 3), (1, "#65292309", -4, 4),(0, "#7a373121", 2, -2), (2, "#7a373110", 3, -3), (1, "#7a373107", 4, -4),(0, "#7a373121", 2, 2), (2, "#7a373110", 3, 3), (1, "#7a373107", 4, 4),(0, "#7a373121", -2, -2), (2, "#7a373110", -3, -3), (1, "#7a373107", -4, -4))
+
 screen quick_menu():
 
     ## Ensure this appears on top of other screens.
     zorder 100
-
     if quick_menu:
-
+        
         hbox:
             style_prefix "quick"
-
+            
             xalign 1.0
             yalign 0.0
-
-            textbutton _("Back") action Rollback()
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("History") action ShowMenu('history')
+            
+            
+            textbutton _("BACK") action Rollback()
+            textbutton _("SAVE") action ShowMenu('save')
+            textbutton _("HISTORY") action ShowMenu('history')
             #textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
+            textbutton _("AUTO") action Preference("auto-forward", "toggle")
             #textbutton _("Q.Save") action QuickSave()
             #textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Settings") action ShowMenu('preferences')
-            textbutton _("Menu") action ShowMenu()
+            textbutton _("SETTINGS") action ShowMenu('preferences')
+            textbutton _("MENU") action ShowMenu()
 
 
 
@@ -357,6 +351,15 @@ style quick_button:
 
 style quick_button_text:
     properties gui.button_text_properties("quick_button")
+    idle_outlines ((0, "#00000030", -1, 1), (0, "#00000025", -1, 2), (0, "#00000020", -1, 3), (0, "#00000015", -1, 4), (0, "#00000010", -1, 5), (0, "#00000005", -1, 6), 
+    (0, "#00000030", -2, 1), (0, "#00000025", -2, 2), (0, "#00000020", -2, 3), (0, "#00000015", -2, 4), (0, "#00000010", -2, 5), (0, "#00000005", -2, 6), 
+    (0, "#00000030", 0, 1), (0, "#00000025", 0, 2), (0, "#00000020", 0, 3), (0, "#00000015", 0, 4), (0, "#00000010", 0, 5), (0, "#00000005", 0, 6),
+    (0, "#fefcfc", -1, 0), (0, "#fefcfc", -1, 1), (0, "#fefcfc", 0, 1))
+
+    hover_outlines ((0, "#00000030", -1, 1), (0, "#00000025", -1, 2), (0, "#00000020", -1, 3), (0, "#00000015", -1, 4), (0, "#00000010", -1, 5), (0, "#00000005", -1, 6), 
+    (0, "#00000030", -2, 1), (0, "#00000025", -2, 2), (0, "#00000020", -2, 3), (0, "#00000015", -2, 4), (0, "#00000010", -2, 5), (0, "#00000005", -2, 6), 
+    (0, "#00000030", 0, 1), (0, "#00000025", 0, 2), (0, "#00000020", 0, 3), (0, "#00000015", 0, 4), (0, "#00000010", 0, 5), (0, "#00000005", 0, 6),
+    (0, "#ffcdbe", -1, 0), (0, "#ffcdbe", -1, 1), (0, "#ffcdbe", 0, 1))    
 
 
 ################################################################################
@@ -372,10 +375,6 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-
-        
-        
-        
         if main_menu:
             xalign 0.5
             yalign 0.6

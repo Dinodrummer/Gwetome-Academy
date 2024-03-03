@@ -1,40 +1,63 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-SyntaxError: unexpected EOF while parsing (game/screens.rpy, line 165)
+While processing the outlines property of anonymous style:
+  File "game/script.rpy", line 380, in script
+    pjmc normal "I'm so tired... I stayed up all night playing otome games."
+Exception: Color string '#6529232b' must be 3, 4, 6, or 8 hex digits long.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\bootstrap.py", line 275, in bootstrap
-    renpy.main.main()
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\main.py", line 670, in main
-    run(restart)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\main.py", line 74, in run
-    renpy.translation.init_translation()
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\translation\__init__.py", line 593, in init_translation
-    renpy.store._init_language() # type: ignore
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\translation\__init__.py", line 685, in change_language
-    new_change_language(tl, language)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\translation\__init__.py", line 639, in new_change_language
-    i.apply()
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\ast.py", line 2974, in apply
-    value = renpy.python.py_eval(expr)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\python.py", line 1151, in py_eval
-    code = py_compile(code, 'eval')
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\python.py", line 1088, in py_compile
-    raise e
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\python.py", line 1034, in py_compile
-    raise orig_e
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\python.py", line 1027, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: unexpected EOF while parsing (game/screens.rpy, line 165)
+  File "game/script.rpy", line 380, in script
+    pjmc normal "I'm so tired... I stayed up all night playing otome games."
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\exports.py", line 1474, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\character.py", line 1352, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\character.py", line 1003, in do_display
+    display_say(who,
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\character.py", line 693, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 4055, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\screen.py", line 481, in visit_all
+    self.child.visit_all(callback, seen=None)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 686, in visit_all
+    callback(self)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 4055, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\text\text.py", line 1792, in per_interact
+    if self.style.slow_abortable:
+  File "gen3-static/styleclass.pxi", line 533, in renpy.styledata.styleclass.Style.slow_abortable.__get__
+  File "style.pyx", line 493, in renpy.style.StyleCore._get
+  File "style.pyx", line 710, in renpy.style.build_style
+  File "style.pyx", line 707, in renpy.style.build_style
+  File "gen3-static/style_functions.pyx", line 770, in style_functions.outlines_property
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\styledata\styleutil.py", line 63, in expand_outlines
+    rv.append((i[0], renpy.easy.color(i[1]), i[2], i[3]))
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\color.py", line 167, in __new__
+    raise Exception("Color string {!r} must be 3, 4, 6, or 8 hex digits long.".format(c))
+Exception: Color string '#6529232b' must be 3, 4, 6, or 8 hex digits long.
 
-Windows-10-10.0.22621 AMD64
+Windows-10-10.0.22631 AMD64
 Ren'Py 8.1.3.23091805
 Gwetome Academy 1.0
-Fri Feb 23 09:46:57 2024
+Fri Mar  1 14:50:22 2024

@@ -1,41 +1,40 @@
-Fri Feb 23 09:47:03 2024
-Windows-10-10.0.22621
+Fri Mar  1 14:19:11 2024
+Windows-10-10.0.22631
 Ren'Py 8.1.3.23091805
  
 
 Bootstrap to the start of init.init. took 0.04s
 Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.03s
-Loading script. took 0.41s
-Loading save slot metadata. took 0.04s
+Loader init. took 0.07s
+Loading error handling. took 0.04s
+Loading script. took 0.32s
+Loading save slot metadata. took 0.05s
 Loading persistent. took 0.00s
-Running init code. took 0.09s
+Running init code. took 0.08s
 Loading analysis data. took 0.02s
 Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.57s
+Reloading save slot metadata. took 0.59s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.09s
+Dump and make backups. took 0.08s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.05s
+Initial gc. took 0.04s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.00s
+Creating interface object. took 0.01s
 Cleaning stores took 0.00s
-Init translation took 0.07s
+Init translation took 0.04s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.04s
-Prepare screens took 0.09s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.10s
+Interface start. took 0.14s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2880, 1800)
@@ -43,20 +42,65 @@ swap interval: 1 frames
 Windowed mode.
 Vendor: "b'Intel'"
 Renderer: b'Intel(R) Arc(TM) Graphics'
-Version: b'4.6.0 - Build 31.0.101.5008'
+Version: b'4.6.0 - Build 31.0.101.5126'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1659) drawable=(2880, 1659)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 2173.81s
+Bootstrap to the start of init.init. took 54.73s
 Early init. took 0.00s
 Loader init. took 0.07s
 Loading error handling. took 0.03s
-Loading script. took 0.49s
+Loading script. took 0.32s
 Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
 Running init code. took 0.04s
 Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1659) drawable=(2880, 1659)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 391.13s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.02s
+Loading script. took 0.32s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Running init code. took 0.07s
+Loading analysis data. took 0.02s
 Analyze and compile ATL. took 0.01s
 Reloading save slot metadata. took 0.04s
 Index archives took 0.00s
@@ -74,13 +118,13 @@ Init translation took 0.03s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.08s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.08s
+Interface start. took 0.05s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2880, 1800)
@@ -88,79 +132,25 @@ swap interval: 1 frames
 Windowed mode.
 Vendor: "b'Intel'"
 Renderer: b'Intel(R) Arc(TM) Graphics'
-Version: b'4.6.0 - Build 31.0.101.5008'
+Version: b'4.6.0 - Build 31.0.101.5126'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1659) drawable=(2880, 1659)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 2274.41s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.03s
-Loading script. took 0.33s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 135: positional argument follows keyword argument
-    Character("Takeshi", ctc="ctc_blink",y6 what_outlines = dialogue_outlines, bold = True)
-                                             ^
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start. took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2880, 1800)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Arc(TM) Graphics'
-Version: b'4.6.0 - Build 31.0.101.5008'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 2276.33s
+Bootstrap to the start of init.init. took 402.27s
 Early init. took 0.00s
 Loader init. took 0.07s
 Loading error handling. took 0.02s
-Loading script. took 0.33s
+Loading script. took 0.29s
 Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
-
-File "game/script.rpy", line 135: positional argument follows keyword argument
-    Character("Takeshi", ctc="ctc_blink",y6S what_outlines = dialogue_outlines, bold = True)
-                                              ^
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start. took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2880, 1800)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Arc(TM) Graphics'
-Version: b'4.6.0 - Build 31.0.101.5008'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 2281.21s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.32s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-Running init code. took 0.05s
+Running init code. took 0.04s
 Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
+Analyze and compile ATL. took 0.02s
 Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.06s
+Dump and make backups. took 0.05s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.03s
@@ -171,9 +161,1455 @@ Creating interface object. took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.05s
 Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1659) drawable=(2880, 1659)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 436.59s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.03s
+Cleaning stores took 0.02s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.12s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1659) drawable=(2880, 1659)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 440.04s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.03s
+Loading script. took 0.41s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.12s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1659) drawable=(2880, 1659)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 442.04s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.02s
+Loading script. took 0.39s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1659) drawable=(2880, 1659)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 477.92s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.02s
+Loading script. took 0.50s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 495.78s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.02s
+Loading script. took 0.18s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
 Load screen analysis took 0.03s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1659) drawable=(2880, 1659)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1429.21s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.02s
+Loading script. took 0.34s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1659) drawable=(2880, 1659)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1631.41s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.03s
+Loading script. took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1638.29s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.03s
+Loading script. took 0.39s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1716.85s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.03s
+Loading script. took 0.39s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1868.98s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.03s
+Loading script. took 0.44s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 380, in script
+    pjmc normal "I'm so tired... I stayed up all night playing otome games."
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\exports.py", line 1474, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\character.py", line 1352, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\character.py", line 1003, in do_display
+    display_say(who,
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\character.py", line 693, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 4055, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\screen.py", line 481, in visit_all
+    self.child.visit_all(callback, seen=None)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 684, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 686, in visit_all
+    callback(self)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\display\core.py", line 4055, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\text\text.py", line 1792, in per_interact
+    if self.style.slow_abortable:
+  File "gen3-static/styleclass.pxi", line 533, in renpy.styledata.styleclass.Style.slow_abortable.__get__
+  File "style.pyx", line 493, in renpy.style.StyleCore._get
+  File "style.pyx", line 710, in renpy.style.build_style
+  File "style.pyx", line 707, in renpy.style.build_style
+  File "gen3-static/style_functions.pyx", line 770, in style_functions.outlines_property
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\styledata\styleutil.py", line 63, in expand_outlines
+    rv.append((i[0], renpy.easy.color(i[1]), i[2], i[3]))
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\color.py", line 167, in __new__
+    raise Exception("Color string {!r} must be 3, 4, 6, or 8 hex digits long.".format(c))
+Exception: Color string '#6529232b' must be 3, 4, 6, or 8 hex digits long.
+
+While processing the outlines property of anonymous style:
+  File "game/script.rpy", line 380, in script
+    pjmc normal "I'm so tired... I stayed up all night playing otome games."
+Exception: Color string '#6529232b' must be 3, 4, 6, or 8 hex digits long.
+Resetting cache.
+Bootstrap to the start of init.init. took 1870.99s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.38s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2081.23s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.38s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2468.26s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.02s
+Loading script. took 0.42s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2473.23s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.02s
+Loading script. took 0.38s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2482.85s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.03s
+Loading script. took 0.38s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2489.45s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.45s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.07s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2498.97s
+Early init. took 0.00s
+Loader init. took 0.09s
+Loading error handling. took 0.02s
+Loading script. took 0.40s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2504.08s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.02s
+Loading script. took 0.23s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.11s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.02s
+Reloading save slot metadata. took 0.05s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2512.20s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.03s
+Loading script. took 0.56s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2517.29s
+Early init. took 0.00s
+Loader init. took 0.12s
+Loading error handling. took 0.03s
+Loading script. took 0.19s
+Loading save slot metadata. took 0.05s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2525.43s
+Early init. took 0.00s
+Loader init. took 0.09s
+Loading error handling. took 0.02s
+Loading script. took 0.45s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.08s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2530.47s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.03s
+Loading script. took 0.19s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.08s
+Analyze and compile ATL. took 0.02s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2541.82s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.38s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2543.69s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.03s
+Loading script. took 0.27s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.03s
+Analyze and compile ATL. took 0.02s
+Reloading save slot metadata. took 0.08s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2590.27s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.03s
+Loading script. took 0.19s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.02s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2609.44s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.03s
+Loading script. took 0.36s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2611.57s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.02s
+Loading script. took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.06s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.08s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2618.34s
+Early init. took 0.00s
+Loader init. took 0.11s
+Loading error handling. took 0.02s
+Loading script. took 0.36s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2620.52s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.03s
+Loading script. took 0.39s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2628.72s
+Early init. took 0.00s
+Loader init. took 0.06s
+Loading error handling. took 0.02s
+Loading script. took 0.38s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2630.79s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.02s
+Loading script. took 0.42s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
 Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
@@ -187,64 +1623,20 @@ swap interval: 1 frames
 Windowed mode.
 Vendor: "b'Intel'"
 Renderer: b'Intel(R) Arc(TM) Graphics'
-Version: b'4.6.0 - Build 31.0.101.5008'
+Version: b'4.6.0 - Build 31.0.101.5126'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 2297.24s
+Bootstrap to the start of init.init. took 2639.14s
 Early init. took 0.00s
-Loader init. took 0.09s
-Loading error handling. took 0.02s
-Loading script. took 0.20s
+Loader init. took 0.06s
+Loading error handling. took 0.03s
+Loading script. took 0.38s
 Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
-Running init code. took 0.05s
+Running init code. took 0.04s
 Loading analysis data. took 0.02s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.08s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2880, 1800)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Arc(TM) Graphics'
-Version: b'4.6.0 - Build 31.0.101.5008'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 2345.46s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.29s
-Loading save slot metadata. took 0.04s
-Loading persistent. took 0.00s
-Running init code. took 0.05s
-Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.01s
 Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
@@ -259,16 +1651,16 @@ nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object. took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.06s
-Build styles took 0.01s
+Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.02s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.09s
+Interface start. took 0.07s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2880, 1800)
@@ -276,16 +1668,151 @@ swap interval: 1 frames
 Windowed mode.
 Vendor: "b'Intel'"
 Renderer: b'Intel(R) Arc(TM) Graphics'
-Version: b'4.6.0 - Build 31.0.101.5008'
+Version: b'4.6.0 - Build 31.0.101.5126'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 2350.77s
+Bootstrap to the start of init.init. took 2641.22s
 Early init. took 0.00s
-Loader init. took 0.06s
+Loader init. took 0.07s
 Loading error handling. took 0.02s
-Loading script. took 0.28s
+Loading script. took 0.41s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.21s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2649.47s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.02s
+Loading script. took 0.37s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2651.64s
+Early init. took 0.00s
+Loader init. took 0.09s
+Loading error handling. took 0.02s
+Loading script. took 0.39s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2656.87s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.02s
+Loading script. took 0.40s
 Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
 Running init code. took 0.04s
@@ -308,53 +1835,8 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2880, 1800)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Arc(TM) Graphics'
-Version: b'4.6.0 - Build 31.0.101.5008'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 2362.46s
-Early init. took 0.00s
-Loader init. took 0.06s
-Loading error handling. took 0.02s
-Loading script. took 0.28s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-Running init code. took 0.05s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.06s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
@@ -366,7 +1848,141 @@ swap interval: 1 frames
 Windowed mode.
 Vendor: "b'Intel'"
 Renderer: b'Intel(R) Arc(TM) Graphics'
-Version: b'4.6.0 - Build 31.0.101.5008'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2658.81s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.03s
+Loading script. took 0.34s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2691.65s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.02s
+Loading script. took 0.17s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2870.85s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.03s
+Loading script. took 0.42s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
 Maximum texture size: 4096x4096
