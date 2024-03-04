@@ -1,5 +1,5 @@
 image bedroom:
-    "images/Backgrounds/bg bedroom.jpg"
+    "images/Backgrounds/bg bedroom.png"
     zoom 1.0
 image classroom day:
     "images/Backgrounds/bg classroom_day.jpg"

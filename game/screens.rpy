@@ -167,8 +167,10 @@ style kanji_namebox:
     background Image("gui/namebox.png")
     #background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
+    
 
 style namebox:
+
     xpos gui.name_xpos
     xanchor gui.name_xalign
     xsize gui.namebox_width
@@ -177,6 +179,7 @@ style namebox:
     #background Image("gui/namebox.png")
     #background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
+    
 
 style say_label:
     properties gui.text_properties("name", accent = "False")
@@ -300,8 +303,16 @@ style choice_button is default:
 
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")
-    #idle_outlines ((0, "#6529232b", -2, 2), (2, "#7a373112", -3, 3), (1, "#65292305", -4, 4),(0, "#7a373121", 2, -2), (0, "#7a373121", 2, 2), (2, "#7a373110", 3, 3), (1, "#7a373107", 4, 4),(0, "#7a373121", -2, -2))
-    #hover_outlines ((0, "#6529232b", -2, 2), (2, "#7a373112", -3, 3))
+    
+    idle_outlines ((0, "#6529231e", -1, 1), (0, "#65292317", -1, 2), (0, "#65292311", -1, 3), (0, "#6529230c", -1, 4), (0, "#65292307", -1, 5), (0, "#65292303", -1, 6), 
+    (0, "#6529231e", -2, 1), (0, "#65292317", -2, 2), (0, "#65292311", -2, 3), (0, "#6529230c", -2, 4), (0, "#65292307", -2, 5), (0, "#65292303", -2, 6), 
+    (0, "#6529231e", 0, 1), (0, "#65292317", 0, 2), (0, "#65292311", 0, 3), (0, "#6529230c", 0, 4), (0, "#65292307", 0, 5), (0, "#65292303", 0, 6),
+    (0, "#fefcfc", -1, 0), (0, "#fefcfc", -1, 1), (0, "#fefcfc", 0, 1))
+
+    hover_outlines ((0, "#6529231e", -1, 1), (0, "#65292317", -1, 2), (0, "#65292311", -1, 3), (0, "#6529230c", -1, 4), (0, "#65292307", -1, 5), (0, "#65292303", -1, 6), 
+    (0, "#6529231e", -2, 1), (0, "#65292317", -2, 2), (0, "#65292311", -2, 3), (0, "#6529230c", -2, 4), (0, "#65292307", -2, 5), (0, "#65292303", -2, 6), 
+    (0, "#6529231e", 0, 1), (0, "#65292317", 0, 2), (0, "#65292311", 0, 3), (0, "#6529230c", 0, 4), (0, "#65292307", 0, 5), (0, "#65292303", 0, 6),
+    (0, "#612535", -1, 0), (0, "#612535", -1, 1), (0, "#612535", 0, 1))   
 
 ## Quick Menu screen ###########################################################
 ##

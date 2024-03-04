@@ -115,7 +115,7 @@ init:
     (0, "#6529231e", 1, 1), (0, "#65292317", 1, 2), (0, "#65292311", 1, 3), (0, "#6529230c", 1, 4), (0, "#65292307", 1, 5), (0, "#65292303", 1, 6), 
     (0, "#6529231e", 0, 1), (0, "#65292317", 0, 2), (0, "#65292311", 0, 3), (0, "#6529230c", 0, 4), (0, "#65292307", 0, 5), (0, "#65292303", 0, 6))
 
-    define pjmc = Character("[mcname]", show_name = "小林・花", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
+    define pjmc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn_pajamas", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
     define pmc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn_party", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
     define smc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn_suit", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
     define mc = Character("[mcname]", show_name = "You", ctc="ctc_blink", image="gwyn", window_background="gui/textbox2.png", what_outlines = dialogue_outlines, what_style = "say_dialogue_mc")
@@ -373,6 +373,7 @@ label start:
 
     scene bedroom
 
+    #jump s74
 
     pjmc normal "I'm so tired... I stayed up all night playing otome games."
     
@@ -2405,7 +2406,6 @@ label s65:
 
     if metRiri:
         $ riris[65] = True
-        
 
     menu:
         "Call the cops!":
@@ -2433,7 +2433,7 @@ label s74:
 
     na "You begin walking the halls with Mio, putting up posters and talking about club duties. Although Mio seems meek she speaks with openness and discipline."
 
-    mio "I-if you see students skipping class please tell them to return immediately. Some of them will try to use the “restroom excuse” but I'm sure you won't fall for that… it's a bit of an obvious lie."
+    mio "I-if you see students skipping class please tell them to return immediately. Some of them will try to use the “restroom excuse” but I'm sure you won't fall for that... it's a bit of an obvious lie."
 
     mc "Ha... yeah... who would ever--"
 
@@ -2511,6 +2511,24 @@ label s90:
 label s91:
 
 label s92:
+    
+label s93:
+
+label s94:
+
+label s95:
+
+label s96:
+
+label s97:
+
+label s98:
+
+label s99:
+
+label s100:
+
+label s101:
 
 label e0:
 
