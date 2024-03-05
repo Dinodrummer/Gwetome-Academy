@@ -11,13 +11,13 @@ init -2:
 
         alpha 1.0
         "images/star1.png"
-        zoom 0.22
-        ypos 5
+        zoom 0.28
+        ypos 12
         xpos 4
         0.5
         "images/star2.png"
-        zoom 0.22
-        ypos 5
+        zoom 0.28
+        ypos 12
         xpos 4
         0.5
         repeat
@@ -146,6 +146,7 @@ init:
     define d1 = Character("Deliquent 1", ctc="ctc_blink", what_outlines = dialogue_outlines)
     define d2 = Character("Deliquent 2", ctc="ctc_blink", what_outlines = dialogue_outlines)
     define d3 = Character("Deliquent 3", ctc="ctc_blink", what_outlines = dialogue_outlines)
+    define sg = Character("Sullen Girl", ctc="ctc_blink", what_outlines = dialogue_outlines)
     
     style character_text:
         outlines [
@@ -392,9 +393,9 @@ label start:
     pjmc embarrassed "...and I'm late for school."
 
     menu:
-        "Go downstairs and get ready for school":
+        "{i}Go downstairs and get ready for school":
             jump s2
-        "Sleep in just a liiitle longer":
+        "{i}Sleep in just a liiitle longer":
             jump s3
 
 label s2:
@@ -423,9 +424,9 @@ label s2:
     na "But... you have school. If you leave now, you still might be able to make it in time."
 
     menu:
-        "Head off to school":
+        "{i}Head off to school":
             jump s4
-        "Watch Magical Ikemen":
+        "{i}Watch Magical Ikemen":
             jump s5
 
 label s3:
@@ -442,9 +443,9 @@ label s3:
     mom "[mcname], school's already started so you need to hurry! I'm off to work now, so I can't help you. I'm off!"
 
     menu:
-        "Wake up and go go go!":
+        "{i}Wake up and go go go!":
             jump s6
-        "Nahh, I'm sleeping more":
+        "{i}Nahh, I'm sleeping more":
             jump s7
 
 label s4:
@@ -477,9 +478,9 @@ label s4:
     na "Either way, you should probably get to school. The question is: How?"
 
     menu:
-        "I'll take the journey alone!":
+        "{i}I'll take the journey alone!":
             jump s8
-        "Try to talk to the ikemen":
+        "{i}Try to talk to the ikemen":
             jump s9
 
 label s5:
@@ -543,7 +544,7 @@ label s5:
     mc "Ummmmmmmmm..."
 
     menu:
-        "Go to school... late":
+        "{i}Go to school... late":
             jump s10
 
 label s6:
@@ -581,9 +582,7 @@ label s6:
 
     na "After you both apologize you quickly continue on your way."
 
-    menu:
-        "Go to school... late":
-            jump s10
+    jump s10
 
 label s7:
 
@@ -614,9 +613,9 @@ label s8:
     na "Hmmm... It'd look pretty good on college applications. How hard could it be?"
 
     menu:
-        "Go to class":
+        "{i}Go to class":
             jump s51
-        "Sign up and go to the Student Council room":
+        "{i}Sign up and go to the Student Council room":
             jump s52
 
 label s9:
@@ -631,8 +630,8 @@ label s9:
     
     mc "Is that so? Anyways, what is your name?"
 
-    $ joename = "ジョー"
-    $ joename_kanji = ""
+    $ joename = "Joe Kun"
+    $ joename_kanji = "くん・ジョー"
 
     joe "Oh right! The name's Joe-kun, but you can just call me Joe."
 
@@ -650,6 +649,8 @@ label s9:
     mc "Ha... well, which way are you heading?"
 
     joe "Oh, I've got class this way. It was nice talking to you, see you around!"
+
+    jump s8
 
 label s10:
 
@@ -760,7 +761,7 @@ label s14:
 
     scene gym
     show kyle jersey normal
-    mc "The final is{cps=4}...{/cps} here?"
+    mc "The final is... here?"
 
     show kyle jersey flirty
     kyle "Yeah! It's just a small local tournament. Nothing to get too excited about."
@@ -1892,7 +1893,7 @@ label s50:
 
     na "Is this how you die?"
 
-    na "{cps=1.5}...{/cps}"
+    na "..."
 
     na "Just kidding. You wake up on a deserted island with Joe laying by your side."
 
@@ -2514,9 +2515,127 @@ label s92:
     
 label s93:
 
+    mc "It's okay, you can talk to me."
+
+    mio "I-- well..."
+
+    mio "Ever since I was little, I've dreamed of meeting my “Prince Charming”… and until recently I never thought I'd find him."
+
+    mio "You know... someone handsome and kind who actually cares about me."
+
+    mio "But when I met Yutaka it was almost like destiny."
+
+    mio "Of course, a lot of girls like him-- but for some reason I have this hope that one day he'll choose me."
+
+    mio "And until then... I don't mind being \"Cinderella\"."
+
+    mio "I believe that if I work hard in the student council and persist where others failed, he will someday return my feelings."
+
+    mio "I'll have someone to cherish and be cherished by."
+
+    mio "...To be honest [mcname], you scare me."
+
+    mio "Now that most of the student council has graduated and the election is coming up, more people will join. Yutaka won't have to rely on me anymore."
+
+    mio "I-I know we just met, but please tell me..."
+
+    mio "What should I do?"
+
+    menu:
+        "\"Tell him before it's too late!-- like right now!\"":
+            jump s95
+        "\"Wait and see how it plays out\"":
+            jump s96
+        "\"Uhh... I also like Yutaka\"":
+            jump s97
+
 label s94:
 
 label s95:
+
+    mc "Tell him your feelings of course!"
+
+    mc "How do you expect anything to happen if you never let him know?"
+
+    mio "Wait! B-but--{nw}"
+
+    mc "In fact, let's go find him right now!"
+
+    na "You grab Mio's hand and sprint through the halls back to the student council room."
+
+    mio "R-running in the halls isn't allowed!"
+
+    na "As you and Mio are about to turn the last corner, you hear a sudden thud.  The two of you peek around the corner 
+        to find Yutaka talking to a girl slumped against the wall with a pink letter. Talk about bad timing."
+
+    # Whispering
+    mio "Oh, it's the previous vice president! She graduated last year... what's she doing here?"
+
+    jt "Beautiful girls like you shouldn't cry... but I'm afraid I can't return your feelings."
+
+    sg "But... but you said you liked me! You even just said I was beautiful! Ever since you entered Gwetome, I've liked you and worked my butt off for you. How could you say such a thing?!"
+
+    jt "Ha! You claim to \"like\" me... {color=#b0b0b0}{size=-6}whatever that means...{/color}{/size} yet you know nothing about me, do you?"
+
+    mio "!!!"
+
+    jt "Whatever romance you had imagined is just a projection of your idiocracy."
+
+    jt "I would never look twice at someone who decides to worship me just because of my looks."
+
+    sg "But--{nw}"
+
+    jt "I'm sorry to tell you this Senpai… but you no longer have value to me now that you've graduated."
+
+    jt "We had fun while it lasted though, didn't we?"
+
+    sg "{i}{color=#b0b0b0}{size=-6}{cps=10}*sobs*{/cps}{/size}{/color}{/i}"
+
+    na "As the girl bolts out of the hallway, you turn to look at Mio who seems to be... blushing?"
+
+    # Whispering:
+    mio "This whole time I never realized... how lonely Yutaka is."
+
+    # Whispering (loudly)
+    mc "HUH?!"
+
+    mio "Thanks for helping me find my courage, [mcname]."
+
+    na "Before you can say anything, Mio steps around the corner and reveals herself to Yutaka."
+
+    mio "Yutaka!"
+
+    jt "Huh? Oh-- Mio."
+
+    jt "I guess you saw all that, hm? That's too bad... you've been such a hard worker too."
+
+    jt "If you want to quit, the application fo--{nw}"
+
+    mio "No! I-I don't care if you use me."
+
+    jt "Huh?"
+
+    mio "I want to be by your side Yutaka! I know now that your actions, your words, have carried no weight… and I can't say I'm much different from the old Vice President... but I want to try!"
+
+    mio "Although this side of you is new to me, it does not deter me... or my feelings."
+
+    mio "I want to know you for who you are!"
+
+    jt "..."
+
+    jt "I... I guess I wouldn't mind that."
+
+    na "Thanks to your dating expertise and fully intentional guidance, Mio and Yutaka start dating."
+
+    na "Their unexpected yet beautiful romance quickly becomes the talk of the school, and your matchmaking skills make you a local celebrity."
+
+    na "You become known as the \"Campus Cupid\"... a respectable title for a respectable matchmaker."
+
+    na "You continue to help lonely hearts find love for the rest of your high school career, and even later become the godparent of Mio and Yutaka's child!"
+
+    na "Who needs love when you're the one shooting the arrows?"
+
+    jump e13
 
 label s96:
 
@@ -2556,7 +2675,7 @@ label e11: # Big Apple Juice
 
 label e12: # Love in the Basket
 
-label e13:
+label e13: # The Archer of Love
         
 
         
