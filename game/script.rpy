@@ -681,9 +681,9 @@ label s10:
             
 
     menu:
-        "Go to class late":
+        "{i}Go to class late":
             jump s11
-        "Skip!":
+        "{i}Skip!":
             jump s12
 
 label s11:
@@ -744,9 +744,9 @@ label s13:
         
     
     menu:
-        "Make a scene!":
+        "{i}Make a scene!":
             jump s15
-        "Wait for detention to end and leave":
+        "{i}Wait for detention to end and leave":
             jump s16
 
 label s14:
@@ -858,9 +858,9 @@ label s15:
         
 
     menu:
-        "I'm going to that party!":
+        "{i}I'm going to that party!":
             jump s26
-        "Absolutely not":
+        "{i}Absolutely not":
             jump s27
 
 label s16:
@@ -933,23 +933,27 @@ label s18:
     na "Wait, that's the student council president! You're in trouble if he finds you out here."
 
     menu:
-        "Hide behind a corner!":
-            jump sub1
-        "Pshh, what is he gonna do?":
-            jump sub2
+        "{i}Hide behind a corner!":
+            jump s18_1
+        "{i}Pshh, what is he gonna do?":
+            jump s18_2
+
     label s18_1:
 
-        na "As you tip-toe over to the corner of the hallway, you accidentally step on a very conveniently placed stick."
+        na "As you tip-toe over to the corner of the hallway, you accidentally step on a very conveniently placed rose."
 
-        jt "How'd a stick get in here?"
+        jt "How'd a rose get in here?"
 
         na "Busted..."
+
+        jump s18_3
 
     label s18_2:
 
         na "You stand confidently in the center of the hallway as he walks towards you."
 
-        
+        jump s18_3
+
 
     label s18_3:
 
@@ -964,15 +968,18 @@ label s18:
         jt "Well, you're not going anywhere without a hall pass. How about we bring you back to class to get one?"
 
         menu:
-            "Sure, I should probably head back":
+            "{i}Sure, I should probably head back":
                 jump s21
-            "This guy deserves a punch!":
+            "{i}This guy deserves a punch!":
                 jump s18_4
+                
     label s18_4:
 
         na "As you start to turn around to walk back to class, you swiftly turn back and drive your fist into the student's face. Nice."
 
         na "Uh oh, he got back up? Looks like it's time for a fight!"
+
+        jump ph
 
 label s19:
 
@@ -1036,7 +1043,7 @@ label s22:
 
     jump s25
 
-label s23:
+label s23: # Free space
 
 label s24:
 
@@ -1050,6 +1057,7 @@ label s24:
 
     mc "Wh-{nw}"
 
+    # Saying yen amount loudly
     na "-Wait, 2,210¥?? What has this world come to..."
 
     na "Failing to hold back spending one fourth of your monthly allowance on a single Frappe, you swipe your card and watch as the barista skillfully crafts your drink."
@@ -1089,7 +1097,7 @@ label s24:
 
     na "{b}Enough with the “no no no” talk!{/b}"
 
-    $ joename = "ジョ～"
+    $ joename = "ジョ～・くん"
     joe "Well, anyways, my name's Joe. Nice to meet you! I'm gonna buy a drink for myself anyways, so I'll get us both one."
 
     mc "I'm [mcname], nice to meet you!"
@@ -1105,18 +1113,35 @@ label s24:
     if metRiri:
         $ riris[24] = True
         
-
     menu:
-        "No, leave me alone!":
+        "\"No, leave me alone!\"":
             jump s41
-        "Sure, why not?":
+        "\"Sure, why not?\"":
             jump s42
 
 label s25:
 
-    beckham "If you don't go to school, you won't find success. You need to try your best everyday. Now go to detention please."
+    scene counseling
+
+    na "You enter the counseling office with Yutaka to find... another student?"
+
+    na "I guess the school's low on staff..."
+
+    na "After Yutaka angrily explains the situation to the student \"student counselor\", you soon find yourself in a one-on-one counseling session to address your... issues..."
+
+    beckham "If you don't go to school, you won't find success. You need to try your best everyday."
 
     mc "Okay..."
+
+    beckham "Why did you think punching a classmate was a good idea? Do you realize what could happen?"
+
+    mc "He was being a bully, I needed to do something."
+
+    beckham "That was a dumb thing to do. You were such a good student last year, I'm sorry that I have to do this..."
+
+    mc "Wa--What?"
+
+    beckham "{cps=6}{b}GO TO DETENTION!{b}{/cps}"
 
     jump s13
 
@@ -1126,7 +1151,7 @@ label s26:
 
     na "You carefully put the handkerchief and note in your bag and begin to daydream."
 
-    mc "I wonder who's going to be there... I'll have to make lots of friends! Maybe I should try something new to make a good impression..."
+    mc "{i}I wonder who's going to be there... I'll have to make lots of friends! Maybe I should try something new to make a good impression...{/i}"
 
     # Door sounds
 
@@ -1161,11 +1186,10 @@ label s26:
     if metRiri:
         $ riris[26] = True
         
-
     menu:
-        "Go to the party with Akimitsu":
+        "{i}Go to the party with Akimitsu":
             jump s28
-        "Ditch the party and hang out":
+        "{i}Ditch the party and hang out":
             jump s29
 
 label s27:
@@ -1190,11 +1214,16 @@ label s27:
 
     if metRiri:
         $ riris[27] = True
+    
+    jump s43
         
 
 label s28:
+
+    scene city_night
     na "Soon, night falls. You arrive at the party with Akimitsu and head inside."
 
+    scene party
     na "The party is surprisingly classy. Everyone is dressed nicely, there's a live jazz band, and even an open apple juice bar. You make a mental note of the apple juice bar."
 
     na "You quickly see Takao Isamu spot you and even slightly move their lips upward."
@@ -1203,9 +1232,8 @@ label s28:
 
     na "Akimitsu tenses up and steps closer to you."
 
-    $ sophianame = "高尾、勇"
-
-    sophia "Hey. I've heard a lot about you, [mcname]. I'm Takao Isamu."
+    $ sophianame = "高尾・勇"
+    sophia "Hey. I've heard a lot about you, [mcname]. I'm Isamu Takao."
 
     sophia "When I first saw you I wasn't sure the rumors were true, but now I know. You're incredible. What dojo did--"
 
