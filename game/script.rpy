@@ -266,13 +266,6 @@ label riri:
         riri "Don't let the temptation of the forbidden fruit fool you!"
 
         $ riris[28] = False
-    if riris[43]:
-
-        riri "It's me, Riri. Don't worry Naninani, I'm just making some minor adjustments to the fabric of time."
-
-        riri "You may have failed this time at romance, but I won't let you give up!"
-
-        $ riris[43] = False
     if riris[24]:
 
         riri "Hey, Naninani, he's really asking you on a date!"
@@ -352,6 +345,16 @@ label riri:
         riri "You could call the cops, but the culprit is already long gone..."
 
         $ riris[65] = False
+    if riris[34]:
+
+        riri "CHIBA-KUN WANTS TO GO SOMEWHERE ELSE?!?! JUST THE TWO OF YOU?!?! AAAAAAAAAA GO NANINANI GOOO!"
+
+        $ riris[34] = False
+    if riris[36]:
+
+        riri "Look at you go!"
+
+        $ riris[36] = False
 
     return
 # -------------------------------------------------------------------------------------------------------------------
@@ -1232,7 +1235,8 @@ label s28:
 
     na "Akimitsu tenses up and steps closer to you."
 
-    $ sophianame = "高尾・勇"
+    $ sophianame_kanji = "高尾・勇"
+    $ sophianame = "Isamu Takao"
     sophia "Hey. I've heard a lot about you, [mcname]. I'm Isamu Takao."
 
     sophia "When I first saw you I wasn't sure the rumors were true, but now I know. You're incredible. What dojo did--"
@@ -1256,11 +1260,11 @@ label s28:
         
     
     menu:
-        "Ignore Isamu":
+        "{i}Ignore Isamu":
             jump s30
-        "Ignore Akimitsu":
+        "{i}Ignore Akimitsu":
             jump s32
-        "Ditch both for apple juice":
+        "{i}Ditch both for apple juice":
             jump s31
 
 label s29:
@@ -1292,9 +1296,9 @@ label s29:
         
 
     menu:
-        "Sure, I'll watch":
+        "\"Sure, I'll watch\"":
             jump s14
-        "I'd rather party":
+        "\"I'd rather party\"":
             jump s33
 
 label s30:
@@ -1310,9 +1314,9 @@ label s30:
     na "{i}{color=#b0b0b0}{size=-6}{cps=10}*Narrator gasps*{/cps}{/size}{/color}{/i}"
 
     menu:
-        "You know what? Sure.":
+        "\"You know what? Sure.\"":
             jump s35
-        "No, I have plans with Akimitsu":
+        "\"No, I have plans with Akimitsu\"":
             jump s36
 
 label s31:
@@ -1340,7 +1344,6 @@ label s31:
     if metRiri:
         $ riris[27] = True
         
-
     jump s43
 
 label s32:
@@ -1358,9 +1361,9 @@ label s32:
     na "{i}{color=#b0b0b0}{size=-6}{cps=10}*Narrator gasps*{/cps}{/size}{/color}{/i}"
 
     menu:
-        "Sounds good to me!":
+        "\"Sounds good to me!\"":
             jump s34
-        "No thanks, I'm going with Isamu":
+        "\"No thanks, I'm going with Isamu\"":
             jump s37
 
 label s33:
@@ -1382,7 +1385,6 @@ label s33:
     if metRiri:
         $ riris[33] = True
         
-
     jump s28
 
 label s34:
@@ -1405,6 +1407,9 @@ label s34:
 
     kyle "Hey... it's getting a little stuffy in here. Wanna go somewhere else?"
 
+    if metRiri:
+        $ riris[34] = True
+
     jump s40
 
 label s35:
@@ -1418,8 +1423,9 @@ label s35:
     if metRiri:
         $ riris[35] = True
         
-
-    jump s38
+    menu:
+        "{i}Go get drinks with Isamu":
+            jump s38
 
 label s36:
 
@@ -1431,8 +1437,11 @@ label s36:
 
     kyle "I actually... was also thinking of getting drinks with you, [mcname]."
 
+    if metRiri:
+        $ riris[36] = True
+
     menu:
-        "Sounds good to me!":
+        "\"Sounds good to me!\"":
             jump s34
 
 label s37:
@@ -1452,11 +1461,10 @@ label s37:
     if metRiri:
         $ riris[37] = True
         
-
     menu:
-        "Go get drinks with Isamu":
+        "{i}Go get drinks with Isamu":
             jump s38
-        "Actually... no thanks":
+        "Actually... I'm good":
             jump s39
 
 label s38:
@@ -1485,12 +1493,12 @@ label s38:
 
     na "The two of you step outside."
 
-    #Scene change
-
+    scene city_night
     na "You find yourself on a balcony overlooking Shizuoka."
 
     na "The wind softly blows through your hair and the lights of the city sparkle in the distance."
 
+    show sophia party normal
     sophia "To be honest... I didn't think you'd come with me."
 
     mc "Huh? Why?"
@@ -1513,7 +1521,7 @@ label s38:
 
     na "It is through Nyanken that you wage the Great Cat War, rise through the ranks, and become the most powerful yakuza couple in the nation."
 
-    na "No one can stop your bulging muscles or your untouchable love!...  Nya~"
+    na "No one can stop your bulging muscles or your untouchable love!...  {i}{color=#b0b0b0}{size=-6}{cps=10}Nya~{/cps}{/size}{/color}{/i}"
 
     jump e5
 
@@ -1649,9 +1657,9 @@ label s42:
     na "Alright now, what will you talk about for maximum romance?"
 
     menu:
-        "Talk about Hoshibucks":
+        "{i}Talk about Hoshibucks":
             jump s44
-        "Talk about hobbies":
+        "{i}Talk about hobbies":
             jump s45
  
 label s43:
@@ -1670,9 +1678,11 @@ label s43:
 
     na "In the corner of your eye you see a tiny magic wand waving at you from behind the couch. Is that..."
 
-    if metRiri:
-        $ riris[43] = True
-        
+    show riri normal
+    riri "It's me, Riri. Don't worry Naninani, I'm just making some minor adjustments to the fabric of time."
+
+    show riri happy
+    riri "You may have failed this time at romance, but I won't let you give up!"
     
     mc "Eh?! What's going on?"
 
