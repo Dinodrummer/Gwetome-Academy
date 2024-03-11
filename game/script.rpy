@@ -1746,6 +1746,8 @@ label s45:
 
     if metRiri:
         $ riris[44] = True
+
+    jump s46
         
     
 label s46:
@@ -1779,11 +1781,10 @@ label s46:
     if metRiri:
         $ riris[46] = True
         
-    
     menu:
-        "Go swimming! That lifeguard can't stop you!":
+        "{i}Go swimming! That lifeguard can't stop me!":
             jump s47
-        "Walk on the beach instead":
+        "{i}Walk on the beach instead":
             jump s48
  
 label s47:
@@ -1813,9 +1814,9 @@ label s47:
         
     
     menu:
-        "The lifeguard can deal with it":
+        "{i}The lifeguard can deal with it":
             jump s49
-        "Oh no, my love! Save him!!!":
+        "\"Don't worry, I'll save you!!\"":
             jump s50
 
 label s48:
@@ -2075,9 +2076,9 @@ label s53:
         
     
     menu:
-        "Go to the address":
+        "{i}Go to the address":
             jump s58
-        "Study alone in the library":
+        "{i}Study alone in the library":
             jump s59
  
 label s54:
@@ -2097,9 +2098,9 @@ label s54:
     na "You notice someone sitting in the back of the classroom. Wanna try grouping with them?"
 
     menu:
-        "Ask to group with them":
+        "{i}Ask to group with them":
             jump s56
-        "Nah, I'm good":
+        "{i}Nah, I'm good":
             jump s55
  
 label s55:
@@ -2158,7 +2159,7 @@ label s55:
 
     teacher_e "Comments?"
 
-    # Unfinished
+    #TODO: Finish Scene 55
 
 label s56:
 
@@ -2184,7 +2185,8 @@ label s56:
 
     na "You both go upstairs and enter their room."
 
- 
+    jump s57
+
 label s57:
 
     maryam "I'm going to go get my English work from downstairs... stay here for a little."
@@ -2210,9 +2212,9 @@ label s57:
         
     
     menu:
-        "Maybe they were planning to give it back":
+        "{i}Maybe they were planning to give it back":
             jump s61
-        "Something's fishy around here...":
+        "{i}Something's fishy around here...":
             jump s60
  
 label s58:
@@ -2292,11 +2294,10 @@ label s60:
     if metRiri:
         $ riris[60] = True
         
-
     menu:
-        "Test them to see if they know the password":
+        "{i}Test them to see if they know the password":
             jump s63
-        "Pshh, it's probably fine!":
+        "{i}Pshh, it's probably fine!":
             jump s64
  
 label s61:
@@ -2395,9 +2396,10 @@ label s63:
 
     # New day at school
 
+    scene classroom_day
     na "You and Haruka plan on finishing the project later that day, but then you notice a handsome figure approaching..."
 
-    kyle "Hey naninani, I was wondering if you would like to come hang out with me after school...if you're not busy of course."
+    kyle "Hey naninani, I was wondering if you would like to come hang out with me after school... if you're not busy of course."
 
     na "Haruka's demeanor suddenly changes."
 
@@ -2406,11 +2408,10 @@ label s63:
     if metRiri:
         $ riris[63] = True
         
-    
     menu:
-        "That project can wait! Hang out with Akimitsu instead":
+        "{i}That project can wait! Hang out with Akimitsu instead":
             jump s65
-        "Nah, we have to finish this project.":
+        "{i}Nah, we have to finish this project.":
             jump s66
  
 label s64:
@@ -2447,9 +2448,9 @@ label s65:
         $ riris[65] = True
 
     menu:
-        "Call the cops!":
+        "{i}Call the cops!":
             jump s69
-        "Don't call the cops":
+        "{i}Don't call the cops":
             jump s68
  
 label s66:
