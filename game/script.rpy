@@ -257,7 +257,8 @@ label riri:
         $ riris[26] = False
     if riris[27]:
 
-        na " [[Riri shakes her head. It looks like she doesn't want to talk to you right now.]"
+        na "{i}[[Riri shakes her head. It looks like she doesn't want to talk to you right now.]{/i}"
+
         $ riris[27] = False
     if riris[28]:
 
@@ -355,6 +356,12 @@ label riri:
         riri "Look at you go!"
 
         $ riris[36] = False
+
+
+
+
+    else:
+        na "{i}[[It doesn't look like Riri has anything to say right now.]{/i}"
 
     return
 # -------------------------------------------------------------------------------------------------------------------
@@ -704,6 +711,8 @@ label s11:
     
     if metRiri:
         $ riris[11] = True
+    
+    jump s13
         
 
 label s12:
@@ -745,7 +754,6 @@ label s13:
     if metRiri:
         $ riris[13] = True
         
-    
     menu:
         "{i}Make a scene!":
             jump s15
@@ -1546,7 +1554,7 @@ label s39:
 
     na "In fact, the aura from your strut is so strong that it catches the attention of a modeling agent."
 
-    show beckham agent normal at jumper
+    show beckham agent normal
     beckham "Wait! I'm a modeling agent who also likes attending high school parties hosted by yakuza. You should join my agency! You're incredible!"
 
     mc "Okay."
@@ -1626,7 +1634,7 @@ label s40:
 
     kyle "And I've found [mcname], that it's when I'm with you that this light is most prevalent."
 
-    kyle "You're like my star, [mcname]. And that's why… I love you."
+    kyle "You're like my star, [mcname]. And that's why... I love you."
 
     mc "I..."
 
@@ -1719,8 +1727,9 @@ label s44:
     if metRiri:
         $ riris[44] = True
         
-    
-    jump s46
+    menu:
+        "{i}Go to the beach with Joe":
+            jump s46
  
 label s45:
 
