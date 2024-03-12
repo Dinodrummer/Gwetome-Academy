@@ -420,7 +420,7 @@ label s2:
     na "You happily munch on the breakfast your mother made and pat your belly in satisfaction. 
         Suddenly, the TV turns on, as if it's beckoning you to watch it."
 
-    #TODO Show TV
+    #TODO: Show TV
 
     na "Wait! Is that... the new season of Magical Ikemen?!? It's been a whole year since the last episode!"
 
