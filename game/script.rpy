@@ -422,14 +422,14 @@ label s2:
 
     hide mom
 
-    # Door closing noise
+    #TODO: Door close noise
 
     mc "Thanks, have a good day!"
 
     na "You happily munch on the breakfast your mother made and pat your belly in satisfaction. 
         Suddenly, the TV turns on, as if it's beckoning you to watch it."
 
-    #TODO: Show TV
+    #TODO: Show TV / Magical Ikemen
 
     na "Wait! Is that... the new season of Magical Ikemen?!? It's been a whole year since the last episode!"
 
@@ -471,18 +471,20 @@ label s4:
     na "Plus, you need to know whether or not Takeshi finally leaves his office job to pursue his dream
         of becoming a full-time magical girl in the Kiss Kiss Love Power Team."
 
-    na "As you scroll through the wonderland that is the Magical Ikemen online forum, you bump into a pole. Ouch."
+    na "As you scroll through the wonderland that is the Magical Ikemen online forum, you bump into a pole. Ouch." with hpunch
 
     na "Wow, that's a strangely attractive pole. And it's wearing a... Gwetome Academy uniform!? The pole turns around."
 
     show joe normal
     joe "Ah sorry, I was walking kind of slow. Are you ok?"
 
+    show joe ecstatic
     joe "A lot of people bump into me so my back muscles have become hard like metal. My doctor said it's because I tend to draw people in... I'm magnetic."
 
     show joe embarrassed
     joe "Heh. Sorry, I'm rambling. Anyways, I'll just uh... keep walking."
 
+    hide joe
     na "The mysterious ikemen runs his hand through his hair cooly and starts to saunter away."
 
     na "Your heart is beating fast; you don't know if it's because of his dazzling looks or possible metal poisoning."
@@ -620,6 +622,7 @@ label s8:
 
     na "You keep walking to school alone and eventually end up at the front of the school."
 
+    scene gate
     na "You notice a poster near the entrance, offering students to join the Student Council"
 
     na "Hmmm... It'd look pretty good on college applications. How hard could it be?"
@@ -636,8 +639,10 @@ label s9:
 
     na "Looks like being responsible pays off."
 
+    show joe normal
     mc "Oh.. kay, sorry! I didn't see you there."
 
+    show joe scared
     joe "Really? I'm quite hard to miss, you know..."
     
     mc "Is that so? Anyways, what is your name?"
@@ -645,24 +650,31 @@ label s9:
     $ joename = "Joe Kun"
     $ joename_kanji = "くん・ジョー"
 
+    show joe ecstatic
     joe "Oh right! The name's Joe-kun, but you can just call me Joe."
 
     na "Is that even a name?"
 
     mc "Well, nice to meet you! My name is [mcname]"
 
+    show joe normal
     joe "Wow, what a cool name! I'm jealous."
 
-    show joe normal
+    show joe ecstatic
     joe "I'm just an average Joe, you know? Hahaha!"
 
     na "Seriously, laughing at your own jokes? This guy..."
 
     mc "Ha... well, which way are you heading?"
 
+    show joe normal
     joe "Oh, I've got class this way. It was nice talking to you, see you around!"
 
-    jump s8
+    hide joe
+
+    menu:
+        "{i}Walk to school":
+            jump s8
 
 label s10:
 
@@ -1979,8 +1991,10 @@ label s51:
 
     # English class scene
 
+    scene classroom_day
     na "You arrive at your English class. You could have had something fun, like Japanese. But {i}English?{/i}"
 
+    #TODO: Sitting down noise(?)
     na "You take a seat and get ready to listen to the teacher's lecture."
 
     na "Right when they start talking, you start feeling very tired. Perhaps a nap wouldn't be too bad..."
@@ -1988,6 +2002,7 @@ label s51:
     na "You fall into a deep slumber, and dream of a high school life where {i}you{/i} are the main character."
 
     # Dream scene
+    scene dream
 
     na "As you walk to the front gates of the school in your dreams, you notice four ikemens waving at you from one of the classrooms. They seem to be trying to say something."
 

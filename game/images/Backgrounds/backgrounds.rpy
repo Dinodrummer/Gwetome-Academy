@@ -25,3 +25,6 @@ image door:
 image city night:
     "images/Backgrounds/bg city_night.jpg"
     zoom 1.5
+image dream:
+    "images/Backgrounds/bg dream.jpg"
+    zoom 1.5
