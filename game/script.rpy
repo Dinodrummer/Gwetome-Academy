@@ -380,6 +380,8 @@ label start:
 
     stop music
 
+    jump fight
+
     # show screen character_name("Hana Kobayashi", "小林・花")
 
     scene bedroom
@@ -2724,7 +2726,92 @@ label e11: # Big Apple Juice
 label e12: # Love in the Basket
 
 label e13: # The Archer of Love
+
+label dice_roll:
+    $ d4 = renpy.random.randint(1, 4)
+    $ d6 = renpy.random.randint(1, 6)
+    $ d10 = renpy.random.randint(1, 10)
+    $ d20 = renpy.random.randint(1, 20)
+    return
+
+label fight:
+
+    $ player_hp = 10
+    $ enemy_hp = 10
+    $ player_attack_value = 0
+    $ enemy_attack_value = 3
+    $ enemy_attack_value -= 1
+
+    scene bedroom
+    show jt cocky
+
+    while player_hp > 0 and enemy_hp > 0:
+
+        # Player Turn - two choices!
+        call dice_roll
+
+        menu:
+            "Flirt":
+                #call camera_knight_attack
+                if d10 >= 8:                                                # 30%
+                    $ player_attack_value = d4 + d6
+                    $ enemy_hp -= player_attack_value
+                    mc scared "That's scary!" with hpunch
+                    #TODO: add to script??
+                    "Yutaka took [player_attack_value] damage!"          # 70%
+                else:
+                    $ enemy_hp -= d4
+                    #show side gwyn suit scared 
+                    mc scared "[d4] damage!" with hpunch
+            "Punch":
+                #call camera_knight_attack                       
+                if d10 >= 9:                                                # 20%
+                    $ player_attack_value = (d6 + d4)*2
+                    $ enemy_hp -= player_attack_value
+                    "Critical Hit! Yutaka took [player_attack_value] damage!"
+                elif d10 >= 5:                                              # 40%  
+                    $ player_attack_value =  d6 + 2                                        
+                    $ enemy_hp -= player_attack_value
+                    "That's a strong hit! Yutaka took [player_attack_value] hp!"
+                else:                                                       # 40% 
+                    "You miss!"                                      
         
+        if enemy_hp <= 0:
+            #call camera_knight_win
+            "You win the combat encounter!"
+            #jump harder_menu
+
+        # Enemy Turn - Semi-randomized behavior!
+
+        call dice_roll
+
+        if d20 >= 19:                                            # 20%       
+            #call camera_skeleton_attack                                                                                
+            $ player_hp -= d10
+            "The Yutaka makes a wild attack for [d10] damage!"
+        elif d20 <=2:                                            # 20%
+            $ enemy_hp += d4
+            if enemy_hp < enemy_max_hp:
+                "The Yutaka heals itself, raising [d4] hp!"
+            else:
+                $ enemy_hp = enemy_max_hp
+                "The Yutaka fully heals itself back to full hp!"
+        else:                                                    # 60%
+            #call camera_skeleton_attack                                                                                
+            $ player_hp -= d4
+            "The Yukata attacks for [d4] damage!"
+
+    #call camera_knight_died
+    "You died..."
+    hide screen hp_bars_1v1
+
+    menu harder_menu:
+        "Play this level again?":
+            $ player_hp = player_max_hp
+            $ enemy_hp = enemy_max_hp
+            jump harder_battle
+        "Back to Main Menu":
+            jump start
 
         
 
