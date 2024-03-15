@@ -12,28 +12,46 @@ init -2:
         alpha 1.0
         "images/star1.png"
         zoom 0.28
-        ypos 12
+        ypos 8
         xpos 4
         0.5
         "images/star2.png"
         zoom 0.28
-        ypos 12
+        ypos 8
         xpos 4
         0.5
         repeat
 
+    transform e:
+        ycenter 1000
+        xcenter 960
+        alpha 0.0
+        #ease .06 alpha 0.2
+        ease .06 ycenter 900 alpha 0.2
+        #ease .05 alpha 0.4
+        ease .05 ycenter 800 alpha 0.4
+        #ease .04 alpha 0.6
+        ease .04 ycenter 700 alpha 0.6
+        #ease .04 alpha 0.8
+        ease .04 ycenter 600 alpha 0.8
+        #ease .04 alpha 1.0
+        ease .04 ycenter 500 alpha 1.0
+        alpha 1.0
+        ycenter 500
+    
+    define ex = Dissolve(0.1)
 
-transform jumper:
-    ease .04 yoffset 20
-    ease .03 yoffset 16
-    ease .02 yoffset 12
-    ease .01 yoffset 8
-    ease .01 yoffset 4
-    ease .01 yoffset 0
-
-style character_name
+# transform jumper:
+#     ease .04 yoffset 20
+#     ease .03 yoffset 16
+#     ease .02 yoffset 12
+#     ease .01 yoffset 8
+#     ease .01 yoffset 4
+#     ease .01 yoffset 0
 
 init python:
+
+    numscenes = 101
 
     def slow_punctuation(str_to_test):
         return (str_to_test
@@ -56,7 +74,7 @@ init python:
         #renpy.show(renpy.text(japanese_name, size=20, color="#ffffff"), x=x, y=y + 50)
 
     riris = []
-    for i in range(100):
+    for i in range(numscenes):
         riris.append(False)
 
     char_left = Position(xpos=0.18, ypos=0.75)
@@ -356,12 +374,19 @@ label riri:
         riri "Look at you go!"
 
         $ riris[36] = False
+    if riris[51]:
 
+        riri "yo test!"
 
-
+        $ riris[51] = False
 
     else:
         na "{i}[[It doesn't look like Riri has anything to say right now.]{/i}"
+
+    python:
+        for i in range(numscenes):
+            del(riris[i])
+            riris.insert(i, False)
 
     return
 # -------------------------------------------------------------------------------------------------------------------
@@ -2006,9 +2031,11 @@ label s51:
 
     na "As you walk to the front gates of the school in your dreams, you notice four ikemens waving at you from one of the classrooms. They seem to be trying to say something."
 
-    mi "{i}Heeeeey...{/i}"
+    mi "{i}Heeeeey!!!{/i}"
 
     scene black
+    na "Heyyy..." # mi line
+
     #TODO: smack sound effect
     teacher_e "Hey, [mcname]!" with hpunch
 
@@ -2017,14 +2044,27 @@ label s51:
     scene classroom day
     na "Suddenly, you feel a sharp pain on your forehead. A piece of chalk then drops onto your desk."
 
-    show teacher_e with moveinbottom
-    teacher_e "Would you like to come up to the board and answer the question?"
+    # define e = MoveTransition(
+    #             delay = 0.3,
+    #             enter = offscreenbottom,
+    #             leave = offscreenbottom,
+    #             old = False,
+    #             layers = ['master'],
+    #             time_warp = ease,
+    #             enter_time_warp = None,
+    #             leave_time_warp = None)
 
+    show teacher_e angry at e
+    teacher_e "Would you like to come up to the board and answer the question?"
+    
+    # hide teacher_e with ex
     mc normal "Uhhh... What question?"
 
-    hide teacher_e
     teacher_e "{i}{color=#b0b0b0}{size=-6}{cps=10}*sigh*...{/cps}{/size}{/color}{/i} I have it written right here. What is [quizWord] in Japanese?"
 
+    # $ metRiri = True
+    if metRiri:
+        $ riris[51] = True
 
     menu:
         "[quizGuess1]":
