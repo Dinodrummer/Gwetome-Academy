@@ -288,17 +288,13 @@ screen choice(items):
             auto "gui/riri_button_%s.png"
             action Call("riri")
     
-        
     vbox:
         for i in items:
             textbutton i.caption:
                 #style "shadow"
+                #action [RiriDelete(), i.action]
                 action i.action
 
-                
-
-
-            
 
 
 style choice_vbox is vbox
@@ -314,6 +310,7 @@ style choice_vbox:
 
 style choice_button is default:
     properties gui.button_properties("choice_button")
+    
 
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")

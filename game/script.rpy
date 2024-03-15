@@ -12,12 +12,12 @@ init -2:
         alpha 1.0
         "images/star1.png"
         zoom 0.28
-        ypos 8
+        ypos 10
         xpos 4
         0.5
         "images/star2.png"
         zoom 0.28
-        ypos 8
+        ypos 10
         xpos 4
         0.5
         repeat
@@ -50,6 +50,11 @@ init -2:
 #     ease .01 yoffset 0
 
 init python:
+
+    def RiriDelete():
+        for i in range(numscenes):
+            del(riris[i])
+            riris.insert(i, False)
 
     numscenes = 101
 
@@ -2044,25 +2049,16 @@ label s51:
     scene classroom day
     na "Suddenly, you feel a sharp pain on your forehead. A piece of chalk then drops onto your desk."
 
-    # define e = MoveTransition(
-    #             delay = 0.3,
-    #             enter = offscreenbottom,
-    #             leave = offscreenbottom,
-    #             old = False,
-    #             layers = ['master'],
-    #             time_warp = ease,
-    #             enter_time_warp = None,
-    #             leave_time_warp = None)
-
     show teacher_e angry at e
     teacher_e "Would you like to come up to the board and answer the question?"
     
     # hide teacher_e with ex
-    mc normal "Uhhh... What question?"
+    mc shy "Uhhh... What question?"
 
+    show teacher_e sad
     teacher_e "{i}{color=#b0b0b0}{size=-6}{cps=10}*sigh*...{/cps}{/size}{/color}{/i} I have it written right here. What is [quizWord] in Japanese?"
 
-    # $ metRiri = True
+    $ metRiri = True
     if metRiri:
         $ riris[51] = True
 
@@ -2153,7 +2149,7 @@ label s53:
             jump s59
  
 label s54:
-
+    
     na "You swiftly write the answer up on the chalkboard."
 
     teacher_e "That's correct [mcname], good job. It wouldn't look good if you got that wrong, that was one of the easier ones."
@@ -2167,7 +2163,7 @@ label s54:
     na "...you have no friends."
 
     na "You notice someone sitting in the back of the classroom. Wanna try grouping with them?"
-
+    $ riris[44] = True #TODO: Delete
     menu:
         "{i}Ask to group with them":
             jump s56
