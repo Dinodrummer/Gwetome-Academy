@@ -141,7 +141,7 @@ init:
 
     define riri = Character("[ririname]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # define riri = Character("リリ")
     define mv = Character("Mysterious Voice", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
-    define mi = Character("Mysterious ikemens", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define mi = Character("Mysterious ikemens", show_name = "イケメンたち", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
 
     define d1 = Character("Deliquent 1", ctc="ctc_blink", what_outlines = dialogue_outlines)
     define d2 = Character("Deliquent 2", ctc="ctc_blink", what_outlines = dialogue_outlines)
@@ -178,13 +178,13 @@ label pro:
     queue music basketballSong
     "During gym..."
     show zeil normal at char_left with vpunch
-    mc "{b}Hi!{/b} I'm {u}mc!{/u} {size=+10}This{/size} is my \"Project\"!"
-    mc "Man, is it just me, or am I... {color=#b0b0b0}getting... {size=-6}a {nw}"
-    mc "little sleepy...{/size}{/color}"
+    mc normal "{b}Hi!{/b} I'm {u}mc!{/u} {size=+10}This{/size} is my \"Project\"!"
+    mc normal "Man, is it just me, or am I... {color=#b0b0b0}getting... {size=-6}a {nw}"
+    mc normal "little sleepy...{/size}{/color}"
     return
 
 label DefaultQuestion:
-    mc "What?!"
+    mc normal "What?!"
     menu:
         "Nothing!":
             jump Questions_mc.Answer_Nothing
@@ -193,24 +193,24 @@ label DefaultQuestion:
         "Play a game with me!":
             $ renpy.dynamic("randumNum","answer") #To make variables local
             $ randomNum = renpy.random.randint(1,4)
-            mc "Anyways... OMG! It's a [randomNum]!"
+            mc normal "Anyways... OMG! It's a [randomNum]!"
             if randomNum >= 1 or randomNum <= 2:
                 $ answer = "What?"
             elif randomNum == 3:
                 $ answer = "Say that again?"
             else:
                 $ answer = "Huh?"
-            mc "[answer]"
+            mc normal "[answer]"
             # $ repeatQuestion = renpy.random.choice(["What?", "Say that again?", "Huh?"])
             return
     
 label Questions_mc:
     label .Question_What:
         label .Answer_Nothing:
-            mc "Oh."
+            mc normal "Oh."
             return
         label .Answer_Hi:
-            mc "Hi!"
+            mc normal "Hi!"
             return
 
 
@@ -373,14 +373,14 @@ label start:
     #show gwyn party normal at topleft
     $ mcname = renpy.input("What is your name?")
     $ mcname = mcname.strip()
-    $ mcname = mcname[0:15]
+    $ mcname = mcname[0:13]
     if mcname == "":
         $ mcname = "Naninani Nantoka"
         #何とか、何々
 
     stop music
 
-    jump fight
+    jump s51
 
     # show screen character_name("Hana Kobayashi", "小林・花")
 
@@ -424,7 +424,7 @@ label s2:
 
     #TODO: Door close noise
 
-    mc "Thanks, have a good day!"
+    mc normal "Thanks, have a good day!"
 
     na "You happily munch on the breakfast your mother made and pat your belly in satisfaction. 
         Suddenly, the TV turns on, as if it's beckoning you to watch it."
@@ -532,11 +532,11 @@ label s5:
 
     na "Just as the Dr. begins to shoot his sadness missiles at the Kiss Kiss Love Power team, your phone buzzes."
 
-    mc "Huh?"
+    mc normal "Huh?"
 
     na "Suddenly, a tiny sexy witch emerges out of your phone."
 
-    mc "Mark Zuckerberg?!"
+    mc normal "Mark Zuckerberg?!"
 
     $ metRiri = True
     $ ririname = "Riri"
@@ -545,17 +545,17 @@ label s5:
 
     riri "Wait! Are you Naninani Nantoka!?!?"
 
-    mc "Uh. No. I'm [mcname]."
+    mc normal "Uh. No. I'm [mcname]."
 
     riri "Oh how the great have fallen. {i}{color=#b0b0b0}{size=-6}{cps=10}*sigh*{/cps}{/size}{/color}{/i} I used to always hear about you at work--"
 
     riri "you were determined to get a lover by the end of the school day. On your first day of school! You were my hero... But now... {i}*cries*{/i}"
 
-    mc "Ummm..."
+    mc normal "Ummm..."
 
     riri "Well no matter Naninani! I'll help you get back on your feet and into the world of romance once again. Let's go!"
 
-    mc "Ummmmmmmmm..."
+    mc normal "Ummmmmmmmm..."
 
     menu:
         "{i}Go to school... late":
@@ -563,20 +563,20 @@ label s5:
 
 label s6:
 
-    mc "Ah! I've done it now!"
+    mc normal "Ah! I've done it now!"
 
     na "You quickly throw on your uniform, grab a piece of toast, and run out the door."
 
-    mc "I'm gonna be late!"
+    mc normal "I'm gonna be late!"
 
     na "It isn't long before you find yourself turning a sharp corner... with toast... hmm..."
 
-    mc "Ah! It hurts!"
+    mc normal "Ah! It hurts!"
 
     #Background bird caw noises
-    mc "...?"
+    mc normal "...?"
 
-    mc "Is no one... here?"
+    mc normal "Is no one... here?"
 
     na "Wow, you must be really off your game today *name*. You look around yourself, stunned... this has never happened before."
 
@@ -590,7 +590,7 @@ label s6:
 
     joe "Sorry, are you ok? I don't know what came over me. I just felt a sudden need to run around that corner."
 
-    mc "Yeah, I'm alright."
+    mc normal "Yeah, I'm alright."
 
     na "The boy's eyes sparkle as you take his hand and he smoothly pulls you to your feet. Nice."
 
@@ -640,12 +640,12 @@ label s9:
     na "Looks like being responsible pays off."
 
     show joe normal
-    mc "Oh.. kay, sorry! I didn't see you there."
+    mc normal "Oh.. kay, sorry! I didn't see you there."
 
     show joe scared
     joe "Really? I'm quite hard to miss, you know..."
     
-    mc "Is that so? Anyways, what is your name?"
+    mc normal "Is that so? Anyways, what is your name?"
 
     $ joename = "Joe Kun"
     $ joename_kanji = "くん・ジョー"
@@ -655,7 +655,7 @@ label s9:
 
     na "Is that even a name?"
 
-    mc "Well, nice to meet you! My name is [mcname]"
+    mc normal "Well, nice to meet you! My name is [mcname]"
 
     show joe normal
     joe "Wow, what a cool name! I'm jealous."
@@ -665,7 +665,7 @@ label s9:
 
     na "Seriously, laughing at your own jokes? This guy..."
 
-    mc "Ha... well, which way are you heading?"
+    mc normal "Ha... well, which way are you heading?"
 
     show joe normal
     joe "Oh, I've got class this way. It was nice talking to you, see you around!"
@@ -718,7 +718,7 @@ label s11:
 
     na "You're here in order to learn! You must study! You have your whole life ahead of you and you're not backing down!"
 
-    mc "Excuse me!"
+    mc normal "Excuse me!"
 
     sensei "Detention!"
 
@@ -786,12 +786,12 @@ label s14:
 
     scene gym
     show kyle jersey normal
-    mc "The final is... here?"
+    mc normal "The final is... here?"
 
     show kyle jersey flirty
     kyle "Yeah! It's just a small local tournament. Nothing to get too excited about."
 
-    mc "Oh, got it."
+    mc normal "Oh, got it."
 
     na "The two of you slowly open the door to the gym."
 
@@ -803,13 +803,13 @@ label s14:
 
     na "A basketball court stands in the center."
 
-    mc "Is this... THE B. LEAGUE FINALS?"
+    mc normal "Is this... THE B. LEAGUE FINALS?"
 
     kyle "Mhm! That's why I didn't want to miss it."
 
     kyle "Why don't you grab a seat? I need to get warmed up."
 
-    mc "Uhuh..."
+    mc normal "Uhuh..."
 
     na "Your heart races. Sometimes Akimitsu is a little too humble."
 
@@ -857,19 +857,19 @@ label s15:
     show sophia normal
     sophia "Yo."
 
-    mc "Oh, hey."
+    mc normal "Oh, hey."
 
     sophia "You dropped this."
 
     na "Isamu hands you a small handkerchief with a small cute cat print on it."
 
-    mc "Oh, that's not mi--"
+    mc normal "Oh, that's not mi--"
 
     sophia "Keep it."
 
     na "Isamu coolly grabs their jacket and leaves the room. You can't help but notice a slight blush on their face."
 
-    mc "Huh..."
+    mc normal "Huh..."
 
     na "You unfold the handkerchief to find a piece of paper with a message:"
 
@@ -917,9 +917,9 @@ label s17:
 
     na "Maybe you want to skip class? He shouldn't be able to stop you! This is a free country!"
 
-    mc "I refuse! {i}You{/i} shouldn't be able to send me back to class!"
+    mc normal "I refuse! {i}You{/i} shouldn't be able to send me back to class!"
 
-    mc "What are you doing out of class, huh? I'll make {i}you{/i} go back!"
+    mc normal "What are you doing out of class, huh? I'll make {i}you{/i} go back!"
 
     na "Yukata stares at you for a moment, then a small grin appears on his face."
 
@@ -931,7 +931,7 @@ label s17:
 
     na "Who does this guy think he is?"
 
-    mc "That's just not fair!"
+    mc normal "That's just not fair!"
 
     jt "Oh, but my dear girl, {i}life{/i} is not fair. I am simply getting you ready for reality."
 
@@ -941,7 +941,7 @@ label s17:
 
     jt "Just detention. Consider yourself lucky."
 
-    mc "Hey!"
+    mc normal "Hey!"
 
     jt "Don't make me angrier now. Welp, See you around!"
 
@@ -949,7 +949,7 @@ label s17:
 
     na "You pick up the detention slip that he slid in your pocket and reluctantly read it."
 
-    mc "Right after school? This is the worst! Whatever, I better go..."
+    mc normal "Right after school? This is the worst! Whatever, I better go..."
 
 label s18:
 
@@ -986,7 +986,7 @@ label s18:
 
         jt "Wait, what's a student doing in the halls? ...I'm terribly sorry, but you're gonna have to go back to class."
 
-        mc "Nonono, I just--{nw}"
+        mc normal "Nonono, I just--{nw}"
 
         jt "--Needed to go to the bathroom and got lost in the halls, I've been there."
 
@@ -1014,7 +1014,7 @@ label s19:
 
     jt "Wait-- please... You don't need to do this!"
 
-    mc "Heh... I knew that CrossFit membership would pay off."
+    mc normal "Heh... I knew that CrossFit membership would pay off."
 
     jump s20
 
@@ -1022,19 +1022,19 @@ label s20:
 
     na "Word quickly spreads about how you punched the student council president and skipped class as you proudly walk out the front gates."
 
-    mc "Man, that fight really took a lot out of me. I could really go for a Caramel Ribbon Crunch Frappe right about now."
+    mc normal "Man, that fight really took a lot out of me. I could really go for a Caramel Ribbon Crunch Frappe right about now."
 
     jump s24
 
 label s21:
 
-    mc "{i}Oh shoot, I forgot to grab one{/i}! Sure, let's head back."
+    mc normal "{i}Oh shoot, I forgot to grab one{/i}! Sure, let's head back."
 
     na "You walk back to class to get a hall pass, even though you never needed one. But right as you grab it, the bell rings."
 
     jt "Awww, well that's a shame. Well hey, at least we have the same class next period!"
 
-    mc "Oh, nice! Wait, how did you know that we had the same class?"
+    mc normal "Oh, nice! Wait, how did you know that we had the same class?"
 
     jt "I just checked the Google Classroom! It's the job of the student council president to know their fellow students' names, after all."
 
@@ -1046,11 +1046,11 @@ label s22:
 
     na "...and miss. Well, that's embarrassing."
 
-    mc "Oh... oops."
+    mc normal "Oh... oops."
 
     jt "Ahahha, how cute! You really think you stand a chance against me? I am the one and only student council president, Yukata!"
 
-    mc "Uhm... okay?"
+    mc normal "Uhm... okay?"
 
     jt "You've been naughty now, haven't you?"
 
@@ -1060,7 +1060,7 @@ label s22:
 
     na "How dramatic can this kid get..."
 
-    mc "Alright fine, I'll go to counseling. Sorry for trying to punch you, but it was too hard to resist."
+    mc normal "Alright fine, I'll go to counseling. Sorry for trying to punch you, but it was too hard to resist."
 
     jt "Hey! Wait, don't say that about me!"
 
@@ -1074,13 +1074,13 @@ label s24:
 
     #In starbucks
 
-    mc "I'll take your finest Caramel Ribbon Crunch Frappe, please."
+    mc normal "I'll take your finest Caramel Ribbon Crunch Frappe, please."
 
     na "You felt like you've seen this kid before. Maybe from school?"
 
     beckham "that'll be 2,210¥."
 
-    mc "Wh-{nw}"
+    mc normal "Wh-{nw}"
 
     # Saying yen amount loudly
     na "-Wait, 2,210¥?? What has this world come to..."
@@ -1089,11 +1089,11 @@ label s24:
 
     na "You imagine what the flavor will be as you grab the cup and walk away from the front counter."
 
-    mc "It looks so good! I'll worry about the cost later, because this is gonna be so worth i-"
+    mc normal "It looks so good! I'll worry about the cost later, because this is gonna be so worth i-"
 
     #Drink spill noise, crash
 
-    mc "NO! MY CARAMEL RIBBON CRUNCH FRAPPE!!"
+    mc normal "NO! MY CARAMEL RIBBON CRUNCH FRAPPE!!"
 
     na "Well, that's rough. After you witness-- with pure agony--  the drink spill, you then look up to see… a pole? And an attractive one at that."
 
@@ -1110,13 +1110,13 @@ label s24:
 
     joe "Here, let me pay for it. It was my fault anyways."
 
-    mc "No, it's okay! Don't even worry about it, It didn't cost {i}that{/i} much."
+    mc normal "No, it's okay! Don't even worry about it, It didn't cost {i}that{/i} much."
 
     na "You're still a bit irritated due to the fact that it {i}did{/i} in fact cost that much."
 
     joe "No no no, please, let me! I'd feel bad if I didn't."
 
-    mc "No no no no, I wasn't looking where I was going."
+    mc normal "No no no no, I wasn't looking where I was going."
 
     joe "No no n-"
 
@@ -1125,7 +1125,7 @@ label s24:
     $ joename = "ジョ～・くん"
     joe "Well, anyways, my name's Joe. Nice to meet you! I'm gonna buy a drink for myself anyways, so I'll get us both one."
 
-    mc "I'm [mcname], nice to meet you!"
+    mc normal "I'm [mcname], nice to meet you!"
 
     na "You let him buy you another Caramel Ribbon Crunch Frappe and have a nice chat at one of the tables."
 
@@ -1133,7 +1133,7 @@ label s24:
 
     joe "Well, anyways, It's getting kind of late. Mind if I take you home?"
 
-    mc "Hmmm... It {i}is{/i} getting kind of dark out..."
+    mc normal "Hmmm... It {i}is{/i} getting kind of dark out..."
 
     if metRiri:
         $ riris[24] = True
@@ -1156,15 +1156,15 @@ label s25:
 
     beckham "If you don't go to school, you won't find success. You need to try your best everyday."
 
-    mc "Okay..."
+    mc normal "Okay..."
 
     beckham "Why did you think punching a classmate was a good idea? Do you realize what could happen?"
 
-    mc "He was being a bully, I needed to do something."
+    mc normal "He was being a bully, I needed to do something."
 
     beckham "That was a dumb thing to do. You were such a good student last year, I'm sorry that I have to do this..."
 
-    mc "Wa--What?"
+    mc normal "Wa--What?"
 
     beckham "{cps=6}{b}GO TO DETENTION!{b}{/cps}"
 
@@ -1176,23 +1176,23 @@ label s26:
 
     na "You carefully put the handkerchief and note in your bag and begin to daydream."
 
-    mc "{i}I wonder who's going to be there... I'll have to make lots of friends! Maybe I should try something new to make a good impression...{/i}"
+    mc normal "{i}I wonder who's going to be there... I'll have to make lots of friends! Maybe I should try something new to make a good impression...{/i}"
 
     # Door sounds
 
-    mc "Eh? Akimitsu?!"
+    mc normal "Eh? Akimitsu?!"
 
     na "Chiba Akimitsu, your childhood friend since third grade appears at the desk next to yours."
 
     kyle "Hey [mcname]! Ahaha, did I surprise you?"
 
-    mc "Mhm! Why are you also in detention?"
+    mc normal "Mhm! Why are you also in detention?"
 
     kyle "I knew you'd be here on the first day so I came to keep you company."
 
     kyle "What were you thinking about before I interrupted you?"
 
-    mc "Nothing much... just this party..."
+    mc normal "Nothing much... just this party..."
 
     na "You take out the handkerchief and note and show Akimitsu."
 
@@ -1202,7 +1202,7 @@ label s26:
 
     kyle "There's no way I'm letting you go alone, [mcname]. A party with yakuza attending? Absolutely not."
 
-    mc "What are you... my dad?"
+    mc normal "What are you... my dad?"
 
     kyle "I'm just worried about you! Who knows what those people are like?"
 
@@ -1267,7 +1267,7 @@ label s28:
 
     sophia "Ah... Who's this?"
 
-    mc "This is my childhood friend, Chiba Akimitsu."
+    mc normal "This is my childhood friend, Chiba Akimitsu."
 
     sophia "Is that so? Interesting."
 
@@ -1291,7 +1291,7 @@ label s28:
 
 label s29:
 
-    mc "Actually, hanging out sounds fun."
+    mc normal "Actually, hanging out sounds fun."
 
     na "Akimitsu flashes a smile."
 
@@ -1301,7 +1301,7 @@ label s29:
 
     kyle "Actually... wait..."
 
-    mc "Huh?"
+    mc normal "Huh?"
 
     kyle "Ahhh, sorry. I have a basketball game after school."
 
@@ -1309,7 +1309,7 @@ label s29:
     
     kyle "He was saying something about [mcname], you, and a party. Weird, huh?"
 
-    mc "I wonder who that could be..."
+    mc normal "I wonder who that could be..."
 
     kyle "Right? Well now I can't miss my basketball game... would you mind coming to watch instead?"
 
@@ -1325,11 +1325,11 @@ label s29:
 
 label s30:
 
-    mc "The party's good.{nw}"
+    mc normal "The party's good.{nw}"
 
     na "You say, proceeding to turn and face Akimitsu."
 
-    mc "Hey... should we get going?"
+    mc normal "Hey... should we get going?"
 
     sophia "Wait. Would you like to get drinks with me?"
 
@@ -1343,17 +1343,17 @@ label s30:
 
 label s31:
 
-    mc "The party's good.{nw}"
+    mc normal "The party's good.{nw}"
 
     na "You say. And then you run and escape to the apple juice bar."
 
     #Bar scene
 
-    mc "Apple juice please~"
+    mc normal "Apple juice please~"
 
     beckham "May I ask what type of apple you prefer? Honeycrisp? Fuji?"
 
-    mc "Umm... Gala please."
+    mc normal "Umm... Gala please."
 
     beckham "Coming right up."
 
@@ -1370,9 +1370,9 @@ label s31:
 
 label s32:
 
-    mc "The party's good."
+    mc normal "The party's good."
 
-    mc "I just wish I was being escorted by someone since I've been so lonely by myself."
+    mc normal "I just wish I was being escorted by someone since I've been so lonely by myself."
 
     sophia "Want me to help you?"
 
@@ -1392,7 +1392,7 @@ label s33:
 
     na "You shake your head solemnly"
 
-    mc "Sorry, Akimitsu. I changed my mind. The party never stops."
+    mc normal "Sorry, Akimitsu. I changed my mind. The party never stops."
 
     kyle "But you just said we would han--{nw}"
 
@@ -1411,7 +1411,7 @@ label s33:
 
 label s34:
 
-    mc "Ah, okay! Sounds good to me."
+    mc normal "Ah, okay! Sounds good to me."
 
     na "Akimitsu lets out a deep breath as Isamu silently slips away into the crowd."
 
@@ -1436,7 +1436,7 @@ label s34:
 
 label s35:
 
-    mc "Sure!"
+    mc normal "Sure!"
 
     kyle "What?? Wait... what?!?!"
 
@@ -1451,7 +1451,7 @@ label s35:
 
 label s36:
 
-    mc "I'm good. I was planning to spend time with Akimitsu tonight."
+    mc normal "I'm good. I was planning to spend time with Akimitsu tonight."
 
     na "Isamu glares coldly at you both."
 
@@ -1468,9 +1468,9 @@ label s36:
 
 label s37:
 
-    mc "Sorry~ I've already got plans."
+    mc normal "Sorry~ I've already got plans."
 
-    mc "I'll see you later Akimitsu!"
+    mc normal "I'll see you later Akimitsu!"
 
     kyle "But..."
 
@@ -1495,13 +1495,13 @@ label s38:
 
     # Shattering noise
 
-    mc "Ah. I think Akimitsu may have accidentally kicked the door down."
+    mc normal "Ah. I think Akimitsu may have accidentally kicked the door down."
 
-    mc "That's a bad habit of his. He tends to do it when he leaves houses."
+    mc normal "That's a bad habit of his. He tends to do it when he leaves houses."
 
     sophia "Don't we all?"
 
-    mc "Hey! Bartender! Get me your most appley apple juice."
+    mc normal "Hey! Bartender! Get me your most appley apple juice."
 
     beckham "Of course."
 
@@ -1511,7 +1511,7 @@ label s38:
 
     sophia "Eh, whatever. Hey, [mcname], wanna take break outside? It stinks of granny apples here anyway."
 
-    mc "Sure."
+    mc normal "Sure."
 
     na "The two of you step outside."
 
@@ -1523,7 +1523,7 @@ label s38:
     show sophia party normal
     sophia "To be honest... I didn't think you'd come with me."
 
-    mc "Huh? Why?"
+    mc normal "Huh? Why?"
 
     sophia "My family is yakuza. Ordinary people are usually too afraid of getting hurt. But you're... different."
 
@@ -1531,7 +1531,7 @@ label s38:
 
     sophia "And I love cats... and I love... you."
 
-    mc "I... I like you too."
+    mc normal "I... I like you too."
 
     na "Soon after Takao Isamu's confession the two of you start dating."
 
@@ -1557,7 +1557,7 @@ label s39:
 
     na "But the party sucks so..."
 
-    mc "Actually... I'm good."
+    mc normal "Actually... I'm good."
 
     sophia "...Huh?"
 
@@ -1571,7 +1571,7 @@ label s39:
     show beckham agent normal
     beckham "Wait! I'm a modeling agent who also likes attending high school parties hosted by yakuza. You should join my agency! You're incredible!"
 
-    mc "Okay."
+    mc normal "Okay."
 
     na "And that was how your modeling career began."
 
@@ -1604,37 +1604,37 @@ label s40:
 
     kyle "Let's sit down for a little bit. There's a bench over there."
 
-    mc "Okay!"
+    mc normal "Okay!"
 
     # Switch to bench
 
     kyle "..."
 
-    mc "..."
+    mc normal "..."
 
     kyle "..."
 
-    mc "It's really cold out here."
+    mc normal "It's really cold out here."
 
     kyle "Maybe we shouldn't have sat down."
 
-    mc "Yeah, that was kind of stupid."
+    mc normal "Yeah, that was kind of stupid."
 
     kyle "Do you want my jacket?"
 
-    mc "No it's okay, you can keep it."
+    mc normal "No it's okay, you can keep it."
 
     kyle "Oh. Uh, okay."
 
-    mc "..."
+    mc normal "..."
 
     kyle "..."
 
-    mc "..."
+    mc normal "..."
 
     kyle "Have you ever wondered what the stars would say if they could talk?"
 
-    mc "Haha, n--{nw}"
+    mc normal "Haha, n--{nw}"
 
     kyle "I think they'd tell us the world's secrets. Why we're here, what we're meant to become, and how we might get there."
 
@@ -1650,13 +1650,13 @@ label s40:
 
     kyle "You're like my star, [mcname]. And that's why... I love you."
 
-    mc "I..."
+    mc normal "I..."
 
     jump e4
 
 label s41:
 
-    mc "No thanks, I can make it by myself. Nice meeting you though!"
+    mc normal "No thanks, I can make it by myself. Nice meeting you though!"
 
     joe "Oh okay... I guess I'll see you later then."
 
@@ -1668,7 +1668,7 @@ label s41:
  
 label s42:
 
-    mc "Sure, why not? I live just 10 minutes down the road."
+    mc normal "Sure, why not? I live just 10 minutes down the road."
 
     joe "Perfect! I'm going the same direction. Come on, let's get moving!"
 
@@ -1694,9 +1694,9 @@ label s43:
 
     na "Maybe it's because Fanana Bish is on? You change the channel."
 
-    mc "Ahh... that's better. Now I can go on with my day and never have to worry about romance agai- {i}{color=#b0b0b0}{size=-6}{cps=10}*yawn*{/cps}{/size}{/color}{/i}"
+    mc normal "Ahh... that's better. Now I can go on with my day and never have to worry about romance agai- {i}{color=#b0b0b0}{size=-6}{cps=10}*yawn*{/cps}{/size}{/color}{/i}"
 
-    mc "Suddenly... {color=#b0b0b0}I feel... {cps=15}{size=-6}very... {size=-8}{cps=5}sleepy.{/cps}"
+    mc normal "Suddenly... {color=#b0b0b0}I feel... {cps=15}{size=-6}very... {size=-8}{cps=5}sleepy.{/cps}"
 
     na "In the corner of your eye you see a tiny magic wand waving at you from behind the couch. Is that..."
 
@@ -1706,7 +1706,7 @@ label s43:
     show riri happy
     riri "You may have failed this time at romance, but I won't let you give up!"
     
-    mc "Eh?! What's going on?"
+    mc normal "Eh?! What's going on?"
 
     #Reset with loading screen or something
 
@@ -1714,17 +1714,17 @@ label s43:
  
 label s44:
 
-    mc "So, do you go to Hoshibucks often?"
+    mc normal "So, do you go to Hoshibucks often?"
 
     joe "Yes! In fact, I go almost every day after school! I live for Hoshibucks, haha!"
 
-    mc "Wow, that's cool! I like Hoshibucks, but I don't go very often because it's so expensive."
+    mc normal "Wow, that's cool! I like Hoshibucks, but I don't go very often because it's so expensive."
 
     joe "True..."
 
     joe "Well, if you don't go to hoshibucks often, what do you do in your free time?"
 
-    mc "Well, other than studying and extracurriculars, I like going to to the beach."
+    mc normal "Well, other than studying and extracurriculars, I like going to to the beach."
 
     joe "Really? Me too! It's such a nice way to unwind after a long day."
 
@@ -1732,7 +1732,7 @@ label s44:
 
     joe "Well, if you're ever free, we should go to the beach together."
 
-    mc "Okay, sure! How does tomorrow sound?"
+    mc normal "Okay, sure! How does tomorrow sound?"
 
     joe "{color=#b0b0b0}{size=-5}I guess I can go one day without my caramel frappe... for [mcname]...{/size}{/color}"
 
@@ -1747,15 +1747,15 @@ label s44:
  
 label s45:
 
-    mc "So, what do you like to do in your free time?"
+    mc normal "So, what do you like to do in your free time?"
 
     joe "Well, other than going to hoshibucks, I guess I go to the beach sometimes."
 
-    mc "Really? Me too! I love the beach."
+    mc normal "Really? Me too! I love the beach."
 
     joe "Is that so? It's such a nice way to unwind after a long day, right?"
 
-    mc "Right? The water feels so nice, especially in the summer."
+    mc normal "Right? The water feels so nice, especially in the summer."
 
     joe "Well, if you're ever free, we should go to the beach together."
 
@@ -1785,7 +1785,7 @@ label s46:
 
     na "Well, that was fast."
 
-    mc "Oh, thanks! Nice to see you too!"
+    mc normal "Oh, thanks! Nice to see you too!"
 
     beckham "Ehem, lovebirds!"
 
@@ -1812,15 +1812,15 @@ label s46:
  
 label s47:
 
-    mc "Let's go swimming! That's what I came here for."
+    mc normal "Let's go swimming! That's what I came here for."
 
     joe "Alright, as long as you're careful. I don't want you to get hurt."
 
-    mc "Oh, I'll be fine! I'm more worried about you, hehe!"
+    mc normal "Oh, I'll be fine! I'm more worried about you, hehe!"
 
     joe "Hey! I'm a great swimmer, I promise!"
 
-    mc "If you say so!"
+    mc normal "If you say so!"
 
     na "Enough flirting! I'm skipping to the part where you actually swim."
 
@@ -1844,12 +1844,12 @@ label s47:
 
 label s48:
 
-    mc "Maybe we should just take a walk on the beach for today."
+    mc normal "Maybe we should just take a walk on the beach for today."
 
     joe "Okay, sounds good. I'd love to take a walk together."
 
     # MC Blushes
-    mc "We'll have other opportunities to go swimming together anyways..."
+    mc normal "We'll have other opportunities to go swimming together anyways..."
 
     na "Aww, look at you two!"
 
@@ -1857,7 +1857,7 @@ label s48:
 
     joe "You know, name, there's something I should tell you..."
 
-    mc "Yes?"
+    mc normal "Yes?"
 
     joe "Ever since I saw you in hoshibucks, I've thought you are the most beautiful person I've ever seen."
 
@@ -1870,7 +1870,7 @@ label s48:
 
     na "How adorable."
 
-    mc "Joe... I think I love you too."
+    mc normal "Joe... I think I love you too."
 
     joe "You've lightened up my life since we met..."
 
@@ -1879,7 +1879,7 @@ label s48:
     joe "And I want you to be the light in my life forever."
 
     # Gwyn giggles
-    mc "I can do that..."
+    mc normal "I can do that..."
 
     na "Aww, what a cute couple you make. Good job [mcname]!"
 
@@ -1895,7 +1895,7 @@ label s49:
 
     na "You manage to make it to shore safely, and see the lifeguard performing CPR on an unconscious Joe."
 
-    mc "I've never seen someone perform CPR, but doesn't that seem a little... much?"
+    mc normal "I've never seen someone perform CPR, but doesn't that seem a little... much?"
 
     na "Joe gasps and opens his eyes. He seems weirdly... happy to see the lifeguard above him."
 
@@ -1917,7 +1917,7 @@ label s49:
 
     na "You sit there, utterly shocked. Really, is there anything else you can do?"
 
-    mc "Is this what I get for not saving you, Joe?"
+    mc normal "Is this what I get for not saving you, Joe?"
 
     joe "I'm sorry, [mcname]..."
 
@@ -1927,19 +1927,19 @@ label s49:
  
 label s50:
 
-    smc "Don't worry Joe, I'll save you!"
+    smc normal "Don't worry Joe, I'll save you!"
 
     na "Despite your best efforts, you end up both getting swept away by the current."
 
     joe "I'm so sorry, [mcname]. This is all my fault..."
 
-    smc "It's okay... I don't want to live if it's without you."
+    smc normal "It's okay... I don't want to live if it's without you."
 
     na "How romantic."
 
     joe "[mcname]"
 
-    smc "...?"
+    smc normal "...?"
 
     joe "I... love you."
 
@@ -1967,17 +1967,17 @@ label s50:
 
     na "You can feel your burnt skin and pain all over your body, but the coconut does help."
 
-    smc "Thank you, I feel much better. Where are we?"
+    smc normal "Thank you, I feel much better. Where are we?"
 
     joe "It's been a few hours since we washed up on this island. I don't know if anyone will ever come for us."
 
-    smc "Oh... well, we have each other, don't we?"
+    smc normal "Oh... well, we have each other, don't we?"
 
     na "You take Joe's hand and look into his eyes."
 
     joe "Maybe, if I have you by my side everyday, I can live without hoshibucks."
 
-    smc "Aw, Joe..."
+    smc normal "Aw, Joe..."
 
     na "{i}{color=#b0b0b0}{size=-6}{cps=10}*sigh*{/cps}{/size}{/color}{/i} There he goes again."
 
@@ -1991,7 +1991,7 @@ label s51:
 
     # English class scene
 
-    scene classroom_day
+    scene classroom day
     na "You arrive at your English class. You could have had something fun, like Japanese. But {i}English?{/i}"
 
     #TODO: Sitting down noise(?)
@@ -2008,16 +2008,21 @@ label s51:
 
     mi "{i}Heeeeey...{/i}"
 
-    teacher_e "Hey, [mcname]!"
+    scene black
+    #TODO: smack sound effect
+    teacher_e "Hey, [mcname]!" with hpunch
 
     # Back to classroom scene
 
+    scene classroom day
     na "Suddenly, you feel a sharp pain on your forehead. A piece of chalk then drops onto your desk."
 
+    show teacher_e with moveinbottom
     teacher_e "Would you like to come up to the board and answer the question?"
 
-    mc "Uhhh... What question?"
+    mc normal "Uhhh... What question?"
 
+    hide teacher_e
     teacher_e "{i}{color=#b0b0b0}{size=-6}{cps=10}*sigh*...{/cps}{/size}{/color}{/i} I have it written right here. What is [quizWord] in Japanese?"
 
 
@@ -2044,19 +2049,19 @@ label s52:
 
     na "You look around and see a well dressed and quite handsome student sitting in an important looking chair."
 
-    mc "He must be the leader of the student council! I should ask him about signing up!"
+    mc normal "He must be the leader of the student council! I should ask him about signing up!"
 
-    mc "Excuse me, sir?"
+    mc normal "Excuse me, sir?"
 
     na "The student looks up with a puzzled expression on his face."
 
     jt "Me? Wow, sir is a new one... Do I really look that good?"
 
-    mc "Oh, you're just well dressed is all..."
+    mc normal "Oh, you're just well dressed is all..."
 
     jt "Anyways, what do you need?"
 
-    mc "Well, I saw the poster looking for people to join the student council, and I decided to check it out. Can I sign up?"
+    mc normal "Well, I saw the poster looking for people to join the student council, and I decided to check it out. Can I sign up?"
 
     $ jtname = "Yutaka Yanai"
     jt "Of course! I'd be delighted to have you on our student council team. My name is Yutaka Yanai, nice to meet you!"
@@ -2065,7 +2070,7 @@ label s52:
 
     jt "All you have to do is sign all these documents, and then you can get started."
 
-    mc "Oh wow, alright."
+    mc normal "Oh wow, alright."
 
     na "It takes the whole school day, but you eventually finish filling out all the documents."
 
@@ -2075,7 +2080,7 @@ label s52:
 
     jt "Congratulations! You are now an official member of the student council. I'm excited to work together~"
 
-    mc "Thank you! I'll do my best!"
+    mc normal "Thank you! I'll do my best!"
 
     # Continue
 
@@ -2137,13 +2142,13 @@ label s55:
 
     jt "Hey, I'm Yukata! You seem pretty cool, want to work together?"
 
-    mc "Oh, sure! What should we do?"
+    mc normal "Oh, sure! What should we do?"
 
     jt "I was thinking a love story could be pretty fun..."
 
     na "Something is fishy here..."
 
-    mc "Oh, uh, sure, that could be fun!"
+    mc normal "Oh, uh, sure, that could be fun!"
 
     jt "Alright, it's settled then! Meet me at my house after school to work on it."
 
@@ -2157,13 +2162,13 @@ label s55:
 
     jt "Whew! That's the last scene!"
 
-    mc "Yes! We did it!"
+    mc normal "Yes! We did it!"
 
     jt "Well, I guess you should start heading back soon..."
 
     jt "It was... really fun to work together."
 
-    mc "Yeah! I had a lot of fun too. Well, see you tomorrow!"
+    mc normal "Yeah! I had a lot of fun too. Well, see you tomorrow!"
 
     na "Well, although Yuata presents as snobby, he really is nice on the inside."
 
@@ -2177,7 +2182,7 @@ label s55:
 
     jt "Ah yes, our masterpiece is finally being shown!"
 
-    mc "Here we go..."
+    mc normal "Here we go..."
 
     na "As the teacher shows your project, you can here your classmates murmuring."
 
@@ -2191,17 +2196,17 @@ label s56:
 
     na "You walk up to the student's desk."
 
-    mc "Hey, do you have anyone to group with?"
+    mc normal "Hey, do you have anyone to group with?"
 
     maryam "N-no!"
 
-    mc "Would you like to work together on this project?"
+    mc normal "Would you like to work together on this project?"
 
     maryam "S-Sure!"
 
     na "You realize that your room is a mess, you probably wouldn't want them seeing that."
 
-    mc "can I come over to your house tomorrow to work on it?"
+    mc normal "can I come over to your house tomorrow to work on it?"
 
     maryam "Okay, that works for me!"
 
@@ -2219,7 +2224,7 @@ label s57:
 
     na "You sit down and get under the kotatsu positioned in the middle of the room."
 
-    mc "Aaa~ It's so warm~"
+    mc normal "Aaa~ It's so warm~"
 
     na "As you look around the room, you can see many pieces of hanging tape on the walls surrounding their bed. Did they take those down recently?"
 
@@ -2227,11 +2232,11 @@ label s57:
 
     # Gwyn talking to herself
 
-    mc "Ooo~ shiny! Hmmm... Isn't this my ring that I lost? I thought it was gone forever!"
+    mc normal "Ooo~ shiny! Hmmm... Isn't this my ring that I lost? I thought it was gone forever!"
 
-    mc "They found it and never gave it back?! So rude!"
+    mc normal "They found it and never gave it back?! So rude!"
 
-    mc "Hold on a minute..."
+    mc normal "Hold on a minute..."
 
     if metRiri:
         $ riris[57] = True
@@ -2253,7 +2258,7 @@ label s58:
     show maryam normal
     maryam "H- Hello... Are you here for the English lessons?"
 
-    mc "Yep! I saw your flier next to the library!"
+    mc normal "Yep! I saw your flier next to the library!"
 
     maryam "A- Alright... Come on in..."
 
@@ -2261,7 +2266,7 @@ label s58:
 
     # Knock knock
 
-    mc "Hey, is everything alright?"
+    mc normal "Hey, is everything alright?"
 
     maryam "Just one minute...!"
 
@@ -2273,27 +2278,27 @@ label s59:
 
     na "Yeah, it sounds a little too risky."
 
-    mc "I think I'll just study alone in the library today..."
+    mc normal "I think I'll just study alone in the library today..."
 
     na "You spend all day studying English in the library, until you are fully satisfied that you have memorized that word."
 
-    mc "Finally! Ahh, I'm exhausted. Time to head home and watch some anime..."
+    mc normal "Finally! Ahh, I'm exhausted. Time to head home and watch some anime..."
 
     jump s43
  
 label s60:
 
-    mc "Hey, I noticed the ring in your room looks familiar, where did you get it?"
+    mc normal "Hey, I noticed the ring in your room looks familiar, where did you get it?"
 
     na "You notice that Haruka starts looking a little nervous."
 
     maryam "...From a shop."
 
-    mc "Oh, haha! I must be wrong."
+    mc normal "Oh, haha! I must be wrong."
 
     na "You put the ring back on the kotatsu. You start feeling a little uneasy. Maybe working in the safety of your home would be a better idea."
 
-    mc "Do you think we could go to my house to work tomorrow?"
+    mc normal "Do you think we could go to my house to work tomorrow?"
 
     maryam "Yeah, sure..."
 
@@ -2301,17 +2306,17 @@ label s60:
 
     na "Haruka arrives at your house, ready to work on the English project."
 
-    mc "Alright, let's get to work!"
+    mc normal "Alright, let's get to work!"
 
     na "Haruka takes their computer out and starts typing right away."
 
     na "Hmmm... Maybe they're using a Hotspot? You've never given them your Wi-Fi."
 
-    mc "Hey, do you need my Wi-Fi password? You don't have to use data."
+    mc normal "Hey, do you need my Wi-Fi password? You don't have to use data."
 
     maryam "No-- I mean yes! Yes please!"
 
-    mc "Right... Could I have the computer to put it in?"
+    mc normal "Right... Could I have the computer to put it in?"
 
     maryam "No! ...I can put it in it myself."
 
@@ -2334,7 +2339,7 @@ label s61:
 
     maryam "Hey, I'm back. Do you have everything?"
 
-    mc "Yep! But why is nobody else here? I even arrived thirty minutes late."
+    mc normal "Yep! But why is nobody else here? I even arrived thirty minutes late."
 
     na "You notice their eyes starting to drift away from you as they respond."
 
@@ -2348,7 +2353,7 @@ label s61:
 
     maryam "Would you like to start?"
 
-    mc "Okay!"
+    mc normal "Okay!"
 
     na "You and Haruka work through your English for hours until you finally feel confident about your skills."
 
@@ -2356,7 +2361,7 @@ label s61:
 
     maryam "You want to finish up? We could go eat something after."
 
-    mc "Sounds good!"
+    mc normal "Sounds good!"
 
     na "You and Haruka clean up and start to walk out the door to go eat."
 
@@ -2364,11 +2369,11 @@ label s61:
  
 label s62:
 
-    mc "Where would you like to go?"
+    mc normal "Where would you like to go?"
 
     maryam "Have you been to Hoshibucks before?"
 
-    mc "Yes! I love Hoshibucks!"
+    mc normal "Yes! I love Hoshibucks!"
 
     # In Hoshibucks
 
@@ -2376,7 +2381,7 @@ label s62:
 
     maryam "Oh no! I forgot my wallet!"
 
-    mc "It's alright, I'll buy you a sweet treat because you helped me so much with the English project!"
+    mc normal "It's alright, I'll buy you a sweet treat because you helped me so much with the English project!"
 
     na "Haruka's eyes widen, they are entranced by your generosity and kindness."
 
@@ -2386,7 +2391,7 @@ label s62:
 
     maryam "uhm... [mcname]... I have something to tell you..."
 
-    mc "Yes, Haruka?"
+    mc normal "Yes, Haruka?"
 
     maryam "I've liked you ever since we had art together freshman year of highschool!"
 
@@ -2394,7 +2399,7 @@ label s62:
 
     maryam "When you gave me your extra pencil right before the final test, I knew you were the one for me! Would you like to go on a date with me?"
 
-    mc "I would love to!"
+    mc normal "I would love to!"
 
     jump e8
  
@@ -2402,7 +2407,7 @@ label s63:
 
     na "You decide to test Haruka."
 
-    mc "Alright then, the password is 123456."
+    mc normal "Alright then, the password is 123456."
 
     na "the real password is actually 1234567..."
 
@@ -2414,7 +2419,7 @@ label s63:
 
     na "Your heart starts to race, Haruka has noticed your changed demeanor."
 
-    mc "Ahaha actually, I don't feel very well at the moment, maybe we could continue another day?"
+    mc normal "Ahaha actually, I don't feel very well at the moment, maybe we could continue another day?"
 
     maryam "Oh, alright, I see."
 
@@ -2422,7 +2427,7 @@ label s63:
 
     # New day at school
 
-    scene classroom_day
+    scene classroom day
     na "You and Haruka plan on finishing the project later that day, but then you notice a handsome figure approaching..."
 
     kyle "Hey naninani, I was wondering if you would like to come hang out with me after school... if you're not busy of course."
@@ -2442,7 +2447,7 @@ label s63:
  
 label s64:
 
-    mc "Alright then, the password is 1234567."
+    mc normal "Alright then, the password is 1234567."
 
     maryam "I'm in. Let's finish this project!"
 
@@ -2501,7 +2506,7 @@ label s74:
 
     mio "I-if you see students skipping class please tell them to return immediately. Some of them will try to use the “restroom excuse” but I'm sure you won't fall for that... it's a bit of an obvious lie."
 
-    mc "Ha... yeah... who would ever--"
+    mc normal "Ha... yeah... who would ever--"
 
     mio "Aah!"
 
@@ -2509,11 +2514,11 @@ label s74:
 
     na "After processing what just happened, you quickly put down the posters."
 
-    mc "Are you okay?"
+    mc normal "Are you okay?"
 
     mio "Y-yeah! I-it's my fault, my mind has been a little... occupied."
 
-    mc "Oh..."
+    mc normal "Oh..."
 
     na "You follow Mio's line of sight to… a rose? She tripped on a rose?"
 
@@ -2525,11 +2530,11 @@ label s74:
 
     na "Mio rushes to grab the posters off the ground, and brushes them off carefully. It isn't until now that you notice the intricate lettering and detailed visuals. It's clear that a lot of love was put into them."
 
-    mc "Sorry! Did you make those?"
+    mc normal "Sorry! Did you make those?"
 
     mio "Yeah..."
 
-    mc "They're beautiful! It sounds like you do a lot of work, but you must really love the student council."
+    mc normal "They're beautiful! It sounds like you do a lot of work, but you must really love the student council."
 
     na "Mio blushes furiously and her eyes roam back to where the rose still sits."
 
@@ -2580,7 +2585,7 @@ label s92:
     
 label s93:
 
-    mc "It's okay, you can talk to me."
+    mc normal "It's okay, you can talk to me."
 
     mio "I-- well..."
 
@@ -2618,13 +2623,13 @@ label s94:
 
 label s95:
 
-    mc "Tell him your feelings of course!"
+    mc normal "Tell him your feelings of course!"
 
-    mc "How do you expect anything to happen if you never let him know?"
+    mc normal "How do you expect anything to happen if you never let him know?"
 
     mio "Wait! B-but--{nw}"
 
-    mc "In fact, let's go find him right now!"
+    mc normal "In fact, let's go find him right now!"
 
     na "You grab Mio's hand and sprint through the halls back to the student council room."
 
@@ -2662,7 +2667,7 @@ label s95:
     mio "This whole time I never realized... how lonely Yutaka is."
 
     # Whispering (loudly)
-    mc "HUH?!"
+    mc normal "HUH?!"
 
     mio "Thanks for helping me find my courage, [mcname]."
 

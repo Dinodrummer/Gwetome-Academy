@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 2759: end of line expected.
-    mc scared "That's scary!" with vpunch ODO: add to script??
-                                          ^
+File "game/script.rpy", line 144: invalid syntax
+    Character("Mysterious ikemens", show_name = "イケメンたち"ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+                                                         ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Tue Mar 12 21:59:55 2024
+Thu Mar 14 15:27:39 2024
