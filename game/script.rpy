@@ -2134,7 +2134,7 @@ label s53:
 
     na "As you are about to enter the library, you notice a flier posted next to the door."
 
-    na "\"Come over to my house at address here if you need help with English words like [quizWord] and English project work. –遥花\". Huh, that sounds exactly like what you need! Maybe a little too exactly... Sounds like stalker behavior..."
+    na "\"Come over to my house at address here if you need help with English words like [quizWord] and English project work. -Haruka Kiyama\". Huh, that sounds exactly like what you need! Maybe a little too exactly..."
 
     na "Pshh...  Let's be realistic here! It's just a coincidence!"
 

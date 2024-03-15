@@ -268,17 +268,7 @@ transform scaled_image:
 screen choice(items):
     style_prefix "choice"
     image "gui/choice_background.png"
-    #style "shadow"
-    
-    # python: TODO: Work on this section for Riri
-    #     numTrue = 0
-    #     for i in range(numscenes):
-    #         if riris[i] == True:
-    #             numTrue += 1
-    #     if numTrue >= 2:
-    #     for i in range(numscenes):
-    #         del(riris[i])
-    #         riris.insert(i, False)
+
 
     if metRiri:
         imagebutton:
@@ -286,6 +276,7 @@ screen choice(items):
             xpos 35
             ypos 35
             auto "gui/riri_button_%s.png"
+            #action [Call("riri"), screen choice(items)]
             action Call("riri")
     
     vbox:
