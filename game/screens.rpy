@@ -4,6 +4,11 @@
 
 init offset = -1
 
+init python:
+    def RiriDelete():
+        for i in range(numscenes):
+            del(riris[i])
+            riris.insert(i, False)
 
 ################################################################################
 ## Styles
@@ -265,6 +270,7 @@ style input:
 transform scaled_image:
     size (150, 150)
 
+
 screen choice(items):
     style_prefix "choice"
     image "gui/choice_background.png"
@@ -278,13 +284,10 @@ screen choice(items):
             auto "gui/riri_button_%s.png"
             #action [Call("riri"), screen choice(items)]
             action Call("riri")
-    
+
     vbox:
         for i in items:
-            textbutton i.caption:
-                #style "shadow"
-                #action [RiriDelete(), i.action]
-                action i.action
+            textbutton _(i.caption) action [Function(RiriDelete), i.action]
 
 
 

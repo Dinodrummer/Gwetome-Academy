@@ -28,6 +28,14 @@ image city night:
 image dream:
     "images/Backgrounds/bg dream.jpg"
     zoom 1.5
+image room maryam:
+    "images/Backgrounds/room_maryam.jpg"
+    zoom 1.5
+
+
 image black:
     "images/Backgrounds/bg black.jpg"
+    zoom 1.5
+image choice:
+    "gui/choice_background.png"
     zoom 1.5

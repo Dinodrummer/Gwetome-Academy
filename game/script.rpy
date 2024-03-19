@@ -51,10 +51,9 @@ init -2:
 
 init python:
 
-    def RiriDelete():
-        for i in range(numscenes):
-            del(riris[i])
-            riris.insert(i, False)
+    
+
+    
 
     numscenes = 101
 
@@ -245,6 +244,8 @@ label p:
     return
 
 label riri:
+    show choice
+    show riri normal at e
     if riris[10]:
 
         riri "Yay! You did it! I'm so proud of you Naninani. Okay... let's see your options..."
@@ -256,41 +257,41 @@ label riri:
         riri "Ooooh spicy. You know which one I would choose. {i}Wink. Wink.{/i}"
 
         $ riris[10] = False
-    if riris[11]:
+    elif riris[11]:
 
         riri "Hehehehe..."
 
         $ riris[11] = False
-    if riris[14]:
+    elif riris[14]:
 
         riri "Follow your gut, Naninani!"
 
         $ riris[14] = False
-    if riris[15]:
+    elif riris[15]:
 
         riri "You {i}have{/i} to go to that party Naninani! 'Kay?"
 
         $ riris[15] = False
-    if riris[26]:
+    elif riris[26]:
 
         riri "Look at this cutie-patootie! Maybe you don't have to go to that party Naninani."
 
         riri "The choice is yours... though I am a fan of Chiba-kun myself... hehehehehe..."
 
         $ riris[26] = False
-    if riris[27]:
+    elif riris[27]:
 
         na "{i}[[Riri shakes her head. It looks like she doesn't want to talk to you right now.]{/i}"
 
         $ riris[27] = False
-    if riris[28]:
+    elif riris[28]:
 
         riri "The drama! As the main character, you {i}must{/i} pick at least one of them!"
 
         riri "Don't let the temptation of the forbidden fruit fool you!"
 
         $ riris[28] = False
-    if riris[24]:
+    elif riris[24]:
 
         riri "Hey, Naninani, he's really asking you on a date!"
 
@@ -299,91 +300,86 @@ label riri:
         riri "Anyways, you HAVE to go with him! For me <3"
 
         $ riris[24] = False
-    if riris[44]:
+    elif riris[44]:
 
         riri "Wow, did you really just ask him on a date?!?! All by yourself??"
 
         riri "I knew you could do it! They grow up so fast..."
 
         $ riris[44] = False
-    if riris[46]:
+    elif riris[46]:
 
         riri "That's a tough one..."
 
         riri "Either way will bring you two closer, right? So, I'll let you decide this time..."
 
         $ riris[46] = False
-    if riris[29]:
+    elif riris[29]:
 
         riri "If you go to the basketball game, Chiba-kun is totes falling for you!"
 
         riri "Partying is fine too though I guess..."
 
         $ riris[29] = False
-    if riris[33]:
+    elif riris[33]:
 
         riri "Poor Chiba... Oh well, this means even more love routes!"
 
         $ riris[33] = False
-    if riris[35]:
+    elif riris[35]:
 
         riri "Oooh, you like the bad ones, huh?"
 
         $ riris[35] = False
-    if riris[37]:
+    elif riris[37]:
         
         riri "If you go get drinks with Isamu, you'll find yourself in a world of broken doors, crime, and... {i}cats?{/i}"
 
         riri "I mean, that's basically your only option... right? Right?"
 
         $ riris[37] = False
-    if riris[47]:
+    elif riris[47]:
 
         riri "What an unexpected twist!"
 
         riri "Come on, Naninani! He's the love of your life, your soulmate! You must save him!"
 
         $ riris[47] = False
-    if riris[53]:
+    elif riris[53]:
 
         riri "You need to be more explorative! Maybe this girl on the poster is actually your soulmate!"
 
         $ riris[53] = False
-    if riris[57]:
+    elif riris[57]:
 
         riri "Maybe we should just give the, the benefit of the doubt? But why would they have your ring and not give it back? Hmmm..."
 
         $ riris[57] = False
-    if riris[60]:
+    elif riris[60]:
 
         riri "How strange... let's test them to see if they know the password!"
 
         $ riris[60] = False
-    if riris[63]:
+    elif riris[63]:
 
         riri "We can always just do the project another dayyy..."
         
         $ riris[63] = False
-    if riris[65]:
+    elif riris[65]:
 
         riri "You could call the cops, but the culprit is already long gone..."
 
         $ riris[65] = False
-    if riris[34]:
+    elif riris[34]:
 
         riri "CHIBA-KUN WANTS TO GO SOMEWHERE ELSE?!?! JUST THE TWO OF YOU?!?! AAAAAAAAAA GO NANINANI GOOO!"
 
         $ riris[34] = False
-    if riris[36]:
+    elif riris[36]:
 
         riri "Look at you go!"
 
         $ riris[36] = False
-    if riris[51]:
-
-        riri "yo test!"
-
-        $ riris[51] = False
 
     else:
         na "{i}[[It doesn't look like Riri has anything to say right now.]{/i}"
@@ -392,6 +388,8 @@ label riri:
         for i in range(numscenes):
             del(riris[i])
             riris.insert(i, False)
+    
+    hide choice
 
     return
 # -------------------------------------------------------------------------------------------------------------------
@@ -450,11 +448,11 @@ label s2:
 
     mom "Dad's already left to go work on his new Food Network episode and I'm heading out now. Have fun at school! I'm off!"
 
-    hide mom
+    hide mom with ex
 
     #TODO: Door close noise
 
-    mc normal "Thanks, have a good day!"
+    mc happy "Thanks, have a good day!"
 
     na "You happily munch on the breakfast your mother made and pat your belly in satisfaction. 
         Suddenly, the TV turns on, as if it's beckoning you to watch it."
@@ -514,7 +512,7 @@ label s4:
     show joe embarrassed
     joe "Heh. Sorry, I'm rambling. Anyways, I'll just uh... keep walking."
 
-    hide joe
+    hide joe with ex
     na "The mysterious ikemen runs his hand through his hair cooly and starts to saunter away."
 
     na "Your heart is beating fast; you don't know if it's because of his dazzling looks or possible metal poisoning."
@@ -562,11 +560,11 @@ label s5:
 
     na "Just as the Dr. begins to shoot his sadness missiles at the Kiss Kiss Love Power team, your phone buzzes."
 
-    mc normal "Huh?"
+    mc confused "Huh?"
 
     na "Suddenly, a tiny sexy witch emerges out of your phone."
 
-    mc normal "Mark Zuckerberg?!"
+    mc surprised "Mark Zuckerberg?!"
 
     $ metRiri = True
     $ ririname = "Riri"
@@ -650,9 +648,9 @@ label s7:
 
 label s8:
 
+    scene gate
     na "You keep walking to school alone and eventually end up at the front of the school."
 
-    scene gate
     na "You notice a poster near the entrance, offering students to join the Student Council"
 
     na "Hmmm... It'd look pretty good on college applications. How hard could it be?"
@@ -700,7 +698,7 @@ label s9:
     show joe normal
     joe "Oh, I've got class this way. It was nice talking to you, see you around!"
 
-    hide joe
+    hide joe with ex
 
     menu:
         "{i}Walk to school":
@@ -1605,7 +1603,7 @@ label s39:
 
     na "And that was how your modeling career began."
 
-    hide beckham
+    hide beckham with ex
     na "You dropped out of high school, moved to New York, and started your legacy by modeling for Elle, Versace, and Vogue."
 
     # Visual of "magazines pop up on screen"
@@ -2032,13 +2030,14 @@ label s51:
     na "You fall into a deep slumber, and dream of a high school life where {i}you{/i} are the main character."
 
     # Dream scene
-    scene dream
+    # TODO: Fadeout?
+    scene dream with fade
 
     na "As you walk to the front gates of the school in your dreams, you notice four ikemens waving at you from one of the classrooms. They seem to be trying to say something."
 
     mi "{i}Heeeeey!!!{/i}"
 
-    scene black
+    scene black with fade
     na "Heyyy..." # mi line
 
     #TODO: smack sound effect
@@ -2052,16 +2051,12 @@ label s51:
     show teacher_e angry at e
     teacher_e "Would you like to come up to the board and answer the question?"
     
-    # hide teacher_e with ex
     mc shy "Uhhh... What question?"
 
     show teacher_e sad
     teacher_e "{i}{color=#b0b0b0}{size=-6}{cps=10}*sigh*...{/cps}{/size}{/color}{/i} I have it written right here. What is [quizWord] in Japanese?"
 
-    $ metRiri = True
-    if metRiri:
-        $ riris[51] = True
-
+    #TODO: Change quiz questions to actual questions 
     menu:
         "[quizGuess1]":
             if quizGuess1 == quizCorrect:
@@ -2141,7 +2136,6 @@ label s53:
     if metRiri:
         $ riris[53] = True
         
-    
     menu:
         "{i}Go to the address":
             jump s58
@@ -2152,22 +2146,24 @@ label s54:
     
     na "You swiftly write the answer up on the chalkboard."
 
+    show teacher_e happy
     teacher_e "That's correct [mcname], good job. It wouldn't look good if you got that wrong, that was one of the easier ones."
 
     na "You proudly walk back to your seat and listen to the rest of the lesson."
 
+    show teacher_e normal
     teacher_e "Alright everyone, we are going to be starting an English project using the vocabulary we learned. Please get with a partner and make a video by this Friday."
 
+    hide teacher_e with ex
     na "You instantly realize that getting with a partner brings up a big issue..."
 
     na "...you have no friends."
 
     na "You notice someone sitting in the back of the classroom. Wanna try grouping with them?"
-    $ riris[44] = True #TODO: Delete
     menu:
         "{i}Ask to group with them":
             jump s56
-        "{i}Nah, I'm good":
+        "{i}\"Nah, I'm good\"":
             jump s55
  
 label s55:
@@ -2232,22 +2228,30 @@ label s56:
 
     na "You walk up to the student's desk."
 
+    show maryam normal at e
     mc normal "Hey, do you have anyone to group with?"
 
+    show maryam nervous
     maryam "N-no!"
 
-    mc normal "Would you like to work together on this project?"
+    mc ecstatic "Would you like to work together on this project?"
 
+    show maryam normal
     maryam "S-Sure!"
 
     na "You realize that your room is a mess, you probably wouldn't want them seeing that."
 
     mc normal "can I come over to your house tomorrow to work on it?"
 
+    show maryam happy
     maryam "Okay, that works for me!"
 
+    # Next Day
+    
+    scene door
     na "You knock on the door, and Haruka answers."
 
+    show maryam normal
     maryam "Welcome. Make yourself at home. Let's go to my room."
 
     na "You both go upstairs and enter their room."
@@ -2256,10 +2260,14 @@ label s56:
 
 label s57:
 
+    scene room maryam
+    show maryam nervous at e
     maryam "I'm going to go get my English work from downstairs... stay here for a little."
 
+    hide maryam with ex
     na "You sit down and get under the kotatsu positioned in the middle of the room."
 
+    # TODO: Under the sheets noise
     mc normal "Aaa~ It's so warm~"
 
     na "As you look around the room, you can see many pieces of hanging tape on the walls surrounding their bed. Did they take those down recently?"
@@ -2268,16 +2276,15 @@ label s57:
 
     # Gwyn talking to herself
 
-    mc normal "Ooo~ shiny! Hmmm... Isn't this my ring that I lost? I thought it was gone forever!"
+    mc concerned "Ooo~ shiny! Hmmm... Isn't this my ring that I lost? I thought it was gone forever!"
 
-    mc normal "They found it and never gave it back?! So rude!"
+    mc angry "They found it and never gave it back?! So rude!"
 
-    mc normal "Hold on a minute..."
+    mc scared "Hold on a minute..."
 
     if metRiri:
         $ riris[57] = True
         
-    
     menu:
         "{i}Maybe they were planning to give it back":
             jump s61
@@ -2291,7 +2298,7 @@ label s58:
     scene door
     na "You then hear some noises coming from the house, like someone is frantically trying to clean up."
 
-    show maryam normal
+    show maryam normal at e
     maryam "H- Hello... Are you here for the English lessons?"
 
     mc normal "Yep! I saw your flier next to the library!"
@@ -2371,30 +2378,37 @@ label s61:
 
     na "You decide not to think too much of it and start to take out your English work."
 
-    # Door noise
+    #TODO: Door noise
 
+    show maryam happy at e
     maryam "Hey, I'm back. Do you have everything?"
 
-    mc normal "Yep! But why is nobody else here? I even arrived thirty minutes late."
+    mc concerned "Yep! But why is nobody else here? I even arrived thirty minutes late."
 
+    show maryam nervous
     na "You notice their eyes starting to drift away from you as they respond."
 
     maryam "Yeah uh... The English problem was pretty specific. Maybe there was j-just nobody else that needed help."
 
+    show maryam normal
     maryam "Anyways... do you want to-{nw}"
 
     na "Haruka glances to the floor next to you."
 
+    hide maryam with ex
     na "They quickly walk over to the other side of the kotatsu and sit down, grabbing the ring."
 
+    show maryam happy at e
     maryam "Would you like to start?"
 
-    mc normal "Okay!"
+    mc ecstatic "Okay!"
 
+    scene room maryam
     na "You and Haruka work through your English for hours until you finally feel confident about your skills."
 
-    # MC stomach rumbles
+    #TODO: MC Stomach Rumble
 
+    show maryam normal at e
     maryam "You want to finish up? We could go eat something after."
 
     mc normal "Sounds good!"
@@ -2405,14 +2419,17 @@ label s61:
  
 label s62:
 
+    scene door
+    show maryam normal at e
     mc normal "Where would you like to go?"
 
     maryam "Have you been to Hoshibucks before?"
 
-    mc normal "Yes! I love Hoshibucks!"
+    mc ecstatic "Yes! I love Hoshibucks!"
 
     # In Hoshibucks
 
+    scene hoshibucks
     na "In the Hoshibucks line, Haruka notices that they forgot their wallet."
 
     maryam "Oh no! I forgot my wallet!"
