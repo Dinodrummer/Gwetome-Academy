@@ -27,17 +27,33 @@ init -2:
         xcenter 960
         alpha 0.0
         #ease .06 alpha 0.2
-        ease .06 ycenter 900 alpha 0.2
+        ease .06 ycenter 916 alpha 0.2
         #ease .05 alpha 0.4
-        ease .05 ycenter 800 alpha 0.4
+        ease .05 ycenter 832 alpha 0.4
         #ease .04 alpha 0.6
-        ease .04 ycenter 700 alpha 0.6
+        ease .04 ycenter 748 alpha 0.6
         #ease .04 alpha 0.8
-        ease .04 ycenter 600 alpha 0.8
+        ease .04 ycenter 664 alpha 0.8
         #ease .04 alpha 1.0
-        ease .04 ycenter 500 alpha 1.0
+        ease .04 ycenter 580 alpha 1.0
         alpha 1.0
-        ycenter 500
+        ycenter 580
+
+    transform left:
+        
+        ease .06 xcenter 900
+        ease .05 xcenter 800
+        ease .04 xcenter 700
+        ease .04 xcenter 600
+        ease .04 xcenter 500
+
+    transform right:
+        
+        ease .06 xcenter 1000
+        ease .05 xcenter 1100
+        ease .04 xcenter 1200
+        ease .04 xcenter 1300
+        ease .04 xcenter 1400
     
     define ex = Dissolve(0.1)
 
@@ -51,9 +67,6 @@ init -2:
 
 init python:
 
-    
-
-    
 
     numscenes = 101
 
@@ -408,7 +421,7 @@ label start:
 
     stop music
 
-    jump s51
+    jump s63
 
     # show screen character_name("Hana Kobayashi", "小林・花")
 
@@ -2331,25 +2344,28 @@ label s59:
  
 label s60:
 
-    mc normal "Hey, I noticed the ring in your room looks familiar, where did you get it?"
+    mc concerned "Hey, I noticed the ring in your room looks familiar, where did you get it?"
 
     na "You notice that Haruka starts looking a little nervous."
 
+    show maryam nervous
     maryam "...From a shop."
 
-    mc normal "Oh, haha! I must be wrong."
+    mc ecstatic "Oh, haha! I must be wrong."
 
     na "You put the ring back on the kotatsu. You start feeling a little uneasy. Maybe working in the safety of your home would be a better idea."
 
     mc normal "Do you think we could go to my house to work tomorrow?"
 
+    show maryam normal
     maryam "Yeah, sure..."
 
     # New day, at MC house
 
+    scene kitchen
     na "Haruka arrives at your house, ready to work on the English project."
 
-    mc normal "Alright, let's get to work!"
+    mc ecstatic "Alright, let's get to work!"
 
     na "Haruka takes their computer out and starts typing right away."
 
@@ -2357,10 +2373,12 @@ label s60:
 
     mc normal "Hey, do you need my Wi-Fi password? You don't have to use data."
 
+    show maryam scared
     maryam "No-- I mean yes! Yes please!"
 
-    mc normal "Right... Could I have the computer to put it in?"
+    mc concerned "Right... Could I have the computer to put it in?"
 
+    show maryam nervous
     maryam "No! ...I can put it in it myself."
 
     na "they're acting like they already have your Wi-Fi password. With this and the ring that you found, things are getting awfully suspicious..."
@@ -2417,7 +2435,7 @@ label s61:
 
     jump s62
  
-label s62:
+label s62: #TODO: Repetitive scene?
 
     scene door
     show maryam normal at e
@@ -2432,27 +2450,32 @@ label s62:
     scene hoshibucks
     na "In the Hoshibucks line, Haruka notices that they forgot their wallet."
 
+    show maryam scared at e
     maryam "Oh no! I forgot my wallet!"
 
-    mc normal "It's alright, I'll buy you a sweet treat because you helped me so much with the English project!"
+    mc ecstatic "It's alright, I'll buy you a sweet treat because you helped me so much with the English project!"
 
     na "Haruka's eyes widen, they are entranced by your generosity and kindness."
 
+    show maryam happy
     maryam "Thank you so much, [mcname]!"
 
     na "As you both order the sweet treats and sit down, Haruka seems nervous as if they something important to tell you."
 
+    show maryam nervous
     maryam "uhm... [mcname]... I have something to tell you..."
 
     mc normal "Yes, Haruka?"
 
+    show maryam embarrassed
     maryam "I've liked you ever since we had art together freshman year of highschool!"
 
-    na "You guys went to the same freshman class? How do they even--{nw}"
+    na "You guys went to the same freshman class? How do they even remem--{nw}"
 
+    show maryam normal
     maryam "When you gave me your extra pencil right before the final test, I knew you were the one for me! Would you like to go on a date with me?"
 
-    mc normal "I would love to!"
+    mc ecstatic "I would love to!"
 
     jump e8
  
@@ -2460,14 +2483,16 @@ label s63:
 
     na "You decide to test Haruka."
 
-    mc normal "Alright then, the password is 123456."
+    mc cocky "Alright then, the password is 123456."
 
-    na "the real password is actually 1234567..."
+    na "the real password is actually 1234567... They couldn't possibly figure it o--{nw}"
 
+    show maryam normal
     maryam "Perfect! I connected! L-let's get to work shall we?"
 
-    na "You go silent, how could they possibly know your wifi password?!"
+    na "You go silent. How could they possibly know your Wi-Fi password?!"
 
+    show maryam concerned
     maryam "[mcname], are you a-alright? You're awfully quiet."
 
     na "Your heart starts to race, Haruka has noticed your changed demeanor."
@@ -2476,6 +2501,7 @@ label s63:
 
     maryam "Oh, alright, I see."
 
+    hide maryam with ex
     na "Haruka hastily grabs their stuff and goes home. Anxiety is rushing through your veins, how could they have known your wifi password?!"
 
     # New day at school
@@ -2483,8 +2509,11 @@ label s63:
     scene classroom day
     na "You and Haruka plan on finishing the project later that day, but then you notice a handsome figure approaching..."
 
+    show kyle normal at e
     kyle "Hey naninani, I was wondering if you would like to come hang out with me after school... if you're not busy of course."
 
+    show kyle normal at left
+    show maryam nervous at e
     na "Haruka's demeanor suddenly changes."
 
     na "Hmm, you were originally going to wrap up that project with Haruka though..."
@@ -2559,7 +2588,7 @@ label s74:
 
     mio "I-if you see students skipping class please tell them to return immediately. Some of them will try to use the “restroom excuse” but I'm sure you won't fall for that... it's a bit of an obvious lie."
 
-    mc normal "Ha... yeah... who would ever--"
+    mc normal "Ha... yeah... who would ever--{nw}"
 
     mio "Aah!"
 
