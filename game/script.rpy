@@ -57,14 +57,6 @@ init -2:
     
     define ex = Dissolve(0.1)
 
-# transform jumper:
-#     ease .04 yoffset 20
-#     ease .03 yoffset 16
-#     ease .02 yoffset 12
-#     ease .01 yoffset 8
-#     ease .01 yoffset 4
-#     ease .01 yoffset 0
-
 init python:
 
 
@@ -429,7 +421,7 @@ label start:
 
     #jump s74
 
-    pjmc normal "I'm so tired... I stayed up all night playing otome games."
+    pjmc normal "{i}{color=#b0b0b0}{size=-6}{cps=10}*yawn*{/cps}{/size}{/color}{/i} I'm so tired... I stayed up all night playing otome games."
     
     pjmc ecstatic "It`s hard not to when you`re given so many choices, especially when you can punch the male leads. Hehehe!"
 
@@ -456,7 +448,7 @@ label s2:
     na "You put on your uniform and go downstairs."
 
     scene kitchen
-    show mom normal
+    show mom normal at e
     mom "Good morning! I made you breakfast since I knew you'd wake up late."
 
     mom "Dad's already left to go work on his new Food Network episode and I'm heading out now. Have fun at school! I'm off!"
@@ -484,17 +476,23 @@ label s2:
 
 label s3:
 
+    #TODO: Bed sheet noise
+    scene black
     na "You crawl into your covers again and begin to sleep blissfully; everything is cozy, warm, and peaceful. You begin to dream."
 
     na "It's your first day of school at Gwetome Academy. Everyone is calling you Naninani Nantoka. 
         But why? You've always been [mcname] haven't you? How strange."
 
-    na "Just as you are about to investigate this, you feel a sudden shake."
+    na "Just as you are about to investigate this, you feel a sudden shake." with hpunch
 
+    scene bedroom
+    show mom angry at e
     mom "Hey!...Hey! Get up! How did I end up with such a lazy child?"
 
+    show mom normal
     mom "[mcname], school's already started so you need to hurry! I'm off to work now, so I can't help you. I'm off!"
 
+    hide mom with ex
     menu:
         "{i}Wake up and go go go!":
             jump s6
@@ -604,36 +602,45 @@ label s5:
 
 label s6:
 
-    mc normal "Ah! I've done it now!"
+    mc scared "Ah! I've done it now!"
 
     na "You quickly throw on your uniform, grab a piece of toast, and run out the door."
 
-    mc normal "I'm gonna be late!"
+    scene neighborhood
+    mc scared "I'm gonna be late!"
 
     na "It isn't long before you find yourself turning a sharp corner... with toast... hmm..."
 
-    mc normal "Ah! It hurts!"
+    mc flirtyJoke "Ah! It hurts!" with hpunch
 
-    #Background bird caw noises
-    mc normal "...?"
+    mc concerned "...?"
 
-    mc normal "Is no one... here?"
+    mc concerned "Is no one... here?"
 
-    na "Wow, you must be really off your game today *name*. You look around yourself, stunned... this has never happened before."
+    na "Wow, you must be really off your game today [mcname]. You look around yourself, stunned... this has never happened before."
 
     na "How could you not bump into a hot ikemen while turning a corner with toast in your mouth?!?! Maybe you should try again."
 
     na "You pick up the toast and start walking back to where you started, when you hear a strange noise."
 
-    joe "Kyaa~! I'm gonna be late!"
+    joe "{i}Kyaa~!{/i} I'm gonna be late!"
 
+    show joe blank at e
     na "Ah, there it is. You look up and see a hot... pole? No wait! You shake your head to clear your vision."
 
+    show joe concerned with fade
+    #TODO: Joe special scene
     joe "Sorry, are you ok? I don't know what came over me. I just felt a sudden need to run around that corner."
 
-    mc normal "Yeah, I'm alright."
+    mc shy "Yeah, I'm alright."
 
     na "The boy's eyes sparkle as you take his hand and he smoothly pulls you to your feet. Nice."
+
+    $ joename = "Joe Kun"
+    $ joename_kanji = "くん・ジョー"
+    $ metJoe = True
+
+    joe "The name's Joe. I'll see ya!"
 
     na "After you both apologize you quickly continue on your way."
 
@@ -681,7 +688,7 @@ label s9:
     na "Looks like being responsible pays off."
 
     show joe normal
-    mc normal "Oh.. kay, sorry! I didn't see you there."
+    mc normal "Oh... kay, sorry! I didn't see you there."
 
     show joe scared
     joe "Really? I'm quite hard to miss, you know..."
@@ -690,11 +697,12 @@ label s9:
 
     $ joename = "Joe Kun"
     $ joename_kanji = "くん・ジョー"
+    $ metJoe = True
 
     show joe ecstatic
     joe "Oh right! The name's Joe-kun, but you can just call me Joe."
 
-    na "Is that even a name?"
+    na "His first name is... kun?"
 
     mc normal "Well, nice to meet you! My name is [mcname]"
 
@@ -706,7 +714,7 @@ label s9:
 
     na "Seriously, laughing at your own jokes? This guy..."
 
-    mc normal "Ha... well, which way are you heading?"
+    mc concerned "Ha... well, which way are you heading?"
 
     show joe normal
     joe "Oh, I've got class this way. It was nice talking to you, see you around!"
@@ -719,6 +727,7 @@ label s9:
 
 label s10:
 
+    scene gate
     na "You arrive at school... late of course."
 
     na "What did you expect? After all that you'd still be early? Hah."
@@ -727,19 +736,25 @@ label s10:
 
     if metRiri:
         
+        show riri surprised at e
         riri "What's this?! Two options of potential love and beauty?!?!"
 
+        show riri ecstatic
         riri "Ahhhh I can't wait for you to turn back to your old self again!"
 
+        show riri normal
         riri "Listen, Naninani, I have the power of insight."
 
         riri "I can help guide you through this love journey."
 
         riri "But... you need to be the one making the decisions. Got it?"
 
+        show riri happy
         riri "I'll just be over here, and if you need my input just click on me."
 
+        show riri normal
         riri "Hehe... hehehehehe..."
+        hide riri with ex
 
         if metRiri:
             $ riris[10] = True
@@ -755,19 +770,21 @@ label s11:
 
     na "Skipping class? It looks like you value your education..."
 
+    scene classroom day
     na "You walk to class and fling open the door."
 
     na "You're here in order to learn! You must study! You have your whole life ahead of you and you're not backing down!"
 
-    mc normal "Excuse me!"
+    mc ecstatic "Excuse me!"
 
     sensei "Detention!"
 
-    
     if metRiri:
         $ riris[11] = True
     
-    jump s13
+    menu:
+        "Go to detention":
+            jump s13
         
 
 label s12:
@@ -778,6 +795,7 @@ label s12:
 
 label s13:
 
+    scene detention
     na "Ahhh... detention. A land of hopes and sorrows... youth and forgotten dreams."
 
     na "Somehow you always seem to find yourself here."
@@ -1145,7 +1163,7 @@ label s24:
     joe "Are you okay?! I'm so sorry, I didn't see where I was going."
 
     if metJoe == True:
-        joe "Hey, I remember you! We met at the [metJoeLocation]."
+        joe "Hey, I remember you!"
     
     joe "Drinks from Hoshibucks{size=-12}©{/size} are expensive nowadays."
 
@@ -2539,23 +2557,29 @@ label s64:
  
 label s65:
 
+    scene park night
     na "After school, you and Akimitsu get Hoshibucks. After you order your drinks, the two of you walk around the town and stop at a quaint park."
 
     na "The trees are thick and the sun has gone down, the two of you are seemingly alone."
 
+    show kyle embarrassed
     kyle "Uhm... [mcname], there has been something on my mind that I have wanted to tell you for a really long time now..."
 
     na "You turn around and look at Akimitsu, his face is flushed red but you can't tell whether he is blushing or if it's the cold breeze."
 
-    mc  "What is it?"
+    mc concerned "What is it?"
 
+    show kyle loving
     kyle "I have loved you ever since we were kids..."
 
-    na "Just as Akimitsu confesses his love, you hear a leaf crackle and the bushes shake as if someone is in them and are shocked to hear Akimitsu's love confession!"
+    #TODO: Leaf crackle and bushes
+    na "Just as Akimitsu confesses his love, you hear a leaf crackle and the bushes shake as if someone is in them and are shocked to hear Akimitsu's love confession!" with hpunch
 
     kyle "Who's there!"
 
-    na "The person in the bushes scurries deeper into them. The two of you look over to find a photo of the two of you from Hoshibucks and a knife! Whoever was in the bushes has been stalking you guys all day!"
+    na "The person in the bushes scurries deeper into them. The two of you look over to find a photo of the two of you from Hoshibucks and a knife!"
+
+    na "Whoever was in the bushes has been stalking you guys all day!"
 
     if metRiri:
         $ riris[65] = True
