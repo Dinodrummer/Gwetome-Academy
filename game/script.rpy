@@ -122,16 +122,6 @@ init python:
     metSophia = False
     metMaryam = False
 
-    from game.images.Gwyn import *
-    from game.images.NPCs import *
-    from game.images.Riri import *
-    from game.images.Beckham import *
-    from game.images.Joe import *
-    from game.images.Jt import *
-    from game.images.Kyle import *
-    from game.images.Maryam import *
-    from game.images.Sophia import *
-    from game.images.Backgrounds import *
     from game import *
 
 
@@ -149,7 +139,7 @@ init:
 
     #define daniel = Character("ダニエル", show_name = "beast of osaka", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define na = Character(name=None, ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
-    define mom = Character("Mom", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define mother = Character("Mom", show_name = "お母さん", ctc="ctc_blink", what_outlines = dialogue_outlines)
     define teacher_e = Character("Sensei", show_name = "先生", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define mio = Character("Mio", show_name = "みお", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
 
@@ -182,15 +172,6 @@ init:
         (1, "#6529230e", 4, 4)
     ]
         
-    #default say = character_text
-
-    # image beckham agent normal = "/images/Zeil/ph.png"
-    # image beckham agent ecstatic = "/images/Zeil/ph.png"
-    # image beckham bartender normal = "/images/Zeil/ph.png"
-    # image beckham bartender angry = "/images/Zeil/ph.png"
-    # image beckham bartender sad = "/images/Zeil/ph.png"
-    # image beckham fan normal = "/images/Zeil/ph.png"
-    # image beckham fan ecstatic = "/images/Zeil/ph.png"
 
 # --------------------------------------------------------
 label pro:
@@ -245,7 +226,7 @@ label Questions_mc:
 # p = placeholder label
 # s = scene
 label p:
-    mom "PLACEHOLDER"
+    mother "PLACEHOLDER"
     return
 
 label riri:
@@ -414,7 +395,6 @@ label start:
 
     stop music
 
-    jump s13
 
     # show screen character_name("Hana Kobayashi", "小林・花")
 
@@ -449,16 +429,16 @@ label s2:
     na "You put on your uniform and go downstairs."
 
     scene kitchen
-    show mom normal at e
-    mom "Good morning! I made you breakfast since I knew you'd wake up late."
+    show mother normal at e
+    mother "Good morning! I made you breakfast since I knew you'd wake up late."
 
-    mom "Dad's already left to go work on his new Food Network episode and I'm heading out now. Have fun at school! I'm off!"
+    mother "Dad's already left to go work on his new Food Network episode and I'm heading out now. Have fun at school! I'm off!"
 
-    hide mom with ex
+    hide mother with ex
 
     #TODO: Door close noise
 
-    mc happy "Thanks, have a good day!"
+    mc ecstatic "Thanks, have a good day!"
 
     na "You happily munch on the breakfast your mother made and pat your belly in satisfaction. 
         Suddenly, the TV turns on, as if it's beckoning you to watch it."
@@ -487,13 +467,13 @@ label s3:
     na "Just as you are about to investigate this, you feel a sudden shake." with hpunch
 
     scene bedroom
-    show mom angry at e
-    mom "Hey!...Hey! Get up! How did I end up with such a lazy child?"
+    show mother angry at e
+    mother "Hey!...Hey! Get up! How did I end up with such a lazy child?"
 
-    show mom normal
-    mom "[mcname], school's already started so you need to hurry! I'm off to work now, so I can't help you. I'm off!"
+    show mother normal
+    mother "[mcname], school's already started so you need to hurry! I'm off to work now, so I can't help you. I'm off!"
 
-    hide mom with ex
+    hide mother with ex
     menu:
         "{i}Wake up and go go go!":
             jump s6
@@ -810,6 +790,8 @@ label s13:
     na "Suddenly you hear the whispers of two delinquents a desk over."
 
     show d1 happy at e
+    $ sophianame = "Isamu Takao"
+    $ sophianame_kanji = "高尾・勇"
     d1 "Hey hey, is that Takao Isamu?"
 
     show d1 happy at left
@@ -920,8 +902,6 @@ label s15:
 
     na "...Takao Isamu swaggers up to your desk."
     
-    $ sophianame = "Isamu Takao"
-    $ sophianame_kanji = "高尾・勇"
 
     show sophia normal at e
     sophia "Yo."
