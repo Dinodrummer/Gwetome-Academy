@@ -394,6 +394,7 @@ label riri:
             del(riris[i])
             riris.insert(i, False)
     
+    hide riri with ex
     hide choice
 
     return
@@ -413,7 +414,7 @@ label start:
 
     stop music
 
-    jump s63
+    jump s13
 
     # show screen character_name("Hana Kobayashi", "小林・花")
 
@@ -808,18 +809,26 @@ label s13:
 
     na "Suddenly you hear the whispers of two delinquents a desk over."
 
+    show d1 happy at e
     d1 "Hey hey, is that Takao Isamu?"
 
+    show d1 happy at left
+    show d2 normal at e
     d2 "Takao... Isamu?"
 
+    show d1 normal
     d1 "You don't know? Their family is yakuza! Apparently they transferred in this school year but haven't said more than two words to anyone. They're super cold."
 
     d2 "Ohhhh yeah yeah I know them. {i}The Panther{/i}, huh? I heard they sleep with their eyes open because they have so many enemies."
 
+    show d2 happy
     d2 "They're also rich, hot, have a six pack, and like to brood all the time."
 
+    show d1 sad
     d1 "Wow... I wish I was that cool."
 
+    hide d1 with ex
+    hide d2 with ex
     na "As you look back over to the yakuza student you notice a majestic tear rolling down their cheek. Wow. What an emotionally conflicted and vulnerable young adult."
 
     na "You should totally cause a scene and show them your physical prowess."
@@ -904,28 +913,31 @@ label s14:
 
 
 label s15:
-    scene classroom day
+
     na "You make a scene. How could you resist after all?"
 
-    na "After throwing a few delinquents out the window with your super muscular muscles...{nw}"
-
-    # Sound effects
+    na "After throwing a few delinquents out the window with your super muscular muscles..."
 
     na "...Takao Isamu swaggers up to your desk."
     
-    show sophia normal
+    $ sophianame = "Isamu Takao"
+    $ sophianame_kanji = "高尾・勇"
+
+    show sophia normal at e
     sophia "Yo."
 
-    mc normal "Oh, hey."
+    mc flirtyJoke "Oh, hey."
 
     sophia "You dropped this."
 
     na "Isamu hands you a small handkerchief with a small cute cat print on it."
 
-    mc normal "Oh, that's not mi--"
+    mc shy "Oh, that's not mi--{nw}"
 
+    show sophia cocky
     sophia "Keep it."
 
+    hide sophia with ex
     na "Isamu coolly grabs their jacket and leaves the room. You can't help but notice a slight blush on their face."
 
     mc normal "Huh..."
@@ -938,8 +950,7 @@ label s15:
     na "Despite \"The Panther\"'s horrible grammar, your heart skips a beat. Are they asking you... on a date?"
 
     if metRiri:
-        $ riris[15] = True
-        
+        $ riris[15] = True        
 
     menu:
         "{i}I'm going to that party!":
@@ -1181,7 +1192,9 @@ label s24:
 
     na "{b}Enough with the “no no no” talk!{/b}"
 
-    $ joename = "ジョ～・くん"
+    $ joename = "Joe Kun"
+    $ joename_kanji = "くん・ジョー"
+    $ metJoe = True
     joe "Well, anyways, my name's Joe. Nice to meet you! I'm gonna buy a drink for myself anyways, so I'll get us both one."
 
     mc normal "I'm [mcname], nice to meet you!"

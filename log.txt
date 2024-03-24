@@ -1,826 +1,70 @@
-Mon Mar 18 22:01:13 2024
+Fri Mar 22 12:25:51 2024
 Windows-10-10.0.22631
 Ren'Py 8.1.3.23091805
  
 
-Bootstrap to the start of init.init. took 0.03s
+Bootstrap to the start of init.init. took 0.04s
 Early init. took 0.00s
-Loader init. took 0.12s
-Loading error handling. took 0.03s
-Loading script. took 0.72s
-Loading save slot metadata. took 0.03s
+Loader init. took 0.09s
+Loading error handling. took 0.04s
+Loading script. took 0.32s
+Loading save slot metadata. took 0.05s
 Loading persistent. took 0.00s
-
-File "game/script.rpy", line 2347: expected statement.
-    maryam normal
-                 ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.43s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 22.46s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.03s
-Loading script. took 0.74s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.07s
-Loading analysis data. took 0.01s
+Running init code. took 0.09s
+Loading analysis data. took 0.03s
 Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
+Reloading save slot metadata. took 0.58s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 119.24s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.27s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 144.77s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.27s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 2499, in script
-    show kyle normal at [e, left]
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 1428, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 1391, in show_imspec
-    renpy.config.show(name,
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\exports.py", line 745, in show
-    img = i(img) # type: ignore
-TypeError: 'RevertableList' object is not callable
-
-While running game code:
-  File "game/script.rpy", line 2499, in script
-    show kyle normal at [e, left]
-TypeError: 'RevertableList' object is not callable
-Resetting cache.
-Bootstrap to the start of init.init. took 152.64s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.28s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 391.42s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.29s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 405.14s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.29s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 435.11s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.29s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 441.53s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.31s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 452.47s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.27s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 2502, in script
-    show kyle normal at left with move(0.5)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 1674, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\python.py", line 1153, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 2502, in <module>
-    show kyle normal at left with move(0.5)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\movetransition.py", line 498, in MoveTransition
-    raise Exception("MoveTransition can only be applied to one or all layers, not %s." % type(old_widget).__name__)
-Exception: MoveTransition can only be applied to one or all layers, not float.
-
-While running game code:
-  File "game/script.rpy", line 2502, in script
-    show kyle normal at left with move(0.5)
-  File "game/script.rpy", line 2502, in <module>
-    show kyle normal at left with move(0.5)
-Exception: MoveTransition can only be applied to one or all layers, not float.
-Resetting cache.
-Bootstrap to the start of init.init. took 464.85s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.28s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 469.69s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.24s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 2502: expected 'simple_expression' not found.
-    show kyle normal at left with
-                                 ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.26s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 474.42s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.30s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 495.96s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.31s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.02s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 618.85s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.30s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 685.97s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.30s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
 Dump and make backups. took 0.06s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.01s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.06s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.03s
+Interface start. took 0.10s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1800) drawable=(2880, 1800)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1800) drawable=(2880, 1800)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1800) drawable=(2880, 1800)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 1053.37s
+Bootstrap to the start of init.init. took 63.13s
 Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.30s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.02s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3159.98s
-Early init. took 0.00s
-Loader init. took 0.09s
-Loading error handling. took 0.02s
-Loading script. took 0.14s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 3917.69s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.15s
-Loading save slot metadata. took 0.02s
+Loader init. took 0.08s
+Loading error handling. took 0.03s
+Loading script. took 0.45s
+Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
 Running init code. took 0.05s
 Loading analysis data. took 0.02s
@@ -832,757 +76,219 @@ Dump and make backups. took 0.06s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.04s
-DPI scale factor: 1.000000
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.04s
+Interface start. took 0.06s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 4031.62s
+Bootstrap to the start of init.init. took 117.24s
 Early init. took 0.00s
 Loader init. took 0.07s
 Loading error handling. took 0.02s
-Loading script. took 0.32s
-Loading save slot metadata. took 0.02s
+Loading script. took 0.41s
+Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
-Running init code. took 0.03s
+Running init code. took 0.05s
 Loading analysis data. took 0.02s
 Analyze and compile ATL. took 0.01s
 Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
+Dump and make backups. took 0.06s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.06s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4060.92s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.28s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4144.84s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.28s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4160.30s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.28s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4309.41s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.30s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
 Interface start. took 0.05s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 4315.79s
+Bootstrap to the start of init.init. took 146.33s
 Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.29s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4320.63s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.29s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4325.48s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.31s
+Loader init. took 0.08s
+Loading error handling. took 0.03s
+Loading script. took 0.46s
 Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
 Running init code. took 0.04s
-Loading analysis data. took 0.01s
+Loading analysis data. took 0.02s
 Analyze and compile ATL. took 0.01s
 Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
+Dump and make backups. took 0.06s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.20s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 294.94s
+Early init. took 0.00s
+Loader init. took 0.14s
+Loading error handling. took 0.03s
+Loading script. took 0.45s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.09s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.02s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 324.69s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.02s
+Loading script. took 0.42s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.02s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.05s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.04s
+Interface start. took 0.06s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 4331.86s
+Bootstrap to the start of init.init. took 328.11s
 Early init. took 0.00s
 Loader init. took 0.07s
 Loading error handling. took 0.02s
-Loading script. took 0.29s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.20s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4339.34s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.13s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.02s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4369.25s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.30s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.02s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4413.62s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.16s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.20s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4426.62s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.28s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4451.46s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.30s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4486.09s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.28s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.02s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 4755.38s
-Early init. took 0.00s
-Loader init. took 0.08s
-Loading error handling. took 0.02s
-Loading script. took 0.29s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.02s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 6360.48s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.29s
+Loading script. took 0.41s
 Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
 Running init code. took 0.04s
@@ -1591,664 +297,854 @@ Analyze and compile ATL. took 0.01s
 Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
+Dump and make backups. took 0.06s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 7082.90s
-Early init. took 0.00s
-Loader init. took 0.12s
-Loading error handling. took 0.02s
-Loading script. took 0.38s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 7090.95s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.29s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 7095.79s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.24s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 27: expected 'simple_expression' not found.
-    xcenter 
-            ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.26s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 7099.03s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.31s
-Loading save slot metadata. took 0.03s
-Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 7138.84s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.29s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.02s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 7142.16s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.24s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 70: expected 'simple_expression' not found.
-    ease .04 xcenter 
-                     ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.26s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 7143.93s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.31s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.02s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 7147.24s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.29s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 7274.64s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.29s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 7314.94s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.28s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 7333.03s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.31s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 7370.51s
-Early init. took 0.00s
-Loader init. took 0.08s
-Loading error handling. took 0.01s
-Loading script. took 0.14s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.04s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
 Interface start. took 0.05s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 7372.41s
+Bootstrap to the start of init.init. took 343.95s
 Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.30s
+Loader init. took 0.08s
+Loading error handling. took 0.02s
+Loading script. took 0.47s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.10s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.05s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 373.51s
+Early init. took 0.00s
+Loader init. took 0.09s
+Loading error handling. took 0.03s
+Loading script. took 0.46s
 Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
 Running init code. took 0.04s
 Loading analysis data. took 0.02s
 Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
+Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
+Dump and make backups. took 0.06s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.17s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
+Save screen analysis took 0.02s
+Prepare screens took 0.15s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.01s
 Performance test:
-Interface start. took 0.04s
+Interface start. took 0.08s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 7390.53s
+Bootstrap to the start of init.init. took 377.11s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.03s
+Loading script. took 0.48s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 379.11s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.02s
+Loading script. took 0.53s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.02s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 476.42s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.03s
+Loading script. took 0.54s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 493.76s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.03s
+Loading script. took 0.49s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.07s
+Analyze and compile ATL. took 0.03s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 498.79s
+Early init. took 0.00s
+Loader init. took 0.15s
+Loading error handling. took 0.02s
+Loading script. took 0.49s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.02s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.08s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.04s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 523.94s
 Early init. took 0.00s
 Loader init. took 0.07s
 Loading error handling. took 0.02s
-Loading script. took 0.28s
-Loading save slot metadata. took 0.02s
+Loading script. took 0.49s
+Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.02s
+Reloading save slot metadata. took 0.04s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
+Dump and make backups. took 0.07s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
+Initial gc. took 0.07s
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.07s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.04s
+Interface start. took 0.09s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 7468.88s
+Bootstrap to the start of init.init. took 555.26s
 Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.23s
-Loading save slot metadata. took 0.02s
+Loader init. took 0.10s
+Loading error handling. took 0.03s
+Loading script. took 0.49s
+Loading save slot metadata. took 0.04s
 Loading persistent. took 0.00s
-
-File "game/script.rpy", line 2539: expected statement.
-    mc 
-       ^
-DPI scale factor: 1.000000
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.27s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 7470.61s
+Bootstrap to the start of init.init. took 609.52s
+Early init. took 0.00s
+Loader init. took 0.10s
+Loading error handling. took 0.04s
+Loading script. took 0.58s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.02s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 622.22s
 Early init. took 0.00s
 Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.30s
-Loading save slot metadata. took 0.02s
+Loading error handling. took 0.02s
+Loading script. took 0.49s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.09s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.09s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 628.78s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.03s
+Loading script. took 0.45s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 632.26s
+Early init. took 0.00s
+Loader init. took 0.09s
+Loading error handling. took 0.02s
+Loading script. took 0.45s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 635.69s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.02s
+Loading script. took 0.43s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Running init code. took 0.06s
+Loading analysis data. took 0.03s
+Analyze and compile ATL. took 0.02s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 648.52s
+Early init. took 0.00s
+Loader init. took 0.09s
+Loading error handling. took 0.02s
+Loading script. took 0.51s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 689.00s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.02s
+Loading script. took 0.44s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 695.56s
+Early init. took 0.00s
+Loader init. took 0.07s
+Loading error handling. took 0.02s
+Loading script. took 0.44s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.01s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.07s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.16s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 697.50s
+Early init. took 0.00s
+Loader init. took 0.09s
+Loading error handling. took 0.02s
+Loading script. took 0.47s
+Loading save slot metadata. took 0.04s
+Loading persistent. took 0.00s
+Running init code. took 0.05s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.02s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.09s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 702.54s
+Early init. took 0.00s
+Loader init. took 0.08s
+Loading error handling. took 0.02s
+Loading script. took 0.51s
+Loading save slot metadata. took 0.06s
 Loading persistent. took 0.00s
 Running init code. took 0.05s
 Loading analysis data. took 0.02s
@@ -2259,391 +1155,210 @@ Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gw
 Dump and make backups. took 0.05s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.20s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 7483.05s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.28s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
 Initial gc. took 0.04s
-DPI scale factor: 1.000000
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.05s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.04s
+Interface start. took 0.07s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 7515.24s
+Bootstrap to the start of init.init. took 705.99s
 Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.31s
-Loading save slot metadata. took 0.02s
+Loader init. took 0.11s
+Loading error handling. took 0.03s
+Loading script. took 0.56s
+Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 7518.59s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.30s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 7521.97s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.02s
-Loading script. took 0.29s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
+Running init code. took 0.04s
 Loading analysis data. took 0.02s
 Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
+Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
+Dump and make backups. took 0.06s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
+Initial gc. took 0.05s
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.19s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2880, 1800)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 754.53s
+Early init. took 0.00s
+Loader init. took 0.09s
+Loading error handling. took 0.02s
+Loading script. took 0.43s
+Loading save slot metadata. took 0.03s
+Loading persistent. took 0.00s
+Running init code. took 0.04s
+Loading analysis data. took 0.02s
+Analyze and compile ATL. took 0.02s
+Reloading save slot metadata. took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
+Dump and make backups. took 0.06s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.05s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.04s
+Interface start. took 0.07s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 7523.77s
+Bootstrap to the start of init.init. took 1571.72s
 Early init. took 0.00s
-Loader init. took 0.07s
+Loader init. took 0.08s
 Loading error handling. took 0.02s
-Loading script. took 0.28s
-Loading save slot metadata. took 0.02s
+Loading script. took 0.41s
+Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 7536.20s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.29s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
+Running init code. took 0.04s
 Loading analysis data. took 0.02s
 Analyze and compile ATL. took 0.01s
 Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
+Dump and make backups. took 0.06s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.04s
-DPI scale factor: 1.000000
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.20s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.05s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.04s
+Interface start. took 0.07s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 7538.00s
+Bootstrap to the start of init.init. took 2551.14s
 Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.29s
-Loading save slot metadata. took 0.02s
+Loader init. took 0.08s
+Loading error handling. took 0.02s
+Loading script. took 0.24s
+Loading save slot metadata. took 0.03s
 Loading persistent. took 0.00s
-Running init code. took 0.03s
+Running init code. took 0.05s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.01s
 Reloading save slot metadata. took 0.03s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.04s
+Dump and make backups. took 0.07s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
+Initial gc. took 0.09s
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.04s
+Interface start. took 0.14s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
+primary display bounds: (0, 0, 2880, 1800)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Arc(TM) Graphics'
+Version: b'4.6.0 - Build 31.0.101.5126'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 7558.06s
-Early init. took 0.00s
-Loader init. took 0.07s
-Loading error handling. took 0.01s
-Loading script. took 0.29s
-Loading save slot metadata. took 0.02s
-Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.02s
-Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.05s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.18s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.76'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1426, 802) drawable=(1426, 802)
+Screen sizes: virtual=(1920, 1080) physical=(2076, 1168) drawable=(2076, 1168)
 Maximum texture size: 4096x4096
