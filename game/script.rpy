@@ -2542,6 +2542,7 @@ label s64:
 
     mc normal "Alright then, the password is 1234567."
 
+    show maryam ecstatic
     maryam "I'm in. Let's finish this project!"
 
     na "The two of you get the project done early and decide to go get a sweet treat together."
