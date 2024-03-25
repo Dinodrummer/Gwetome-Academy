@@ -683,7 +683,7 @@ label s9:
     show joe ecstatic
     joe "Oh right! The name's Joe-kun, but you can just call me Joe."
 
-    na "His first name is... kun?"
+    na "His name is... kun?"
 
     mc normal "Well, nice to meet you! My name is [mcname]"
 
@@ -940,21 +940,22 @@ label s15:
 
 label s16:
 
-    na "What a waste, they even blinked at you!"
+    na "What a waste, they even winked at you!"
 
     na "Well, anyways... You decide to wait out detention. Maybe it was a bad idea to interact anyways."
 
     # After school
 
+    scene city night
     na "Man, it was your first day and you got {i}detention{/i}. Honestly, I'm impressed."
 
-    # Stomach rumbles and screen shakes
+    #TODO: Earthquake rumble
 
-    na "Whoa! What was that?! It felt like an earthqua-{nw}"
+    na "Whoa! What was that?! It felt like an earthqua-{nw}" with hpunch
 
     na "...Oh. It was you? Wow, you must be hungry."
 
-    na "You happen to spot a Hoshibucks{size=-12}©{/size}. It'll be a pretty penny, but a Caramel Ribbon Crunch Frappe sounds pretty good right about now."
+    na "You happen to spot a Hoshibucks. It'll be a pretty penny, but a Caramel Ribbon Crunch Frappe sounds pretty good right about now."
 
     jump s24
 
@@ -1122,12 +1123,18 @@ label s23: # Free space
 
 label s24:
 
-    #In starbucks
+    #In hoshibucks
 
+    scene hoshibucks
+
+    na "You enter the Hoshibucks and step up to the bartender."
+    
+    show beckham bartender normal at e
     mc normal "I'll take your finest Caramel Ribbon Crunch Frappe, please."
 
     na "You felt like you've seen this kid before. Maybe from school?"
 
+    show beckham bartender 
     beckham "that'll be 2,210¥."
 
     mc normal "Wh-{nw}"
@@ -1135,57 +1142,70 @@ label s24:
     # Saying yen amount loudly
     na "-Wait, 2,210¥?? What has this world come to..."
 
+    show beckham bartender shake
     na "Failing to hold back spending one fourth of your monthly allowance on a single Frappe, you swipe your card and watch as the barista skillfully crafts your drink."
 
+    hide beckham with ex
     na "You imagine what the flavor will be as you grab the cup and walk away from the front counter."
 
-    mc normal "It looks so good! I'll worry about the cost later, because this is gonna be so worth i-"
+    mc normal "It looks so good! I'll worry about the cost later, because this is gonna be so worth i--{nw}"
 
-    #Drink spill noise, crash
+    #TODO: Crash noise
 
-    mc normal "NO! MY CARAMEL RIBBON CRUNCH FRAPPE!!"
+    mc scared "NOOOO! MY CARAMEL RIBBON CRUNCH FRAPPE!!" with hpunch
 
-    na "Well, that's rough. After you witness-- with pure agony--  the drink spill, you then look up to see… a pole? And an attractive one at that."
+    na "Well, that's rough. After you witness-- with pure agony--  the drink spill, you then look up to see... a pole? And an attractive one at that."
 
-    na "Wait, who would put a pole in the middle of a Hoshibucks{size=-12}©{/size}? The pole reaches out a hand to you."
+    na "Wait, who would put a pole in the middle of a Hoshibucks? The pole reaches out a hand to you."
 
-    # Shot with joe and his hand out towards camera in hoshibucks
+    #TODO: Special shot with joe and his hand out towards camera in hoshibucks (?)
 
+    show joe scared at e
     joe "Are you okay?! I'm so sorry, I didn't see where I was going."
 
     if metJoe == True:
+        show joe ecstatic
         joe "Hey, I remember you!"
     
-    joe "Drinks from Hoshibucks{size=-12}©{/size} are expensive nowadays."
+    show joe normal
+    joe "Drinks from Hoshibucks are expensive nowadays."
 
     joe "Here, let me pay for it. It was my fault anyways."
 
-    mc normal "No, it's okay! Don't even worry about it, It didn't cost {i}that{/i} much."
+    mc ecstatic "No, it's okay! Don't even worry about it, It didn't cost {i}that{/i} much."
 
     na "You're still a bit irritated due to the fact that it {i}did{/i} in fact cost that much."
 
+    show joe ecstatic
     joe "No no no, please, let me! I'd feel bad if I didn't."
 
-    mc normal "No no no no, I wasn't looking where I was going."
+    show joe normal
+    mc ecstatic "No no no no, I wasn't looking where I was going."
 
-    joe "No no n-"
+    joe "No no n-{nw}"
 
-    na "{b}Enough with the “no no no” talk!{/b}"
+    #TODO: Rumble noise
+    show joe scared
+    na "{b}Enough with the “no no no” talk!{/b}" with hpunch
 
     $ joename = "Joe Kun"
     $ joename_kanji = "くん・ジョー"
     $ metJoe = True
+    show joe normal
     joe "Well, anyways, my name's Joe. Nice to meet you! I'm gonna buy a drink for myself anyways, so I'll get us both one."
 
     mc normal "I'm [mcname], nice to meet you!"
 
+    scene hoshibucks
     na "You let him buy you another Caramel Ribbon Crunch Frappe and have a nice chat at one of the tables."
 
+    show joe ecstatic
     joe "Hahaha, you're so funny!"
 
+    show joe normal
     joe "Well, anyways, It's getting kind of late. Mind if I take you home?"
 
-    mc normal "Hmmm... It {i}is{/i} getting kind of dark out..."
+    mc shy "Hmmm... It {i}is{/i} getting kind of dark out..."
 
     if metRiri:
         $ riris[24] = True
