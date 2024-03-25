@@ -395,6 +395,7 @@ label start:
 
     stop music
 
+    jump fight
 
     # show screen character_name("Hana Kobayashi", "小林・花")
 
@@ -2876,13 +2877,17 @@ label dice_roll:
 
 label fight:
 
-    $ player_hp = 10
-    $ enemy_hp = 10
-    $ player_attack_value = 0
+    $ player_hp = 20
+    $ enemy_hp = 20
+    $ player_attack_value = 3
     $ enemy_attack_value = 3
-    $ enemy_attack_value -= 1
+
+    $ player_max_hp = 20
+    $ enemy_max_hp = 20
 
     scene bedroom
+    show fight1
+    show fight2
     show jt cocky
 
     while player_hp > 0 and enemy_hp > 0:
@@ -2890,35 +2895,38 @@ label fight:
         # Player Turn - two choices!
         call dice_roll
 
+        $ player_attack_value = 3
+        $ enemy_attack_dec = 0
         menu:
             "Flirt":
                 #call camera_knight_attack
                 if d10 >= 8:                                                # 30%
-                    $ player_attack_value = d4 + d6
-                    $ enemy_hp -= player_attack_value
-                    mc scared "That's scary!" with hpunch
-                    #TODO: add to script??
-                    "Yutaka took [player_attack_value] damage!"          # 70%
+                    jt "That's scary!" 
+                    #TODO: add fight lines to script??
+                    na "Yutaka took [player_attack_value] damage!"          # 70%
                 else:
                     $ enemy_hp -= d4
                     #show side gwyn suit scared 
-                    mc scared "[d4] damage!" with hpunch
+                    mc scared "[d4] damage!"
             "Punch":
                 #call camera_knight_attack                       
                 if d10 >= 9:                                                # 20%
                     $ player_attack_value = (d6 + d4)*2
                     $ enemy_hp -= player_attack_value
-                    "Critical Hit! Yutaka took [player_attack_value] damage!"
+                    na "Critical Hit! Yutaka took [player_attack_value] damage!" with hpunch
                 elif d10 >= 5:                                              # 40%  
                     $ player_attack_value =  d6 + 2                                        
                     $ enemy_hp -= player_attack_value
-                    "That's a strong hit! Yutaka took [player_attack_value] hp!"
+                    na "That's a strong hit! Yutaka took [player_attack_value] hp!" with hpunch
                 else:                                                       # 40% 
-                    "You miss!"                                      
-        
+                    na "You miss!"   #:(    
+            "Run":
+                na "You run away."
+                jump s22
+
         if enemy_hp <= 0:
-            #call camera_knight_win
-            "You win the combat encounter!"
+
+            jump s19
             #jump harder_menu
 
         # Enemy Turn - Semi-randomized behavior!
@@ -2926,30 +2934,35 @@ label fight:
         call dice_roll
 
         if d20 >= 19:                                            # 20%       
-            #call camera_skeleton_attack                                                                                
-            $ player_hp -= d10
-            "The Yutaka makes a wild attack for [d10] damage!"
-        elif d20 <=2:                                            # 20%
-            $ enemy_hp += d4
-            if enemy_hp < enemy_max_hp:
-                "The Yutaka heals itself, raising [d4] hp!"
+            if d10 - enemy_attack_dec <= 0:
+                na "The Yutaka makes a wild attack, but does no damage!"
+            else:
+                $ player_hp -= (d10 - enemy_attack_dec)
+                na "The Yutaka makes a wild attack for [d10 - enemy_attack_dec] damage!"
+
+        elif d20 <= 4:                                            # 20%
+            
+            if enemy_hp < (enemy_max_hp - d4):
+                $ enemy_hp += d4
+                na "The Yutaka heals itself, raising [d4] hp!"
+                
             else:
                 $ enemy_hp = enemy_max_hp
-                "The Yutaka fully heals itself back to full hp!"
-        else:                                                    # 60%
-            #call camera_skeleton_attack                                                                                
+                na "The Yutaka fully heals itself back to full hp!"
+        else:                                                    # 60%                                                                             
             $ player_hp -= d4
-            "The Yukata attacks for [d4] damage!"
+            na "The Yukata attacks for [d4] damage!"
 
     #call camera_knight_died
-    "You died..."
+    jump s22
     hide screen hp_bars_1v1
+
 
     menu harder_menu:
         "Play this level again?":
-            $ player_hp = player_max_hp
-            $ enemy_hp = enemy_max_hp
-            jump harder_battle
+            $ player_hp = 10
+            $ enemy_hp = 10
+            jump fight
         "Back to Main Menu":
             jump start
 

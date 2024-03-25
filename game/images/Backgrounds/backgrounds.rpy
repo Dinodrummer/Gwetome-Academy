@@ -52,3 +52,15 @@ image detention:
 image choice:
     "gui/choice_background.png"
     zoom 1
+image fight1:
+    "images/Backgrounds/bg black.jpg"
+    zoom 1.2
+    xpos 800
+    ypos 850
+    rotate -8
+image fight2:
+    "images/Backgrounds/bg black.jpg"
+    zoom 1.2
+    xpos 900
+    ypos 2850
+    rotate -8

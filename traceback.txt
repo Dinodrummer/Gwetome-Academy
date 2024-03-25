@@ -1,22 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 433, in script
-    mom "Good morning! I made you breakfast since I knew you'd wake up late."
-Exception: Sayer 'mom' is not defined.
+After initialization, but before game start.
+SyntaxError: unexpected EOF while parsing (game/images/Backgrounds/backgrounds.rpy, line 59)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 433, in script
-    mom "Good morning! I made you breakfast since I knew you'd wake up late."
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 890, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 783, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'mom' is not defined.
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\bootstrap.py", line 275, in bootstrap
+    renpy.main.main()
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\main.py", line 600, in main
+    renpy.game.script.analyze()
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\script.py", line 1052, in analyze
+    i.analyze()
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\ast.py", line 1247, in analyze
+    self.atl.analyze(EMPTY_PARAMETERS)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\atl.py", line 761, in analyze
+    self.mark_constant(analysis)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\atl.py", line 789, in mark_constant
+    i.mark_constant(analysis)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\atl.py", line 1120, in mark_constant
+    constant = min(constant, is_constant_expr(expr))
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\py3analysis.py", line 558, in is_constant_expr
+    node, literal = ccache.ast_eval_literal(expr)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\py3analysis.py", line 790, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\python.py", line 1088, in py_compile
+    raise e
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\python.py", line 1034, in py_compile
+    raise orig_e
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\python.py", line 1027, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: unexpected EOF while parsing (game/images/Backgrounds/backgrounds.rpy, line 59)
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.1.3.23091805
 Gwetome Academy 1.0
-Sun Mar 24 00:42:26 2024
+Mon Mar 25 12:20:15 2024
