@@ -62,5 +62,8 @@ image fight2:
     "images/Backgrounds/bg black.jpg"
     zoom 1.2
     xpos 900
-    ypos 2850
+    ypos 2800
     rotate -8
+
+    xoffset -2000
+    yoffset 
