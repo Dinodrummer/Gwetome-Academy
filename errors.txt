@@ -2,9 +2,12 @@
 errors listed below, and try again.
 
 
-File "game/images/Backgrounds/backgrounds.rpy", line 75: expected 'simple_expression' not found.
-    ypos 
-         ^
+File "game/script.rpy", line 2955: invalid syntax
+    newdmg =
+
+File "game/script.rpy", line 2956: invalid syntax
+    player_hp -= (ease .04 xcenter 576)
+                        ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Tue Mar 26 12:36:28 2024
+Wed Mar 27 09:44:17 2024

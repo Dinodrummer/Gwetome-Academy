@@ -22,40 +22,55 @@ init -2:
         0.5
         repeat
 
-    transform e:
-        ycenter 1000
-        xcenter 960
-        alpha 0.0
-        #ease .06 alpha 0.2
-        ease .06 ycenter 916 alpha 0.2
-        #ease .05 alpha 0.4
-        ease .05 ycenter 832 alpha 0.4
-        #ease .04 alpha 0.6
-        ease .04 ycenter 748 alpha 0.6
-        #ease .04 alpha 0.8
-        ease .04 ycenter 664 alpha 0.8
-        #ease .04 alpha 1.0
-        ease .04 ycenter 580 alpha 1.0
-        alpha 1.0
-        ycenter 580
+transform e:
+    ycenter 1000
+    xcenter 960
+    alpha 0.0
 
-    transform left:
-        
-        ease .06 xcenter 900
-        ease .05 xcenter 800
-        ease .04 xcenter 700
-        ease .04 xcenter 600
-        ease .04 xcenter 500
+    ease .06 ycenter 916 alpha 0.2
 
-    transform right:
-        
-        ease .06 xcenter 1000
-        ease .05 xcenter 1100
-        ease .04 xcenter 1200
-        ease .04 xcenter 1300
-        ease .04 xcenter 1400
+    ease .05 ycenter 832 alpha 0.4
+
+    ease .04 ycenter 748 alpha 0.6
+
+    ease .04 ycenter 664 alpha 0.8
+
+    ease .04 ycenter 580 alpha 1.0
+    alpha 1.0
+    ycenter 580
     
-    define ex = Dissolve(0.1)
+transform bar:
+    alpha 0
+    ease .06 xcenter -960
+    alpha 1
+    ease .05 xcenter -576
+        
+    ease .04 xcenter -192
+        
+    ease .04 xcenter 192
+   
+    ease .04 xcenter 576
+
+    ease .04 xcenter 960
+
+
+transform left:
+    
+    ease .06 xcenter 900
+    ease .05 xcenter 800
+    ease .04 xcenter 700
+    ease .04 xcenter 600
+    ease .04 xcenter 500
+
+transform right:
+    
+    ease .06 xcenter 1000
+    ease .05 xcenter 1100
+    ease .04 xcenter 1200
+    ease .04 xcenter 1300
+    ease .04 xcenter 1400
+    
+define ex = Dissolve(0.1)
 
 init python:
 
@@ -1106,7 +1121,7 @@ label s22:
 
     jt "You've been naughty now, haven't you?"
 
-    jt "You think you can walk free after trying to hurt the most important student in the school?"
+    jt "You think you can walk free after trying  to hurt the most important student in the school?"
 
     jt "No! I will not let this stand! Off to counseling with you!"
 
@@ -2886,9 +2901,15 @@ label fight:
     $ enemy_max_hp = 20
 
     scene bedroom
-    show fight1
-    show fight2
+    show fight1 at bar
+    show fight2 at bar
     show jt cocky
+
+    label flirt1:
+        mc "If I could rearrange the alphabet, I'd put 'U' and 'I' together."
+
+        show jt flirty
+        jt "Ohohohoho, you sly dog..."
 
     while player_hp > 0 and enemy_hp > 0:
 
@@ -2897,17 +2918,18 @@ label fight:
 
         $ player_attack_value = 3
         $ enemy_attack_dec = 0
+
         menu:
             "Flirt":
-                #call camera_knight_attack
-                if d10 >= 8:                                                # 30%
-                    jt "That's scary!" 
+
+                if d10 >= 3:                                                # 80%
+                    jt "...Well that's embarrassing." 
                     #TODO: add fight lines to script??
-                    na "Yutaka took [player_attack_value] damage!"          # 70%
+                    na "You're humiliated. Yutaka loses respect for you."          # 70%
                 else:
-                    $ enemy_hp -= d4
-                    #show side gwyn suit scared 
-                    mc scared "[d4] damage!"
+                    $ enemy_attack_dec += d4
+
+                    #mc scared "[d4] damage!"
             "Punch":
                 #call camera_knight_attack                       
                 if d10 >= 9:                                                # 20%
@@ -2937,8 +2959,9 @@ label fight:
             if d10 - enemy_attack_dec <= 0:
                 na "The Yutaka makes a wild attack, but does no damage!"
             else:
-                $ player_hp -= (d10 - enemy_attack_dec)
-                na "The Yutaka makes a wild attack for [d10 - enemy_attack_dec] damage!"
+                $ newdmg = d10 - enemy_attack_dec
+                $ player_hp -= newdmg
+                na "The Yutaka makes a wild attack for [newdmg] damage!"
 
         elif d20 <= 4:                                            # 20%
             

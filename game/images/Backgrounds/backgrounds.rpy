@@ -54,16 +54,14 @@ image choice:
     zoom 1
 image fight1:
     "images/Backgrounds/bg black.jpg"
-    zoom 1.2
-    xpos 800
-    ypos 850
-    rotate -8
+    zoom 1.0
+    #xpos 800
+    ypos -950
+    #alpha 0
+
 image fight2:
     "images/Backgrounds/bg black.jpg"
-    zoom 1.2
-    xpos 900
-    ypos 2800
-    rotate -8
-
-    xoffset -2000
-    yoffset 
+    zoom 1.0
+    #alpha 0
+    #xpos 1200
+    ypos 950

@@ -1,38 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-SyntaxError: unexpected EOF while parsing (game/images/Backgrounds/backgrounds.rpy, line 68)
+While running game code:
+  File "game/script.rpy", line 2956, in script
+    na "The Yutaka makes a wild attack for [d10 - enemy_attack_dec] damage!"
+KeyError: 'd10 - enemy_attack_dec'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\bootstrap.py", line 275, in bootstrap
-    renpy.main.main()
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\main.py", line 600, in main
-    renpy.game.script.analyze()
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\script.py", line 1052, in analyze
-    i.analyze()
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\ast.py", line 1247, in analyze
-    self.atl.analyze(EMPTY_PARAMETERS)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\atl.py", line 761, in analyze
-    self.mark_constant(analysis)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\atl.py", line 789, in mark_constant
-    i.mark_constant(analysis)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\atl.py", line 1120, in mark_constant
-    constant = min(constant, is_constant_expr(expr))
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\py3analysis.py", line 558, in is_constant_expr
-    node, literal = ccache.ast_eval_literal(expr)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\py3analysis.py", line 790, in ast_eval_literal
-    expr = py_compile(expr, 'eval', ast_node=True)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\python.py", line 1088, in py_compile
-    raise e
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\python.py", line 1034, in py_compile
-    raise orig_e
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\python.py", line 1027, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: unexpected EOF while parsing (game/images/Backgrounds/backgrounds.rpy, line 68)
+  File "game/script.rpy", line 2956, in script
+    na "The Yutaka makes a wild attack for [d10 - enemy_attack_dec] damage!"
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\exports.py", line 1474, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\character.py", line 1337, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\character.py", line 1251, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\character.py", line 1231, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\substitutions.py", line 168, in get_field
+    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
+KeyError: 'd10 - enemy_attack_dec'
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.1.3.23091805
 Gwetome Academy 1.0
-Tue Mar 26 13:01:22 2024
+Wed Mar 27 09:43:43 2024
