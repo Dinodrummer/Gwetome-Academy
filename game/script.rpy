@@ -123,6 +123,7 @@ init python:
     jtname = "..."
     sophianame = "..."
     maryamname = "..."
+    mioname = "..."
 
     ririname_kanji = ""
     mcname_kanji = ""
@@ -130,12 +131,14 @@ init python:
     jtname_kanji = ""
     sophianame_kanji = ""
     maryamname_kanji = ""
+    mioname_kanji = ""
 
     metRiri = False
     metJoe = False
-    metJT = False
+    metJt = False
     metSophia = False
     metMaryam = False
+    metMio = False
 
     from game import *
 
@@ -156,7 +159,7 @@ init:
     define na = Character(name=None, ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define mother = Character("Mom", show_name = "お母さん", ctc="ctc_blink", what_outlines = dialogue_outlines)
     define teacher_e = Character("Sensei", show_name = "先生", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
-    define mio = Character("Mio", show_name = "みお", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define mio = Character("[mioname]", show_name = "[mioname_kanji]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
 
     define beckham = Character("Mario", show_name = "マリオ", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define joe = Character("[joename]", show_name = "[joename_kanji]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # Joe
@@ -410,7 +413,7 @@ label start:
 
     stop music
 
-    jump fight
+    jump s52
 
     # show screen character_name("Hana Kobayashi", "小林・花")
 
@@ -1075,7 +1078,8 @@ label s18:
 
 label s19:
 
-    na "You throw a powerful punch, flying him across the room. He won't be bringing you back to class again anytime soon."
+    scene hallway
+    na "You throw a powerful punch, flying him across the room. He won't be bringing you back to class again anytime soon." with hpunch
 
     na "You hear a feeble voice as you walk away."
 
@@ -1103,7 +1107,7 @@ label s21:
 
     mc normal "Oh, nice! Wait, how did you know that we had the same class?"
 
-    jt "I just checked the Google Classroom! It's the job of the student council president to know their fellow students' names, after all."
+    jt "I just checked the class roster! It's the job of the student council president to know their fellow students' names, after all."
 
     jt "C'mon, we have English class next. Let's go!"
 
@@ -2138,42 +2142,84 @@ label s52:
 
     na "Going to class won't get you into college! Instead, you go to the student council office to do something useful instead of rotting in class."
 
+    scene student_council
     na "You look around and see a well dressed and quite handsome student sitting in an important looking chair."
 
-    mc normal "He must be the leader of the student council! I should ask him about signing up!"
+    mc ecstatic "{i}He must be the leader of the student council! I should ask him about signing up!{/i}"
 
-    mc normal "Excuse me, sir?"
+    mc shy "Excuse me, sir?"
 
     na "The student looks up with a puzzled expression on his face."
 
+    show jt ecstatic at e
     jt "Me? Wow, sir is a new one... Do I really look that good?"
 
-    mc normal "Oh, you're just well dressed is all..."
+    mc embarrassed "Oh, you're just well dressed is all..."
 
+    show jt normal
     jt "Anyways, what do you need?"
 
     mc normal "Well, I saw the poster looking for people to join the student council, and I decided to check it out. Can I sign up?"
 
     $ jtname = "Yutaka Yanai"
+    $ jtname_kanji = "柳井・豊"
+    $ metJt = True
+    show jt ecstatic
     jt "Of course! I'd be delighted to have you on our student council team. My name is Yutaka Yanai, nice to meet you!"
 
-    na "Yutaka pulls out a book's worth off papers from his cabinet."
+    na "Yutaka pulls out a book's worth of papers from his cabinet."
 
+    show jt normal
     jt "All you have to do is sign all these documents, and then you can get started."
 
-    mc normal "Oh wow, alright."
+    mc scared "Oh wow, alright."
 
+    scene student_council
     na "It takes the whole school day, but you eventually finish filling out all the documents."
 
-    na "Besides some documents mentioning that the student council will have complete ownership of your loved ones, prized possessions, free time, and soul, you aren't worried about what you are signing up for."
+    na "Besides some documents mentioning that the student council will have complete ownership of your loved ones, prized possessions, free time, and soul, you aren't worried about what you're signing up for."
 
     na "When you are finally done, you hand them all back to Yutaka."
 
+    show jt ecstatic at e
     jt "Congratulations! You are now an official member of the student council. I'm excited to work together~"
 
-    mc normal "Thank you! I'll do my best!"
+    mc ecstatic "Thank you! I'll do my best!"
 
-    # Continue
+    na "Suddenly, the door opens and a mouse-like girl enters the room."
+
+    $ mioname = "Mio"
+    $ mioname_kanji = "みお"
+    $ metMio = True
+
+    show jt normal at left
+    show mio embarrassed at e
+    mio "P-please excuse the intrusion!"
+
+    jt "Ah! Mio, please meet our newest member, [mcname]."
+
+    na "Upon seeing you Mio freezes up, but then quickly nods an awkward smile."
+
+    show mio normal
+    mio "H-hello! I'm Mio..."
+
+    mc normal "I'm [mcname]! I look forward to working with you."
+
+    show jt concerned
+    jt "It's a little embarrassing, but up until now it's been just Mio and I... most of the student council graduated last year."
+
+    show jt cocky
+    jt "Mio's a hard worker though! Isn't that right Mio?"
+
+    show mio embarrassed
+    mio "Yeah..."
+
+    show jt ecstatic
+    jt "Hey! Why don't the two of you take a walk around the campus? Mio can show you our daily patrol routines and responsibilities-- plus you can hang a few posters while you're at it."
+
+    na "Walking behind his desk, Yutaka shuffles through a drawer and grabs a stack of hand-painted posters."
+
+    na "As he gently drops them into your hands, you notice they advertise an upcoming student council election."
 
     jump s74
 
@@ -2373,7 +2419,7 @@ label s58:
 
     maryam "Just one minute...!"
 
-    na "You give they a minute, and they eventually opens the door, silently signaling you to enter the room."
+    na "You give them a minute, and they eventually open the door, silently signaling you to enter the room."
 
     jump s57
  
@@ -2592,7 +2638,7 @@ label s65:
 
     na "The trees are thick and the sun has gone down, the two of you are seemingly alone."
 
-    show kyle embarrassed
+    show kyle embarrassed at e
     kyle "Uhm... [mcname], there has been something on my mind that I have wanted to tell you for a really long time now..."
 
     na "You turn around and look at Akimitsu, his face is flushed red but you can't tell whether he is blushing or if it's the cold breeze."
@@ -2602,11 +2648,13 @@ label s65:
     show kyle loving
     kyle "I have loved you ever since we were kids..."
 
-    #TODO: Leaf crackle and bushes
+    #TODO: Leaf crackle and bushes noises
     na "Just as Akimitsu confesses his love, you hear a leaf crackle and the bushes shake as if someone is in them and are shocked to hear Akimitsu's love confession!" with hpunch
 
+    show kyle scared
     kyle "Who's there!"
 
+    #TODO: Bushes noise
     na "The person in the bushes scurries deeper into them. The two of you look over to find a photo of the two of you from Hoshibucks and a knife!"
 
     na "Whoever was in the bushes has been stalking you guys all day!"
@@ -2905,11 +2953,7 @@ label fight:
     show fight2 at bar
     show jt cocky
 
-    label flirt1:
-        mc "If I could rearrange the alphabet, I'd put 'U' and 'I' together."
-
-        show jt flirty
-        jt "Ohohohoho, you sly dog..."
+    
 
     while player_hp > 0 and enemy_hp > 0:
 
@@ -2923,20 +2967,22 @@ label fight:
             "Flirt":
 
                 if d10 >= 3:                                                # 80%
+                    show jt calculating
                     jt "...Well that's embarrassing." 
                     #TODO: add fight lines to script??
-                    na "You're humiliated. Yutaka loses respect for you."          # 70%
+                    na "Your flirting had no effect!"          # 70%
                 else:
                     $ enemy_attack_dec += d4
-
+                    call flirt1
+                    na "You successfully flirt with Yutaka and reduce his damage by [d4]!"
                     #mc scared "[d4] damage!"
             "Punch":
                 #call camera_knight_attack                       
-                if d10 >= 9:                                                # 20%
+                if d10 >= 8:                                                # 20%
                     $ player_attack_value = (d6 + d4)*2
                     $ enemy_hp -= player_attack_value
                     na "Critical Hit! Yutaka took [player_attack_value] damage!" with hpunch
-                elif d10 >= 5:                                              # 40%  
+                elif d10 >= 3:                                              # 40%  
                     $ player_attack_value =  d6 + 2                                        
                     $ enemy_hp -= player_attack_value
                     na "That's a strong hit! Yutaka took [player_attack_value] hp!" with hpunch
@@ -2955,13 +3001,13 @@ label fight:
 
         call dice_roll
 
-        if d20 >= 19:                                            # 20%       
+        if d20 >= 17:                                            # 20%       
             if d10 - enemy_attack_dec <= 0:
                 na "The Yutaka makes a wild attack, but does no damage!"
             else:
                 $ newdmg = d10 - enemy_attack_dec
                 $ player_hp -= newdmg
-                na "The Yutaka makes a wild attack for [newdmg] damage!"
+                na "The Yutaka makes a wild attack for [newdmg] damage!" with hpunch
 
         elif d20 <= 4:                                            # 20%
             
@@ -2972,9 +3018,13 @@ label fight:
             else:
                 $ enemy_hp = enemy_max_hp
                 na "The Yutaka fully heals itself back to full hp!"
-        else:                                                    # 60%                                                                             
-            $ player_hp -= d4
-            na "The Yukata attacks for [d4] damage!"
+        else:                                                    # 60%         
+            if d4 - enemy_attack_dec <= 0:
+                na "The Yutaka makes an attack, but does no damage!"
+            else:
+                $ newdmg = d4 - enemy_attack_dec
+                $ player_hp -= newdmg
+                na "The Yutaka attacks and does [newdmg] damage!" with hpunch
 
     #call camera_knight_died
     jump s22
@@ -2983,11 +3033,17 @@ label fight:
 
     menu harder_menu:
         "Play this level again?":
-            $ player_hp = 10
-            $ enemy_hp = 10
+            $ player_hp = 20
+            $ enemy_hp = 20
             jump fight
         "Back to Main Menu":
             jump start
+
+    label flirt1:
+        mc cocky "If I could rearrange the alphabet, I'd put 'U' and 'I' together."
+
+        show jt flirty
+        jt "Ohohohoho, you didn't..."
 
         
 

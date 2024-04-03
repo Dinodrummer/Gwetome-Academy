@@ -49,16 +49,20 @@ image room maryam:
 image detention:
     "images/Backgrounds/bg detention.jpg"
     zoom 1
+image student_council:
+    "images/Backgrounds/bg student_council.jpg"
+    zoom 1
 image choice:
     "gui/choice_background.png"
     zoom 1
+
+
 image fight1:
     "images/Backgrounds/bg black.jpg"
     zoom 1.0
     #xpos 800
     ypos -950
     #alpha 0
-
 image fight2:
     "images/Backgrounds/bg black.jpg"
     zoom 1.0
