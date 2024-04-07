@@ -178,10 +178,10 @@ init:
     define mv = Character("Mysterious Voice", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define mi = Character("Mysterious ikemens", show_name = "イケメンたち", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
 
-    define d1 = Character("Deliquent 1", ctc="ctc_blink", what_outlines = dialogue_outlines)
-    define d2 = Character("Deliquent 2", ctc="ctc_blink", what_outlines = dialogue_outlines)
-    define d3 = Character("Deliquent 3", ctc="ctc_blink", what_outlines = dialogue_outlines)
-    define sg = Character("Sullen Girl", ctc="ctc_blink", what_outlines = dialogue_outlines)
+    define d1 = Character("Deliquent 1", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define d2 = Character("Deliquent 2", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define d3 = Character("Deliquent 3", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define ex = Character("Sullen Girl", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     
     style character_text:
         outlines [
@@ -413,7 +413,7 @@ label start:
 
     stop music
 
-    jump s52
+    jump s95
 
     # show screen character_name("Hana Kobayashi", "小林・花")
 
@@ -1183,7 +1183,7 @@ label s24:
     show joe scared at e
     joe "Are you okay?! I'm so sorry, I didn't see where I was going."
 
-    if metJoe == True:
+    if metJoe:
         show joe ecstatic
         joe "Hey, I remember you!"
     
@@ -2221,6 +2221,9 @@ label s52:
 
     na "As he gently drops them into your hands, you notice they advertise an upcoming student council election."
 
+    show jt normal
+    jt "Hopefully we'll get a bit more busy soon."
+
     jump s74
 
 label s53:
@@ -2686,43 +2689,59 @@ label s73:
  
 label s74:
 
+    scene hallway
     na "You begin walking the halls with Mio, putting up posters and talking about club duties. Although Mio seems meek she speaks with openness and discipline."
 
-    mio "I-if you see students skipping class please tell them to return immediately. Some of them will try to use the “restroom excuse” but I'm sure you won't fall for that... it's a bit of an obvious lie."
+    show mio normal at e
+    mio "I-if you see students skipping class please tell them to return immediately."
+    
+    show mio lecturing
+    mio "Some of them will try to use the \"restroom excuse\" but I'm sure you won't fall for that... it's a bit of an obvious lie."
 
-    mc normal "Ha... yeah... who would ever--{nw}"
+    mc ecstatic "Ha... yeah... who would ever--{nw}"
 
-    mio "Aah!"
+    show mio scared
+    #TODO: Thud noise
+    mio "Aah!" with hpunch
 
+    hide mio with ex
     na "Suddenly you find yourself in a stupor, standing above Mio who has face-planted onto the ground."
 
     na "After processing what just happened, you quickly put down the posters."
 
-    mc normal "Are you okay?"
+    show mio sad at e
+    mc scared "Are you okay?"
 
+    show mio embarrassed
     mio "Y-yeah! I-it's my fault, my mind has been a little... occupied."
 
-    mc normal "Oh..."
+    mc shy "Oh..."
 
-    na "You follow Mio's line of sight to… a rose? She tripped on a rose?"
+    na "You follow Mio's line of sight to... a rose? She tripped on a {i}rose{/i}?"
 
     na "All of a sudden, Mio turns to face you with a surprising intensity in her eyes."
 
+    show mio normal
     mio "[mcname], do you... do you..."
 
+    show mio scared
     mio "Oh no! The posters!"
 
-    na "Mio rushes to grab the posters off the ground, and brushes them off carefully. It isn't until now that you notice the intricate lettering and detailed visuals. It's clear that a lot of love was put into them."
+    na "Mio rushes to grab the posters off the ground, and brushes them off carefully."
+    
+    na "It isn't until now that you notice the intricate lettering and detailed visuals. It's clear that a lot of love was put into them."
 
-    mc normal "Sorry! Did you make those?"
+    mc scared "Sorry! Did you make those?"
 
+    show mio normal
     mio "Yeah..."
 
-    mc normal "They're beautiful! It sounds like you do a lot of work, but you must really love the student council."
+    mc ecstatic "They're beautiful! It sounds like you do a lot of work, but you must really love the student council."
 
+    show mio embarrassed
     na "Mio blushes furiously and her eyes roam back to where the rose still sits."
 
-    mio "It's not the student council… I… well, it's nothing."
+    mio "It's not the student council... I... well, it's nothing."
 
     menu:
         "\"It's okay, you can talk to me\"":
@@ -2771,28 +2790,35 @@ label s93:
 
     mc normal "It's okay, you can talk to me."
 
+    show mio embarrassed
     mio "I-- well..."
 
-    mio "Ever since I was little, I've dreamed of meeting my “Prince Charming”… and until recently I never thought I'd find him."
+    show mio normal
+    mio "Ever since I was little, I've dreamed of meeting my \"Prince Charming\"... and until recently I never thought I'd find him."
 
     mio "You know... someone handsome and kind who actually cares about me."
 
     mio "But when I met Yutaka it was almost like destiny."
 
+    show mio lecturing
     mio "Of course, a lot of girls like him-- but for some reason I have this hope that one day he'll choose me."
 
     mio "And until then... I don't mind being \"Cinderella\"."
 
     mio "I believe that if I work hard in the student council and persist where others failed, he will someday return my feelings."
 
+    show mio normal
     mio "I'll have someone to cherish and be cherished by."
 
+    show mio embarrassed
     mio "...To be honest [mcname], you scare me."
 
     mio "Now that most of the student council has graduated and the election is coming up, more people will join. Yutaka won't have to rely on me anymore."
 
+    show mio normal
     mio "I-I know we just met, but please tell me..."
 
+    show mio happy
     mio "What should I do?"
 
     menu:
@@ -2807,47 +2833,70 @@ label s94:
 
 label s95:
 
-    mc normal "Tell him your feelings of course!"
+    mc ecstatic "Tell him your feelings of course!"
 
     mc normal "How do you expect anything to happen if you never let him know?"
 
+    show mio scared
     mio "Wait! B-but--{nw}"
 
-    mc normal "In fact, let's go find him right now!"
+    mc ecstatic "In fact, let's go find him right now!"
 
+    hide mio with ex
     na "You grab Mio's hand and sprint through the halls back to the student council room."
 
+    show mio scared at e
     mio "R-running in the halls isn't allowed!"
 
-    na "As you and Mio are about to turn the last corner, you hear a sudden thud.  The two of you peek around the corner 
-        to find Yutaka talking to a girl slumped against the wall with a pink letter. Talk about bad timing."
+    hide mio with ex
+    #TODO: Thud noise
+    na "As you and Mio are about to turn the last corner, you hear a sudden thud." with hpunch
+
+    na "The two of you peek around the corner to find Yutaka talking to a girl slumped against the wall with a pink letter. Talk about bad timing."
 
     # Whispering
+    show mio scared at e
     mio "Oh, it's the previous vice president! She graduated last year... what's she doing here?"
 
+    show mio scared at left
+    show jt thinking at e
     jt "Beautiful girls like you shouldn't cry... but I'm afraid I can't return your feelings."
 
-    sg "But... but you said you liked me! You even just said I was beautiful! Ever since you entered Gwetome, I've liked you and worked my butt off for you. How could you say such a thing?!"
+    show jt thinking at right
+    show ex sad at e
+    ex "But... but you said you liked me! You even just said I was beautiful!"
 
+    show ex angry
+    ex "Ever since you entered Gwetome, I've liked you and worked my butt off for you. How could you say such a thing?!"
+
+    show jt concerned
     jt "Ha! You claim to \"like\" me... {color=#b0b0b0}{size=-6}whatever that means...{/color}{/size} yet you know nothing about me, do you?"
 
-    mio "!!!"
+    #TODO: Small thud
+    mio "!!!" with hpunch
 
+    show jt calculating
     jt "Whatever romance you had imagined is just a projection of your idiocracy."
 
     jt "I would never look twice at someone who decides to worship me just because of my looks."
 
-    sg "But--{nw}"
+    show ex sad
+    ex "But--{nw}"
 
-    jt "I'm sorry to tell you this Senpai… but you no longer have value to me now that you've graduated."
+    show jt thinking
+    jt "I'm sorry to tell you this Senpai... but you no longer have value to me now that you've graduated."
 
+    show jt ecstatic
     jt "We had fun while it lasted though, didn't we?"
 
-    sg "{i}{color=#b0b0b0}{size=-6}{cps=10}*sobs*{/cps}{/size}{/color}{/i}"
+    ex "{i}{color=#b0b0b0}{size=-6}{cps=10}*sobs*{/cps}{/size}{/color}{/i}"
 
+    hide ex with ex
+    hide jt with ex
     na "As the girl bolts out of the hallway, you turn to look at Mio who seems to be... blushing?"
 
     # Whispering:
+    show mio at right
     mio "This whole time I never realized... how lonely Yutaka is."
 
     # Whispering (loudly)

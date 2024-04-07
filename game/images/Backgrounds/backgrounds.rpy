@@ -52,6 +52,9 @@ image detention:
 image student_council:
     "images/Backgrounds/bg student_council.jpg"
     zoom 1
+image hallway:
+    "images/Backgrounds/bg hallway.jpg"
+    zoom 1
 image choice:
     "gui/choice_background.png"
     zoom 1
