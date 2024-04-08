@@ -55,7 +55,6 @@ transform bar:
 
 
 transform left:
-    
     ease .06 xcenter 900
     ease .05 xcenter 800
     ease .04 xcenter 700
@@ -63,12 +62,18 @@ transform left:
     ease .04 xcenter 500
 
 transform right:
-    
     ease .06 xcenter 1000
     ease .05 xcenter 1100
     ease .04 xcenter 1200
     ease .04 xcenter 1300
     ease .04 xcenter 1400
+
+transform centerL:
+    ease .06 xcenter 500
+    ease .05 xcenter 600
+    ease .04 xcenter 700
+    ease .04 xcenter 820
+    ease .04 xcenter 960
     
 define ex = Dissolve(0.1)
 
@@ -181,7 +186,7 @@ init:
     define d1 = Character("Deliquent 1", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define d2 = Character("Deliquent 2", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define d3 = Character("Deliquent 3", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
-    define ex = Character("Sullen Girl", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define sg = Character("Sullen Girl", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     
     style character_text:
         outlines [
@@ -2845,7 +2850,7 @@ label s95:
     hide mio with ex
     na "You grab Mio's hand and sprint through the halls back to the student council room."
 
-    show mio scared at e
+    show mio scared
     mio "R-running in the halls isn't allowed!"
 
     hide mio with ex
@@ -2863,11 +2868,11 @@ label s95:
     jt "Beautiful girls like you shouldn't cry... but I'm afraid I can't return your feelings."
 
     show jt thinking at right
-    show ex sad at e
-    ex "But... but you said you liked me! You even just said I was beautiful!"
+    show sg sad at e
+    sg "But... but you said you liked me! You even just said I was beautiful!"
 
-    show ex angry
-    ex "Ever since you entered Gwetome, I've liked you and worked my butt off for you. How could you say such a thing?!"
+    show sg angry
+    sg "Ever since you entered Gwetome, I've liked you and worked my butt off for you. How could you say such a thing?!"
 
     show jt concerned
     jt "Ha! You claim to \"like\" me... {color=#b0b0b0}{size=-6}whatever that means...{/color}{/size} yet you know nothing about me, do you?"
@@ -2880,8 +2885,8 @@ label s95:
 
     jt "I would never look twice at someone who decides to worship me just because of my looks."
 
-    show ex sad
-    ex "But--{nw}"
+    show sg sad
+    sg "But--{nw}"
 
     show jt thinking
     jt "I'm sorry to tell you this Senpai... but you no longer have value to me now that you've graduated."
@@ -2889,45 +2894,62 @@ label s95:
     show jt ecstatic
     jt "We had fun while it lasted though, didn't we?"
 
-    ex "{i}{color=#b0b0b0}{size=-6}{cps=10}*sobs*{/cps}{/size}{/color}{/i}"
+    sg "{i}{color=#b0b0b0}{size=-6}{cps=10}*sobs*{/cps}{/size}{/color}{/i}"
 
-    hide ex with ex
+    hide sg with ex
     hide jt with ex
     na "As the girl bolts out of the hallway, you turn to look at Mio who seems to be... blushing?"
 
     # Whispering:
-    show mio at right
+    show mio embarrassed at centerL
     mio "This whole time I never realized... how lonely Yutaka is."
 
     # Whispering (loudly)
-    mc normal "HUH?!"
+    mc scared "HUH?!"
 
+    show mio normal
     mio "Thanks for helping me find my courage, [mcname]."
 
     na "Before you can say anything, Mio steps around the corner and reveals herself to Yutaka."
 
+    show mio happy
     mio "Yutaka!"
 
+    show mio happy at left
+    show jt concerned at e
     jt "Huh? Oh-- Mio."
 
+    show jt thinking
     jt "I guess you saw all that, hm? That's too bad... you've been such a hard worker too."
 
+    show jt normal
     jt "If you want to quit, the application fo--{nw}"
 
+    show mio embarrassed
     mio "No! I-I don't care if you use me."
 
+    show jt embarrassed
     jt "Huh?"
 
-    mio "I want to be by your side Yutaka! I know now that your actions, your words, have carried no weight… and I can't say I'm much different from the old Vice President... but I want to try!"
+    show mio normal
+    mio "I want to be by your side Yutaka! I know now that your actions, your words, have carried no weight..."
 
+    show mio lecturing
+    show jt thinking
+    mio "...and I can't say I'm much different from the old Vice President... but I want to try!"
+
+    show mio lecturing
     mio "Although this side of you is new to me, it does not deter me... or my feelings."
 
     mio "I want to know you for who you are!"
 
+    show mio happy
     jt "..."
 
+    show jt normal
     jt "I... I guess I wouldn't mind that."
 
+    scene black
     na "Thanks to your dating expertise and fully intentional guidance, Mio and Yutaka start dating."
 
     na "Their unexpected yet beautiful romance quickly becomes the talk of the school, and your matchmaking skills make you a local celebrity."
@@ -2941,6 +2963,52 @@ label s95:
     jump e13
 
 label s96:
+
+    mc "You should wait and see how it plays out. You don't want to rush into anything."
+
+    mio "Ah... that's good, I was thinking the same thing."
+
+    mio "I'm glad I got your advice [mcname]-- I was beginning to doubt myself a little bit..."
+
+    mio "W-why don't we finish hanging up these posters?"
+
+    mio "I can keep telling you about the student council in the meantime."
+
+    na "As the two of you continue hanging the posters Mio opens up to you little by little."
+
+    na "You learn about her first time running a school event, how the previous treasurer once embezzled the council's funds..."
+
+    na "...and the time Yutaka ran an extra lap during the sports festival because a cat started chasing him."
+
+    na "You even learn about some of Mio's personal life like how her family owns a restaurant and how her brother almost caught his middle school on fire."
+
+    na "Time flies by, and eventually your spirited conversation comes to an end."
+
+    mio "That's the last poster! ...It's really gotten late hasn't it?"
+
+    mio "Thanks for listening to me ramble-- at least now that you're in the student council, I'll have more time to work at--{nw}"
+
+    stop music
+    mio "!!!"
+
+    mio "I'm late!"
+
+    mio "Ahh, I'm sorry [mcname], I have to get to the restaurant right away!"
+
+    mio "Would you mind grabbing my jacket for me?"
+
+    mio "It's in the student council room-- if you could give it to me tomorrow I would really appreciate it."
+
+    mc "Sure!"
+
+    mio "Thank you so much!"
+
+    scene student_council
+    #TODO: play school
+    na "As Mio hurries away you make your way back to the student council room."
+
+    na "When you open the door Yutaka is hard at work, going through paperwork at his desk. As you come in he looks up at you with a coy smile."
+    
 
 label s97:
 
