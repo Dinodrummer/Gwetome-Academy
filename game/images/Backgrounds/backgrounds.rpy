@@ -46,6 +46,8 @@ image party:
 image room maryam:
     "images/Backgrounds/bg room_maryam.jpg"
     zoom 1
+image street maryam:
+    "images/Backgrounds/bg street maryam"
 image detention:
     "images/Backgrounds/bg detention.jpg"
     zoom 1

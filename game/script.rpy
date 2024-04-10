@@ -418,7 +418,7 @@ label start:
 
     stop music
 
-    jump s95
+    jump s23
 
     # show screen character_name("Hana Kobayashi", "小林・花")
 
@@ -1144,7 +1144,95 @@ label s22:
 
     jump s25
 
-label s23: # Free space
+label s23:
+
+    scene black
+    na "While Yutaka continues to monologue your heart begins to sink."
+
+    na "You think of Mio... has everything she's felt, worked for, and loved... been for a persona?"
+
+    na "Have hundreds of girls' feelings been manipulated just to move forward an agenda?"
+
+    na "Your hands shake at the thought of it."
+
+    #TODO: Shattered glass noise
+    scene student_council
+    na "In a frenzied panic you grab Mio's jacket and look for the nearest exit: the window, and before you know it you're flying through the air with shattered glass as your wings." with hpunch
+
+    scene gate
+    na "As soon as you double somersault handspring onto the grass you start sprinting."
+
+    na "You can hear Yutaka yelling behind you but it doesn't matter-- you must tell Mio."
+
+    scene neighborhood
+    na "As you turn onto the road of her family's restaurant you quickly spot her walking outside."
+
+    mc "Mio!"
+
+    mio "[mcname]?! What are you doing here?"
+
+    mc "I... I..."
+
+    mc "I brought you your jacket."
+
+    mio "B-but I said you could give it to me tomorrow!"
+
+    mio "You didn't have to come all this way!"
+
+    mio "...Huh? Why is there glass all over it?"
+
+    mc "Well. there's also this other thing."
+
+    na "You explain everything to Mio: finding the jacket, getting locked in the room with Yutaka, his true nature... everything. And jumping out the window. That too."
+
+    mio "Wow... I can't believe it."
+
+    mio "How could I be this silly, [mcname]."
+
+    mio "So I'm just... I'm just a tool to him?"
+
+    mc "I think we all are Mio..."
+
+    na "As Mio tries to hold back shaky sobs you pull her into a tight hug."
+
+    mio "T-thank you for t-telling me, [mcname]."
+
+    mio "You're the first good friend I've had in a w-while."
+
+    mc "I'm sorry about all this..."
+
+    mio "D-don't be!"
+
+    na "Mio hastily wipes her tears and looks into your eyes."
+
+    mio "Don't w-worry about me!"
+
+    mio "I'lm sure I'll find my \"Prince Charming\" one day... hehe."
+
+    mio "In the meantime, let's just enjoy highschool."
+
+    mc "Together!"
+
+    mio "Yes... Together!"
+
+    na "Soon after, the two of you quit the student council, and start a European culture club that studies the history, etiquette, fashion, and culture of the continent's nations."
+
+    na "Although the club starts small, Mio's expert management skills and your creativity allow the club to thrive-- eventually warranting the attention of a news station and later a small European monarchy."
+
+    na "After months of correspondence and negotiation, the club is eventually invited to visit the nation."
+
+    na "It is there that Mio meets her real life \"Prince Charming\" and you discover your natural talent for riding horses. Lots of horses."
+
+    na "The two of you fall so deeply in love with the nation that after graduating you both immediately move to its fairytale-like countryside."
+
+    na "Mio marries the kind prince, and you are dubbed the palace's cavalry knight of honor."
+
+    na "A new beginning in a beautiful kingdom-- together."
+
+    na "Who needs the student council? Am I right?"
+
+    jump e15
+
 
 label s24:
 
@@ -2964,16 +3052,20 @@ label s95:
 
 label s96:
 
-    mc "You should wait and see how it plays out. You don't want to rush into anything."
+    mc normal "You should wait and see how it plays out. You don't want to rush into anything."
 
+    show mio normal
     mio "Ah... that's good, I was thinking the same thing."
 
+    show mio embarrassed
     mio "I'm glad I got your advice [mcname]-- I was beginning to doubt myself a little bit..."
 
+    show mio happy
     mio "W-why don't we finish hanging up these posters?"
 
     mio "I can keep telling you about the student council in the meantime."
 
+    hide mio with ex
     na "As the two of you continue hanging the posters Mio opens up to you little by little."
 
     na "You learn about her first time running a school event, how the previous treasurer once embezzled the council's funds..."
@@ -2984,35 +3076,261 @@ label s96:
 
     na "Time flies by, and eventually your spirited conversation comes to an end."
 
+    show mio normal at e
     mio "That's the last poster! ...It's really gotten late hasn't it?"
 
     mio "Thanks for listening to me ramble-- at least now that you're in the student council, I'll have more time to work at--{nw}"
 
     stop music
-    mio "!!!"
+    show mio scared
+    mio "!!!" with hpunch
 
     mio "I'm late!"
 
     mio "Ahh, I'm sorry [mcname], I have to get to the restaurant right away!"
 
+    show mio embarrassed
     mio "Would you mind grabbing my jacket for me?"
 
+    show mio normal
     mio "It's in the student council room-- if you could give it to me tomorrow I would really appreciate it."
 
-    mc "Sure!"
+    mc ecstatic "Sure!"
 
+    show mio happy
     mio "Thank you so much!"
 
-    scene student_council
+    scene black
     #TODO: play school
     na "As Mio hurries away you make your way back to the student council room."
 
+    scene student_council
     na "When you open the door Yutaka is hard at work, going through paperwork at his desk. As you come in he looks up at you with a coy smile."
+
+    na "Or is it just a friendly smile? Cocky? Honestly, at this point you can't tell."
+
+    show jt normal at e
+    jt "Forget something?"
+
+    mc normal "Mio had to leave right away so I'm getting her jacket for her."
+
+    show jt concerned
+    jt "Oh? I think I saw it earlier... let me help you look."
+
+    hide jt with ex
+    na "The two of you thoroughly search the room but the jacket is nowhere to be seen."
+
+    show jt concerned at e
+    jt "That's strange-- I could have sworn she left it here."
+
+    show jt ecstatic
+    jt "Hey why don't we do one more check of everything?"
+
+    mc ecstatic "Okay!"
+
+    scene black
+    #TODO: Thud noise
+    na "As you begin walking towards the cabinet to look for the jacket again, you suddenly trip on something and find yourself falling forward." with hpunch
+
+    na "Closing your eyes, you brace for impact."
+
+    jt "[mcname]!"
+
+    na "You feel a hand grab your waist and pull you back."
+
+    scene student_council
+    na "When you open your eyes, instead of feeling the sweet embrace of the floor you find yourself in Yutaka's arms-- inches away from his face."
+
+    show jt sad at e
+    na "For a second you think you see a brief flash of worry in his expression, but it is soon overtaken by a full grin."
+
+    show jt cocky
+    na "This smile is definitely cocky."
+
+    jt "Careful there. Don't want you hurting those lovely hands of yours-- we still have lots of posters to put up."
+
+    na "You quickly look around for what you tripped over and see a cardboard box full of CDs. Something light blue seems to be peeking out from behind it on the ground."
+
+    show jt ecstatic
+    jt "Oh hey-- it's the jacket!"
+
+    na "As you go to pick up the jacket, you hear a brief jingle of keys in the hallway and a click from the door."
+
+    show jt embarrassed
+    jt "Hey wait! There's still people in here!"
+
+    na "Yutaka rushes to the door and tries to open it, but the handle doesn't budge."
+
+    show jt concerned
+    jt "Hey!!"
+
+    mc shy "Was that the janitor?"
+
+    show jt thinking
+    jt "Yeah-- I heard they got a new hire recently so it was probably him."
+
+    jt "Idiot doesn't know not to lock doors without checking the inside first..."
+
+    show jt concerned
+    jt "Is anyone out there?! Hey!"
+
+    na "Yutaka pounds on the door but it is no use-- no one comes to help."
+
+    mc shy "Hey we could call someone... I could use my phone?"
+
+    jt "You don't have your phone anymore, remember?"
+
+    mc concerned "Huh?"
+
+    show jt thinking
+    jt "It was one of your prized possessions, so when you signed it away it was sold for student council funds."
+
+    na "That fast?! I guess the student council needs to be efficient when they only have three members."
+
+    mc concerned "How about your phone?"
+
+    show jt concerned
+    jt "Don't have one. It's too much of a bother."
+
+    mc shy "Really? But you're so popular... I'm sure people want to contact you?"
+
+    show jt thinking
+    jt "I can get along fine without it."
+
+    show jt normal
+    jt "More importantly, let's see if there's a way to get out of here..."
+
+    #TODO: SpongeBob time card (?)
+    scene black
+    na "Three hours later..."
+
+    scene student_council
+    show jt thinking at e
+    jt "There's no way to get out of here."
+
+    mc shy "I mean... if we're going to be stuck here for the rest of the night, we can talk about something?"
+
+    show jt cocky
+    jt "Ha... talk."
+
+    mc shy "..."
+
+    show jt thinking
+    jt "..."
+
+    show jt concerned
+    jt "Fine. About what?"
+
+    mc concerned "I don't know... love?"
+
+    show jt embarrassed
+    na "Yutaka looks at you, stunned, and then breaks into a fit of laughter."
+
+    show jt cocky
+    na "You're not sure what's supposed to be funny."
+
+    show jt calculating
+    jt "God, I should have known."
+
+    jt "You're all the same aren't you? You. Mio. Everyone."
+
+    mc concerned "Excuse me?"
+
+    show jt concerned
+    jt "Is love all you think about? Is having a lover just the only thing that matters to you people?"
+
+    na "Uh... he might have you figured out there."
+
+    show jt calculating
+    jt "Ha. Who needs something as shallow as love?"
+
+    jt "All you people want is some pretty face to look at-- something to show off."
+
+    show jt concerned
+    jt "Doesn't matter what they're like, you'll already do anything for them. You're just tools to be used."
+
+    mc concerned "..."
+
+    show jt thinking
+    jt "If people can't see me beyond my looks why should I try to change their mind? All I need to do is say a few sweet words and they're already wrapped around my finger."
+
+    menu:
+        "\"I don't see you that way Yutaka.\"":
+            jump s98
+        "{i}Escape and let Mio know Yutaka's true nature":
+            jump s23
     
 
 label s97:
 
 label s98:
+
+    mc shy "I don't see you that way Yutaka."
+
+    mc normal "I don't think that you're just some trophy to display, and I'm definitely not someone you can just manipulate."
+
+    mc concerned "You're good looking, sure, but I don't love you."
+
+    show jt thinking
+    jt "..."
+
+    mc concerned "That's not what love is..."
+
+    mc normal "Love is getting to know someone-- their flaws, their quirks, and their stories."
+
+    mc ecstatic "It's enjoying someone's company and taking the time to work through life, together."
+
+    mc concerned "If you want someone to truly love you... you have to give them a chance first. Believe in them a little."
+
+    mc concerned "I think if you assume everyone is already shallow and close yourself off it's a self-fulfilling prophecy."
+
+    mc shy "Of course they won't \"love\" you for who you are-- you never gave them a chance to try in the first place."
+
+    jt "..."
+
+    show jt concerning
+    jt "I see..."
+
+    jt "I'm sorry for exploding on you, [mcname]... and assuming your intentions..."
+
+    show jt thinking
+    jt "That was wrong of me to do."
+
+    jt "I've been saying that no one sees me for who I am as a person, but... I've been doing the same to others... haven't I?"
+
+    mc normal "I think you just need a little time to change."
+
+    show jt ecstatic
+    jt "No kidding, huh?"
+
+    show jt thinking
+    na "Yutaka chuckles sadly."
+
+    show jt concerned
+    jt "If... it's alright with you... may I get to know you?"
+
+    mc shy "Huh?"
+
+    jt "I'm sure you think I'm a douchebag right now-- and you'd probably be right."
+
+    show jt sad
+    jt "But I want to become someone different."
+
+    jt "I would like to get to know you as a person... and a friend if you'll let me."
+
+    mc ecstatic "Of course!"
+
+    mc normal "Let's be friends."
+
+    show jt normal
+    jt "Thank you."
+
+    mc cocky "Anytime, babygirl."
+
+    show jt ecstatic
+    jt "I'm gonna pretend I didn't hear that."
+
+    jump e14
 
 label s99:
 
@@ -3047,6 +3365,10 @@ label e11: # Big Apple Juice
 label e12: # Love in the Basket
 
 label e13: # The Archer of Love
+
+label e14: # First Love
+
+label e15: # Happily Ever After
 
 label dice_roll:
     $ d4 = renpy.random.randint(1, 4)
@@ -3169,6 +3491,10 @@ label fight:
 
 
         
+
+
+
+
 
 
 
