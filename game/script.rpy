@@ -418,7 +418,7 @@ label start:
 
     stop music
 
-    jump s23
+    
 
     # show screen character_name("Hana Kobayashi", "小林・花")
 
@@ -1164,57 +1164,73 @@ label s23:
 
     na "You can hear Yutaka yelling behind you but it doesn't matter-- you must tell Mio."
 
+    #TODO: Check if this is right neighborhood for mio
     scene neighborhood
     na "As you turn onto the road of her family's restaurant you quickly spot her walking outside."
 
-    mc "Mio!"
+    mc scared "Mio!"
 
+    show mio scared at e
     mio "[mcname]?! What are you doing here?"
 
-    mc "I... I..."
+    mc shy "I... I..."
 
-    mc "I brought you your jacket."
+    mc normal "I brought you your jacket."
 
     mio "B-but I said you could give it to me tomorrow!"
 
     mio "You didn't have to come all this way!"
 
+    show mio embarrassed
     mio "...Huh? Why is there glass all over it?"
 
-    mc "Well. there's also this other thing."
+    mc concerned "Well. there's also this other thing."
 
+    scene black
     na "You explain everything to Mio: finding the jacket, getting locked in the room with Yutaka, his true nature... everything. And jumping out the window. That too."
 
+    scene neighborhood
+    show mio scared at e
     mio "Wow... I can't believe it."
 
+    show mio embarrassed
     mio "How could I be this silly, [mcname]."
 
+    show mio sad
     mio "So I'm just... I'm just a tool to him?"
 
-    mc "I think we all are Mio..."
+    mc concerned "I think we all are Mio..."
 
+    hide mio with ex
     na "As Mio tries to hold back shaky sobs you pull her into a tight hug."
 
+    show mio scared at e
     mio "T-thank you for t-telling me, [mcname]."
 
+    show mio happy
     mio "You're the first good friend I've had in a w-while."
 
-    mc "I'm sorry about all this..."
+    mc shy "I'm sorry about all this..."
 
+    show mio scared
     mio "D-don't be!"
 
     na "Mio hastily wipes her tears and looks into your eyes."
 
+    show mio lecturing
     mio "Don't w-worry about me!"
 
-    mio "I'lm sure I'll find my \"Prince Charming\" one day... hehe."
+    show mio normal
+    mio "I'm sure I'll find my \"Prince Charming\" one day... hehe."
 
     mio "In the meantime, let's just enjoy highschool."
 
-    mc "Together!"
+    mc ecstatic "Together!"
 
+    show mio happy
     mio "Yes... Together!"
 
+    scene black
     na "Soon after, the two of you quit the student council, and start a European culture club that studies the history, etiquette, fashion, and culture of the continent's nations."
 
     na "Although the club starts small, Mio's expert management skills and your creativity allow the club to thrive-- eventually warranting the attention of a news station and later a small European monarchy."
@@ -2450,7 +2466,7 @@ label s56:
 
     # Next Day
     
-    scene door
+    scene street maryam
     na "You knock on the door, and Haruka answers."
 
     show maryam normal
@@ -2497,7 +2513,7 @@ label s58:
 
     na "You walk up to the door of the address posted on the flier with no worries in your mind."
 
-    scene door
+    scene street maryam
     na "You then hear some noises coming from the house, like someone is frantically trying to clean up."
 
     show maryam normal at e
@@ -2626,7 +2642,7 @@ label s61:
  
 label s62: #TODO: Repetitive scene?
 
-    scene door
+    scene street maryam
     show maryam normal at e
     mc normal "Where would you like to go?"
 
@@ -3263,6 +3279,83 @@ label s96:
 
 label s97:
 
+    mc embarrassed "Uhh... I also like Yutaka."
+
+    show mio embarrassed
+    mio "That's what I was afraid of."
+
+    hide mio with ex
+    na "A sudden flush of red fills Mio's face as she darts away from you, dropping the posters back on the ground."
+
+    na "Guess that wasn't something she wanted to hear."
+
+    na "You look down at the mess-- you definitely have your work cut out for you now."
+
+    na "As you begin picking up and hanging the rest of the posters, Yutaka spots you in the hallway and walks up to you."
+
+    show jt cocky at e
+    jt "Hey-- what are you doing all alone?"
+
+    show jt thinking
+    jt "Did Mio run off?"
+
+    mc embarrassed "Um... well..."
+
+    show jt normal
+    jt "Ah, I bet I know what happened."
+
+    show jt cocky
+    jt "Did you two fight over a guy?"
+
+    mc shy "How did you know?"
+
+    show jt normal
+    jt "It's just something I see a lot."
+
+    hide jt with ex
+    na "As Yutaka begins to walk away he winks at you, making your heart skip a beat."
+
+    na "Is now the time? Should you tell him your feelings? Does he already know?!"
+    
+    show jt normal at e
+    mc scared "Hey, wait! Yutaka I--{nw}"
+
+    show jt cocky
+    jt "Keep doing what you're doing, [mcname]!"
+
+    jt "Maybe if you do a good job we could grab a coffee one day."
+
+    na "Well... that gives you something to work towards, I guess."
+
+    scene black
+    na "In your flurry of love you go above and beyond-- hanging posters, cleaning Yutaka's desk, organizing all the council's paperwork..."
+
+    na "It's all hard work but you're determined to do it."
+
+    na "After all, if you continue to try your best you'll eventually win over his heart-- right?"
+
+    na "...Right...?"
+
+    na "As you continue fulfilling Yutaka's requests and supporting him in the student council, you help him become the most powerful student in the academy."
+
+    na "Yet at what cost?"
+
+    na "Your entire life begins to revolve around Yutaka-- you no longer have time for hobbies or friends."
+
+    na "When you wake up you think of Yutaka."
+
+    na "When you go to school you think of Yutaka."
+
+    na "His love is something that feels so close yet is never in reach... and never will be."
+
+    na "You spend the rest of high school in his shadow, unknown and forgotten, forever vying for his love and attention."
+
+    na "But I mean... it's in the name of love, right?"
+
+    jump e16
+
+
+
 label s98:
 
     mc shy "I don't see you that way Yutaka."
@@ -3369,6 +3462,8 @@ label e13: # The Archer of Love
 label e14: # First Love
 
 label e15: # Happily Ever After
+
+label e16: # Mio 2.0
 
 label dice_roll:
     $ d4 = renpy.random.randint(1, 4)

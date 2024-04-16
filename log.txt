@@ -1,41 +1,41 @@
-Tue Apr  9 10:14:13 2024
+Thu Apr 11 14:56:56 2024
 Windows-10-10.0.22631
 Ren'Py 8.1.3.23091805
  
 
 Bootstrap to the start of init.init. took 0.04s
 Early init. took 0.00s
-Loader init. took 0.17s
+Loader init. took 0.14s
 Loading error handling. took 0.04s
-Loading script. took 0.53s
-Loading save slot metadata. took 0.05s
+Loading script. took 0.52s
+Loading save slot metadata. took 0.06s
 Loading persistent. took 0.00s
-Running init code. took 0.11s
+Running init code. took 0.07s
 Loading analysis data. took 0.02s
 Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.56s
+Reloading save slot metadata. took 0.70s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\jtgru\\AppData\\Roaming/RenPy/backups\\Gwetome-Academy':
-Dump and make backups. took 0.08s
+Dump and make backups. took 0.14s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.04s
+Initial gc. took 0.03s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.04s
+Init translation took 0.05s
 Build styles took 0.00s
-Load screen analysis took 0.00s
+Load screen analysis took 0.02s
 Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
+Save screen analysis took 0.03s
+Prepare screens took 0.09s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
+Save bytecode. took 0.05s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.12s
+Interface start. took 0.11s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2880, 1800)
