@@ -122,6 +122,8 @@ init python:
     quizAnswers.remove(quizGuess2)
     quizGuess3 = quizAnswers[renpy.random.randint(0,len(quizAnswers) - 1)]
 
+    projectScore = 0
+
     ririname = "..."
     mcname = "..."
     joename = "..."
@@ -418,7 +420,7 @@ label start:
 
     stop music
 
-    
+    jump s55
 
     # show screen character_name("Hana Kobayashi", "小林・花")
 
@@ -986,7 +988,7 @@ label s16:
 
 label s17:
 
-    na "Yukata scolds you for skipping class."
+    na "Yutaka scolds you for skipping class."
 
     na "After some thinking, you decide that this treatment isn't fair in the slightest!"
 
@@ -996,7 +998,7 @@ label s17:
 
     mc normal "What are you doing out of class, huh? I'll make {i}you{/i} go back!"
 
-    na "Yukata stares at you for a moment, then a small grin appears on his face."
+    na "Yutaka stares at you for a moment, then a small grin appears on his face."
 
     jt "Ah, people like you are my favorite!"
 
@@ -1020,7 +1022,7 @@ label s17:
 
     jt "Don't make me angrier now. Welp, See you around!"
 
-    na "Yukata turns and walks away confidently. Man, what a prick!"
+    na "Yutaka turns and walks away confidently. Man, what a prick!"
 
     na "You pick up the detention slip that he slid in your pocket and reluctantly read it."
 
@@ -1118,13 +1120,13 @@ label s21:
 
 label s22:
 
-    na "You release a powerful punch aimed right at Yukata!"
+    na "You release a powerful punch aimed right at Yutaka!"
 
     na "...and miss. Well, that's embarrassing."
 
     mc normal "Oh... oops."
 
-    jt "Ahahha, how cute! You really think you stand a chance against me? I am the one and only student council president, Yukata!"
+    jt "Ahahha, how cute! You really think you stand a chance against me? I am the one and only student council president, Yutaka!"
 
     mc normal "Uhm... okay?"
 
@@ -1140,7 +1142,7 @@ label s22:
 
     jt "Hey! Wait, don't say that about me!"
 
-    na "You turn and go to counseling. You can feel Yukata fuming behind you, but you keep walking without a care in the world."
+    na "You turn and go to counseling. You can feel Yutaka fuming behind you, but you keep walking without a care in the world."
 
     jump s25
 
@@ -2390,57 +2392,129 @@ label s55:
 
     na "Hey, look, someone's walking up to you!"
 
-    jt "Hey, I'm Yukata! You seem pretty cool, want to work together?"
+    $ jtname = "Yutaka Yanai"
+    $ jtname_kanji = "柳井・豊"
+    $ metJt = True
 
-    mc normal "Oh, sure! What should we do?"
+    show jt normal at e
+    jt "Hey cutie, I'm Yutaka. Why don't we work together? It seems like everyone is already paired up."
 
-    jt "I was thinking a love story could be pretty fun..."
+    na "It most definitely does not seem like everyone is paired up... in fact you're getting stared down quite intently by a group of slightly scary girls."
 
-    na "Something is fishy here..."
+    na "You take a second look at Yutaka. He has a kind and princely appearance yet there's a slight snobbishness about him. Or maybe it's tiredness?"
 
-    mc normal "Oh, uh, sure, that could be fun!"
+    na "You wouldn't be surprised if this was his last-ditch attempt at \"escaping\" a certain group of girls."
 
+    na "Either way, you don't have much to lose... probably."
+
+    mc normal "Oh, sure-- I'm [mcname]! What should we do for the skit?"
+
+    show jt thinking
+    jt "I don't have any ideas right now... want to come over to my place after school and we can decide then?"
+
+    mc ecstatic "Oh, okay!"
+
+    show jt ecstatic
     jt "Alright, it's settled then! Meet me at my house after school to work on it."
 
     # At Yutaka's house
 
-    na "That night, you head over to Yukata's house."
+    scene house jt
+    na "That afternoon, you head over to Yutaka's house."
 
-    na "Well, more like Yukata's castle. This thing is massive!"
+    na "Well, more like Yutaka's {i}castle.{/i} This place is massive!"
 
-    na "Anyways, you spend hours with Yukata, and eventually finish the project."
+    show jt cocky at e
+    jt "Hey [mcname], welcome in! Make yourself at home."
 
+    show jt normal
+    jt "So, do you have any ideas?"
+
+    menu:
+        mc shy "For the genre, let's do a..."
+        "Action":
+            $ projectScore += 0
+        "Drama":
+            $ projectScore += 1
+        "Romance":
+            $ projectScore += 2
+    menu:
+        mc shy "And we can film at..."
+        "The beach":
+            $ projectScore += 2
+        "The park":
+            $ projectScore += 0
+        "Yutaka's house":
+            $ projectScore += 1
+    menu:
+        mc shy "And the actors can be Yutaka and..."
+        "Yutaka alone":
+            $ projectScore += 0
+        "Me":
+            $ projectScore += 1
+        "My Jungkook photocard":
+            $ projectScore += 2
+    menu:
+        mc ecstatic "We'll make the film's underlying message about..."
+        "Smartphone addiction":
+            $ projectScore += 2
+        "Immigration":
+            $ projectScore += 1
+        "Sustainable fashion":
+            $ projectScore += 0
+    menu:
+        mc ecstatic "And the background music can be..."
+        "A slow ballad":
+            $ projectScore += 2
+        "The Magical Ikemen Intro Song":
+            $ projectScore += 0
+        "Indie-rock":
+            $ projectScore += 1
+    menu:
+        mc normal "Finally, we'll edit it with..."
+        "Subtitles":
+            $ projectScore += 0
+        "Slo-mo shots":
+            $ projectScore += 1
+        "Flower special effects":
+            $ projectScore += 2
+
+    show jt ecstatic
+    jt "Alright, sounds good! Let's do it!"
+
+    scene house jt
+    na "You spend hours with Yutaka, and eventually finish the project."
+
+    show jt ecstatic at e
     jt "Whew! That's the last scene!"
 
-    mc normal "Yes! We did it!"
+    mc ecstatic "Yes! We did it!"
 
+    show jt concerned
     jt "Well, I guess you should start heading back soon..."
 
+    show jt thinking
     jt "It was... really fun to work together."
 
-    mc normal "Yeah! I had a lot of fun too. Well, see you tomorrow!"
+    show jt normal
+    jt "I feel like I really got to know you today, cutie."
 
-    na "Well, although Yuata presents as snobby, he really is nice on the inside."
+    show jt ecstatic
+    jt "I appreciate it."
 
-    na "And it seems like he really cares about you... hehe!"
+    mc ecstatic "Yeah! I had a lot of fun too. Well, see you tomorrow!"
+
+    hide jt with ex
+    na "Well, although Yutaka initially presents as snobby, he really is nice on the inside."
+
+    na "And it seems like he {i}really{/i} cares about you... hehe!"
 
     na "Ahem, anyways, the next day in class..."
 
-    # In class the next day
-
-    teacher_e "Next we have... Yukata and [mcname]'s project."
-
-    jt "Ah yes, our masterpiece is finally being shown!"
-
-    mc normal "Here we go..."
-
-    na "As the teacher shows your project, you can here your classmates murmuring."
-
-    na "As you thought, they're suspicious. Your project seems a little too romantic..."
-
-    teacher_e "Comments?"
-
-    #TODO: Finish Scene 55
+    if projectScore >= 8:
+        jump s100
+    else:
+        jump s99
 
 label s56:
 
@@ -3404,7 +3478,7 @@ label s98:
 
     mc shy "Huh?"
 
-    jt "I'm sure you think I'm a douchebag right now-- and you'd probably be right."
+    jt "I'm sure you think I'm a terrible person right now-- and you'd probably be right."
 
     show jt sad
     jt "But I want to become someone different."
@@ -3426,6 +3500,24 @@ label s98:
     jump e14
 
 label s99:
+
+    scene classroom_day
+
+    teacher_e "Next we have... Yutaka and name's project."
+
+    jt "Ah yes, our masterpiece is finally being shown!"
+
+    mc "Here we go..."
+
+    na "As the teacher shows your project, you can hear your classmates murmuring."
+
+    na "They're... suspicious. Your project seems a little too romantic..."
+
+    teacher_e "Comments?"
+
+
+
+
 
 label s100:
 

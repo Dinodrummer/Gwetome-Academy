@@ -59,6 +59,10 @@ image house maryam:
     "images/Backgrounds/bg house maryam.png"
     zoom 1
 
+image house jt:
+    "images/Backgrounds/bg house jt.jpg"
+    zoom 1
+
 image detention:
     "images/Backgrounds/bg detention.jpg"
     zoom 1
