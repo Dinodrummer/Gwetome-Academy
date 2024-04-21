@@ -188,6 +188,11 @@ init:
     define d1 = Character("Deliquent 1", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define d2 = Character("Deliquent 2", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define d3 = Character("Deliquent 3", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define s1 = Character("Student 1", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define s2 = Character("Student 2", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define s3 = Character("Student 3", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define mg1 = Character("Mean girl 1", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define mg2 = Character("Mean girl 2", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define sg = Character("Sullen Girl", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     
     style character_text:
@@ -391,6 +396,15 @@ label riri:
         riri "Look at you go!"
 
         $ riris[36] = False
+    elif riris[75]:
+
+        riri "A fight would be fun..."
+
+        riri "But wait, no, Yutaka won't like it if you cause a huge fight!"
+
+        riri "Think about his feelings, and just let this play out peacefully!"
+
+        $ riris[75] = False
 
     else:
         na "{i}[[It doesn't look like Riri has anything to say right now.]{/i}"
@@ -420,7 +434,7 @@ label start:
 
     stop music
 
-    jump s55
+    jump s99
 
     # show screen character_name("Hana Kobayashi", "小林・花")
 
@@ -2934,9 +2948,90 @@ label s74:
 
  
 label s75:
- 
+
+    scene classroom day
+
+    mc shy "Yesterday was so embarrassing! I hope no one says anything..."
+
+    na "I'm sure it'll be fine..."
+
+    na "Don't mind everybody's staring... I'm sure your outfit today is just... really cute!"
+
+    mc embarrassed "Oh no, what should I do??"
+
+    na "Ah, look out!"
+
+    show mg1 happy at e
+    mg1 "Oh look, it's [mcname]!"
+
+    show mg1 happy at left
+    show mg2 happy at e
+    mg2 "Oh nooo, don't be late to class now! Yutaka might give you an {i}extra scolding!{/i}"
+
+    na "The girls look at each other and snicker deviously... they really think they're soo funny, huh?"
+
+    mc embarrassed "It wasn't all my choice that our project ended up like that! He wanted it that way!"
+
+    mc concerned "But seriously, why do you all care so much??"
+
+    show mg1 sad
+    mg1 "Oh, please sweetie, everyone knows you wanted it."
+
+    show mg2 angry
+    mg2 "Yeah, and you never stopped to think about how we feel! The whole school wants to be with the student council president!"
+
+    mc embarrassed "{i}Student council president?! No wonder he's so popular!{/i}"
+
+    show mg2 sad
+    mg2 "It's not fair for some random new girl to swoop in and get his attention!"
+
+    show mg1 angry
+    mg1 "I bet you only asked him to work together because you knew how rich and popular he is! You used him for his money!"
+
+    show mg1 sad
+    mc sad "But he asked me..."
+
+    show mg2 angry
+    mg2 "Oh shut up, you just wanted to make us jealous!"
+
+    show mg1 angry
+    mg1 "You don't love him as much as we do!"
+
+    na "This is getting a little out of hand..."
+
+    na "It's time to settle this... but how?"
+
+    mc shy "{i}Let me think...{/i}"
+
+    if metRiri:
+        $ riris[75] = True
+
+    menu:
+        "Don't let those girls walk all over you! Get physical and fight back!":
+            jump s76
+        "Well, I'm sure Yutaka will be here any moment now to resolve this commotion... it'd be best to be silent and tough it out...":
+            jump s77
+
 label s76:
- 
+
+    na "With determined rage, you expertly sucker punch one of those annoying stuck up ******!"
+
+    #TODO: Thud noise
+    hide mg1 with ex
+    na "Oooh, right in the face!"
+
+    na "Wow, that's a lot of blood... Jeez, did you break her nose?!"
+
+    na "Whatever, I guess she had it coming..."
+
+    mc "Stay away from me! I don't care what you think, but I didn't ask for any of this!"
+
+    mg2 "Oh my god, are you insane?! Sierra, are you okay??"
+
+    mg1 "Ow, that hurt! What is wrong with you!"
+
+    na "Suddenly, the expressions on the two girls' faces dramatically change, and they seem to be staring at something looming above your shoulder…"
+
 label s77:
 
 label s78:
@@ -3501,23 +3596,37 @@ label s98:
 
 label s99:
 
-    scene classroom_day
+    scene classroom day
 
+    show teacher_e normal at e
     teacher_e "Next we have... Yutaka and name's project."
 
+    show teacher_e normal at left
+    show jt ecstatic at e
     jt "Ah yes, our masterpiece is finally being shown!"
 
-    mc "Here we go..."
+    mc shy "Here we go..."
 
+    hide teacher_e with ex
+    hide jt with ex
     na "As the teacher shows your project, you can hear your classmates murmuring."
 
     na "They're... suspicious. Your project seems a little too romantic..."
 
+    show teacher_e normal at e
     teacher_e "Comments?"
 
+    s1 "Thought it was very cute..."
 
+    s2 "Wow, it almost felt like you two are {i}really{/i} in love!"
 
+    #TODO: Whole class laughing noise (?)
 
+    mc embarrassed "This is too embarrassing!"
+
+    na "You grab your stuff and sprint out of class."
+
+    jump s75
 
 label s100:
 

@@ -289,8 +289,6 @@ screen choice(items):
         for i in items:
             textbutton _(i.caption) action [Function(RiriDelete), i.action]
 
-
-
 style choice_vbox is vbox
 style choice_button is button
 style choice_button_text is button_text
