@@ -434,7 +434,7 @@ label start:
 
     stop music
 
-    jump s99
+    jump s75
 
     # show screen character_name("Hana Kobayashi", "小林・花")
 
@@ -3007,9 +3007,9 @@ label s75:
         $ riris[75] = True
 
     menu:
-        "Don't let those girls walk all over you! Get physical and fight back!":
+        "{i}Don't let those girls walk all over you! Get physical and fight back!":
             jump s76
-        "Well, I'm sure Yutaka will be here any moment now to resolve this commotion... it'd be best to be silent and tough it out...":
+        "{i}Well, I'm sure Yutaka will be here any moment now to resolve this commotion... it'd be best to be silent and tough it out...":
             jump s77
 
 label s76:
@@ -3024,13 +3024,46 @@ label s76:
 
     na "Whatever, I guess she had it coming..."
 
-    mc "Stay away from me! I don't care what you think, but I didn't ask for any of this!"
+    mc angry "Stay away from me! I don't care what you think, but I didn't ask for any of this!"
 
+    show mg2 sad
     mg2 "Oh my god, are you insane?! Sierra, are you okay??"
 
+    show mg2 angry at left
+    show mg1 angry at e
     mg1 "Ow, that hurt! What is wrong with you!"
 
-    na "Suddenly, the expressions on the two girls' faces dramatically change, and they seem to be staring at something looming above your shoulder…"
+    show mg1 sad
+    show mg2 sad
+    na "Suddenly, the expressions on the two girls' faces dramatically change, and they seem to be staring at something looming above your shoulder..."
+
+    show mg1 sad at right
+    show jt concerned at e
+    na "Caught literally red handed, you turn around to see Yutaka, looking down on you with disappointment."
+
+    mc scared "Y-Yutaka! This isn't what it looks like... They were blaming me of using you, and-{nw}"
+
+    show jt thinking
+    jt "Quiet."
+
+    show mg1 happy
+    mg1 "Oh thank goodness! Yutaka-Senpai, please help me!"
+
+    show mg2 angry
+    mg2 "She attacked us for no reason! She's deranged! Get her out of this school!"
+
+    jt "{i}{color=#b0b0b0}{size=-6}We'll see about that...{/color}{/size}{/i}"
+
+    show jt concerned
+    jt "Girls, please calm down. Sierra and Brynja, head to the office and give your account to the principal."
+
+    show jt thinking
+    jt "As for you, [mcname], come with me. I want to hear what happened from your point of view."
+
+    scene black
+    na "Yutaka leads you to the student council room and sits you down across from him, all alone..."
+
+    jump s92
 
 label s77:
 
@@ -3063,6 +3096,8 @@ label s90:
 label s91:
 
 label s92:
+
+    scene student_council
     
 label s93:
 
