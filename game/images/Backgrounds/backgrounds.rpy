@@ -22,11 +22,17 @@ image park night:
 image gate:
     "images/Backgrounds/bg gate.jpg"
     zoom 1
-image classroom day:
-    "images/Backgrounds/bg classroom_day.jpg"
+image classroom1 day: # English
+    "images/Backgrounds/bg classroom1_day.jpg"
     zoom 1
-image classroom night:
-    "images/Backgrounds/bg classroom_night.jpg"
+image classroom1 night: # English
+    "images/Backgrounds/bg classroom1_night.jpg"
+    zoom 1
+image classroom2 day: # Math
+    "images/Backgrounds/bg classroom2_day.jpg"
+    zoom 1
+image classroom2 night: # Math
+    "images/Backgrounds/bg classroom2_night.jpg"
     zoom 1
 image counseling:
     "images/Backgrounds/bg counseling.jpg"

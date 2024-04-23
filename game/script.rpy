@@ -185,6 +185,7 @@ init:
     define mv = Character("Mysterious Voice", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define mi = Character("Mysterious ikemens", show_name = "イケメンたち", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
 
+    define ff = Character("Deliquent 1", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define d1 = Character("Deliquent 1", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define d2 = Character("Deliquent 2", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define d3 = Character("Deliquent 3", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
@@ -405,6 +406,17 @@ label riri:
         riri "Think about his feelings, and just let this play out peacefully!"
 
         $ riris[75] = False
+    elif riris[92]:
+
+        riri "Dang it name, I told you he would be mad!"
+
+        riri "But, he did seem pleased that you went that far for him... hehe!"
+
+        riri "If you accept his forgiveness and change now, you can still have a chance!"
+
+        riri "Come on now, what are you waiting for? Do it!"
+
+        $ riris[92]
 
     else:
         na "{i}[[It doesn't look like Riri has anything to say right now.]{/i}"
@@ -433,8 +445,6 @@ label start:
         #何とか、何々
 
     stop music
-
-    jump s75
 
     # show screen character_name("Hana Kobayashi", "小林・花")
 
@@ -646,10 +656,9 @@ label s6:
 
     joe "{i}Kyaa~!{/i} I'm gonna be late!"
 
-    show joe blank at e
     na "Ah, there it is. You look up and see a hot... pole? No wait! You shake your head to clear your vision."
 
-    show joe concerned with fade
+    show joe concerned at e
     #TODO: Joe special scene
     joe "Sorry, are you ok? I don't know what came over me. I just felt a sudden need to run around that corner."
 
@@ -661,8 +670,10 @@ label s6:
     $ joename_kanji = "くん・ジョー"
     $ metJoe = True
 
+    show joe ecstatic
     joe "The name's Joe. I'll see ya!"
 
+    hide joe with ex
     na "After you both apologize you quickly continue on your way."
 
     jump s10
@@ -791,7 +802,7 @@ label s11:
 
     na "Skipping class? It looks like you value your education..."
 
-    scene classroom day
+    scene classroom1 day
     na "You walk to class and fling open the door."
 
     na "You're here in order to learn! You must study! You have your whole life ahead of you and you're not backing down!"
@@ -2208,7 +2219,7 @@ label s51:
 
     # English class scene
 
-    scene classroom day
+    scene classroom1 day
     na "You arrive at your English class. You could have had something fun, like Japanese. But {i}English?{/i}"
 
     #TODO: Sitting down noise(?)
@@ -2234,7 +2245,7 @@ label s51:
 
     # Back to classroom scene
 
-    scene classroom day
+    scene classroom1 day
     na "Suddenly, you feel a sharp pain on your forehead. A piece of chalk then drops onto your desk."
 
     show teacher_e angry at e
@@ -2799,7 +2810,7 @@ label s63:
 
     # New day at school
 
-    scene classroom day
+    scene classroom1 day
     na "You and Haruka plan on finishing the project later that day, but then you notice a handsome figure approaching..."
 
     show kyle normal at e
@@ -2949,7 +2960,7 @@ label s74:
  
 label s75:
 
-    scene classroom day
+    scene classroom1 day
 
     mc shy "Yesterday was so embarrassing! I hope no one says anything..."
 
@@ -3098,6 +3109,36 @@ label s91:
 label s92:
 
     scene student_council
+
+    show jt thinking at e
+    jt "Tell me what happened."
+
+    na "You explain to him everything that they said that led up to you punching the girl."
+
+    na "He seems disappointed by your story. But somehow... amused?"
+
+    show jt concerned at e
+    jt "Okay, look. I appreciate you looking out for me, and respect the intention of standing up for yourself."
+
+    jt "But seriously, no matter what happens, you cannot be violent."
+
+    show jt thinking
+    jt "If you want to continue being my companion, you need to learn to control yourself."
+
+    na "His companion? I wonder what that means..."
+
+    na "You sheepishly look at the floor, not sure how to reply."
+
+    jt "[mcname], look at me. Can you do that?"
+
+    if metRiri:
+        $ riris[92] = True
+
+    menu:
+        "{i}Accept his forgiveness and promise to be more careful":
+            jump s102
+        "{i}Tell him he's not the boss of you!":
+            jump s103
     
 label s93:
 
@@ -3631,7 +3672,7 @@ label s98:
 
 label s99:
 
-    scene classroom day
+    scene classroom1 day
 
     show teacher_e normal at e
     teacher_e "Next we have... Yutaka and name's project."
@@ -3665,7 +3706,109 @@ label s99:
 
 label s100:
 
+    scene classroom1 day
+    teacher_e "Next we have... Yutaka and [mcname]'s project."
+
+    jt "Ah yes, our masterpiece is finally being shown!"
+
+    mc "I hope everyone likes it..."
+
+    na "As the teacher shows your project, smiles and nods of approval appear on your classmates' faces."
+
+    na "Success! Everyone seemed to like it. Good job, [mcname]."
+
+    teacher_e "Comments?"
+
+    na "As kids' hands fly in the air to sing praise of your masterpiece, the door dramatically opens and a well dressed man with a camera around his neck enters the room..."
+
+    jump s101
+
 label s101:
+
+label s102:
+
+    mc "I'm sorry, Yutaka. I shouldn't have gotten so worked up."
+
+    mc "I like working with you... I promise I won't be violent ever again! Please forgive me!"
+
+    jt "Good, that's more like it."
+
+    jt "Don't you worry your little head about it! What's done is done."
+
+    jt "Although, I might have to watch you a little {i}closer{/i} now... {color=#b0b0b0}{size=-6}*wink*{/color}{/size}"
+
+    na "Anddd he's right back to normal. No surprise there."
+
+    na "You and him spend some time chatting, when Yutaka suddenly remembers that he's got student council work to do."
+
+    #TODO: Fix s102 (talk to maryam)
+
+label s103:
+
+    mc angry "Yutaka, you aren't the boss of me. I can and will do whatever I want."
+
+    mc concerned "If you don't agree with my methods of cleaning up messes, then we can part ways."
+
+    scene black
+
+    na "You get up and leave the room without a second glance at your student council president."
+
+    na "He seems dumbfounded, like no one has ever rejected him like that before."
+
+    scene hallway
+    na "As you turn into the hallway, you see a nonchalant, delinquent-looking student leaned against the wall, seemingly waiting for you."
+
+    show sophia normal at e
+    sophia "Yo."
+
+    mc shy "Hello?"
+
+    show sophia flirty
+    sophia "The way you handled that was pretty cool, you know. I love a good ol' fight, and you really showed it to that stuck up student council president of ours."
+
+    mc embarrassed "Oh, you saw all that? Haha, yeah... I guess you could say it was pretty cool..."
+
+    show sophia happy
+    sophia "You've got some serious spunk, stepping up for yourself like that."
+
+    show sophia flirty
+    sophia "You know, I think you'd fit right into my family, if you catch my drift. {color=#b0b0b0}{size=-6}*wink*{/color}{/size}"
+
+    mc embarrassed "Family? Wait... are you trying to recruit me to be a yakuza?!"
+
+    show sophia normal
+    sophia "You tell me."
+
+    mc normal "That actually sounds pretty fun..."
+
+    mc ecstatic "You know what, school is lame anyways! I'll do it, I'm in!"
+
+    show sophia happy
+    sophia "That's the spirit."
+
+    na "Well that was a bold choice!"
+
+    #TODO: Yakuza family headquarters background (?)
+    na "Anyways, Isamu leads you to his Yakuza family headquarters for initiation."
+
+    scene black
+    na "After a long initiation process..."
+
+    ff "By drinking this sake, you hereby dedicate your life to being a child under my protection. Is this your wish?"
+
+    mc normal "Yes, Father."
+
+    ff "Very well."
+
+    na "As you drink the sake, a sense of relief washes over you, knowing you'll never be under the control of that bossy Yutaka ever again."
+
+    jump e17
+
+label s104:
+
+label s105:
+
+label s106:
 
 label e0:
 
@@ -3700,6 +3843,8 @@ label e14: # First Love
 label e15: # Happily Ever After
 
 label e16: # Mio 2.0
+
+label e17: # Yakuza
 
 label dice_roll:
     $ d4 = renpy.random.randint(1, 4)
