@@ -416,7 +416,14 @@ label riri:
 
         riri "Come on now, what are you waiting for? Do it!"
 
-        $ riris[92]
+        $ riris[92] = False
+    elif riris[94]:
+
+        riri "Why are you looking at me?"
+
+        riri "This time it's your decision, okay?"
+
+        $ riris[94] = False
 
     else:
         na "{i}[[It doesn't look like Riri has anything to say right now.]{/i}"
@@ -446,6 +453,7 @@ label start:
 
     stop music
 
+    jump s18
     # show screen character_name("Hana Kobayashi", "小林・花")
 
     scene bedroom
@@ -1055,6 +1063,7 @@ label s17:
 
 label s18:
 
+    scene hallway
     na "As you're wandering the halls, you notice a student walking your way. He seems to be dressed very nicely, even for the prestigious Gwetome Academy."
 
     na "Wait, that's the student council president! You're in trouble if he finds you out here."
@@ -1067,6 +1076,7 @@ label s18:
 
     label s18_1:
 
+        #TODO: Rose snap noise (?)
         na "As you tip-toe over to the corner of the hallway, you accidentally step on a very conveniently placed rose."
 
         jt "How'd a rose get in here?"
@@ -1081,17 +1091,20 @@ label s18:
 
         jump s18_3
 
-
     label s18_3:
 
+        show jt amorous at e
         jt "What's a pretty looking girl such as yourself doing around these parts?"
 
+        show jt concerned
         jt "Wait, what's a student doing in the halls? ...I'm terribly sorry, but you're gonna have to go back to class."
 
-        mc normal "Nonono, I just--{nw}"
+        mc scared "Nonono, I just--{nw}"
 
+        show jt thinking
         jt "--Needed to go to the bathroom and got lost in the halls, I've been there."
 
+        show jt ecstatic
         jt "Well, you're not going anywhere without a hall pass. How about we bring you back to class to get one?"
 
         menu:
@@ -1106,7 +1119,7 @@ label s18:
 
         na "Uh oh, he got back up? Looks like it's time for a fight!"
 
-        jump ph
+        jump fight
 
 label s19:
 
@@ -3185,6 +3198,86 @@ label s93:
 
 label s94:
 
+    na "You decide not to push into the matter."
+
+    na "After all, the two of you just met-- it might be rude to ask anything too personal."
+
+    hide mio with ex
+    na "You continue to walk the halls with Mio, putting up posters and talking about the student council."
+
+    show mio normal at e
+    mio "By the way [mcname], I'm a little curious... what's your campaign plan for the student council election?"
+
+    mc embarrassed "Huh?"
+
+    show mio scared
+    mio "Ah! N-not that you need to tell me anything!"
+
+    show mio embarrassed
+    mio "Sorry for being so presumptuous... you probably want to keep it a secret."
+
+    mc concerned "What? I haven't signed up to run in the election."
+
+    na "Mio suddenly turns to you with a puzzled expression."
+
+    show mio scared
+    mio "What are you talking about? Of course you have!"
+
+    show mio lecturing
+    mio "When you joined the student council you signed away your soul, didn't you?"
+
+    mc shy "Yeah..."
+
+    mio "So, you must run in the election. Student council members' souls are bound by contract."
+
+    mc scared "What?! What happens if I break the contract?"
+
+    show mio embarrassed
+    mio "..."
+
+    show mio sad
+    mio "...B-bad things..."
+
+    mc concerned "Oh uh... okay?"
+
+    na "I guess you have no choice but to run then..."
+
+    na "Well, if you're being forced into this, better go big or go home, right?"
+
+    show mio lecturing
+    mio "Don't worry though, [mcname]. It shouldn't be too hard as long as you're not running for student council president."
+
+    mc "..."
+
+    mio "Yutaka is basically guaranteed that position with the whole school already supporting him..."
+
+    show mio scared
+    mio "T-that's not to say he doesn't deserve it though! He's smart and kind and handsome, and um... um..."
+
+    na "Second or nothing! Am I right?"
+
+    na "To vice president stardom we go!"
+
+    show mio lecturing
+    mio "A-anyways! If you don't have a campaign plan I would start working on it right away-- it has a huge effect on how many votes you get."
+
+    scene black
+    na "After you and Mio finish hanging posters, you shortly part ways."
+
+    na "You have a big decision to make after all..."
+
+    na "What will be your campaign for student council vice president?"
+
+    if metRiri:
+        $ riris[92] = True
+
+    menu:
+        "{i}\"Improving Sports Programs\"":
+            jump s105
+        "{i}\"Pets Need Education Too\"":
+            jump s106
+
+
 label s95:
 
     mc ecstatic "Tell him your feelings of course!"
@@ -3808,7 +3901,45 @@ label s104:
 
 label s105:
 
+    na "You decide to make your campaign about improving the sports programs at Gwetome Academy."
+
+    na "For too long this school's athletic prowess has been overlooked!"
+
+    na "But, you're here to be the change Gwetome Academy needs!"
+
+    na "...Or so you think"
+
+    na "Shortly after launching your campaign you notice that your cause is overwhelmingly... underwhelming."
+
+    na "Most of your competitors had the same idea, and after years of sports-centered campaigns the idea has become rather worn-out."
+
+    na "Your campaign is completely disregarded by the student body, and after a humiliating loss you quickly fade into political obscurity."
+
+    na "With your ego shattered and dreams crushed, you become just another face in the crowd… forever dragged down by your mediocrity."
+
+    jump e18
+
 label s106:
+
+    na "As a firm believer in equality, you decide to make your campaign about allowing pets to enroll at Gwetome Academy."
+
+    na "After all, shouldn't pets have the same right to education as humans?"
+
+    na "After launching your campaign it immediately becomes a hit with the student body, and your progressive thinking draws numerous powerful financial supporters."
+
+    na "One such supporter being the infamous yakuza, \"The Dark Prince of Shizuoka,\" and their cat, Skullcrusher."
+
+    na "With your new huge (and slightly questionable) financial backing, you crush your opponents in the polls and easily win the election."
+
+    na "After a few months, all pets are in classrooms and able to get a fair education-- a huge step forward for animal rights across Shizuoka."
+
+    na "You even get your first pet staffmember, an important event that exposes the incompetence in the school's human management."
+
+    na "This eventually leads to a complete change of staff in the district, and soon enough, the whole of Gwetome is taught and run by animals."
+
+    na "A true revolution in education as we know it."
+
+    jump e19
 
 label e0:
 
@@ -3846,6 +3977,11 @@ label e16: # Mio 2.0
 
 label e17: # Yakuza
 
+label e18: # The Safe Play
+
+label e19: # The True High School Experience
+
+
 label dice_roll:
     $ d4 = renpy.random.randint(1, 4)
     $ d6 = renpy.random.randint(1, 6)
@@ -3866,7 +4002,8 @@ label fight:
     scene bedroom
     show fight1 at bar
     show fight2 at bar
-    show jt cocky
+    show jt cocky at e
+    
 
     
 
@@ -3881,7 +4018,7 @@ label fight:
         menu:
             "Flirt":
 
-                if d10 >= 3:                                                # 80%
+                if d10 >= 8:                                                # 80%
                     show jt calculating
                     jt "...Well that's embarrassing." 
                     #TODO: add fight lines to script??
