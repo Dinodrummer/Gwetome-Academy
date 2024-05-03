@@ -394,7 +394,7 @@ screen navigation():
             yalign 0.6
             textbutton _("Start") action Start()
             spacing gui.navigation_spacing + 40
-
+            image 
 
         else:
             xpos 120
@@ -408,7 +408,6 @@ screen navigation():
 
             textbutton _("Preferences") action ShowMenu("preferences")
             
-
             spacing gui.navigation_spacing + 40
 
         
@@ -419,8 +418,6 @@ screen navigation():
         elif not main_menu:
             
             textbutton _("Main Menu") action MainMenu()
-
-
 
         #if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 

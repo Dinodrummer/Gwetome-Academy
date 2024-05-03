@@ -1,5 +1,5 @@
 ----------------------------- Done With Display (haven't added to doc) ----------------------------------
-Working on s47
+Finished s50 (start on s27)
 
 {color=#b0b0b0}{size=-6}text{/color}{/size} ---------------- smaller, gray text
 

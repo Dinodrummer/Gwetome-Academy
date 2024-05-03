@@ -440,6 +440,13 @@ label riri:
 # -------------------------------------------------------------------------------------------------------------------
 # s1 = start
 # voice voice.mp3
+
+
+
+
+
+
+
 label start:
     #show beckham agent ecstatic at topright
     #with moveinright
@@ -470,7 +477,7 @@ label start:
 
     pjmc normal "Ever since my family moved back to Shizuoka, I've been living my high-school life to the fullest."
 
-    pjmc normal "During my time here, I've come to learn that love isn't the only important thing in life. {w=2}{nw}"
+    pjmc normal "During my time here, I've come to learn that love isn't the only important thing in life. {w=2}"
 
     pjmc ecstatic "I'm my own person, with my own goals and dreams, and I'm proud of that. I am independent and strong!"
 
@@ -1019,7 +1026,7 @@ label s16:
 
     #TODO: Earthquake rumble
 
-    na "Whoa! What was that?! It felt like an earthqua-{nw}" with hpunch
+    na "Whoa! What was that?! It felt like an earthqua-{w=0.5}" with hpunch
 
     na "...Oh. It was you? Wow, you must be hungry."
 
@@ -2134,21 +2141,25 @@ label s47:
 
     smc normal "Let's go swimming! That's what I came here for."
 
+    show joe concerned
     joe "Alright, as long as you're careful. I don't want you to get hurt."
 
-    smc normal "Oh, I'll be fine! I'm more worried about you, hehe!"
+    smc ecstatic "Oh, I'll be fine! I'm more worried about you, hehe!"
 
+    show joe suit embarrassed
     joe "Hey! I'm a great swimmer, I promise!"
 
-    smc normal "If you say so!"
+    smc flirty "If you say so!"
 
     na "Enough flirting! I'm skipping to the part where you actually swim."
 
     # Switch to water
 
+    scene beach
     na "Ahh, finally... but wait, is Joe okay?"
 
-    joe "Hey, I can't touch the ground here! I'm getting pulled out! Someone save me!!!"
+    show joe suit scared at e
+    joe "Hey, I can't touch the ground here! I'm getting pulled out! Someone save me!!!" with hpunch
 
     joe "I'll admit it, I don't go to the beach very often! I prefer caramel frappes, okay!? {i}{color=#b0b0b0}{size=-6}{cps=10}*crying*{/cps}{/size}{/color}{/i}"
  
@@ -2195,7 +2206,7 @@ label s48:
 
     na "How adorable."
 
-    mc shy "Joe... I think I love you too."
+    smc shy "Joe... I think I love you too."
 
     show joe suit embarrassed
     joe "You've lightened up my life since we met..."
@@ -2206,7 +2217,7 @@ label s48:
     joe "And I want you to be the light in my life forever."
 
     # Gwyn giggles
-    mc flirty "I can do that..."
+    smc flirty "I can do that..."
 
     na "Aww, what a cute couple you make. Good job [mcname]!"
 
@@ -2214,38 +2225,47 @@ label s48:
 
 label s49:
 
+    scene beach
     na "You wave your arms until the lifeguard notices Joe struggling."
 
     na "He rushes out to save Joe!"
 
     na "He doesn't seem to be paying attention to you though..."
 
+    #TODO: Beckham and Joe Cutscene (if lucy finishes drawing)
     na "You manage to make it to shore safely, and see the lifeguard performing CPR on an unconscious Joe."
 
-    mc normal "I've never seen someone perform CPR, but doesn't that seem a little... much?"
+    smc shy "I've never seen someone perform CPR, but doesn't that seem a little... much?"
 
     na "Joe gasps and opens his eyes. He seems weirdly... happy to see the lifeguard above him."
 
+    show joe suit enamoured at e
     joe "Thank you, you saved my life! I'll... do anything to repay you~"
 
     na "Joe and the lifeguard stare into each other's eyes for what seems like minutes..."
 
     na "Something is definitely off."
 
+    show joe suit enamoured at left
+    show beckham lifeguard normal at e
     beckham "Well, there's only one thing I want..."
 
     joe "What? I'll do anything!"
 
+    show beckham lifeguard flirty
     beckham "All I want right now... is you."
 
+    hide beckham with ex
+    hide joe with ex
     na "The two close their eyes and engage in a long, drawn out kiss."
 
     na "Wow... really long... seriously, are they just trying to rub it in?"
 
     na "You sit there, utterly shocked. Really, is there anything else you can do?"
 
-    mc normal "Is this what I get for not saving you, Joe?"
+    smc normal "Is this what I get for not saving you, Joe?"
 
+    show joe suit sad at e
     joe "I'm sorry, [mcname]..."
 
     na "Well, that's that, I suppose..."
@@ -2254,32 +2274,41 @@ label s49:
  
 label s50:
 
-    smc normal "Don't worry Joe, I'll save you!"
+    smc scared "Don't worry Joe, I'll save you!"
 
     na "Despite your best efforts, you end up both getting swept away by the current."
 
+    scene beach
+    show joe suit sad at e
     joe "I'm so sorry, [mcname]. This is all my fault..."
 
-    smc normal "It's okay... I don't want to live if it's without you."
+    smc sad "It's okay... I don't want to live if it's without you."
 
     na "How romantic."
 
+    show joe suit concerned
     joe "[mcname]"
 
-    smc normal "...?"
+    smc shy "...?"
 
+    show joe suit enamoured
     joe "I... love you."
 
+    show joe suit concerned
     joe "I need you. You are the light in my darkness, the sand on my beach, and..."
 
+    show joe suit sad
     joe "The caramel crunch whipped cream on my caramel frappe."
 
+    show joe suit enamoured
     joe "You are everything to me, [mcname]."
 
     na "Wow, this guy really has a way with words."
 
-    na "But, before, you can respond, you are knocked unconscious by a huge wave."
+    show joe suit scared
+    na "But, before, you can respond, you are knocked unconscious by a huge wave." with hpunch
 
+    scene black
     na "Is this how you die?"
 
     na "..."
@@ -2288,26 +2317,32 @@ label s50:
 
     # Opens eyes
 
+    scene island
+    show joe suit enamoured at e
     joe "[mcname]! You're awake! I got this coconut for you. Please, drink from it!"
 
+    show joe suit normal
     joe "Apparently, Hoshibuck's pink drinks are made with coconut milk, so I thought it must help."
 
     na "You can feel your burnt skin and pain all over your body, but the coconut does help."
 
-    smc normal "Thank you, I feel much better. Where are we?"
+    smc shy "Thank you, I feel much better. Where are we?"
 
+    show joe suit confused
     joe "It's been a few hours since we washed up on this island. I don't know if anyone will ever come for us."
 
-    smc normal "Oh... well, we have each other, don't we?"
+    smc flirty "Oh... well, we have each other, don't we?"
 
     na "You take Joe's hand and look into his eyes."
 
+    show joe suit enamoured
     joe "Maybe, if I have you by my side everyday, I can live without hoshibucks."
 
-    smc normal "Aw, Joe..."
+    smc flirty "Aw, Joe..."
 
     na "{i}{color=#b0b0b0}{size=-6}{cps=10}*sigh*{/cps}{/size}{/color}{/i} There he goes again."
 
+    scene black
     na "You live the rest of your lives together, surviving on the island and its natural resources."
 
     na "What a happy ending..."
@@ -2873,7 +2908,7 @@ label s62: #TODO: Repetitive scene?
     show maryam embarrassed
     maryam "I've liked you ever since we had art together freshman year of highschool!"
 
-    na "You guys went to the same freshman class? How do they even remem--{nw}"
+    na "You guys went to the same freshman class? How do they even remem--{w=0.5}"
 
     show maryam normal
     maryam "When you gave me your extra pencil right before the final test, I knew you were the one for me! Would you like to go on a date with me?"
@@ -2888,7 +2923,7 @@ label s63:
 
     mc cocky "Alright then, the password is 123456."
 
-    na "the real password is actually 1234567... They couldn't possibly figure it o--{nw}"
+    na "the real password is actually 1234567... They couldn't possibly figure it o--{w=0.5}"
 
     show maryam normal
     maryam "Perfect! I connected! L-let's get to work shall we?"

@@ -21,6 +21,9 @@ image park night:
 image beach:
     "images/Backgrounds/bg beach.jpg"
     zoom 1
+image island:
+    "images/Backgrounds/bg island.jpg"
+    zoom 1
 
 image gate:
     "images/Backgrounds/bg gate.jpg"
@@ -42,6 +45,15 @@ image counseling:
     zoom 1
 image gym:
     "images/Backgrounds/bg gym.jpg"
+    zoom 1
+image detention:
+    "images/Backgrounds/bg detention.jpg"
+    zoom 1
+image student_council:
+    "images/Backgrounds/bg student_council.jpg"
+    zoom 1
+image hallway:
+    "images/Backgrounds/bg hallway.jpg"
     zoom 1
 
 image door:
@@ -72,15 +84,6 @@ image house jt:
     "images/Backgrounds/bg house jt.jpg"
     zoom 1
 
-image detention:
-    "images/Backgrounds/bg detention.jpg"
-    zoom 1
-image student_council:
-    "images/Backgrounds/bg student_council.jpg"
-    zoom 1
-image hallway:
-    "images/Backgrounds/bg hallway.jpg"
-    zoom 1
 image choice:
     "gui/choice_background.png"
     zoom 1
