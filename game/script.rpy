@@ -690,6 +690,7 @@ label s7:
 
     na "Heh... school. Who needs it? You're about to discover the answer to the greatest mystery yet: who is Naninani Nantoka?!"
 
+    scene black
     na "You rustle back under your blankets, close your eyes, and start to dream again... but this time you are not at school."
 
     na "You are floating through an endless void. You can't move. You can't breathe. All is silent."
@@ -698,12 +699,18 @@ label s7:
 
     na "Your mind succumbs to the darkness."
 
+    mv "..."
+
     mv "You have failed your purpose, [mcname]."
 
+    na "..."
+
+    scene bedroom
     na "By the time you wake up, the school year has already ended. You now know your true duty but it is too late, and there is no one left to love you."
 
     na "Weeping, you succumb to the darkness of sleep once more."
 
+    scene black
     jump e0 #Eternal Power Nap
 
 label s8:
@@ -848,9 +855,12 @@ label s13:
 
     na "Suddenly you hear the whispers of two delinquents a desk over."
 
-    show d1 happy at e
+    
     $ sophianame = "Isamu Takao"
     $ sophianame_kanji = "高尾・勇"
+    $ metSophia = True
+
+    show d1 happy at e
     d1 "Hey hey, is that Takao Isamu?"
 
     show d1 happy at left
@@ -860,7 +870,7 @@ label s13:
     show d1 normal
     d1 "You don't know? Their family is yakuza! Apparently they transferred in this school year but haven't said more than two words to anyone. They're super cold."
 
-    d2 "Ohhhh yeah yeah I know them. {i}The Panther{/i}, huh? I heard they sleep with their eyes open because they have so many enemies."
+    d2 "Ohhhh, yeah yeah I know them. {i}The Panther{/i}, huh? I heard they sleep with their eyes open because they have so many enemies."
 
     show d2 happy
     d2 "They're also rich, hot, have a six pack, and like to brood all the time."
@@ -960,7 +970,6 @@ label s15:
     na "After throwing a few delinquents out the window with your super muscular muscles..."
 
     na "...Takao Isamu swaggers up to your desk."
-    
 
     show sophia normal at e
     sophia "Yo."
@@ -1027,39 +1036,48 @@ label s17:
 
     na "Maybe you want to skip class? He shouldn't be able to stop you! This is a free country!"
 
-    mc normal "I refuse! {i}You{/i} shouldn't be able to send me back to class!"
+    mc angry "I refuse! {i}You{/i} shouldn't be able to send me back to class!"
 
-    mc normal "What are you doing out of class, huh? I'll make {i}you{/i} go back!"
+    mc angry "What are you doing out of class, huh? I'll make {i}you{/i} go back!"
 
+    show jt thinking
     na "Yutaka stares at you for a moment, then a small grin appears on his face."
 
+    show jt calculating
     jt "Ah, people like you are my favorite!"
 
     jt "What {i}I{/i} do while at school does not matter to you, understand me? I am the president of the student council!"
 
+    show jt cocky
     jt "{i}You{/i} have to listen to me, and {i}I{/i} am in charge. That is how it works, and how it always will."
 
     na "Who does this guy think he is?"
 
-    mc normal "That's just not fair!"
+    mc sad "That's just not fair!"
 
+    show jt normal
     jt "Oh, but my dear girl, {i}life{/i} is not fair. I am simply getting you ready for reality."
 
-    na "I want to punch \"reality\" into his face! It would have been better if you chose to fight him."
+    na "I want to punch {i}\"reality\"{/i} into his face! It would have been better if you chose to fight him."
 
+    show jt calculating
     jt "Anyways, I like you, so I will let you off easy this time."
 
+    show jt cocky
     jt "Just detention. Consider yourself lucky."
 
-    mc normal "Hey!"
+    mc scared "Hey!"
 
+    show jt normal
     jt "Don't make me angrier now. Welp, See you around!"
 
     na "Yutaka turns and walks away confidently. Man, what a prick!"
 
     na "You pick up the detention slip that he slid in your pocket and reluctantly read it."
 
-    mc normal "Right after school? This is the worst! Whatever, I better go..."
+    mc sad "Right after school? This is the worst! Whatever, I better go..."
+
+    jump s13
 
 label s18:
 
@@ -1110,6 +1128,8 @@ label s18:
         menu:
             "{i}Sure, I should probably head back":
                 jump s21
+            "{i}No, I don't think I will!":
+                jump s17
             "{i}This guy deserves a punch!":
                 jump s18_4
                 
@@ -1119,7 +1139,7 @@ label s18:
 
         na "Uh oh, he got back up? Looks like it's time for a fight!"
 
-        jump fight
+        jump fight #TODO: Make sure fight scene works
 
 label s19:
 
@@ -1130,12 +1150,13 @@ label s19:
 
     jt "Wait-- please... You don't need to do this!"
 
-    mc normal "Heh... I knew that CrossFit membership would pay off."
+    mc cocky "Heh... I knew that CrossFit membership would pay off."
 
     jump s20
 
 label s20:
 
+    scene gate
     na "Word quickly spreads about how you punched the student council president and skipped class as you proudly walk out the front gates."
 
     mc normal "Man, that fight really took a lot out of me. I could really go for a Caramel Ribbon Crunch Frappe right about now."
@@ -1144,40 +1165,51 @@ label s20:
 
 label s21:
 
-    mc normal "{i}Oh shoot, I forgot to grab one{/i}! Sure, let's head back."
+    mc shy "{i}Oh shoot, I forgot to grab one{/i}! Sure, let's head back."
 
+    scene classroom1_day
     na "You walk back to class to get a hall pass, even though you never needed one. But right as you grab it, the bell rings."
 
+    show jt cocky
     jt "Awww, well that's a shame. Well hey, at least we have the same class next period!"
 
-    mc normal "Oh, nice! Wait, how did you know that we had the same class?"
+    mc concerned "Oh, nice! Wait, how did you know that we had the same class?"
 
+    show jt normal
     jt "I just checked the class roster! It's the job of the student council president to know their fellow students' names, after all."
 
+    show jt ecstatic
     jt "C'mon, we have English class next. Let's go!"
+
+    jump s51
 
 label s22:
 
+    scene hallway
     na "You release a powerful punch aimed right at Yutaka!"
 
     na "...and miss. Well, that's embarrassing."
 
-    mc normal "Oh... oops."
+    mc shy "Oh... oops."
 
+    show jt cocky
     jt "Ahahha, how cute! You really think you stand a chance against me? I am the one and only student council president, Yutaka!"
 
     mc normal "Uhm... okay?"
 
+    show jt calculating
     jt "You've been naughty now, haven't you?"
 
     jt "You think you can walk free after trying  to hurt the most important student in the school?"
 
+    show jt normal
     jt "No! I will not let this stand! Off to counseling with you!"
 
     na "How dramatic can this kid get..."
 
-    mc normal "Alright fine, I'll go to counseling. Sorry for trying to punch you, but it was too hard to resist."
+    mc cocky "Alright fine, I'll go to counseling. Sorry for trying to punch you, but it was too hard to resist."
 
+    show jt embarrased
     jt "Hey! Wait, don't say that about me!"
 
     na "You turn and go to counseling. You can feel Yutaka fuming behind you, but you keep walking without a care in the world."
@@ -1371,6 +1403,8 @@ label s24:
     show joe ecstatic
     joe "Hahaha, you're so funny!"
 
+    na "You didn't even say anything..."
+
     show joe normal
     joe "Well, anyways, It's getting kind of late. Mind if I take you home?"
 
@@ -1388,26 +1422,29 @@ label s24:
 label s25:
 
     scene counseling
-
     na "You enter the counseling office with Yutaka to find... another student?"
 
     na "I guess the school's low on staff..."
 
     na "After Yutaka angrily explains the situation to the student \"student counselor\", you soon find yourself in a one-on-one counseling session to address your... issues..."
 
+    show beckham normal
     beckham "If you don't go to school, you won't find success. You need to try your best everyday."
 
-    mc normal "Okay..."
+    mc sad "Okay..."
 
+    show beckham angry
     beckham "Why did you think punching a classmate was a good idea? Do you realize what could happen?"
 
-    mc normal "He was being a bully, I needed to do something."
+    mc sad "He was being a bully, I needed to do something."
 
+    show beckham confused
     beckham "That was a dumb thing to do. You were such a good student last year, I'm sorry that I have to do this..."
 
-    mc normal "Wa--What?"
+    mc scared "Wa--What?"
 
-    beckham "{cps=6}{b}GO TO DETENTION!{b}{/cps}"
+    show beckham angry
+    beckham "{cps=6}{b}GO TO DETENTION!{b}{/cps}" with hpunch
 
     jump s13
 
@@ -1417,36 +1454,44 @@ label s26:
 
     na "You carefully put the handkerchief and note in your bag and begin to daydream."
 
+    scene black
     mc normal "{i}I wonder who's going to be there... I'll have to make lots of friends! Maybe I should try something new to make a good impression...{/i}"
 
-    # Door sounds
-
-    mc normal "Eh? Akimitsu?!"
+    #TODO: Door noise
+    scene detention
+    mc scared "Eh? Akimitsu?!" with hpunch
 
     na "Chiba Akimitsu, your childhood friend since third grade appears at the desk next to yours."
 
+    show kyle confident at e
     kyle "Hey [mcname]! Ahaha, did I surprise you?"
 
     mc normal "Mhm! Why are you also in detention?"
 
+    show kyle loving
     kyle "I knew you'd be here on the first day so I came to keep you company."
 
+    show kyle normal
     kyle "What were you thinking about before I interrupted you?"
 
-    mc normal "Nothing much... just this party..."
+    mc shy "Nothing much... just this party..."
 
     na "You take out the handkerchief and note and show Akimitsu."
 
     na "His eyebrows furrow into a look of concern."
 
+    show kyle scared
     kyle "A party with... the {i}PANTHER{/i}??? TAKAO ISAMU???"
 
+    show kyle concerned
     kyle "There's no way I'm letting you go alone, [mcname]. A party with yakuza attending? Absolutely not."
 
-    mc normal "What are you... my dad?"
+    mc concerned "What are you... my dad?"
 
+    show kyle confused
     kyle "I'm just worried about you! Who knows what those people are like?"
 
+    show kyle loving
     kyle "Please, let me go with you. Or better yet, don't go at all and we can just hang out."
 
     if metRiri:
@@ -1500,18 +1545,26 @@ label s28:
 
     $ sophianame_kanji = "高尾・勇"
     $ sophianame = "Isamu Takao"
+    $ metSophia = True
+    
+    show sophia party normal at e
     sophia "Hey. I've heard a lot about you, [mcname]. I'm Isamu Takao."
 
-    sophia "When I first saw you I wasn't sure the rumors were true, but now I know. You're incredible. What dojo did--"
+    show sophia party happy
+    sophia "When I first saw you I wasn't sure the rumors were true, but now I know. You're incredible. What dojo did--{nw}"
 
+    show sophia party happy at left
+    show kyle party angry at e
     kyle "Youseikan. We trained at Youseikan."
 
+    show sophia party concerned
     sophia "Ah... Who's this?"
 
-    mc normal "This is my childhood friend, Chiba Akimitsu."
+    pmc normal "This is my childhood friend, Chiba Akimitsu."
 
     sophia "Is that so? Interesting."
 
+    show sophia party flirty
     sophia "Anyways, how is the party?"
 
     na "You start to get the feeling that these two aren't getting along."
@@ -1521,7 +1574,6 @@ label s28:
     if metRiri:
         $ riris[28] = True
         
-    
     menu:
         "{i}Ignore Isamu":
             jump s30
@@ -1584,20 +1636,24 @@ label s30:
 
 label s31:
 
-    mc normal "The party's good.{nw}"
+    pmc normal "The party's good.{nw}"
 
-    na "You say. And then you run and escape to the apple juice bar."
+    na "...you say. And then you run and escape to the apple juice bar."
 
     #Bar scene
 
-    mc normal "Apple juice please~"
+    scene party
+    pmc flirty "Apple juice please~"
 
+    show beckham bartender normal
     beckham "May I ask what type of apple you prefer? Honeycrisp? Fuji?"
 
-    mc normal "Umm... Gala please."
+    pmc shy "Umm... Gala please."
 
+    show beckham bartender shake
     beckham "Coming right up."
 
+    scene black
     na "Never before have you tasted such a sweet, succulent drink."
 
     na "You down glass after glass until your tummy can take it no longer. Delicious."
@@ -1607,7 +1663,9 @@ label s31:
     if metRiri:
         $ riris[27] = True
         
-    jump s43
+    menu:
+        "Go home":
+            jump s43
 
 label s32:
 
@@ -1911,10 +1969,12 @@ label s42:
 
     mc normal "Sure, why not? I live just 10 minutes down the road."
 
+    show joe ecstatic
     joe "Perfect! I'm going the same direction. Come on, let's get moving!"
 
     na "You leave the Hoshibucks with Joe."
 
+    scene neighborhood
     na "It almost looks like you two are going on a date, hehe!"
 
     na "Alright now, what will you talk about for maximum romance?"
@@ -1929,27 +1989,30 @@ label s43:
 
     # At home
 
+    scene kitchen
     na "You sit down in front of your television to watch anime."
 
     na "For some strange reason you feel empty and alone, like there is a dark hole in your heart."
 
     na "Maybe it's because Fanana Bish is on? You change the channel."
 
-    mc normal "Ahh... that's better. Now I can go on with my day and never have to worry about romance agai- {i}{color=#b0b0b0}{size=-6}{cps=10}*yawn*{/cps}{/size}{/color}{/i}"
+    pjmc normal "Ahh... that's better. Now I can go on with my day and never have to worry about romance agai- {i}{color=#b0b0b0}{size=-6}{cps=10}*yawn*{/cps}{/size}{/color}{/i}"
 
-    mc normal "Suddenly... {color=#b0b0b0}I feel... {cps=15}{size=-6}very... {size=-8}{cps=5}sleepy.{/cps}"
+    pjmc shy "Suddenly... {color=#b0b0b0}I feel... {cps=15}{size=-6}very... {size=-8}{cps=5}sleepy.{/cps}"
 
     na "In the corner of your eye you see a tiny magic wand waving at you from behind the couch. Is that..."
 
-    show riri normal
-    riri "It's me, Riri. Don't worry Naninani, I'm just making some minor adjustments to the fabric of time."
+    if metRiri:
 
-    show riri happy
-    riri "You may have failed this time at romance, but I won't let you give up!"
+        show riri normal at e
+        riri "It's me, Riri. Don't worry Naninani, I'm just making some minor adjustments to the fabric of time."
+
+        show riri happy
+        riri "You may have failed this time at romance, but I won't let you give up!"
     
-    mc normal "Eh?! What's going on?"
+    mc scared "Eh?! What's going on?"
 
-    #Reset with loading screen or something
+    #TODO: Loading screen (?)
 
     jump start
  
@@ -1990,56 +2053,72 @@ label s45:
 
     mc normal "So, what do you like to do in your free time?"
 
+    show joe confused at e
     joe "Well, other than going to hoshibucks, I guess I go to the beach sometimes."
 
-    mc normal "Really? Me too! I love the beach."
+    mc ecstatic "Really? Me too! I love the beach."
 
+    show joe enamoured
     joe "Is that so? It's such a nice way to unwind after a long day, right?"
 
-    mc normal "Right? The water feels so nice, especially in the summer."
+    mc ecstatic "Right? The water feels so nice, especially in the summer."
 
+    show joe ecstatic
     joe "Well, if you're ever free, we should go to the beach together."
 
     na "Wow, I didn't see that coming! What a slick way to ask you out..."
 
-    gwyn "Okay, sure! How does tomorrow sound?"
+    mc ecstatic "Okay, sure! How does tomorrow sound?"
 
+    show joe concerned
     joe "{color=#b0b0b0}{size=-5}I guess I can go one day without my caramel frappe... for [mcname]...{/size}{/color}"
 
+    show joe ecstatic
     joe "Sounds good! I'll be looking forward to it! {i}{color=#b0b0b0}{size=-6}{cps=10}*wink*{/cps}{/size}{/color}{/i}"
 
     if metRiri:
         $ riris[44] = True
 
-    jump s46
+    menu:
+        "Go to the beach!":
+            jump s46
         
     
 label s46:
 
+    scene black
     na "The next day, you and Joe make plans to go to the beach together."
 
     na "The way he talks to you... I think he likes you, ya know!"
 
     na "Anyways... After school, you meet up with Joe at the beach."
 
+    show joe suit ecstatic at e
     joe "Hey, [mcname]! It's nice to see you again. You look good!"
 
     na "Well, that was fast."
 
-    mc normal "Oh, thanks! Nice to see you too!"
+    smc ecstatic "Oh, thanks! Nice to see you too!"
 
+    show joe suit concerned
     beckham "Ehem, lovebirds!"
 
+    show joe suit confused
     joe "Excuse me?"
 
+    show joe suit confused at left
+    show beckham lifeguard normal at e
     beckham "Sorry to interrupt, but the currents are very strong today."
 
     na "This guy {i}again?{/i}"
 
     beckham "I recommend staying out of the water, for your own safety."
 
+    show beckham lifeguard ecstatic
     beckham "Rest assured, I can save you, of course, but please be careful. Have a good day at the beach!"
 
+    show joe suit normal
+    hide beckham with ex
     joe "Oh, okay. What do you think, [mcname]? Should we still swim?"
 
     if metRiri:
@@ -2053,15 +2132,15 @@ label s46:
  
 label s47:
 
-    mc normal "Let's go swimming! That's what I came here for."
+    smc normal "Let's go swimming! That's what I came here for."
 
     joe "Alright, as long as you're careful. I don't want you to get hurt."
 
-    mc normal "Oh, I'll be fine! I'm more worried about you, hehe!"
+    smc normal "Oh, I'll be fine! I'm more worried about you, hehe!"
 
     joe "Hey! I'm a great swimmer, I promise!"
 
-    mc normal "If you say so!"
+    smc normal "If you say so!"
 
     na "Enough flirting! I'm skipping to the part where you actually swim."
 
@@ -2074,8 +2153,7 @@ label s47:
     joe "I'll admit it, I don't go to the beach very often! I prefer caramel frappes, okay!? {i}{color=#b0b0b0}{size=-6}{cps=10}*crying*{/cps}{/size}{/color}{/i}"
  
     if metRiri:
-        $ riris[47] = True
-        
+        $ riris[47] = True 
     
     menu:
         "{i}The lifeguard can deal with it":
@@ -2085,42 +2163,50 @@ label s47:
 
 label s48:
 
-    mc normal "Maybe we should just take a walk on the beach for today."
+    smc normal "Maybe we should just take a walk on the beach for today."
 
+    show joe suit normal
     joe "Okay, sounds good. I'd love to take a walk together."
 
     # MC Blushes
-    mc normal "We'll have other opportunities to go swimming together anyways..."
+    smc embarrassed "We'll have other opportunities to go swimming together anyways..."
 
     na "Aww, look at you two!"
 
+    scene beach
     na "You take a nice walk and talk about various things, from hoshibucks, to school, to more hoshibucks, and eventually..."
 
+    show joe suit embarrassed at e
     joe "You know, name, there's something I should tell you..."
 
-    mc normal "Yes?"
+    smc shy "Yes?"
 
     joe "Ever since I saw you in hoshibucks, I've thought you are the most beautiful person I've ever seen."
 
     # Whispering:
-    joe "Maybe even more beautiful than a caramel frappe..."
+    show joe suit confused
+    joe "{color=#b0b0b0}{size=-5}Maybe even more beautiful than a caramel frappe...{/color}{/size}"
 
+    show joe suit concerned
     joe "But, anyways, I want you to know that..."
 
+    show joe suit enamoured
     joe "I think... I love you."
 
     na "How adorable."
 
-    mc normal "Joe... I think I love you too."
+    mc shy "Joe... I think I love you too."
 
+    show joe suit embarrassed
     joe "You've lightened up my life since we met..."
 
     na "As in yesterday?"
 
+    show joe suit enamoured
     joe "And I want you to be the light in my life forever."
 
     # Gwyn giggles
-    mc normal "I can do that..."
+    mc flirty "I can do that..."
 
     na "Aww, what a cute couple you make. Good job [mcname]!"
 

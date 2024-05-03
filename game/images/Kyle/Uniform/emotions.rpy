@@ -28,6 +28,6 @@ image kyle normal:
 image kyle sad:
     "images/Kyle/Uniform/kyle sad.png"
     zoom 0.5
-image kyle surprised:
-    "images/Kyle/Uniform/kyle surprised.png"
+image kyle scared:
+    "images/Kyle/Uniform/kyle scared.png"
     zoom 0.5

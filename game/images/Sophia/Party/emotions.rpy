@@ -1,26 +1,26 @@
 image sophia party angry:
-    "images/Sophia/Party/sophia_party angry.png"
+    "images/Sophia/Party/sophia party angry.png"
     zoom 0.5
 image sophia party cocky:
-    "images/Sophia/Party/sophia_party cocky.png"
+    "images/Sophia/Party/sophia party cocky.png"
     zoom 0.5
 image sophia party concerned:
-    "images/Sophia/Party/sophia_party concerned.png"
+    "images/Sophia/Party/sophia party concerned.png"
     zoom 0.5
 image sophia party embarrassed:
-    "images/Sophia/Party/sophia_party embarrassed.png"
+    "images/Sophia/Party/sophia party embarrassed.png"
     zoom 0.5
 image sophia party flirty:
-    "images/Sophia/Party/sophia_party flirty.png"
+    "images/Sophia/Party/sophia party flirty.png"
     zoom 0.5
 image sophia party happy:
-    "images/Sophia/Party/sophia_party happy.png"
+    "images/Sophia/Party/sophia party happy.png"
     zoom 0.5
 image sophia party normal:
-    "images/Sophia/Party/sophia_party normal.png"
+    "images/Sophia/Party/sophia party normal.png"
     zoom 0.5
 image sophia party sad:
-    "images/Sophia/Party/sophia_party sad.png"
+    "images/Sophia/Party/sophia party sad.png"
     zoom 0.5
 image sophia party surprised:
-    "images/Sophia/Party/sophia_party surprised.png"
+    "images/Sophia/Party/sophia party surprised.png"

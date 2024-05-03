@@ -18,6 +18,9 @@ image city night:
 image park night:
     "images/Backgrounds/bg park_night.jpg"
     zoom 1
+image beach:
+    "images/Backgrounds/bg beach.jpg"
+    zoom 1
 
 image gate:
     "images/Backgrounds/bg gate.jpg"
