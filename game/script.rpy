@@ -424,6 +424,9 @@ label riri:
         riri "This time it's your decision, okay?"
 
         $ riris[94] = False
+    elif riris[30]:
+
+        riri "{i}{color=#b0b0b0}{size=-6}{cps=10}*gasp*{/cps}{/size}{/color}{/i}"
 
     else:
         na "{i}[[It doesn't look like Riri has anything to say right now.]{/i}"
@@ -460,7 +463,7 @@ label start:
 
     stop music
 
-    jump s18
+    jump s27
     # show screen character_name("Hana Kobayashi", "小林・花")
 
     scene bedroom
@@ -862,7 +865,6 @@ label s13:
 
     na "Suddenly you hear the whispers of two delinquents a desk over."
 
-    
     $ sophianame = "Isamu Takao"
     $ sophianame_kanji = "高尾・勇"
     $ metSophia = True
@@ -1514,20 +1516,32 @@ label s27:
 
     na "Date or not, you're not going. You toss the handkerchief and note out the window and wait for the school day to end. Soon enough, word gets around of your rejection."
 
+    scene hallway
+    show d2 normal at e
     d2 "That's [mcname] isn't it?"
 
+    show d2 normal at left
+    show d3 normal at e
     d3 "Oh, you're right! I can't believe she'd reject Takao-sama's kind offer!"
 
+    show d3 normal at right
+    show d1 normal at e
     d1 "Weirdo..."
 
+    show d2 sad
     d2 "Even after they used their special kitty handkerchief too!"
 
+    show d1 sad
     d1 "{i}{color=#b0b0b0}{size=-6}{cps=10}*gasp*{/cps}{/size}{/color}{/i} No way!"
 
+    show d3 angry
     d3 "It's true... I saw them outside weeping with it in their arms. It was their favorite handkerchief and it got dirty!"
 
     d1 "Poor Takao-sama..."
 
+    hide d1 with ex
+    hide d2 with ex
+    hide d3 with ex
     na "You walk through the halls with shame. When you get home you can only find comfort in the soft light of your television."
 
     if metRiri:
@@ -1599,23 +1613,29 @@ label s29:
 
     # *phone buzz sounds*
 
+    show kyle scared
+    na "..." with hpunch
+
     kyle "Actually... wait..."
 
-    mc normal "Huh?"
+    mc concerned "Huh?"
 
+    show kyle concerned
     kyle "Ahhh, sorry. I have a basketball game after school."
 
+    show kyle confused
     kyle "He says, \"Hey, turns out we're in the finals now because some person with bleached blonde hair just showed up and beat up the team that we lost to. {w=2}{nw}"
     
+    show kyle normal
     kyle "He was saying something about [mcname], you, and a party. Weird, huh?"
 
-    mc normal "I wonder who that could be..."
+    mc shy "I wonder who that could be..."
 
+    show kyle ecstatic
     kyle "Right? Well now I can't miss my basketball game... would you mind coming to watch instead?"
 
     if metRiri:
         $ riris[29] = True
-        
 
     menu:
         "\"Sure, I'll watch\"":
@@ -1625,15 +1645,19 @@ label s29:
 
 label s30:
 
-    mc normal "The party's good.{nw}"
+    smc normal "The party's good.{nw}"
 
     na "You say, proceeding to turn and face Akimitsu."
 
-    mc normal "Hey... should we get going?"
+    smc concerned "Hey... should we get going?"
 
+    show sophia party concerned
     sophia "Wait. Would you like to get drinks with me?"
 
     na "{i}{color=#b0b0b0}{size=-6}{cps=10}*Narrator gasps*{/cps}{/size}{/color}{/i}"
+
+    if metRiri:
+        $ riris[30] = True
 
     menu:
         "\"You know what? Sure.\"":
@@ -1676,14 +1700,17 @@ label s31:
 
 label s32:
 
-    mc normal "The party's good."
+    pmc normal "The party's good."
 
-    mc normal "I just wish I was being escorted by someone since I've been so lonely by myself."
+    pmc shy "I just wish I was being escorted by someone since I've been so lonely by myself."
 
+    show sophia party flirty
     sophia "Want me to help you?"
 
+    show kyle party sad
     kyle "Hey, hey... wait. [mcname], please."
 
+    show kyle party loving
     kyle "Don't do this... let's just get drinks. Just the two of us."
 
     na "{i}{color=#b0b0b0}{size=-6}{cps=10}*Narrator gasps*{/cps}{/size}{/color}{/i}"
@@ -1698,16 +1725,21 @@ label s33:
 
     na "You shake your head solemnly"
 
-    mc normal "Sorry, Akimitsu. I changed my mind. The party never stops."
+    pmc concerned "Sorry, Akimitsu. I changed my mind. The party never stops."
 
+    show kyle sad
     kyle "But you just said we would han--{nw}"
 
     # Door closes
 
+    scene black
     na "You leave."
 
+    scene hallway
+    show kyle scared at e
     kyle "Wait! Wait! If you're that determined to go to the party I'll go with you. I'll skip my game."
 
+    show kyle loving
     kyle "Let's just go together, okay?"
 
     if metRiri:
@@ -1717,14 +1749,19 @@ label s33:
 
 label s34:
 
-    mc normal "Ah, okay! Sounds good to me."
-
+    pmc normal "Ah, okay! Sounds good to me."
+    
+    show kyle party normal
+    show sophia party sad
     na "Akimitsu lets out a deep breath as Isamu silently slips away into the crowd."
 
+    hide sophia with ex
     kyle "Whew... I thought you were going to ditch me for a second."
 
+    show kyle party ecstatic
     kyle "Wanna go find that open apple juice bar again?"
 
+    scene party
     na "After finding the bar and getting your apple juice, the two of you begin to reminisce."
 
     na "You think about the dojo and your childhood."
@@ -1733,19 +1770,24 @@ label s34:
 
     na "He hasn't changed a bit has he? It's almost like this whole time he's been waiting for you..."
 
+    show kyle party normal at e
     kyle "Hey... it's getting a little stuffy in here. Wanna go somewhere else?"
 
     if metRiri:
         $ riris[34] = True
 
-    jump s40
+    menu:
+        "{i}Leave with Akimitsu":
+            jump s40
 
 label s35:
 
-    mc normal "Sure!"
+    pmc ecstatic "Sure!"
 
+    show kyle party scared
     kyle "What?? Wait... what?!?!"
 
+    show sophia party happy
     sophia "Heh. Let's go then."
 
     if metRiri:
@@ -1757,12 +1799,14 @@ label s35:
 
 label s36:
 
-    mc normal "I'm good. I was planning to spend time with Akimitsu tonight."
+    pmc normal "I'm good. I was planning to spend time with Akimitsu tonight."
 
+    show sophia party angry
     na "Isamu glares coldly at you both."
 
     sophia "Hmph."
 
+    show kyle party loving
     kyle "I actually... was also thinking of getting drinks with you, [mcname]."
 
     if metRiri:
@@ -1774,16 +1818,20 @@ label s36:
 
 label s37:
 
-    mc normal "Sorry~ I've already got plans."
+    pmc normal "Sorry~ I've already got plans."
 
-    mc normal "I'll see you later Akimitsu!"
+    pmc normal "I'll see you later Akimitsu!"
 
+    show kyle party sad
     kyle "But..."
 
+    show kyle party angry
     kyle "Actually, fine. Do what you want. I don't care."
 
+    hide kyle with ex
     na "Akimitsu storms off. His hot fury combined with his blazing looks briefly set another guest on fire, but the flames are doused quickly with some apple juice."
 
+    show sophia party flirty
     sophia "Heh. Let's drink something ourselves too."
 
     if metRiri:
@@ -1797,28 +1845,38 @@ label s37:
 
 label s38:
 
+    scene party
     na "As you and Isamu start to go towards the bar you hear a brief shattering sound."
 
     # Shattering noise
 
-    mc normal "Ah. I think Akimitsu may have accidentally kicked the door down."
+    pmc normal "Ah. I think Akimitsu may have accidentally kicked the door down."
 
-    mc normal "That's a bad habit of his. He tends to do it when he leaves houses."
+    pmc ecstatic "That's a bad habit of his. He tends to do it when he leaves houses."
 
+    show sophia party happy at e
     sophia "Don't we all?"
 
-    mc normal "Hey! Bartender! Get me your most appley apple juice."
+    pmc cocky "Hey! Bartender! Get me your most appley apple juice."
 
+    hide sophia with ex
+    show beckham bartender shake at e
     beckham "Of course."
 
+    scene black
     na "After hours of discussing fighting techniques and the best way to throw someone out a window, you run out of apple juice."
 
+    scene party
+    scene beckham bartender confused
     beckham "I'm sorry, we don't have any more apples to juice. It's a true tragedy for which I am very sorry Takao-sama."
 
+    hide beckham with ex
+    show sophia party normal
     sophia "Eh, whatever. Hey, [mcname], wanna take break outside? It stinks of granny apples here anyway."
 
-    mc normal "Sure."
+    pmc normal "Sure."
 
+    scene black
     na "The two of you step outside."
 
     scene city_night
@@ -1826,19 +1884,23 @@ label s38:
 
     na "The wind softly blows through your hair and the lights of the city sparkle in the distance."
 
-    show sophia party normal
+    show sophia party concerned
     sophia "To be honest... I didn't think you'd come with me."
 
-    mc normal "Huh? Why?"
+    pmc surprised "Huh? Why?"
 
+    show sophia party normal
     sophia "My family is yakuza. Ordinary people are usually too afraid of getting hurt. But you're... different."
 
+    show sophia party happy
     sophia "When you threw those three delinquents out the window you reminded me of my cat, Skull Crusher."
 
+    show sophia party flirty
     sophia "And I love cats... and I love... you."
 
-    mc normal "I... I like you too."
+    pmc shy "I... I like you too."
 
+    scene black
     na "Soon after Takao Isamu's confession the two of you start dating."
 
     na "It's a surprisingly healthy and loving relationship-- you meet {i}The Family{/i}|, go on lots of dates, and work through conflicts together."
@@ -1849,7 +1911,7 @@ label s38:
 
     na "It is through Nyanken that you wage the Great Cat War, rise through the ranks, and become the most powerful yakuza couple in the nation."
 
-    na "No one can stop your bulging muscles or your untouchable love!...  {i}{color=#b0b0b0}{size=-6}{cps=10}Nya~{/cps}{/size}{/color}{/i}"
+    na "No one can stop your bulging muscles or your untouchable love!...  {i}{color=#b0b0b0}{size=-6}{cps=8}Nya~{/cps}{/size}{/color}{/i}"
 
     jump e5
 
@@ -1865,8 +1927,10 @@ label s39:
 
     mc normal "Actually... I'm good."
 
+    show sophia party embarrassed
     sophia "...Huh?"
 
+    scene black
     na "You flip your hair and strut out the door."
 
     scene city night
@@ -1874,14 +1938,14 @@ label s39:
 
     na "In fact, the aura from your strut is so strong that it catches the attention of a modeling agent."
 
-    show beckham agent normal
+    show beckham agent normal at e
     beckham "Wait! I'm a modeling agent who also likes attending high school parties hosted by yakuza. You should join my agency! You're incredible!"
 
     mc normal "Okay."
 
+    scene black
     na "And that was how your modeling career began."
 
-    hide beckham with ex
     na "You dropped out of high school, moved to New York, and started your legacy by modeling for Elle, Versace, and Vogue."
 
     # Visual of "magazines pop up on screen"
@@ -1890,8 +1954,10 @@ label s39:
     
     na "Burdened by the pressure of stardom, you started looking for a way to relieve the stress."
 
+    scene party
     na "You thought back to that night... that party... and how you didn't get to try that apple juice."
 
+    scene black
     na "Now you wanted it... you needed it... and eventually you succumbed to it."
 
     na "You spent all your money on apple juice, only drank apple juice, and only cared about apple juice."
@@ -1904,59 +1970,77 @@ label s39:
 
 label s40:
 
+    scene black
     na "The two of you leave the party and walk to a nearby park."
 
+    scene park night
     na "The air is chilly but the stars are shining clearly and brightly."
 
+    show kyle party loving at e
     kyle "Let's sit down for a little bit. There's a bench over there."
 
-    mc normal "Okay!"
+    pmc ecstatic "Okay!"
 
     # Switch to bench
 
+    scene park night
+    show kyle party confused at e
     kyle "..."
 
-    mc normal "..."
+    pmc shy "..."
 
     kyle "..."
 
-    mc normal "It's really cold out here."
+    pmc embarrassed "It's really cold out here."
 
+    show kyle party concerned
     kyle "Maybe we shouldn't have sat down."
 
-    mc normal "Yeah, that was kind of stupid."
+    pmc normal "Yeah, that was kind of stupid."
 
+    show kyle party confused
+    kyle "..."
+
+    pmc shy "..."
+
+    show kyle party confused
     kyle "Do you want my jacket?"
 
-    mc normal "No it's okay, you can keep it."
+    pmc shy "No it's okay, you can keep it."
 
+    show kyle party embarrassed
     kyle "Oh. Uh, okay."
 
-    mc normal "..."
+    pmc shy "..."
 
     kyle "..."
 
-    mc normal "..."
+    pmc shy "..."
 
+    show kyle party concerned
     kyle "Have you ever wondered what the stars would say if they could talk?"
 
-    mc normal "Haha, n--{nw}"
+    pmc ecstatic "Haha, n--{nw}"
 
+    show kyle party normal
     kyle "I think they'd tell us the world's secrets. Why we're here, what we're meant to become, and how we might get there."
 
+    show kyle party concerned
     kyle "Sometimes I feel lost. Like I'm just falling through time with no real purpose."
 
+    show kyle party happy
     kyle "But there are moments when this light reaches out to me."
 
     kyle "It tells me that I have something to give. That I have something to offer to this cold world."
 
     kyle "This light tells me to keep going, keep trying, and keep living."
 
+    show kyle party loving
     kyle "And I've found [mcname], that it's when I'm with you that this light is most prevalent."
 
     kyle "You're like my star, [mcname]. And that's why... I love you."
 
-    mc normal "I..."
+    pmc shy "I..."
 
     jump e4
 
@@ -3026,6 +3110,13 @@ label s70:
 label s71:
  
 label s72:
+    
+    scene black
+    na "You tried, I guess. Unfortunately you spend the rest of eternity in Haruka's basement, doomed to a life of no sunshine..."
+
+    na "You never learn your lesson, do you?"
+
+    jump e7
  
 label s73:
  
@@ -3921,23 +4012,58 @@ label s99:
 label s100:
 
     scene classroom1 day
+    show teacher_e happy at e
     teacher_e "Next we have... Yutaka and [mcname]'s project."
 
+    show teacher_e happy at left
+    show jt ecstatic at e
     jt "Ah yes, our masterpiece is finally being shown!"
 
-    mc "I hope everyone likes it..."
+    mc shy "I hope everyone likes it..."
 
+    scene classroom1 day
     na "As the teacher shows your project, smiles and nods of approval appear on your classmates' faces."
 
     na "Success! Everyone seemed to like it. Good job, [mcname]."
 
+    show teacher_e happy at e
     teacher_e "Comments?"
 
-    na "As kids' hands fly in the air to sing praise of your masterpiece, the door dramatically opens and a well dressed man with a camera around his neck enters the room..."
+    na "As kids' hands fly in the air to sing praise of your masterpiece, the door dramatically opens and a well dressed man with a camera around his neck enters the room..." with hpunch
 
     jump s101
 
 label s101:
+
+    show teacher_e sad at left
+    show beckham agent normal at e
+    beckham "Hello everyone, I am here from Kunkler Productions, and I would like to amend Ms. [mcname] on her wonderful project."
+
+    mc shy "Oh, really? Thank you..."
+
+    beckham "Yes, [mcname], this project excellently portrays your talent in filmmaking."
+
+    show beckham agent happy
+    beckham "Talent like yours is needed in my industry right now."
+
+    beckham "What do you say to dropping this silly school business and becoming a full-time producer?"
+
+    show beckham agent flirty
+    beckham "Generous payment included, of course!"
+
+    show teacher_e angry
+    teacher_e "Hey, you can't just-{w=0.5}"
+
+    show beckham agent happy
+    show teacher_e sad
+    beckham "Now I can. So what do you say, [mcname]?"
+
+    show beckham agent flirty
+    beckham "You could make millions. {i}{color=#b0b0b0}{size=-6}{cps=10}*wink*{/cps}{/size}{/color}{/i}"
+
+    mc ecstatic "Wow, that sounds awesome! Sign me up!"
+
+    jump e20
 
 label s102:
 
@@ -4076,7 +4202,7 @@ label e5: # All is fair in Love and War
 
 label e6:
 
-label e7:
+label e7: # Death
 
 label e8: # Date Maryam (pending name)
 
@@ -4101,6 +4227,8 @@ label e17: # Yakuza
 label e18: # The Safe Play
 
 label e19: # The True High School Experience
+
+label e20: # Famous Filmmaker
 
 
 label dice_roll:

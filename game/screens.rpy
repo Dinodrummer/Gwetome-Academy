@@ -394,7 +394,7 @@ screen navigation():
             yalign 0.6
             textbutton _("Start") action Start()
             spacing gui.navigation_spacing + 40
-            image 
+            #image 
 
         else:
             xpos 120
