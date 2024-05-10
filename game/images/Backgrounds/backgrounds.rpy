@@ -29,16 +29,16 @@ image gate:
     "images/Backgrounds/bg gate.jpg"
     zoom 1
 image classroom1 day: # English
-    "images/Backgrounds/bg classroom1_day.jpg"
+    "images/Backgrounds/bg classroom1 day.png"
     zoom 1
 image classroom1 night: # English
-    "images/Backgrounds/bg classroom1_night.jpg"
+    "images/Backgrounds/bg classroom1 night.png"
     zoom 1
 image classroom2 day: # Math
-    "images/Backgrounds/bg classroom2_day.jpg"
+    "images/Backgrounds/bg classroom2 day.jpg"
     zoom 1
 image classroom2 night: # Math
-    "images/Backgrounds/bg classroom2_night.jpg"
+    "images/Backgrounds/bg classroom2 night.jpg"
     zoom 1
 image counseling:
     "images/Backgrounds/bg counseling.jpg"
@@ -46,14 +46,20 @@ image counseling:
 image gym:
     "images/Backgrounds/bg gym.jpg"
     zoom 1
-image detention:
-    "images/Backgrounds/bg detention.jpg"
+image detention day:
+    "images/Backgrounds/bg detention day.png"
+    zoom 1
+image detention night:
+    "images/Backgrounds/bg detention night.png"
     zoom 1
 image student_council:
     "images/Backgrounds/bg student_council.jpg"
     zoom 1
-image hallway:
-    "images/Backgrounds/bg hallway.jpg"
+image hallway day:
+    "images/Backgrounds/bg hallway day.png"
+    zoom 1
+image hallway night:
+    "images/Backgrounds/bg hallway night.jpg"
     zoom 1
 
 image door:
@@ -67,21 +73,28 @@ image dream:
     "images/Backgrounds/bg dream.jpg"
     zoom 1
 image party:
-    "images/Backgrounds/bg party.jpg"
+    "images/Backgrounds/bg party.png"
     zoom 1
 
+image house maryam:
+    "images/Backgrounds/bg house maryam.png"
+    zoom 1
 image room maryam:
     "images/Backgrounds/bg room maryam.png"
     zoom 1
 image neighborhood maryam:
     "images/Backgrounds/bg neighborhood maryam.png"
     zoom 1
-image house maryam:
-    "images/Backgrounds/bg house maryam.png"
+image basement maryam:
+    "images/Backgrounds/bg basement maryam.png"
     zoom 1
 
+
 image house jt:
-    "images/Backgrounds/bg house jt.jpg"
+    "images/Backgrounds/bg house jt.png"
+    zoom 1
+image balcony jt:
+    "images/Backgrounds/bg balcony jt.png"
     zoom 1
 
 image choice:

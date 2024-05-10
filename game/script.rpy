@@ -463,24 +463,23 @@ label start:
 
     stop music
 
-    jump s27
     # show screen character_name("Hana Kobayashi", "小林・花")
 
     scene bedroom
 
     #jump s74
 
-    pjmc normal "{i}{color=#b0b0b0}{size=-6}{cps=10}*yawn*{/cps}{/size}{/color}{/i} I'm so tired... I stayed up all night playing otome games."
+    pjmc shy "{i}{color=#b0b0b0}{size=-6}{cps=10}*yawn*{/cps}{/size}{/color}{/i} I'm so tired... I stayed up all night playing otome games."
     
     pjmc ecstatic "It`s hard not to when you`re given so many choices, especially when you can punch the male leads. Hehehe!"
 
-    pjmc scared "Oh wait! I forgot to introduce myself. My name is {u}[mcname]{/u}!"
+    pjmc scared "Oh wait! I forgot to introduce myself. My name is{u} [mcname]!{/u}"
 
     pjmc normal "I'm sixteen. Today is my first day of my second year at Gwetome Academy."
 
     pjmc normal "Ever since my family moved back to Shizuoka, I've been living my high-school life to the fullest."
 
-    pjmc normal "During my time here, I've come to learn that love isn't the only important thing in life. {w=2}"
+    pjmc normal "During my time here, I've come to learn that love isn't the only important thing in life."
 
     pjmc ecstatic "I'm my own person, with my own goals and dreams, and I'm proud of that. I am independent and strong!"
 
@@ -563,7 +562,7 @@ label s4:
 
     na "Wow, that's a strangely attractive pole. And it's wearing a... Gwetome Academy uniform!? The pole turns around."
 
-    show joe normal
+    show joe normal at e
     joe "Ah sorry, I was walking kind of slow. Are you ok?"
 
     show joe ecstatic
@@ -660,7 +659,7 @@ label s6:
 
     na "It isn't long before you find yourself turning a sharp corner... with toast... hmm..."
 
-    mc flirtyJoke "Ah! It hurts!" with hpunch
+    mc flirtyjoke "Ah! It hurts!" with hpunch
 
     mc concerned "...?"
 
@@ -852,7 +851,7 @@ label s12:
 
 label s13:
 
-    scene detention
+    scene detention day
     na "Ahhh... detention. A land of hopes and sorrows... youth and forgotten dreams."
 
     na "Somehow you always seem to find yourself here."
@@ -983,7 +982,7 @@ label s15:
     show sophia normal at e
     sophia "Yo."
 
-    mc flirtyJoke "Oh, hey."
+    mc flirtyjoke "Oh, hey."
 
     sophia "You dropped this."
 
@@ -1028,7 +1027,7 @@ label s16:
 
     #TODO: Earthquake rumble
 
-    na "Whoa! What was that?! It felt like an earthqua-{w=0.5}" with hpunch
+    na "Whoa! What was that?! It felt like an earthqua-{w=0.2}{nw}" with hpunch
 
     na "...Oh. It was you? Wow, you must be hungry."
 
@@ -1090,7 +1089,7 @@ label s17:
 
 label s18:
 
-    scene hallway
+    scene hallway day
     na "As you're wandering the halls, you notice a student walking your way. He seems to be dressed very nicely, even for the prestigious Gwetome Academy."
 
     na "Wait, that's the student council president! You're in trouble if he finds you out here."
@@ -1152,7 +1151,7 @@ label s18:
 
 label s19:
 
-    scene hallway
+    scene hallway day
     na "You throw a powerful punch, flying him across the room. He won't be bringing you back to class again anytime soon." with hpunch
 
     na "You hear a feeble voice as you walk away."
@@ -1194,7 +1193,7 @@ label s21:
 
 label s22:
 
-    scene hallway
+    scene hallway day
     na "You release a powerful punch aimed right at Yutaka!"
 
     na "...and miss. Well, that's embarrassing."
@@ -1218,9 +1217,10 @@ label s22:
 
     mc cocky "Alright fine, I'll go to counseling. Sorry for trying to punch you, but it was too hard to resist."
 
-    show jt embarrased
+    show jt embarrassed
     jt "Hey! Wait, don't say that about me!"
 
+    hide jt with ex
     na "You turn and go to counseling. You can feel Yutaka fuming behind you, but you keep walking without a care in the world."
 
     jump s25
@@ -1364,7 +1364,7 @@ label s24:
 
     mc scared "NOOOO! MY CARAMEL RIBBON CRUNCH FRAPPE!!" with hpunch
 
-    na "Well, that's rough. After you witness-- with pure agony--  the drink spill, you then look up to see... a pole? And an attractive one at that."
+    na "Well, that's rough. After you witness-- with pure agony--  the drink spill on the floor, you then look up to see... a pole? And an attractive one at that."
 
     na "Wait, who would put a pole in the middle of a Hoshibucks? The pole reaches out a hand to you."
 
@@ -1437,7 +1437,7 @@ label s25:
 
     na "After Yutaka angrily explains the situation to the student \"student counselor\", you soon find yourself in a one-on-one counseling session to address your... issues..."
 
-    show beckham normal
+    show beckham normal at e
     beckham "If you don't go to school, you won't find success. You need to try your best everyday."
 
     mc sad "Okay..."
@@ -1467,7 +1467,7 @@ label s26:
     mc normal "{i}I wonder who's going to be there... I'll have to make lots of friends! Maybe I should try something new to make a good impression...{/i}"
 
     #TODO: Door noise
-    scene detention
+    scene detention day
     mc scared "Eh? Akimitsu?!" with hpunch
 
     na "Chiba Akimitsu, your childhood friend since third grade appears at the desk next to yours."
@@ -1516,7 +1516,7 @@ label s27:
 
     na "Date or not, you're not going. You toss the handkerchief and note out the window and wait for the school day to end. Soon enough, word gets around of your rejection."
 
-    scene hallway
+    scene hallway night
     show d2 normal at e
     d2 "That's [mcname] isn't it?"
 
@@ -1624,7 +1624,7 @@ label s29:
     kyle "Ahhh, sorry. I have a basketball game after school."
 
     show kyle confused
-    kyle "He says, \"Hey, turns out we're in the finals now because some person with bleached blonde hair just showed up and beat up the team that we lost to. {w=2}{nw}"
+    kyle "He says, \"Hey, turns out we're in the finals now because some person with bleached blonde hair just showed up and beat up the team that we lost to.\""
     
     show kyle normal
     kyle "He was saying something about [mcname], you, and a party. Weird, huh?"
@@ -1735,7 +1735,7 @@ label s33:
     scene black
     na "You leave."
 
-    scene hallway
+    scene hallway day
     show kyle scared at e
     kyle "Wait! Wait! If you're that determined to go to the party I'll go with you. I'll skip my game."
 
@@ -2592,6 +2592,10 @@ label s53:
 
     na "As you are about to enter the library, you notice a flier posted next to the door."
 
+    $ maryamname = "Haruka Kiyama"
+    $ maryamname_kanji = "木山・遥花"
+    $ metMaryam = True
+
     na "\"Come over to my house at address here if you need help with English words like [quizWord] and English project work. -Haruka Kiyama\". Huh, that sounds exactly like what you need! Maybe a little too exactly..."
 
     na "Pshh...  Let's be realistic here! It's just a coincidence!"
@@ -2783,7 +2787,7 @@ label s56:
 
     # Next Day
     
-    scene street maryam
+    scene neighborhood maryam
     na "You knock on the door, and Haruka answers."
 
     show maryam normal
@@ -2830,7 +2834,7 @@ label s58:
 
     na "You walk up to the door of the address posted on the flier with no worries in your mind."
 
-    scene street maryam
+    scene neighborhood maryam
     na "You then hear some noises coming from the house, like someone is frantically trying to clean up."
 
     show maryam normal at e
@@ -2959,7 +2963,7 @@ label s61:
  
 label s62: #TODO: Repetitive scene?
 
-    scene street maryam
+    scene neighborhood maryam
     show maryam normal at e
     mc normal "Where would you like to go?"
 
@@ -2992,7 +2996,7 @@ label s62: #TODO: Repetitive scene?
     show maryam embarrassed
     maryam "I've liked you ever since we had art together freshman year of highschool!"
 
-    na "You guys went to the same freshman class? How do they even remem--{w=0.5}"
+    na "You guys went to the same freshman class? How do they even remem--{w=0.2}{nw}"
 
     show maryam normal
     maryam "When you gave me your extra pencil right before the final test, I knew you were the one for me! Would you like to go on a date with me?"
@@ -3007,7 +3011,7 @@ label s63:
 
     mc cocky "Alright then, the password is 123456."
 
-    na "the real password is actually 1234567... They couldn't possibly figure it o--{w=0.5}"
+    na "the real password is actually 1234567... They couldn't possibly figure it o--{w=0.2}{nw}"
 
     show maryam normal
     maryam "Perfect! I connected! L-let's get to work shall we?"
@@ -3122,7 +3126,7 @@ label s73:
  
 label s74:
 
-    scene hallway
+    scene hallway day
     na "You begin walking the halls with Mio, putting up posters and talking about club duties. Although Mio seems meek she speaks with openness and discipline."
 
     show mio normal at e
@@ -4052,7 +4056,7 @@ label s101:
     beckham "Generous payment included, of course!"
 
     show teacher_e angry
-    teacher_e "Hey, you can't just-{w=0.5}"
+    teacher_e "Hey, you can't just-{w=0.2}{nw}"
 
     show beckham agent happy
     show teacher_e sad
@@ -4095,7 +4099,7 @@ label s103:
 
     na "He seems dumbfounded, like no one has ever rejected him like that before."
 
-    scene hallway
+    scene hallway day
     na "As you turn into the hallway, you see a nonchalant, delinquent-looking student leaned against the wall, seemingly waiting for you."
 
     show sophia normal at e
@@ -4248,7 +4252,7 @@ label fight:
     $ player_max_hp = 20
     $ enemy_max_hp = 20
 
-    scene bedroom
+    scene hallway day
     show fight1 at bar
     show fight2 at bar
     show jt cocky at e
