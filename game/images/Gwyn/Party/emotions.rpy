@@ -31,3 +31,7 @@ image side gwyn party scared:
 image side gwyn party shy:
     "images/Gwyn/Party/side gwyn_party shy.png"
     zoom 0.8
+
+image side gwyn party night normal:
+    "images/Gwyn/Party/side gwyn_party night normal.png"
+    zoom 0.8

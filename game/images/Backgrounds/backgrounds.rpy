@@ -12,11 +12,12 @@ image neighborhood:
     "images/Backgrounds/bg neighborhood.png"
     zoom 1
 
-image city night:
-    "images/Backgrounds/bg city_night.jpg"
+
+image walkway:
+    "images/Backgrounds/bg walkway.jpg"
     zoom 1
 image park night:
-    "images/Backgrounds/bg park_night.jpg"
+    "images/Backgrounds/bg balcony jt.png"
     zoom 1
 image beach:
     "images/Backgrounds/bg beach.jpg"

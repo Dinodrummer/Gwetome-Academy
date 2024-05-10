@@ -428,6 +428,8 @@ label riri:
 
         riri "{i}{color=#b0b0b0}{size=-6}{cps=10}*gasp*{/cps}{/size}{/color}{/i}"
 
+        $ riris[30] = False
+
     else:
         na "{i}[[It doesn't look like Riri has anything to say right now.]{/i}"
 
@@ -463,11 +465,12 @@ label start:
 
     stop music
 
-    # show screen character_name("Hana Kobayashi", "小林・花")
+    # show screen character_name("Hana Kobayashi", "小林・花")s
+    #jump s74
+
+    jump s40
 
     scene bedroom
-
-    #jump s74
 
     pjmc shy "{i}{color=#b0b0b0}{size=-6}{cps=10}*yawn*{/cps}{/size}{/color}{/i} I'm so tired... I stayed up all night playing otome games."
     
@@ -1022,7 +1025,7 @@ label s16:
 
     # After school
 
-    scene city night
+    scene hallway night
     na "Man, it was your first day and you got {i}detention{/i}. Honestly, I'm impressed."
 
     #TODO: Earthquake rumble
@@ -1552,7 +1555,7 @@ label s27:
 
 label s28:
 
-    scene city_night
+    scene walkway
     na "Soon, night falls. You arrive at the party with Akimitsu and head inside."
 
     scene party
@@ -1879,7 +1882,7 @@ label s38:
     scene black
     na "The two of you step outside."
 
-    scene city_night
+    scene walkway
     na "You find yourself on a balcony overlooking Shizuoka."
 
     na "The wind softly blows through your hair and the lights of the city sparkle in the distance."
@@ -1933,7 +1936,7 @@ label s39:
     scene black
     na "You flip your hair and strut out the door."
 
-    scene city night
+    scene walkway
     na "As you walk you radiate power and confidence. Is this the power of self-worth?"
 
     na "In fact, the aura from your strut is so strong that it catches the attention of a modeling agent."
@@ -1976,7 +1979,7 @@ label s40:
     scene park night
     na "The air is chilly but the stars are shining clearly and brightly."
 
-    show kyle party loving at e
+    show kyle party night loving at e
     kyle "Let's sit down for a little bit. There's a bench over there."
 
     pmc ecstatic "Okay!"
@@ -1991,24 +1994,24 @@ label s40:
 
     kyle "..."
 
-    pmc embarrassed "It's really cold out here."
+    pmc normal "It's really cold out here."
 
-    show kyle party concerned
+    show kyle party night concerned
     kyle "Maybe we shouldn't have sat down."
 
     pmc normal "Yeah, that was kind of stupid."
 
-    show kyle party confused
+    show kyle party night confused
     kyle "..."
 
     pmc shy "..."
 
-    show kyle party confused
+    show kyle party night confused
     kyle "Do you want my jacket?"
 
     pmc shy "No it's okay, you can keep it."
 
-    show kyle party embarrassed
+    show kyle party night embarrassed
     kyle "Oh. Uh, okay."
 
     pmc shy "..."
@@ -2017,25 +2020,25 @@ label s40:
 
     pmc shy "..."
 
-    show kyle party concerned
+    show kyle party night concerned
     kyle "Have you ever wondered what the stars would say if they could talk?"
 
     pmc ecstatic "Haha, n--{nw}"
 
-    show kyle party normal
+    show kyle party night normal
     kyle "I think they'd tell us the world's secrets. Why we're here, what we're meant to become, and how we might get there."
 
-    show kyle party concerned
+    show kyle party night concerned
     kyle "Sometimes I feel lost. Like I'm just falling through time with no real purpose."
 
-    show kyle party happy
+    show kyle party night happy
     kyle "But there are moments when this light reaches out to me."
 
     kyle "It tells me that I have something to give. That I have something to offer to this cold world."
 
     kyle "This light tells me to keep going, keep trying, and keep living."
 
-    show kyle party loving
+    show kyle party night loving
     kyle "And I've found [mcname], that it's when I'm with you that this light is most prevalent."
 
     kyle "You're like my star, [mcname]. And that's why... I love you."
