@@ -94,8 +94,8 @@ image basement maryam:
 image house jt:
     "images/Backgrounds/bg house jt.png"
     zoom 1
-image balcony jt:
-    "images/Backgrounds/bg balcony jt.png"
+image balcony sophia:
+    "images/Backgrounds/bg balcony sophia.png"
     zoom 1
 
 image choice:
