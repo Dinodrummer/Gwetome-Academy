@@ -108,8 +108,12 @@ init python:
 
     char_left = Position(xpos=0.18, ypos=0.75)
     basketballSong = "bgm_basketball.mp3"
-    sfxBell = "sfx_bell.mp3"
+    
     bgSong = "bgm_skipABeat.mp3"
+
+    sfxBell = "hoshibucks_bell.mp3"
+    hoshibucksSong = "bgm_hoshibucks.mp3"
+
     config.auto_voice = "voice/{id}.mp3"
 
     quizWords = ["Hi", "Hello", "Hey"]
@@ -181,7 +185,7 @@ init:
     define takeshi = Character("Takeshi", show_name = "たけし", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define dr = Character("Dr.", show_name = "ダクター", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
 
-    define riri = Character("[ririname]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # define riri = Character("リリ")
+    define riri = Character("[ririname]", show_name = "リリ", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # define riri = Character("リリ")
     define mv = Character("Mysterious Voice", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define mi = Character("Mysterious ikemens", show_name = "イケメンたち", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
 
@@ -429,6 +433,11 @@ label riri:
         riri "{i}{color=#b0b0b0}{size=-6}{cps=10}*gasp*{/cps}{/size}{/color}{/i}"
 
         $ riris[30] = False
+    elif riris[13]:
+
+        riri "Follow your gut, [mcname]!"
+
+        $ riris[13] = False
 
     else:
         na "{i}[[It doesn't look like Riri has anything to say right now.]{/i}"
@@ -467,8 +476,6 @@ label start:
 
     # show screen character_name("Hana Kobayashi", "小林・花")s
     #jump s74
-
-    jump s40
 
     scene bedroom
 
@@ -589,6 +596,8 @@ label s4:
 
 label s5:
 
+    $ metRiri = False
+
     na "The TV has summoned you and you must answer its call. As you sit down on the couch, you see the familiar face of the main character, Kimura Takeshi."
 
     na "It looks like he's having a serious talk with the Kiss Kiss Love Power Team, a magical-girl group that saves the world from evil monsters."
@@ -605,10 +614,12 @@ label s5:
     mi2 "Takeshi, we {i}meow{/i} it's a hard decision, but it's one that must be {i}mwade.{/i} {color=#b0b0b0}{size=-6}nya~{/size}{/color}"
 
     takeshi "But... but... what if I'm not cut out to be on the Kiss Kiss Love Power Team? 
-        What if I'm not a real magical-girl? If I fail... I can't ever return. Please, give me more--"
+        What if I'm not a real magical-girl? If I fail... I can't ever return. Please, give me more--{nw}"
 
     #explosion/crash + helicopter sounds
     #PyunPyun falls
+
+    na "{color=#b0b0b0}{size=-6}*explosion noise*{/size}{/color}" with hpunch
 
     pp "Pyuuuuuuuuuuun~"
 
@@ -622,13 +633,13 @@ label s5:
 
     na "Just as the Dr. begins to shoot his sadness missiles at the Kiss Kiss Love Power team, your phone buzzes."
 
-    mc confused "Huh?"
+    mc concerned "Huh?"
 
     na "Suddenly, a tiny sexy witch emerges out of your phone."
 
-    mc surprised "Mark Zuckerberg?!"
+    mc scared "Mark Zuckerberg?!"
 
-    $ metRiri = True
+    
     $ ririname = "Riri"
     $ ririname_kanji = "リリ"
     riri "Wrong! I'm Riri. My boss told me there was a weeb here so I came to help."
@@ -639,7 +650,7 @@ label s5:
 
     riri "Oh how the great have fallen. {i}{color=#b0b0b0}{size=-6}{cps=10}*sigh*{/cps}{/size}{/color}{/i} I used to always hear about you at work--"
 
-    riri "you were determined to get a lover by the end of the school day. On your first day of school! You were my hero... But now... {i}*cries*{/i}"
+    riri "you were determined to get a lover by the end of the school day. On your first day of school! You were my hero... But now... {i}{color=#b0b0b0}{size=-6}{cps=10}*cries*{/cps}{/size}{/color}{/i}"
 
     mc normal "Ummm..."
 
@@ -786,7 +797,9 @@ label s9:
 
 label s10:
 
+    $ metRiri = True
     scene gate
+    
     na "You arrive at school... late of course."
 
     na "What did you expect? After all that you'd still be early? Hah."
@@ -795,6 +808,7 @@ label s10:
 
     if metRiri:
         
+        show choice
         show riri surprised at e
         riri "What's this?! Two options of potential love and beauty?!?!"
 
@@ -1146,7 +1160,8 @@ label s18:
                 
     label s18_4:
 
-        na "As you start to turn around to walk back to class, you swiftly turn back and drive your fist into the student's face. Nice."
+        hide jt with ex
+        na "As you start to turn around to walk back to class, you swiftly turn back and drive your fist into the student's face. Nice." with hpunch
 
         na "Uh oh, he got back up? Looks like it's time for a fight!"
 
@@ -1203,17 +1218,20 @@ label s22:
 
     mc shy "Oh... oops."
 
-    show jt cocky
+    show jt cocky at e
+    $ jtname = "Yutaka Yanai"
+    $ jtname_kanji = "柳井・豊"
+    $ metJt = True
     jt "Ahahha, how cute! You really think you stand a chance against me? I am the one and only student council president, Yutaka!"
 
-    mc normal "Uhm... okay?"
+    mc shy "Uhm... okay?"
 
     show jt calculating
     jt "You've been naughty now, haven't you?"
 
     jt "You think you can walk free after trying  to hurt the most important student in the school?"
 
-    show jt normal
+    show jt concerned
     jt "No! I will not let this stand! Off to counseling with you!"
 
     na "How dramatic can this kid get..."
@@ -1340,25 +1358,29 @@ label s24:
 
     scene hoshibucks
 
+    play sound sfxBell
+    pause 0.5
+    play music hoshibucksSong
+
     na "You enter the Hoshibucks and step up to the bartender."
     
-    show beckham bartender normal at e
-    mc normal "I'll take your finest Caramel Ribbon Crunch Frappe, please."
+    show beckham hoshibucks normal at e
+    mc ecstatic "I'll take your finest Caramel Ribbon Crunch Frappe, please."
 
     na "You felt like you've seen this kid before. Maybe from school?"
 
-    show beckham bartender 
+    show beckham hoshibucks ecstatic 
     beckham "that'll be 2,210¥."
 
-    mc normal "Wh-{nw}"
+    mc scared "Wh-{nw}"
 
     # Saying yen amount loudly
     na "-Wait, 2,210¥?? What has this world come to..."
 
-    show beckham bartender shake
+    hide beckham with ex
     na "Failing to hold back spending one fourth of your monthly allowance on a single Frappe, you swipe your card and watch as the barista skillfully crafts your drink."
 
-    hide beckham with ex
+
     na "You imagine what the flavor will be as you grab the cup and walk away from the front counter."
 
     mc normal "It looks so good! I'll worry about the cost later, because this is gonna be so worth i--{nw}"
@@ -1882,7 +1904,7 @@ label s38:
     scene black
     na "The two of you step outside."
 
-    scene walkway
+    scene balcony sophia
     na "You find yourself on a balcony overlooking Shizuoka."
 
     na "The wind softly blows through your hair and the lights of the city sparkle in the distance."
@@ -1890,7 +1912,7 @@ label s38:
     show sophia party concerned
     sophia "To be honest... I didn't think you'd come with me."
 
-    pmc surprised "Huh? Why?"
+    pmc scared "Huh? Why?"
 
     show sophia party normal
     sophia "My family is yakuza. Ordinary people are usually too afraid of getting hurt. But you're... different."
@@ -2098,13 +2120,14 @@ label s43:
 
     if metRiri:
 
+        show choice
         show riri normal at e
         riri "It's me, Riri. Don't worry Naninani, I'm just making some minor adjustments to the fabric of time."
 
         show riri happy
         riri "You may have failed this time at romance, but I won't let you give up!"
     
-    mc scared "Eh?! What's going on?"
+    pjmc scared "Eh?! What's going on?"
 
     #TODO: Loading screen (?)
 
@@ -2669,7 +2692,7 @@ label s55:
 
     # At Yutaka's house
 
-    scene house jt
+    scene house sophia
     na "That afternoon, you head over to Yutaka's house."
 
     na "Well, more like Yutaka's {i}castle.{/i} This place is massive!"
@@ -2732,7 +2755,7 @@ label s55:
     show jt ecstatic
     jt "Alright, sounds good! Let's do it!"
 
-    scene house jt
+    scene house sophia
     na "You spend hours with Yutaka, and eventually finish the project."
 
     show jt ecstatic at e

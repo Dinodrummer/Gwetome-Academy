@@ -1,26 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While parsing C:\Users\jtgru\OneDrive\Desktop\Gwetome-Academy\game/images/Sophia/Party Night/emotions.rpy.
-ScriptError: Name ('game/images/Sophia/Party/emotions.rpy', 1700892771, 413) is defined twice, at game/images/Sophia/Party Day/emotions.rpy:25 and game/images/Sophia/Party Night/emotions.rpy:25.
+While running game code:
+  File "game/script.rpy", line 1381, in script
+    show beckham hoshibucks shake
+Exception: Image 'beckham' does not accept attributes 'hoshibucks shake'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\bootstrap.py", line 275, in bootstrap
-    renpy.main.main()
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\main.py", line 492, in main
-    renpy.game.script.load_script() # sets renpy.game.script.
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\script.py", line 310, in load_script
-    self.load_appropriate_file(".rpyc", [ "_ren.py", ".rpy" ], dir, fn, initcode)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\script.py", line 888, in load_appropriate_file
-    self.finish_load(stmts, initcode, filename=lastfn) # type: ignore
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\script.py", line 525, in finish_load
-    check_name(node)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\script.py", line 501, in check_name
-    raise ScriptError("Name %s is defined twice, at %s:%d and %s:%d." %
-ScriptError: Name ('game/images/Sophia/Party/emotions.rpy', 1700892771, 413) is defined twice, at game/images/Sophia/Party Day/emotions.rpy:25 and game/images/Sophia/Party Night/emotions.rpy:25.
+  File "game/script.rpy", line 1381, in script
+    show beckham hoshibucks shake
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\core.py", line 499, in _duplicate
+    args.extraneous()
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\core.py", line 362, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'beckham' does not accept attributes 'hoshibucks shake'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.1.3.23091805
- 
-Fri May 10 14:28:29 2024
+Gwetome Academy 1.0
+Mon May 13 18:35:59 2024
