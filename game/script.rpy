@@ -1979,7 +1979,7 @@ label s40:
     scene park night
     na "The air is chilly but the stars are shining clearly and brightly."
 
-    show kyle party night loving at e
+    show kyle party loving at e
     kyle "Let's sit down for a little bit. There's a bench over there."
 
     pmc ecstatic "Okay!"
@@ -1996,22 +1996,22 @@ label s40:
 
     pmc normal "It's really cold out here."
 
-    show kyle party night concerned
+    show kyle party concerned
     kyle "Maybe we shouldn't have sat down."
 
     pmc normal "Yeah, that was kind of stupid."
 
-    show kyle party night confused
+    show kyle party confused
     kyle "..."
 
     pmc shy "..."
 
-    show kyle party night confused
+    show kyle party confused
     kyle "Do you want my jacket?"
 
     pmc shy "No it's okay, you can keep it."
 
-    show kyle party night embarrassed
+    show kyle party embarrassed
     kyle "Oh. Uh, okay."
 
     pmc shy "..."
@@ -2020,25 +2020,25 @@ label s40:
 
     pmc shy "..."
 
-    show kyle party night concerned
+    show kyle party concerned
     kyle "Have you ever wondered what the stars would say if they could talk?"
 
     pmc ecstatic "Haha, n--{nw}"
 
-    show kyle party night normal
+    show kyle party normal
     kyle "I think they'd tell us the world's secrets. Why we're here, what we're meant to become, and how we might get there."
 
-    show kyle party night concerned
+    show kyle party concerned
     kyle "Sometimes I feel lost. Like I'm just falling through time with no real purpose."
 
-    show kyle party night happy
+    show kyle party happy
     kyle "But there are moments when this light reaches out to me."
 
     kyle "It tells me that I have something to give. That I have something to offer to this cold world."
 
     kyle "This light tells me to keep going, keep trying, and keep living."
 
-    show kyle party night loving
+    show kyle party loving
     kyle "And I've found [mcname], that it's when I'm with you that this light is most prevalent."
 
     kyle "You're like my star, [mcname]. And that's why... I love you."
