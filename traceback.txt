@@ -1,30 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1381, in script
-    show beckham hoshibucks shake
-Exception: Image 'beckham' does not accept attributes 'hoshibucks shake'.
+  File "game/script.rpy", line 469, in script
+    $ mcname = renpy.input("What is your name?", what_outlines = dialogue_outlines)
+  File "game/script.rpy", line 469, in <module>
+    $ mcname = renpy.input("What is your name?", what_outlines = dialogue_outlines)
+TypeError: renpy.input() got unexpected keyword argument(s): what_outlines
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 1381, in script
-    show beckham hoshibucks shake
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 1428, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 1391, in show_imspec
-    renpy.config.show(name,
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\exports.py", line 733, in show
-    if not base.find_target() and renpy.config.missing_show:
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\image.py", line 421, in find_target
-    self.target = target._duplicate(a)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\core.py", line 499, in _duplicate
-    args.extraneous()
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\core.py", line 362, in extraneous
-    raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'beckham' does not accept attributes 'hoshibucks shake'.
+  File "game/script.rpy", line 469, in script
+    $ mcname = renpy.input("What is your name?", what_outlines = dialogue_outlines)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 469, in <module>
+    $ mcname = renpy.input("What is your name?", what_outlines = dialogue_outlines)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.3-sdk\renpy\exports.py", line 946, in input
+    raise TypeError("renpy.input() got unexpected keyword argument(s): {}".format(", ".join(kwargs.keys())))
+TypeError: renpy.input() got unexpected keyword argument(s): what_outlines
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.1.3.23091805
 Gwetome Academy 1.0
-Mon May 13 18:35:59 2024
+Wed May 15 10:37:59 2024

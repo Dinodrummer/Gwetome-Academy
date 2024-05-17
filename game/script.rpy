@@ -116,8 +116,8 @@ init python:
 
     config.auto_voice = "voice/{id}.mp3"
 
-    quizWords = ["Hi", "Hello", "Hey"]
-    quizAnswers = ["Hi2", "Hello2", "Hey2"]
+    quizWords = ["Environment", "Tradition", "Influence"]
+    quizAnswers = ["かんきょう", "でんとう", "えいきょう"] #quizAnswers = ["環境", "伝統", "影響"]
     quizWord = quizWords[renpy.random.randint(0,len(quizWords) - 1)]
     quizCorrect = quizAnswers[quizWords.index(quizWord)]
     quizGuess1 = quizAnswers[renpy.random.randint(0,len(quizAnswers) - 1)]
@@ -438,6 +438,13 @@ label riri:
         riri "Follow your gut, [mcname]!"
 
         $ riris[13] = False
+    elif riris[51]:
+
+        riri "Hey, why are you looking at me?"
+
+        riri "Come on now, you should know this..."
+
+        $ riris[51] = False
 
     else:
         na "{i}[[It doesn't look like Riri has anything to say right now.]{/i}"
@@ -448,7 +455,7 @@ label riri:
             riris.insert(i, False)
     
     hide riri with ex
-    hide choice
+    #hide choice
 
     return
 # -------------------------------------------------------------------------------------------------------------------
@@ -462,9 +469,11 @@ label riri:
 
 
 label start:
-    #show beckham agent ecstatic at topright
-    #with moveinright
-    #show gwyn party normal at topleft
+    stop music
+
+    pause 0.7
+    na "Welcome. We're glad you could make it. Again. Weirdo. Who are you anyway?"
+
     $ mcname = renpy.input("What is your name?")
     $ mcname = mcname.strip()
     $ mcname = mcname[0:13]
@@ -472,10 +481,11 @@ label start:
         $ mcname = "Naninani Nantoka"
         #何とか、何々
 
-    stop music
+    na "Ah, got it. Hi, [mcname]. Welcome to Gwetome Academy, where this story-- your story-- is continuing into its second year of high school. A new year of love, lust, and violent tendencies."
 
-    # show screen character_name("Hana Kobayashi", "小林・花")s
-    #jump s74
+    na "What route will you choose?"
+
+    jump s51
 
     scene bedroom
 
@@ -1356,10 +1366,10 @@ label s24:
 
     #In hoshibucks
 
-    scene hoshibucks
-
+    stop music
     play sound sfxBell
     pause 0.5
+    scene hoshibucks
     play music hoshibucksSong
 
     na "You enter the Hoshibucks and step up to the bartender."
@@ -1380,7 +1390,7 @@ label s24:
     hide beckham with ex
     na "Failing to hold back spending one fourth of your monthly allowance on a single Frappe, you swipe your card and watch as the barista skillfully crafts your drink."
 
-
+    scene hoshibucks
     na "You imagine what the flavor will be as you grab the cup and walk away from the front counter."
 
     mc normal "It looks so good! I'll worry about the cost later, because this is gonna be so worth i--{nw}"
@@ -2073,10 +2083,13 @@ label s41:
 
     mc normal "No thanks, I can make it by myself. Nice meeting you though!"
 
+    show joe sad
     joe "Oh okay... I guess I'll see you later then."
 
+    hide joe with ex
     na "You had to get home quick anyways. You haven't been catching up on this season's anime!"
 
+    scene neighborhood
     na "You dart out of the Hoshibucks, not even thanking him for buying your drink before leaving. Bold."
 
     jump s43
@@ -2088,6 +2101,7 @@ label s42:
     show joe ecstatic
     joe "Perfect! I'm going the same direction. Come on, let's get moving!"
 
+    scene black
     na "You leave the Hoshibucks with Joe."
 
     scene neighborhood
@@ -2137,19 +2151,23 @@ label s44:
 
     mc normal "So, do you go to Hoshibucks often?"
 
+    show joe ecstatic at e
     joe "Yes! In fact, I go almost every day after school! I live for Hoshibucks, haha!"
 
-    mc normal "Wow, that's cool! I like Hoshibucks, but I don't go very often because it's so expensive."
+    mc ecstatic "Wow, that's cool! I like Hoshibucks, but I don't go very often because it's so expensive."
 
+    show joe concerned
     joe "True..."
 
+    show joe normal
     joe "Well, if you don't go to hoshibucks often, what do you do in your free time?"
 
     mc normal "Well, other than studying and extracurriculars, I like going to to the beach."
 
+    show joe ecstatic
     joe "Really? Me too! It's such a nice way to unwind after a long day."
 
-    na "I think this guy just wants something to do with you… he probably spends all day in Hoshibucks."
+    na "I think this guy just wants something to do with you... he probably spends all day in Hoshibucks."
 
     joe "Well, if you're ever free, we should go to the beach together."
 
@@ -2498,9 +2516,12 @@ label s51:
     mc shy "Uhhh... What question?"
 
     show teacher_e sad
-    teacher_e "{i}{color=#b0b0b0}{size=-6}{cps=10}*sigh*...{/cps}{/size}{/color}{/i} I have it written right here. What is [quizWord] in Japanese?"
+    # $ metRiri = True
+    teacher_e "{i}{color=#b0b0b0}{size=-6}{cps=10}*sigh*...{/cps}{/size}{/color}{/i} I have it written right here. What is \"[quizWord]\" in Japanese?"
 
-    #TODO: Change quiz questions to actual questions 
+    if metRiri:
+        $ riris[51] = True
+
     menu:
         "[quizGuess1]":
             if quizGuess1 == quizCorrect:
