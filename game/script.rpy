@@ -2163,12 +2163,15 @@ label s44:
 
     na "I think this guy just wants something to do with you... he probably spends all day in Hoshibucks."
 
+    show joe normal
     joe "Well, if you're ever free, we should go to the beach together."
 
-    mc normal "Okay, sure! How does tomorrow sound?"
+    mc ecstatic "Okay, sure! How does tomorrow sound?"
 
+    show joe concerned
     joe "{color=#b0b0b0}{size=-5}I guess I can go one day without my caramel frappe... for [mcname]...{/size}{/color}"
 
+    show joe ecstatic
     joe "Sounds good! I'll be looking forward to it! {i}{color=#b0b0b0}{size=-6}{cps=10}*wink*{/cps}{/size}{/color}{/i}"
 
     if metRiri:
