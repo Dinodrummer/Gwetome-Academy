@@ -462,12 +462,6 @@ label riri:
 # s1 = start
 # voice voice.mp3
 
-
-
-
-
-
-
 label start:
     stop music
 
