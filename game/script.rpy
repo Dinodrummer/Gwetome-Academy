@@ -77,30 +77,34 @@ transform centerL:
     
 define ex = Dissolve(0.1)
 
+python:
+    persistent.ririEncounter = False
+    persistent.joeEnding = False
+    persistent.kyleEnding = False
+    persistent.jtEnding = False
+    persistent.sophiaEnding = False
+    persistent.maryamEnding = False
+    persistent.beckhamEnding = False
+    persistent.playedGame = False
+
 init python:
+    from game import *
 
-
-    numscenes = 101
+    numscenes = 106
 
     def slow_punctuation(str_to_test):
         return (str_to_test
-            .replace(", ", ",{cps=5.0} {/cps}")
+            .replace(", ", ",{cps=6.0} {/cps}")
             .replace(". ", ".{cps=3.0} {/cps}")
             .replace("| ", "\n")
             .replace("! ", "!{cps=3.0} {/cps}")
             .replace("? ", "?{cps=3.0} {/cps}")
             .replace(": ", ":{cps=3.0} {/cps}")
             .replace("— ", "—{cps=3.0} {/cps}")
-            .replace(" —", " —{cps=3.0} {/cps}")
-            .replace("... ", "... {cps=3.0} {/cps}"))
+            .replace(" —", " —{cps=3.0} {/cps}"))
+            
     config.say_menu_text_filter = slow_punctuation
     gui.name = slow_punctuation
-            
-
-
-    #def display_character_names(english_name, japanese_name, x, y):
-        #renpy.show(renpy.text(english_name, size=40, color="#ffffff"), x=x, y=y)
-        #renpy.show(renpy.text(japanese_name, size=20, color="#ffffff"), x=x, y=y + 50)
 
     riris = []
     for i in range(numscenes):
@@ -109,7 +113,7 @@ init python:
     char_left = Position(xpos=0.18, ypos=0.75)
     basketballSong = "bgm_basketball.mp3"
     
-    bgSong = "bgm_skipABeat.mp3"
+    #bgSong = "bgm_skipABeat.mp3"
 
     sfxBell = "hoshibucks_bell.mp3"
     hoshibucksSong = "bgm_hoshibucks.mp3"
@@ -151,7 +155,7 @@ init python:
     metMaryam = False
     metMio = False
 
-    from game import *
+    
 
 
 # ----------------------------------------------------------------------------------------------------------
@@ -453,19 +457,27 @@ label riri:
         for i in range(numscenes):
             del(riris[i])
             riris.insert(i, False)
+            riris.insert(i - 1, False)
     
     hide riri with ex
-    #hide choice
+    hide choice
 
     return
+
+
 # -------------------------------------------------------------------------------------------------------------------
 # s1 = start
 # voice voice.mp3
 
 label start:
+
+    # TODO: Clear persistent data before exporting the game
+    # $ persistent._clear()
+
+    scene black
     stop music
 
-    pause 0.7
+    pause 0.5
     na "Welcome. We're glad you could make it. Again. Weirdo. Who are you anyway?"
 
     $ mcname = renpy.input("What is your name?")
@@ -475,14 +487,17 @@ label start:
         $ mcname = "Naninani Nantoka"
         #何とか、何々
 
+    $ persistent.playedGame = True
+
+    jump s54
+
     na "Ah, got it. Hi, [mcname]. Welcome to Gwetome Academy, where this story-- your story-- is continuing into its second year of high school. A new year of love, lust, and violent tendencies."
 
     na "What route will you choose?"
 
-    jump s51
+    scene bedroom with fade
 
-    scene bedroom
-
+    pause 0.3
     pjmc shy "{i}{color=#b0b0b0}{size=-6}{cps=10}*yawn*{/cps}{/size}{/color}{/i} I'm so tired... I stayed up all night playing otome games."
     
     pjmc ecstatic "It`s hard not to when you`re given so many choices, especially when you can punch the male leads. Hehehe!"
@@ -600,8 +615,6 @@ label s4:
 
 label s5:
 
-    $ metRiri = False
-
     na "The TV has summoned you and you must answer its call. As you sit down on the couch, you see the familiar face of the main character, Kimura Takeshi."
 
     na "It looks like he's having a serious talk with the Kiss Kiss Love Power Team, a magical-girl group that saves the world from evil monsters."
@@ -637,11 +650,11 @@ label s5:
 
     na "Just as the Dr. begins to shoot his sadness missiles at the Kiss Kiss Love Power team, your phone buzzes."
 
-    mc concerned "Huh?"
+    pjmc concerned "Huh?"
 
     na "Suddenly, a tiny sexy witch emerges out of your phone."
 
-    mc scared "Mark Zuckerberg?!"
+    pjmc scared "Mark Zuckerberg?!"
 
     
     $ ririname = "Riri"
@@ -650,17 +663,17 @@ label s5:
 
     riri "Wait! Are you Naninani Nantoka!?!?"
 
-    mc normal "Uh. No. I'm [mcname]."
+    pjmc normal "Uh. No. I'm [mcname]."
 
     riri "Oh how the great have fallen. {i}{color=#b0b0b0}{size=-6}{cps=10}*sigh*{/cps}{/size}{/color}{/i} I used to always hear about you at work--"
 
     riri "you were determined to get a lover by the end of the school day. On your first day of school! You were my hero... But now... {i}{color=#b0b0b0}{size=-6}{cps=10}*cries*{/cps}{/size}{/color}{/i}"
 
-    mc normal "Ummm..."
+    pjmc normal "Ummm..."
 
     riri "Well no matter Naninani! I'll help you get back on your feet and into the world of romance once again. Let's go!"
 
-    mc normal "Ummmmmmmmm..."
+    pjmc normal "Ummmmmmmmm..."
 
     menu:
         "{i}Go to school... late":
@@ -802,6 +815,7 @@ label s9:
 label s10:
 
     $ metRiri = True
+    $ persistent.ririEncounter = True
     scene gate
     
     na "You arrive at school... late of course."
@@ -1197,10 +1211,10 @@ label s21:
 
     mc shy "{i}Oh shoot, I forgot to grab one{/i}! Sure, let's head back."
 
-    scene classroom1_day
+    scene classroom1 day
     na "You walk back to class to get a hall pass, even though you never needed one. But right as you grab it, the bell rings."
 
-    show jt cocky
+    show jt cocky at e
     jt "Awww, well that's a shame. Well hey, at least we have the same class next period!"
 
     mc concerned "Oh, nice! Wait, how did you know that we had the same class?"
@@ -1361,6 +1375,7 @@ label s24:
     #In hoshibucks
 
     stop music
+    scene black
     play sound sfxBell
     pause 0.5
     scene hoshibucks
@@ -2013,7 +2028,7 @@ label s40:
     # Switch to bench
 
     scene park night
-    show kyle party confused at e
+    show kyle party embarrassed at e
     kyle "..."
 
     pmc shy "..."
@@ -2027,7 +2042,7 @@ label s40:
 
     pmc normal "Yeah, that was kind of stupid."
 
-    show kyle party confused
+    show kyle party embarrassed
     kyle "..."
 
     pmc shy "..."
@@ -2044,7 +2059,7 @@ label s40:
 
     kyle "..."
 
-    pmc shy "..."
+    pmc embarrassed "..."
 
     show kyle party concerned
     kyle "Have you ever wondered what the stars would say if they could talk?"
@@ -2513,7 +2528,6 @@ label s51:
     mc shy "Uhhh... What question?"
 
     show teacher_e sad
-    # $ metRiri = True
     teacher_e "{i}{color=#b0b0b0}{size=-6}{cps=10}*sigh*...{/cps}{/size}{/color}{/i} I have it written right here. What is \"[quizWord]\" in Japanese?"
 
     if metRiri:
@@ -2671,6 +2685,7 @@ label s54:
     na "...you have no friends."
 
     na "You notice someone sitting in the back of the classroom. Wanna try grouping with them?"
+    
     menu:
         "{i}Ask to group with them":
             jump s56
@@ -4236,23 +4251,33 @@ label s106:
 
     jump e19
 
-label e0:
+label e0: # Eternal Power Nap
 
-label e1: # Joe falls in love with the lifeguard
+label e1: # Joe falls in love with the lifeguard (change name?)
     
-label e2: # Date Joe (pending name)
+label e2: # Date Joe (change name?)
+
+    $ persistent.joeEnding = True
 
 label e3: # Castaway with Joe
 
-label e4: # Love you too
+    $ persistent.joeEnding = True
+
+label e4: # Love you too.
+
+    $ persistent.kyleEnding = True
     
 label e5: # All is fair in Love and War
+
+    $ persistent.sophiaEnding = True
 
 label e6:
 
 label e7: # Death
 
-label e8: # Date Maryam (pending name)
+label e8: # A Strangely Sweet Romance
+
+    $ persistent.maryamEnding = True
 
 label e9:
 
@@ -4262,9 +4287,13 @@ label e11: # Big Apple Juice
 
 label e12: # Love in the Basket
 
+    $ persistent.kyleEnding = True
+
 label e13: # The Archer of Love
 
 label e14: # First Love
+
+    $ persistent.jtEnding = True
 
 label e15: # Happily Ever After
 
@@ -4272,11 +4301,15 @@ label e16: # Mio 2.0
 
 label e17: # Yakuza
 
+    $ persistent.sophiaEnding = True
+
 label e18: # The Safe Play
 
 label e19: # The True High School Experience
 
 label e20: # Famous Filmmaker
+
+    $ persistent.beckhamEnding = True
 
 
 label dice_roll:

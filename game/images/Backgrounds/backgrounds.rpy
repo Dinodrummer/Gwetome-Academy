@@ -17,7 +17,7 @@ image walkway:
     "images/Backgrounds/bg walkway.jpg"
     zoom 1
 image park night:
-    "images/Backgrounds/bg balcony jt.png"
+    "images/Backgrounds/bg park night.jpg"
     zoom 1
 image beach:
     "images/Backgrounds/bg beach.jpg"

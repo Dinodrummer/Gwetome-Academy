@@ -76,7 +76,7 @@ define gui.text_size = 52
 define gui.name_text_size = 43
 
 ## The size of text in the game's user interface.
-define gui.interface_text_size = 33
+define gui.interface_text_size = 50
 
 ## The size of labels in the game's user interface.
 define gui.label_text_size = 36
@@ -91,7 +91,7 @@ define gui.title_text_size = 75
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
-define gui.main_menu_background = "images/Main Menu/mcbackground.png"
+define gui.main_menu_background = "images/Main Menu/background.png"
 define gui.game_menu_background = "gui/game_menu.png"
 #define gui.main_menu_background = Movie(play="images/video.mp4")
 
@@ -203,7 +203,8 @@ define gui.quick_button_text_selected_color = "#ffcdbe"
 ## For example, you can uncomment the following line to set the width of a
 ## navigation button.
 
-# define gui.navigation_button_width = 250
+#define gui.navigation_button_width = 150
+#define gui.navigation_button_size = 250
 
 
 ## Choice Buttons ##############################################################
@@ -254,7 +255,7 @@ define gui.file_slot_rows = 2
 
 ## The position of the left side of the navigation buttons, relative to the left
 ## side of the screen.
-define gui.navigation_xpos = 960
+define gui.navigation_xpos = 1025
 
 ## The vertical position of the skip indicator.
 define gui.skip_ypos = 15

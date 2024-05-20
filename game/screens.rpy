@@ -270,20 +270,27 @@ style input:
 transform scaled_image:
     size (150, 150)
 
-
 screen choice(items):
     style_prefix "choice"
     image "gui/choice_background.png"
 
 
     if metRiri:
-        imagebutton:
-            at scaled_image
-            xpos 35
-            ypos 35
-            auto "gui/riri_button_%s.png"
-            #action [Call("riri"), screen choice(items)]
-            action Call("riri")
+        
+        python:
+            ririAppear = False
+            for i in range(numscenes):
+                if riris[i]:
+                    ririAppear = True
+
+        if ririAppear:
+            imagebutton:
+                at scaled_image
+                xpos 35
+                ypos 35
+                auto "gui/riri_button_%s.png"
+                #action [Call("riri"), screen choice(items)]
+                action Call("riri")
 
     vbox:
         for i in items:
@@ -346,7 +353,7 @@ screen quick_menu():
             #textbutton _("Q.Save") action QuickSave()
             #textbutton _("Q.Load") action QuickLoad()
             textbutton _("SETTINGS") action ShowMenu('preferences')
-            textbutton _("MENU") action ShowMenu()
+            textbutton _("MENU") action MainMenu()
 
 
 
@@ -389,18 +396,11 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        if main_menu:
-            xalign 0.5
-            yalign 0.6
-            textbutton _("Start") action Start()
-            spacing gui.navigation_spacing + 40
-            #image 
 
-        else:
+        if not main_menu:
             xpos 120
             ypos 320
             textbutton _("History") action ShowMenu("history")
-            #$ inMenu = True
 
             textbutton _("Save") action ShowMenu("save")
 
@@ -424,11 +424,11 @@ screen navigation():
             ## Help isn't necessary or relevant to mobile devices.
             #textbutton _("Help") action ShowMenu("help")
 
-        if renpy.variant("pc"):
+        #if renpy.variant("pc"):
 
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            #textbutton _("Quit") action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
@@ -455,6 +455,58 @@ screen main_menu():
     tag menu
 
     add gui.main_menu_background
+    add "images/Main Menu/mc.png"
+
+    ## shadows
+
+    if persistent.playedGame:
+        
+        add "images/Main Menu/shadow joe & kyle.png"
+        add "images/Main Menu/shadow jt.png"
+        add "images/Main Menu/shadow sophia.png"
+        add "images/Main Menu/shadow beckham.png"
+        add "images/Main Menu/shadow maryam.png"
+        add "images/Main Menu/shadow riri.png"
+
+        ## people
+        
+
+        if persistent.ririEncounter:
+            add "images/Main Menu/riri.png"
+
+        if persistent.joeEnding:
+            add "images/Main Menu/joe.png"
+        if persistent.kyleEnding:
+            add "images/Main Menu/kyle.png"
+        if persistent.jtEnding:
+            add "images/Main Menu/jt.png"
+        if persistent.sophiaEnding:
+            add "images/Main Menu/sophia.png"
+        if persistent.beckhamEnding:
+            add "images/Main Menu/beckham.png"
+        if persistent.maryamEnding:
+            add "images/Main Menu/maryam.png"
+    
+
+    ## title
+    add "images/Main Menu/title.png"
+
+    text "Beta Version 0.5":
+        pos (1620, 1025)
+        outlines ((0, "#00000030", -1, 1), (0, "#00000025", -1, 2), (0, "#00000020", -1, 3), (0, "#00000015", -1, 4), (0, "#00000010", -1, 5), (0, "#00000005", -1, 6), 
+        (0, "#00000030", -2, 1), (0, "#00000025", -2, 2), (0, "#00000020", -2, 3), (0, "#00000015", -2, 4), (0, "#00000010", -2, 5), (0, "#00000005", -2, 6), 
+        (0, "#00000030", 0, 1), (0, "#00000025", 0, 2), (0, "#00000020", 0, 3), (0, "#00000015", 0, 4), (0, "#00000010", 0, 5), (0, "#00000005", 0, 6),
+        (0, "#fefcfc", -1, 0), (0, "#fefcfc", -1, 1), (0, "#fefcfc", 0, 1))
+    
+    ## buttons
+    imagebutton auto "images/Main Menu/new game_%s.png" action Start():
+        pos (1300, 300)
+    imagebutton auto "images/Main Menu/settings_%s.png" action ShowMenu("preferences"):
+        pos (1600, 280)
+    imagebutton auto "images/Main Menu/load game_%s.png" action ShowMenu("load"):
+        pos (1000, 280)
+    imagebutton auto "images/Main Menu/quit game_%s.png" action Quit():
+        pos (1, 1010)
 
     ## This empty frame darkens the main menu.
     frame:
@@ -572,7 +624,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     textbutton _("Return"):
         style "return_button"
-        action Return()
+        action [Hide(screen="preferences"),Return()]
 
     label title
 
@@ -750,7 +802,7 @@ screen file_slots(title):
                 style_prefix "page"
 
                 xalign 0.5
-                yalign 1.0
+                yalign 0.9
 
                 hbox:
                     xalign 0.5
@@ -771,15 +823,15 @@ screen file_slots(title):
 
                     textbutton _(">") action FilePageNext()
 
-                if config.has_sync:
-                    if CurrentScreenName() == "save":
-                        textbutton _("Upload Sync"):
-                            action UploadSync()
-                            xalign 0.5
-                    else:
-                        textbutton _("Download Sync"):
-                            action DownloadSync()
-                            xalign 0.5
+                #if config.has_sync:
+                    #if CurrentScreenName() == "save":
+                        #textbutton _("Upload Sync"):
+                        #    action UploadSync()
+                        #  xalign 0.5
+                    #else:
+                        #textbutton _("Download Sync"):
+                            #action DownloadSync()
+                            #xalign 0.5
 
 
 style page_label is gui_label
@@ -1623,7 +1675,7 @@ screen quick_menu():
             textbutton _("Back") action Rollback()
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Menu") action ShowMenu()
+            textbutton _("Menu") action MainMenu()
 
 
 style window:
