@@ -189,7 +189,7 @@ init:
     define takeshi = Character("Takeshi", show_name = "たけし", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define dr = Character("Dr.", show_name = "ダクター", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
 
-    define riri = Character("[ririname]", show_name = "リリ", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # define riri = Character("リリ")
+    define riri = Character("[ririname]", show_name = "[ririname_kanji]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # define riri = Character("リリ")
     define mv = Character("Mysterious Voice", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define mi = Character("Mysterious ikemens", show_name = "イケメンたち", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
 
@@ -449,6 +449,21 @@ label riri:
         riri "Come on now, you should know this..."
 
         $ riris[51] = False
+    elif riris[67]:
+
+        riri "Oh [mcname], how could this have happened!?"
+
+        riri "I wish I could use my magic to get us out of here... But this cage is magic proof!"
+
+        riri "Dang that Haruka, how did she..."
+
+        riri "Forget it. You are going to have to find a way out of this."
+
+        riri "For your sake, Akimitsu's sake... and most importantly... {i}mine!{/i}"
+
+        riri "Please!"
+
+        $ riris[67] = False
 
     else:
         na "{i}[[It doesn't look like Riri has anything to say right now.]{/i}"
@@ -489,7 +504,7 @@ label start:
 
     $ persistent.playedGame = True
 
-    jump s54
+    jump s53
 
     na "Ah, got it. Hi, [mcname]. Welcome to Gwetome Academy, where this story-- your story-- is continuing into its second year of high school. A new year of love, lust, and violent tendencies."
 
@@ -2642,19 +2657,25 @@ label s53:
 
     na "You have no idea what you're doing as you scribble a random vocabulary word you remember onto the board."
 
+    show teacher_e angry
     teacher_e "No... not quite, [mcname]. Maybe studying in the library will help you out."
 
-    teacher_e "You'll need someone to help you on the English project we will have too. Details will be posted in Google Classroom."
+    show teacher_e sad
+    teacher_e "You'll need someone to help you on the English project we will have too. Details will be posted online."
 
+    scene black
     na "Well that's embarrassing. After getting laughed at by the entire class, you decide to go to the library to work on your English skills."
 
+    scene hallway day
     na "As you are about to enter the library, you notice a flier posted next to the door."
 
     $ maryamname = "Haruka Kiyama"
     $ maryamname_kanji = "木山・遥花"
-    $ metMaryam = True
+    # $ metMaryam = True
 
-    na "\"Come over to my house at address here if you need help with English words like [quizWord] and English project work. -Haruka Kiyama\". Huh, that sounds exactly like what you need! Maybe a little too exactly..."
+    na "\"Come over to my house at address here if you need help with English words like \"[quizWord]\" and English project work. {i}-Haruka Kiyama{/i}\"."
+
+    na "Huh, that sounds exactly like what you need! Maybe a little too exactly..."
 
     na "Pshh...  Let's be realistic here! It's just a coincidence!"
 
@@ -2684,7 +2705,11 @@ label s54:
 
     na "...you have no friends."
 
-    na "You notice someone sitting in the back of the classroom. Wanna try grouping with them?"
+    na "You notice someone sitting in the back of the classroom."
+
+    na "I think their name was... Haruka?"
+
+    na "Wanna try grouping with them?"
     
     menu:
         "{i}Ask to group with them":
@@ -2826,6 +2851,10 @@ label s56:
 
     na "You walk up to the student's desk."
 
+    $ maryamname = "Haruka Kiyama"
+    $ maryamname_kanji = "木山・遥花"
+    $ metMaryam = True
+
     show maryam normal at e
     mc normal "Hey, do you have anyone to group with?"
 
@@ -2847,7 +2876,7 @@ label s56:
     # Next Day
     
     scene neighborhood maryam
-    na "You knock on the door, and Haruka answers."
+    na "You knock on the door, and the student answers."
 
     show maryam normal
     maryam "Welcome. Make yourself at home. Let's go to my room."
@@ -2868,13 +2897,13 @@ label s57:
     # TODO: Under the sheets noise
     mc normal "Aaa~ It's so warm~"
 
-    na "As you look around the room, you can see many pieces of hanging tape on the walls surrounding their bed. Did they take those down recently?"
+    na "As you look around the room, you can see some pieces of hanging tape on the walls surrounding their bed. Did they take some posters down recently?"
 
     na "Looking a bit more, you notice a small shiny object on the floor near the other side of the kotatsu."
 
     # Gwyn talking to herself
 
-    mc concerned "Ooo~ shiny! Hmmm... Isn't this my ring that I lost? I thought it was gone forever!"
+    mc normal "Ooo~ shiny! Hmmm... Isn't this my ring that I lost? I thought it was gone forever!"
 
     mc angry "They found it and never gave it back?! So rude!"
 
@@ -2891,23 +2920,25 @@ label s57:
  
 label s58:
 
+    scene neighborhood maryam
     na "You walk up to the door of the address posted on the flier with no worries in your mind."
 
-    scene neighborhood maryam
     na "You then hear some noises coming from the house, like someone is frantically trying to clean up."
 
+    $ metMaryam = True
     show maryam normal at e
     maryam "H- Hello... Are you here for the English lessons?"
 
-    mc normal "Yep! I saw your flier next to the library!"
+    mc ecstatic "Yep! I saw your flier next to the library!"
 
+    show maryam embarrassed
     maryam "A- Alright... Come on in..."
 
-    na "As you walk inside, you see Haruka running up the stairs ahead of you. You reach the second floor and see a door slam shut down the hallway."
+    scene black
+    na "As you walk inside, you see Haruka running ahead of you. You hear a door slam shut down the hallway upstairs."
 
-    # Knock knock
-
-    mc normal "Hey, is everything alright?"
+    scene house maryam
+    mc concerned "Hey, is everything alright?"
 
     maryam "Just one minute...!"
 
@@ -2919,16 +2950,21 @@ label s59:
 
     na "Yeah, it sounds a little too risky."
 
-    mc normal "I think I'll just study alone in the library today..."
+    mc concerned "I think I'll just study alone in the library today..."
 
+    scene black
     na "You spend all day studying English in the library, until you are fully satisfied that you have memorized that word."
 
+    scene hallway night
     mc normal "Finally! Ahh, I'm exhausted. Time to head home and watch some anime..."
 
     jump s43
  
 label s60:
 
+    na "You decide to ask about the ring when Haruka gets back."
+
+    show maryam normal at e
     mc concerned "Hey, I noticed the ring in your room looks familiar, where did you get it?"
 
     na "You notice that Haruka starts looking a little nervous."
@@ -3020,7 +3056,7 @@ label s61:
 
     jump s62
  
-label s62: #TODO: Repetitive scene?
+label s62:
 
     scene neighborhood maryam
     show maryam normal at e
@@ -3084,18 +3120,20 @@ label s63:
 
     mc normal "Ahaha actually, I don't feel very well at the moment, maybe we could continue another day?"
 
+    show maryam confused
     maryam "Oh, alright, I see."
 
     hide maryam with ex
-    na "Haruka hastily grabs their stuff and goes home. Anxiety is rushing through your veins, how could they have known your wifi password?!"
+    na "Haruka hastily grabs their stuff and goes home. Anxiety is rushing through your veins-- how could they have known your wifi password?!"
 
-    # New day at school
+    scene black
+    na "You head over to school the next day."
 
     scene classroom1 day
     na "You and Haruka plan on finishing the project later that day, but then you notice a handsome figure approaching..."
 
     show kyle normal at e
-    kyle "Hey naninani, I was wondering if you would like to come hang out with me after school... if you're not busy of course."
+    kyle "Hey [mcname], I was wondering if you would like to come hang out with me after school... if you're not busy of course."
 
     show kyle normal at left
     show maryam nervous at e
@@ -3119,14 +3157,18 @@ label s64:
     show maryam ecstatic
     maryam "I'm in. Let's finish this project!"
 
+    scene black
     na "The two of you get the project done early and decide to go get a sweet treat together."
 
     jump s62
  
 label s65:
 
+    scene black
+    na "After school, you and Akimitsu get Hoshibucks."
+
     scene park night
-    na "After school, you and Akimitsu get Hoshibucks. After you order your drinks, the two of you walk around the town and stop at a quaint park."
+    na "After you order your drinks, the two of you walk around the town and stop at a quaint park."
 
     na "The trees are thick and the sun has gone down, the two of you are seemingly alone."
 
@@ -3140,14 +3182,16 @@ label s65:
     show kyle loving
     kyle "I have loved you ever since we were kids..."
 
-    #TODO: Leaf crackle and bushes noises
-    na "Just as Akimitsu confesses his love, you hear a leaf crackle and the bushes shake as if someone is in them and are shocked to hear Akimitsu's love confession!" with hpunch
+    na "Just as Akimitsu confesses his love, you hear a leaf crackle and the bushes shake as if someone is in them" with hpunch
 
     show kyle scared
     kyle "Who's there!"
 
     #TODO: Bushes noise
-    na "The person in the bushes scurries deeper into them. The two of you look over to find a photo of the two of you from Hoshibucks and a knife!"
+    hide kyle with ex
+    na "The person in the bushes scurries deeper into them. The two of you look over to find a photo of the two of you from Hoshibucks..."
+
+    na "...and a knife!" with hpunch
 
     na "Whoever was in the bushes has been stalking you guys all day!"
 
@@ -3161,9 +3205,106 @@ label s65:
             jump s68
  
 label s66:
+
+    mc shy "Sorry Akimitsu, I really have to finish this project..."
+
+    show kyle concerned
+    na "Akimitsu lets out a long sigh, but respects your decision. He walks away, leaving you with Haruka."
+
+    hide kyle with ex
+    show maryam happy
+    na "Haruka's smile returns as Akimistu turns the corner."
+
+    show maryam happy2
+    maryam "I'll see you after school, [mcname]!"
+
+    scene black
+    na "The two of you manage to finish the project, however your suspicions of Haruka only grow throughout the evening. By the time you leave, you're practically falling asleep."
+
+    na "Maybe tomorrow, you could spend some quality time with Akimistsu..."
+
+    jump s67
  
 label s67:
- 
+
+    scene bedroom
+    na "As the sun fills your room, you see many notifications pop up on your phone. It seems you slept in."
+
+    na "As you scroll through them, you notice a desperate plea from the Akimistsu fanclub for his whereabouts."
+
+    na "It seems Akimitsu hadn't shown up at school yet."
+
+    pjmc normal "They're just being dramatic."
+
+    pjmc ecstatic "I'm sure nothing has happened. I just saw him yesterday!"
+
+    na "You put on your uniform and head outside, greeting the day with a smile. As you open the door, you--{w=0.2}{nw}"
+
+    with hpunch
+    pause 1
+    scene black
+    na "..."
+
+    pjmc shy "...? He-hello?"
+
+    scene basement maryam with fade
+    pause 0.5
+    na "Your eyes adjust to the dim light, as the background fades into place. You've been taken to... a dungeon?"
+
+    na "A figure slowly approaches you, giggling-- Haruka."
+
+    show maryam insane at e
+    maryam "Hey, you! You're finally awake~~"
+
+    na "Haruka's psychotic smile doesn't help reassure you."
+
+    na "Wait... everything adds up-- they're the stalker! You have to get out of there as soon as..."
+
+    show maryam murderous
+    na "{i}is that a knife!?{/i}" with hpunch
+
+    mc scared "Please, let me leave!"
+
+    maryam "A little birdie said that you have a romantic relationship with Akimitsu."
+
+    maryam "It's quite unfortunate how quickly love can turn sour."
+
+    show maryam angry
+    maryam "He'll never play basketball again, bouncing that idiotic ball up and down, catching girls' weak minded hearts... he's out of the picture now!"
+
+    maryam "I can't forget your betrayal to a simple-minded, average, downright {i}boring guy!{/i}"
+
+    show maryam scared
+    maryam "{i}{color=#b0b0b0}{size=-6}{cps=10}Ahem.{/cps}{/size}{/color}{/i}"
+
+    show maryam murderous
+    maryam "How disappointing~"
+
+    mc scared "I-I didn't... Is Akimitsu dead?!"
+
+    show maryam angry
+    maryam "How dare yo-- Even after all of this, you still think about that basketball playing loser?!"
+
+    show maryam insane
+    maryam "Both of you can rot away here, forever!"
+
+    na "Haruka's sinister laughter fills the room, and you're able to see someone sleeping in the other cage... {i}Akimitsu!{/i}"
+
+    show maryam angry
+    maryam "You know, I'll always love you. Even if you fall head-over-heels for a {i}loser{/i} like him!"
+
+    hide maryam with ex
+    na "Haruka looks at you regretfully, before stomping back upstairs. You hear a lock click. You could attempt to escape, but perhaps there's no use..."
+
+    if metRiri:
+        $ riris[67] = True
+
+    menu:
+        "{i}Accept your fate...":
+            jump s70
+        "{i}Try to escape!":
+            jump s71
+
 label s68:
  
 label s69:
@@ -4253,9 +4394,9 @@ label s106:
 
 label e0: # Eternal Power Nap
 
-label e1: # Joe falls in love with the lifeguard (change name?)
+label e1: # Joe falls in love with the lifeguard TODO: (change name for ending 1?)
     
-label e2: # Date Joe (change name?)
+label e2: # Kimi ga Hoshi©
 
     $ persistent.joeEnding = True
 
