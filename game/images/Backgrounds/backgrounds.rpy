@@ -70,6 +70,9 @@ image door:
 image hoshibucks:
     "images/Backgrounds/bg hoshibucks.jpg"
     zoom 1
+image froyo:
+    "images/Backgrounds/bg froyo.jpg"
+    zoom 1
 image dream:
     "images/Backgrounds/bg dream.jpg"
     zoom 1

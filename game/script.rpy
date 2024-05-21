@@ -132,13 +132,14 @@ init python:
 
     projectScore = 0
 
-    ririname = "..."
-    mcname = "..."
-    joename = "..."
-    jtname = "..."
-    sophianame = "..."
-    maryamname = "..."
-    mioname = "..."
+    ririname = "???"
+    mcname = "???"
+    joename = "???"
+    jtname = "???"
+    sophianame = "???"
+    maryamname = "???"
+    mioname = "???"
+    yokoname_kanji = "???"
 
     ririname_kanji = ""
     mcname_kanji = ""
@@ -147,6 +148,7 @@ init python:
     sophianame_kanji = ""
     maryamname_kanji = ""
     mioname_kanji = ""
+    yokoname_kanji = ""
 
     metRiri = False
     metJoe = False
@@ -154,6 +156,7 @@ init python:
     metSophia = False
     metMaryam = False
     metMio = False
+    metYoko = False
 
     
 
@@ -175,6 +178,7 @@ init:
     define mother = Character("Mom", show_name = "お母さん", ctc="ctc_blink", what_outlines = dialogue_outlines)
     define teacher_e = Character("Sensei", show_name = "先生", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define mio = Character("[mioname]", show_name = "[mioname_kanji]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define yoko = Character("[yokoname]", show_name = "[yokoname_kanji]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
 
     define beckham = Character("Mario", show_name = "マリオ", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define joe = Character("[joename]", show_name = "[joename_kanji]", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True) # Joe
@@ -264,8 +268,13 @@ label Questions_mc:
 # --------------------------------------------------------
 # p = placeholder label
 # s = scene
-label p:
-    mother "PLACEHOLDER"
+label ph:
+
+    scene black
+    na "{i}[[If you've gotten to this point, the script hasn't been completed up to this point.]"
+
+    na "{i}[[Please wait for future updates as we continue to finish the game!]"
+
     return
 
 label riri:
@@ -464,6 +473,31 @@ label riri:
         riri "Please!"
 
         $ riris[67] = False
+    elif riris[77]:
+
+        riri "Ooh, this is so exciting!!"
+
+        riri "Do you know what this means?! Yutaka is asking you out!!"
+
+        riri "You'd better go with him. I'll be furious if you don't!"
+
+        $ riris[77] = False
+    elif riris[79]:
+        
+        riri "OMG, this is big! That Akimitsu, {i}your{/i} Akimitsu, with another girl?!"
+
+        riri "And now of all times?! You and Yutaka were doing so well..."
+
+        riri "{i}Aauughh{/i}-- I don't know what to do!! Just figure something out!"
+
+        $ riris[79] = False
+    elif riris[102]:
+
+        riri "Yes! I told you, you have a chance!"
+
+        riri "Now whatever you do, don't mess it up this time!"
+
+        $ riris[102] = False
 
     else:
         na "{i}[[It doesn't look like Riri has anything to say right now.]{/i}"
@@ -504,7 +538,7 @@ label start:
 
     $ persistent.playedGame = True
 
-    jump s53
+    # jump s24
 
     na "Ah, got it. Hi, [mcname]. Welcome to Gwetome Academy, where this story-- your story-- is continuing into its second year of high school. A new year of love, lust, and violent tendencies."
 
@@ -641,12 +675,12 @@ label s5:
 
     pp "Pyun!"
 
-    takeshi "But--{nw}"
+    takeshi "But--{w=0.2}{nw}"
 
     mi2 "Takeshi, we {i}meow{/i} it's a hard decision, but it's one that must be {i}mwade.{/i} {color=#b0b0b0}{size=-6}nya~{/size}{/color}"
 
     takeshi "But... but... what if I'm not cut out to be on the Kiss Kiss Love Power Team? 
-        What if I'm not a real magical-girl? If I fail... I can't ever return. Please, give me more--{nw}"
+        What if I'm not a real magical-girl? If I fail... I can't ever return. Please, give me more--{w=0.2}{nw}"
 
     #explosion/crash + helicopter sounds
     #PyunPyun falls
@@ -1038,7 +1072,7 @@ label s15:
 
     na "Isamu hands you a small handkerchief with a small cute cat print on it."
 
-    mc shy "Oh, that's not mi--{nw}"
+    mc shy "Oh, that's not mi--{w=0.2}{nw}"
 
     show sophia cocky
     sophia "Keep it."
@@ -1175,7 +1209,7 @@ label s18:
         show jt concerned
         jt "Wait, what's a student doing in the halls? ...I'm terribly sorry, but you're gonna have to go back to class."
 
-        mc scared "Nonono, I just--{nw}"
+        mc scared "Nonono, I just--{w=0.2}{nw}"
 
         show jt thinking
         jt "--Needed to go to the bathroom and got lost in the halls, I've been there."
@@ -1406,10 +1440,10 @@ label s24:
     show beckham hoshibucks ecstatic 
     beckham "that'll be 2,210¥."
 
-    mc scared "Wh-{nw}"
+    mc scared "Wh-{w=0.2}{nw}"
 
     # Saying yen amount loudly
-    na "-Wait, 2,210¥?? What has this world come to..."
+    na "-Wait, 2,210¥?? What has this world come to..." with hpunch
 
     hide beckham with ex
     na "Failing to hold back spending one fourth of your monthly allowance on a single Frappe, you swipe your card and watch as the barista skillfully crafts your drink."
@@ -1417,7 +1451,7 @@ label s24:
     scene hoshibucks
     na "You imagine what the flavor will be as you grab the cup and walk away from the front counter."
 
-    mc normal "It looks so good! I'll worry about the cost later, because this is gonna be so worth i--{nw}"
+    mc normal "It looks so good! I'll worry about the cost later, because this is gonna be so worth i--{w=0.2}{nw}"
 
     #TODO: Crash noise
 
@@ -1451,7 +1485,7 @@ label s24:
     show joe normal
     mc ecstatic "No no no no, I wasn't looking where I was going."
 
-    joe "No no n-{nw}"
+    joe "No no n--{w=0.2}{nw}"
 
     #TODO: Rumble noise
     show joe scared
@@ -1631,7 +1665,7 @@ label s28:
     sophia "Hey. I've heard a lot about you, [mcname]. I'm Isamu Takao."
 
     show sophia party happy
-    sophia "When I first saw you I wasn't sure the rumors were true, but now I know. You're incredible. What dojo did--{nw}"
+    sophia "When I first saw you I wasn't sure the rumors were true, but now I know. You're incredible. What dojo did--{w=0.2}{nw}"
 
     show sophia party happy at left
     show kyle party angry at e
@@ -1668,7 +1702,7 @@ label s29:
 
     na "Akimitsu flashes a smile."
 
-    kyle "That's a relief. After school let's go to my pla--{nw}"
+    kyle "That's a relief. After school let's go to my pla--{w=0.2}{nw}"
 
     # *phone buzz sounds*
 
@@ -1704,7 +1738,7 @@ label s29:
 
 label s30:
 
-    smc normal "The party's good.{nw}"
+    smc normal "The party's good.{w=0.2}{nw}"
 
     na "You say, proceeding to turn and face Akimitsu."
 
@@ -1726,7 +1760,7 @@ label s30:
 
 label s31:
 
-    pmc normal "The party's good.{nw}"
+    pmc normal "The party's good.{w=0.2}{nw}"
 
     na "...you say. And then you run and escape to the apple juice bar."
 
@@ -1787,7 +1821,7 @@ label s33:
     pmc concerned "Sorry, Akimitsu. I changed my mind. The party never stops."
 
     show kyle sad
-    kyle "But you just said we would han--{nw}"
+    kyle "But you just said we would han--{w=0.2}{nw}"
 
     # Door closes
 
@@ -2079,7 +2113,7 @@ label s40:
     show kyle party concerned
     kyle "Have you ever wondered what the stars would say if they could talk?"
 
-    pmc ecstatic "Haha, n--{nw}"
+    pmc ecstatic "Haha, n--{w=0.2}{nw}"
 
     show kyle party normal
     kyle "I think they'd tell us the world's secrets. Why we're here, what we're meant to become, and how we might get there."
@@ -3030,7 +3064,7 @@ label s61:
     maryam "Yeah uh... The English problem was pretty specific. Maybe there was j-just nobody else that needed help."
 
     show maryam normal
-    maryam "Anyways... do you want to-{nw}"
+    maryam "Anyways... do you want to-{w=0.2}{nw}"
 
     na "Haruka glances to the floor next to you."
 
@@ -3263,7 +3297,7 @@ label s67:
     show maryam murderous
     na "{i}is that a knife!?{/i}" with hpunch
 
-    mc scared "Please, let me leave!"
+    pjmc scared "Please, let me leave!"
 
     maryam "A little birdie said that you have a romantic relationship with Akimitsu."
 
@@ -3280,7 +3314,7 @@ label s67:
     show maryam murderous
     maryam "How disappointing~"
 
-    mc scared "I-I didn't... Is Akimitsu dead?!"
+    pjmc scared "I-I didn't... Is Akimitsu dead?!"
 
     show maryam angry
     maryam "How dare yo-- Even after all of this, you still think about that basketball playing loser?!"
@@ -3306,12 +3340,93 @@ label s67:
             jump s71
 
 label s68:
+
+    mc ecstatic "I'm not worried. It was probably just... a bird. No cops needed!"
+
+    show kyle concerned at e
+    kyle "Well, if you say so."
+
+    na "Akimitsu looks at you suspiciously."
+
+    mc scared "I've never done a crime before! I just don't think the police are... necessary. We'd just cause a ruckus over nothing."
+
+    show kyle normal
+    kyle "...Alright. I'll see you tomorrow then?"
+
+    mc ecstatic "Mhm!"
+
+    hide kyle with ex
+    na "You give him one last look as he walks away."
+
+    na "As the sun sets, you head home. Akimitsu's confession replays in your head-- including the items left in the bushes."
+
+    na "You end up falling asleep very late, forgetting all about your group project with Haruka... Grades don't matter, right?"
+
+    jump s67
  
-label s69:
+label s69: #TODO: Finish scene
  
 label s70:
+
+    na "There's no point in escaping. Besides, Akimitsu looks sound asleep..."
+
+    na "You decide to explore the room with your eyes-- posters and photographs of you line the wall, with a big red heart splashed over the photos."
+
+    pjmc normal "Well, it's time to learn to love my new life!"
+
+    pjmc concerned "Trapped in a basement..."
+    
+    na "Instead of dwelling on your current situation and falling into despair, you follow Akimistu's example and fall into dreamland."
+
+    jump s72
  
 label s71:
+
+    na "Moping around is for losers! You decide to do whatever you can to escape."
+
+    na "And two minds think better than one..."
+
+    pjmc scared "Akimitsu! Wake up, we have to go!"
+
+    kyle "Just five more minutes..."
+
+    pjmc scared "Look, Haruka's kind of crazy, and the sooner we get out of this place, the better!"
+
+    na "Akimitsu yawns, rubbing his eyes. You watch as he does a double-take, glancing around the room. Luckily, his cage wasn't locked."
+
+    show kyle confused at e
+    kyle "[mcname]... what--where are we..?"
+
+    na "After a simple explanation of your dire situation, you finally get Akimitsu to start helping you look for a way out."
+
+    show kyle scared
+    kyle "I don't even have that many photos of you, and we've been friends since forever!"
+
+    show kyle concerned
+    kyle "I wonder how long they've been obsessed with yo--{w=0.2}{nw}"
+
+    show kyle scared
+    pjmc ecstatic "Aha! Look!"
+
+    na "While Akimitsu was busy looking at Haruka's collection of photographs, you find a key! Hopefully it's for the basement..."
+
+    show kyle normal
+    kyle "Once this is over, Haruka will never hurt you-- or anyone-- again."
+
+    na "Big talk coming from the guy who didn't find the key."
+
+    na "You slowly approach the basement door with Akimitsu, praying that your footsteps wouldn't even make the tiniest sound."
+
+    pjmc "Here goes nothing!"
+
+    na "..."
+
+    if renpy.random.randint(0,1) == 1:
+        jump s73 # Win
+    else:
+        show kyle scared
+        na "The key... broke."
+        jump s72 # Lose
  
 label s72:
     
@@ -3322,7 +3437,8 @@ label s72:
 
     jump e7
  
-label s73:
+label s73: # TODO: Finish scene
+
  
 label s74:
 
@@ -3335,7 +3451,7 @@ label s74:
     show mio lecturing
     mio "Some of them will try to use the \"restroom excuse\" but I'm sure you won't fall for that... it's a bit of an obvious lie."
 
-    mc ecstatic "Ha... yeah... who would ever--{nw}"
+    mc ecstatic "Ha... yeah... who would ever--{w=0.2}{nw}"
 
     show mio scared
     #TODO: Thud noise
@@ -3447,14 +3563,14 @@ label s75:
         $ riris[75] = True
 
     menu:
-        "{i}Don't let those girls walk all over you! Get physical and fight back!":
+        "{i}Don't let those girls walk all over you!":
             jump s76
         "{i}Well, I'm sure Yutaka will be here any moment now to resolve this commotion... it'd be best to be silent and tough it out...":
             jump s77
 
 label s76:
 
-    na "With determined rage, you expertly sucker punch one of those annoying stuck up ******!"
+    na "With determined rage, you expertly sucker punch one of those annoying stuck up *******!"
 
     #TODO: Thud noise
     hide mg1 with ex
@@ -3481,7 +3597,7 @@ label s76:
     show jt concerned at e
     na "Caught literally red handed, you turn around to see Yutaka, looking down on you with disappointment."
 
-    mc scared "Y-Yutaka! This isn't what it looks like... They were blaming me of using you, and-{nw}"
+    mc scared "Y-Yutaka! This isn't what it looks like... They were blaming me of using you, and-{w=0.2}{nw}"
 
     show jt thinking
     jt "Quiet."
@@ -3507,13 +3623,176 @@ label s76:
 
 label s77:
 
+    scene black
+    na "You restrain yourself from fighting back. Wow, where did that ability of self-restraint come from?"
+
+    scene hallway day
+    na "Afterwards, you make a run for the student council room. The mean girls don't stop chasing you until you make it through the door."
+
+    scene student_council
+    mc scared "Yutaka, these girls won't stop harassing me! They keep telling lies about me. If I let this continue, they might spread rumors throughout the school about me!"
+
+    na "You see Yutaka get up from his seat and walk over to you."
+
+    $ jtname = "Yutaka Yanai"
+    $ jtname_kanji = "柳井・豊"
+    $ metJt = True
+    show jt concerned at e
+    jt "Defamation is not something that is allowed at this school. If you continue spreading lies, then you will be kicked out. Do you understand?"
+
+    na "You notice one of the girls glaring at you."
+
+    show jt concerned at left
+    show mg1 sad at e
+    mg1 "...Got it--{w=0.2}{nw}"
+
+    show mg1 sad at right
+    show mg2 angry at e
+    mg2 "This is so unfair!"
+
+    show jt thinking
+    jt "Well, would you like to get kicked out right now? Will that make it fair?"
+
+    show mg1 normal
+    show mg2 normal
+    mg1 "{i}{color=#b0b0b0}{size=-6}...Just say that it's fair.{/size}{/color}{/i}"
+
+    show mg2 angry
+    mg2 "Fine!"
+
+    hide mg1 with ex
+    hide mg2 with ex
+    hide jt with ex
+    show jt normal at e
+    na "The mean girls stomp out of the student council room, leaving Yutaka and you alone."
+
+    mc ecstatic "Thank you so much, Yutaka!"
+
+    show jt cocky
+    jt "No problem! Now head back to class."
+
+    scene hallway day
+    na "As you turn around to head back to class, Yutaka calls your name."
+
+    show jt normal at e
+    jt "Actually... would you like to go with me to have some froyo?"
+    
+    show jt cocky
+    jt "I'd like to discuss the upcoming event that the student council is putting together."
+
+    if metRiri:
+        $ riris[77] = True
+
+    menu:
+        "{i}Accept the offer":
+            jump s79
+        "\"Let me think about it...\"":
+
+            scene black
+            na "You tell him you'll think about it as you walk home."
+
+            na "Maybe watching some anime will help."
+
+            jump s43
+
 label s78:
 
 label s79:
+    
+    mc ecstatic "Yea, sure! I'd love to."
+
+    show jt ecstatic
+    jt "Great! I know a good place, how about we go right after school?"
+
+    scene black
+    na "After classes end, you meet with Yutaka at the school gate and head to a Froyo place."
+
+    scene froyo
+    mc normal "Kleinr's, huh? Really brings back memories!"
+
+    show jt normal at e
+    jt "You've been here before?"
+
+    mc ecstatic "Yea! I used to go here all the time with Akimi--{w=0.2}{nw}"
+
+    show jt embarrassed
+    mc scared "Akimitsu!?" with hpunch
+
+    na "You notice Akimitsu sitting down across from another person at the other side of the Froyo place."
+
+    jt "Huh?"
+
+    mc scared "Did I say that out loud? I meant... is that the strawberry swirl?"
+
+    show jt concerned
+    jt "It looks like it."
+
+    mc concerned "Give me a minute. I have to do something. Hold my bowl for me."
+
+    jt "Alright...?"
+
+    hide jt with ex
+    na "You move behind the counter to get a good view of Akimitsu and see him with a girl. The worker gives you a concerned look."
+
+    na "Should you look into what's going on?"
+
+    if metRiri:
+        $ riris[79] = True
+
+    menu:
+        "{i}Go back to Yutaka":
+            jump s80
+        "{i}Time to investigate!":
+            jump s81
 
 label s80:
 
 label s81:
+
+    scene froyo
+    na "You creep closer to the corner of the counter to \"subtly\" listen in on Akimitsu's conversation."
+
+    $ yokoname = "Yoko"
+    $ yokoname_kanji = "ようこ"
+    $ metYoko = True
+
+    yoko "I can't believe that you're the one giving me \"another shot,\" especially since you were the one who broke up with me!"
+
+    kyle "Yeah, uh... funny how that works, huh?"
+
+    na "The girl tosses her hair over her shoulder in slight annoyance."
+
+    na "You can't quite place why, but she seems vaguely familiar..."
+
+    kyle "Sorry Yoko, I didn't mean that."
+
+    kyle "Look, I've been really busy recently so I'm tired and not really thinking."
+
+    na "Yoko... huh..."
+
+    yoko "Gosh, you and your excuses! You're not the one who has to sit next to a dimwit every day in math... I'm the tired one!"
+
+    na "Oh, wait! Yoko-- now you remember!"
+
+    na "Somehow the two of you have been assigned to sit next to each other in every single math class since your first day at Gwetome."
+
+    na "And she also totally dated Akimitsu for like... three years?... Or was it four?"
+
+    na "Oh! Oh! Preschool too-- you all went to preschool together and one time you accidentally tripped her down the slide and she had to get five stitches."
+
+    na "Good times."
+
+    na "But wait, you're pretty sure Yoko and Akimitsu broke up a while ago... are they back together now? When did that happen?"
+
+    na "You take a good look at the pair-- although they both seem a little stressed from the conversation, the cafe lighting warms their faces creating a vibrant and lovely glow."
+
+    na "If you couldn't hear their conversation you'd think they were a perfect match, enjoying their froyo and staring lovingly into each others' eyes."
+
+    na "But... you can hear their conversation, and you refuse to be {i}TRICKED{/i} by Kleinr's resident \"Love Spirit\"..."
+
+    na "You know the truth!"
+
+
 
 label s82:
 
@@ -3701,7 +3980,7 @@ label s95:
     mc normal "How do you expect anything to happen if you never let him know?"
 
     show mio scared
-    mio "Wait! B-but--{nw}"
+    mio "Wait! B-but--{w=0.2}{nw}"
 
     mc ecstatic "In fact, let's go find him right now!"
 
@@ -3744,7 +4023,7 @@ label s95:
     jt "I would never look twice at someone who decides to worship me just because of my looks."
 
     show sg sad
-    sg "But--{nw}"
+    sg "But--{w=0.2}{nw}"
 
     show jt thinking
     jt "I'm sorry to tell you this Senpai... but you no longer have value to me now that you've graduated."
@@ -3781,7 +4060,7 @@ label s95:
     jt "I guess you saw all that, hm? That's too bad... you've been such a hard worker too."
 
     show jt normal
-    jt "If you want to quit, the application fo--{nw}"
+    jt "If you want to quit, the application fo--{w=0.2}{nw}"
 
     show mio embarrassed
     mio "No! I-I don't care if you use me."
@@ -3849,7 +4128,7 @@ label s96:
     show mio normal at e
     mio "That's the last poster! ...It's really gotten late hasn't it?"
 
-    mio "Thanks for listening to me ramble-- at least now that you're in the student council, I'll have more time to work at--{nw}"
+    mio "Thanks for listening to me ramble-- at least now that you're in the student council, I'll have more time to work at--{w=0.2}{nw}"
 
     stop music
     show mio scared
@@ -4072,7 +4351,7 @@ label s97:
     na "Is now the time? Should you tell him your feelings? Does he already know?!"
     
     show jt normal at e
-    mc scared "Hey, wait! Yutaka I--{nw}"
+    mc scared "Hey, wait! Yutaka I--{w=0.2}{nw}"
 
     show jt cocky
     jt "Keep doing what you're doing, [mcname]!"
@@ -4271,21 +4550,35 @@ label s101:
 
 label s102:
 
-    mc "I'm sorry, Yutaka. I shouldn't have gotten so worked up."
+    mc sad "I'm sorry, Yutaka. I shouldn't have gotten so worked up."
 
-    mc "I like working with you... I promise I won't be violent ever again! Please forgive me!"
+    mc sad "I like working with you... I promise I won't be violent ever again! Please forgive me!"
 
+    show jt calculating
     jt "Good, that's more like it."
 
+    show jt cocky
     jt "Don't you worry your little head about it! What's done is done."
 
+    show jt flirty
     jt "Although, I might have to watch you a little {i}closer{/i} now... {color=#b0b0b0}{size=-6}*wink*{/color}{/size}"
 
     na "Anddd he's right back to normal. No surprise there."
 
+    hide jt with ex
     na "You and him spend some time chatting, when Yutaka suddenly remembers that he's got student council work to do."
 
-    #TODO: Fix s102 (talk to maryam)
+    show jt ecstatic at e
+    jt "Oh, I'd better get going... Actually, [mcname], why don't you come with me? It could be fun!"
+
+    if metRiri:
+        $ riris[102] = True
+
+    menu:
+        "{i}Reject him":
+            jump s104
+        "\"Sure!\"":
+            jump s79
 
 label s103:
 
@@ -4394,63 +4687,105 @@ label s106:
 
 label e0: # Eternal Power Nap
 
-label e1: # Joe falls in love with the lifeguard TODO: (change name for ending 1?)
+    return
+
+label e1: # Love Lost to the Riptides of Passion
+
+    return
     
 label e2: # Kimi ga Hoshi©
 
     $ persistent.joeEnding = True
 
+    return
+
 label e3: # Castaway with Joe
 
     $ persistent.joeEnding = True
 
+    return
+
 label e4: # Love you too.
 
     $ persistent.kyleEnding = True
+
+    return
     
 label e5: # All is fair in Love and War
 
     $ persistent.sophiaEnding = True
 
+    return
+
 label e6:
 
+    return
+
 label e7: # Death
+
+    return
 
 label e8: # A Strangely Sweet Romance
 
     $ persistent.maryamEnding = True
 
+    return
+
 label e9:
 
+    return
+
 label e10:
+
+    return
     
 label e11: # Big Apple Juice
+
+    return
 
 label e12: # Love in the Basket
 
     $ persistent.kyleEnding = True
 
+    return
+
 label e13: # The Archer of Love
+
+    return
 
 label e14: # First Love
 
     $ persistent.jtEnding = True
 
+    return
+
 label e15: # Happily Ever After
 
+    return
+
 label e16: # Mio 2.0
+
+    return
 
 label e17: # Yakuza
 
     $ persistent.sophiaEnding = True
 
+    return
+
 label e18: # The Safe Play
 
+    return
+
 label e19: # The True High School Experience
+
+    return
 
 label e20: # Famous Filmmaker
 
     $ persistent.beckhamEnding = True
+
+    return
 
 
 label dice_roll:
