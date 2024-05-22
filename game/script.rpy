@@ -518,13 +518,13 @@ label riri:
         tempCall = "m" # String
         for i in range(numscenes):
             if riris[i] == True:
-                newi = "[i]"
-                tempCall == tempCall + newi
+                tempCall = tempCall + str(i)
                 del(riris[i])
                 riris.insert(i, False)
-                riris.insert(i - 1, False)
         
-        renpy.Jump("".join([tempCall]))
+    jump expression tempCall
+        
+#renpy.jump("".join([tempCall]))
 
 
 # -------------------------------------------------------------------------------------------------------------------
@@ -942,7 +942,7 @@ label s11:
     teacher_e "Detention!"
 
     hide teacher_e with ex
-    $ metRiri = True
+
     if metRiri:
         $ riris[11] = True
     
