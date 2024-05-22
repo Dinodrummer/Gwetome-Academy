@@ -110,15 +110,17 @@ init python:
     for i in range(numscenes):
         riris.append(False)
 
-    char_left = Position(xpos=0.18, ypos=0.75)
-    basketballSong = "bgm_basketball.mp3"
-    
-    #bgSong = "bgm_skipABeat.mp3"
-
-    sfxBell = "hoshibucks_bell.mp3"
-    hoshibucksSong = "bgm_hoshibucks.mp3"
-
+# ---------------------------------------------- Music / SFX -----------------------------------------------------
     config.auto_voice = "voice/{id}.mp3"
+
+    sfx_Bell = "hoshibucks_bell.mp3"
+
+    bgm_hoshibucks = "audio/bgm_hoshibucks.mp3"
+    bgm_main = "audio/bgm_main.mp3"
+
+    
+
+# -------------------------------------------------------------------------------------------------------
 
     quizWords = ["Environment", "Tradition", "Influence"]
     quizAnswers = ["かんきょう", "でんとう", "えいきょう"] #quizAnswers = ["環境", "伝統", "影響"]
@@ -531,13 +533,22 @@ label riri:
 # s1 = start
 # voice voice.mp3
 
+label splashscreen:
+    scene black
+    play music bgm_main
+    show text "{size=100}Ending:" with dissolve
+    pause 1
+    hide text with dissolve
+    pause 1
+    return
+
 label start:
 
     # TODO: Clear persistent data before exporting the game
     # $ persistent._clear()
 
     scene black
-    stop music
+
 
     pause 0.5
     na "Welcome. We're glad you could make it. Again. Weirdo. Who are you anyway?"
@@ -551,7 +562,7 @@ label start:
 
     $ persistent.playedGame = True
 
-    jump s11
+    #jump e2
 
     na "Ah, got it. Hi, [mcname]. Welcome to Gwetome Academy, where this story-- your story-- is continuing into its second year of high school. A new year of love, lust, and violent tendencies."
 
@@ -1015,6 +1026,8 @@ label s13:
 
 label s14:
 
+    jump ph #TODO: Finish Scene 14
+
     na "You agree to go and watch Akimitsu's basketball game after school."
 
     na "How could you not? You've known Akimitsu since you were tiny and basketball has always been really important to him."
@@ -1459,10 +1472,10 @@ label s24:
 
     stop music
     scene black
-    play sound sfxBell
+    play sound sfx_Bell
     pause 0.5
     scene hoshibucks
-    play music hoshibucksSong
+    play music bgm_hoshibucks
 
     na "You enter the Hoshibucks and step up to the bartender."
     
@@ -3451,6 +3464,8 @@ label s68:
     jump s67
  
 label s69: #TODO: Finish scene
+
+    jump ph
  
 label s70:
 
@@ -3524,6 +3539,8 @@ label s72:
     jump e7
  
 label s73: # TODO: Finish scene
+
+    jump ph
 
  
 label s74:
@@ -3789,6 +3806,8 @@ label s77:
 
 label s78:
 
+    jump ph
+
 label s79:
     
     mc ecstatic "Yea, sure! I'd love to."
@@ -3840,6 +3859,8 @@ label s79:
                 jump s81
 
 label s80:
+
+    jump ph
 
 label s81:
 
@@ -3908,29 +3929,49 @@ label s81:
             "{i}Ask Akimitsu what's wrong... with your fists!":
                 jump s84
 
-
-
 label s82:
+
+    jump ph
 
 label s83:
 
+    jump ph
+
 label s84:
+
+    jump ph
 
 label s85:
 
+    jump ph
+
 label s86:
+
+    jump ph
 
 label s87:
 
+    jump ph
+
 label s88:
+
+    jump ph
 
 label s89:
 
+    jump ph
+
 label s90:
+
+    jump ph
 
 label s91:
 
+    jump ph
+
 label s92:
+
+    jump ph
 
     scene student_council
 
@@ -4812,104 +4853,449 @@ label s106:
     jump e19
 
 label e0: # Eternal Power Nap
+    scene black
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}Eternal Power Nap" with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     return
 
 label e1: # Love Lost to the Riptides of Passion
+    scene black
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}Love Lost to the Riptides of Passion" with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     return
     
 label e2: # Kimi ga Hoshi©
+    scene black
 
     $ persistent.joeEnding = True
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}Kimi ga Hoshi{size=30}©" with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     return
 
 label e3: # Castaway with Joe
+    scene black
 
     $ persistent.joeEnding = True
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}Castaway with Joe" with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     return
 
 label e4: # Love you too.
+    scene black
 
     $ persistent.kyleEnding = True
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}Love you too." with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     return
     
 label e5: # All is fair in Love and War
+    scene black
 
     $ persistent.sophiaEnding = True
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}All is fair in Love and War" with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     return
 
 label e6:
+    scene black
 
     return
 
 label e7: # Death
+    scene black
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}Death" with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     return
 
 label e8: # A Strangely Sweet Romance
+    scene black
 
     $ persistent.maryamEnding = True
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}A Strangely Sweet Romance" with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     return
 
 label e9:
+    scene black
 
     return
 
 label e10:
+    scene black
 
     return
     
 label e11: # Big Apple Juice
+    scene black
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}Big Apple Juice" with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     return
 
 label e12: # Love in the Basket
+    scene black
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}Love in the Basket" with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     $ persistent.kyleEnding = True
 
     return
 
 label e13: # The Archer of Love
+    scene black
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}The Archer of Love" with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     return
 
 label e14: # First Love
+    scene black
 
     $ persistent.jtEnding = True
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}First Love" with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     return
 
 label e15: # Happily Ever After
+    scene black
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}Happily Ever After" with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     return
 
 label e16: # Mio 2.0
+    scene black
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}Mio 2.0" with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     return
 
 label e17: # Yakuza
+    scene black
 
     $ persistent.sophiaEnding = True
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}Yakuza" with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     return
 
 label e18: # The Safe Play
+    scene black
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}The Safe Play" with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     return
 
 label e19: # The True High School Experience
+    scene black
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}The True High School Experience" with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     return
 
 label e20: # Famous Filmmaker
+    scene black
 
     $ persistent.beckhamEnding = True
+
+    pause 0.2
+
+    show text "{size=100}Ending:" with dissolve:
+
+    pause 0.8
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=100}Famous Filmmaker" with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     return
 
