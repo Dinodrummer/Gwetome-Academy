@@ -109,6 +109,12 @@ init python:
     riris = []
     for i in range(numscenes):
         riris.append(False)
+    
+    def character_callback(event, **kwargs):
+        if event == "end":
+            renpy.music.play("ping.ogg", channel="audio")
+
+    config.all_character_callbacks.append(character_callback)
 
 # ---------------------------------------------- Music / SFX -----------------------------------------------------
     config.auto_voice = "voice/{id}.mp3"
@@ -737,6 +743,7 @@ label s5:
 
     $ ririname = "Riri"
     $ ririname_kanji = "リリ"
+    show riri angry at e
     riri "Wrong! I'm Riri. My boss told me there was a weeb here so I came to help."
 
     riri "Wait! Are you Naninani Nantoka!?!?"
@@ -927,6 +934,7 @@ label s10:
         show riri normal
         riri "Hehe... hehehehehe..."
         hide riri with ex
+        hide choice
 
         if metRiri:
             $ riris[10] = True
