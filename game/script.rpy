@@ -290,41 +290,41 @@ label riri:
 
         riri "Ooooh spicy. You know which one I would choose. {i}Wink. Wink.{/i}"
 
-        $ riris[10] = False
+        #$ riris[10] = False
     elif riris[11]:
 
         riri "Hehehehe..."
 
-        $ riris[11] = False
+        #$ riris[11] = False
     elif riris[14]:
 
         riri "Follow your gut, Naninani!"
 
-        $ riris[14] = False
+        #$ riris[14] = False
     elif riris[15]:
 
         riri "You {i}have{/i} to go to that party Naninani! 'Kay?"
 
-        $ riris[15] = False
+        #$ riris[15] = False
     elif riris[26]:
 
         riri "Look at this cutie-patootie! Maybe you don't have to go to that party Naninani."
 
         riri "The choice is yours... though I am a fan of Chiba-kun myself... hehehehehe..."
 
-        $ riris[26] = False
+        #$ riris[26] = False
     elif riris[27]:
 
         na "{i}[[Riri shakes her head. It looks like she doesn't want to talk to you right now.]{/i}"
 
-        $ riris[27] = False
+        #$ riris[27] = False
     elif riris[28]:
 
         riri "The drama! As the main character, you {i}must{/i} pick at least one of them!"
 
         riri "Don't let the temptation of the forbidden fruit fool you!"
 
-        $ riris[28] = False
+        #$ riris[28] = False
     elif riris[24]:
 
         riri "Hey, Naninani, he's really asking you on a date!"
@@ -333,87 +333,87 @@ label riri:
         
         riri "Anyways, you HAVE to go with him! For me <3"
 
-        $ riris[24] = False
+        #$ riris[24] = False
     elif riris[44]:
 
         riri "Wow, did you really just ask him on a date?!?! All by yourself??"
 
         riri "I knew you could do it! They grow up so fast..."
 
-        $ riris[44] = False
+        #$ riris[44] = False
     elif riris[46]:
 
         riri "That's a tough one..."
 
         riri "Either way will bring you two closer, right? So, I'll let you decide this time..."
 
-        $ riris[46] = False
+        #$ riris[46] = False
     elif riris[29]:
 
         riri "If you go to the basketball game, Chiba-kun is totes falling for you!"
 
         riri "Partying is fine too though I guess..."
 
-        $ riris[29] = False
+        #$ riris[29] = False
     elif riris[33]:
 
         riri "Poor Chiba... Oh well, this means even more love routes!"
 
-        $ riris[33] = False
+        #$ riris[33] = False
     elif riris[35]:
 
         riri "Oooh, you like the bad ones, huh?"
 
-        $ riris[35] = False
+        #$ riris[35] = False
     elif riris[37]:
         
         riri "If you go get drinks with Isamu, you'll find yourself in a world of broken doors, crime, and... {i}cats?{/i}"
 
         riri "I mean, that's basically your only option... right? Right?"
 
-        $ riris[37] = False
+        #$ riris[37] = False
     elif riris[47]:
 
         riri "What an unexpected twist!"
 
         riri "Come on, Naninani! He's the love of your life, your soulmate! You must save him!"
 
-        $ riris[47] = False
+        #$ riris[47] = False
     elif riris[53]:
 
         riri "You need to be more explorative! Maybe this girl on the poster is actually your soulmate!"
 
-        $ riris[53] = False
+        #$ riris[53] = False
     elif riris[57]:
 
         riri "Maybe we should just give the, the benefit of the doubt? But why would they have your ring and not give it back? Hmmm..."
 
-        $ riris[57] = False
+        #$ riris[57] = False
     elif riris[60]:
 
         riri "How strange... let's test them to see if they know the password!"
 
-        $ riris[60] = False
+        #$ riris[60] = False
     elif riris[63]:
 
         riri "We can always just do the project another dayyy..."
         
-        $ riris[63] = False
+        #$ riris[63] = False
     elif riris[65]:
 
         riri "You could call the cops, but the culprit is already long gone..."
 
-        $ riris[65] = False
+        #$ riris[65] = False
     elif riris[34]:
 
         riri "CHIBA-KUN WANTS TO GO SOMEWHERE ELSE?!?! JUST THE TWO OF YOU?!?! AAAAAAAAAA GO NANINANI GOOO!"
 
-        $ riris[34] = False
+        #$ riris[34] = False
     elif riris[36]:
 
         riri "Look at you go!"
 
-        $ riris[36] = False
+        #$ riris[36] = False
     elif riris[75]:
 
         riri "A fight would be fun..."
@@ -422,7 +422,7 @@ label riri:
 
         riri "Think about his feelings, and just let this play out peacefully!"
 
-        $ riris[75] = False
+        #$ riris[75] = False
     elif riris[92]:
 
         riri "Dang it name, I told you he would be mad!"
@@ -433,31 +433,31 @@ label riri:
 
         riri "Come on now, what are you waiting for? Do it!"
 
-        $ riris[92] = False
+        #$ riris[92] = False
     elif riris[94]:
 
         riri "Why are you looking at me?"
 
         riri "This time it's your decision, okay?"
 
-        $ riris[94] = False
+        #$ riris[94] = False
     elif riris[30]:
 
         riri "{i}{color=#b0b0b0}{size=-6}{cps=10}*gasp*{/cps}{/size}{/color}{/i}"
 
-        $ riris[30] = False
+        #$ riris[30] = False
     elif riris[13]:
 
         riri "Follow your gut, [mcname]!"
 
-        $ riris[13] = False
+        #$ riris[13] = False
     elif riris[51]:
 
         riri "Hey, why are you looking at me?"
 
         riri "Come on now, you should know this..."
 
-        $ riris[51] = False
+        #$ riris[51] = False
     elif riris[67]:
 
         riri "Oh [mcname], how could this have happened!?"
@@ -472,7 +472,7 @@ label riri:
 
         riri "Please!"
 
-        $ riris[67] = False
+        #$ riris[67] = False
     elif riris[77]:
 
         riri "Ooh, this is so exciting!!"
@@ -481,7 +481,7 @@ label riri:
 
         riri "You'd better go with him. I'll be furious if you don't!"
 
-        $ riris[77] = False
+        #$ riris[77] = False
     elif riris[79]:
         
         riri "OMG, this is big! That Akimitsu, {i}your{/i} Akimitsu, with another girl?!"
@@ -490,28 +490,41 @@ label riri:
 
         riri "{i}Aauughh{/i}-- I don't know what to do!! Just figure something out!"
 
-        $ riris[79] = False
+        #$ riris[79] = False
     elif riris[102]:
 
         riri "Yes! I told you, you have a chance!"
 
         riri "Now whatever you do, don't mess it up this time!"
 
-        $ riris[102] = False
+        #$ riris[102] = False
+    elif riris[81]:
+
+        riri "Hmmm... this is a toughie."
+
+        riri "As much as I don't want to see Chiba-kun with another girl, I can't say I'm much for violence either..."
+
+        riri "You also want to keep Yutaka in mind-- someone might get mad here."
+
+        #$ riris[81] = False
 
     else:
         na "{i}[[It doesn't look like Riri has anything to say right now.]{/i}"
 
-    python:
-        for i in range(numscenes):
-            del(riris[i])
-            riris.insert(i, False)
-            riris.insert(i - 1, False)
-    
     hide riri with ex
     hide choice
 
-    return
+    python:
+        tempCall = "m" # String
+        for i in range(numscenes):
+            if riris[i] == True:
+                newi = "[i]"
+                tempCall == tempCall + newi
+                del(riris[i])
+                riris.insert(i, False)
+                riris.insert(i - 1, False)
+        
+        renpy.Jump("".join([tempCall]))
 
 
 # -------------------------------------------------------------------------------------------------------------------
@@ -538,7 +551,7 @@ label start:
 
     $ persistent.playedGame = True
 
-    # jump s24
+    jump s11
 
     na "Ah, got it. Hi, [mcname]. Welcome to Gwetome Academy, where this story-- your story-- is continuing into its second year of high school. A new year of love, lust, and violent tendencies."
 
@@ -563,11 +576,13 @@ label start:
 
     pjmc embarrassed "...and I'm late for school."
 
-    menu:
-        "{i}Go downstairs and get ready for school":
-            jump s2
-        "{i}Sleep in just a liiitle longer":
-            jump s3
+    label mstart:
+
+        menu:
+            "{i}Go downstairs and get ready for school":
+                jump s2
+            "{i}Sleep in just a liiitle longer":
+                jump s3
 
 label s2:
 
@@ -593,12 +608,12 @@ label s2:
     na "Wait! Is that... the new season of Magical Ikemen?!? It's been a whole year since the last episode!"
 
     na "But... you have school. If you leave now, you still might be able to make it in time."
-
-    menu:
-        "{i}Head off to school":
-            jump s4
-        "{i}Watch Magical Ikemen":
-            jump s5
+    label m2:
+        menu:
+            "{i}Head off to school":
+                jump s4
+            "{i}Watch Magical Ikemen":
+                jump s5
 
 label s3:
 
@@ -619,11 +634,13 @@ label s3:
     mother "[mcname], school's already started so you need to hurry! I'm off to work now, so I can't help you. I'm off!"
 
     hide mother with ex
-    menu:
-        "{i}Wake up and go go go!":
-            jump s6
-        "{i}Nahh, I'm sleeping more":
-            jump s7
+    label m3:
+
+        menu:
+            "{i}Wake up and go go go!":
+                jump s6
+            "{i}Nahh, I'm sleeping more":
+                jump s7
 
 label s4:
 
@@ -656,11 +673,13 @@ label s4:
 
     na "Either way, you should probably get to school. The question is: How?"
 
-    menu:
-        "{i}I'll take the journey alone!":
-            jump s8
-        "{i}Try to talk to the ikemen":
-            jump s9
+    label m4:
+
+        menu:
+            "{i}I'll take the journey alone!":
+                jump s8
+            "{i}Try to talk to the ikemen":
+                jump s9
 
 label s5:
 
@@ -705,7 +724,6 @@ label s5:
 
     pjmc scared "Mark Zuckerberg?!"
 
-    
     $ ririname = "Riri"
     $ ririname_kanji = "リリ"
     riri "Wrong! I'm Riri. My boss told me there was a weeb here so I came to help."
@@ -724,9 +742,10 @@ label s5:
 
     pjmc normal "Ummmmmmmmm..."
 
-    menu:
-        "{i}Go to school... late":
-            jump s10
+    label m5:
+        menu:
+            "{i}Go to school... late":
+                jump s10
 
 label s6:
 
@@ -811,11 +830,12 @@ label s8:
 
     na "Hmmm... It'd look pretty good on college applications. How hard could it be?"
 
-    menu:
-        "{i}Go to class":
-            jump s51
-        "{i}Sign up and go to the Student Council room":
-            jump s52
+    label m8:
+        menu:
+            "{i}Go to class":
+                jump s51
+            "{i}Sign up and go to the Student Council room":
+                jump s52
 
 label s9:
 
@@ -857,9 +877,10 @@ label s9:
 
     hide joe with ex
 
-    menu:
-        "{i}Walk to school":
-            jump s8
+    label m9:
+        menu:
+            "{i}Walk to school":
+                jump s8
 
 label s10:
 
@@ -899,12 +920,12 @@ label s10:
         if metRiri:
             $ riris[10] = True
             
-
-    menu:
-        "{i}Go to class late":
-            jump s11
-        "{i}Skip!":
-            jump s12
+    label m10:
+        menu:
+            "{i}Go to class late":
+                jump s11
+            "{i}Skip!":
+                jump s12
 
 label s11:
 
@@ -917,14 +938,19 @@ label s11:
 
     mc ecstatic "Excuse me!"
 
-    sensei "Detention!"
+    show teacher_e angry at e
+    teacher_e "Detention!"
 
+    hide teacher_e with ex
+    $ metRiri = True
     if metRiri:
         $ riris[11] = True
     
-    menu:
-        "Go to detention":
-            jump s13
+    label m11:
+
+        menu:
+            "Go to detention":
+                jump s13
         
 
 label s12:
@@ -979,11 +1005,13 @@ label s13:
     if metRiri:
         $ riris[13] = True
         
-    menu:
-        "{i}Make a scene!":
-            jump s15
-        "{i}Wait for detention to end and leave":
-            jump s16
+        label m13:
+
+            menu:
+                "{i}Make a scene!":
+                    jump s15
+                "{i}Wait for detention to end and leave":
+                    jump s16
 
 label s14:
 
@@ -1092,11 +1120,13 @@ label s15:
     if metRiri:
         $ riris[15] = True        
 
-    menu:
-        "{i}I'm going to that party!":
-            jump s26
-        "{i}Absolutely not":
-            jump s27
+    label m15:
+
+        menu:
+            "{i}I'm going to that party!":
+                jump s26
+            "{i}Absolutely not":
+                jump s27
 
 label s16:
 
@@ -1178,11 +1208,13 @@ label s18:
 
     na "Wait, that's the student council president! You're in trouble if he finds you out here."
 
-    menu:
-        "{i}Hide behind a corner!":
-            jump s18_1
-        "{i}Pshh, what is he gonna do?":
-            jump s18_2
+    label m18:
+
+        menu:
+            "{i}Hide behind a corner!":
+                jump s18_1
+            "{i}Pshh, what is he gonna do?":
+                jump s18_2
 
     label s18_1:
 
@@ -1217,13 +1249,15 @@ label s18:
         show jt ecstatic
         jt "Well, you're not going anywhere without a hall pass. How about we bring you back to class to get one?"
 
-        menu:
-            "{i}Sure, I should probably head back":
-                jump s21
-            "{i}No, I don't think I will!":
-                jump s17
-            "{i}This guy deserves a punch!":
-                jump s18_4
+        label m18_3:
+
+            menu:
+                "{i}Sure, I should probably head back":
+                    jump s21
+                "{i}No, I don't think I will!":
+                    jump s17
+                "{i}This guy deserves a punch!":
+                    jump s18_4
                 
     label s18_4:
 
@@ -1515,11 +1549,13 @@ label s24:
     if metRiri:
         $ riris[24] = True
         
-    menu:
-        "\"No, leave me alone!\"":
-            jump s41
-        "\"Sure, why not?\"":
-            jump s42
+    label m24:
+        
+        menu:
+            "\"No, leave me alone!\"":
+                jump s41
+            "\"Sure, why not?\"":
+                jump s42
 
 label s25:
 
@@ -1599,11 +1635,13 @@ label s26:
     if metRiri:
         $ riris[26] = True
         
-    menu:
-        "{i}Go to the party with Akimitsu":
-            jump s28
-        "{i}Ditch the party and hang out":
-            jump s29
+    label m26:
+
+        menu:
+            "{i}Go to the party with Akimitsu":
+                jump s28
+            "{i}Ditch the party and hang out":
+                jump s29
 
 label s27:
 
@@ -1640,7 +1678,10 @@ label s27:
     if metRiri:
         $ riris[27] = True
     
-    jump s43
+    label m27:
+        menu:
+            "{i}Go home":
+                jump s43
         
 
 label s28:
@@ -1688,13 +1729,15 @@ label s28:
     if metRiri:
         $ riris[28] = True
         
-    menu:
-        "{i}Ignore Isamu":
-            jump s30
-        "{i}Ignore Akimitsu":
-            jump s32
-        "{i}Ditch both for apple juice":
-            jump s31
+    label m28:
+
+        menu:
+            "{i}Ignore Isamu":
+                jump s30
+            "{i}Ignore Akimitsu":
+                jump s32
+            "{i}Ditch both for apple juice":
+                jump s31
 
 label s29:
 
@@ -1730,11 +1773,13 @@ label s29:
     if metRiri:
         $ riris[29] = True
 
-    menu:
-        "\"Sure, I'll watch\"":
-            jump s14
-        "\"I'd rather party\"":
-            jump s33
+    label m29:
+
+        menu:
+            "\"Sure, I'll watch\"":
+                jump s14
+            "\"I'd rather party\"":
+                jump s33
 
 label s30:
 
@@ -1752,11 +1797,13 @@ label s30:
     if metRiri:
         $ riris[30] = True
 
-    menu:
-        "\"You know what? Sure.\"":
-            jump s35
-        "\"No, I have plans with Akimitsu\"":
-            jump s36
+    label m30:
+
+        menu:
+            "\"You know what? Sure.\"":
+                jump s35
+            "\"No, I have plans with Akimitsu\"":
+                jump s36
 
 label s31:
 
@@ -1787,9 +1834,11 @@ label s31:
     if metRiri:
         $ riris[27] = True
         
-    menu:
-        "Go home":
-            jump s43
+    label m31:
+
+        menu:
+            "Go home":
+                jump s43
 
 label s32:
 
@@ -1808,11 +1857,13 @@ label s32:
 
     na "{i}{color=#b0b0b0}{size=-6}{cps=10}*Narrator gasps*{/cps}{/size}{/color}{/i}"
 
-    menu:
-        "\"Sounds good to me!\"":
-            jump s34
-        "\"No thanks, I'm going with Isamu\"":
-            jump s37
+    label m32:
+
+        menu:
+            "\"Sounds good to me!\"":
+                jump s34
+            "\"No thanks, I'm going with Isamu\"":
+                jump s37
 
 label s33:
 
@@ -1838,7 +1889,11 @@ label s33:
     if metRiri:
         $ riris[33] = True
         
-    jump s28
+    label m33:
+
+        menu:
+            "\"Okay.\"":
+                jump s28
 
 label s34:
 
@@ -1869,9 +1924,11 @@ label s34:
     if metRiri:
         $ riris[34] = True
 
-    menu:
-        "{i}Leave with Akimitsu":
-            jump s40
+    label m34:
+
+        menu:
+            "{i}Leave with Akimitsu":
+                jump s40
 
 label s35:
 
@@ -1886,9 +1943,11 @@ label s35:
     if metRiri:
         $ riris[35] = True
         
-    menu:
-        "{i}Go get drinks with Isamu":
-            jump s38
+    label m35:
+
+        menu:
+            "{i}Go get drinks with Isamu":
+                jump s38
 
 label s36:
 
@@ -1905,9 +1964,11 @@ label s36:
     if metRiri:
         $ riris[36] = True
 
-    menu:
-        "\"Sounds good to me!\"":
-            jump s34
+    label m36:
+
+        menu:
+            "\"Sounds good to me!\"":
+                jump s34
 
 label s37:
 
@@ -1930,11 +1991,13 @@ label s37:
     if metRiri:
         $ riris[37] = True
         
-    menu:
-        "{i}Go get drinks with Isamu":
-            jump s38
-        "Actually... I'm good":
-            jump s39
+    label m37:
+        
+        menu:
+            "{i}Go get drinks with Isamu":
+                jump s38
+            "Actually... I'm good":
+                jump s39
 
 label s38:
 
@@ -2007,8 +2070,6 @@ label s38:
     na "No one can stop your bulging muscles or your untouchable love!...  {i}{color=#b0b0b0}{size=-6}{cps=8}Nya~{/cps}{/size}{/color}{/i}"
 
     jump e5
-
-    # not done
 
 label s39:
 
@@ -2167,11 +2228,13 @@ label s42:
 
     na "Alright now, what will you talk about for maximum romance?"
 
-    menu:
-        "{i}Talk about Hoshibucks":
-            jump s44
-        "{i}Talk about hobbies":
-            jump s45
+    label m42:
+
+        menu:
+            "{i}Talk about Hoshibucks":
+                jump s44
+            "{i}Talk about hobbies":
+                jump s45
  
 label s43:
 
@@ -2203,6 +2266,7 @@ label s43:
 
     #TODO: Loading screen (?)
 
+    scene black with fade
     jump start
  
 label s44:
@@ -2241,9 +2305,11 @@ label s44:
     if metRiri:
         $ riris[44] = True
         
-    menu:
-        "{i}Go to the beach with Joe":
-            jump s46
+    label m44:
+
+        menu:
+            "{i}Go to the beach with Joe":
+                jump s46
  
 label s45:
 
@@ -2275,9 +2341,11 @@ label s45:
     if metRiri:
         $ riris[44] = True
 
-    menu:
-        "Go to the beach!":
-            jump s46
+    label m45:
+
+        menu:
+            "Go to the beach!":
+                jump s46
         
     
 label s46:
@@ -2320,11 +2388,13 @@ label s46:
     if metRiri:
         $ riris[46] = True
         
-    menu:
-        "{i}Go swimming! That lifeguard can't stop me!":
-            jump s47
-        "{i}Walk on the beach instead":
-            jump s48
+    label m46:
+
+        menu:
+            "{i}Go swimming! That lifeguard can't stop me!":
+                jump s47
+            "{i}Walk on the beach instead":
+                jump s48
  
 label s47:
 
@@ -2355,11 +2425,13 @@ label s47:
     if metRiri:
         $ riris[47] = True 
     
-    menu:
-        "{i}The lifeguard can deal with it":
-            jump s49
-        "\"Don't worry, I'll save you!!\"":
-            jump s50
+    label m47:
+
+        menu:
+            "{i}The lifeguard can deal with it":
+                jump s49
+            "\"Don't worry, I'll save you!!\"":
+                jump s50
 
 label s48:
 
@@ -2582,22 +2654,24 @@ label s51:
     if metRiri:
         $ riris[51] = True
 
-    menu:
-        "[quizGuess1]":
-            if quizGuess1 == quizCorrect:
-                jump s54
-            else:
-                jump s53
-        "[quizGuess2]":
-            if quizGuess2 == quizCorrect:
-                jump s54
-            else:
-                jump s53
-        "[quizGuess3]":
-            if quizGuess3 == quizCorrect:
-                jump s54
-            else:
-                jump s53
+    label m51:
+
+        menu:
+            "[quizGuess1]":
+                if quizGuess1 == quizCorrect:
+                    jump s54
+                else:
+                    jump s53
+            "[quizGuess2]":
+                if quizGuess2 == quizCorrect:
+                    jump s54
+                else:
+                    jump s53
+            "[quizGuess3]":
+                if quizGuess3 == quizCorrect:
+                    jump s54
+                else:
+                    jump s53
 
 label s52:
 
@@ -2649,14 +2723,13 @@ label s52:
 
     na "Suddenly, the door opens and a mouse-like girl enters the room."
 
-    $ mioname = "Mio"
-    $ mioname_kanji = "みお"
-    $ metMio = True
-
     show jt normal at left
     show mio embarrassed at e
     mio "P-please excuse the intrusion!"
 
+    $ mioname = "Mio"
+    $ mioname_kanji = "みお"
+    $ metMio = True
     jt "Ah! Mio, please meet our newest member, [mcname]."
 
     na "Upon seeing you Mio freezes up, but then quickly nods an awkward smile."
@@ -2716,11 +2789,13 @@ label s53:
     if metRiri:
         $ riris[53] = True
         
-    menu:
-        "{i}Go to the address":
-            jump s58
-        "{i}Study alone in the library":
-            jump s59
+    label m53:
+
+        menu:
+            "{i}Go to the address":
+                jump s58
+            "{i}Study alone in the library":
+                jump s59
  
 label s54:
     
@@ -2745,11 +2820,13 @@ label s54:
 
     na "Wanna try grouping with them?"
     
-    menu:
-        "{i}Ask to group with them":
-            jump s56
-        "{i}\"Nah, I'm good\"":
-            jump s55
+    label m54:
+
+        menu:
+            "{i}Ask to group with them":
+                jump s56
+            "{i}\"Nah, I'm good\"":
+                jump s55
  
 label s55:
 
@@ -2946,11 +3023,13 @@ label s57:
     if metRiri:
         $ riris[57] = True
         
-    menu:
-        "{i}Maybe they were planning to give it back":
-            jump s61
-        "{i}Something's fishy around here...":
-            jump s60
+    label m57:
+
+        menu:
+            "{i}Maybe they were planning to give it back":
+                jump s61
+            "{i}Something's fishy around here...":
+                jump s60
  
 label s58:
 
@@ -3041,11 +3120,13 @@ label s60:
     if metRiri:
         $ riris[60] = True
         
-    menu:
-        "{i}Test them to see if they know the password":
-            jump s63
-        "{i}Pshh, it's probably fine!":
-            jump s64
+    label m60:
+
+        menu:
+            "{i}Test them to see if they know the password":
+                jump s63
+            "{i}Pshh, it's probably fine!":
+                jump s64
  
 label s61:
 
@@ -3178,11 +3259,13 @@ label s63:
     if metRiri:
         $ riris[63] = True
         
-    menu:
-        "{i}That project can wait! Hang out with Akimitsu instead":
-            jump s65
-        "{i}Nah, we have to finish this project.":
-            jump s66
+    label m63:
+
+        menu:
+            "{i}That project can wait! Hang out with Akimitsu instead":
+                jump s65
+            "{i}Nah, we have to finish this project.":
+                jump s66
  
 label s64:
 
@@ -3232,11 +3315,12 @@ label s65:
     if metRiri:
         $ riris[65] = True
 
-    menu:
-        "{i}Call the cops!":
-            jump s69
-        "{i}Don't call the cops":
-            jump s68
+    label m65:
+        menu:
+            "{i}Call the cops!":
+                jump s69
+            "{i}Don't call the cops":
+                jump s68
  
 label s66:
 
@@ -3333,11 +3417,13 @@ label s67:
     if metRiri:
         $ riris[67] = True
 
-    menu:
-        "{i}Accept your fate...":
-            jump s70
-        "{i}Try to escape!":
-            jump s71
+    label m67:
+
+        menu:
+            "{i}Accept your fate...":
+                jump s70
+            "{i}Try to escape!":
+                jump s71
 
 label s68:
 
@@ -3496,11 +3582,13 @@ label s74:
 
     mio "It's not the student council... I... well, it's nothing."
 
-    menu:
-        "\"It's okay, you can talk to me\"":
-            jump s93
-        "{i}Don't push into it{/i}":
-            jump s94
+    label m74:
+
+        menu:
+            "\"It's okay, you can talk to me\"":
+                jump s93
+            "{i}Don't push into it{/i}":
+                jump s94
 
  
 label s75:
@@ -3562,11 +3650,13 @@ label s75:
     if metRiri:
         $ riris[75] = True
 
-    menu:
-        "{i}Don't let those girls walk all over you!":
-            jump s76
-        "{i}Well, I'm sure Yutaka will be here any moment now to resolve this commotion... it'd be best to be silent and tough it out...":
-            jump s77
+    label m75:
+
+        menu:
+            "{i}Don't let those girls walk all over you!":
+                jump s76
+            "{i}Well, I'm sure Yutaka will be here any moment now to resolve this commotion... it'd be best to be silent and tough it out...":
+                jump s77
 
 label s76:
 
@@ -3683,17 +3773,19 @@ label s77:
     if metRiri:
         $ riris[77] = True
 
-    menu:
-        "{i}Accept the offer":
-            jump s79
-        "\"Let me think about it...\"":
+    label m77:
 
-            scene black
-            na "You tell him you'll think about it as you walk home."
+        menu:
+            "{i}Accept the offer":
+                jump s79
+            "\"Let me think about it...\"":
 
-            na "Maybe watching some anime will help."
+                scene black
+                na "You tell him you'll think about it as you walk home."
 
-            jump s43
+                na "Maybe watching some anime will help."
+
+                jump s43
 
 label s78:
 
@@ -3739,11 +3831,13 @@ label s79:
     if metRiri:
         $ riris[79] = True
 
-    menu:
-        "{i}Go back to Yutaka":
-            jump s80
-        "{i}Time to investigate!":
-            jump s81
+    label m79:
+
+        menu:
+            "{i}Go back to Yutaka":
+                jump s80
+            "{i}Time to investigate!":
+                jump s81
 
 label s80:
 
@@ -3768,7 +3862,7 @@ label s81:
 
     kyle "Look, I've been really busy recently so I'm tired and not really thinking."
 
-    na "Yoko... huh..."
+    na "{i}Yoko{/i}... huh..."
 
     yoko "Gosh, you and your excuses! You're not the one who has to sit next to a dimwit every day in math... I'm the tired one!"
 
@@ -3791,6 +3885,28 @@ label s81:
     na "But... you can hear their conversation, and you refuse to be {i}TRICKED{/i} by Kleinr's resident \"Love Spirit\"..."
 
     na "You know the truth!"
+
+    beckham "Um, excuse me-- can I help you?"
+
+    na "Uh oh... looks like you're running out of time."
+
+    na "It's time to make a move."
+
+    na "...If you make a move."
+
+    $ metRiri = True
+    if metRiri:
+        $ riris[81] = True
+
+    label m81:
+        
+        menu:
+            "{i}Don't bother them-- it's not your business":
+                jump s82
+            "{i}Make Yoko get five more stitches!":
+                jump s83
+            "{i}Ask Akimitsu what's wrong... with your fists!":
+                jump s84
 
 
 
@@ -3842,11 +3958,13 @@ label s92:
     if metRiri:
         $ riris[92] = True
 
-    menu:
-        "{i}Accept his forgiveness and promise to be more careful":
-            jump s102
-        "{i}Tell him he's not the boss of you!":
-            jump s103
+    label m92:
+
+        menu:
+            "{i}Accept his forgiveness and promise to be more careful":
+                jump s102
+            "{i}Tell him he's not the boss of you!":
+                jump s103
     
 label s93:
 
@@ -3883,13 +4001,15 @@ label s93:
     show mio happy
     mio "What should I do?"
 
-    menu:
-        "\"Tell him before it's too late!-- like right now!\"":
-            jump s95
-        "\"Wait and see how it plays out\"":
-            jump s96
-        "\"Uhh... I also like Yutaka\"":
-            jump s97
+    label m93:
+
+        menu:
+            "\"Tell him before it's too late!-- like right now!\"":
+                jump s95
+            "\"Wait and see how it plays out\"":
+                jump s96
+            "\"Uhh... I also like Yutaka\"":
+                jump s97
 
 label s94:
 
@@ -3964,13 +4084,15 @@ label s94:
     na "What will be your campaign for student council vice president?"
 
     if metRiri:
-        $ riris[92] = True
+        $ riris[94] = True
 
-    menu:
-        "{i}\"Improving Sports Programs\"":
-            jump s105
-        "{i}\"Pets Need Education Too\"":
-            jump s106
+    label m94:
+
+        menu:
+            "{i}\"Improving Sports Programs\"":
+                jump s105
+            "{i}\"Pets Need Education Too\"":
+                jump s106
 
 
 label s95:
@@ -4303,11 +4425,13 @@ label s96:
     show jt thinking
     jt "If people can't see me beyond my looks why should I try to change their mind? All I need to do is say a few sweet words and they're already wrapped around my finger."
 
-    menu:
-        "\"I don't see you that way Yutaka.\"":
-            jump s98
-        "{i}Escape and let Mio know Yutaka's true nature":
-            jump s23
+    label m96:
+
+        menu:
+            "\"I don't see you that way Yutaka.\"":
+                jump s98
+            "{i}Escape and let Mio know Yutaka's true nature":
+                jump s23
     
 
 label s97:
@@ -4574,11 +4698,13 @@ label s102:
     if metRiri:
         $ riris[102] = True
 
-    menu:
-        "{i}Reject him":
-            jump s104
-        "\"Sure!\"":
-            jump s79
+    label m102:
+
+        menu:
+            "{i}Reject him":
+                jump s104
+            "\"Sure!\"":
+                jump s79
 
 label s103:
 
