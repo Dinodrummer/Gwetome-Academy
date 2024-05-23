@@ -110,6 +110,7 @@ style secondary_name:
 screen say(who, what, name = None):
     style_prefix "say_kanji_label"
 
+    #key "dismiss" action [Play("sound", sfx_text_progression), renpy.ui.saybehavior]
     #if name is not None:
         #gui.name_text_size = 
     window:
@@ -450,7 +451,7 @@ style navigation_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
 screen main_menu():
-    
+
     ## This ensures that any other menu screen is replaced.
     tag menu
 
@@ -526,6 +527,10 @@ screen main_menu():
 
             text "[config.version]":
                 style "main_menu_version"
+    
+    add "flowers"
+    add "lflowers"
+    add "sparkles"
 
 
 style main_menu_frame is empty

@@ -1,0 +1,37 @@
+image magical_background:
+    "images/splashscreen.png"
+    ycenter 0.5
+    zoom 0.45
+    rotate -10
+image magical1:
+    "images/Magical Ikemen/1.png"
+    ycenter 0.5
+    zoom 0.45
+image magical2:
+    "images/Magical Ikemen/2.png"
+    ycenter 0.5
+    zoom 0.45
+image magical3:
+    "images/Magical Ikemen/3.png"
+    ycenter 0.5
+    zoom 0.45
+image magical4:
+    "images/Magical Ikemen/4.png"
+    ycenter 0.5
+    zoom 0.45
+image magical5:
+    "images/Magical Ikemen/5.png"
+    ycenter 0.5
+    zoom 0.45
+image magical6:
+    "images/Magical Ikemen/6.png"
+    ycenter 0.5
+    zoom 0.45
+image magical7:
+    "images/Magical Ikemen/7.png"
+    ycenter 0.5
+    zoom 0.45
+image magical8:
+    "images/Magical Ikemen/8.png"
+    ycenter 0.5
+    zoom 0.45

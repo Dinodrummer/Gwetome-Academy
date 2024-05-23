@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-image vid = Movie(play="audio/5-6.webm", size=(1920,1080),loop=False, xalign=0.10, yalign=0.10)
+#image vid = Movie(play="audio/5-6.webm", size=(1920,1080),loop=False, xalign=0.10, yalign=0.10)
 
 init -2:
     # ---------- blinking arrow -------------------
@@ -19,6 +19,30 @@ init -2:
         zoom 0.28
         ypos 10
         xpos 4
+        0.5
+        repeat
+    image flowers:
+
+        alpha 1.0
+        "images/Main Menu/flowers1.png"
+        0.7
+        "images/Main Menu/flowers2.png"
+        0.7
+        repeat
+    image lflowers:
+
+        alpha 1.0
+        "images/Main Menu/logo flowers1.png"
+        0.6
+        "images/Main Menu/logo flowers2.png"
+        0.6
+        repeat
+    image sparkles:
+
+        alpha 1.0
+        "images/Main Menu/sparkles1.png"
+        0.5
+        "images/Main Menu/sparkles2.png"
         0.5
         repeat
 
@@ -52,7 +76,6 @@ transform bar:
     ease .04 xcenter 576
 
     ease .04 xcenter 960
-
 
 transform left:
     ease .06 xcenter 900
@@ -112,17 +135,27 @@ init python:
     
     def character_callback(event, **kwargs):
         if event == "end":
-            renpy.music.play("ping.ogg", channel="audio")
+            renpy.music.play(sfx_text_progression, channel="audio")
 
     config.all_character_callbacks.append(character_callback)
 
 # ---------------------------------------------- Music / SFX -----------------------------------------------------
     config.auto_voice = "voice/{id}.mp3"
 
-    sfx_Bell = "hoshibucks_bell.mp3"
+    sfx_Bell = "audio/sfx_bell.mp3"
+    sfx_earthquake = "audio/sfx_earthquake.mp3"
+    sfx_select = "audio/sfx_select.mp3"
+    sfx_shatter = "audio/sfx_shatter.mp3"
+    sfx_sparkle = "audio/sfx_sparkle.mp3"
+    sfx_text_progression = "audio/sfx_text_progression.mp3"
 
+    bgm_basement = "audio/bgm_basement.mp3"
+    bgm_home = "audio/bgm_home.mp3"
+    bgm_homei = "audio/bgm_homei.mp3"
     bgm_hoshibucks = "audio/bgm_hoshibucks.mp3"
     bgm_main = "audio/bgm_main.mp3"
+    bgm_outside_day = "audio/bgm_outside_day.mp3"
+    bgm_outside_night = "audio/bgm_outside_night.mp3"
 
     
 
@@ -223,59 +256,8 @@ init:
         (1, "#6529230e", 4, 4)
     ]
         
-
 # --------------------------------------------------------
-label pro:
-    pause 0.2
-    stop music
-    show vid
-    pause 2
-    #play music bgSong
-    pause 0.2
-    scene gym with Pixellate(0.5,3)
 
-    queue music basketballSong
-    "During gym..."
-    show zeil normal at char_left with vpunch
-    mc normal "{b}Hi!{/b} I'm {u}mc!{/u} {size=+10}This{/size} is my \"Project\"!"
-    mc normal "Man, is it just me, or am I... {color=#b0b0b0}getting... {size=-6}a {nw}"
-    mc normal "little sleepy...{/size}{/color}"
-    return
-
-label DefaultQuestion:
-    mc normal "What?!"
-    menu:
-        "Nothing!":
-            jump Questions_mc.Answer_Nothing
-        "Hi.":
-            jump Questions_mc.Answer_Hi
-        "Play a game with me!":
-            $ renpy.dynamic("randumNum","answer") #To make variables local
-            $ randomNum = renpy.random.randint(1,4)
-            mc normal "Anyways... OMG! It's a [randomNum]!"
-            if randomNum >= 1 or randomNum <= 2:
-                $ answer = "What?"
-            elif randomNum == 3:
-                $ answer = "Say that again?"
-            else:
-                $ answer = "Huh?"
-            mc normal "[answer]"
-            # $ repeatQuestion = renpy.random.choice(["What?", "Say that again?", "Huh?"])
-            return
-    
-label Questions_mc:
-    label .Question_What:
-        label .Answer_Nothing:
-            mc normal "Oh."
-            return
-        label .Answer_Hi:
-            mc normal "Hi!"
-            return
-
-
-# --------------------------------------------------------
-# p = placeholder label
-# s = scene
 label ph:
 
     scene black
@@ -287,47 +269,56 @@ label ph:
 
 label riri:
     show choice
-    show riri normal at e
     if riris[10]:
 
+        show riri ecstatic at e
         riri "Yay! You did it! I'm so proud of you Naninani. Okay... let's see your options..."
 
+        show riri normal
         riri "Your teacher is really mad right now. If you went to class you'd definitely receive that anger."
 
         riri "But... if you skip class you could find yourself in a battle for your very fate."
 
+        show riri ecstatic
         riri "Ooooh spicy. You know which one I would choose. {i}Wink. Wink.{/i}"
 
         #$ riris[10] = False
     elif riris[11]:
 
+        show riri flirty at e
         riri "Hehehehe..."
 
         #$ riris[11] = False
     elif riris[14]:
 
+        show riri ecstatic at e
         riri "Follow your gut, Naninani!"
 
         #$ riris[14] = False
     elif riris[15]:
 
+        show riri annoyed at e
         riri "You {i}have{/i} to go to that party Naninani! 'Kay?"
 
         #$ riris[15] = False
     elif riris[26]:
 
+        show riri normal at e
         riri "Look at this cutie-patootie! Maybe you don't have to go to that party Naninani."
 
+        show riri flirty
         riri "The choice is yours... though I am a fan of Chiba-kun myself... hehehehehe..."
 
         #$ riris[26] = False
     elif riris[27]:
 
+        show riri angry at e
         na "{i}[[Riri shakes her head. It looks like she doesn't want to talk to you right now.]{/i}"
 
         #$ riris[27] = False
     elif riris[28]:
 
+        show riri ecstatic at e
         riri "The drama! As the main character, you {i}must{/i} pick at least one of them!"
 
         riri "Don't let the temptation of the forbidden fruit fool you!"
@@ -335,46 +326,58 @@ label riri:
         #$ riris[28] = False
     elif riris[24]:
 
+        show riri normal at e
         riri "Hey, Naninani, he's really asking you on a date!"
 
+        show riri sad
         riri "I never thought you'd make it this far... It truly brings tears to my eyes!"
         
+        show riri ecstatic
         riri "Anyways, you HAVE to go with him! For me <3"
 
         #$ riris[24] = False
     elif riris[44]:
 
+        show riri ecstatic at e
         riri "Wow, did you really just ask him on a date?!?! All by yourself??"
 
+        show riri normal
         riri "I knew you could do it! They grow up so fast..."
 
         #$ riris[44] = False
     elif riris[46]:
 
+        show riri thinking at e
         riri "That's a tough one..."
 
+        show riri normal
         riri "Either way will bring you two closer, right? So, I'll let you decide this time..."
 
         #$ riris[46] = False
     elif riris[29]:
 
+        show riri ecstatic at e
         riri "If you go to the basketball game, Chiba-kun is totes falling for you!"
 
+        show riri thinking
         riri "Partying is fine too though I guess..."
 
         #$ riris[29] = False
     elif riris[33]:
 
+        show riri normal at e
         riri "Poor Chiba... Oh well, this means even more love routes!"
 
         #$ riris[33] = False
     elif riris[35]:
 
+        show riri flirty at e
         riri "Oooh, you like the bad ones, huh?"
 
         #$ riris[35] = False
     elif riris[37]:
         
+        show riri surprised at e
         riri "If you go get drinks with Isamu, you'll find yourself in a world of broken doors, crime, and... {i}cats?{/i}"
 
         riri "I mean, that's basically your only option... right? Right?"
@@ -382,68 +385,85 @@ label riri:
         #$ riris[37] = False
     elif riris[47]:
 
+        show riri surprised at e
         riri "What an unexpected twist!"
 
+        show riri ecstatic
         riri "Come on, Naninani! He's the love of your life, your soulmate! You must save him!"
 
         #$ riris[47] = False
     elif riris[53]:
 
+        show riri ecstatic at e
         riri "You need to be more explorative! Maybe this girl on the poster is actually your soulmate!"
 
         #$ riris[53] = False
     elif riris[57]:
 
+        show riri thinking at e
         riri "Maybe we should just give the, the benefit of the doubt? But why would they have your ring and not give it back? Hmmm..."
 
         #$ riris[57] = False
     elif riris[60]:
 
+        show riri thinking at e
         riri "How strange... let's test them to see if they know the password!"
 
         #$ riris[60] = False
     elif riris[63]:
 
+        show riri thinking at e
         riri "We can always just do the project another dayyy..."
         
         #$ riris[63] = False
     elif riris[65]:
 
+        show riri thinking at e
         riri "You could call the cops, but the culprit is already long gone..."
 
         #$ riris[65] = False
     elif riris[34]:
 
+        show riri ecstatic at e
         riri "CHIBA-KUN WANTS TO GO SOMEWHERE ELSE?!?! JUST THE TWO OF YOU?!?! AAAAAAAAAA GO NANINANI GOOO!"
 
         #$ riris[34] = False
     elif riris[36]:
 
+        show riri normal at e
         riri "Look at you go!"
 
         #$ riris[36] = False
     elif riris[75]:
 
+        show riri thinking at e
         riri "A fight would be fun..."
 
+        show riri surprised
         riri "But wait, no, Yutaka won't like it if you cause a huge fight!"
 
+        show riri normal
         riri "Think about his feelings, and just let this play out peacefully!"
 
         #$ riris[75] = False
     elif riris[92]:
 
-        riri "Dang it name, I told you he would be mad!"
+        show riri annoyed at e
+        riri "Dang it [mcname], I told you he would be mad!"
 
+        show riri normal
         riri "But, he did seem pleased that you went that far for him... hehe!"
 
+        show riri flirty
         riri "If you accept his forgiveness and change now, you can still have a chance!"
 
+        show riri ecstatic
         riri "Come on now, what are you waiting for? Do it!"
 
         #$ riris[92] = False
     elif riris[94]:
 
+        show riri surprised at e
         riri "Why are you looking at me?"
 
         riri "This time it's your decision, okay?"
@@ -451,31 +471,40 @@ label riri:
         #$ riris[94] = False
     elif riris[30]:
 
+        show riri surprised at e
         riri "{i}{color=#b0b0b0}{size=-6}{cps=10}*gasp*{/cps}{/size}{/color}{/i}"
 
         #$ riris[30] = False
     elif riris[13]:
 
+        show riri ecstatic at e
         riri "Follow your gut, [mcname]!"
 
         #$ riris[13] = False
     elif riris[51]:
 
+        show riri angry at e
         riri "Hey, why are you looking at me?"
 
+        show riri annoyed
         riri "Come on now, you should know this..."
 
         #$ riris[51] = False
     elif riris[67]:
 
+        show riri sad at e
         riri "Oh [mcname], how could this have happened!?"
 
+        show riri surprised
         riri "I wish I could use my magic to get us out of here... But this cage is magic proof!"
 
+        show riri sad
         riri "Dang that Haruka, how did she..."
 
+        show riri annoyed
         riri "Forget it. You are going to have to find a way out of this."
 
+        show riri sad
         riri "For your sake, Akimitsu's sake... and most importantly... {i}mine!{/i}"
 
         riri "Please!"
@@ -483,24 +512,30 @@ label riri:
         #$ riris[67] = False
     elif riris[77]:
 
+        show riri ecstatic at e
         riri "Ooh, this is so exciting!!"
 
         riri "Do you know what this means?! Yutaka is asking you out!!"
 
+        show riri angry
         riri "You'd better go with him. I'll be furious if you don't!"
 
         #$ riris[77] = False
     elif riris[79]:
         
+        show riri surprised at e
         riri "OMG, this is big! That Akimitsu, {i}your{/i} Akimitsu, with another girl?!"
 
+        show riri sad
         riri "And now of all times?! You and Yutaka were doing so well..."
 
+        show riri annoyed
         riri "{i}Aauughh{/i}-- I don't know what to do!! Just figure something out!"
 
         #$ riris[79] = False
     elif riris[102]:
 
+        show riri ecstatic at e
         riri "Yes! I told you, you have a chance!"
 
         riri "Now whatever you do, don't mess it up this time!"
@@ -508,10 +543,12 @@ label riri:
         #$ riris[102] = False
     elif riris[81]:
 
+        show riri thinking at e
         riri "Hmmm... this is a toughie."
 
         riri "As much as I don't want to see Chiba-kun with another girl, I can't say I'm much for violence either..."
 
+        show riri annoyed
         riri "You also want to keep Yutaka in mind-- someone might get mad here."
 
         #$ riris[81] = False
@@ -540,12 +577,23 @@ label riri:
 # voice voice.mp3
 
 label splashscreen:
-    scene black
+    pause 0.5
+    scene splashscreen with dissolve
+    pause 0.1
     play music bgm_main
-    show text "{size=100}Ending:" with dissolve
-    pause 1
+    pause 1.5
+    show text "{size=100}{color=#686459}Gwetome Productions Presents" with dissolve
+    pause 3
     hide text with dissolve
-    pause 1
+    pause 2
+    show text "{size=100}{color=#686459}{u}A Game By\n{/u}{size=80}Gwyneth Huber\nJT Gruber\nLucy Caliri\nMaryam Hosseini\nJoe Zimmerer\nSophia Hildreth\nKyle Rigby\nBeckham Kunkler" with dissolve
+    pause 3
+    hide text with dissolve
+    pause 2
+    show text "{size=100}{color=#686459}{u}With the Help Of{/u}{size=80}\nRie Tsuboi{size=65}{i} - Line corrections{/i}{size=80}\nIsa Espinosa{size=65}{i} - Programming Assistance{/i}{size=80}\nRylan Elwin{size=65}{i} - Sound/Music Designer" with dissolve
+    pause 3
+    hide text with dissolve
+    pause 1.5
     return
 
 label start:
@@ -553,8 +601,8 @@ label start:
     # TODO: Clear persistent data before exporting the game
     # $ persistent._clear()
 
+    stop music
     scene black
-
 
     pause 0.5
     na "Welcome. We're glad you could make it. Again. Weirdo. Who are you anyway?"
@@ -568,7 +616,7 @@ label start:
 
     $ persistent.playedGame = True
 
-    #jump e2
+    jump s5
 
     na "Ah, got it. Hi, [mcname]. Welcome to Gwetome Academy, where this story-- your story-- is continuing into its second year of high school. A new year of love, lust, and violent tendencies."
 
@@ -587,9 +635,7 @@ label start:
 
     pjmc normal "Ever since my family moved back to Shizuoka, I've been living my high-school life to the fullest."
 
-    pjmc normal "During my time here, I've come to learn that love isn't the only important thing in life."
-
-    pjmc ecstatic "I'm my own person, with my own goals and dreams, and I'm proud of that. I am independent and strong!"
+    pjmc normal "{size=47}During my time here, I've come to learn that love isn't the only important thing in life. I'm my own person, with my own goals and dreams, and I'm proud of that. I am independent and strong!"
 
     pjmc embarrassed "...and I'm late for school."
 
@@ -619,8 +665,6 @@ label s2:
 
     na "You happily munch on the breakfast your mother made and pat your belly in satisfaction. 
         Suddenly, the TV turns on, as if it's beckoning you to watch it."
-
-    #TODO: Show TV / Magical Ikemen
 
     na "Wait! Is that... the new season of Magical Ikemen?!? It's been a whole year since the last episode!"
 
@@ -704,9 +748,13 @@ label s5:
 
     na "It looks like he's having a serious talk with the Kiss Kiss Love Power Team, a magical-girl group that saves the world from evil monsters."
     
+    show magical_background
+    show magical1
     na "During the last episode, Takeshi was deciding whether or not to keep his office job or pursue his dream of becoming a full-time magical girl. 
         He must be discussing this with them now."
 
+    
+    
     mi1 "Takeshi... you must make a choice. If we wait any longer, the Dr. will find out your true identity. Either join us or leave us."
 
     pp "Pyun!"
@@ -1766,14 +1814,13 @@ label s29:
 
     na "Akimitsu flashes a smile."
 
+    show kyle normal
     kyle "That's a relief. After school let's go to my pla--{w=0.2}{nw}"
 
     # *phone buzz sounds*
 
     show kyle scared
-    na "..." with hpunch
-
-    kyle "Actually... wait..."
+    kyle "..." with hpunch
 
     mc concerned "Huh?"
 
@@ -2034,7 +2081,7 @@ label s38:
     show sophia party happy at e
     sophia "Don't we all?"
 
-    pmc cocky "Hey! Bartender! Get me your most appley apple juice."
+    sophia "Hey! Bartender! Get me your most appley apple juice."
 
     hide sophia with ex
     show beckham bartender shake at e
@@ -2733,7 +2780,9 @@ label s52:
     scene student_council
     na "It takes the whole school day, but you eventually finish filling out all the documents."
 
-    na "Besides some documents mentioning that the student council will have complete ownership of your loved ones, prized possessions, free time, and soul, you aren't worried about what you're signing up for."
+    jt "{size=46}Oh, right! Please make sure to read the documents thoroughly because the student council will have complete ownership of your loved ones, prized possessions, free time, and soul... nothing too much."
+
+    na "Oh...uh... Well it's too late to turn back now."
 
     na "When you are finally done, you hand them all back to Yutaka."
 
@@ -2882,7 +2931,7 @@ label s55:
 
     # At Yutaka's house
 
-    scene house sophia
+    scene neighborhood jt
     na "That afternoon, you head over to Yutaka's house."
 
     na "Well, more like Yutaka's {i}castle.{/i} This place is massive!"
@@ -2890,7 +2939,8 @@ label s55:
     show jt cocky at e
     jt "Hey [mcname], welcome in! Make yourself at home."
 
-    show jt normal
+    scene house jt
+    show jt normal at e
     jt "So, do you have any ideas?"
 
     menu:
@@ -2945,7 +2995,7 @@ label s55:
     show jt ecstatic
     jt "Alright, sounds good! Let's do it!"
 
-    scene house sophia
+    scene house jt
     na "You spend hours with Yutaka, and eventually finish the project."
 
     show jt ecstatic at e
@@ -3979,17 +4029,18 @@ label s91:
 
 label s92:
 
-    jump ph
-
     scene student_council
 
     show jt thinking at e
     jt "Tell me what happened."
 
-    na "You explain to him everything that they said that led up to you punching the girl."
+    scene black
+    pause 0.15
+    na "You explain to him everything that they said leading up to you punching the girl."
 
     na "He seems disappointed by your story. But somehow... amused?"
 
+    scene student_council
     show jt concerned at e
     jt "Okay, look. I appreciate you looking out for me, and respect the intention of standing up for yourself."
 
@@ -4002,6 +4053,7 @@ label s92:
 
     na "You sheepishly look at the floor, not sure how to reply."
 
+    show jt concerned
     jt "[mcname], look at me. Can you do that?"
 
     if metRiri:
@@ -4817,6 +4869,8 @@ label s103:
     jump e17
 
 label s104:
+
+    jump ph
 
 label s105:
 

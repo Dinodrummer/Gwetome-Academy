@@ -1,6 +1,9 @@
 image black:
     "images/Backgrounds/bg black.jpg"
     zoom 1
+image splashscreen:
+    "images/splashscreen.png"
+    zoom 1
 
 image bedroom:
     "images/Backgrounds/bg bedroom.png"
@@ -15,19 +18,19 @@ image neighborhood:
 
 image walkway:
     "images/Backgrounds/bg walkway.jpg"
-    zoom 1
+    zoom 1.5
 image park night:
     "images/Backgrounds/bg park night.jpg"
-    zoom 1
+    zoom 1.8
 image beach:
     "images/Backgrounds/bg beach.jpg"
-    zoom 1
+    zoom 1.8
 image island:
     "images/Backgrounds/bg island.jpg"
-    zoom 1
+    zoom 1.8
 
 image gate:
-    "images/Backgrounds/bg gate.jpg"
+    "images/Backgrounds/bg gate.png"
     zoom 1
 image classroom1 day: # English
     "images/Backgrounds/bg classroom1 day.png"
@@ -43,10 +46,10 @@ image classroom2 night: # Math
     zoom 1
 image counseling:
     "images/Backgrounds/bg counseling.jpg"
-    zoom 1
+    zoom 2.2
 image gym:
     "images/Backgrounds/bg gym.jpg"
-    zoom 1
+    zoom 2.5
 image detention day:
     "images/Backgrounds/bg detention day.png"
     zoom 1
@@ -55,7 +58,7 @@ image detention night:
     zoom 1
 image student_council:
     "images/Backgrounds/bg student_council.jpg"
-    zoom 1
+    zoom 1.8
 image hallway day:
     "images/Backgrounds/bg hallway day.png"
     zoom 1
@@ -69,10 +72,10 @@ image door:
 
 image hoshibucks:
     "images/Backgrounds/bg hoshibucks.jpg"
-    zoom 1
+    zoom 2
 image froyo:
     "images/Backgrounds/bg froyo.jpg"
-    zoom 1
+    zoom 2
 image dream:
     "images/Backgrounds/bg dream.jpg"
     zoom 1
@@ -96,6 +99,13 @@ image basement maryam:
 
 image house jt:
     "images/Backgrounds/bg house jt.png"
+    zoom 1
+image neighborhood jt:
+    "images/Backgrounds/bg neighborhood jt.png"
+    zoom 1
+
+image house sophia:
+    "images/Backgrounds/bg house sophia.png"
     zoom 1
 image balcony sophia:
     "images/Backgrounds/bg balcony sophia.png"
