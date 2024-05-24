@@ -2,7 +2,7 @@ image magical_background:
     "images/splashscreen.png"
     ycenter 0.5
     zoom 0.45
-    rotate -10
+    rotate -5
 image magical1:
     "images/Magical Ikemen/1.png"
     ycenter 0.5

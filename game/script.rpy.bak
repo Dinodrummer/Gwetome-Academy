@@ -5416,7 +5416,7 @@ label fight:
     while player_hp > 0 and enemy_hp > 0:
 
         # Player Turn - two choices!
-        call dice_roll from _call_dice_roll
+        call dice_roll
 
         $ player_attack_value = 3
         $ enemy_attack_dec = 0
@@ -5431,7 +5431,7 @@ label fight:
                     na "Your flirting had no effect!"          # 70%
                 else:
                     $ enemy_attack_dec += d4
-                    call flirt1 from _call_flirt1
+                    call flirt1
                     na "You successfully flirt with Yutaka and reduce his damage by [d4]!"
                     #mc scared "[d4] damage!"
             "Punch":
@@ -5457,7 +5457,7 @@ label fight:
 
         # Enemy Turn - Semi-randomized behavior!
 
-        call dice_roll from _call_dice_roll_1
+        call dice_roll
 
         if d20 >= 17:                                            # 20%       
             if d10 - enemy_attack_dec <= 0:
