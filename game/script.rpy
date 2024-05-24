@@ -153,9 +153,12 @@ init python:
     bgm_home = "audio/bgm_home.mp3"
     bgm_homei = "audio/bgm_homei.mp3"
     bgm_hoshibucks = "audio/bgm_hoshibucks.mp3"
+    bgm_froyo = "audio/bgm_hoshibucks.mp3"
     bgm_main = "audio/bgm_main.mp3"
     bgm_outside_day = "audio/bgm_outside_day.mp3"
     bgm_outside_night = "audio/bgm_outside_night.mp3"
+    bgm_school = "audio/bgm_school.mp3"
+    bgm_party = "audio/bgm_home.mp3"
 
     
 
@@ -601,8 +604,29 @@ label start:
     # TODO: Clear persistent data before exporting the game
     # $ persistent._clear()
 
-    stop music
-    scene black
+    stop music fadeout 1.0
+
+    scene black with fade
+
+    pause 0.5
+
+    pause 0.2
+
+    show text "{size=60}This game is in Beta" with dissolve:
+
+    pause 1.5
+
+    hide text with dissolve
+    
+    pause 0.5
+
+    show text "{size=60}Many scenes and line audio are missing,\nand you may experience errors playing." with dissolve
+
+    pause 2.5
+
+    hide text with dissolve
+
+    pause 0.5
 
     pause 0.5
     na "Welcome. We're glad you could make it. Again. Weirdo. Who are you anyway?"
@@ -623,7 +647,8 @@ label start:
     scene bedroom with fade
 
     pause 0.3
-    play music bgm_home
+    play music bgm_homei
+    queue music bgm_home
     pjmc shy "{i}{color=#b0b0b0}{size=-6}{cps=10}*yawn*{/cps}{/size}{/color}{/i} I'm so tired... I stayed up all night playing otome games."
     
     pjmc ecstatic "It`s hard not to when you`re given so many choices, especially when you can punch the male leads. Hehehe!"
@@ -681,7 +706,7 @@ label s3:
 
     #TODO: Bed sheet noise
     scene black
-    stop music
+    stop music fadeout 1.0
     na "You crawl into your covers again and begin to sleep blissfully; everything is cozy, warm, and peaceful. You begin to dream."
 
     na "It's your first day of school at Gwetome Academy. Everyone is calling you Naninani Nantoka. 
@@ -710,7 +735,7 @@ label s4:
 
     na "Wow, look at you all responsible! You discard the temptation of Magical Ikemen and start your trek to school."
 
-    stop music
+    stop music fadeout 1.0
     scene neighborhood
     play music bgm_outside_day
     na "You check your phone and see you have more time than you realized. Maybe you'll just quickly look up the information about 
@@ -885,7 +910,7 @@ label s7:
     na "Heh... school. Who needs it? You're about to discover the answer to the greatest mystery yet: who is Naninani Nantoka?!"
 
     scene black
-    stop music
+    stop music fadeout 1.0
     na "You rustle back under your blankets, close your eyes, and start to dream again... but this time you are not at school."
 
     na "You are floating through an endless void. You can't move. You can't breathe. All is silent."
@@ -905,16 +930,15 @@ label s7:
     na "By the time you wake up, the school year has already ended. You now know your true duty but it is too late, and there is no one left to love you."
 
     scene black
-    stop music
+    stop music fadeout 1.0
     na "Weeping, you succumb to the darkness of sleep once more."
 
-    scene black
     jump e0 #Eternal Power Nap
 
 label s8:
 
     scene gate
-    play music bgm_outside_day
+    play music bgm_school
     na "You keep walking to school alone and eventually end up at the front of the school."
 
     na "You notice a poster near the entrance, offering students to join the Student Council"
@@ -978,6 +1002,7 @@ label s10:
     $ metRiri = True
     $ persistent.ririEncounter = True
     scene gate
+    play music bgm_school
     
     na "You arrive at school... late of course."
 
@@ -1024,7 +1049,7 @@ label s11:
     na "Skipping class? It looks like you value your education..."
 
     scene classroom1 day
-    play music bgm_outside_day
+    play music bgm_school
     na "You walk to class and fling open the door."
 
     na "You're here in order to learn! You must study! You have your whole life ahead of you and you're not backing down!"
@@ -1055,6 +1080,7 @@ label s12:
 label s13:
 
     scene detention day
+    play music bgm_school
     na "Ahhh... detention. A land of hopes and sorrows... youth and forgotten dreams."
 
     na "Somehow you always seem to find yourself here."
@@ -1119,6 +1145,7 @@ label s14:
     na "After a short walk out of school the two of you arrive at a small run-down gym."
 
     scene gym
+    play music bgm_school
     show kyle jersey normal
     mc normal "The final is... here?"
 
@@ -1232,6 +1259,7 @@ label s16:
     # After school
 
     scene hallway night
+    play music bgm_school
     na "Man, it was your first day and you got {i}detention{/i}. Honestly, I'm impressed."
 
     #TODO: Earthquake rumble
@@ -1299,6 +1327,7 @@ label s17:
 label s18:
 
     scene hallway day
+    play music bgm_school
     na "As you're wandering the halls, you notice a student walking your way. He seems to be dressed very nicely, even for the prestigious Gwetome Academy."
 
     na "Wait, that's the student council president! You're in trouble if he finds you out here."
@@ -1366,6 +1395,7 @@ label s18:
 label s19:
 
     scene hallway day
+    play music bgm_school
     na "You throw a powerful punch, flying him across the room. He won't be bringing you back to class again anytime soon." with hpunch
 
     na "You hear a feeble voice as you walk away."
@@ -1379,6 +1409,7 @@ label s19:
 label s20:
 
     scene gate
+    play music bgm_school
     na "Word quickly spreads about how you punched the student council president and skipped class as you proudly walk out the front gates."
 
     mc normal "Man, that fight really took a lot out of me. I could really go for a Caramel Ribbon Crunch Frappe right about now."
@@ -1408,6 +1439,7 @@ label s21:
 label s22:
 
     scene hallway day
+    play music bgm_school
     na "You release a powerful punch aimed right at Yutaka!"
 
     na "...and miss. Well, that's embarrassing."
@@ -1445,6 +1477,7 @@ label s22:
 label s23:
 
     scene black
+    stop music fadeout 1.0
     na "While Yutaka continues to monologue your heart begins to sink."
 
     na "You think of Mio... has everything she's felt, worked for, and loved... been for a persona?"
@@ -1455,15 +1488,18 @@ label s23:
 
     #TODO: Shattered glass noise
     scene student_council
+    play sound sfx_shatter
     na "In a frenzied panic you grab Mio's jacket and look for the nearest exit: the window, and before you know it you're flying through the air with shattered glass as your wings." with hpunch
 
     scene gate
+    play music bgm_school
     na "As soon as you double somersault handspring onto the grass you start sprinting."
 
     na "You can hear Yutaka yelling behind you but it doesn't matter-- you must tell Mio."
 
     #TODO: Check if this is right neighborhood for mio
     scene neighborhood
+    play music bgm_outside_day
     na "As you turn onto the road of her family's restaurant you quickly spot her walking outside."
 
     mc scared "Mio!"
@@ -1485,9 +1521,11 @@ label s23:
     mc concerned "Well. there's also this other thing."
 
     scene black
+    stop music fadeout 1.0
     na "You explain everything to Mio: finding the jacket, getting locked in the room with Yutaka, his true nature... everything. And jumping out the window. That too."
 
     scene neighborhood
+    play music bgm_outside_day
     show mio scared at e
     mio "Wow... I can't believe it."
 
@@ -1529,6 +1567,7 @@ label s23:
     mio "Yes... Together!"
 
     scene black
+    stop music fadeout 1.0
     na "Soon after, the two of you quit the student council, and start a European culture club that studies the history, etiquette, fashion, and culture of the continent's nations."
 
     na "Although the club starts small, Mio's expert management skills and your creativity allow the club to thrive-- eventually warranting the attention of a news station and later a small European monarchy."
@@ -1552,7 +1591,7 @@ label s24:
 
     #In hoshibucks
 
-    stop music
+    stop music fadeout 1.0
     scene black
     play sound sfx_Bell
     pause 0.5
@@ -1577,14 +1616,14 @@ label s24:
     hide beckham with ex
     na "Failing to hold back spending one fourth of your monthly allowance on a single Frappe, you swipe your card and watch as the barista skillfully crafts your drink."
 
-    scene hoshibucks
     na "You imagine what the flavor will be as you grab the cup and walk away from the front counter."
 
-    mc normal "It looks so good! I'll worry about the cost later, because this is gonna be so worth i--{w=0.2}{nw}"
+    mc ecstatic "It looks so good! I'll worry about the cost later, because this is gonna be so worth i--{w=0.2}{nw}"
 
-    #TODO: Crash noise
+    play sound sfx_shatter
+    na "{i}{color=#b0b0b0}{size=-6}{cps=10}*shatter*{/cps}{/size}{/color}{/i}"
 
-    mc scared "NOOOO! MY CARAMEL RIBBON CRUNCH FRAPPE!!" with hpunch
+    mc scared "NOOOO! MY CARAMEL RIBBON CRUNCH FRAPPE!!"
 
     na "Well, that's rough. After you witness-- with pure agony--  the drink spill on the floor, you then look up to see... a pole? And an attractive one at that."
 
@@ -1614,7 +1653,7 @@ label s24:
     show joe normal
     mc ecstatic "No no no no, I wasn't looking where I was going."
 
-    joe "No no n--{w=0.2}{nw}"
+    joe "No no n--{w=0.1}{nw}"
 
     #TODO: Rumble noise
     show joe scared
@@ -1628,7 +1667,9 @@ label s24:
 
     mc normal "I'm [mcname], nice to meet you!"
 
-    scene hoshibucks
+    scene black
+    pause 0.5
+    scene hoshibucks with dissolve
     na "You let him buy you another Caramel Ribbon Crunch Frappe and have a nice chat at one of the tables."
 
     show joe ecstatic
@@ -1655,6 +1696,7 @@ label s24:
 label s25:
 
     scene counseling
+    play music bgm_school
     na "You enter the counseling office with Yutaka to find... another student?"
 
     na "I guess the school's low on staff..."
@@ -1687,11 +1729,13 @@ label s26:
 
     na "You carefully put the handkerchief and note in your bag and begin to daydream."
 
-    scene black
+    scene black with dissolve
+    stop music fadeout 1.0
     mc normal "{i}I wonder who's going to be there... I'll have to make lots of friends! Maybe I should try something new to make a good impression...{/i}"
 
     #TODO: Door noise
     scene detention day
+    play music bgm_school
     mc scared "Eh? Akimitsu?!" with hpunch
 
     na "Chiba Akimitsu, your childhood friend since third grade appears at the desk next to yours."
@@ -1743,6 +1787,7 @@ label s27:
     na "Date or not, you're not going. You toss the handkerchief and note out the window and wait for the school day to end. Soon enough, word gets around of your rejection."
 
     scene hallway night
+    play music bgm_school
     show d2 normal at e
     d2 "That's [mcname] isn't it?"
 
@@ -1782,9 +1827,11 @@ label s27:
 label s28:
 
     scene walkway
+    play music bgm_outside_night
     na "Soon, night falls. You arrive at the party with Akimitsu and head inside."
 
     scene party
+    play music bgm_party
     na "The party is surprisingly classy. Everyone is dressed nicely, there's a live jazz band, and even an open apple juice bar. You make a mental note of the apple juice bar."
 
     na "You quickly see Takao Isamu spot you and even slightly move their lips upward."
@@ -1908,6 +1955,7 @@ label s31:
     #Bar scene
 
     scene party
+    play music bgm_party
     pmc flirty "Apple juice please~"
 
     show beckham bartender normal
@@ -1963,7 +2011,7 @@ label s33:
 
     na "You shake your head solemnly"
 
-    pmc concerned "Sorry, Akimitsu. I changed my mind. The party never stops."
+    mc concerned "Sorry, Akimitsu. I changed my mind. The party never stops."
 
     show kyle sad
     kyle "But you just said we would han--{w=0.2}{nw}"
@@ -1971,9 +2019,11 @@ label s33:
     # Door closes
 
     scene black
+    stop music fadeout 1.0
     na "You leave."
 
     scene hallway day
+    play music bgm_school
     show kyle scared at e
     kyle "Wait! Wait! If you're that determined to go to the party I'll go with you. I'll skip my game."
 
@@ -1986,7 +2036,7 @@ label s33:
     label m33:
 
         menu:
-            "\"Okay.\"":
+            "\"Fine...\"":
                 jump s28
 
 label s34:
@@ -2004,6 +2054,7 @@ label s34:
     kyle "Wanna go find that open apple juice bar again?"
 
     scene party
+    play music bgm_party
     na "After finding the bar and getting your apple juice, the two of you begin to reminisce."
 
     na "You think about the dojo and your childhood."
@@ -2096,9 +2147,10 @@ label s37:
 label s38:
 
     scene party
+    play music bgm_party
+    pause 0.3
+    play sound sfx_shatter
     na "As you and Isamu start to go towards the bar you hear a brief shattering sound."
-
-    # Shattering noise
 
     pmc normal "Ah. I think Akimitsu may have accidentally kicked the door down."
 
@@ -2113,11 +2165,11 @@ label s38:
     show beckham bartender shake at e
     beckham "Of course."
 
-    scene black
+    scene black with fade
     na "After hours of discussing fighting techniques and the best way to throw someone out a window, you run out of apple juice."
 
-    scene party
-    scene beckham bartender confused
+    scene party with fade
+    show beckham bartender confused
     beckham "I'm sorry, we don't have any more apples to juice. It's a true tragedy for which I am very sorry Takao-sama."
 
     hide beckham with ex
@@ -2127,6 +2179,7 @@ label s38:
     pmc normal "Sure."
 
     scene black
+    play music bgm_outside_night
     na "The two of you step outside."
 
     scene balcony sophia
@@ -2150,7 +2203,8 @@ label s38:
 
     pmc shy "I... I like you too."
 
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
     na "Soon after Takao Isamu's confession the two of you start dating."
 
     na "It's a surprisingly healthy and loving relationship-- you meet {i}The Family{/i}|, go on lots of dates, and work through conflicts together."
@@ -2173,15 +2227,17 @@ label s39:
 
     na "But the party sucks so..."
 
-    mc normal "Actually... I'm good."
+    pmc normal "Actually... I'm good."
 
     show sophia party embarrassed
     sophia "...Huh?"
 
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
     na "You flip your hair and strut out the door."
 
-    scene walkway
+    scene walkway with fade
+    play music bgm_outside_night
     na "As you walk you radiate power and confidence. Is this the power of self-worth?"
 
     na "In fact, the aura from your strut is so strong that it catches the attention of a modeling agent."
@@ -2189,9 +2245,10 @@ label s39:
     show beckham agent normal at e
     beckham "Wait! I'm a modeling agent who also likes attending high school parties hosted by yakuza. You should join my agency! You're incredible!"
 
-    mc normal "Okay."
+    pmc normal "Okay."
 
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
     na "And that was how your modeling career began."
 
     na "You dropped out of high school, moved to New York, and started your legacy by modeling for Elle, Versace, and Vogue."
@@ -2202,10 +2259,10 @@ label s39:
     
     na "Burdened by the pressure of stardom, you started looking for a way to relieve the stress."
 
-    scene party
+    scene party with fade
     na "You thought back to that night... that party... and how you didn't get to try that apple juice."
 
-    scene black
+    scene black with fade
     na "Now you wanted it... you needed it... and eventually you succumbed to it."
 
     na "You spent all your money on apple juice, only drank apple juice, and only cared about apple juice."
@@ -2218,10 +2275,11 @@ label s39:
 
 label s40:
 
-    scene black
+    scene black with fade
     na "The two of you leave the party and walk to a nearby park."
 
     scene park night
+    play music bgm_outside_night
     na "The air is chilly but the stars are shining clearly and brightly."
 
     show kyle party loving at e
@@ -2231,7 +2289,9 @@ label s40:
 
     # Switch to bench
 
-    scene park night
+    scene black with fade
+    pause 0.5
+    scene park night with fade
     show kyle party embarrassed at e
     kyle "..."
 
@@ -2303,6 +2363,7 @@ label s41:
     na "You had to get home quick anyways. You haven't been catching up on this season's anime!"
 
     scene neighborhood
+    play music bgm_day
     na "You dart out of the Hoshibucks, not even thanking him for buying your drink before leaving. Bold."
 
     jump s43
@@ -2314,10 +2375,11 @@ label s42:
     show joe ecstatic
     joe "Perfect! I'm going the same direction. Come on, let's get moving!"
 
-    scene black
+    scene black with fade
     na "You leave the Hoshibucks with Joe."
 
     scene neighborhood
+    play music bgm_outside_day
     na "It almost looks like you two are going on a date, hehe!"
 
     na "Alright now, what will you talk about for maximum romance?"
@@ -2334,7 +2396,9 @@ label s43:
 
     # At home
 
-    scene kitchen
+    scene kitchen with fade
+    play music bgm_homei
+    queue music bgm_home
     na "You sit down in front of your television to watch anime."
 
     na "For some strange reason you feel empty and alone, like there is a dark hole in your heart."
@@ -2360,6 +2424,7 @@ label s43:
 
     #TODO: Loading screen (?)
 
+    stop music fadeout 1.0
     scene black with fade
     jump start
  
@@ -2444,13 +2509,16 @@ label s45:
     
 label s46:
 
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
     na "The next day, you and Joe make plans to go to the beach together."
 
     na "The way he talks to you... I think he likes you, ya know!"
 
     na "Anyways... After school, you meet up with Joe at the beach."
 
+    scene beach with fade
+    play music bgm_outside_day
     show joe suit ecstatic at e
     joe "Hey, [mcname]! It's nice to see you again. You look good!"
 
@@ -2504,13 +2572,15 @@ label s47:
 
     smc flirty "If you say so!"
 
+    scene black with fade
     na "Enough flirting! I'm skipping to the part where you actually swim."
 
     # Switch to water
 
-    scene beach
+    scene beach with fade
     na "Ahh, finally... but wait, is Joe okay?"
 
+    stop music fadeout 1.0
     show joe suit scared at e
     joe "Hey, I can't touch the ground here! I'm getting pulled out! Someone save me!!!" with hpunch
 
@@ -2539,9 +2609,11 @@ label s48:
 
     na "Aww, look at you two!"
 
-    scene beach
+    scene black with fade
     na "You take a nice walk and talk about various things, from hoshibucks, to school, to more hoshibucks, and eventually..."
 
+    scene beach with fade
+    play music bgm_outside_day
     show joe suit embarrassed at e
     joe "You know, name, there's something I should tell you..."
 
@@ -2580,13 +2652,15 @@ label s48:
 
 label s49:
 
-    scene beach
+    scene black with fade
     na "You wave your arms until the lifeguard notices Joe struggling."
 
     na "He rushes out to save Joe!"
 
     na "He doesn't seem to be paying attention to you though..."
 
+    scene beach with fade
+    play music bgm_outside_day
     #TODO: Beckham and Joe Cutscene (if lucy finishes drawing)
     na "You manage to make it to shore safely, and see the lifeguard performing CPR on an unconscious Joe."
 
@@ -2631,9 +2705,10 @@ label s50:
 
     smc scared "Don't worry Joe, I'll save you!"
 
+    scene black with fade
     na "Despite your best efforts, you end up both getting swept away by the current."
 
-    scene beach
+    scene beach with fade
     show joe suit sad at e
     joe "I'm so sorry, [mcname]. This is all my fault..."
 
@@ -2661,9 +2736,10 @@ label s50:
     na "Wow, this guy really has a way with words."
 
     show joe suit scared
-    na "But, before, you can respond, you are knocked unconscious by a huge wave." with hpunch
+    scene black with hpunch
+    stop music fadeout 1.0
+    na "But, before, you can respond, you are knocked unconscious by a huge wave."
 
-    scene black
     na "Is this how you die?"
 
     na "..."
@@ -2672,7 +2748,8 @@ label s50:
 
     # Opens eyes
 
-    scene island
+    scene island with fade
+    play music bgm_outside_day
     show joe suit enamoured at e
     joe "[mcname]! You're awake! I got this coconut for you. Please, drink from it!"
 
@@ -2697,7 +2774,8 @@ label s50:
 
     na "{i}{color=#b0b0b0}{size=-6}{cps=10}*sigh*{/cps}{/size}{/color}{/i} There he goes again."
 
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
     na "You live the rest of your lives together, surviving on the island and its natural resources."
 
     na "What a happy ending..."
@@ -2709,6 +2787,7 @@ label s51:
     # English class scene
 
     scene classroom1 day
+    play music bgm_school
     na "You arrive at your English class. You could have had something fun, like Japanese. But {i}English?{/i}"
 
     #TODO: Sitting down noise(?)
@@ -2721,6 +2800,7 @@ label s51:
     # Dream scene
     # TODO: Fadeout?
     scene dream with fade
+    stop music fadeout 1.0
 
     na "As you walk to the front gates of the school in your dreams, you notice four ikemens waving at you from one of the classrooms. They seem to be trying to say something."
 
@@ -2734,7 +2814,8 @@ label s51:
 
     # Back to classroom scene
 
-    scene classroom1 day
+    scene classroom1 day with fade
+    play music bgm_school
     na "Suddenly, you feel a sharp pain on your forehead. A piece of chalk then drops onto your desk."
 
     show teacher_e angry at e
@@ -2771,7 +2852,8 @@ label s52:
 
     na "Going to class won't get you into college! Instead, you go to the student council office to do something useful instead of rotting in class."
 
-    scene student_council
+    scene student_council with fade
+    play music bgm_school
     na "You look around and see a well dressed and quite handsome student sitting in an important looking chair."
 
     mc ecstatic "{i}He must be the leader of the student council! I should ask him about signing up!{/i}"
@@ -2803,9 +2885,11 @@ label s52:
 
     mc scared "Oh wow, alright."
 
-    scene student_council
+    scene black with fade
     na "It takes the whole school day, but you eventually finish filling out all the documents."
 
+    scene student_council with fade
+    show jt ecstatic at e
     jt "{size=46}Oh, right! Please make sure to read the documents thoroughly because the student council will have complete ownership of your loved ones, prized possessions, free time, and soul... nothing too much."
 
     na "Oh...uh... Well it's too late to turn back now."
@@ -2866,10 +2950,11 @@ label s53:
     show teacher_e sad
     teacher_e "You'll need someone to help you on the English project we will have too. Details will be posted online."
 
-    scene black
+    scene black with fade
     na "Well that's embarrassing. After getting laughed at by the entire class, you decide to go to the library to work on your English skills."
 
-    scene hallway day
+    scene hallway day with fade
+    play music bgm_school
     na "As you are about to enter the library, you notice a flier posted next to the door."
 
     $ maryamname = "Haruka Kiyama"
@@ -2957,7 +3042,8 @@ label s55:
 
     # At Yutaka's house
 
-    scene neighborhood jt
+    scene neighborhood jt with fade
+    play music bgm_outside_day
     na "That afternoon, you head over to Yutaka's house."
 
     na "Well, more like Yutaka's {i}castle.{/i} This place is massive!"
@@ -2966,6 +3052,8 @@ label s55:
     jt "Hey [mcname], welcome in! Make yourself at home."
 
     scene house jt
+    play music bgm_homei
+    queue music bgm_home
     show jt normal at e
     jt "So, do you have any ideas?"
 
@@ -3021,9 +3109,10 @@ label s55:
     show jt ecstatic
     jt "Alright, sounds good! Let's do it!"
 
-    scene house jt
+    scene black with fade
     na "You spend hours with Yutaka, and eventually finish the project."
 
+    scene house jt with fade
     show jt ecstatic at e
     jt "Whew! That's the last scene!"
 
@@ -3083,7 +3172,8 @@ label s56:
 
     # Next Day
     
-    scene neighborhood maryam
+    scene neighborhood maryam with fade
+    play music bgm_outside_day
     na "You knock on the door, and the student answers."
 
     show maryam normal
@@ -3095,7 +3185,9 @@ label s56:
 
 label s57:
 
-    scene room maryam
+    scene room maryam with fade
+    play music bgm_homei
+    queue music bgm_home
     show maryam nervous at e
     maryam "I'm going to go get my English work from downstairs... stay here for a little."
 
@@ -3130,7 +3222,8 @@ label s57:
  
 label s58:
 
-    scene neighborhood maryam
+    scene neighborhood maryam with fade
+    play music bgm_outside_day
     na "You walk up to the door of the address posted on the flier with no worries in your mind."
 
     na "You then hear some noises coming from the house, like someone is frantically trying to clean up."
@@ -3144,10 +3237,11 @@ label s58:
     show maryam embarrassed
     maryam "A- Alright... Come on in..."
 
-    scene black
+    scene house maryam with fade
+    play music bgm_homei
+    queue music bgm_home
     na "As you walk inside, you see Haruka running ahead of you. You hear a door slam shut down the hallway upstairs."
 
-    scene house maryam
     mc concerned "Hey, is everything alright?"
 
     maryam "Just one minute...!"
@@ -3162,10 +3256,11 @@ label s59:
 
     mc concerned "I think I'll just study alone in the library today..."
 
-    scene black
+    scene black with fade
     na "You spend all day studying English in the library, until you are fully satisfied that you have memorized that word."
 
     scene hallway night
+    play music bgm_school
     mc normal "Finally! Ahh, I'm exhausted. Time to head home and watch some anime..."
 
     jump s43
@@ -3193,9 +3288,11 @@ label s60:
 
     # New day, at MC house
 
-    scene kitchen
     na "Haruka arrives at your house, ready to work on the English project."
 
+    scene kitchen with fade
+    play music bgm_homei
+    queue music bgm_home
     mc ecstatic "Alright, let's get to work!"
 
     na "Haruka takes their computer out and starts typing right away."
@@ -3254,7 +3351,7 @@ label s61:
 
     mc ecstatic "Okay!"
 
-    scene room maryam
+    scene black
     na "You and Haruka work through your English for hours until you finally feel confident about your skills."
 
     #TODO: MC Stomach Rumble
@@ -3271,6 +3368,7 @@ label s61:
 label s62:
 
     scene neighborhood maryam
+    play music bgm_outside_day
     show maryam normal at e
     mc normal "Where would you like to go?"
 
@@ -3280,7 +3378,11 @@ label s62:
 
     # In Hoshibucks
 
-    scene hoshibucks
+    stop music fadeout 1.0
+    play sound sfx_Bell
+    pause 0.3
+    play music bgm_hoshibucks
+    scene hoshibucks with fade
     na "In the Hoshibucks line, Haruka notices that they forgot their wallet."
 
     show maryam scared at e
@@ -3338,10 +3440,12 @@ label s63:
     hide maryam with ex
     na "Haruka hastily grabs their stuff and goes home. Anxiety is rushing through your veins-- how could they have known your wifi password?!"
 
-    scene black
+    stop music fadeout 1.0
+    scene black with fade
     na "You head over to school the next day."
 
-    scene classroom1 day
+    scene classroom1 day with fade
+    play music bgm_school
     na "You and Haruka plan on finishing the project later that day, but then you notice a handsome figure approaching..."
 
     show kyle normal at e
@@ -3371,17 +3475,19 @@ label s64:
     show maryam ecstatic
     maryam "I'm in. Let's finish this project!"
 
-    scene black
+    stop music fadeout 1.0
+    scene black with fade
     na "The two of you get the project done early and decide to go get a sweet treat together."
 
     jump s62
  
 label s65:
 
-    scene black
+    scene black with fade
     na "After school, you and Akimitsu get Hoshibucks."
 
-    scene park night
+    scene park night with fade
+    play music bgm_outside_night
     na "After you order your drinks, the two of you walk around the town and stop at a quaint park."
 
     na "The trees are thick and the sun has gone down, the two of you are seemingly alone."
@@ -3433,7 +3539,8 @@ label s66:
     show maryam happy2
     maryam "I'll see you after school, [mcname]!"
 
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
     na "The two of you manage to finish the project, however your suspicions of Haruka only grow throughout the evening. By the time you leave, you're practically falling asleep."
 
     na "Maybe tomorrow, you could spend some quality time with Akimistsu..."
@@ -3442,7 +3549,9 @@ label s66:
  
 label s67:
 
-    scene bedroom
+    scene bedroom with fade
+    play music bgm_homei
+    queue music bgm_home
     na "As the sun fills your room, you see many notifications pop up on your phone. It seems you slept in."
 
     na "As you scroll through them, you notice a desperate plea from the Akimistsu fanclub for his whereabouts."
@@ -3455,15 +3564,15 @@ label s67:
 
     na "You put on your uniform and head outside, greeting the day with a smile. As you open the door, you--{w=0.2}{nw}"
 
-    with hpunch
-    pause 1
-    scene black
+    scene black with hpunch
     na "..."
 
+    pause 0.5
     pjmc shy "...? He-hello?"
 
     scene basement maryam with fade
-    pause 0.5
+    play music bgm_basement
+    pause 1
     na "Your eyes adjust to the dim light, as the background fades into place. You've been taken to... a dungeon?"
 
     na "A figure slowly approaches you, giggling-- Haruka."
@@ -3615,7 +3724,8 @@ label s71:
  
 label s72:
     
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
     na "You tried, I guess. Unfortunately you spend the rest of eternity in Haruka's basement, doomed to a life of no sunshine..."
 
     na "You never learn your lesson, do you?"
@@ -3629,7 +3739,8 @@ label s73: # TODO: Finish scene
  
 label s74:
 
-    scene hallway day
+    scene hallway day with fade
+    play music bgm_school
     na "You begin walking the halls with Mio, putting up posters and talking about club duties. Although Mio seems meek she speaks with openness and discipline."
 
     show mio normal at e
@@ -3694,7 +3805,8 @@ label s74:
  
 label s75:
 
-    scene classroom1 day
+    scene classroom1 day with fade
+    play music bgm_school
 
     mc shy "Yesterday was so embarrassing! I hope no one says anything..."
 
@@ -3807,20 +3919,21 @@ label s76:
     show jt thinking
     jt "As for you, [mcname], come with me. I want to hear what happened from your point of view."
 
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
     na "Yutaka leads you to the student council room and sits you down across from him, all alone..."
 
     jump s92
 
 label s77:
 
-    scene black
+    scene black with fade
     na "You restrain yourself from fighting back. Wow, where did that ability of self-restraint come from?"
 
-    scene hallway day
+    scene hallway day with fade
     na "Afterwards, you make a run for the student council room. The mean girls don't stop chasing you until you make it through the door."
 
-    scene student_council
+    scene student_council with fade
     mc scared "Yutaka, these girls won't stop harassing me! They keep telling lies about me. If I let this continue, they might spread rumors throughout the school about me!"
 
     na "You see Yutaka get up from his seat and walk over to you."
@@ -3881,7 +3994,8 @@ label s77:
                 jump s79
             "\"Let me think about it...\"":
 
-                scene black
+                scene black with fade
+                stop music fadeout 1.0
                 na "You tell him you'll think about it as you walk home."
 
                 na "Maybe watching some anime will help."
@@ -3899,10 +4013,11 @@ label s79:
     show jt ecstatic
     jt "Great! I know a good place, how about we go right after school?"
 
-    scene black
+    scene black with fade
     na "After classes end, you meet with Yutaka at the school gate and head to a Froyo place."
 
-    scene froyo
+    scene froyo with fade
+    play music bgm_froyo
     mc normal "Kleinr's, huh? Really brings back memories!"
 
     show jt normal at e
@@ -3948,13 +4063,14 @@ label s80:
 
 label s81:
 
-    scene froyo
+    scene black with fade
     na "You creep closer to the corner of the counter to \"subtly\" listen in on Akimitsu's conversation."
 
     $ yokoname = "Yoko"
     $ yokoname_kanji = "ようこ"
     $ metYoko = True
 
+    scene froyo with fade
     yoko "I can't believe that you're the one giving me \"another shot,\" especially since you were the one who broke up with me!"
 
     kyle "Yeah, uh... funny how that works, huh?"
@@ -4055,18 +4171,19 @@ label s91:
 
 label s92:
 
-    scene student_council
+    scene student_council with fade
+    play music bgm_school
 
     show jt thinking at e
     jt "Tell me what happened."
 
-    scene black
+    scene black with fade
     pause 0.15
     na "You explain to him everything that they said leading up to you punching the girl."
 
     na "He seems disappointed by your story. But somehow... amused?"
 
-    scene student_council
+    scene student_council with fade
     show jt concerned at e
     jt "Okay, look. I appreciate you looking out for me, and respect the intention of standing up for yourself."
 
@@ -4203,7 +4320,7 @@ label s94:
     show mio lecturing
     mio "A-anyways! If you don't have a campaign plan I would start working on it right away-- it has a huge effect on how many votes you get."
 
-    scene black
+    scene black with fade
     na "After you and Mio finish hanging posters, you shortly part ways."
 
     na "You have a big decision to make after all..."
@@ -4335,7 +4452,8 @@ label s95:
     show jt normal
     jt "I... I guess I wouldn't mind that."
 
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
     na "Thanks to your dating expertise and fully intentional guidance, Mio and Yutaka start dating."
 
     na "Their unexpected yet beautiful romance quickly becomes the talk of the school, and your matchmaking skills make you a local celebrity."
@@ -4379,7 +4497,7 @@ label s96:
 
     mio "Thanks for listening to me ramble-- at least now that you're in the student council, I'll have more time to work at--{w=0.2}{nw}"
 
-    stop music
+    stop music fadeout 1.0
     show mio scared
     mio "!!!" with hpunch
 
@@ -4398,11 +4516,10 @@ label s96:
     show mio happy
     mio "Thank you so much!"
 
-    scene black
-    #TODO: play school
+    scene black with fade
     na "As Mio hurries away you make your way back to the student council room."
 
-    scene student_council
+    scene student_council with fade
     na "When you open the door Yutaka is hard at work, going through paperwork at his desk. As you come in he looks up at you with a coy smile."
 
     na "Or is it just a friendly smile? Cocky? Honestly, at this point you can't tell."
@@ -4426,9 +4543,9 @@ label s96:
 
     mc ecstatic "Okay!"
 
-    scene black
+    scene black with hpunch
     #TODO: Thud noise
-    na "As you begin walking towards the cabinet to look for the jacket again, you suddenly trip on something and find yourself falling forward." with hpunch
+    na "As you begin walking towards the cabinet to look for the jacket again, you suddenly trip on something and find yourself falling forward."
 
     na "Closing your eyes, you brace for impact."
 
@@ -4436,13 +4553,12 @@ label s96:
 
     na "You feel a hand grab your waist and pull you back."
 
-    scene student_council
+    scene student_council with fade
     na "When you open your eyes, instead of feeling the sweet embrace of the floor you find yourself in Yutaka's arms-- inches away from his face."
 
-    show jt sad at e
     na "For a second you think you see a brief flash of worry in his expression, but it is soon overtaken by a full grin."
 
-    show jt cocky
+    show jt cocky at e
     na "This smile is definitely cocky."
 
     jt "Careful there. Don't want you hurting those lovely hands of yours-- we still have lots of posters to put up."
@@ -4498,11 +4614,10 @@ label s96:
     show jt normal
     jt "More importantly, let's see if there's a way to get out of here..."
 
-    #TODO: SpongeBob time card (?)
-    scene black
+    scene black with fade
     na "Three hours later..."
 
-    scene student_council
+    scene student_council with fade
     show jt thinking at e
     jt "There's no way to get out of here."
 
@@ -4611,7 +4726,8 @@ label s97:
 
     na "Well... that gives you something to work towards, I guess."
 
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
     na "In your flurry of love you go above and beyond-- hanging posters, cleaning Yutaka's desk, organizing all the council's paperwork..."
 
     na "It's all hard work but you're determined to do it."
@@ -4712,6 +4828,7 @@ label s98:
 label s99:
 
     scene classroom1 day
+    play music bgm_school
 
     show teacher_e normal at e
     teacher_e "Next we have... Yutaka and name's project."
@@ -4745,7 +4862,8 @@ label s99:
 
 label s100:
 
-    scene classroom1 day
+    scene classroom1 day with fade
+    play music bgm_school
     show teacher_e happy at e
     teacher_e "Next we have... Yutaka and [mcname]'s project."
 
@@ -4755,11 +4873,12 @@ label s100:
 
     mc shy "I hope everyone likes it..."
 
-    scene classroom1 day
+    scene black with fade
     na "As the teacher shows your project, smiles and nods of approval appear on your classmates' faces."
 
     na "Success! Everyone seemed to like it. Good job, [mcname]."
 
+    scene classroom1 day with fade
     show teacher_e happy at e
     teacher_e "Comments?"
 
@@ -4839,13 +4958,14 @@ label s103:
 
     mc concerned "If you don't agree with my methods of cleaning up messes, then we can part ways."
 
-    scene black
+    scene black with fade
 
     na "You get up and leave the room without a second glance at your student council president."
 
     na "He seems dumbfounded, like no one has ever rejected him like that before."
 
-    scene hallway day
+    scene hallway day with fade
+    play music bgm_school
     na "As you turn into the hallway, you see a nonchalant, delinquent-looking student leaned against the wall, seemingly waiting for you."
 
     show sophia normal at e
@@ -4881,7 +5001,8 @@ label s103:
     #TODO: Yakuza family headquarters background (?)
     na "Anyways, Isamu leads you to his Yakuza family headquarters for initiation."
 
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
     na "After a long initiation process..."
 
     ff "By drinking this sake, you hereby dedicate your life to being a child under my protection. Is this your wish?"
@@ -4899,7 +5020,9 @@ label s104:
     jump ph
 
 label s105:
-
+    
+    scene black
+    stop music fadeout 1.0
     na "You decide to make your campaign about improving the sports programs at Gwetome Academy."
 
     na "For too long this school's athletic prowess has been overlooked!"
@@ -4920,6 +5043,8 @@ label s105:
 
 label s106:
 
+    scene black
+    stop music fadeout 1.0
     na "As a firm believer in equality, you decide to make your campaign about allowing pets to enroll at Gwetome Academy."
 
     na "After all, shouldn't pets have the same right to education as humans?"
@@ -4941,7 +5066,8 @@ label s106:
     jump e19
 
 label e0: # Eternal Power Nap
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
 
     pause 0.2
 
@@ -4964,7 +5090,8 @@ label e0: # Eternal Power Nap
     return
 
 label e1: # Love Lost to the Riptides of Passion
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
 
     pause 0.2
 
@@ -4987,7 +5114,8 @@ label e1: # Love Lost to the Riptides of Passion
     return
     
 label e2: # Kimi ga Hoshi©
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
 
     $ persistent.joeEnding = True
 
@@ -5012,7 +5140,8 @@ label e2: # Kimi ga Hoshi©
     return
 
 label e3: # Castaway with Joe
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
 
     $ persistent.joeEnding = True
 
@@ -5037,7 +5166,8 @@ label e3: # Castaway with Joe
     return
 
 label e4: # Love you too.
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
 
     $ persistent.kyleEnding = True
 
@@ -5062,7 +5192,8 @@ label e4: # Love you too.
     return
     
 label e5: # All is fair in Love and War
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
 
     $ persistent.sophiaEnding = True
 
@@ -5087,12 +5218,14 @@ label e5: # All is fair in Love and War
     return
 
 label e6:
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
 
     return
 
 label e7: # Death
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
 
     pause 0.2
 
@@ -5115,7 +5248,9 @@ label e7: # Death
     return
 
 label e8: # A Strangely Sweet Romance
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
+
 
     $ persistent.maryamEnding = True
 
@@ -5140,17 +5275,23 @@ label e8: # A Strangely Sweet Romance
     return
 
 label e9:
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
+
 
     return
 
 label e10:
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
+
 
     return
     
 label e11: # Big Apple Juice
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
+
 
     pause 0.2
 
@@ -5173,7 +5314,9 @@ label e11: # Big Apple Juice
     return
 
 label e12: # Love in the Basket
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
+
 
     pause 0.2
 
@@ -5198,7 +5341,9 @@ label e12: # Love in the Basket
     return
 
 label e13: # The Archer of Love
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
+
 
     pause 0.2
 
@@ -5221,7 +5366,9 @@ label e13: # The Archer of Love
     return
 
 label e14: # First Love
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
+
 
     $ persistent.jtEnding = True
 
@@ -5246,7 +5393,9 @@ label e14: # First Love
     return
 
 label e15: # Happily Ever After
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
+
 
     pause 0.2
 
@@ -5269,7 +5418,9 @@ label e15: # Happily Ever After
     return
 
 label e16: # Mio 2.0
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
+
 
     pause 0.2
 
@@ -5292,7 +5443,9 @@ label e16: # Mio 2.0
     return
 
 label e17: # Yakuza
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
+
 
     $ persistent.sophiaEnding = True
 
@@ -5317,7 +5470,9 @@ label e17: # Yakuza
     return
 
 label e18: # The Safe Play
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
+
 
     pause 0.2
 
@@ -5340,7 +5495,9 @@ label e18: # The Safe Play
     return
 
 label e19: # The True High School Experience
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
+
 
     pause 0.2
 
@@ -5363,7 +5520,9 @@ label e19: # The True High School Experience
     return
 
 label e20: # Famous Filmmaker
-    scene black
+    scene black with fade
+    stop music fadeout 1.0
+
 
     $ persistent.beckhamEnding = True
 

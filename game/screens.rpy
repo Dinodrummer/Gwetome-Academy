@@ -438,6 +438,7 @@ style navigation_button_text is gui_button_text
 style navigation_button:
     size_group "navigation"
     properties gui.button_properties("navigation_button")
+    #activate_sound "audio/sfx_text_progression.mp3"
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
