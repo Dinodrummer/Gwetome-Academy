@@ -1924,11 +1924,11 @@ label s29:
 
 label s30:
 
-    smc normal "The party's good.{w=0.2}{nw}"
+    pmc normal "The party's good.{w=0.2}{nw}"
 
     na "You say, proceeding to turn and face Akimitsu."
 
-    smc concerned "Hey... should we get going?"
+    pmc concerned "Hey... should we get going?"
 
     show sophia party concerned
     sophia "Wait. Would you like to get drinks with me?"
@@ -2363,7 +2363,7 @@ label s41:
     na "You had to get home quick anyways. You haven't been catching up on this season's anime!"
 
     scene neighborhood
-    play music bgm_day
+    play music bgm_outside_day
     na "You dart out of the Hoshibucks, not even thanking him for buying your drink before leaving. Bold."
 
     jump s43
