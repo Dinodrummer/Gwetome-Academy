@@ -835,6 +835,8 @@ label s5:
 
     $ ririname = "Riri"
     $ ririname_kanji = "リリ"
+    $ metRiri = True
+    $ persistent.ririEncounter = True
     show riri angry at e
     riri "Wrong! I'm Riri. My boss told me there was a weeb here so I came to help."
 
@@ -999,8 +1001,7 @@ label s9:
 
 label s10:
 
-    $ metRiri = True
-    $ persistent.ririEncounter = True
+    
     scene gate
     play music bgm_school
     
@@ -2562,7 +2563,7 @@ label s47:
 
     smc normal "Let's go swimming! That's what I came here for."
 
-    show joe concerned
+    show joe suit concerned
     joe "Alright, as long as you're careful. I don't want you to get hurt."
 
     smc ecstatic "Oh, I'll be fine! I'm more worried about you, hehe!"
@@ -3301,7 +3302,7 @@ label s60:
 
     mc normal "Hey, do you need my Wi-Fi password? You don't have to use data."
 
-    show maryam scared
+    show maryam scared at e
     maryam "No-- I mean yes! Yes please!"
 
     mc concerned "Right... Could I have the computer to put it in?"
@@ -3472,7 +3473,7 @@ label s64:
 
     mc normal "Alright then, the password is 1234567."
 
-    show maryam ecstatic
+    show maryam happy
     maryam "I'm in. Let's finish this project!"
 
     stop music fadeout 1.0
