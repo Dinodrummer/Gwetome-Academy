@@ -2616,7 +2616,7 @@ label s48:
     scene beach with fade
     play music bgm_outside_day
     show joe suit embarrassed at e
-    joe "You know, name, there's something I should tell you..."
+    joe "You know, [name], there's something I should tell you..."
 
     smc shy "Yes?"
 

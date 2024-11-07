@@ -346,7 +346,7 @@ screen quick_menu():
             yalign 0.0
             
             
-            textbutton _("BACK") action Rollback()
+            #textbutton _("BACK") action Rollback()
             textbutton _("SAVE") action ShowMenu('save')
             textbutton _("HISTORY") action ShowMenu('history')
             #textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)

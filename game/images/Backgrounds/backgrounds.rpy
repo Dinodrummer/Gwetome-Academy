@@ -21,7 +21,7 @@ image walkway:
     zoom 1.5
 image park night:
     "images/Backgrounds/bg park night.jpg"
-    zoom 1.8
+    zoom 1
 image beach:
     "images/Backgrounds/bg beach.jpg"
     zoom 1.8
