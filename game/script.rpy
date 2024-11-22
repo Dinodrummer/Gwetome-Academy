@@ -4076,13 +4076,13 @@ label s81:
 
     kyle "Yeah, uh... funny how that works, huh?"
 
-    na "The girl tosses her hair over her shoulder in slight annoyance."
+    na "The girl tosses her hair over her shoulder in annoyance."
 
     na "You can't quite place why, but she seems vaguely familiar..."
 
     kyle "Sorry Yoko, I didn't mean that."
 
-    kyle "Look, I've been really busy recently so I'm tired and not really thinking."
+    kyle "Look, I've been really busy recently so I'm tired... I'm not really thinking."
 
     na "{i}Yoko{/i}... huh..."
 
@@ -4094,13 +4094,13 @@ label s81:
 
     na "And she also totally dated Akimitsu for like... three years?... Or was it four?"
 
-    na "Oh! Oh! Preschool too-- you all went to preschool together and one time you accidentally tripped her down the slide and she had to get five stitches."
+    na "Oh! Oh! Preschool too-- you all went to preschool together and one time you accidentally tripped her down the slide. She had to get {i}five{/i} stitches!"
 
-    na "Good times."
+    na "Good times, heheh."
 
     na "But wait, you're pretty sure Yoko and Akimitsu broke up a while ago... are they back together now? When did that happen?"
 
-    na "You take a good look at the pair-- although they both seem a little stressed from the conversation, the cafe lighting warms their faces creating a vibrant and lovely glow."
+    na "You take a good look at the pair-- the cafe lighting warms their faces creating a vibrant and lovely glow, despite the ongoing heat of the conversation."
 
     na "If you couldn't hear their conversation you'd think they were a perfect match, enjoying their froyo and staring lovingly into each others' eyes."
 
@@ -4132,7 +4132,18 @@ label s81:
 
 label s82:
 
-    jump ph
+    na "You decide not to do anything, figuring  there is no harm in letting this situation play out. If Akimitsu actually still likes his ex, then nothing can be done."
+
+    mc "She seems nice enough."
+
+    beckham "Well, what won't be nice is what will happen if you don't get out of the line if you're not gonna order anything. There's people waiting!"
+
+    mc "Sorry!"
+
+    na "You glance back at the couple. Yeah, you made the right decision."
+
+    na "Probably."
+    jump s86
 
 label s83:
 
