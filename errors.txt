@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 344: expected statement.
-    jshow riri ecstatic at e
-                        ^
+File "game/screens.rpy", line 73: end of line expected.
+    thumb "gui/slider/horizontal_[prefix_]thumb.png":
+                                                    ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Fri May 24 12:37:55 2024
+Sat Nov 23 03:02:36 2024

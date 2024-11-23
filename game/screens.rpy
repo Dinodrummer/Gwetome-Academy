@@ -310,6 +310,7 @@ style choice_vbox:
 
 style choice_button is default:
     properties gui.button_properties("choice_button")
+    activate_sound "audio/sfx_text_progression.mp3"
     
 
 style choice_button_text is default:
@@ -370,6 +371,7 @@ style quick_button_text is button_text
 
 style quick_button:
     properties gui.button_properties("quick_button")
+    activate_sound "audio/sfx_text_progression.mp3"
 
 style quick_button_text:
     properties gui.button_text_properties("quick_button")
@@ -438,7 +440,7 @@ style navigation_button_text is gui_button_text
 style navigation_button:
     size_group "navigation"
     properties gui.button_properties("navigation_button")
-    #activate_sound "audio/sfx_text_progression.mp3"
+    activate_sound "audio/sfx_text_progression.mp3"
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")

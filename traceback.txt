@@ -1,30 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 3476, in script
-    show maryam ecstatic
-Exception: Image 'maryam' does not accept attributes 'ecstatic'.
+  File "game/script.rpy", line 667, in script
+    pjmc embarrassed "...and I'm late for school."
+Exception: Style 'say_dialogue_mc' does not exist.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 3476, in script
-    show maryam ecstatic
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 1428, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 1391, in show_imspec
-    renpy.config.show(name,
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\exports.py", line 733, in show
-    if not base.find_target() and renpy.config.missing_show:
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\image.py", line 421, in find_target
-    self.target = target._duplicate(a)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\core.py", line 499, in _duplicate
-    args.extraneous()
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\core.py", line 362, in extraneous
-    raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'maryam' does not accept attributes 'ecstatic'.
+  File "game/script.rpy", line 667, in script
+    pjmc embarrassed "...and I'm late for school."
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\exports.py", line 1474, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\character.py", line 1352, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\character.py", line 1003, in do_display
+    display_say(who,
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\character.py", line 635, in display_say
+    what_text = show_function(who, what_string)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\character.py", line 981, in do_show
+    return self.show_function(
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\character.py", line 277, in show_display_say
+    props = compute_widget_properties(who_args, what_args, window_args, properties, variant=variant, multiple=multiple)
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\character.py", line 217, in compute_widget_properties
+    what_args = style_args(what_args, "what")
+  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\character.py", line 204, in style_args
+    style = getattr(renpy.store.style, style)
+  File "style.pyx", line 216, in renpy.style.StyleManager.__getattr__
+  File "style.pyx", line 98, in renpy.style.get_style
+Exception: Style 'say_dialogue_mc' does not exist.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.1.3.23091805
 Gwetome Academy 1.0
-Sat Jun  1 15:54:42 2024
+Sat Nov 23 03:02:15 2024

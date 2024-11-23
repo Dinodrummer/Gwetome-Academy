@@ -133,11 +133,14 @@ init python:
     for i in range(numscenes):
         riris.append(False)
     
+    # Text progression audio noise
+    '''
     def character_callback(event, **kwargs):
         if event == "end":
             renpy.music.play(sfx_text_progression, channel="audio")
 
     config.all_character_callbacks.append(character_callback)
+    '''
 
 # ---------------------------------------------- Music / SFX -----------------------------------------------------
     config.auto_voice = "voice/{id}.mp3"
@@ -975,9 +978,9 @@ label s9:
     show joe ecstatic
     joe "Oh right! The name's Joe-kun, but you can just call me Joe."
 
-    na "His name is... kun?"
+    na "His last name is... kun?"
 
-    mc normal "Well, nice to meet you! My name is [mcname]"
+    mc normal "Well, nice to meet you! My name is [mcname]."
 
     show joe normal
     joe "Wow, what a cool name! I'm jealous."
