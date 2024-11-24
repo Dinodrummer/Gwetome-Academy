@@ -654,7 +654,7 @@ label start:
     queue music bgm_home
     pjmc shy "{i}{color=#b0b0b0}{size=-6}{cps=10}*yawn*{/cps}{/size}{/color}{/i} I'm so tired... I stayed up all night playing otome games."
     
-    pjmc ecstatic "It`s hard not to when you`re given so many choices, especially when you can punch the male leads. Hehehe!"
+    pjmc ecstatic "It's hard not to when you're given so many choices, especially when you can punch the male leads. Hehehe!"
 
     pjmc scared "Oh wait! I forgot to introduce myself. My name is{u} [mcname]!{/u}"
 

@@ -354,9 +354,8 @@ screen quick_menu():
             textbutton _("AUTO") action Preference("auto-forward", "toggle")
             #textbutton _("Q.Save") action QuickSave()
             #textbutton _("Q.Load") action QuickLoad()
-            textbutton _("SETTINGS") action ShowMenu('preferences')
+            textbutton _("SETTINGS") action ShowMenu('settings')
             textbutton _("MENU") action MainMenu()
-
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -402,16 +401,18 @@ screen navigation():
 
         if not main_menu:
             xpos 120
-            ypos 320
+            ypos 260
+
             textbutton _("History") action ShowMenu("history")
 
             textbutton _("Save") action ShowMenu("save")
 
             textbutton _("Load") action ShowMenu("load")
 
-            textbutton _("Preferences") action ShowMenu("preferences")
+            textbutton _("Settings") action ShowMenu("settings")
             
-            spacing gui.navigation_spacing + 40
+            spacing gui.navigation_spacing + 60
+            
 
         
         if _in_replay:
@@ -505,7 +506,7 @@ screen main_menu():
     ## buttons
     imagebutton auto "images/Main Menu/new game_%s.png" action Start():
         pos (1300, 300)
-    imagebutton auto "images/Main Menu/settings_%s.png" action ShowMenu("preferences"):
+    imagebutton auto "images/Main Menu/settings_%s.png" action ShowMenu("settings"):
         pos (1600, 280)
     imagebutton auto "images/Main Menu/load game_%s.png" action ShowMenu("load"):
         pos (1000, 280)
@@ -632,7 +633,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     textbutton _("Return"):
         style "return_button"
-        action [Hide(screen="preferences"),Return()]
+        action [Hide(screen="settings"),Return()]
 
     label title
 
@@ -664,9 +665,9 @@ style game_menu_navigation_frame:
     yfill True
 
 style game_menu_content_frame:
-    left_margin 60
+    left_margin 30
     right_margin 30
-    top_margin 15
+    top_margin 0
 
 style game_menu_viewport:
     xsize 1380
@@ -687,7 +688,7 @@ style game_menu_label_text:
     yalign 0.5
 
 style return_button:
-    xpos gui.navigation_xpos
+    xpos (gui.navigation_xpos + 55)
     yalign 1.0
     yoffset -45
 
@@ -874,16 +875,18 @@ style slot_button_text:
     properties gui.button_text_properties("slot_button")
 
 
-## Preferences screen ##########################################################
+## settings screen ##########################################################
 ##
-## The preferences screen allows the player to configure the game to better suit
+## The settings screen allows the player to configure the game to better suit
 ## themselves.
 ##
-## https://www.renpy.org/doc/html/screen_special.html#preferences
+## https://www.renpy.org/doc/html/screen_special.html#settings
 
-screen preferences():
+screen settings():
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    tag menu
+
+    use game_menu(_("settings"), scroll="viewport"):
 
         vbox:
 
@@ -906,7 +909,7 @@ screen preferences():
                     textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
 
                 # Additional vboxes of type "radio_pref" or "check_pref" can be
-                # added here, to add additional creator-defined preferences.
+                # added here, to add additional creator-defined settings.
 
             null height (4 * gui.pref_spacing)
 
@@ -1307,7 +1310,8 @@ screen confirm(message, yes_action, no_action):
 
     style_prefix "confirm"
 
-    add "gui/overlay/confirm.png"
+    add "gui/game_menu.png":
+        alpha 1.0
 
     frame:
 
@@ -1683,7 +1687,7 @@ screen quick_menu():
             textbutton _("Back") action Rollback()
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Menu") action MainMenu()
+            textbutton _("Main Menu") action MainMenu()
 
 
 style window:
