@@ -5094,7 +5094,7 @@ label e0: # Eternal Power Nap
     
     pause 0.5
 
-    show text "{size=100}Eternal Power Nap!" with dissolve
+    show text "{size=100}Eternal Power Nap" with dissolve
 
     pause 2.5
 
