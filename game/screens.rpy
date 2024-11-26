@@ -496,7 +496,7 @@ screen main_menu():
     ## title
     add "images/Main Menu/title.png"
 
-    text "Beta Version 0.1":
+    text "Beta Version 0.2":
         pos (1620, 1025)
         outlines ((0, "#00000030", -1, 1), (0, "#00000025", -1, 2), (0, "#00000020", -1, 3), (0, "#00000015", -1, 4), (0, "#00000010", -1, 5), (0, "#00000005", -1, 6), 
         (0, "#00000030", -2, 1), (0, "#00000025", -2, 2), (0, "#00000020", -2, 3), (0, "#00000015", -2, 4), (0, "#00000010", -2, 5), (0, "#00000005", -2, 6), 
@@ -946,14 +946,16 @@ screen settings():
                                 textbutton _("Test") action Play("sound", config.sample_sound)
 
 
-                    if config.has_voice:
-                        label _("Voice Volume")
+                    # if config.has_voice:
+                    #     label _("Voice Volume")
 
-                        hbox:
-                            bar value Preference("voice volume")
+                    #     hbox:
+                    #         bar value Preference("voice volume")
 
-                            if config.sample_voice:
-                                textbutton _("Test") action Play("voice", config.sample_voice)
+                    #         if config.sample_voice:
+                    #             textbutton _("Test") action Play("voice", config.sample_voice)
+
+                    #TODO: Uncomment above when adding voice
 
                     if config.has_music or config.has_sound or config.has_voice:
                         null height gui.pref_spacing
@@ -1068,6 +1070,7 @@ screen history():
                     label h.who:
                         style "history_name"
                         substitute False
+                        
 
                         ## Take the color of the who text from the Character, if
                         ## set.

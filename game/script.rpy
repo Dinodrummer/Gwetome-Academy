@@ -623,7 +623,7 @@ label start:
     
     pause 0.5
 
-    show text "{size=60}Many scenes and line audio are missing,\nand you may experience errors playing." with dissolve
+    show text "{size=60}Many scenes are missing,\nand you may experience errors playing." with dissolve
 
     pause 2.5
 
@@ -5094,7 +5094,7 @@ label e0: # Eternal Power Nap
     
     pause 0.5
 
-    show text "{size=100}Eternal Power Nap" with dissolve
+    show text "{size=100}Eternal Power Nap!" with dissolve
 
     pause 2.5
 

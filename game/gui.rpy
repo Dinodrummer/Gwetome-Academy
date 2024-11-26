@@ -37,7 +37,7 @@ define gui.idle_small_color = '#fefcfc' # #000000 for trailer
 define gui.name_text_color = '#ce8c83'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#ffcdbe'
+define gui.hover_color = 'ffcdbe'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -79,7 +79,7 @@ define gui.name_text_size = 43
 define gui.interface_text_size = 50
 
 ## The size of labels in the game's user interface.
-define gui.label_text_size = 36
+define gui.label_text_size = 40
 
 ## The size of text on the notify screen.
 define gui.notify_text_size = 24
@@ -352,11 +352,10 @@ define gui.history_height = 210
 
 ## The position, width, and alignment of the label giving the name of the
 ## speaking character.
-define gui.history_name_xpos = 233
-define gui.history_name_ypos = 0
-define gui.history_name_width = 233
-define gui.history_name_xalign = 1.0
-
+define gui.history_name_xpos = 120
+define gui.history_name_ypos = 10
+define gui.history_name_width = 250
+define gui.history_name_xalign = 0.5
 ## The position, width, and alignment of the dialogue text.
 define gui.history_text_xpos = 255
 define gui.history_text_ypos = 3
