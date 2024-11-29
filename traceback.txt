@@ -1,98 +1,44 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "renpy/common/00gamemenu.rpy", line 174, in script
-    $ ui.interact()
-  File "renpy/common/00gamemenu.rpy", line 174, in <module>
-    $ ui.interact()
-TypeError: '>' not supported between instances of 'NoneType' and 'float'
+After initialization, but before game start.
+  File "game/screens.rpy", line 459, in prepare_screen
+    screen main_menu():
+  File "game/screens.rpy", line 459, in prepare
+    screen main_menu():
+  File "game/screens.rpy", line 509, in prepare
+    imagebutton auto "images/Main Menu/new game_%s.png":
+  File "game/screens.rpy", line 509, in prepare
+    imagebutton auto "images/Main Menu/new game_%s.png":
+  File "game/screens.rpy", line 510, in <module>
+    action [If(keycode = "K_LCTRL"),Start()]
+TypeError: If() got an unexpected keyword argument 'keycode'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00gamemenu.rpy", line 174, in script
-    $ ui.interact()
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00gamemenu.rpy", line 174, in <module>
-    $ ui.interact()
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\core.py", line 3582, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\core.py", line 4175, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\core.py", line 2782, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\layout.py", line 888, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\transition.py", line 378, in render
-    top = render(self.new_widget, width, height, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\layout.py", line 888, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\layout.py", line 888, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\screen.py", line 731, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\layout.py", line 888, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\layout.py", line 1338, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\layout.py", line 1064, in render
-    surf = render(d, rw, height - y, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\layout.py", line 1338, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\layout.py", line 1851, in render
-    cwidth, cheight = sizeit('c', width, height, 0, 0)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\layout.py", line 1848, in sizeit
-    rend = renpy.display.render.render_for_size(pos_d[pos], width, height, st, at)
-  File "render.pyx", line 318, in renpy.display.render.render_for_size
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\viewport.py", line 722, in render
-    surf = renpy.display.render.render(c, cw, ch, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\layout.py", line 1338, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\layout.py", line 888, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\display\layout.py", line 1338, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\text\text.py", line 2171, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "C:\Users\jtgru\OneDrive\Documents\renpy-8.1.1-sdk\renpy\text\text.py", line 769, in __init__
-    if min_width > maxx + self.xborder:
-TypeError: '>' not supported between instances of 'NoneType' and 'float'
+  File "C:\Users\jtgru\Documents\Renpy\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\Users\jtgru\Documents\Renpy\renpy\main.py", line 652, in main
+    run(restart)
+  File "C:\Users\jtgru\Documents\Renpy\renpy\main.py", line 94, in run
+    renpy.display.screen.prepare_screens()
+  File "C:\Users\jtgru\Documents\Renpy\renpy\display\screen.py", line 1026, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/screens.rpy", line 459, in prepare_screen
+    screen main_menu():
+  File "game/screens.rpy", line 459, in prepare
+    screen main_menu():
+  File "game/screens.rpy", line 509, in prepare
+    imagebutton auto "images/Main Menu/new game_%s.png":
+  File "game/screens.rpy", line 509, in prepare
+    imagebutton auto "images/Main Menu/new game_%s.png":
+  File "C:\Users\jtgru\Documents\Renpy\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/screens.rpy", line 510, in <module>
+    action [If(keycode = "K_LCTRL"),Start()]
+TypeError: If() got an unexpected keyword argument 'keycode'
 
 Windows-10-10.0.22631 AMD64
-Ren'Py 8.1.3.23091805
+Ren'Py 8.3.3.24111502
 Gwetome Academy 1.0
-Mon Nov 25 18:18:05 2024
+Thu Nov 28 17:25:36 2024

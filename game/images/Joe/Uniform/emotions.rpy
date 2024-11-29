@@ -28,6 +28,3 @@ image joe sad:
 image joe scared:
     "images/Joe/Uniform/joe scared.png"
     zoom 0.5
-image joe blank:
-    "images/Joe/Uniform/joe blank.png"
-    zoom 0.5

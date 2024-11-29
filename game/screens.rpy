@@ -412,6 +412,15 @@ screen navigation():
             textbutton _("Settings") action ShowMenu("settings")
             
             spacing gui.navigation_spacing + 60
+        else:
+            xpos 120
+            ypos 260
+
+            textbutton _("Settings") action ShowMenu("settings")
+
+            textbutton _("Load") action ShowMenu("load")
+
+            spacing gui.navigation_spacing + 60
             
 
         
@@ -453,7 +462,9 @@ style navigation_button_text:
 ## Used to display the main menu when Ren'Py starts.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
-
+python:
+    def hello():
+        return "hi"
 screen main_menu():
 
     ## This ensures that any other menu screen is replaced.
@@ -502,7 +513,7 @@ screen main_menu():
         (0, "#00000030", -2, 1), (0, "#00000025", -2, 2), (0, "#00000020", -2, 3), (0, "#00000015", -2, 4), (0, "#00000010", -2, 5), (0, "#00000005", -2, 6), 
         (0, "#00000030", 0, 1), (0, "#00000025", 0, 2), (0, "#00000020", 0, 3), (0, "#00000015", 0, 4), (0, "#00000010", 0, 5), (0, "#00000005", 0, 6),
         (0, "#fefcfc", -1, 0), (0, "#fefcfc", -1, 1), (0, "#fefcfc", 0, 1))
-    
+
     ## buttons
     imagebutton auto "images/Main Menu/new game_%s.png" action Start():
         pos (1300, 300)

@@ -186,6 +186,7 @@ init python:
     sophianame = "???"
     maryamname = "???"
     mioname = "???"
+    yokoname = "???"
     yokoname_kanji = "???"
 
     ririname_kanji = ""
@@ -567,7 +568,7 @@ label riri:
 
     python:
         tempCall = "m" # String
-        for i in range(numscenes):
+        for i in range(len(riris)):
             if riris[i] == True:
                 tempCall = tempCall + str(i)
                 del(riris[i])
@@ -583,6 +584,9 @@ label riri:
 # voice voice.mp3
 
 label splashscreen:
+    # TODO: Clear persistent data and ALL saves before exporting the game, make sure to re-comment after running once!
+    #$ persistent._clear()
+
     pause 0.5
     scene splashscreen with dissolve
     pause 0.1
@@ -596,16 +600,14 @@ label splashscreen:
     pause 3
     hide text with dissolve
     pause 2
-    show text "{size=100}{color=#686459}{u}With the Help Of{/u}{size=80}\nRie Tsuboi{size=65}{i} - Line corrections{/i}{size=80}\nIsa Espinosa{size=65}{i} - Programming Assistance{/i}{size=80}\nRylan Elwin{size=65}{i} - Sound/Music Designer" with dissolve
+    show text "{size=100}{color=#686459}{u}With the Help Of{/u}{size=80}\nRie Tsuboi{size=65}{i} - Line corrections{/i}{size=80}\nIsa Espinosa{size=65}{i} - Programming Assistance{/i}{size=80}\nRylan Elwin{size=65}{i} - Sound/Music Designer{/i}{size=80}\nElla Burns{size=65}{i} - Marketing Assistance" with dissolve
     pause 3
     hide text with dissolve
-    pause 1.5
-    return
+    pause 1.2
+
+    $ renpy.full_restart(transition=ex)
 
 label start:
-
-    # TODO: Clear persistent data before exporting the game
-    # $ persistent._clear()
 
     stop music fadeout 1.0
 
@@ -615,7 +617,7 @@ label start:
 
     pause 0.2
 
-    show text "{size=60}This game is in Beta" with dissolve:
+    show text "{size=60}This game is in Beta" with dissolve
 
     pause 1.5
 
@@ -666,8 +668,6 @@ label start:
 
     pjmc embarrassed "...and I'm late for school."
 
-    
-
     label mstart:
 
         menu:
@@ -698,6 +698,7 @@ label s2:
     na "Wait! Is that... the new season of Magical Ikemen?!? It's been a whole year since the last episode!"
 
     na "But... you have school. If you leave now, you still might be able to make it in time."
+
     label m2:
         menu:
             "{i}Head off to school":
@@ -4070,29 +4071,36 @@ label s81:
     scene black with fade
     na "You creep closer to the corner of the counter to \"subtly\" listen in on Akimitsu's conversation."
 
-    $ yokoname = "Yoko"
-    $ yokoname_kanji = "ようこ"
-    $ metYoko = True
-
     scene froyo with fade
     yoko "I can't believe that you're the one giving me \"another shot,\" especially since you were the one who broke up with me!"
 
+    show kyle embarrassed at e
     kyle "Yeah, uh... funny how that works, huh?"
 
     na "The girl tosses her hair over her shoulder in annoyance."
 
     na "You can't quite place why, but she seems vaguely familiar..."
 
+    $ yokoname = "Yoko"
+    $ yokoname_kanji = "ようこ"
+    $ metYoko = True
+
+    show kyle scared
     kyle "Sorry Yoko, I didn't mean that."
 
+    show kyle concerned
     kyle "Look, I've been really busy recently so I'm tired... I'm not really thinking."
 
     na "{i}Yoko{/i}... huh..."
 
+    show kyle concerned at left
+    show yoko normal at e
     yoko "Gosh, you and your excuses! You're not the one who has to sit next to a dimwit every day in math... I'm the tired one!"
 
     na "Oh, wait! Yoko-- now you remember!"
 
+    hide kyle with ex
+    hide yoko with ex
     na "Somehow the two of you have been assigned to sit next to each other in every single math class since your first day at Gwetome."
 
     na "And she also totally dated Akimitsu for like... three years?... Or was it four?"
@@ -4111,10 +4119,12 @@ label s81:
 
     na "You know the truth!"
 
+    show beckham yogurt confused at e
     beckham "Um, excuse me-- can I help you?"
 
     na "Uh oh... looks like you're running out of time."
 
+    hide beckham with ex
     na "It's time to make a move."
 
     na "...If you make a move."
@@ -4137,12 +4147,14 @@ label s82:
 
     na "You decide not to do anything, figuring  there is no harm in letting this situation play out. If Akimitsu actually still likes his ex, then nothing can be done."
 
-    mc "She seems nice enough."
+    mc normal "She seems nice enough."
 
+    show beckham yogurt angry at e
     beckham "Well, what won't be nice is what will happen if you don't get out of the line if you're not gonna order anything. There's people waiting!"
 
-    mc "Sorry!"
+    mc  embarrassed "Sorry!"
 
+    hide beckham with ex
     na "You glance back at the couple. Yeah, you made the right decision."
 
     na "Probably."
@@ -5086,7 +5098,7 @@ label e0: # Eternal Power Nap
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
@@ -5110,7 +5122,7 @@ label e1: # Love Lost to the Riptides of Passion
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
@@ -5136,7 +5148,7 @@ label e2: # Kimi ga Hoshi©
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
@@ -5162,7 +5174,7 @@ label e3: # Castaway with Joe
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
@@ -5188,7 +5200,7 @@ label e4: # Love you too.
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
@@ -5214,7 +5226,7 @@ label e5: # All is fair in Love and War
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
@@ -5244,7 +5256,7 @@ label e7: # Death
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
@@ -5271,7 +5283,7 @@ label e8: # A Strangely Sweet Romance
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
@@ -5310,7 +5322,7 @@ label e11: # Big Apple Juice
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
@@ -5335,7 +5347,7 @@ label e12: # Love in the Basket
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
@@ -5362,7 +5374,7 @@ label e13: # The Archer of Love
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
@@ -5389,7 +5401,7 @@ label e14: # First Love
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
@@ -5414,7 +5426,7 @@ label e15: # Happily Ever After
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
@@ -5439,7 +5451,7 @@ label e16: # Mio 2.0
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
@@ -5466,7 +5478,7 @@ label e17: # Yakuza
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
@@ -5491,7 +5503,7 @@ label e18: # The Safe Play
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
@@ -5516,7 +5528,7 @@ label e19: # The True High School Experience
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
@@ -5543,7 +5555,7 @@ label e20: # Famous Filmmaker
 
     pause 0.2
 
-    show text "{size=100}Ending:" with dissolve:
+    show text "{size=100}Ending:" with dissolve
 
     pause 0.8
 
