@@ -349,6 +349,7 @@ screen quick_menu():
             
             textbutton _("BACK") action Rollback()
             textbutton _("SAVE") action ShowMenu('save')
+            textbutton _("LOAD") action ShowMenu('load')
             textbutton _("HISTORY") action ShowMenu('history')
             #textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("AUTO") action Preference("auto-forward", "toggle")
@@ -412,15 +413,15 @@ screen navigation():
             textbutton _("Settings") action ShowMenu("settings")
             
             spacing gui.navigation_spacing + 60
-        else:
-            xpos 120
-            ypos 260
+        # else:
+        #     xpos 120
+        #     ypos 260
 
-            textbutton _("Settings") action ShowMenu("settings")
+        #     textbutton _("Settings") action ShowMenu("settings")
 
-            textbutton _("Load") action ShowMenu("load")
+        #     textbutton _("Load") action ShowMenu("load")
 
-            spacing gui.navigation_spacing + 60
+        #     spacing gui.navigation_spacing + 60
             
 
         
@@ -462,9 +463,8 @@ style navigation_button_text:
 ## Used to display the main menu when Ren'Py starts.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
-python:
-    def hello():
-        return "hi"
+style main_menu_button:
+    activate_sound "audio/sfx_text_progression.mp3"
 screen main_menu():
 
     ## This ensures that any other menu screen is replaced.
@@ -517,12 +517,16 @@ screen main_menu():
     ## buttons
     imagebutton auto "images/Main Menu/new game_%s.png" action Start():
         pos (1300, 300)
+        style "main_menu_button"
     imagebutton auto "images/Main Menu/settings_%s.png" action ShowMenu("settings"):
         pos (1600, 280)
+        style "main_menu_button"
     imagebutton auto "images/Main Menu/load game_%s.png" action ShowMenu("load"):
         pos (1000, 280)
-    imagebutton auto "images/Main Menu/quit game_%s.png" action Quit():
+        style "main_menu_button"
+    imagebutton auto "images/Main Menu/quit game_%s.png" action Quit(confirm=True):
         pos (1, 1010)
+        style "main_menu_button"
 
     ## This empty frame darkens the main menu.
     frame:
@@ -1342,8 +1346,10 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
+                textbutton _("Yes") action yes_action:
+                    style "main_menu_button"
+                textbutton _("No") action no_action:
+                    style "main_menu_button"
 
     ## Right-click and escape answer "no".
     key "game_menu" action no_action
