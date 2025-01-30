@@ -3445,7 +3445,7 @@ label s63:
     hide maryam with ex
     na "Haruka hastily grabs their stuff and goes home. Anxiety is rushing through your veins-- how could they have known your wifi password?!"
 
-    stop music fadeout 1.0
+    stop music fadeout 1.0   
     scene black with fade
     na "You head over to school the next day."
 
@@ -4808,7 +4808,7 @@ label s98:
 
     jt "..."
 
-    show jt concerning
+    show jt concerned
     jt "I see..."
 
     jt "I'm sorry for exploding on you, [mcname]... and assuming your intentions..."
