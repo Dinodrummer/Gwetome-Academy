@@ -799,6 +799,7 @@ screen file_slots(title):
 
                 xalign 0.5
                 yalign 0.5
+                
 
                 spacing gui.slot_spacing
 
