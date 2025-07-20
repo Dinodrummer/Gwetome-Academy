@@ -245,7 +245,7 @@ init:
     define mv = Character("Mysterious Voice", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define mi = Character("Mysterious ikemens", show_name = "イケメンたち", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
 
-    define ff = Character("Delinquent 1", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
+    define ff = Character("Isamu's \"Father\"", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define d1 = Character("Delinquent 1", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define d2 = Character("Delinquent 2", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
     define d3 = Character("Delinquent 3", ctc="ctc_blink", what_outlines = dialogue_outlines, bold = True)
