@@ -1039,8 +1039,7 @@ label s10:
         hide riri with ex
         hide choice
 
-        if metRiri:
-            $ riris[10] = True
+        $ riris[10] = True
             
     label m10:
         menu:
@@ -1051,7 +1050,7 @@ label s10:
 
 label s11:
 
-    na "Skipping class? It looks like you value your education..."
+    na "Not skipping class? It looks like you value your education..."
 
     scene classroom1 day
     play music bgm_school
@@ -1235,7 +1234,7 @@ label s15:
     hide sophia with ex
     na "Isamu coolly grabs their jacket and leaves the room. You can't help but notice a slight blush on their face."
 
-    mc normal "Huh..."
+    mc concerned "Huh..."
 
     na "You unfold the handkerchief to find a piece of paper with a message:"
 
@@ -2212,7 +2211,7 @@ label s38:
     stop music fadeout 1.0
     na "Soon after Takao Isamu's confession the two of you start dating."
 
-    na "It's a surprisingly healthy and loving relationship-- you meet {i}The Family{/i}|, go on lots of dates, and work through conflicts together."
+    na "It's a surprisingly healthy and loving relationship-- you meet {i}The Family{/i}, go on lots of dates, and work through conflicts together."
 
     na "Eventually you decide to open a cat cafe together... but... it is no ordinary cat cafe."
 
@@ -2620,7 +2619,7 @@ label s48:
     scene beach with fade
     play music bgm_outside_day
     show joe suit embarrassed at e
-    joe "You know, [name], there's something I should tell you..."
+    joe "You know, [mcname], there's something I should tell you..."
 
     smc shy "Yes?"
 
